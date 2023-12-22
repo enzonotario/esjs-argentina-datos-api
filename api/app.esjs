@@ -1,0 +1,9 @@
+importar { Hono } desde 'hono'
+importar { html } desde 'hono/html'
+
+exportar const app = crear Hono().basePath('/')
+
+app.get('/', (c) => c.html(html`<h1>¡Hola mundo desde <a href="https://esjs.dev">EsJS</a> + <a href="https://hono.dev">Hono</a>!</h1>`))
+app.get('/api/hola', (c) => c.json({ mensaje: '¡Hola mundo desde EsJS + Hono!' }))
+
+exportar porDefecto app

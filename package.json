@@ -1,0 +1,17 @@
+{
+  "name": "@es-js/crear-hono-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build --ssr --mode=production",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@es-js/vite-plugin-esjs": "^0.0.14",
+    "vite": "^5.0.0",
+    "hono": "^3.11.1",
+    "@hono/vite-dev-server": "^0.3.0"
+  }
+}
