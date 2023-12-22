@@ -1,0 +1,24 @@
+importar { escribirRuta, expandirRuta } desde '@/datos/rutas.esjs'
+importar { format } desde 'date-fns'
+importar { collect } desde 'collect.js'
+
+exportar funcion guardarCotizaciones(cotizaciones, fecha) {
+  const fechaConBarra = format(fecha, 'yyyy/MM/dd')
+
+  escribirRuta(`/cotizaciones/${fechaConBarra}`, cotizaciones)
+
+  cotizaciones.mapear((cotizacion) => {
+    escribirRuta(
+      `/cotizaciones/${cotizacion.moneda.toLowerCase()}/${fechaConBarra}`,
+      cotizacion,
+    )
+  })
+
+  collect(cotizaciones)
+    .groupBy('moneda')
+    .mapear((cotizaciones, moneda) => {
+      expandirRuta(`/cotizaciones/${moneda.toLowerCase()}`, cotizaciones, verdadero)
+    })
+
+  expandirRuta(`/cotizaciones`, cotizaciones, verdadero)
+}

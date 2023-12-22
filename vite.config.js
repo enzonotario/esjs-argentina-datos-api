@@ -1,18 +1,12 @@
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import EsJS from '@es-js/vite-plugin-esjs'
-import devServer from '@hono/vite-dev-server'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     // https://github.com/es-js/esjs
     EsJS(),
-
-    // https://github.com/honojs/vite-plugins
-    devServer({
-      entry: './api/app.esjs',
-    }),
   ],
   resolve: {
     alias: {
@@ -31,7 +25,8 @@ export default defineConfig({
   build: {
     outDir: './dist',
     rollupOptions: {
-      input: './api/app.esjs',
+      input: './src/index.js',
     },
   },
+  test: {},
 })

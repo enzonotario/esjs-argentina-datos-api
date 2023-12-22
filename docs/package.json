@@ -1,0 +1,29 @@
+{
+  "name": "esjs-argentina-datos-docs",
+  "private": true,
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.3",
+    "@egoist/tailwindcss-icons": "^1.7.2",
+    "@iconify-json/mdi": "^1.1.64",
+    "@nuxtbase/auth-ui-vue": "^0.3.6",
+    "@oku-ui/alert-dialog": "^0.6.1",
+    "@oku-ui/dialog": "^0.6.1",
+    "@scalar/api-client": "^0.8.8",
+    "autoprefixer": "^10.4.16",
+    "eslint": "8.22.0",
+    "postcss": "^8.4.33",
+    "shikiji": "0.10.0-beta.0",
+    "tailwindcss": "^3.4.1",
+    "uuid": "^9.0.1",
+    "vitepress": "1.0.0-rc.32",
+    "vitepress-theme-openapi": "0.0.2-alpha.11"
+  }
+}

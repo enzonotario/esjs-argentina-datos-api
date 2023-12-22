@@ -1,0 +1,22 @@
+importar { format } desde 'date-fns'
+
+exportar asincrono funcion extraerCotizaciones() {
+  const monedas = ['brl', 'clp', 'eur', 'usd', 'uyu']
+
+  const cotizaciones = esperar Promesa.todos(
+    monedas.mapear((moneda) =>
+      fetch(`https://dolarapi.com/v1/cotizaciones/${moneda}`)
+        .luego((respuesta) => respuesta.json())
+    ),
+  )
+
+  const hoy = crear Fecha()
+
+  retornar cotizaciones.mapear((cotizacion) => ({
+    moneda: cotizacion.moneda,
+    casa: cotizacion.casa,
+    compra: cotizacion.compra,
+    venta: cotizacion.venta,
+    fecha: format(hoy, 'yyyy-MM-dd'),
+  }))
+}

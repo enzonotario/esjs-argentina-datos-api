@@ -1,0 +1,281 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ArgentinaDatos API",
+    "version": "1.0.0",
+    "description": "API desarrollada en <a href=\"https://es.js.org?ref=argentinadatos.com\" target=\"_blank\">EsJS</a> que brinda datos de interés para los argentinos.\n\n¿Encontraste útil esta API? <strong>¡Dejá tu ⭐ en <a href=\"https://github.com/enzonotario/esjs-dolar-api\" alt=\"GitHub\" target=\"_blank\">GitHub</a>!</strong>"
+  },
+  "servers": [
+    {
+      "url": "https://api.argentinadatos.com",
+      "description": "Producción"
+    },
+    {
+      "url": "http://localhost:5173",
+      "description": "Local"
+    }
+  ],
+  "paths": {
+    "/v1/feriados/{año}": {
+      "get": {
+        "summary": "Feriados",
+        "tags": [
+          "Datos"
+        ],
+        "description": "Devuelve los feriados del año indicado (o del año actual si no se especifica).",
+        "parameters": [
+          {
+            "name": "año",
+            "in": "path",
+            "description": "Año de consulta",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 2016,
+              "maximum": 2025
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve los feriados del año actual",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Feriado"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-feriados",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/feriados/{año}\" \n -H \"x-argentinadatos-key: {apikey}\""
+          }
+        ]
+      }
+    },
+    "/v1/cotizaciones/dolares/{casa}": {
+      "get": {
+        "summary": "Dólares por casa",
+        "tags": [
+          "Cotizaciones históricas"
+        ],
+        "description": "Devuelve las cotizaciones del dólar de la casa de cambio especificada.",
+        "parameters": [
+          {
+            "name": "casa",
+            "in": "path",
+            "description": "Casa de cambio",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "oficial",
+                "blue",
+                "bolsa",
+                "mayorista",
+                "solidario",
+                "turista"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de cotizaciones del dólar",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cotizacion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-cotizaciones-dolares-casa",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/cotizaciones/dolares/{casa}\" \n -H \"x-argentinadatos-key: {apikey}\""
+          }
+        ]
+      }
+    },
+    "/v1/cotizaciones/dolares/{casa}/{fecha}": {
+      "get": {
+        "summary": "Dólar por casa y fecha",
+        "tags": [
+          "Cotizaciones históricas"
+        ],
+        "description": "Devuelve la cotización del dólar de la casa de cambio especificada en la fecha indicada.",
+        "parameters": [
+          {
+            "name": "casa",
+            "in": "path",
+            "description": "Casa de cambio",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "oficial",
+                "blue",
+                "bolsa",
+                "mayorista",
+                "solidario",
+                "turista"
+              ]
+            }
+          },
+            {
+                "name": "fecha",
+                "in": "path",
+                "description": "Fecha de consulta",
+                "required": true,
+                "schema": {
+                "type": "string",
+                "format": "date"
+                }
+            }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de cotizaciones del dólar",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cotizacion"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-cotizaciones-dolares-casa-fecha",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/cotizaciones/dolares/{casa}/{fecha}\" \n -H \"x-argentinadatos-key: {apikey}\""
+          }
+        ]
+      }
+    },
+    "/v1/estado": {
+      "get": {
+        "summary": "Estado de la API",
+        "tags": [
+          "API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve el estado de la API",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Estado"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-estado",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/estado\""
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Feriado": {
+        "title": "Feriado",
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "fecha": "2020-01-01",
+            "tipo": "Inamovible",
+            "motivo": "Año Nuevo"
+          }
+        }
+      },
+      "Estado": {
+        "title": "Estado",
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string"
+          },
+          "aleatorio": {
+            "type": "integer"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "estado": "Disponible",
+            "aleatorio": 1234
+          }
+        }
+      },
+      "Cotizacion": {
+        "title": "Cotizacion",
+        "type": "object",
+        "properties": {
+          "moneda": {
+            "type": "string"
+          },
+          "casa": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string"
+          },
+          "compra": {
+            "type": "number"
+          },
+          "venta": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "compra": 123.45,
+            "venta": 123.45
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "x-argentinadatos-key": {
+        "name": "apiKey",
+        "type": "apiKey",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "x-argentinadatos-key": []
+    }
+  ]
+}

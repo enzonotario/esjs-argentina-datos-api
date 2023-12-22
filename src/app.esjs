@@ -1,0 +1,42 @@
+importar { cronFeriados } desde '@/feriados/feriados.cron.esjs'
+importar { cronCotizaciones } desde '@/cotizaciones/cotizaciones.cron.esjs'
+
+const predefinidos = {
+  diario: ['/v1/cotizaciones'],
+  mensual: ['/v1/feriados'],
+}
+
+exportar asincrono funcion iniciar(comando) {
+  const comandoDesdeArgumento = comando === indefinido
+
+  comando = comando || process.argv[2]
+
+  si (comandoDesdeArgumento) {
+    consola.escribir('Comando: ' + comando)
+  } sino {
+    consola.escribir("\tComando: '" + comando + "'")
+  }
+
+  elegir (comando) {
+    caso 'diario':
+    caso 'mensual':
+      para (const path de predefinidos[comando]) {
+        consola.escribir('- ' + path)
+        esperar iniciar(path)
+      }
+      romper
+    caso '/v1/feriados':
+      esperar cronFeriados()
+      romper
+    caso '/v1/cotizaciones':
+      esperar cronCotizaciones()
+      romper
+    porDefecto:
+      consola.escribir('No se encontro el comando')
+      romper
+  }
+
+  si (comandoDesdeArgumento) {
+    consola.escribir('Finalizado con éxito')
+  }
+}

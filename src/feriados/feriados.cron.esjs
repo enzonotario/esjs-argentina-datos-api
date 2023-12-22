@@ -1,0 +1,12 @@
+importar { extraerFeriados } desde '@/feriados/extraccion/extraerFeriados.esjs'
+importar { guardarFeriados } desde '@/feriados/guardado/guardarFeriados.esjs'
+
+exportar asincrono funcion cronFeriados() {
+  const hoy = crear Fecha()
+
+  const año = hoy.obtenerAño()
+
+  const feriados = esperar extraerFeriados(año)
+
+  retornar guardarFeriados(año, feriados)
+}
