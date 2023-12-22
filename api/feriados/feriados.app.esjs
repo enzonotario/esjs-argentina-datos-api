@@ -1,0 +1,7 @@
+importar { Hono } desde 'hono'
+importar { año } desde '@/feriados/rutas/_año.esjs'
+
+exportar const feriados = crear Hono()
+
+feriados.obtener('/:año', año)
+feriados.obtener('', año)

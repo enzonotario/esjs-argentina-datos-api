@@ -1,0 +1,29 @@
+importar { drizzle } desde 'drizzle-orm/libsql'
+importar { createClient } desde '@libsql/client'
+importar { and, asc, like } desde 'drizzle-orm'
+importar * as schema desde './esquema.esjs'
+
+const client = createClient({
+  url: importar.meta.env.VITE_DATABASE_URL,
+  authToken: importar.meta.env.VITE_DATABASE_AUTH_TOKEN,
+})
+
+exportar const db = drizzle(client, { schema })
+
+exportar asincrono funcion guardarFeriados(valores) {
+  esperar db.insert(schema.feriados).valores(
+    valores.mapear((valor) => ({
+      fecha: valor.fecha,
+      tipo: valor.tipo,
+      nombre: valor.nombre,
+    })),
+  )
+}
+
+exportar asincrono funcion obtenerFeriados({ año }) {
+  retornar db
+    .select()
+    .desde(schema.feriados)
+    .where(and(like(schema.feriados.fecha, `${año}%`)))
+    .orderBy(asc(schema.feriados.fecha))
+}

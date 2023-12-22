@@ -1,0 +1,38 @@
+importar { guardarFeriados } desde '@/datos/datos.esjs'
+importar { consultarFeriados } desde '@/feriados/acciones/consulta/consultarFeriados.esjs'
+
+exportar asincrono funcion guardarFeriados(feriados) {
+  const feriadosExistentes = esperar consultarFeriados(feriados[0].año)
+
+  const feriadosNuevos = feriados.filtrar(
+    (feriado) =>
+      feriadosExistentes.buscar(
+        (feriadoExistente) => feriadoExistente.fecha === feriado.fecha,
+      ) === indefinido,
+  )
+
+  si (!feriadosNuevos.longitud) {
+    retornar
+  }
+
+  esperar guardarFeriados(
+    feriadosNuevos.mapear((feriado) => ({
+      fecha: feriado.fecha,
+      tipo: interpretarTipo(feriado.tipo),
+      nombre: feriado.nombre,
+    })),
+  )
+}
+
+funcion interpretarTipo(tipo) {
+  elegir (tipo) {
+    caso 'immovable':
+      retornar 'inamovible'
+    caso 'transferable':
+      retornar 'trasladable'
+    caso 'bridge':
+      retornar 'puente'
+    porDefecto:
+      retornar 'otro'
+  }
+}

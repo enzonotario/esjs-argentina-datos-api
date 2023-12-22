@@ -6,12 +6,29 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build --ssr --mode=production",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "vitest",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "drizzle-kit push:sqlite",
+    "db:studio": "drizzle-kit studio",
+    "convert:js-to-esjs": "node ./scripts/convert --reverse",
+    "convert:esjs-to-js": "node ./scripts/convert"
   },
   "devDependencies": {
+    "@es-js/core": "^0.0.19",
     "@es-js/vite-plugin-esjs": "^0.0.14",
-    "vite": "^5.0.0",
+    "@hono/vite-dev-server": "^0.3.0",
+    "@libsql/client": "0.4.0-pre.5",
+    "cheerio": "1.0.0-rc.12",
+    "drizzle-kit": "^0.20.7",
+    "drizzle-orm": "^0.29.1",
+    "fs": "0.0.1-security",
+    "glob": "^10.3.10",
     "hono": "^3.11.1",
-    "@hono/vite-dev-server": "^0.3.0"
+    "path": "^0.12.7",
+    "prettier": "^3.1.1",
+    "prettier-plugin-esjs": "^0.0.1",
+    "vite": "^5.0.0",
+    "vitest": "^1.1.0"
   }
 }

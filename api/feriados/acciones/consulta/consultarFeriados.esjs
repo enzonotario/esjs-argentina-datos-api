@@ -1,0 +1,17 @@
+importar { obtenerFeriados } desde '@/datos/datos.esjs'
+
+exportar asincrono funcion consultarFeriados(año) {
+  const feriados = esperar obtenerFeriados({
+    año,
+  })
+
+  si (feriados.longitud === 0) {
+    retornar []
+  }
+
+  retornar feriados.mapear((feriado) => ({
+    fecha: feriado.fecha,
+    tipo: feriado.tipo,
+    nombre: feriado.nombre,
+  }))
+}

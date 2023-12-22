@@ -1,0 +1,19 @@
+importar {
+  integer,
+  sqliteTable,
+  text,
+  uniqueIndex,
+} desde 'drizzle-orm/sqlite-core'
+
+exportar const feriados = sqliteTable(
+  'feriados',
+  {
+    id: integer('id').primaryKey(),
+    fecha: text('fecha'),
+    tipo: text('tipo'),
+    nombre: text('nombre'),
+  },
+  (feriados) => ({
+    fecha: uniqueIndex('feriados_fecha').on(feriados.fecha),
+  }),
+)

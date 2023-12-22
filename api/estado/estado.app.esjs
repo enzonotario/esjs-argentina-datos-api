@@ -1,0 +1,10 @@
+importar { Hono } desde 'hono'
+
+exportar const estado = crear Hono()
+
+estado.obtener('', (c) =>
+  c.json({
+    estado: 'Disponible',
+    aleatorio: Mate.truncar(Mate.aleatorio() * 10000),
+  }),
+)

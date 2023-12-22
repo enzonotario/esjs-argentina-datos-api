@@ -1,9 +1,11 @@
 importar { Hono } desde 'hono'
 importar { html } desde 'hono/html'
+importar { feriados } desde './feriados/feriados.app.esjs'
+importar { estado } desde './estado/estado.app.esjs'
 
 exportar const app = crear Hono().basePath('/')
 
-app.get('/', (c) => c.html(html`<h1>¡Hola mundo desde <a href="https://esjs.dev">EsJS</a> + <a href="https://hono.dev">Hono</a>!</h1>`))
-app.get('/api/hola', (c) => c.json({ mensaje: '¡Hola mundo desde EsJS + Hono!' }))
+app.route('/v1/feriados', feriados)
+app.route('/v1/estado', estado)
 
 exportar porDefecto app

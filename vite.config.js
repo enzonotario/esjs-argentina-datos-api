@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@': fileURLToPath(new URL('./api', import.meta.url)),
     },
     extensions: [
       '.js',
@@ -34,4 +34,5 @@ export default defineConfig({
       input: './api/app.esjs',
     },
   },
+  test: {},
 })
