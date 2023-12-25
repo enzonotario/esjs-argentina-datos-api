@@ -6,11 +6,11 @@ settings:
 
 devDependencies:
   '@es-js/core':
-    specifier: ^0.0.19
-    version: 0.0.19
+    specifier: ^0.0.20
+    version: 0.0.20
   '@es-js/vite-plugin-esjs':
-    specifier: ^0.0.14
-    version: 0.0.14
+    specifier: ^0.0.15
+    version: 0.0.15
   '@hono/vite-dev-server':
     specifier: ^0.3.0
     version: 0.3.0
@@ -327,14 +327,14 @@ packages:
       superjson: 2.2.1
     dev: true
 
-  /@es-js/core@0.0.19:
-    resolution: {integrity: sha512-f4iax7oknzjAxjMAYaSCW8wvBNurcczf6RG4/q0luqDvhaJKMRWy2HdyuorojxhvmQL3Fdcz8//pfPrfyMJssg==}
+  /@es-js/core@0.0.20:
+    resolution: {integrity: sha512-UAyZXOku2vm45LGtAD70rY/R1NHg8hjLPLQIScmV5NQdB4uN02XtvK4UCt92jiT+2PQnAzxBNaj2BMLuYdhtfA==}
     dev: true
 
-  /@es-js/vite-plugin-esjs@0.0.14:
-    resolution: {integrity: sha512-mibHO9gqiQ3BurGIZRBuO/DvL7F/t9+0UBxGeUjJ0wxKkZJeYZKWT2qzvFrsLO6Oj/qpjdBoX7w5l6Fqm7DBkw==}
+  /@es-js/vite-plugin-esjs@0.0.15:
+    resolution: {integrity: sha512-F5YYMsAV6ILWVqjxFE88iTQC2EzAT+QtirgMcv+CBQhRJtqfMlWbhiv1fTrO5mvlcQvZLQcj4tleSC3o9dZgtw==}
     dependencies:
-      '@es-js/core': 0.0.19
+      '@es-js/core': 0.0.20
       vite: 4.5.1
     transitivePeerDependencies:
       - '@types/node'

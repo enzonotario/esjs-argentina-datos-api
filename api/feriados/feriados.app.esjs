@@ -3,5 +3,5 @@ importar { año } desde '@/feriados/rutas/_año.esjs'
 
 exportar const feriados = crear Hono()
 
-feriados.obtener('/:año', año)
-feriados.obtener('', año)
+feriados.get('/:año', año)
+feriados.get('', año)
