@@ -4,8 +4,8 @@ import { readFileSync, writeFileSync, unlinkSync } from 'fs'
 import { join } from 'path'
 
 function convert(reverse = false) {
-  const extension = reverse ? '.esjs' : '.esjs'
-  const newExtension = reverse ? '.esjs' : '.esjs'
+  const extension = reverse ? '.js' : '.esjs'
+  const newExtension = reverse ? '.esjs' : '.js'
 
   // Por cada archivo `${extension}` en la carpeta `api`, de manera recursiva:
   //   - Obtener el contenido del archivo

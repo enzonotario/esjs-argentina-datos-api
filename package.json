@@ -12,7 +12,10 @@
     "db:push": "drizzle-kit push:sqlite",
     "db:studio": "drizzle-kit studio",
     "convert:js-to-esjs": "node ./scripts/convert --reverse",
-    "convert:esjs-to-js": "node ./scripts/convert"
+    "convert:esjs-to-js": "node ./scripts/convert",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@es-js/core": "^0.0.19",
@@ -29,6 +32,8 @@
     "prettier": "^3.1.1",
     "prettier-plugin-esjs": "^0.0.1",
     "vite": "^5.0.0",
+    "vitepress": "1.0.0-rc.32",
+    "vitepress-theme-openapi": "0.0.2-alpha.1",
     "vitest": "^1.1.0"
   }
 }
