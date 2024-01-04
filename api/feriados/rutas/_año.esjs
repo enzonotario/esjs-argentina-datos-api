@@ -1,7 +1,6 @@
 importar { consultarFeriados } desde '@/feriados/acciones/consulta/consultarFeriados.esjs'
 
 exportar asincrono funcion año(c) {
-  consola.depurar(c.params)
   retornar c.json(
     esperar consultarFeriados(c.req.param('año') || crear Fecha().obtenerAño()),
   )

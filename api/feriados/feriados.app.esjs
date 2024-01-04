@@ -1,7 +1,9 @@
 importar { Hono } desde 'hono'
 importar { año } desde '@/feriados/rutas/_año.esjs'
+importar { cache } desde '@/intermediarios/cache.intermediario.esjs'
 
 exportar const feriados = crear Hono()
 
+feriados.use('*', cache(30 * 24 * 60))
 feriados.get('/:año', año)
 feriados.get('', año)

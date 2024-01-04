@@ -3,10 +3,12 @@ importar { html } desde 'hono/html'
 importar { feriados } desde './feriados/feriados.app.esjs'
 importar { estado } desde './estado/estado.app.esjs'
 importar { cors } desde 'hono/cors'
+importar { noQueryParams } desde '@/intermediarios/noQueryParams.intermediario.esjs'
 
 exportar const app = crear Hono().basePath('/')
 
 app.use('*', cors())
+app.use('*', noQueryParams())
 
 app.route('/v1/feriados', feriados)
 app.route('/v1/estado', estado)

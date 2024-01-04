@@ -1,17 +1,18 @@
-import { expect, it } from 'vitest'
+import { describe, expect, it } from "vitest";
 import { extraerFeriados } from '@/feriados/acciones/extraccion/extraerFeriados.esjs'
 import { guardarFeriados } from '@/feriados/acciones/guardado/guardarFeriados.esjs'
 import { consultarFeriados } from '@/feriados/acciones/consulta/consultarFeriados.esjs'
 
-it('guarda los feriados del año', async () => {
-  try {
-    const años = [
+describe('guardarFeriados', () => {
+  it('guarda los feriados del año', async () => {
+    try {
+      const años = [
         2022,
         2023,
         2024,
-    ]
+      ]
 
-    for (const año of años) {
+      for (const año of años) {
         const feriados = await extraerFeriados(año)
 
         expect(feriados.length).toBeGreaterThan(0)
@@ -21,8 +22,9 @@ it('guarda los feriados del año', async () => {
         const feriadosConsultados = await consultarFeriados(año)
 
         expect(feriadosConsultados.length).toBe(feriados.length)
+      }
+    } catch (error) {
+      console.log('error', error)
     }
-  } catch (error) {
-    console.log('error', error)
-  }
+  })
 })
