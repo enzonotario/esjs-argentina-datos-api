@@ -1,16 +1,8 @@
-# @es-js/crear-hono-app
+# esjs-argentina-datos-api
 
-Plantilla para iniciar un proyecto [EsJS](https://esjs.dev/) + [Hono](https://hono.dev/).
+API pública, **no oficial**, desarrollada en [EsJS](https://es.js.org/) que brinda información actualizada sobre diferentes datos de Argentina.
 
-## Uso
+## Documentación
 
-### Desde GitHub
-Utilizando este proyecto como *template*.
+La documentación de la API se encuentra en [ArgentinaDatos.com](https://argentinadatos.com/).
 
-### Desde tu computadora
-
-Ejecutando:
-
-```
-npm create esjs hono
-```
