@@ -22,7 +22,38 @@ export default defineConfigWithTheme({
     ],
     outline: [1, 3],
     sidebar: [
-      ...sidebar.generateSidebarGroups(),
+      {
+        text: `<span class="SidebarItem">
+        <svg class="i-mdi-home w-5 h-5" />
+        <span class="SidebarItem-text">Inicio</span>
+      </span>`,
+        link: '/',
+      },
+      {
+        text: `<span class="SidebarItem">
+        <svg class="i-mdi-github w-5 h-5" />
+        <span class="SidebarItem-text">GitHub</span>
+      </span>`,
+        link: 'https://github.com/enzonotario/esjs-dolar-api',
+      },
+      {
+        text: 'Datos',
+        items: [
+          sidebar.generateSidebarGroup('Datos'),
+        ],
+      },
+      {
+        text: 'Cotizaciones históricas',
+        items: [
+          sidebar.generateSidebarGroup('Cotizaciones históricas'),
+        ],
+      },
+      {
+        text: 'API',
+        items: [
+          sidebar.generateSidebarGroup('API'),
+        ],
+      },
     ],
   },
 

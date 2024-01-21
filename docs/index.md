@@ -4,6 +4,10 @@ description: 'API para obtener información actualizada sobre diferentes datos d
 aside: false
 outline: false
 
+next:
+  text: 'Feriados'
+  link: '/operations/get-feriados'
+  
 head:
   - [
       'meta',
