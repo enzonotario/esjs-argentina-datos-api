@@ -40,6 +40,33 @@ export default defineConfigWithTheme({
       gtag('js', new Date());
       gtag('config', '${gTag}');`,
     ],
+
+    // Google Fonts
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    [
+      'link',
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: '',
+      },
+    ],
+    [
+      'link',
+      {
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
+        rel: 'stylesheet',
+      },
+    ],
+
+    // Meta tags
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,user-scalable=no',
+      },
+    ],
   ],
 
   vite: {
