@@ -1,24 +1,22 @@
 ---
 aside: false
 outline: false
-title: vitepress-theme-openapi
+title: Dólar por casa y fecha
 ---
 
-<script setup lang="ts">
+<script setup>
 import { useRoute, useData } from 'vitepress'
 
 const route = useRoute()
 
 const { isDark } = useData()
-
-const operationId = route.data.params.operationId
 </script>
 
-<Operation method="GET" :id="operationId">
+<Operation method="GET" id="get-cotizaciones-dolares-casa-fecha">
 
 <template #header="header">
 
-# {{ header.operation.summary }}
+# Dólar por casa y fecha
 
 </template>
 
@@ -32,7 +30,7 @@ const operationId = route.data.params.operationId
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="operationId" :parameters="parameters.parameters" />
+<Parameters :operation-id="get-cotizaciones-dolares-casa-fecha" :parameters="parameters.parameters" />
 
 </template>
 
