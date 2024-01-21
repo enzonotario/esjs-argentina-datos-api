@@ -6,7 +6,6 @@ title: vitepress-theme-openapi
 
 <script setup lang="ts">
 import { useRoute, useData } from 'vitepress'
-import TryItWithScalar from '@/theme/components/TryItWithScalar.vue'
 
 const route = useRoute()
 
@@ -55,7 +54,7 @@ const operationId = route.data.params.operationId
 
 <template #try-it="tryIt">
 
-<TryItWithScalar :operation-id="tryIt.operationId" :method="tryIt.method" />
+<TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
 
 </template>
 
