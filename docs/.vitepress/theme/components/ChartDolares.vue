@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { onMounted, provide, ref } from 'vue'
-import 'echarts'
-import VChart, { THEME_KEY } from 'vue-echarts'
+import { onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
+import { useECharts } from '@pureadmin/utils'
 import { useApi } from '../composables/useApi'
 
-provide(THEME_KEY, 'light')
+const chartRef = ref()
+
+const { setOptions } = useECharts(chartRef)
 
 const option = ref({})
 
@@ -27,10 +28,10 @@ async function fetchDolares() {
   }
 }
 
-async function setOption() {
+async function setChartOptions() {
   const dolares = await fetchDolares()
 
-  option.value = {
+  setOptions({
     legend: {
       data: [
         ...dolares
@@ -80,11 +81,11 @@ async function setOption() {
           type: 'line',
         })),
     ],
-  }
+  } as any)
 }
 
 onMounted(async () => {
-  await setOption()
+  await setChartOptions()
 })
 </script>
 
@@ -92,6 +93,6 @@ onMounted(async () => {
   <div>
     <h3>Cotización histórica del dólar</h3>
 
-    <VChart class="h-[50rem]" :option="option" autoresize />
+    <div ref="chartRef" class="h-[50rem]" />
   </div>
 </template>

@@ -1,0 +1,7 @@
+## Ejemplos
+
+<ClientOnly>
+
+<ChartDolares />
+
+</ClientOnly>

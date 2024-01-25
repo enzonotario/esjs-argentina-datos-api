@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import { provide, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import 'echarts'
-import VChart, { THEME_KEY } from 'vue-echarts'
-import { format, parseISO } from 'date-fns'
 import colors from 'tailwindcss/colors'
 import { collect } from 'collect.js'
 import { FwbInput, FwbSpinner } from 'flowbite-vue'
+import { useECharts } from '@pureadmin/utils'
 import { useApi } from '../composables/useApi'
 
-provide(THEME_KEY, 'light')
+const chartRef = ref()
 
-const option = ref({})
+const { setOptions } = useECharts(chartRef)
 
 const api = useApi()
 
@@ -51,12 +50,14 @@ async function fetchFeriados() {
   }
 }
 
-async function setOptions() {
+async function setChartOptions() {
   const feriados = await fetchFeriados()
 
   const today = new Date()
 
-  option.value = {
+  const allTypes: string[] = collect(feriados).pluck('tipo').unique().all() as string[]
+
+  setOptions({
     tooltip: {},
     calendar: {
       top: 100,
@@ -76,7 +77,7 @@ async function setOptions() {
       left: '100',
       data: [
         'Fin de semana',
-        ...collect(feriados).pluck('tipo').unique().all(),
+        ...allTypes,
         'Hoy',
       ],
       textStyle: {
@@ -184,13 +185,13 @@ async function setOptions() {
           ]
         : []),
     ],
-  }
+  } as any)
 }
 
 watch(
   year,
   async () => {
-    await setOptions()
+    await setChartOptions()
   },
   { immediate: true },
 )
@@ -214,6 +215,6 @@ watch(
       <FwbSpinner v-show="loading" size="6" />
     </div>
 
-    <VChart class="h-[20rem]" :option="option" autoresize />
+    <div ref="chartRef" class="h-[20rem]" />
   </div>
 </template>
