@@ -14,6 +14,9 @@ devDependencies:
   '@iconify-json/mdi':
     specifier: ^1.1.64
     version: 1.1.64
+  '@pureadmin/utils':
+    specifier: ^2.4.4
+    version: 2.4.4(echarts@5.4.3)(vue@3.3.13)
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.33)
@@ -50,9 +53,6 @@ devDependencies:
   vitepress-theme-openapi:
     specifier: 0.0.2-alpha.19
     version: 0.0.2-alpha.19(vue@3.3.13)
-  vue-echarts:
-    specifier: ^6.6.8
-    version: 6.6.8(echarts@5.4.3)(vue@3.3.13)
 
 packages:
 
@@ -774,6 +774,21 @@ packages:
 
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: true
+
+  /@pureadmin/utils@2.4.4(echarts@5.4.3)(vue@3.3.13):
+    resolution: {integrity: sha512-dH1ml+/U50Te7KlZX8pkA08/o+XKYx8aFyds9aTBC34JDyn0GQSyhe0zFIfGwnFztWMToWn/cyitpXmDEcq3NA==}
+    peerDependencies:
+      echarts: '*'
+      vue: '*'
+    peerDependenciesMeta:
+      echarts:
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      echarts: 5.4.3
+      vue: 3.3.13(typescript@5.3.3)
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.9.1:
@@ -3698,10 +3713,6 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /resize-detector@0.3.0:
-    resolution: {integrity: sha512-R/tCuvuOHQ8o2boRP6vgx8hXCCy87H1eY9V5imBYeVNyNVpuL9ciReSccLj2gDcax9+2weXy3bc8Vv+NRXeEvQ==}
-    dev: true
-
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -4397,21 +4408,6 @@ packages:
       - universal-cookie
     dev: true
 
-  /vue-demi@0.13.11(vue@3.3.13):
-    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      vue: 3.3.13(typescript@5.3.3)
-    dev: true
-
   /vue-demi@0.14.6(vue@3.3.13):
     resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==}
     engines: {node: '>=12'}
@@ -4425,26 +4421,6 @@ packages:
         optional: true
     dependencies:
       vue: 3.3.13(typescript@5.3.3)
-    dev: true
-
-  /vue-echarts@6.6.8(echarts@5.4.3)(vue@3.3.13):
-    resolution: {integrity: sha512-3EGrxKGCGjHnkhudRQQ4fkK5iJxxXNQ1fXvSWA/7mzR/oV7BBSHYvC3gDbG/WIW0A/Fcx2H8k5H3NDyWgjyi8g==}
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.5
-      '@vue/runtime-core': ^3.0.0
-      echarts: ^5.4.1
-      vue: ^2.6.12 || ^3.1.1
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      '@vue/runtime-core':
-        optional: true
-    dependencies:
-      echarts: 5.4.3
-      resize-detector: 0.3.0
-      vue: 3.3.13(typescript@5.3.3)
-      vue-demi: 0.13.11(vue@3.3.13)
     dev: true
 
   /vue-eslint-parser@9.4.0(eslint@8.22.0):
