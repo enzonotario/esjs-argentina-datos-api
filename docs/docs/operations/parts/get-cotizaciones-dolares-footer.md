@@ -1,7 +1,0 @@
-## Ejemplos
-
-<ClientOnly>
-
-<ChartDolares />
-
-</ClientOnly>
