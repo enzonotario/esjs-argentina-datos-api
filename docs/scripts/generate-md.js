@@ -15,7 +15,7 @@ export function init() {
 
     const markdown = generateMarkdown(operationId)
 
-    fs.writeFileSync(`operations/${operationId}.md`, markdown)
+    fs.writeFileSync(`docs/operations/${operationId}.md`, markdown)
   })
 }
 
@@ -68,7 +68,9 @@ const { isDark } = useData()
 
 <template #description="description">
 
-<div v-if="description.operation.description" class="description" v-html="description.operation.description" />
+${operation.description || ''}
+
+<!--@include: ./parts/${operationId}-description-after.md -->
 
 </template>
 
@@ -99,6 +101,12 @@ const { isDark } = useData()
 <template #try-it="tryIt">
 
 <TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
+
+</template>
+
+<template #footer="footer">
+
+<!--@include: ./parts/${operationId}-footer.md -->
 
 </template>
 

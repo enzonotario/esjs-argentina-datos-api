@@ -22,7 +22,9 @@ const { isDark } = useData()
 
 <template #description="description">
 
-<div v-if="description.operation.description" class="description" v-html="description.operation.description" />
+Devuelve las cotizaciones de todas las casas de cambio.
+
+<!--@include: ./parts/get-cotizaciones-dolares-description-after.md -->
 
 </template>
 
@@ -53,6 +55,12 @@ const { isDark } = useData()
 <template #try-it="tryIt">
 
 <TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
+
+</template>
+
+<template #footer="footer">
+
+<!--@include: ./parts/get-cotizaciones-dolares-footer.md -->
 
 </template>
 

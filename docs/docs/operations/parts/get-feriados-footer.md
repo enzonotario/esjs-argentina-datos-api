@@ -1,0 +1,7 @@
+## Ejemplos
+
+<ClientOnly>
+
+<ChartFeriados />
+
+</ClientOnly>

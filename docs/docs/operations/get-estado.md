@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Dólar por casa y fecha
+title: Estado de la API
 ---
 
 <script setup>
@@ -12,17 +12,19 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-cotizaciones-dolares-casa-fecha">
+<Operation method="GET" id="get-estado">
 
 <template #header="header">
 
-# Dólar por casa y fecha
+# Estado de la API
 
 </template>
 
 <template #description="description">
 
-<div v-if="description.operation.description" class="description" v-html="description.operation.description" />
+Devuelve el estado de la API.
+
+<!--@include: ./parts/get-estado-description-after.md -->
 
 </template>
 
@@ -30,7 +32,7 @@ const { isDark } = useData()
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="get-cotizaciones-dolares-casa-fecha" :parameters="parameters.parameters" />
+<Parameters :operation-id="get-estado" :parameters="parameters.parameters" />
 
 </template>
 
@@ -53,6 +55,12 @@ const { isDark } = useData()
 <template #try-it="tryIt">
 
 <TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
+
+</template>
+
+<template #footer="footer">
+
+<!--@include: ./parts/get-estado-footer.md -->
 
 </template>
 

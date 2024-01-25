@@ -11,6 +11,18 @@ const openapi = useOpenapi()
 openapi.setSpec(spec)
 const sidebar = useSidebar()
 
+function addDocsPrefix(group) {
+  return {
+    ...group,
+    items: group.items.map((item) => {
+      return {
+        ...item,
+        link: `/docs${item.link}`,
+      }
+    }),
+  }
+}
+
 export default defineConfigWithTheme({
   title: 'ArgentinaDatos API',
   description: 'API para diferentes datos de Argentina',
@@ -39,19 +51,19 @@ export default defineConfigWithTheme({
       {
         text: 'Datos',
         items: [
-          sidebar.generateSidebarGroup('Datos'),
+          addDocsPrefix(sidebar.generateSidebarGroup('Datos')),
         ],
       },
       {
         text: 'Cotizaciones históricas',
         items: [
-          sidebar.generateSidebarGroup('Cotizaciones históricas'),
+          addDocsPrefix(sidebar.generateSidebarGroup('Cotizaciones históricas')),
         ],
       },
       {
         text: 'API',
         items: [
-          sidebar.generateSidebarGroup('API'),
+          addDocsPrefix(sidebar.generateSidebarGroup('API')),
         ],
       },
     ],
