@@ -1,27 +1,12 @@
 <script setup lang="ts">
 import { provide, ref, watch } from 'vue'
+import 'echarts'
 import VChart, { THEME_KEY } from 'vue-echarts'
 import { format, parseISO } from 'date-fns'
 import colors from 'tailwindcss/colors'
 import { collect } from 'collect.js'
 import { FwbInput, FwbSpinner } from 'flowbite-vue'
-import { use } from 'echarts/core'
-import { ScatterChart } from 'echarts/charts'
-import {
-  CalendarComponent,
-  LegendComponent,
-  TooltipComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
 import { useApi } from '../composables/useApi'
-
-use([
-  TooltipComponent,
-  CalendarComponent,
-  LegendComponent,
-  ScatterChart,
-  CanvasRenderer,
-])
 
 provide(THEME_KEY, 'light')
 

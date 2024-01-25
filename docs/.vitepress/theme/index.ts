@@ -1,7 +1,6 @@
 import { theme, useOpenapi } from 'vitepress-theme-openapi'
 import DefaultTheme from 'vitepress/theme'
 import spec from '../../public/openapi.json' assert {type: 'json'}
-// import 'echarts'
 
 import ChartDolares from './components/ChartDolares.vue'
 import ChartFeriados from './components/ChartFeriados.vue'

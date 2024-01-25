@@ -1,26 +1,9 @@
 <script setup lang="ts">
 import { onMounted, provide, ref } from 'vue'
+import 'echarts'
 import VChart, { THEME_KEY } from 'vue-echarts'
 import { collect } from 'collect.js'
-import { use } from 'echarts/core'
-import { LineChart } from 'echarts/charts'
-import {
-  DataZoomComponent, GridComponent,
-  LegendComponent, ToolboxComponent,
-  TooltipComponent,
-} from 'echarts/components'
-import { CanvasRenderer } from 'echarts/renderers'
 import { useApi } from '../composables/useApi'
-
-use([
-  LegendComponent,
-  TooltipComponent,
-  DataZoomComponent,
-  ToolboxComponent,
-  GridComponent,
-  LineChart,
-  CanvasRenderer,
-])
 
 provide(THEME_KEY, 'light')
 
