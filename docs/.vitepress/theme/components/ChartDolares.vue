@@ -1,12 +1,28 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
+import colors from 'tailwindcss/colors'
+import * as echarts from 'echarts'
+import { format, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
 import { useEcharts } from '../composables/useEcharts'
 
+const selectedDefault = ['oficial', 'blue']
+
+const colorsMap = {
+  oficial: colors.gray,
+  blue: colors.blue,
+  bolsa: colors.purple,
+  contadoconliqui: colors.pink,
+  mayorista: colors.yellow,
+  solidario: colors.teal,
+  cripto: colors.red,
+  tarjeta: colors.indigo,
+}
+
 const chartRef = ref()
 
-const { setOptions } = useEcharts(chartRef)
+const { setOptions, theme } = useEcharts(chartRef)
 
 const api = useApi()
 
@@ -28,16 +44,48 @@ async function fetchDolares() {
 async function setChartOptions() {
   const dolares = await fetchDolares()
 
+  const casas = collect(dolares).pluck('casa').unique().toArray()
+
   setOptions({
     legend: {
-      data: [
-        ...dolares
-          .map(item => item.casa)
-          .filter((value, index, self) => self.indexOf(value) === index),
-      ],
+      data: casas,
+      selected: casas.reduce(
+        (carry, casa) => ({
+          ...carry,
+          [casa]: selectedDefault.includes(casa),
+        }),
+        {},
+      ),
     },
     tooltip: {
       trigger: 'axis',
+      axisPointer: {
+        type: 'cross',
+      },
+      formatter: (params: any) => {
+        const date = params[0].axisValue
+
+        const items = params
+          .map((item: any) => {
+            const casa = item.seriesName
+            const value = item.value
+
+            return `<div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full" style="background-color: ${
+                colorsMap.hasOwnProperty(casa)
+                  ? colorsMap[casa][theme.value === 'dark' ? 300 : 500]
+                  : colors.gray[theme.value === 'dark' ? 300 : 500]
+              }"></div>
+              <div>${casa}: $${value}</div>
+            </div>`
+          })
+          .join('')
+
+        return `<div class="flex flex-col gap-1">
+          <div>${format(parseISO(date), 'dd/MM/yyyy')}</div>
+          ${items}
+        </div>`
+      },
     },
     dataZoom: [
       {
@@ -64,9 +112,19 @@ async function setChartOptions() {
       type: 'category',
       data: collect(dolares).pluck('fecha').unique().toArray(),
       inverse: true,
+      axisLabel: {
+        formatter: (value: string) => {
+          return format(parseISO(value), 'dd/MM/yyyy')
+        },
+      },
     },
     yAxis: {
       type: 'value',
+      axisLabel: {
+        formatter: (value: number) => {
+          return `$${value.toFixed(0)}`
+        },
+      },
     },
     series: [
       ...dolares
@@ -78,6 +136,27 @@ async function setChartOptions() {
             .filter(item => item.casa === casa)
             .map(item => item.venta),
           type: 'line',
+          itemStyle: {
+            color: colorsMap.hasOwnProperty(casa)
+              ? colorsMap[casa][theme.value === 'dark' ? 300 : 500]
+              : colors.gray[theme.value === 'dark' ? 300 : 500],
+          },
+          areaStyle: {
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              {
+                offset: 0,
+                color: colorsMap.hasOwnProperty(casa)
+                  ? colorsMap[casa][theme.value === 'dark' ? 800 : 100]
+                  : colors.gray[theme.value === 'dark' ? 800 : 100],
+              },
+              {
+                offset: 1,
+                color: colorsMap.hasOwnProperty(casa)
+                  ? colorsMap[casa][theme.value === 'dark' ? 900 : 300]
+                  : colors.gray[theme.value === 'dark' ? 900 : 300],
+              },
+            ]),
+          },
         })),
     ],
   } as any)
