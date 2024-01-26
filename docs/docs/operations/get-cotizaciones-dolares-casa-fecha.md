@@ -32,7 +32,7 @@ Devuelve la cotización del dólar de la casa de cambio especificada en la fecha
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="get-cotizaciones-dolares-casa-fecha" :parameters="parameters.parameters" />
+<Parameters operation-id="get-cotizaciones-dolares-casa-fecha" :parameters="parameters.parameters" />
 
 </template>
 

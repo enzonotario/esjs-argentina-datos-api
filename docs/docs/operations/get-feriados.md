@@ -32,7 +32,7 @@ Devuelve los feriados del año indicado (o del año actual si no se especifica).
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="get-feriados" :parameters="parameters.parameters" />
+<Parameters operation-id="get-feriados" :parameters="parameters.parameters" />
 
 </template>
 

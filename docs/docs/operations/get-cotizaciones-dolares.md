@@ -32,7 +32,7 @@ Devuelve las cotizaciones de todas las casas de cambio.
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="get-cotizaciones-dolares" :parameters="parameters.parameters" />
+<Parameters operation-id="get-cotizaciones-dolares" :parameters="parameters.parameters" />
 
 </template>
 

@@ -32,7 +32,7 @@ Devuelve el estado de la API.
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="get-estado" :parameters="parameters.parameters" />
+<Parameters operation-id="get-estado" :parameters="parameters.parameters" />
 
 </template>
 

@@ -78,7 +78,7 @@ ${operation.description || ''}
 
 ## {{ $t('Parameters') }}
 
-<Parameters :operation-id="${operationId}" :parameters="parameters.parameters" />
+<Parameters operation-id="${operationId}" :parameters="parameters.parameters" />
 
 </template>
 
