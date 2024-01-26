@@ -1,15 +1,21 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import 'echarts'
+import { computed, ref, watch } from 'vue'
 import colors from 'tailwindcss/colors'
 import { collect } from 'collect.js'
 import { FwbInput, FwbSpinner } from 'flowbite-vue'
-import { useECharts } from '@pureadmin/utils'
+import { useDark, useECharts } from '@pureadmin/utils'
+import { format, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
+
+const { isDark } = useDark()
+
+const theme = computed(() => {
+  return isDark.value ? 'dark' : 'default'
+})
 
 const chartRef = ref()
 
-const { setOptions } = useECharts(chartRef)
+const { setOptions } = useECharts(chartRef, { theme })
 
 const api = useApi()
 
@@ -81,7 +87,7 @@ async function setChartOptions() {
         'Hoy',
       ],
       textStyle: {
-        color: '#000',
+        color: theme.value === 'dark' ? colors.gray[300] : colors.gray[700],
       },
     },
     series: [
@@ -91,7 +97,7 @@ async function setChartOptions() {
         coordinateSystem: 'calendar',
         data: weekends(),
         itemStyle: {
-          color: colors.gray[300],
+          color: theme.value === 'dark' ? colors.gray[600] : colors.gray[300],
         },
         tooltip: {
           formatter(params) {
@@ -158,12 +164,12 @@ async function setChartOptions() {
               coordinateSystem: 'calendar',
               data: [[today.toISOString().split('T')[0], 2]],
               itemStyle: {
-                color: colors.indigo[800],
+                color: theme.value === 'dark' ? colors.indigo[100] : colors.indigo[500],
               },
               label: {
                 show: true,
                 formatter: 'Hoy',
-                color: colors.indigo[800],
+                color: theme.value === 'dark' ? colors.gray[100] : colors.gray[700],
                 position: 'top',
               },
               tooltip: {
