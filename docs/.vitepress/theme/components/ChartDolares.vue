@@ -15,7 +15,6 @@ async function fetchDolares() {
     const dolares = collect(await api.get('/cotizaciones/dolares'))
       .reverse()
       .groupBy('fecha')
-      .take(365 * 1)
       .flatten(1)
       .toArray()
 
@@ -42,10 +41,12 @@ async function setChartOptions() {
     },
     dataZoom: [
       {
-        startValue: 0,
+        type: 'inside',
+        start: 10,
+        end: 0,
       },
       {
-        type: 'inside',
+        startValue: 0,
       },
     ],
     toolbox: {
