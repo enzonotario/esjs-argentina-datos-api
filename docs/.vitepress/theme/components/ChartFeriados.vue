@@ -1,21 +1,15 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import colors from 'tailwindcss/colors'
 import { collect } from 'collect.js'
 import { FwbInput, FwbSpinner } from 'flowbite-vue'
-import { useDark, useECharts } from '@pureadmin/utils'
 import { format, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
-
-const { isDark } = useDark()
-
-const theme = computed(() => {
-  return isDark.value ? 'dark' : 'default'
-})
+import { useEcharts } from '../composables/useEcharts'
 
 const chartRef = ref()
 
-const { setOptions } = useECharts(chartRef, { theme })
+const { setOptions, theme } = useEcharts(chartRef)
 
 const api = useApi()
 
@@ -61,7 +55,10 @@ async function setChartOptions() {
 
   const today = new Date()
 
-  const allTypes: string[] = collect(feriados).pluck('tipo').unique().all() as string[]
+  const allTypes: string[] = collect(feriados)
+    .pluck('tipo')
+    .unique()
+    .all()
 
   setOptions({
     tooltip: {},
@@ -81,11 +78,7 @@ async function setChartOptions() {
     legend: {
       top: '30',
       left: '100',
-      data: [
-        'Fin de semana',
-        ...allTypes,
-        'Hoy',
-      ],
+      data: ['Fin de semana', ...allTypes, 'Hoy'],
       textStyle: {
         color: theme.value === 'dark' ? colors.gray[300] : colors.gray[700],
       },
@@ -164,12 +157,16 @@ async function setChartOptions() {
               coordinateSystem: 'calendar',
               data: [[today.toISOString().split('T')[0], 2]],
               itemStyle: {
-                color: theme.value === 'dark' ? colors.indigo[100] : colors.indigo[500],
+                color:
+                  theme.value === 'dark'
+                    ? colors.indigo[100]
+                    : colors.indigo[500],
               },
               label: {
                 show: true,
                 formatter: 'Hoy',
-                color: theme.value === 'dark' ? colors.gray[100] : colors.gray[700],
+                color:
+                  theme.value === 'dark' ? colors.gray[100] : colors.gray[700],
                 position: 'top',
               },
               tooltip: {

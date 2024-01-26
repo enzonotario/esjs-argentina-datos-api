@@ -1,18 +1,12 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from 'vue'
+import { onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
-import { useDark, useECharts } from '@pureadmin/utils'
 import { useApi } from '../composables/useApi'
-
-const { isDark } = useDark()
-
-const theme = computed(() => {
-  return isDark.value ? 'dark' : 'default'
-})
+import { useEcharts } from '../composables/useEcharts'
 
 const chartRef = ref()
 
-const { setOptions } = useECharts(chartRef, { theme })
+const { setOptions } = useEcharts(chartRef)
 
 const api = useApi()
 

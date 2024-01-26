@@ -1,6 +1,6 @@
 import { theme, useOpenapi } from 'vitepress-theme-openapi'
 import DefaultTheme from 'vitepress/theme'
-import spec from '../../public/openapi.json' assert {type: 'json'}
+import spec from '../../public/openapi.json' assert { type: 'json' }
 
 import { useECharts } from '../plugins/echarts'
 
