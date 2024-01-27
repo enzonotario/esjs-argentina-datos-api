@@ -55,7 +55,7 @@ async function setChartOptions() {
 
   const today = new Date()
 
-  const allTypes: string[] = collect(feriados)
+  const allTypes = collect(feriados)
     .pluck('tipo')
     .unique()
     .all()

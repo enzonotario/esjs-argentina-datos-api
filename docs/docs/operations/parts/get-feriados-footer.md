@@ -1,7 +1,9 @@
 ## Ejemplos
 
-<ClientOnly>
+<div class="flex flex-col gap-8">
+
+<ChartProximoFeriado />
 
 <ChartFeriados />
 
-</ClientOnly>
+</div>
