@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { format, parseISO } from 'date-fns'
-import { leerRuta, escribirRuta } from '@/datos/rutas.esjs'
+import { leerRuta, escribirRuta, existeRuta } from '@/datos/rutas.esjs'
 import { collect } from 'collect.js'
 
 describe('comprobarDolares', () => {
@@ -107,8 +107,75 @@ describe('comprobarDolares', () => {
       .map(async (dolaresPorFecha, fecha) => {
         const guardar = await escribirRuta(
           `/cotizaciones/dolares/${format(parseISO(fecha), 'yyyy/MM/dd')}`,
-          dolaresPorFecha.toArray().sort((a, b) => a.casa.localeCompare(b.casa)),
+          dolaresPorFecha
+            .toArray()
+            .sort((a, b) => a.casa.localeCompare(b.casa)),
         )
       })
+  })
+
+  it('comprueba que `dolares/index.json` tiene valores para todas las fechas, desde la primera hasta la última', async () => {
+    const dolares = await leerRuta('/cotizaciones/dolares')
+
+    const output = []
+
+    expect(dolares.length).toBeGreaterThan(0)
+
+    const fechas = collect(dolares).pluck('fecha').unique().sort().toArray()
+
+    const primeraFecha = fechas[0]
+    const ultimaFecha = fechas[fechas.length - 1]
+
+    const fechaActual = parseISO(primeraFecha)
+    const fechaFinal = parseISO(ultimaFecha)
+
+    const fechasFaltantes = []
+
+    while (fechaActual <= fechaFinal) {
+      const fecha = format(fechaActual, 'yyyy/MM/dd')
+
+      const existe = await existeRuta(`/cotizaciones/dolares/${fecha}`)
+
+      if (existe) {
+        output.push(
+          ...collect(dolares)
+            .where('fecha', format(fechaActual, 'yyyy-MM-dd'))
+            .toArray(),
+        )
+      } else {
+        // Copiar del día anterior
+
+        const fechaCopiada = new Date(fechaActual)
+
+        const agregar = collect(output)
+          .where(
+            'fecha',
+            format(
+              new Date(fechaCopiada.setDate(fechaCopiada.getDate() - 1)),
+              'yyyy-MM-dd',
+            ),
+          )
+          .map((dolar) => ({
+            ...dolar,
+            fecha: format(fechaActual, 'yyyy-MM-dd'),
+          }))
+          .toArray()
+
+        output.push(...agregar)
+
+        fechasFaltantes.push({
+          fecha: format(fechaActual, 'yyyy-MM-dd'),
+          agregar,
+        })
+
+        console.log(['Falta', format(fechaActual, 'yyyy-MM-dd'), agregar])
+      }
+
+      fechaActual.setDate(fechaActual.getDate() + 1)
+    }
+
+    await escribirRuta('/cotizaciones/dolares', output, true)
+
+    expect(fechasFaltantes.length).toBe(0)
   })
 })

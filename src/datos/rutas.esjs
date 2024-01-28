@@ -65,3 +65,19 @@ exportar funcion leerRuta(ruta) {
     retornar nulo
   }
 }
+
+exportar funcion existeRuta(ruta) {
+  si (ruta.comienzaCon('/')) {
+    ruta = ruta.recortar(1)
+  }
+
+  const directorio = `datos/v1/${ruta}`
+
+  intentar {
+    retornar fs.existsSync(`${directorio}/index.json`)
+  } capturar (error) {
+    consola.error(error)
+
+    retornar falso
+  }
+}
