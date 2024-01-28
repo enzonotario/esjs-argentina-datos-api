@@ -1,8 +1,12 @@
+import { useOpenapi } from 'vitepress-theme-openapi'
+
 export const useApi = () => {
-  const baseUrl = 'https://api.argentinadatos.com/v1'
+  const openapi = useOpenapi()
+
+  const baseUrl = openapi.getBaseUrl()
 
   function get(url: string) {
-    return fetch(`${baseUrl}${url}`).then(res => res.json())
+    return fetch(`${baseUrl}/v1${url}`).then(res => res.json())
   }
 
   return {
