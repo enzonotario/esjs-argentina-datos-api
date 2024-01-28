@@ -2,12 +2,17 @@
 import { onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
 import colors from 'tailwindcss/colors'
-import * as echarts from 'echarts'
 import { format, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
 import { useEcharts } from '../composables/useEcharts'
 
-const selectedDefault = ['oficial', 'blue', 'mayorista', 'tarjeta', 'contadoconliqui']
+const selectedDefault = [
+  'oficial',
+  'blue',
+  'mayorista',
+  'tarjeta',
+  'contadoconliqui',
+]
 
 const colorsMap = {
   oficial: colors.gray,
@@ -41,8 +46,22 @@ async function fetchDolares() {
   }
 }
 
+async function fetchEventosPresidenciales() {
+  try {
+    return collect(
+      await api.get('/eventos/presidenciales'),
+    )
+      .toArray()
+  }
+  catch (error) {
+    return []
+  }
+}
+
 async function setChartOptions() {
   const dolares = await fetchDolares()
+
+  const eventosPresidenciales = await fetchEventosPresidenciales()
 
   const casas = collect(dolares).pluck('casa').unique().toArray()
 
@@ -90,7 +109,7 @@ async function setChartOptions() {
     dataZoom: [
       {
         type: 'inside',
-        start: 10,
+        start: 5,
         end: 0,
       },
       {
@@ -127,37 +146,57 @@ async function setChartOptions() {
       },
     },
     series: [
-      ...dolares
-        .map(item => item.casa)
-        .filter((value, index, self) => self.indexOf(value) === index)
-        .map(casa => ({
-          name: casa,
-          data: dolares
-            .filter(item => item.casa === casa)
-            .map(item => item.venta),
-          type: 'line',
-          itemStyle: {
-            color: colorsMap.hasOwnProperty(casa)
-              ? colorsMap[casa][theme.value === 'dark' ? 300 : 500]
-              : colors.gray[theme.value === 'dark' ? 300 : 500],
-          },
-          areaStyle: {
-            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-              {
-                offset: 0,
-                color: colorsMap.hasOwnProperty(casa)
-                  ? colorsMap[casa][theme.value === 'dark' ? 800 : 100]
-                  : colors.gray[theme.value === 'dark' ? 800 : 100],
-              },
-              {
-                offset: 1,
-                color: colorsMap.hasOwnProperty(casa)
-                  ? colorsMap[casa][theme.value === 'dark' ? 900 : 300]
-                  : colors.gray[theme.value === 'dark' ? 900 : 300],
-              },
-            ]),
-          },
-        })),
+      ...collect(dolares)
+        .groupBy('casa')
+        .map((items, casa) => {
+          return {
+            name: casa,
+            type: 'line',
+            data: items.pluck('venta').toArray(),
+            itemStyle: {
+              color: colorsMap.hasOwnProperty(casa)
+                ? colorsMap[casa][theme.value === 'dark' ? 300 : 500]
+                : colors.gray[theme.value === 'dark' ? 300 : 500],
+            },
+
+            ...(casa === 'oficial'
+              ? {
+                  markLine: {
+                    symbol: 'none',
+                    data: eventosPresidenciales.map(eleccion => ({
+                      xAxis: eleccion.fecha,
+                      label: {
+                        position: eleccion.tipo === 'asuncion' ? 'end' : 'insideStartTop',
+                        formatter: eleccion.tipo === 'asuncion'
+                          ? [
+                          `{a|${eleccion.evento}}`,
+                            ].join('\n')
+                          : [
+                          `{a|${eleccion.evento} - ${format(
+                            parseISO(eleccion.fecha),
+                            'yyyy',
+                          )}}`,
+                            ].join('\n'),
+
+                        rich: {
+                          a: {
+                            color: theme.value === 'dark' ? 'white' : 'black',
+                            backgroundColor: theme.value === 'dark' ? 'black' : 'white',
+                            borderColor: theme.value === 'dark' ? 'white' : 'black',
+                            borderWidth: 1,
+                            borderRadius: 2,
+                            padding: [2, 4],
+                          },
+                        },
+                      },
+                    })),
+                  },
+                }
+              : {}
+            ),
+          }
+        })
+        .toArray(),
     ],
   } as any)
 }
