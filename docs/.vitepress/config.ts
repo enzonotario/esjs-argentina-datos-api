@@ -49,9 +49,9 @@ export default defineConfigWithTheme({
         link: 'https://github.com/enzonotario/esjs-dolar-api',
       },
       {
-        text: 'Datos',
+        text: 'Eventos',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('Datos')),
+          addDocsPrefix(sidebar.generateSidebarGroup('Eventos')),
         ],
       },
       {

@@ -20,7 +20,7 @@
       "get": {
         "summary": "Feriados",
         "tags": [
-          "Datos"
+          "Eventos"
         ],
         "description": "Devuelve los feriados del año indicado (o del año actual si no se especifica).",
         "parameters": [
@@ -202,6 +202,37 @@
         ]
       }
     },
+    "/v1/eventos/presidenciales": {
+      "get": {
+        "summary": "Eventos presidenciales",
+        "tags": [
+          "Eventos"
+        ],
+        "description": "Devuelve los eventos presidenciales.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de eventos presidenciales",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EventoPresidencial"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-eventos-presidenciales",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/eventos/presidenciales\""
+          }
+        ]
+      }
+    },
     "/v1/estado": {
       "get": {
         "summary": "Estado de la API",
@@ -297,6 +328,27 @@
           "Example 1": {
             "compra": 123.45,
             "venta": 123.45
+          }
+        }
+      },
+      "EventoPresidencial": {
+        "title": "EventoPresidencial",
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "evento": {
+              "type": "string"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "fecha": "2020-01-01",
+            "evento": "Año Nuevo"
           }
         }
       }
