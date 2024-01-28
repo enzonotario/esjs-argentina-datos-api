@@ -7,7 +7,7 @@ import { format, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
 import { useEcharts } from '../composables/useEcharts'
 
-const selectedDefault = ['oficial', 'blue']
+const selectedDefault = ['oficial', 'blue', 'mayorista', 'tarjeta', 'contadoconliqui']
 
 const colorsMap = {
   oficial: colors.gray,
