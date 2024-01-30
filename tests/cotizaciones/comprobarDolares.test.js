@@ -219,9 +219,9 @@ describe('comprobarDolares', () => {
       const fechaFinal = parseISO(ultimaFecha)
 
       while (fechaActual <= fechaFinal) {
-        casas.forEach((casa) => {
+        for (const casa of casas) {
           if (casa === 'solidario' && fechaActual > parseISO(finSolidario)) {
-            return
+            continue
           }
 
           const existe = dolaresCollect
@@ -231,7 +231,7 @@ describe('comprobarDolares', () => {
 
           if (existe) {
             output.push(existe)
-            return
+            continue
           }
 
           const fechaCopiada = new Date(fechaActual)
@@ -252,7 +252,7 @@ describe('comprobarDolares', () => {
             .toArray()
 
           output.push(...agregar)
-        })
+        }
 
         fechaActual.setDate(fechaActual.getDate() + 1)
       }
