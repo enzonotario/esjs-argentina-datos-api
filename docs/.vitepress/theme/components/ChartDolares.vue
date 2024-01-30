@@ -6,14 +6,6 @@ import { format, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
 import { useEcharts } from '../composables/useEcharts'
 
-const selectedDefault = [
-  'oficial',
-  'blue',
-  'mayorista',
-  'tarjeta',
-  'contadoconliqui',
-]
-
 const colorsMap = {
   oficial: colors.gray,
   blue: colors.blue,
@@ -65,16 +57,69 @@ async function setChartOptions() {
 
   const casas = collect(dolares).pluck('casa').unique().toArray()
 
+  const fechas = collect(dolares).pluck('fecha').unique().sort().toArray()
+
+  const series = collect(dolares)
+    .groupBy('casa')
+    .map((items, casa) => {
+      const valoresCasa = items
+        .sortBy('fecha')
+        .mapWithKeys(item => [item.fecha, item.venta])
+
+      return {
+        name: casa,
+        type: 'line',
+        data: fechas.map((fecha, index) => {
+          return valoresCasa.has(fecha) ? valoresCasa.get(fecha) : null
+        }),
+        itemStyle: {
+          color: colorsMap.hasOwnProperty(casa)
+            ? colorsMap[casa][theme.value === 'dark' ? 300 : 500]
+            : colors.gray[theme.value === 'dark' ? 300 : 500],
+        },
+
+        ...(casa === 'oficial'
+          ? {
+              markLine: {
+                symbol: 'none',
+                data: eventosPresidenciales.map(eleccion => ({
+                  xAxis: eleccion.fecha,
+                  label: {
+                    position: eleccion.tipo === 'asuncion' ? 'end' : 'insideStartTop',
+                    formatter: eleccion.tipo === 'asuncion'
+                      ? [
+                      `{a|${eleccion.evento}}`,
+                        ].join('\n')
+                      : [
+                      `{a|${eleccion.evento} - ${format(
+                        parseISO(eleccion.fecha),
+                        'yyyy',
+                      )}}`,
+                        ].join('\n'),
+
+                    rich: {
+                      a: {
+                        color: theme.value === 'dark' ? 'white' : 'black',
+                        backgroundColor: theme.value === 'dark' ? 'black' : 'white',
+                        borderColor: theme.value === 'dark' ? 'white' : 'black',
+                        borderWidth: 1,
+                        borderRadius: 2,
+                        padding: [2, 4],
+                      },
+                    },
+                  },
+                })),
+              },
+            }
+          : {}
+        ),
+      }
+    })
+    .toArray()
+
   setOptions({
     legend: {
       data: casas,
-      selected: casas.reduce(
-        (carry, casa) => ({
-          ...carry,
-          [casa]: selectedDefault.includes(casa),
-        }),
-        {},
-      ),
     },
     tooltip: {
       trigger: 'axis',
@@ -109,8 +154,8 @@ async function setChartOptions() {
     dataZoom: [
       {
         type: 'inside',
-        start: 5,
-        end: 0,
+        start: 95,
+        end: 100,
       },
       {
         startValue: 0,
@@ -129,8 +174,8 @@ async function setChartOptions() {
     },
     xAxis: {
       type: 'category',
-      data: collect(dolares).pluck('fecha').unique().toArray(),
-      inverse: true,
+      data: fechas,
+      // inverse: true,
       axisLabel: {
         formatter: (value: string) => {
           return format(parseISO(value), 'dd/MM/yyyy')
@@ -145,59 +190,7 @@ async function setChartOptions() {
         },
       },
     },
-    series: [
-      ...collect(dolares)
-        .groupBy('casa')
-        .map((items, casa) => {
-          return {
-            name: casa,
-            type: 'line',
-            data: items.pluck('venta').toArray(),
-            itemStyle: {
-              color: colorsMap.hasOwnProperty(casa)
-                ? colorsMap[casa][theme.value === 'dark' ? 300 : 500]
-                : colors.gray[theme.value === 'dark' ? 300 : 500],
-            },
-
-            ...(casa === 'oficial'
-              ? {
-                  markLine: {
-                    symbol: 'none',
-                    data: eventosPresidenciales.map(eleccion => ({
-                      xAxis: eleccion.fecha,
-                      label: {
-                        position: eleccion.tipo === 'asuncion' ? 'end' : 'insideStartTop',
-                        formatter: eleccion.tipo === 'asuncion'
-                          ? [
-                          `{a|${eleccion.evento}}`,
-                            ].join('\n')
-                          : [
-                          `{a|${eleccion.evento} - ${format(
-                            parseISO(eleccion.fecha),
-                            'yyyy',
-                          )}}`,
-                            ].join('\n'),
-
-                        rich: {
-                          a: {
-                            color: theme.value === 'dark' ? 'white' : 'black',
-                            backgroundColor: theme.value === 'dark' ? 'black' : 'white',
-                            borderColor: theme.value === 'dark' ? 'white' : 'black',
-                            borderWidth: 1,
-                            borderRadius: 2,
-                            padding: [2, 4],
-                          },
-                        },
-                      },
-                    })),
-                  },
-                }
-              : {}
-            ),
-          }
-        })
-        .toArray(),
-    ],
+    series,
   } as any)
 }
 
