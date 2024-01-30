@@ -17,8 +17,8 @@ exportar funcion guardarCotizaciones(cotizaciones, fecha) {
   collect(cotizaciones)
     .groupBy('moneda')
     .mapear((cotizaciones, moneda) => {
-      expandirRuta(`/cotizaciones/${moneda.toLowerCase()}`, cotizaciones, verdadero)
+      expandirRuta(`/cotizaciones/${moneda.toLowerCase()}`, cotizaciones)
     })
 
-  expandirRuta(`/cotizaciones`, cotizaciones, verdadero)
+  expandirRuta(`/cotizaciones`, cotizaciones)
 }

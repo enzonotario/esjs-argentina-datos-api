@@ -114,7 +114,7 @@ describe('comprobarDolares', () => {
       })
   })
 
-  it('comprueba que `dolares/index.json` tiene valores para todas las fechas, desde la primera hasta la última', async () => {
+  it('rellena los días faltantes', async () => {
     const dolares = await leerRuta('/cotizaciones/dolares')
 
     const output = []
@@ -177,5 +177,89 @@ describe('comprobarDolares', () => {
     await escribirRuta('/cotizaciones/dolares', output, true)
 
     expect(fechasFaltantes.length).toBe(0)
+  })
+
+  it('prettify', async () => {
+    const dolares = await leerRuta('/cotizaciones/dolares')
+
+    await escribirRuta(
+      '/cotizaciones/dolares',
+      collect(dolares)
+        .sortBy('fecha')
+        .map((dolar) => ({
+          casa: dolar.casa,
+          compra: dolar.compra,
+          venta: dolar.venta,
+          fecha: dolar.fecha,
+        }))
+        .toArray(),
+      false)
+  })
+
+  it('rellena los dias faltantes por casa', async () => {
+    try {
+      const finSolidario = '2023-12-13'
+
+      const dolares = await leerRuta('/cotizaciones/dolares')
+
+      const output = []
+
+      expect(dolares.length).toBeGreaterThan(0)
+
+      const casas = collect(dolares).pluck('casa').unique().sort().toArray()
+
+      const fechas = collect(dolares).pluck('fecha').unique().sort().toArray()
+
+      const dolaresCollect = collect(dolares)
+
+      const primeraFecha = fechas[0]
+      const ultimaFecha = fechas[fechas.length - 1]
+
+      const fechaActual = parseISO(primeraFecha)
+      const fechaFinal = parseISO(ultimaFecha)
+
+      while (fechaActual <= fechaFinal) {
+        casas.forEach((casa) => {
+          if (casa === 'solidario' && fechaActual > parseISO(finSolidario)) {
+            return
+          }
+
+          const existe = dolaresCollect
+            .where('casa', casa)
+            .where('fecha', format(fechaActual, 'yyyy-MM-dd'))
+            .first()
+
+          if (existe) {
+            output.push(existe)
+            return
+          }
+
+          const fechaCopiada = new Date(fechaActual)
+
+          const agregar = dolaresCollect
+            .where('casa', casa)
+            .where(
+              'fecha',
+              format(
+                new Date(fechaCopiada.setDate(fechaCopiada.getDate() - 1)),
+                'yyyy-MM-dd',
+              ),
+            )
+            .map((dolar) => ({
+              ...dolar,
+              fecha: format(fechaActual, 'yyyy-MM-dd'),
+            }))
+            .toArray()
+
+          output.push(...agregar)
+        })
+
+        fechaActual.setDate(fechaActual.getDate() + 1)
+      }
+
+      await escribirRuta('/cotizaciones/dolares', output, false)
+    } catch (e) {
+      console.log(e)
+    }
   })
 })

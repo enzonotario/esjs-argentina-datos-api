@@ -17,9 +17,8 @@ exportar funcion guardarDolares(dolares, fecha) {
       expandirRuta(
         `/cotizaciones/dolares/${dolares.first().casa}`,
         dolares.toArray(),
-        verdadero,
       )
     })
 
-  expandirRuta(`/cotizaciones/dolares`, dolares, verdadero)
+  expandirRuta(`/cotizaciones/dolares`, dolares)
 }
