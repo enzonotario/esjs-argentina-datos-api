@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { format } from 'date-fns'
 import { extraerDolares } from '@/cotizaciones/extraccion/extraerDolares.esjs'
 import { guardarDolares } from '@/cotizaciones/guardado/guardarDolares.esjs'
-import { leerRuta } from '@/datos/rutas.esjs'
+import { leerRuta } from '@/utils/rutas.esjs'
 
 describe('guardarDolares', () => {
   it('guarda dolares de hoy', async () => {

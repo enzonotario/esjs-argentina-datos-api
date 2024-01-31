@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { format, parseISO } from 'date-fns'
-import { leerRuta, escribirRuta, existeRuta } from '@/datos/rutas.esjs'
+import { format, parseISO, startOfDay, addDays, subDays
+} from 'date-fns'
+import { leerRuta, escribirRuta, existeRuta } from '@/utils/rutas.esjs'
 import { collect } from 'collect.js'
 
 describe('comprobarDolares', () => {
@@ -215,7 +216,7 @@ describe('comprobarDolares', () => {
       const primeraFecha = fechas[0]
       const ultimaFecha = fechas[fechas.length - 1]
 
-      const fechaActual = parseISO(primeraFecha)
+      let fechaActual = parseISO(primeraFecha)
       const fechaFinal = parseISO(ultimaFecha)
 
       while (fechaActual <= fechaFinal) {
@@ -241,7 +242,7 @@ describe('comprobarDolares', () => {
             .where(
               'fecha',
               format(
-                new Date(fechaCopiada.setDate(fechaCopiada.getDate() - 1)),
+                subDays(new Date(fechaCopiada), 1),
                 'yyyy-MM-dd',
               ),
             )
@@ -252,9 +253,10 @@ describe('comprobarDolares', () => {
             .toArray()
 
           output.push(...agregar)
+          dolaresCollect.push(...agregar)
         }
 
-        fechaActual.setDate(fechaActual.getDate() + 1)
+        fechaActual = addDays(fechaActual, 1)
       }
 
       await escribirRuta('/cotizaciones/dolares', output, false)
