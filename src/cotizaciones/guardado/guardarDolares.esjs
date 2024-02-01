@@ -1,4 +1,4 @@
-importar { escribirRuta, expandirRuta } desde '@/datos/rutas.esjs'
+importar { escribirRuta, expandirRuta } desde '@/utils/rutas.esjs'
 importar { format } desde 'date-fns'
 importar { collect } desde 'collect.js'
 
