@@ -53,7 +53,7 @@ async function fetchDolares(casa: string) {
   try {
     return Promise.all(
       Array.from({ length: 7 }).map(async (_, index) => {
-        const date = format(subDays(new Date(), index), 'yyyy/MM/dd')
+        const date = format(subDays(new Date(), index + 1), 'yyyy/MM/dd')
 
         const dolares = await api.get(`/cotizaciones/dolares/${casa}/${date}`)
 
