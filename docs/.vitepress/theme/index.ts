@@ -8,6 +8,7 @@ import ChartFeriados from './components/ChartFeriados.vue'
 import ChartProximoFeriado from './components/ChartProximoFeriado.vue'
 import ChartDolares from './components/ChartDolares.vue'
 import ChartDolaresCasa from './components/ChartDolaresCasa.vue'
+import ChartDolaresCasaFecha from './components/ChartDolaresCasaFecha.vue'
 
 import 'vitepress-theme-openapi/dist/style.css'
 import './style.css'
@@ -25,5 +26,6 @@ export default {
     app.component('ChartProximoFeriado', ChartProximoFeriado)
     app.component('ChartDolares', ChartDolares)
     app.component('ChartDolaresCasa', ChartDolaresCasa)
+    app.component('ChartDolaresCasaFecha', ChartDolaresCasaFecha)
   },
 }

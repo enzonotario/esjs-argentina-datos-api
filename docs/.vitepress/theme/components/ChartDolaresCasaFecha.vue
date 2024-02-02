@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { collect } from 'collect.js'
 import { FwbSelect } from 'flowbite-vue'
 import colors from 'tailwindcss/colors'
-import * as echarts from 'echarts'
-import { format, parseISO } from 'date-fns'
+import { format, parseISO, subDays } from 'date-fns'
 import { useApi } from '../composables/useApi'
 import { useEcharts } from '../composables/useEcharts'
 
@@ -53,13 +51,15 @@ const options = [
 
 async function fetchDolares(casa: string) {
   try {
-    const dolares = collect(await api.get(`/cotizaciones/dolares/${casa}`))
-      .reverse()
-      .groupBy('fecha')
-      .flatten(1)
-      .toArray()
+    return Promise.all(
+      Array.from({ length: 7 }).map(async (_, index) => {
+        const date = format(subDays(new Date(), index), 'yyyy/MM/dd')
 
-    return dolares
+        const dolares = await api.get(`/cotizaciones/dolares/${casa}/${date}`)
+
+        return dolares
+      }),
+    )
   }
   catch (error) {
     return []
@@ -67,15 +67,18 @@ async function fetchDolares(casa: string) {
 }
 
 async function setChartOptions(casa: string) {
-  const dolares = await fetchDolares(casa)
+  const dolares = (await fetchDolares(casa)).reverse()
+
+  dolares.forEach((dolar, index) => {
+    if (index === 0)
+      dolar.variacion = 0
+    else
+      dolar.variacion = Number(dolar.venta - dolares[index - 1].venta).toFixed(2)
+  })
 
   setOptions({
     legend: {
-      data: ['Venta', 'Compra'],
-      selected: {
-        Venta: true,
-        Compra: false,
-      },
+      data: ['Venta', 'Variación'],
     },
     tooltip: {
       trigger: 'axis',
@@ -104,16 +107,6 @@ async function setChartOptions(casa: string) {
         `
       },
     },
-    dataZoom: [
-      {
-        type: 'inside',
-        start: 10,
-        end: 0,
-      },
-      {
-        startValue: 0,
-      },
-    ],
     toolbox: {
       top: 20,
       right: 10,
@@ -125,53 +118,59 @@ async function setChartOptions(casa: string) {
         saveAsImage: {},
       },
     },
-    xAxis: {
-      type: 'category',
-      data: collect(dolares).pluck('fecha').unique().toArray(),
-      inverse: true,
-      axisLabel: {
-        formatter: (value: string) => {
-          return format(parseISO(value), 'dd/MM/yyyy')
+    xAxis: [
+      {
+        type: 'category',
+        data: dolares.map(item => item.fecha),
+        axisLabel: {
+          formatter: (value: string) => {
+            return format(parseISO(value), 'dd/MM/yyyy')
+          },
         },
       },
-    },
-    yAxis: {
-      type: 'value',
-      axisLabel: {
-        formatter: (value: number) => {
-          return `$${value.toFixed(0)}`
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        axisLabel: {
+          formatter: (value: number) => {
+            return `$${value.toFixed(0)}`
+          },
         },
+        min: Math.min(...dolares.map(item => item.venta)) - 10,
+        max: Math.max(...dolares.map(item => item.venta)) + 10,
       },
-    },
+      {
+        type: 'value',
+        axisLabel: {
+          formatter: (value: number) => {
+            return `$${value.toFixed(0)}`
+          },
+        },
+        min: Math.min(...dolares.map(item => item.variacion)) - 10,
+        max: Math.max(...dolares.map(item => item.variacion)) + 10,
+      },
+    ],
     series: [
       {
         name: 'Venta',
+        type: 'line',
         data: dolares.map(item => item.venta),
-        type: 'line',
         itemStyle: {
-          color: colors.indigo[theme.value === 'dark' ? 500 : 300],
+          color: colors.neutral[theme.value === 'dark' ? 100 : 800],
         },
-        areaStyle: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            {
-              offset: 0,
-              color: colors.indigo[theme.value === 'dark' ? 800 : 300],
-            },
-            {
-              offset: 1,
-              color: colors.indigo[theme.value === 'dark' ? 900 : 100],
-            },
-          ]),
-        },
+        yAxisIndex: 0,
       },
-
       {
-        name: 'Compra',
-        data: dolares.map(item => item.compra),
-        type: 'line',
-        itemStyle: {
-          color: colors.gray[500],
-        },
+        name: 'Variación',
+        type: 'bar',
+        data: dolares.map(item => ({
+          value: item.variacion,
+          itemStyle: {
+            color: item.variacion > 0 ? colors.indigo[theme.value === 'dark' ? 500 : 300] : colors.teal[theme.value === 'dark' ? 500 : 300],
+          },
+        })),
+        yAxisIndex: 1,
       },
     ],
   } as any)
@@ -192,7 +191,7 @@ watch(
   <div>
     <div class="flex flex-row items-center space-x-2">
       <h3 style="margin: 0">
-        Cotización de dólar por casa de cambio
+        Variación de los últimos 7 días
       </h3>
 
       <FwbSelect v-model="casa" :options="options" />
