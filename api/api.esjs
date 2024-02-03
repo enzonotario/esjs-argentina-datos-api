@@ -1,0 +1,18 @@
+importar { Hono } desde 'hono'
+importar { cors } desde 'hono/cors'
+importar fs desde 'node:fs'
+
+exportar const app = crear Hono()
+
+app.use('*', cors())
+
+app.get('/v1/cotizaciones/dolares', asincrono (c) => {
+  const json = fs.readFileSync(
+    './datos/v1/cotizaciones/dolares/index.json',
+    'utf8',
+  )
+
+  retornar c.json(JSON.analizar(json))
+})
+
+exportar porDefecto app

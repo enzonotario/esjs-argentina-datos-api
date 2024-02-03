@@ -11,11 +11,15 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "cron": "node ./dist/index.js"
+    "cron": "node ./dist/index.js",
+    "api:dev": "vite --config vite.api.config.js --host",
+    "api:build": "vite build --config vite.api.config.js --ssr --mode=production"
   },
   "devDependencies": {
     "@es-js/core": "^0.0.20",
     "@es-js/vite-plugin-esjs": "^0.0.15",
+    "@hono/vite-dev-server": "^0.0.12",
+    "hono": "^3.9.0",
     "cheerio": "1.0.0-rc.12",
     "collect.js": "^4.36.1",
     "date-fns": "^3.2.0",
