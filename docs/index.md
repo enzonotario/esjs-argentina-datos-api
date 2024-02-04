@@ -49,10 +49,6 @@ API pública, **no oficial**, desarrollada en [EsJS](https://es.js.org?ref=argen
 
 ¿Encontraste útil esta API? **¡Dejá tu ⭐ en [GitHub](https://github.com/enzonotario/esjs-argentina-datos-api)!**
 
-## Demo
-
-[App.ArgentinaDatos.com](https://app.argentinadatos.com)
-
 ## Base URL
 
 ```
