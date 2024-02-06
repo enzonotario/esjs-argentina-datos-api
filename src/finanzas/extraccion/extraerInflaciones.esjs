@@ -1,0 +1,40 @@
+importar { load } desde 'cheerio'
+importar { format, analizar } desde 'date-fns'
+
+asincrono funcion obtenerHtml(desde, hasta) {
+  const url =
+    'https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables_datos.asp'
+  const respuesta = esperar fetch(url, {
+    method: 'POST',
+    body: crear URLSearchParams({
+      fecha_desde: desde,
+      fecha_hasta: hasta,
+      primeravez: '1',
+      serie: '7931',
+    }),
+  })
+
+  const html = esperar respuesta.text()
+
+  retornar html
+}
+
+exportar asincrono funcion extraerInflaciones(desde, hasta) {
+  const $ = load(esperar obtenerHtml(desde, hasta))
+
+  const tabla = $('table')
+
+  const inflaciones = []
+
+  tabla.buscar('tbody tr').each((i, tr) => {
+    const fecha = $(tr).buscar('td').eq(0).text()
+    const valor = $(tr).buscar('td').eq(1).text()
+
+    inflaciones.agregar({
+      fecha: format(analizar(fecha, 'dd/MM/yyyy', crear Fecha()), 'yyyy-MM-dd'),
+      valor: Numero(valor.recortarEspacios().reemplazar(',', '.')),
+    })
+  })
+
+  retornar inflaciones
+}

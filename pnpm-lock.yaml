@@ -5,12 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@es-js/core':
-    specifier: ^0.0.20
-    version: 0.0.20
   '@es-js/vite-plugin-esjs':
-    specifier: ^0.0.15
-    version: 0.0.15
+    specifier: ^0.0.16
+    version: 0.0.16
   '@hono/vite-dev-server':
     specifier: ^0.0.12
     version: 0.0.12
@@ -102,14 +99,14 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@es-js/core@0.0.20:
-    resolution: {integrity: sha512-UAyZXOku2vm45LGtAD70rY/R1NHg8hjLPLQIScmV5NQdB4uN02XtvK4UCt92jiT+2PQnAzxBNaj2BMLuYdhtfA==}
+  /@es-js/core@0.0.21:
+    resolution: {integrity: sha512-zsyGS4Atu9n5g1eMEDBy/KA82G9hybDoa5Ky6isyfDRw6QGfL+IPnTCpL1lbgYiVtsfxGxZP5i7AeDIalyptmA==}
     dev: true
 
-  /@es-js/vite-plugin-esjs@0.0.15:
-    resolution: {integrity: sha512-F5YYMsAV6ILWVqjxFE88iTQC2EzAT+QtirgMcv+CBQhRJtqfMlWbhiv1fTrO5mvlcQvZLQcj4tleSC3o9dZgtw==}
+  /@es-js/vite-plugin-esjs@0.0.16:
+    resolution: {integrity: sha512-Sl9fceL0KDa8UTvnj859JbJSTeP3Jzepo+PlYprb0z6QclRUVf/Gy9qF4u0zjWpvxeSrf0HiAWFiNna7LfuqjQ==}
     dependencies:
-      '@es-js/core': 0.0.20
+      '@es-js/core': 0.0.21
       vite: 4.5.1
     transitivePeerDependencies:
       - '@types/node'

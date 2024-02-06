@@ -6,13 +6,14 @@ exportar const app = crear Hono()
 
 app.use('*', cors())
 
-app.get('/v1/cotizaciones/dolares', asincrono (c) => {
-  const json = fs.readFileSync(
-    './datos/v1/cotizaciones/dolares/index.json',
-    'utf8',
-  )
+funcion registrarRuta(ruta) {
+  app.get(ruta, asincrono (c) => {
+    const json = fs.readFileSync(`./datos${ruta}/index.json`, 'utf8')
+    retornar c.json(JSON.analizar(json))
+  })
+}
 
-  retornar c.json(JSON.analizar(json))
-})
+registrarRuta('/v1/cotizaciones/dolares')
+registrarRuta('/v1/finanzas/indices/inflacion')
 
 exportar porDefecto app
