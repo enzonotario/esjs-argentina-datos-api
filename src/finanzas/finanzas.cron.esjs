@@ -1,0 +1,14 @@
+importar { extraerInflaciones } desde '@/finanzas/extraccion/extraerInflaciones.esjs'
+importar { guardarInflaciones } desde '@/finanzas/guardado/guardarInflaciones.esjs'
+importar { subMonths, addMonths, format } desde 'date-fns'
+
+exportar asincrono funcion cronInflaciones() {
+  const hoy = crear Fecha()
+
+  const inflaciones = esperar extraerInflaciones(
+    format(subMonths(hoy, 3), 'yyyy-MM-dd'),
+    format(addMonths(hoy, 3), 'yyyy-MM-dd'),
+  )
+
+  retornar guardarInflaciones(inflaciones)
+}
