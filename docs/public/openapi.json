@@ -233,6 +233,37 @@
         ]
       }
     },
+    "/v1/finanzas/indices/inflacion": {
+      "get": {
+        "summary": "Índices de inflación",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Devuelve los índices de inflación mensuales.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de índices de inflación",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IndiceInflacion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-indices-inflacion",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/inflacion\""
+          }
+        ]
+      }
+    },
     "/v1/estado": {
       "get": {
         "summary": "Estado de la API",
@@ -349,6 +380,24 @@
           "Example 1": {
             "fecha": "2020-01-01",
             "evento": "Año Nuevo"
+          }
+        }
+      },
+      "IndiceInflacion": {
+        "title": "IndiceInflacion",
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string"
+          },
+          "valor": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "mes": "Enero",
+            "indice": 2.3
           }
         }
       }

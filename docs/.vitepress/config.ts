@@ -61,6 +61,12 @@ export default defineConfigWithTheme({
         ],
       },
       {
+        text: 'Finanzas',
+        items: [
+          addDocsPrefix(sidebar.generateSidebarGroup('Finanzas')),
+        ],
+      },
+      {
         text: 'API',
         items: [
           addDocsPrefix(sidebar.generateSidebarGroup('API')),
