@@ -5,8 +5,9 @@ exportar asincrono funcion extraerCotizaciones() {
 
   const cotizaciones = esperar Promesa.todos(
     monedas.mapear((moneda) =>
-      fetch(`https://dolarapi.com/v1/cotizaciones/${moneda}`)
-        .luego((respuesta) => respuesta.json())
+      fetch(`https://dolarapi.com/v1/cotizaciones/${moneda}`).luego(
+        (respuesta) => respuesta.json(),
+      ),
     ),
   )
 

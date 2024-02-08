@@ -4,9 +4,9 @@ importar { leerRuta } desde '@/utils/rutas.esjs'
 exportar asincrono funcion guardarInflaciones(items) {
   const actual = esperar leerRuta('/finanzas/indices/inflacion')
 
-  for (const item of items) {
-    if (!actual.find((i) => i.fecha === item.fecha)) {
-      actual.push(item)
+  para (const item de items) {
+    si (!actual.buscar((i) => i.fecha === item.fecha)) {
+      actual.agregar(item)
     }
   }
 

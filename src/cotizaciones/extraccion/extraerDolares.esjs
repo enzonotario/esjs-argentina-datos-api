@@ -1,4 +1,4 @@
-import { format } from 'date-fns'
+importar { format } desde 'date-fns'
 
 exportar asincrono funcion extraerDolares() {
   const respuesta = esperar fetch('https://dolarapi.com/v1/dolares')
