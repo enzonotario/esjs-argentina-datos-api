@@ -1,6 +1,6 @@
 importar { cronFeriados } desde '@/feriados/feriados.cron.esjs'
 importar { cronCotizaciones } desde '@/cotizaciones/cotizaciones.cron.esjs'
-importar { cronInflaciones } desde '@/finanzas/finanzas.cron.esjs'
+importar { cronFinanzas } desde '@/finanzas/finanzas.cron.esjs'
 
 const predefinidos = {
   diario: ['/v1/cotizaciones', '/v1/finanzas/indices/inflacion'],
@@ -33,7 +33,10 @@ exportar asincrono funcion iniciar(comando) {
       esperar cronCotizaciones()
       romper
     caso '/v1/finanzas/indices/inflacion':
-      esperar cronInflaciones()
+      esperar cronFinanzas()
+      romper
+    caso '/v1/finanzas/indices/inflacionInteranual':
+      esperar cronFinanzas()
       romper
     porDefecto:
       consola.escribir('No se encontro el comando')

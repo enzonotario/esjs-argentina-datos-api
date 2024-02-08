@@ -2,8 +2,8 @@ importar { load } desde 'cheerio'
 importar { format, analizar } desde 'date-fns'
 importar { extraerBcra } desde '@/extractores/bcra.extractor.esjs'
 
-exportar asincrono funcion extraerInflaciones(desde, hasta) {
-  const html = esperar extraerBcra('7931', desde, hasta)
+exportar asincrono funcion extraerInflacionesInteranual(desde, hasta) {
+  const html = esperar extraerBcra('7932', desde, hasta)
 
   const $ = load(html)
 

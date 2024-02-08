@@ -13,7 +13,20 @@ funcion registrarRuta(ruta) {
   })
 }
 
-registrarRuta('/v1/cotizaciones/dolares')
-registrarRuta('/v1/finanzas/indices/inflacion')
+funcion registrarRutas(directorio) {
+  const archivos = fs.readdirSync(directorio)
+  para (const archivo de archivos) {
+    const ruta = `${directorio}/${archivo}`
+    si (fs.statSync(ruta).isDirectory()) {
+      registrarRutas(ruta)
+    } sino {
+      registrarRuta(
+        ruta.reemplazar(/^\.\/datos/, '').reemplazar(/\/index\.json$/, ''),
+      )
+    }
+  }
+}
+
+registrarRutas('./datos')
 
 exportar porDefecto app

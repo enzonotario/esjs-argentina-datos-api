@@ -261,7 +261,40 @@
             "lang": "curl",
             "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/inflacion\""
           }
-        ]
+        ],
+        "x-sidebar-title": "Inflación mensual"
+      }
+    },
+    "/v1/finanzas/indices/inflacionInteranual": {
+      "get": {
+        "summary": "Índices de inflación interanuales",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Devuelve los índices de inflación interanuales.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de índices de inflación",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IndiceInflacion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-indices-inflacion-interanual",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/inflacionInteranual\""
+          }
+        ],
+        "x-sidebar-title": "Inflación interanual"
       }
     },
     "/v1/estado": {

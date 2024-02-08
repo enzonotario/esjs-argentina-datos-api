@@ -1,0 +1,16 @@
+exportar asincrono funcion extraerBcra(serie, desde, hasta) {
+  const url =
+    'https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables_datos.asp'
+
+  const respuesta = esperar fetch(url, {
+    method: 'POST',
+    body: crear URLSearchParams({
+      fecha_desde: desde,
+      fecha_hasta: hasta,
+      primeravez: '1',
+      serie: serie,
+    }),
+  })
+
+  retornar respuesta.text()
+}

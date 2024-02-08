@@ -1,0 +1,14 @@
+importar { escribirRuta } desde '@/utils/rutas.esjs'
+importar { leerRuta } desde '@/utils/rutas.esjs'
+
+exportar asincrono funcion guardarInflacionesInteranual(items) {
+  const actual = esperar leerRuta('/finanzas/indices/inflacionInteranual')
+
+  para (const item de items) {
+    si (!actual.buscar((i) => i.fecha === item.fecha)) {
+      actual.agregar(item)
+    }
+  }
+
+  retornar escribirRuta('/finanzas/indices/inflacionInteranual', actual)
+}

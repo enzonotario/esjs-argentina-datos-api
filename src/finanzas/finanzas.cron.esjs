@@ -1,8 +1,16 @@
 importar { extraerInflaciones } desde '@/finanzas/extraccion/extraerInflaciones.esjs'
 importar { guardarInflaciones } desde '@/finanzas/guardado/guardarInflaciones.esjs'
+importar { extraerInflacionesInteranual } desde '@/finanzas/extraccion/extraerInflacionesInteranual.esjs'
+importar { guardarInflacionesInteranual } desde '@/finanzas/guardado/guardarInflacionesInteranual.esjs'
+
 importar { subMonths, addMonths, format } desde 'date-fns'
 
-exportar asincrono funcion cronInflaciones() {
+exportar asincrono funcion cronFinanzas() {
+  esperar inflacionMensual()
+  esperar inflacionInteranual()
+}
+
+asincrono funcion inflacionMensual() {
   const hoy = crear Fecha()
 
   const inflaciones = esperar extraerInflaciones(
@@ -10,5 +18,16 @@ exportar asincrono funcion cronInflaciones() {
     format(addMonths(hoy, 3), 'yyyy-MM-dd'),
   )
 
-  retornar guardarInflaciones(inflaciones)
+  esperar guardarInflaciones(inflaciones)
+}
+
+asincrono funcion inflacionInteranual() {
+  const hoy = crear Fecha()
+
+  const inflaciones = esperar extraerInflacionesInteranual(
+    format(subMonths(hoy, 3), 'yyyy-MM-dd'),
+    format(addMonths(hoy, 3), 'yyyy-MM-dd'),
+  )
+
+  esperar guardarInflacionesInteranual(inflaciones)
 }
