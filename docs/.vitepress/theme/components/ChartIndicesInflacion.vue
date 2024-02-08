@@ -51,6 +51,15 @@ async function setChartOptions() {
     },
     tooltip: {
       trigger: 'axis',
+      formatter: (params: any) => {
+        const date = format(parseISO(params[0].value[0]), 'MM/yyyy')
+        const value = params[0].value[1]
+
+        return `<div class="flex flex-col">
+          <span class="text-xs">${format(parseISO(params[0].value[0]), 'MMMM')}</span>
+          <div class="text-md">${date}: <span class="font-bold">${value}%</span></div>
+        </div>`
+      },
     },
 
     xAxis: {
@@ -126,7 +135,7 @@ onMounted(async () => {
 
 <template>
   <div>
-    <h3>Inflación</h3>
+    <h3>Inflación mensual</h3>
 
     <div ref="chartRef" class="h-[50rem]" />
   </div>

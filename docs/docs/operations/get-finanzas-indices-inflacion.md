@@ -22,7 +22,7 @@ const { isDark } = useData()
 
 <template #description="description">
 
-Devuelve los índices de inflación.
+Devuelve los índices de inflación mensuales.
 
 <!--@include: ./parts/get-finanzas-indices-inflacion-description-after.md -->
 
