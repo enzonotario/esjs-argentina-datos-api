@@ -303,7 +303,7 @@
         "tags": [
           "Finanzas"
         ],
-        "description": "Tasa Nominal Anual para colocaciones online de $100.000 a 30 días.(*).\n\nEste endpoint proporciona una tabla comparativa de tasas de plazo fijo para colocaciones online de $100.000 a 30 días. La tabla incluye tasas ofrecidas por los 10 bancos con mayor volumen de depósitos, así como tasas de otros bancos que informaron la tasa ofrecida a no clientes.\n\nLas tasas son reportadas por los bancos al BCRA en cumplimiento del Régimen Informativo de Transparencia, capítulo I.\n\nSin costo para los usuarios, sin papeleo ni otros trámites. Los usuarios pueden realizar plazos fijos directamente a través de los enlaces proporcionados.\n\n(*): La tasa puede cambiar para otros montos o plazos.",
+        "description": "Tasa Nominal Anual para colocaciones online de $100.000 a 30 días.(*).\n\nLas tasas son reportadas por los bancos al BCRA en cumplimiento del Régimen Informativo de Transparencia, capítulo I.\n\n(*): La tasa puede cambiar para otros montos o plazos.",
         "responses": {
           "200": {
             "description": "Devuelve una lista de tasas de plazo fijo",
@@ -473,13 +473,24 @@
             "type": "string"
           },
           "logo": {
-            "type": "string"
+            "type": "string",
+            "format": "uri",
+            "nullable": true,
+            "description": "URL del logo de la entidad"
           },
           "tnaClientes": {
-            "type": "number"
+            "type": "number",
+            "description": "Tasa Nominal Anual para clientes, en porcentaje",
+            "example": 123.45,
+            "format": "float",
+            "nullable": true
           },
           "tnaNoClientes": {
-            "type": "number"
+            "type": "number",
+            "description": "Tasa Nominal Anual para no clientes, en porcentaje",
+            "example": 123.45,
+            "format": "float",
+            "nullable": true
           }
         },
         "x-examples": {

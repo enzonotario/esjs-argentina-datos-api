@@ -24,11 +24,7 @@ const { isDark } = useData()
 
 Tasa Nominal Anual para colocaciones online de $100.000 a 30 días.(*).
 
-Este endpoint proporciona una tabla comparativa de tasas de plazo fijo para colocaciones online de $100.000 a 30 días. La tabla incluye tasas ofrecidas por los 10 bancos con mayor volumen de depósitos, así como tasas de otros bancos que informaron la tasa ofrecida a no clientes.
-
 Las tasas son reportadas por los bancos al BCRA en cumplimiento del Régimen Informativo de Transparencia, capítulo I.
-
-Sin costo para los usuarios, sin papeleo ni otros trámites. Los usuarios pueden realizar plazos fijos directamente a través de los enlaces proporcionados.
 
 (*): La tasa puede cambiar para otros montos o plazos.
 
