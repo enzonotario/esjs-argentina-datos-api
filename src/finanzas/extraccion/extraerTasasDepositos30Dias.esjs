@@ -1,0 +1,35 @@
+importar { load } desde 'cheerio'
+importar { format, analizar } desde 'date-fns'
+importar { extraerBcra } desde '@/extractores/bcra.extractor.esjs'
+
+exportar asincrono funcion extraerTasasDepositos30Dias(desde, hasta) {
+  const html = esperar extraerBcra('1212', desde, hasta)
+
+  const $ = load(html)
+
+  const tabla = $('table')
+
+  const items = []
+
+  tabla.buscar('tbody tr').each((i, tr) => {
+    const fecha = $(tr).buscar('td').eq(0).text()
+    const valor = $(tr).buscar('td').eq(1).text()
+
+    items.agregar({
+      fecha: format(analizar(fecha, 'dd/MM/yyyy', crear Fecha()), 'yyyy-MM-dd'),
+      valor: interpretarPorcentaje(valor),
+    })
+  })
+
+  retornar items
+}
+
+funcion interpretarPorcentaje(valor) {
+  const porcentaje = Numero(valor.reemplazar(',', '.').reemplazar('%', ''))
+
+  si (!porcentaje) {
+    retornar nulo
+  }
+
+  retornar interpretarDecimal((Numero(porcentaje) / 100).fijarDecimales(4))
+}

@@ -4,13 +4,16 @@ importar { extraerInflacionesInteranual } desde '@/finanzas/extraccion/extraerIn
 importar { guardarInflacionesInteranual } desde '@/finanzas/guardado/guardarInflacionesInteranual.esjs'
 importar { extraerPlazoFijo } desde '@/finanzas/extraccion/extraerPlazoFijo.esjs'
 importar { guardarPlazoFijo } desde '@/finanzas/guardado/guardarPlazoFijo.esjs'
+importar { extraerTasasDepositos30Dias } desde '@/finanzas/extraccion/extraerTasasDepositos30Dias.esjs'
+importar { guardarTasasDepositos30Dias } desde '@/finanzas/guardado/guardarTasasDepositos30Dias.esjs'
 
-importar { subMonths, addMonths, format } desde 'date-fns'
+importar { subMonths, addMonths, format, subDays, addDays } desde 'date-fns'
 
 exportar asincrono funcion cronFinanzas() {
   esperar inflacionMensual()
   esperar inflacionInteranual()
   esperar plazoFijo()
+  esperar tasasDepositos30Dias()
 }
 
 asincrono funcion inflacionMensual() {
@@ -39,4 +42,15 @@ asincrono funcion plazoFijo() {
   const tasas = esperar extraerPlazoFijo()
 
   esperar guardarPlazoFijo(tasas)
+}
+
+asincrono funcion tasasDepositos30Dias() {
+  const hoy = crear Fecha()
+
+  const tasas = esperar extraerTasasDepositos30Dias(
+    format(subDays(hoy, 7), 'yyyy-MM-dd'),
+    format(addDays(hoy, 7), 'yyyy-MM-dd'),
+  )
+
+  esperar guardarTasasDepositos30Dias(tasas)
 }

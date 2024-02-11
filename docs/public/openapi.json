@@ -7,11 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://api.argentinadatos.com",
-      "description": "Producción"
-    },
-    {
-      "url": "http://localhost:5173",
+      "url": "http://localhost:5174",
       "description": "Local"
     }
   ],
@@ -328,6 +324,38 @@
         ]
       }
     },
+    "/v1/finanzas/tasas/depositos30Dias": {
+      "get": {
+        "summary": "Tasas de depósitos a 30 días",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Tasas de interés por depósitos a 30 días de plazo.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de tasas de interés por depósitos a 30 días",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TasaInteres"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-tasas-depositos-30-dias",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/tasas/depositos30Dias\""
+          }
+        ],
+        "x-sidebar-title": "Tasas depósitos 30d"
+      }
+    },
     "/v1/estado": {
       "get": {
         "summary": "Estado de la API",
@@ -500,6 +528,24 @@
             "tnaNoClientes": 123.45,
             "logo": null,
             "link": null
+          }
+        }
+      },
+      "TasaInteres": {
+        "title": "TasaInteres",
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string"
+          },
+          "valor": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "entidad": "Banco de la Nación Argentina",
+            "tna": 123.45
           }
         }
       }
