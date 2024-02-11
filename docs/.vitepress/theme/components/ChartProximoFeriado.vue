@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
-import { differenceInDays, format, parseISO } from 'date-fns'
+import { differenceInDays, format, isToday, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
 
 const api = useApi()
@@ -30,9 +30,24 @@ const proximosFeriados = computed(() => {
   const today = new Date()
 
   return collect(feriados.value)
-    .filter(feriado => parseISO(feriado.fecha) > today)
+    .filter(feriado => parseISO(feriado.fecha) >= today)
     .toArray()
 })
+
+function formatLabel(date) {
+  if (isToday(date))
+    return 'Hoy'
+
+  const days = differenceInDays(date, new Date())
+
+  if (days === 0)
+    return 'Mañana'
+
+  if (days === 1)
+    return 'Pasado mañana'
+
+  return format(date, 'eeee')
+}
 </script>
 
 <template>
@@ -45,13 +60,7 @@ const proximosFeriados = computed(() => {
       <div v-for="(feriado, idx) in proximosFeriados" :key="idx" class="flex flex-row space-x-2">
         <div class="flex flex-col">
           <span>
-            {{
-              differenceInDays(parseISO(feriado.fecha), new Date()) === 0
-                ? 'Hoy'
-                : differenceInDays(parseISO(feriado.fecha), new Date()) === 1
-                  ? 'Mañana'
-                  : `Faltan ${differenceInDays(parseISO(feriado.fecha), new Date())} días`
-            }}
+            {{ formatLabel(parseISO(feriado.fecha)) }}
           </span>
 
           <div class="flex flex-col flex-1 space-y-1 p-2 rounded border mr-auto min-w-[15rem]">
