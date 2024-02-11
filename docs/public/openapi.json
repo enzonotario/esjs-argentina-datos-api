@@ -7,7 +7,11 @@
   },
   "servers": [
     {
-      "url": "http://localhost:5174",
+      "url": "https://api.argentinadatos.com",
+      "description": "Producción"
+    },
+    {
+      "url": "http://localhost:5173",
       "description": "Local"
     }
   ],
