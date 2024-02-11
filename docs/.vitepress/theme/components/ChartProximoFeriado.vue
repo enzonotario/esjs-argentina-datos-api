@@ -46,7 +46,7 @@ function formatLabel(date) {
   if (days === 1)
     return 'Pasado mañana'
 
-  return format(date, 'eeee')
+  return `Faltan ${days} días`
 }
 </script>
 
