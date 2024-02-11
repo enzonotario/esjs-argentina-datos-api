@@ -293,6 +293,37 @@
         "x-sidebar-title": "Inflación interanual"
       }
     },
+    "/v1/finanzas/indices/uva": {
+      "get": {
+        "summary": "Índices UVA",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Devuelve los índices UVA.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de índices UVA",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IndiceUVA"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-indices-uva",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/uva\""
+          }
+        ]
+      }
+    },
     "/v1/finanzas/tasas/plazoFijo": {
       "get": {
         "summary": "Tasas de plazo fijo",
@@ -477,6 +508,24 @@
       },
       "IndiceInflacion": {
         "title": "IndiceInflacion",
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string"
+          },
+          "valor": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "mes": "Enero",
+            "indice": 2.3
+          }
+        }
+      },
+      "IndiceUVA": {
+        "title": "IndiceUVA",
         "type": "object",
         "properties": {
           "fecha": {

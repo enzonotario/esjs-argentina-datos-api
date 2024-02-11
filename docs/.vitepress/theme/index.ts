@@ -16,6 +16,7 @@ import ChartIndicesInflacion from './components/ChartIndicesInflacion.vue'
 import ChartIndicesInflacionInteranual from './components/ChartIndicesInflacionInteranual.vue'
 import ChartTasasPlazoFijo from './components/ChartTasasPlazoFijo.vue'
 import ChartTasasDepositos30Dias from './components/ChartTasasDepositos30Dias.vue'
+import ChartIndicesUva from './components/ChartIndicesUva.vue'
 
 import 'vitepress-theme-openapi/dist/style.css'
 import './style.css'
@@ -41,5 +42,6 @@ export default {
     app.component('ChartIndicesInflacionInteranual', ChartIndicesInflacionInteranual)
     app.component('ChartTasasPlazoFijo', ChartTasasPlazoFijo)
     app.component('ChartTasasDepositos30Dias', ChartTasasDepositos30Dias)
+    app.component('ChartIndicesUva', ChartIndicesUva)
   },
 }

@@ -8,7 +8,7 @@ describe('guardarDepositos30Dias', () => {
   it('guarda los depósitos a 30 días', async () => {
     const items = await extraerTasasDepositos30Dias(
       format(subDays(new Date(), 7), 'yyyy-MM-dd'),
-      format(addDays(new Date(), 7), 'yyyy-MM-dd')
+      format(addDays(new Date(), 1), 'yyyy-MM-dd')
     )
 
     expect(items.length).toBeGreaterThan(0)

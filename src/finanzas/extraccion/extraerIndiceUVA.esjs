@@ -1,0 +1,25 @@
+importar { load } desde 'cheerio'
+importar { format, analizar } desde 'date-fns'
+importar { extraerBcra } desde '@/extractores/bcra.extractor.esjs'
+
+exportar asincrono funcion extraerIndiceUVA(desde, hasta) {
+  const html = esperar extraerBcra('7913', desde, hasta)
+
+  const $ = load(html)
+
+  const tabla = $('table')
+
+  const items = []
+
+  tabla.buscar('tbody tr').each((i, tr) => {
+    const fecha = $(tr).buscar('td').eq(0).text()
+    const valor = $(tr).buscar('td').eq(1).text()
+
+    items.agregar({
+      fecha: format(analizar(fecha, 'dd/MM/yyyy', crear Fecha()), 'yyyy-MM-dd'),
+      valor: Numero(valor.reemplazar(',', '.')),
+    })
+  })
+
+  retornar items
+}

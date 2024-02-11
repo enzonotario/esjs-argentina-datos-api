@@ -6,6 +6,8 @@ importar { extraerPlazoFijo } desde '@/finanzas/extraccion/extraerPlazoFijo.esjs
 importar { guardarPlazoFijo } desde '@/finanzas/guardado/guardarPlazoFijo.esjs'
 importar { extraerTasasDepositos30Dias } desde '@/finanzas/extraccion/extraerTasasDepositos30Dias.esjs'
 importar { guardarTasasDepositos30Dias } desde '@/finanzas/guardado/guardarTasasDepositos30Dias.esjs'
+importar { extraerIndiceUVA } desde '@/finanzas/extraccion/extraerIndiceUVA.esjs'
+importar { guardarIndiceUVA } desde '@/finanzas/guardado/guardarIndiceUVA.esjs'
 
 importar { subMonths, addMonths, format, subDays, addDays } desde 'date-fns'
 
@@ -14,6 +16,7 @@ exportar asincrono funcion cronFinanzas() {
   esperar inflacionInteranual()
   esperar plazoFijo()
   esperar tasasDepositos30Dias()
+  esperar indiceUVA()
 }
 
 asincrono funcion inflacionMensual() {
@@ -49,8 +52,19 @@ asincrono funcion tasasDepositos30Dias() {
 
   const tasas = esperar extraerTasasDepositos30Dias(
     format(subDays(hoy, 7), 'yyyy-MM-dd'),
-    format(addDays(hoy, 7), 'yyyy-MM-dd'),
+    format(addDays(hoy, 1), 'yyyy-MM-dd'),
   )
 
   esperar guardarTasasDepositos30Dias(tasas)
+}
+
+asincrono funcion indiceUVA() {
+  const hoy = crear Fecha()
+
+  const indices = esperar extraerIndiceUVA(
+    format(subDays(hoy, 7), 'yyyy-MM-dd'),
+    format(addDays(hoy, 1), 'yyyy-MM-dd'),
+  )
+
+  esperar guardarIndiceUVA(indices)
 }
