@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { extraerInflaciones } from '@/finanzas/extraccion/extraerInflaciones'
+import { extraerInflaciones } from '@/finanzas/extraccion/extraerInflaciones.esjs'
 
 describe('extraerInflaciones', () => {
   it('extrae los inflaciones del año', async () => {
