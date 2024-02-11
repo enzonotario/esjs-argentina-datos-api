@@ -297,6 +297,37 @@
         "x-sidebar-title": "Inflación interanual"
       }
     },
+    "/v1/finanzas/tasas/plazoFijo": {
+      "get": {
+        "summary": "Tasas de plazo fijo",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Tasa Nominal Anual para colocaciones online de $100.000 a 30 días.(*).\n\nEste endpoint proporciona una tabla comparativa de tasas de plazo fijo para colocaciones online de $100.000 a 30 días. La tabla incluye tasas ofrecidas por los 10 bancos con mayor volumen de depósitos, así como tasas de otros bancos que informaron la tasa ofrecida a no clientes.\n\nLas tasas son reportadas por los bancos al BCRA en cumplimiento del Régimen Informativo de Transparencia, capítulo I.\n\nSin costo para los usuarios, sin papeleo ni otros trámites. Los usuarios pueden realizar plazos fijos directamente a través de los enlaces proporcionados.\n\n(*): La tasa puede cambiar para otros montos o plazos.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de tasas de plazo fijo",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TasaPlazoFijo"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-tasas-plazo-fijo",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/tasas/plazoFijo\""
+          }
+        ]
+      }
+    },
     "/v1/estado": {
       "get": {
         "summary": "Estado de la API",
@@ -406,7 +437,7 @@
             "type": "string"
           },
           "evento": {
-              "type": "string"
+            "type": "string"
           }
         },
         "x-examples": {
@@ -431,6 +462,33 @@
           "Example 1": {
             "mes": "Enero",
             "indice": 2.3
+          }
+        }
+      },
+      "TasaPlazoFijo": {
+        "title": "TasaPlazoFijo",
+        "type": "object",
+        "properties": {
+          "entidad": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "tnaClientes": {
+            "type": "number"
+          },
+          "tnaNoClientes": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "entidad": "Banco de la Nación Argentina",
+            "tnaClientes": 123.45,
+            "tnaNoClientes": 123.45,
+            "logo": null,
+            "link": null
           }
         }
       }

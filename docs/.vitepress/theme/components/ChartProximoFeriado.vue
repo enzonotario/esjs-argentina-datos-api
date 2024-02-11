@@ -46,9 +46,11 @@ const proximosFeriados = computed(() => {
         <div class="flex flex-col">
           <span>
             {{
-              differenceInDays(parseISO(feriado.fecha), new Date()) === 1
-                ? 'Mañana'
-                : `Faltan ${differenceInDays(parseISO(feriado.fecha), new Date())} días`
+              differenceInDays(parseISO(feriado.fecha), new Date()) === 0
+                ? 'Hoy'
+                : differenceInDays(parseISO(feriado.fecha), new Date()) === 1
+                  ? 'Mañana'
+                  : `Faltan ${differenceInDays(parseISO(feriado.fecha), new Date())} días`
             }}
           </span>
 

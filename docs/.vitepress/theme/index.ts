@@ -12,6 +12,7 @@ import ChartDolaresCasaFecha from './components/ChartDolaresCasaFecha.vue'
 import ChartEventosPresidenciales from './components/ChartEventosPresidenciales.vue'
 import ChartIndicesInflacion from './components/ChartIndicesInflacion.vue'
 import ChartIndicesInflacionInteranual from './components/ChartIndicesInflacionInteranual.vue'
+import ChartTasasPlazoFijo from './components/ChartTasasPlazoFijo.vue'
 
 import 'vitepress-theme-openapi/dist/style.css'
 import './style.css'
@@ -33,5 +34,6 @@ export default {
     app.component('ChartEventosPresidenciales', ChartEventosPresidenciales)
     app.component('ChartIndicesInflacion', ChartIndicesInflacion)
     app.component('ChartIndicesInflacionInteranual', ChartIndicesInflacionInteranual)
+    app.component('ChartTasasPlazoFijo', ChartTasasPlazoFijo)
   },
 }

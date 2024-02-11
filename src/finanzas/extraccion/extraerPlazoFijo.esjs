@@ -1,0 +1,46 @@
+importar { load } desde 'cheerio'
+importar { format, analizar } desde 'date-fns'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerPlazoFijo() {
+  const respuesta = esperar axios.get(
+    'https://www.bcra.gob.ar/BCRAyVos/Plazos_fijos_online.asp',
+    {
+      responseType: 'arraybuffer',
+    },
+  )
+
+  const $ = load(respuesta.data.aCadena('latin1'))
+
+  const tabla = $('table')
+
+  const items = []
+
+  tabla.buscar('tbody tr').each((i, tr) => {
+    const entidad = $(tr).buscar('td').eq(0).text()
+    const logo = $(tr).buscar('td').eq(1).buscar('img').attr('src')
+    const tnaClientes = interpretarPorcentaje($(tr).buscar('td').eq(2).text())
+    const tnaNoClientes = interpretarPorcentaje($(tr).buscar('td').eq(3).text())
+    const enlace = $(tr).buscar('td').eq(4).buscar('a').attr('href')
+
+    items.agregar({
+      entidad: entidad.recortarEspacios(),
+      logo: crear URL(logo, 'https://www.bcra.gob.ar/').href,
+      tnaClientes,
+      tnaNoClientes,
+      enlace: enlace || nulo,
+    })
+  })
+
+  retornar items
+}
+
+funcion interpretarPorcentaje(valor) {
+  const porcentaje = Numero(valor.reemplazar('%', ''))
+
+  si (!porcentaje) {
+    retornar nulo
+  }
+
+  retornar interpretarDecimal((Numero(porcentaje) / 100).fijarDecimales(4))
+}
