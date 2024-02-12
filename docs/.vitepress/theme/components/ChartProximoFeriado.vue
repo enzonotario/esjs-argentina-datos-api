@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
-import { differenceInDays, format, isToday, parseISO } from 'date-fns'
+import { differenceInDays, format, isAfter, isToday, parseISO } from 'date-fns'
 import { useApi } from '../composables/useApi'
 
 const api = useApi()
@@ -30,7 +30,7 @@ const proximosFeriados = computed(() => {
   const today = new Date()
 
   return collect(feriados.value)
-    .filter(feriado => parseISO(feriado.fecha) >= today)
+    .filter(feriado => isAfter(parseISO(feriado.fecha), today) || isToday(parseISO(feriado.fecha)))
     .toArray()
 })
 
