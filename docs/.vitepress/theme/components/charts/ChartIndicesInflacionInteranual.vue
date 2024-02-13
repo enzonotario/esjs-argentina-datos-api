@@ -56,7 +56,10 @@ async function setChartOptions() {
         const value = params[0].value[1]
 
         return `<div class="flex flex-col">
-          <span class="text-xs">${format(parseISO(params[0].value[0]), 'MMMM')}</span>
+          <span class="text-xs">${format(
+            parseISO(params[0].value[0]),
+            'MMMM',
+          )}</span>
           <div class="text-md">${date}: <span class="font-bold">${value}%</span></div>
         </div>`
       },

@@ -156,16 +156,17 @@ async function setChartOptions() {
               position: 'top',
               rotate: 45,
               formatter(params) {
-                const event = events.where('fecha', params.value.timestamp).first()
+                const event = events
+                  .where('fecha', params.value.timestamp)
+                  .first()
 
-                return [
-                  `{e|${event.evento}}`,
-                ].join('\n')
+                return [`{e|${event.evento}}`].join('\n')
               },
               rich: {
                 e: {
                   color: colorRange[theme.value === 'dark' ? 100 : 800],
-                  backgroundColor: colorRange[theme.value === 'dark' ? 800 : 100],
+                  backgroundColor:
+                    colorRange[theme.value === 'dark' ? 800 : 100],
                   borderColor: colorRange[theme.value === 'dark' ? 700 : 300],
                   borderWidth: 1,
                   borderRadius: 2,

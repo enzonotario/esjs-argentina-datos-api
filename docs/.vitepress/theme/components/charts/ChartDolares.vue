@@ -40,10 +40,7 @@ async function fetchDolares() {
 
 async function fetchEventosPresidenciales() {
   try {
-    return collect(
-      await api.get('/eventos/presidenciales'),
-    )
-      .toArray()
+    return collect(await api.get('/eventos/presidenciales')).toArray()
   }
   catch (error) {
     return []
@@ -85,22 +82,23 @@ async function setChartOptions() {
                 data: eventosPresidenciales.map(eleccion => ({
                   xAxis: eleccion.fecha,
                   label: {
-                    position: eleccion.tipo === 'asuncion' ? 'end' : 'insideStartTop',
-                    formatter: eleccion.tipo === 'asuncion'
-                      ? [
-                      `{a|${eleccion.evento}}`,
-                        ].join('\n')
-                      : [
-                      `{a|${eleccion.evento} - ${format(
-                        parseISO(eleccion.fecha),
-                        'yyyy',
-                      )}}`,
-                        ].join('\n'),
+                    position:
+                      eleccion.tipo === 'asuncion' ? 'end' : 'insideStartTop',
+                    formatter:
+                      eleccion.tipo === 'asuncion'
+                        ? [`{a|${eleccion.evento}}`].join('\n')
+                        : [
+                            `{a|${eleccion.evento} - ${format(
+                              parseISO(eleccion.fecha),
+                              'yyyy',
+                            )}}`,
+                          ].join('\n'),
 
                     rich: {
                       a: {
                         color: theme.value === 'dark' ? 'white' : 'black',
-                        backgroundColor: theme.value === 'dark' ? 'black' : 'white',
+                        backgroundColor:
+                          theme.value === 'dark' ? 'black' : 'white',
                         borderColor: theme.value === 'dark' ? 'white' : 'black',
                         borderWidth: 1,
                         borderRadius: 2,
@@ -111,8 +109,7 @@ async function setChartOptions() {
                 })),
               },
             }
-          : {}
-        ),
+          : {}),
       }
     })
     .toArray()

@@ -70,10 +70,14 @@ async function setChartOptions(casa: string) {
   const dolares = (await fetchDolares(casa)).reverse()
 
   dolares.forEach((dolar, index) => {
-    if (index === 0)
+    if (index === 0) {
       dolar.variacion = 0
-    else
-      dolar.variacion = Number(dolar.venta - dolares[index - 1].venta).toFixed(2)
+    }
+    else {
+      dolar.variacion = Number(dolar.venta - dolares[index - 1].venta).toFixed(
+        2,
+      )
+    }
   })
 
   setOptions({
@@ -167,7 +171,10 @@ async function setChartOptions(casa: string) {
         data: dolares.map(item => ({
           value: item.variacion,
           itemStyle: {
-            color: item.variacion > 0 ? colors.indigo[theme.value === 'dark' ? 500 : 300] : colors.teal[theme.value === 'dark' ? 500 : 300],
+            color:
+              item.variacion > 0
+                ? colors.indigo[theme.value === 'dark' ? 500 : 300]
+                : colors.teal[theme.value === 'dark' ? 500 : 300],
           },
         })),
         yAxisIndex: 1,

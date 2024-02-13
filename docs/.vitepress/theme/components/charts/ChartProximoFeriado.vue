@@ -30,7 +30,11 @@ const proximosFeriados = computed(() => {
   const today = new Date()
 
   return collect(feriados.value)
-    .filter(feriado => isAfter(parseISO(feriado.fecha), today) || isToday(parseISO(feriado.fecha)))
+    .filter(
+      feriado =>
+        isAfter(parseISO(feriado.fecha), today)
+        || isToday(parseISO(feriado.fecha)),
+    )
     .toArray()
 })
 
@@ -52,20 +56,27 @@ function formatLabel(date) {
 
 <template>
   <div>
-    <h3>
-      Próximos feriados
-    </h3>
+    <h3>Próximos feriados</h3>
 
-    <div v-if="proximosFeriados" class="flex flex-row p-2 space-x-2 overflow-x-auto">
-      <div v-for="(feriado, idx) in proximosFeriados" :key="idx" class="flex flex-row space-x-2">
+    <div
+      v-if="proximosFeriados"
+      class="flex flex-row p-2 space-x-2 overflow-x-auto"
+    >
+      <div
+        v-for="(feriado, idx) in proximosFeriados"
+        :key="idx"
+        class="flex flex-row space-x-2"
+      >
         <div class="flex flex-col">
           <span>
             {{ formatLabel(parseISO(feriado.fecha)) }}
           </span>
 
-          <div class="flex flex-col flex-1 space-y-1 p-2 rounded border mr-auto min-w-[15rem]">
+          <div
+            class="flex flex-col flex-1 space-y-1 p-2 rounded border mr-auto min-w-[15rem]"
+          >
             <span class="text-sm">
-              {{ format(parseISO(feriado.fecha), "eeee") }}
+              {{ format(parseISO(feriado.fecha), 'eeee') }}
             </span>
 
             <span class="text-sm">

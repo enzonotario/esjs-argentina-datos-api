@@ -57,7 +57,10 @@ function seriesForSemester(number: 1 | 2, feriados: any[]) {
       type: 'scatter',
       coordinateSystem: 'calendar',
       calendarIndex: number - 1,
-      data: weekends(`${year.value}-0${number === 1 ? 1 : 7}-01`, `${year.value}-0${number === 1 ? 6 : 12}-31`),
+      data: weekends(
+        `${year.value}-0${number === 1 ? 1 : 7}-01`,
+        `${year.value}-0${number === 1 ? 6 : 12}-31`,
+      ),
       itemStyle: {
         color: theme.value === 'dark' ? colors.gray[600] : colors.gray[300],
       },
@@ -68,9 +71,9 @@ function seriesForSemester(number: 1 | 2, feriados: any[]) {
           if (data.length === 2 && data[1] === 0) {
             return `<div class="flex flex-col">
                 <span class="text-xs">${format(
-              parseISO(data[0]),
-              'EEEE, d MMMM yyyy',
-            )}</span>
+                  parseISO(data[0]),
+                  'EEEE, d MMMM yyyy',
+                )}</span>
                 <div class="text-md font-bold">Fin de semana</div>
               </div>`
           }
@@ -91,7 +94,10 @@ function seriesForSemester(number: 1 | 2, feriados: any[]) {
           .filter(item => item.tipo === type)
           .filter((item) => {
             const date = parseISO(item.fecha)
-            return date.getFullYear() === year.value && (number === 1 ? date.getMonth() < 6 : date.getMonth() >= 6)
+            return (
+              date.getFullYear() === year.value
+              && (number === 1 ? date.getMonth() < 6 : date.getMonth() >= 6)
+            )
           })
           .map((item) => {
             return [item.fecha, 1]
@@ -109,13 +115,13 @@ function seriesForSemester(number: 1 | 2, feriados: any[]) {
               if (feriado) {
                 return `<div class="flex flex-col">
                   <span class="text-xs">${format(
-                  parseISO(feriado.fecha),
-                  'EEEE, d MMMM yyyy',
-                )}</span>
+                    parseISO(feriado.fecha),
+                    'EEEE, d MMMM yyyy',
+                  )}</span>
                   <div class="text-md font-bold">${feriado.nombre}</div>
                   <div class="text-sm">Tipo: <span class="font-bold">${
-                  feriado.tipo
-                }</span></div>
+                    feriado.tipo
+                  }</span></div>
                 </div>`
               }
             }
@@ -130,10 +136,7 @@ async function setChartOptions() {
 
   const today = new Date()
 
-  const allTypes = collect(feriados)
-    .pluck('tipo')
-    .unique()
-    .all()
+  const allTypes = collect(feriados).pluck('tipo').unique().all()
 
   setOptions({
     tooltip: {},
@@ -172,49 +175,53 @@ async function setChartOptions() {
       ...seriesForSemester(2, feriados),
 
       ...(today.getFullYear() === year.value
-        ? [{
-            name: 'Hoy',
-            type: 'effectScatter',
-            coordinateSystem: 'calendar',
-            calendarIndex: today.getMonth() < 6 ? 0 : 1,
-            data: [[today.toISOString().split('T')[0], 2]],
-            showEffectOn: 'render',
-            rippleEffect: {
-              brushType: 'stroke',
-            },
-            symbolSize: 13,
-            zlevel: 1,
-            itemStyle: {
-              color:
-              theme.value === 'dark'
-                ? colors.indigo[100]
-                : colors.indigo[500],
-              shadowBlur: 10,
-              shadowColor: theme.value === 'dark' ? colors.indigo[100] : colors.indigo[500],
-            },
-            label: {
-              show: true,
-              formatter: 'Hoy',
-              color:
-              theme.value === 'dark' ? colors.gray[100] : colors.gray[700],
-              position: 'top',
-            },
-            tooltip: {
-              formatter(params) {
-                const data = params.data
+        ? [
+            {
+              name: 'Hoy',
+              type: 'effectScatter',
+              coordinateSystem: 'calendar',
+              calendarIndex: today.getMonth() < 6 ? 0 : 1,
+              data: [[today.toISOString().split('T')[0], 2]],
+              showEffectOn: 'render',
+              rippleEffect: {
+                brushType: 'stroke',
+              },
+              symbolSize: 13,
+              zlevel: 1,
+              itemStyle: {
+                color:
+                  theme.value === 'dark'
+                    ? colors.indigo[100]
+                    : colors.indigo[500],
+                shadowBlur: 10,
+                shadowColor:
+                  theme.value === 'dark'
+                    ? colors.indigo[100]
+                    : colors.indigo[500],
+              },
+              label: {
+                show: true,
+                formatter: 'Hoy',
+                color:
+                  theme.value === 'dark' ? colors.gray[100] : colors.gray[700],
+                position: 'top',
+              },
+              tooltip: {
+                formatter(params) {
+                  const data = params.data
 
-                if (data.length === 2 && data[1] === 2) {
-                  return `<div class="flex flex-col">
+                  if (data.length === 2 && data[1] === 2) {
+                    return `<div class="flex flex-col">
                 <span class="text-xs">${format(
                   parseISO(data[0]),
                   'EEEE, d MMMM yyyy',
                 )}</span>
                 <div class="text-md font-bold">Hoy</div>
               </div>`
-                }
+                  }
+                },
               },
             },
-          },
           ]
         : []),
     ],
