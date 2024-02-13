@@ -5,8 +5,8 @@ import { FwbSelect } from 'flowbite-vue'
 import colors from 'tailwindcss/colors'
 import * as echarts from 'echarts'
 import { format, parseISO } from 'date-fns'
-import { useApi } from '../composables/useApi'
-import { useEcharts } from '../composables/useEcharts'
+import { useApi } from '../../composables/useApi'
+import { useEcharts } from '../../composables/useEcharts'
 
 const chartRef = ref()
 

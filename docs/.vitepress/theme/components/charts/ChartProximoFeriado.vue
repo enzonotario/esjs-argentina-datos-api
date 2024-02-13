@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
 import { differenceInDays, format, isAfter, isToday, parseISO } from 'date-fns'
-import { useApi } from '../composables/useApi'
+import { useApi } from '../../composables/useApi'
 
 const api = useApi()
 

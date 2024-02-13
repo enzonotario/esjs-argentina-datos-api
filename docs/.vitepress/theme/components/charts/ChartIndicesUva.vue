@@ -2,8 +2,8 @@
 import { onMounted, ref } from 'vue'
 import colors from 'tailwindcss/colors'
 import { format } from 'date-fns'
-import { useApi } from '../composables/useApi'
-import { useEcharts } from '../composables/useEcharts'
+import { useApi } from '../../composables/useApi'
+import { useEcharts } from '../../composables/useEcharts'
 
 const chartRef = ref()
 

@@ -3,8 +3,8 @@ import { onMounted, ref } from 'vue'
 import { collect } from 'collect.js'
 import colors from 'tailwindcss/colors'
 import { format, parseISO } from 'date-fns'
-import { useApi } from '../composables/useApi'
-import { useEcharts } from '../composables/useEcharts'
+import { useApi } from '../../composables/useApi'
+import { useEcharts } from '../../composables/useEcharts'
 
 const colorsMap = {
   oficial: colors.gray,

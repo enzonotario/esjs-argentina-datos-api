@@ -3,8 +3,8 @@ import { ref, watch } from 'vue'
 import { FwbSelect } from 'flowbite-vue'
 import colors from 'tailwindcss/colors'
 import { format, parseISO, subDays } from 'date-fns'
-import { useApi } from '../composables/useApi'
-import { useEcharts } from '../composables/useEcharts'
+import { useApi } from '../../composables/useApi'
+import { useEcharts } from '../../composables/useEcharts'
 
 const chartRef = ref()
 

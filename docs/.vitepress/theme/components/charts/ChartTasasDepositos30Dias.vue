@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import colors from 'tailwindcss/colors'
-import { useApi } from '../composables/useApi'
-import { useEcharts } from '../composables/useEcharts'
+import { useApi } from '../../composables/useApi'
+import { useEcharts } from '../../composables/useEcharts'
 
 const chartRef = ref()
 

@@ -4,8 +4,8 @@ import colors from 'tailwindcss/colors'
 import { collect } from 'collect.js'
 import { FwbInput, FwbSpinner } from 'flowbite-vue'
 import { format, parseISO } from 'date-fns'
-import { useApi } from '../composables/useApi'
-import { useEcharts } from '../composables/useEcharts'
+import { useApi } from '../../composables/useApi'
+import { useEcharts } from '../../composables/useEcharts'
 
 const chartRef = ref()
 
