@@ -1,0 +1,52 @@
+importar { load } desde 'cheerio'
+importar { format, analizar } desde 'date-fns'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerMercadoDinero(fecha) {
+  intentar {
+    const respuesta = esperar axios.get(
+      `https://api.cafci.org.ar/estadisticas/informacion/diaria/4/${fecha}`,
+    )
+
+    si (respuesta.data.error) {
+      retornar []
+    }
+
+    const items = []
+
+    para (const item de respuesta.data.data) {
+      const vcp = Numero(item.vcp) || nulo
+      const ccp = Numero(item.ccp) || nulo
+      const patrimonio = Numero(item.patrimonio) || nulo
+
+      items.agregar({
+        fondo: item.fondo,
+        horizonte: interpretarHorizonte(item.horizonte),
+        fecha: item.fecha
+          ? format(analizar(item.fecha, 'dd/MM/yy', crear Fecha()), 'yyyy-MM-dd')
+          : nulo,
+        vcp,
+        ccp,
+        patrimonio,
+      })
+    }
+
+    retornar items
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
+
+funcion interpretarHorizonte(horizonte) {
+  elegir (horizonte) {
+    caso 'COR':
+      retornar 'corto'
+    caso 'MED':
+      retornar 'medio'
+    caso 'LAR':
+      retornar 'largo'
+    porDefecto:
+      retornar horizonte
+  }
+}

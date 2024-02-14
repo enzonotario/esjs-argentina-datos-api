@@ -8,6 +8,7 @@ importar { extraerTasasDepositos30Dias } desde '@/finanzas/extraccion/extraerTas
 importar { guardarTasasDepositos30Dias } desde '@/finanzas/guardado/guardarTasasDepositos30Dias.esjs'
 importar { extraerIndiceUVA } desde '@/finanzas/extraccion/extraerIndiceUVA.esjs'
 importar { guardarIndiceUVA } desde '@/finanzas/guardado/guardarIndiceUVA.esjs'
+importar fci from '@/finanzas/fci/fci.comando.esjs'
 
 importar { subMonths, addMonths, format, subDays, addDays } desde 'date-fns'
 
@@ -17,6 +18,7 @@ exportar asincrono funcion cronFinanzas() {
   esperar plazoFijo()
   esperar tasasDepositos30Dias()
   esperar indiceUVA()
+  esperar fci()
 }
 
 asincrono funcion inflacionMensual() {

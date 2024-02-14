@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Dólar por casa y fecha
+title: Información de Fondos Comunes de Inversión
 ---
 
 <script setup>
@@ -12,19 +12,24 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-cotizaciones-dolares-casa-fecha">
+<Operation method="GET" id="get-finanzas-fci-mercado-dinero-fecha">
 
 <template #header="header">
 
-# Dólar por casa y fecha
+# Información de Fondos Comunes de Inversión
 
 </template>
 
 <template #description="description">
 
-Devuelve la cotización del dólar de la casa de cambio especificada en la fecha indicada (en formato `YYYY/MM/DD`).
+Devuelve la información de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).
 
-<!--@include: ./parts/get-cotizaciones-dolares-casa-fecha-description-after.md -->
+También se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: 
+
+- `/v1/finanzas/fci/mercadoDinero/ultimo`
+- `/v1/finanzas/fci/mercadoDinero/penultimo`
+
+<!--@include: ./parts/get-finanzas-fci-mercado-dinero-fecha-description-after.md -->
 
 </template>
 
@@ -32,7 +37,7 @@ Devuelve la cotización del dólar de la casa de cambio especificada en la fecha
 
 ## {{ $t('Parameters') }}
 
-<Parameters operation-id="get-cotizaciones-dolares-casa-fecha" :parameters="parameters.parameters" />
+<Parameters operation-id="get-finanzas-fci-mercado-dinero-fecha" :parameters="parameters.parameters" />
 
 </template>
 
@@ -60,7 +65,7 @@ Devuelve la cotización del dólar de la casa de cambio especificada en la fecha
 
 <template #footer="footer">
 
-<!--@include: ./parts/get-cotizaciones-dolares-casa-fecha-footer.md -->
+<!--@include: ./parts/get-finanzas-fci-mercado-dinero-fecha-footer.md -->
 
 </template>
 

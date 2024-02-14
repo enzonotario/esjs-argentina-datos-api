@@ -149,7 +149,7 @@
         "tags": [
           "Cotizaciones históricas"
         ],
-        "description": "Devuelve la cotización del dólar de la casa de cambio especificada en la fecha indicada.",
+        "description": "Devuelve la cotización del dólar de la casa de cambio especificada en la fecha indicada (en formato `YYYY/MM/DD`).",
         "parameters": [
           {
             "name": "casa",
@@ -391,6 +391,51 @@
         "x-sidebar-title": "Tasas depósitos 30d"
       }
     },
+    "/v1/finanzas/fci/mercadoDinero/{fecha}": {
+      "get": {
+        "summary": "Información de Fondos Comunes de Inversión",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Devuelve la información de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/mercadoDinero/ultimo`\n- `/v1/finanzas/fci/mercadoDinero/penultimo`",
+        "parameters": [
+          {
+            "name": "fecha",
+            "in": "path",
+            "description": "Fecha de consulta",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "example": "ultimo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de Fondos Comunes de Inversión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FondoComunInversion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-fci-mercado-dinero-fecha",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/mercadoDinero/{fecha}\""
+          }
+        ],
+        "x-sidebar-title": "FCI"
+      }
+    },
     "/v1/estado": {
       "get": {
         "summary": "Estado de la API",
@@ -599,6 +644,44 @@
           "Example 1": {
             "entidad": "Banco de la Nación Argentina",
             "tna": 123.45
+          }
+        }
+      },
+      "FondoComunInversion": {
+        "title": "FondoComunInversion",
+        "type": "object",
+        "properties": {
+          "fondo": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string"
+          },
+          "vcp": {
+            "type": "number"
+          },
+          "ccp": {
+            "type": "number"
+          },
+          "patrimonio": {
+            "type": "number"
+          },
+          "horizonte": {
+            "type": "enum",
+            "enum": [
+              "corto",
+              "medio",
+              "largo"
+            ]
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "fondo": "Fondo Común de Inversión",
+            "vcp": 123.45,
+            "ccp": 123.45,
+            "patrimonio": 123.45,
+            "horizonte": "corto"
           }
         }
       }
