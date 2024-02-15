@@ -45,7 +45,7 @@ jobs:
         run: |
           touch .env
           echo "VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL }}" >> .env
-          echo "VITE_FINANZAS_RENDIMIENTOS_BUENBIT_API_KEY=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_API_KEY }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL }}" >> .env
 
       - name: Install dependencies
         run: pnpm install
