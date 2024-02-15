@@ -1,0 +1,73 @@
+---
+aside: false
+outline: false
+title: Rendimientos por entidad
+---
+
+<script setup>
+import { useRoute, useData } from 'vitepress'
+
+const route = useRoute()
+
+const { isDark } = useData()
+</script>
+
+<Operation method="GET" id="get-finanzas-rendimientos-entidad">
+
+<template #header="header">
+
+# Rendimientos por entidad
+
+</template>
+
+<template #description="description">
+
+Rendimientos de distintas monedas por entidad.
+
+Las entidades disponibles son:
+
+- [`buenbit`](https://buenbit.com/?ref=argentinadatos.com)
+
+- [`fiwind`](https://www.fiwind.io/?ref=argentinadatos.com)
+
+<!--@include: ./parts/get-finanzas-rendimientos-entidad-description-after.md -->
+
+</template>
+
+<template #parameters="parameters">
+
+## {{ $t('Parameters') }}
+
+<Parameters operation-id="get-finanzas-rendimientos-entidad" :parameters="parameters.parameters" />
+
+</template>
+
+<template #responses="responses">
+
+## {{ $t('Response') }}
+
+<Responses :responses="responses.responses" :schema="responses.schema" :responseType="responses.responseType" :isDark="isDark">
+
+<template #body="body">
+
+<ResponseBody :schema="body.schema" :responseType="body.responseType" />
+
+</template>
+
+</Responses>
+
+</template>
+
+<template #try-it="tryIt">
+
+<TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
+
+</template>
+
+<template #footer="footer">
+
+<!--@include: ./parts/get-finanzas-rendimientos-entidad-footer.md -->
+
+</template>
+
+</Operation>

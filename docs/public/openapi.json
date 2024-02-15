@@ -463,6 +463,53 @@
           }
         ]
       }
+    },
+    "/v1/finanzas/rendimientos/{entidad}": {
+      "get": {
+        "summary": "Rendimientos por entidad",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [`buenbit`](https://buenbit.com/?ref=argentinadatos.com)\n\n- [`fiwind`](https://www.fiwind.io/?ref=argentinadatos.com)",
+        "parameters": [
+          {
+            "name": "entidad",
+            "in": "path",
+            "description": "Entidad",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "buenbit",
+                "fiwind"
+              ]
+            },
+            "example": "buenbit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de rendimientos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Rendimiento"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-rendimientos-entidad",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/rendimientos/{entidad}\""
+          }
+        ]
+      }
     }
   },
   "components": {
@@ -682,6 +729,28 @@
             "ccp": 123.45,
             "patrimonio": 123.45,
             "horizonte": "corto"
+          }
+        }
+      },
+      "Rendimiento": {
+        "title": "Rendimiento",
+        "type": "object",
+        "properties": {
+          "moneda": {
+            "type": "string"
+          },
+          "apy": {
+            "type": "number"
+          },
+          "fecha": {
+            "type": "string"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "moneda": "USDT",
+            "apy": 123.45,
+            "fecha": "2024-01-01"
           }
         }
       }

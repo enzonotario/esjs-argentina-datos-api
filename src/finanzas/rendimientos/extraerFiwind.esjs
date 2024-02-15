@@ -1,0 +1,30 @@
+importar { load } desde 'cheerio'
+importar { format, parseISO } desde 'date-fns'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerFiwind() {
+  intentar {
+    const respuesta = esperar axios.get(
+      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL,
+    )
+
+    const items = []
+
+    para (const item de respuesta.data) {
+      const moneda = item.currency.aMayusculas()
+      const apy = Numero(item.apy)
+      const fecha = format(parseISO(item.createdAt), 'yyyy-MM-dd')
+
+      items.agregar({
+        moneda,
+        apy,
+        fecha,
+      })
+    }
+
+    retornar items
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
