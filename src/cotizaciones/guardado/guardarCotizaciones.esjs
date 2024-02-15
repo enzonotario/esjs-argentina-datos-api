@@ -1,9 +1,13 @@
-importar { escribirRuta, expandirRuta } desde '@/utils/rutas.esjs'
+importar { escribirRuta, expandirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { format } desde 'date-fns'
 importar { collect } desde 'collect.js'
 
-exportar funcion guardarCotizaciones(cotizaciones, fecha) {
+exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
   const fechaConBarra = format(fecha, 'yyyy/MM/dd')
+
+  si (esperar leerRuta(`/cotizaciones/${fechaConBarra}`)) {
+    retornar
+  }
 
   escribirRuta(`/cotizaciones/${fechaConBarra}`, cotizaciones)
 

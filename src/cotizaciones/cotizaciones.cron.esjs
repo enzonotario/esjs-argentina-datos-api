@@ -6,11 +6,11 @@ importar { guardarDolares } desde '@/cotizaciones/guardado/guardarDolares.esjs'
 exportar asincrono funcion cronCotizaciones() {
   const cotizaciones = esperar extraerCotizaciones()
 
-  guardarCotizaciones(cotizaciones, crear Fecha())
+  esperar guardarCotizaciones(cotizaciones, crear Fecha())
 
   const dolares = esperar extraerDolares()
 
-  guardarDolares(dolares, crear Fecha())
+  esperar guardarDolares(dolares, crear Fecha())
 
   retornar verdadero
 }
