@@ -41,7 +41,7 @@ jobs:
           version: 8
           run_install: false
 
-      - name Create .env file
+      - name: Create .env file
         run: |
           touch .env
           echo "VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL }}" >> .env
