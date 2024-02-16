@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { format, parseISO, startOfDay, addDays, subDays
-} from 'date-fns'
+import { format, parseISO, startOfDay, addDays, subDays } from 'date-fns'
 import { leerRuta, escribirRuta, existeRuta } from '@/utils/rutas.esjs'
 import { collect } from 'collect.js'
 
@@ -194,7 +193,8 @@ describe('comprobarDolares', () => {
           fecha: dolar.fecha,
         }))
         .toArray(),
-      false)
+      false,
+    )
   })
 
   it('rellena los dias faltantes por casa', async () => {
@@ -241,10 +241,7 @@ describe('comprobarDolares', () => {
             .where('casa', casa)
             .where(
               'fecha',
-              format(
-                subDays(new Date(fechaCopiada), 1),
-                'yyyy-MM-dd',
-              ),
+              format(subDays(new Date(fechaCopiada), 1), 'yyyy-MM-dd'),
             )
             .map((dolar) => ({
               ...dolar,
