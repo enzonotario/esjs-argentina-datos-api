@@ -41,6 +41,12 @@ jobs:
           version: 8
           run_install: false
 
+      - name: Create .env file
+        run: |
+          touch .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL }}" >> .env
+
       - name: Install dependencies
         run: pnpm install
 
@@ -60,16 +66,6 @@ jobs:
           timestampArg=$(date -u -d "3 hours")
           git commit -m "Latest data: ${timestampArg}" || exit 0
           git push
-
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
