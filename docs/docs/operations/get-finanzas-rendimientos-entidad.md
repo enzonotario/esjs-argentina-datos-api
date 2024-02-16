@@ -26,9 +26,11 @@ Rendimientos de distintas monedas por entidad.
 
 Las entidades disponibles son:
 
-- [`buenbit`](https://buenbit.com/?ref=argentinadatos.com)
+- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)
 
-- [`fiwind`](https://www.fiwind.io/?ref=argentinadatos.com)
+- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)
+
+- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)
 
 <!--@include: ./parts/get-finanzas-rendimientos-entidad-description-after.md -->
 

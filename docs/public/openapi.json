@@ -470,7 +470,7 @@
         "tags": [
           "Finanzas"
         ],
-        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)",
+        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)",
         "parameters": [
           {
             "name": "entidad",
@@ -481,7 +481,8 @@
               "type": "string",
               "enum": [
                 "buenbit",
-                "fiwind"
+                "fiwind",
+                "letsbit"
               ]
             },
             "example": "buenbit"

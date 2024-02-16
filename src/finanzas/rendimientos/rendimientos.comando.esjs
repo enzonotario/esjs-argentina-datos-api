@@ -3,9 +3,12 @@ importar { escribirRuta } desde '@/utils/rutas.esjs'
 importar { guardarRendimientos } desde '@/finanzas/rendimientos/guardarRendimientos.esjs'
 importar { extraerBuenbit } desde '@/finanzas/rendimientos/extraerBuenbit.esjs'
 importar { extraerFiwind } desde '@/finanzas/rendimientos/extraerFiwind.esjs'
+importar { extraerLetsbit } desde '@/finanzas/rendimientos/extraerLetsbit.esjs'
 
 exportar porDefecto asincrono funcion () {
   esperar guardarRendimientos('buenbit', esperar extraerBuenbit())
 
   esperar guardarRendimientos('fiwind', esperar extraerFiwind())
+
+  esperar guardarRendimientos('letsbit', esperar extraerLetsbit())
 }
