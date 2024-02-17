@@ -464,6 +464,38 @@
         ]
       }
     },
+    "/v1/finanzas/rendimientos": {
+      "get": {
+        "summary": "Rendimientos de todas las entidades",
+        "tags": [
+          "Finanzas"
+        ],
+        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de rendimientos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EntidadRendimiento"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-rendimientos",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/rendimientos/{entidad}\""
+          }
+        ],
+        "x-sidebar-title": "Rendimientos de entidades"
+      }
+    },
     "/v1/finanzas/rendimientos/{entidad}": {
       "get": {
         "summary": "Rendimientos por entidad",
@@ -752,6 +784,21 @@
             "moneda": "USDT",
             "apy": 123.45,
             "fecha": "2024-01-01"
+          }
+        }
+      },
+      "EntidadRendimiento": {
+        "title": "EntidadRendimiento",
+        "type": "object",
+        "properties": {
+          "entidad": {
+            "type": "string"
+          },
+          "rendimientos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Rendimiento"
+            }
           }
         }
       }

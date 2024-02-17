@@ -6,9 +6,23 @@ importar { extraerFiwind } desde '@/finanzas/rendimientos/extraerFiwind.esjs'
 importar { extraerLetsbit } desde '@/finanzas/rendimientos/extraerLetsbit.esjs'
 
 exportar porDefecto asincrono funcion () {
-  esperar guardarRendimientos('buenbit', esperar extraerBuenbit())
+  const entidades = {
+    buenbit: esperar extraerBuenbit(),
+    fiwind: esperar extraerFiwind(),
+    letsbit: esperar extraerLetsbit(),
+  }
 
-  esperar guardarRendimientos('fiwind', esperar extraerFiwind())
+  para (const [entidad, rendimientos] de Object.entradas(entidades)) {
+    esperar guardarRendimientos(entidad, rendimientos)
+  }
 
-  esperar guardarRendimientos('letsbit', esperar extraerLetsbit())
+  esperar escribirRuta(
+    '/finanzas/rendimientos',
+    Object.entradas(entidades).mapear(([entidad, rendimientos]) => ({
+      entidad,
+      rendimientos,
+    })),
+  )
+
+  retornar verdadero
 }
