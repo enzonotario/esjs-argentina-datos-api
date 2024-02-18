@@ -237,7 +237,8 @@
       "get": {
         "summary": "Índices de inflación",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Índices"
         ],
         "description": "Devuelve los índices de inflación mensuales.",
         "responses": {
@@ -269,7 +270,8 @@
       "get": {
         "summary": "Índices de inflación interanuales",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Índices"
         ],
         "description": "Devuelve los índices de inflación interanuales.",
         "responses": {
@@ -301,7 +303,8 @@
       "get": {
         "summary": "Índices UVA",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Índices"
         ],
         "description": "Devuelve los índices UVA.",
         "responses": {
@@ -332,7 +335,8 @@
       "get": {
         "summary": "Tasas de plazo fijo",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Tasas"
         ],
         "description": "Tasa Nominal Anual para colocaciones online de $100.000 a 30 días.(*).\n\nLas tasas son reportadas por los bancos al BCRA en cumplimiento del Régimen Informativo de Transparencia, capítulo I.\n\n(*): La tasa puede cambiar para otros montos o plazos.",
         "responses": {
@@ -363,7 +367,8 @@
       "get": {
         "summary": "Tasas de depósitos a 30 días",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Tasas"
         ],
         "description": "Tasas de interés por depósitos a 30 días de plazo.",
         "responses": {
@@ -395,7 +400,8 @@
       "get": {
         "summary": "Información de Fondos Comunes de Inversión",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "FCI"
         ],
         "description": "Devuelve la información de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/mercadoDinero/ultimo`\n- `/v1/finanzas/fci/mercadoDinero/penultimo`",
         "parameters": [
@@ -468,7 +474,8 @@
       "get": {
         "summary": "Rendimientos de todas las entidades",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Rendimientos"
         ],
         "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)",
         "responses": {
@@ -500,7 +507,8 @@
       "get": {
         "summary": "Rendimientos por entidad",
         "tags": [
-          "Finanzas"
+          "Finanzas",
+          "Rendimientos"
         ],
         "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)",
         "parameters": [

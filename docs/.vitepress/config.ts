@@ -11,7 +11,7 @@ const openapi = useOpenapi()
 openapi.setSpec(spec)
 const sidebar = useSidebar()
 
-function addDocsPrefix(group) {
+function addDocsPrefix(group: string) {
   return {
     ...group,
     items: group.items.map((item) => {
@@ -63,7 +63,22 @@ export default defineConfigWithTheme({
       {
         text: 'Finanzas',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('Finanzas')),
+          addDocsPrefix({
+            ...sidebar.generateSidebarGroup(['Finanzas', 'Índices'], 'Índices'),
+            collapsed: true,
+          }),
+          addDocsPrefix({
+            ...sidebar.generateSidebarGroup(['Finanzas', 'Tasas'], 'Tasas'),
+            collapsed: true,
+          }),
+          addDocsPrefix({
+            ...sidebar.generateSidebarGroup(['Finanzas', 'Rendimientos'], 'Rendimientos'),
+            collapsed: true,
+          }),
+          addDocsPrefix({
+            ...sidebar.generateSidebarGroup(['Finanzas', 'FCI'], 'FCI'),
+            collapsed: true,
+          }),
         ],
       },
       {
