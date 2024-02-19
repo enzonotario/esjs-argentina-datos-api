@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Mercado de dinero
+title: Renta fija
 ---
 
 <script setup>
@@ -12,24 +12,24 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-fci-mercado-dinero-fecha">
+<Operation method="GET" id="get-finanzas-fci-renta-fija-fecha">
 
 <template #header="header">
 
-# Mercado de dinero
+# Renta fija
 
 </template>
 
 <template #description="description">
 
-Devuelve los valores de Mercado de Dinero de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).
+Devuelve los valores de Renta Fija de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).
 
 También se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: 
 
-- `/v1/finanzas/fci/mercadoDinero/ultimo`
-- `/v1/finanzas/fci/mercadoDinero/penultimo`
+- `/v1/finanzas/fci/rentaFija/ultimo`
+- `/v1/finanzas/fci/rentaFija/penultimo`
 
-<!--@include: ./parts/get-finanzas-fci-mercado-dinero-fecha-description-after.md -->
+<!--@include: ./parts/get-finanzas-fci-renta-fija-fecha-description-after.md -->
 
 </template>
 
@@ -37,7 +37,7 @@ También se puede consultar el `ultimo` y `penultimo` día con valores utilizand
 
 ## {{ $t('Parameters') }}
 
-<Parameters operation-id="get-finanzas-fci-mercado-dinero-fecha" :parameters="parameters.parameters" />
+<Parameters operation-id="get-finanzas-fci-renta-fija-fecha" :parameters="parameters.parameters" />
 
 </template>
 
@@ -65,7 +65,7 @@ También se puede consultar el `ultimo` y `penultimo` día con valores utilizand
 
 <template #footer="footer">
 
-<!--@include: ./parts/get-finanzas-fci-mercado-dinero-fecha-footer.md -->
+<!--@include: ./parts/get-finanzas-fci-renta-fija-fecha-footer.md -->
 
 </template>
 

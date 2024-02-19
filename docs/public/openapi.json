@@ -333,7 +333,7 @@
     },
     "/v1/finanzas/tasas/plazoFijo": {
       "get": {
-        "summary": "Tasas de plazo fijo",
+        "summary": "Plazo fijo",
         "tags": [
           "Finanzas",
           "Tasas"
@@ -365,7 +365,7 @@
     },
     "/v1/finanzas/tasas/depositos30Dias": {
       "get": {
-        "summary": "Tasas de depósitos a 30 días",
+        "summary": "Depósitos a 30 días",
         "tags": [
           "Finanzas",
           "Tasas"
@@ -392,18 +392,17 @@
             "lang": "curl",
             "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/tasas/depositos30Dias\""
           }
-        ],
-        "x-sidebar-title": "Tasas depósitos 30d"
+        ]
       }
     },
     "/v1/finanzas/fci/mercadoDinero/{fecha}": {
       "get": {
-        "summary": "Información de Fondos Comunes de Inversión",
+        "summary": "Mercado de dinero",
         "tags": [
           "Finanzas",
           "FCI"
         ],
-        "description": "Devuelve la información de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/mercadoDinero/ultimo`\n- `/v1/finanzas/fci/mercadoDinero/penultimo`",
+        "description": "Devuelve los valores de Mercado de Dinero de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/mercadoDinero/ultimo`\n- `/v1/finanzas/fci/mercadoDinero/penultimo`",
         "parameters": [
           {
             "name": "fecha",
@@ -438,8 +437,142 @@
             "lang": "curl",
             "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/mercadoDinero/{fecha}\""
           }
+        ]
+      }
+    },
+    "/v1/finanzas/fci/rentaVariable/{fecha}": {
+      "get": {
+        "summary": "Renta variable",
+        "tags": [
+          "Finanzas",
+          "FCI"
         ],
-        "x-sidebar-title": "FCI"
+        "description": "Devuelve los valores de Renta Variable de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/rentaVariable/ultimo`\n- `/v1/finanzas/fci/rentaVariable/penultimo`",
+        "parameters": [
+          {
+            "name": "fecha",
+            "in": "path",
+            "description": "Fecha de consulta",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "example": "ultimo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de Fondos Comunes de Inversión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FondoComunInversion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-fci-renta-variable-fecha",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/rentaVariable/{fecha}\""
+          }
+        ]
+      }
+    },
+    "/v1/finanzas/fci/rentaFija/{fecha}": {
+      "get": {
+        "summary": "Renta fija",
+        "tags": [
+          "Finanzas",
+          "FCI"
+        ],
+        "description": "Devuelve los valores de Renta Fija de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/rentaFija/ultimo`\n- `/v1/finanzas/fci/rentaFija/penultimo`",
+        "parameters": [
+          {
+            "name": "fecha",
+            "in": "path",
+            "description": "Fecha de consulta",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "example": "ultimo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de Fondos Comunes de Inversión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FondoComunInversion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-fci-renta-fija-fecha",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/rentaFija/{fecha}\""
+          }
+        ]
+      }
+    },
+    "/v1/finanzas/fci/rentaMixta/{fecha}": {
+      "get": {
+        "summary": "Renta mixta",
+        "tags": [
+          "Finanzas",
+          "FCI"
+        ],
+        "description": "Devuelve los valores de Renta Mixta de los Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/rentaMixta/ultimo`\n- `/v1/finanzas/fci/rentaMixta/penultimo`",
+        "parameters": [
+          {
+            "name": "fecha",
+            "in": "path",
+            "description": "Fecha de consulta",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "example": "ultimo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de Fondos Comunes de Inversión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FondoComunInversion"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-fci-renta-mixta-fecha",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/rentaMixta/{fecha}\""
+          }
+        ]
       }
     },
     "/v1/estado": {
@@ -500,12 +633,12 @@
             "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/rendimientos/{entidad}\""
           }
         ],
-        "x-sidebar-title": "Rendimientos de entidades"
+        "x-sidebar-title": "De entidades"
       }
     },
     "/v1/finanzas/rendimientos/{entidad}": {
       "get": {
-        "summary": "Rendimientos por entidad",
+        "summary": "Por entidad",
         "tags": [
           "Finanzas",
           "Rendimientos"

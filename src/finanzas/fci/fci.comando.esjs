@@ -1,9 +1,22 @@
 importar { format, subDays, addDays, isBefore as esAntes } desde 'date-fns'
-importar { extraerMercadoDinero } desde '@/finanzas/fci/extraerMercadoDinero.esjs'
-importar { guardarMercadoDinero } desde '@/finanzas/fci/guardarMercadoDinero.esjs'
+importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta } desde '@/utils/rutas.esjs'
+importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
 
 exportar porDefecto asincrono funcion () {
+  const series = [
+    'mercadoDinero',
+    'rentaVariable',
+    'rentaFija',
+    'rentaMixta',
+  ]
+
+  const promesas = Promesa.todos(series.mapear((serie) => ejecutarSerie(serie)))
+
+  esperar promesas
+}
+
+asincrono funcion ejecutarSerie(serie) {
   const inicio = subDays(crear Fecha(), 7)
   const fin = addDays(crear Fecha(), 1)
   var fecha = inicio
@@ -12,9 +25,9 @@ exportar porDefecto asincrono funcion () {
   var ultimo = nulo
 
   mientras (esAntes(fecha, fin)) {
-    const items = esperar extraerMercadoDinero(format(fecha, 'yyyy-MM-dd'))
+    const items = esperar extraerCacfi(serie, format(fecha, 'yyyy-MM-dd'))
 
-    guardarMercadoDinero(items, fecha)
+    guardarCacfi(serie, items, fecha)
 
     fecha = addDays(fecha, 1)
 
@@ -24,9 +37,9 @@ exportar porDefecto asincrono funcion () {
     }
   }
 
-  esperar escribirRuta(`/finanzas/fci/mercadoDinero/penultimo`, penultimo)
+  esperar escribirRuta(`/finanzas/fci/${serie}/penultimo`, penultimo)
 
-  esperar escribirRuta(`/finanzas/fci/mercadoDinero/ultimo`, ultimo)
+  esperar escribirRuta(`/finanzas/fci/${serie}/ultimo`, ultimo)
 
   retornar verdadero
 }
