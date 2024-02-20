@@ -18,7 +18,7 @@ exportar asincrono funcion extraerBelo() {
 
     para (const item de respuesta.data) {
       const moneda = item.currency.aMayusculas()
-      const apy = Numero(item.rate)
+      const apy = Numero(item.rate) * 100
 
       items.agregar({
         moneda,
