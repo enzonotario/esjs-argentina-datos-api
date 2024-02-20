@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { extraerBuenbit } from '@/finanzas/rendimientos/extraerBuenbit.esjs'
 import { extraerFiwind } from '@/finanzas/rendimientos/extraerFiwind.esjs'
 import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
+import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
 
 function testItems(items) {
   expect(items.length).toBeGreaterThan(0)
@@ -29,6 +30,12 @@ describe('extraerRendimientos', () => {
 
   it('guarda letsbit', async () => {
     const items = await extraerLetsbit()
+
+    testItems(items)
+  })
+
+  it('guarda belo', async () => {
+    const items = await extraerBelo()
 
     testItems(items)
   })
