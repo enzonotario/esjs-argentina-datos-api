@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Tasas de depósitos a 30 días
+title: Depósitos a 30 días
 ---
 
 <script setup>
@@ -16,7 +16,7 @@ const { isDark } = useData()
 
 <template #header="header">
 
-# Tasas de depósitos a 30 días
+# Depósitos a 30 días
 
 </template>
 

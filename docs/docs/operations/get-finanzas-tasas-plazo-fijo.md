@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Tasas de plazo fijo
+title: Plazo fijo
 ---
 
 <script setup>
@@ -16,7 +16,7 @@ const { isDark } = useData()
 
 <template #header="header">
 
-# Tasas de plazo fijo
+# Plazo fijo
 
 </template>
 

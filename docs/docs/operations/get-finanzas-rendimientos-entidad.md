@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Rendimientos por entidad
+title: Por entidad
 ---
 
 <script setup>
@@ -16,7 +16,7 @@ const { isDark } = useData()
 
 <template #header="header">
 
-# Rendimientos por entidad
+# Por entidad
 
 </template>
 
@@ -31,6 +31,10 @@ Las entidades disponibles son:
 - [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)
 
 - [Letsbit](https://letsbit.io/?ref=argentinadatos.com)
+
+- [Belo](https://www.belo.app/?ref=argentinadatos.com)
+
+- [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)
 
 <!--@include: ./parts/get-finanzas-rendimientos-entidad-description-after.md -->
 

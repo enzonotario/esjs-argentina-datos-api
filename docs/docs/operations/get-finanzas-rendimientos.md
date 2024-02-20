@@ -32,6 +32,10 @@ Las entidades disponibles son:
 
 - [Letsbit](https://letsbit.io/?ref=argentinadatos.com)
 
+- [Belo](https://www.belo.app/?ref=argentinadatos.com)
+
+- [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)
+
 <!--@include: ./parts/get-finanzas-rendimientos-description-after.md -->
 
 </template>
