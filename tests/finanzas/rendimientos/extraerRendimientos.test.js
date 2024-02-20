@@ -4,6 +4,7 @@ import { extraerBuenbit } from '@/finanzas/rendimientos/extraerBuenbit.esjs'
 import { extraerFiwind } from '@/finanzas/rendimientos/extraerFiwind.esjs'
 import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
 import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
+import { extraerLemoncash } from '@/finanzas/rendimientos/extraerLemoncash.esjs'
 
 function testItems(items) {
   expect(items.length).toBeGreaterThan(0)
@@ -36,6 +37,12 @@ describe('extraerRendimientos', () => {
 
   it('guarda belo', async () => {
     const items = await extraerBelo()
+
+    testItems(items)
+  })
+
+  it('guarda lemoncash', async () => {
+    const items = await extraerLemoncash()
 
     testItems(items)
   })

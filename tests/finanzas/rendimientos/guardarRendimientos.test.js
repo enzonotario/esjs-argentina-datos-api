@@ -5,6 +5,7 @@ import { extraerBuenbit } from '@/finanzas/rendimientos/extraerBuenbit.esjs'
 import { extraerFiwind } from '@/finanzas/rendimientos/extraerFiwind.esjs'
 import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
 import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
+import { extraerLemoncash } from '@/finanzas/rendimientos/extraerLemoncash.esjs'
 
 describe('guardarRendimientos', () => {
   it('guarda buenbit', async () => {
@@ -59,6 +60,22 @@ describe('guardarRendimientos', () => {
     const entidad = 'belo'
 
     const items = await extraerBelo()
+
+    const esperado = await guardarRendimientos(entidad, items)
+
+    expect(esperado).toBeDefined()
+
+    const guardado = await leerRuta(`/finanzas/rendimientos/${entidad}`)
+
+    for (const item of items) {
+      expect(guardado).toContainEqual(item)
+    }
+  })
+
+  it('guarda lemoncash', async () => {
+    const entidad = 'lemoncash'
+
+    const items = await extraerLemoncash()
 
     const esperado = await guardarRendimientos(entidad, items)
 
