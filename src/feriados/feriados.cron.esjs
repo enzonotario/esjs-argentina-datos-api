@@ -1,5 +1,6 @@
 importar { extraerFeriados } desde '@/feriados/extraccion/extraerFeriados.esjs'
 importar { guardarFeriados } desde '@/feriados/guardado/guardarFeriados.esjs'
+importar { escribirRuta } desde '@/utils/rutas.esjs'
 
 exportar asincrono funcion cronFeriados() {
   const hoy = crear Fecha()
@@ -8,5 +9,16 @@ exportar asincrono funcion cronFeriados() {
 
   const feriados = esperar extraerFeriados(año)
 
-  retornar guardarFeriados(año, feriados)
+  const guardado = esperar guardarFeriados(año, feriados)
+
+  esperar escribirRuta(
+    `/feriados`,
+    feriados.mapear((feriado) => ({
+      fecha: feriado.fecha,
+      tipo: feriado.tipo,
+      nombre: feriado.nombre,
+    })),
+  )
+
+  retornar guardado
 }
