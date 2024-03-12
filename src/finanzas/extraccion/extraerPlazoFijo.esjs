@@ -36,7 +36,7 @@ exportar asincrono funcion extraerPlazoFijo() {
 }
 
 funcion interpretarPorcentaje(valor) {
-  const porcentaje = Numero(valor.reemplazar('%', ''))
+  const porcentaje = Numero(valor.reemplazar(',', '.').reemplazar('%', ''))
 
   si (!porcentaje) {
     retornar nulo
