@@ -1,5 +1,9 @@
-importar { escribirRuta, expandirRuta, existeRuta } desde '@/utils/rutas.esjs'
-importar { format } desde 'date-fns'
+importar {
+  escribirRuta,
+  existeRuta,
+  leerRuta,
+} desde '@/utils/rutas.esjs'
+importar { format, isSameDay, analizar } desde 'date-fns'
 importar { collect } desde 'collect.js'
 
 exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
@@ -7,7 +11,11 @@ exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
 
   const existe = esperar existeRuta(`/cotizaciones/${fechaConBarra}`)
 
-  si (existe) {
+  const hoy = crear Fecha()
+
+  const esHoy = isSameDay(fecha, hoy)
+
+  si (existe && !esHoy) {
     retornar
   }
 
@@ -23,8 +31,42 @@ exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
   collect(cotizaciones)
     .groupBy('moneda')
     .mapear((cotizaciones, moneda) => {
-      expandirRuta(`/cotizaciones/${moneda.toLowerCase()}`, cotizaciones)
+      guardarHistoricoPorMoneda(moneda.aMinusculas(), cotizaciones, fecha)
     })
 
-  expandirRuta(`/cotizaciones`, cotizaciones)
+  guardarHistorico(cotizaciones, fecha)
+}
+
+funcion guardarHistoricoPorMoneda(moneda, cotizaciones, fecha) {
+  const actual = leerRuta(`/cotizaciones/${moneda}`)
+
+  const actualSinItemsConMismaFecha = actual.filtrar((item) => {
+    const esMismaFecha = isSameDay(
+      fecha,
+      analizar(item.fecha, 'yyyy-MM-dd', crear Fecha()),
+    )
+
+    retornar !esMismaFecha
+  })
+
+  const nuevo = [...actualSinItemsConMismaFecha, ...cotizaciones]
+
+  escribirRuta(`/cotizaciones/${moneda}`, nuevo)
+}
+
+funcion guardarHistorico(cotizaciones, fecha) {
+  const actual = leerRuta(`/cotizaciones`)
+
+  const actualSinItemsConMismaFecha = actual.filtrar((item) => {
+    const esMismaFecha = isSameDay(
+      fecha,
+      analizar(item.fecha, 'yyyy-MM-dd', crear Fecha()),
+    )
+
+    retornar !esMismaFecha
+  })
+
+  const nuevo = [...actualSinItemsConMismaFecha, ...cotizaciones]
+
+  escribirRuta(`/cotizaciones`, nuevo)
 }
