@@ -10,6 +10,7 @@ La documentación de la API se encuentra en [ArgentinaDatos.com](https://argenti
 
 - [Compara Tasas](https://comparatasas.ar): Sitio para comparar el rendimiento de distintos fondos u opciones de inversión.
 - [arbolito🌳](https://apps.apple.com/ar/app/arbolito-d%C3%B3lar-hoy/id6470806411): Dolar y cripto widgets para iOS.
+- [MERC's Harvey Bot](https://t.me/mercsharvey_bot): Bot de Telegram para consultar datos del mercado de valores en Argentina.
 
 
 > [!NOTE]  
