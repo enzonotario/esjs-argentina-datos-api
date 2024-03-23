@@ -36,6 +36,8 @@ Las entidades disponibles son:
 
 - [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)
 
+- [Ripio](https://www.ripio.com/ar/?ref=argentinadatos.com)
+
 <!--@include: ./parts/get-finanzas-rendimientos-entidad-description-after.md -->
 
 </template>
