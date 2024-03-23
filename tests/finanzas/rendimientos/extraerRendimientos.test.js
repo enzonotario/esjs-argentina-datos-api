@@ -5,6 +5,7 @@ import { extraerFiwind } from '@/finanzas/rendimientos/extraerFiwind.esjs'
 import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
 import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
 import { extraerLemoncash } from '@/finanzas/rendimientos/extraerLemoncash.esjs'
+import { extraerRipio } from '@/finanzas/rendimientos/extraerRipio.esjs'
 
 function testItems(items) {
   expect(items.length).toBeGreaterThan(0)
@@ -43,6 +44,12 @@ describe('extraerRendimientos', () => {
 
   it('guarda lemoncash', async () => {
     const items = await extraerLemoncash()
+
+    testItems(items)
+  })
+
+  it('guarda ripio', async () => {
+    const items = await extraerRipio()
 
     testItems(items)
   })

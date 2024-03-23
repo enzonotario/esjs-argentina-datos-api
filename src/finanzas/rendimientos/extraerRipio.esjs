@@ -1,0 +1,40 @@
+importar { load } desde 'cheerio'
+importar { format, analizar } desde 'date-fns'
+importar axios desde 'axios'
+importar { collect } desde 'collect.js'
+
+exportar asincrono funcion extraerRipio() {
+  intentar {
+    const respuesta = esperar axios.get(
+      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_RIPIO_URL,
+    )
+
+    si (!respuesta.data || !respuesta.data.results || !respuesta.data.results.longitud) {
+      retornar []
+    }
+
+    retornar collect(respuesta.data.results)
+      .flatMap(protocolo => protocolo.assets.map(asset => ({
+        moneda: asset.currency,
+        apy: parseFloat(asset.apy),
+        fecha: asset.timestamp.split(' ')[0],
+        protocolo: protocolo.name,
+      })))
+      .groupBy('moneda')
+      .map((values, key) => {
+        const valueWithMaxApy = collect(values)
+          .sortByDesc('apy')
+          .first();
+
+        return {
+          moneda: key,
+          apy: valueWithMaxApy.apy,
+          fecha: valueWithMaxApy.fecha
+        }
+      })
+      .toArray();
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
