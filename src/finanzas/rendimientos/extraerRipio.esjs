@@ -14,13 +14,18 @@ exportar asincrono funcion extraerRipio() {
     }
 
     retornar collect(respuesta.data.results)
-      .planoMapear(protocolo => protocolo.assets.mapear(asset => ({
-        moneda: asset.currency,
-        apy: interpretarDecimal(asset.apy),
-        fecha: asset.timestamp.dividir(' ')[0],
-        protocolo: protocolo.name,
-        tarifaGestion: asset.fees ? asset.fees.service : 0,
-      })))
+      .planoMapear(protocolo => protocolo.assets.mapear(asset => {
+        const apy = interpretarDecimal(asset.apy)
+        const tarifaGestion = asset.fees ? asset.fees.service : 0
+
+        retornar {
+          moneda: asset.currency,
+          apy: calcularApy(apy, tarifaGestion),
+          fecha: asset.timestamp.dividir(' ')[0],
+          protocolo: protocolo.name,
+          tarifaGestion,
+        }
+      }))
       .groupBy('moneda')
       .mapear((valores, key) => {
         const maximoApy = collect(valores)
@@ -29,8 +34,8 @@ exportar asincrono funcion extraerRipio() {
 
         retornar {
           moneda: key,
-            apy: calcularApy(maximoApy.apy, maximoApy.tarifaGestion),
-            fecha: maximoApy.fecha
+          apy: maximoApy.apy,
+          fecha: maximoApy.fecha,
         }
       })
       .toArray();
