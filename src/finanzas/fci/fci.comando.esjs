@@ -2,6 +2,7 @@ importar { format, subDays, addDays, isBefore as esAntes } desde 'date-fns'
 importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
+importar { collect } desde 'collect.js'
 
 exportar porDefecto asincrono funcion () {
   const series = [
@@ -21,8 +22,7 @@ asincrono funcion ejecutarSerie(serie) {
   const fin = addDays(crear Fecha(), 1)
   var fecha = inicio
 
-  var penultimo = nulo
-  var ultimo = nulo
+  var itemsTodos = []
 
   mientras (esAntes(fecha, fin)) {
     const items = esperar extraerCacfi(serie, format(fecha, 'yyyy-MM-dd'))
@@ -31,11 +31,28 @@ asincrono funcion ejecutarSerie(serie) {
 
     fecha = addDays(fecha, 1)
 
-    si (items.longitud > 0) {
-      penultimo = ultimo
-      ultimo = items
-    }
+    itemsTodos = itemsTodos.concatenar(items)
   }
+
+  // Por cada fondo, buscar los ultimos 2 dias para guardarlos en penultimo y ultimo
+  const penultimo = []
+  const ultimo = []
+
+  collect(itemsTodos)
+    .groupBy('fondo')
+    .mapear((valores, key) => {
+      const items = collect(valores)
+        .sortByDesc('fecha')
+        .unique('fecha')
+        .toArray()
+
+      si (items.longitud > 1) {
+        penultimo.agregar(items[1])
+        ultimo.agregar(items[0])
+      } sino si (items.longitud === 1) {
+        ultimo.agregar(items[0])
+      }
+    })
 
   esperar escribirRuta(`/finanzas/fci/${serie}/penultimo`, penultimo)
 
