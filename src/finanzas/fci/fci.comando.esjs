@@ -18,7 +18,7 @@ exportar porDefecto asincrono funcion () {
 }
 
 asincrono funcion ejecutarSerie(serie) {
-  const inicio = subDays(crear Fecha(), 7)
+  const inicio = subDays(crear Fecha(), 10)
   const fin = addDays(crear Fecha(), 1)
   var fecha = inicio
 
