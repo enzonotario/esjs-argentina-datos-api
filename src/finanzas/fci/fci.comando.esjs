@@ -3,8 +3,14 @@ importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
 importar { collect } desde 'collect.js'
+importar axios desde 'axios'
 
 exportar porDefecto asincrono funcion () {
+  esperar extraerSeriesDesdeCacfi()
+  esperar extrearSerieOtros()
+}
+
+asincrono funcion extraerSeriesDesdeCacfi() {
   const series = [
     'mercadoDinero',
     'rentaVariable',
@@ -59,4 +65,58 @@ asincrono funcion ejecutarSerie(serie) {
   esperar escribirRuta(`/finanzas/fci/${serie}/ultimo`, ultimo)
 
   retornar verdadero
+}
+
+asincrono funcion extrearSerieOtros() {
+  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
+
+  const items = [
+    esperar extraerNaranjaX(),
+  ]
+
+  esperar escribirRuta(`/finanzas/fci/otros/ultimo`, items)
+
+  esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, items)
+}
+
+asincrono funcion extraerNaranjaX() {
+  intentar {
+    const solicitarToken = esperar axios.post(
+      import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_URL,
+      {
+        client_id: import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_ID,
+        client_secret: import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_SECRET,
+        audience: import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_AUDIENCE,
+        grant_type: 'client_credentials',
+        cache: true
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+
+    const token = solicitarToken.data.access_token
+
+    const rendimientos = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_URL,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      }
+    )
+
+    retornar {
+      fondo: "NARANJA X",
+      tna: rendimientos.data.tna / 100,
+      tea: rendimientos.data.tea / 100,
+      tope: rendimientos.data.tope,
+      fecha: format(crear Fecha(), 'yyyy-MM-dd')
+    }
+  } capturar (error) {
+    consola.error(error)
+    retornar {}
+  }
 }

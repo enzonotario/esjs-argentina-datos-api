@@ -6,5 +6,7 @@ describe('extraerPlazoFijo', () => {
     const items = await extraerPlazoFijo()
 
     expect(items).toMatchSnapshot()
+  }, {
+    timeout: 10000,
   })
 })

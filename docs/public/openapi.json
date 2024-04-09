@@ -575,6 +575,51 @@
         ]
       }
     },
+    "/v1/finanzas/fci/otros/{fecha}": {
+      "get": {
+        "summary": "Otros",
+        "tags": [
+          "Finanzas",
+          "FCI"
+        ],
+        "description": "Devuelve los valores de Otros Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` día con valores utilizando el endpoint: \n\n- `/v1/finanzas/fci/otros/ultimo`",
+        "parameters": [
+          {
+            "name": "fecha",
+            "in": "path",
+            "description": "Fecha de consulta",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "example": "ultimo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de Fondos Comunes de Inversión",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FondoComunInversionOtro"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-fci-otros-fecha",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/otros/{fecha}\""
+          }
+        ]
+      }
+    },
     "/v1/estado": {
       "get": {
         "summary": "Estado de la API",
@@ -906,6 +951,35 @@
             "ccp": 123.45,
             "patrimonio": 123.45,
             "horizonte": "corto"
+          }
+        }
+      },
+      "FondoComunInversionOtro": {
+        "title": "FondoComunInversionOtro",
+        "type": "object",
+        "properties": {
+          "fondo": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string"
+          },
+          "tea": {
+            "type": "number"
+          },
+          "tna": {
+            "type": "number"
+          },
+          "tope": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "fondo": "Otro Fondo Común de Inversión",
+            "tea": 123.45,
+            "tna": 123.45,
+            "tope": 123.45
           }
         }
       },
