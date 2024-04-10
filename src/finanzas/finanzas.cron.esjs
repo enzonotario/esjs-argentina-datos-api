@@ -24,51 +24,71 @@ exportar asincrono funcion cronFinanzas() {
 }
 
 asincrono funcion inflacionMensual() {
-  const hoy = crear Fecha()
+  intentar {
+    const hoy = crear Fecha()
 
-  const inflaciones = esperar extraerInflaciones(
-    format(subMonths(hoy, 3), 'yyyy-MM-dd'),
-    format(addMonths(hoy, 3), 'yyyy-MM-dd'),
-  )
+    const inflaciones = esperar extraerInflaciones(
+      format(subMonths(hoy, 3), 'yyyy-MM-dd'),
+      format(addMonths(hoy, 3), 'yyyy-MM-dd'),
+    )
 
-  esperar guardarInflaciones(inflaciones)
+    esperar guardarInflaciones(inflaciones)
+  } capturar (error) {
+    console.error('Error al extraer inflaciones mensuales', error)
+  }
 }
 
 asincrono funcion inflacionInteranual() {
-  const hoy = crear Fecha()
+  intentar {
+    const hoy = crear Fecha()
 
-  const inflaciones = esperar extraerInflacionesInteranual(
-    format(subMonths(hoy, 3), 'yyyy-MM-dd'),
-    format(addMonths(hoy, 3), 'yyyy-MM-dd'),
-  )
+    const inflaciones = esperar extraerInflacionesInteranual(
+      format(subMonths(hoy, 3), 'yyyy-MM-dd'),
+      format(addMonths(hoy, 3), 'yyyy-MM-dd'),
+    )
 
-  esperar guardarInflacionesInteranual(inflaciones)
+    esperar guardarInflacionesInteranual(inflaciones)
+  } capturar (error) {
+    console.error('Error al extraer inflaciones interanuales', error)
+  }
 }
 
 asincrono funcion plazoFijo() {
-  const tasas = esperar extraerPlazoFijo()
+  intentar {
+    const tasas = esperar extraerPlazoFijo()
 
-  esperar guardarPlazoFijo(tasas)
+    esperar guardarPlazoFijo(tasas)
+  } capturar (error) {
+    console.error('Error al extraer tasas de plazo fijo', error)
+  }
 }
 
 asincrono funcion tasasDepositos30Dias() {
-  const hoy = crear Fecha()
+  intentar {
+    const hoy = crear Fecha()
 
-  const tasas = esperar extraerTasasDepositos30Dias(
-    format(subDays(hoy, 7), 'yyyy-MM-dd'),
-    format(addDays(hoy, 1), 'yyyy-MM-dd'),
-  )
+    const tasas = esperar extraerTasasDepositos30Dias(
+      format(subDays(hoy, 7), 'yyyy-MM-dd'),
+      format(addDays(hoy, 1), 'yyyy-MM-dd'),
+    )
 
-  esperar guardarTasasDepositos30Dias(tasas)
+    esperar guardarTasasDepositos30Dias(tasas)
+  } capturar (error) {
+    console.error('Error al extraer tasas de depositos a 30 dias', error)
+  }
 }
 
 asincrono funcion indiceUVA() {
-  const hoy = crear Fecha()
+  intentar {
+    const hoy = crear Fecha()
 
-  const indices = esperar extraerIndiceUVA(
-    format(subDays(hoy, 7), 'yyyy-MM-dd'),
-    format(addDays(hoy, 1), 'yyyy-MM-dd'),
-  )
+    const indices = esperar extraerIndiceUVA(
+      format(subDays(hoy, 7), 'yyyy-MM-dd'),
+      format(addDays(hoy, 1), 'yyyy-MM-dd'),
+    )
 
-  esperar guardarIndiceUVA(indices)
+    esperar guardarIndiceUVA(indices)
+  } capturar (error) {
+    console.error('Error al extraer indice UVA', error)
+  }
 }
