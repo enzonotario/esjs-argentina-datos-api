@@ -1,6 +1,26 @@
 exportar asincrono funcion extraerBcra(serie, desde, hasta) {
+  const intentos = 3
+
+  para (var intento = 0; intento < intentos; intento++) {
+    intentar {
+      const respuesta = esperar obtenerRespuesta(serie, desde, hasta)
+
+      retornar respuesta
+    } capturar (error) {
+      consola.error('Error al extraer datos del BCRA', error)
+    }
+
+    esperar crear Promesa((resuelve) => {
+      establecerTemporizador(resuelve, 700)
+    })
+  }
+
+  lanzar crear Error(`No se pudo extraer los datos del BCRA para la serie ${serie}`)
+}
+
+asincrono funcion obtenerRespuesta(serie, desde, hasta) {
   const url =
-    'https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables_datos.asp'
+    'http://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables_datos.asp'
 
   const respuesta = esperar fetch(url, {
     method: 'POST',
