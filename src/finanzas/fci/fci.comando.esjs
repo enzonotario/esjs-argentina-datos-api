@@ -1,6 +1,6 @@
 importar { format, subDays, addDays, isBefore as esAntes } desde 'date-fns'
 importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
-importar { escribirRuta } desde '@/utils/rutas.esjs'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
 importar { collect } desde 'collect.js'
 importar axios desde 'axios'
@@ -69,12 +69,18 @@ asincrono funcion ejecutarSerie(serie) {
 
 asincrono funcion extrearSerieOtros() {
   const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
+  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
 
   const items = [
     esperar extraerNaranjaX(),
   ]
 
   esperar escribirRuta(`/finanzas/fci/otros/ultimo`, items)
+
+  esperar escribirRuta(
+    `/finanzas/fci/otros/penultimo`,
+    leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || []
+  )
 
   esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, items)
 }

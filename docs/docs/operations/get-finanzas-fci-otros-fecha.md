@@ -24,9 +24,10 @@ const { isDark } = useData()
 
 Devuelve los valores de Otros Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).
 
-También se puede consultar el `ultimo` día con valores utilizando el endpoint: 
+También se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: 
 
 - `/v1/finanzas/fci/otros/ultimo`
+- `/v1/finanzas/fci/otros/penultimo`
 
 <!--@include: ./parts/get-finanzas-fci-otros-fecha-description-after.md -->
 

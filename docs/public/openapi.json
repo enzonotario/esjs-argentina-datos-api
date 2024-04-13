@@ -582,7 +582,7 @@
           "Finanzas",
           "FCI"
         ],
-        "description": "Devuelve los valores de Otros Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` día con valores utilizando el endpoint: \n\n- `/v1/finanzas/fci/otros/ultimo`",
+        "description": "Devuelve los valores de Otros Fondos Comunes de Inversión en la fecha indicada (en formato `YYYY/MM/DD`).\n\nTambién se puede consultar el `ultimo` y `penultimo` día con valores utilizando los endpoints: \n\n- `/v1/finanzas/fci/otros/ultimo`\n- `/v1/finanzas/fci/otros/penultimo`",
         "parameters": [
           {
             "name": "fecha",
