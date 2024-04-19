@@ -358,6 +358,11 @@
     "entidad": "ripio",
     "rendimientos": [
       {
+        "moneda": "BTC",
+        "apy": 0.01,
+        "fecha": "2024-04-19"
+      },
+      {
         "moneda": "USDC",
         "apy": 5.36,
         "fecha": "2024-04-19"
@@ -375,11 +380,6 @@
       {
         "moneda": "ETH",
         "apy": 2.16,
-        "fecha": "2024-04-19"
-      },
-      {
-        "moneda": "BTC",
-        "apy": 0.01,
         "fecha": "2024-04-19"
       }
     ]
