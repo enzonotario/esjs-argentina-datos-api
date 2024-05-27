@@ -7,7 +7,10 @@
 }
 
 .button-primary {
-  @apply text-white dark:text-black bg-black hover:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-200 font-bold;
+  @apply text-white bg-black hover:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-200 font-bold;
+}
+.vp-doc a.button-primary {
+  @apply text-white dark:text-black;
 }
 
 .button-secondary {
