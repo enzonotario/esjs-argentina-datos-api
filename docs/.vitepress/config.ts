@@ -46,7 +46,7 @@ export default defineConfigWithTheme({
         <svg class="i-mdi-github w-5 h-5" />
         <span class="SidebarItem-text">GitHub</span>
       </span>`,
-        link: 'https://github.com/enzonotario/esjs-dolar-api',
+        link: 'https://github.com/enzonotario/esjs-argentina-datos-api',
       },
       {
         text: 'Eventos',
