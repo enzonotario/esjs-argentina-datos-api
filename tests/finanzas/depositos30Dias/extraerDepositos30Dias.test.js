@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
 import { extraerTasasDepositos30Dias } from '@/finanzas/extraccion/extraerTasasDepositos30Dias.esjs'
-import { format } from 'date-fns'
 
 describe('extraerTasasDepositos30Dias', () => {
   it('extrae los depósitos a 30 días', async () => {

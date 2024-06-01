@@ -1,5 +1,5 @@
 importar axios desde 'axios'
-importar { format, analizar } desde 'date-fns'
+importar { format, parse } desde 'date-fns'
 
 const mapeoSerie = {
   mercadoDinero: '4',
@@ -29,7 +29,7 @@ exportar asincrono funcion extraerCacfi(serie, fecha) {
         fondo: item.fondo,
         horizonte: interpretarHorizonte(item.horizonte),
         fecha: item.fecha
-          ? format(analizar(item.fecha, 'dd/MM/yy', crear Fecha()), 'yyyy-MM-dd')
+          ? format(parse(item.fecha, 'dd/MM/yy', crear Fecha()), 'yyyy-MM-dd')
           : nulo,
         vcp,
         ccp,

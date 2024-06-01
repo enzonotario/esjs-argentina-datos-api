@@ -1,5 +1,5 @@
 importar { load } desde 'cheerio'
-importar { format, analizar } desde 'date-fns'
+importar { format, parse } desde 'date-fns'
 importar { extraerBcra } desde '@/extractores/bcra.extractor.esjs'
 
 exportar asincrono funcion extraerInflaciones(desde, hasta) {
@@ -16,7 +16,7 @@ exportar asincrono funcion extraerInflaciones(desde, hasta) {
     const valor = $(tr).buscar('td').eq(1).text()
 
     inflaciones.agregar({
-      fecha: format(analizar(fecha, 'dd/MM/yyyy', crear Fecha()), 'yyyy-MM-dd'),
+      fecha: format(parse(fecha, 'dd/MM/yyyy', crear Fecha()), 'yyyy-MM-dd'),
       valor: Numero(valor.recortarEspacios().reemplazar(',', '.')),
     })
   })

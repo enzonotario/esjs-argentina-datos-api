@@ -3,7 +3,7 @@ importar {
   existeRuta,
   leerRuta,
 } desde '@/utils/rutas.esjs'
-importar { format, isSameDay, analizar } desde 'date-fns'
+importar { format, isSameDay, parse } desde 'date-fns'
 importar { collect } desde 'collect.js'
 
 exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
@@ -43,7 +43,7 @@ funcion guardarHistoricoPorMoneda(moneda, cotizaciones, fecha) {
   const actualSinItemsConMismaFecha = actual.filtrar((item) => {
     const esMismaFecha = isSameDay(
       fecha,
-      analizar(item.fecha, 'yyyy-MM-dd', crear Fecha()),
+      parse(item.fecha, 'yyyy-MM-dd', crear Fecha()),
     )
 
     retornar !esMismaFecha
@@ -60,7 +60,7 @@ funcion guardarHistorico(cotizaciones, fecha) {
   const actualSinItemsConMismaFecha = actual.filtrar((item) => {
     const esMismaFecha = isSameDay(
       fecha,
-      analizar(item.fecha, 'yyyy-MM-dd', crear Fecha()),
+      parse(item.fecha, 'yyyy-MM-dd', crear Fecha()),
     )
 
     retornar !esMismaFecha

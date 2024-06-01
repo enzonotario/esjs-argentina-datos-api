@@ -1,5 +1,5 @@
 importar { load } desde 'cheerio'
-importar { format, analizar } desde 'date-fns'
+importar { format } desde 'date-fns'
 importar axios desde 'axios'
 
 exportar asincrono funcion extraerBuenbit() {
