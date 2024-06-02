@@ -19,5 +19,5 @@ exportar asincrono funcion extraerCotizaciones() {
     compra: cotizacion.compra,
     venta: cotizacion.venta,
     fecha: format(hoy, 'yyyy-MM-dd'),
-  }))
+  }));
 }

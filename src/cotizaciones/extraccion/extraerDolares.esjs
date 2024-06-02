@@ -12,5 +12,5 @@ exportar asincrono funcion extraerDolares() {
     compra: dolar.compra,
     venta: dolar.venta,
     fecha: format(hoy, 'yyyy-MM-dd'),
-  }))
+  }));
 }

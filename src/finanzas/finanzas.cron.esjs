@@ -34,7 +34,7 @@ asincrono funcion inflacionMensual() {
 
     esperar guardarInflaciones(inflaciones)
   } capturar (error) {
-    console.error('Error al extraer inflaciones mensuales', error)
+    consola.error('Error al extraer inflaciones mensuales', error)
   }
 }
 
@@ -49,7 +49,7 @@ asincrono funcion inflacionInteranual() {
 
     esperar guardarInflacionesInteranual(inflaciones)
   } capturar (error) {
-    console.error('Error al extraer inflaciones interanuales', error)
+    consola.error('Error al extraer inflaciones interanuales', error)
   }
 }
 
@@ -59,7 +59,7 @@ asincrono funcion plazoFijo() {
 
     esperar guardarPlazoFijo(tasas)
   } capturar (error) {
-    console.error('Error al extraer tasas de plazo fijo', error)
+    consola.error('Error al extraer tasas de plazo fijo', error)
   }
 }
 
@@ -74,7 +74,7 @@ asincrono funcion tasasDepositos30Dias() {
 
     esperar guardarTasasDepositos30Dias(tasas)
   } capturar (error) {
-    console.error('Error al extraer tasas de depositos a 30 dias', error)
+    consola.error('Error al extraer tasas de depositos a 30 dias', error)
   }
 }
 
@@ -89,6 +89,6 @@ asincrono funcion indiceUVA() {
 
     esperar guardarIndiceUVA(indices)
   } capturar (error) {
-    console.error('Error al extraer indice UVA', error)
+    consola.error('Error al extraer indice UVA', error)
   }
 }

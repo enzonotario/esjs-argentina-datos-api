@@ -1,8 +1,4 @@
-importar {
-  escribirRuta,
-  existeRuta,
-  leerRuta,
-} desde '@/utils/rutas.esjs'
+importar { escribirRuta, existeRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { format, isSameDay, parse } desde 'date-fns'
 importar { collect } desde 'collect.js'
 
@@ -23,7 +19,7 @@ exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
 
   cotizaciones.mapear((cotizacion) => {
     escribirRuta(
-      `/cotizaciones/${cotizacion.moneda.toLowerCase()}/${fechaConBarra}`,
+      `/cotizaciones/${cotizacion.moneda.aMinusculas()}/${fechaConBarra}`,
       cotizacion,
     )
   })

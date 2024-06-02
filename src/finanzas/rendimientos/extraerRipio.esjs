@@ -9,7 +9,11 @@ exportar asincrono funcion extraerRipio() {
       importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_RIPIO_URL,
     )
 
-    si (!respuesta.data || !respuesta.data.results || !respuesta.data.results.longitud) {
+    si (
+      !respuesta.data ||
+      !respuesta.data.results ||
+      !respuesta.data.results.longitud
+    ) {
       retornar []
     }
 
@@ -50,5 +54,5 @@ funcion calcularApy(apy, tarifaGestion) {
   const tasaDiariaAjustada = tasaDiaria - tarifaGestion / 100
   const apyAjustado = Mate.potencia(1 + tasaDiariaAjustada, 365) - 1
 
-  retornar Numero((apyAjustado * 100).fijarDecimales(2))
+  retornar Numero((apyAjustado * 100).fijarDecimales(2));
 }

@@ -6,7 +6,7 @@ exportar funcion escribirRuta(ruta, contenido, minificar = falso) {
   intentar {
     fs.mkdirSync(directorio, { recursive: verdadero })
 
-    contenido = JSON.stringify(contenido, nulo, minificar ? 0 : 2)
+    contenido = JSON.aTexto(contenido, nulo, minificar ? 0 : 2)
 
     fs.writeFileSync(`${directorio}/index.json`, contenido)
 
@@ -32,7 +32,7 @@ exportar funcion expandirRuta(ruta, contenido, minificar = falso) {
 
     const items = JSON.analizar(fs.readFileSync(archivo, 'utf8'))
 
-    contenido = JSON.stringify(
+    contenido = JSON.aTexto(
       [...items, ...contenido],
       nulo,
       minificar ? 0 : 2,
@@ -50,7 +50,7 @@ exportar funcion expandirRuta(ruta, contenido, minificar = falso) {
 
 exportar funcion leerRuta(ruta) {
   si (ruta.comienzaCon('/')) {
-    ruta = ruta.recortar(1)
+    ruta = ruta.rodaja(1)
   }
 
   const directorio = `datos/v1/${ruta}`
@@ -58,7 +58,7 @@ exportar funcion leerRuta(ruta) {
   intentar {
     const contenido = fs.readFileSync(`${directorio}/index.json`, 'utf8')
 
-    retornar JSON.analizar(contenido)
+    retornar JSON.analizar(contenido);
   } capturar (error) {
     consola.error(error)
 
@@ -68,7 +68,7 @@ exportar funcion leerRuta(ruta) {
 
 exportar funcion existeRuta(ruta) {
   si (ruta.comienzaCon('/')) {
-    ruta = ruta.recortar(1)
+    ruta = ruta.rodaja(1)
   }
 
   const directorio = `datos/v1/${ruta}`

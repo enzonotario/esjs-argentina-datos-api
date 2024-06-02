@@ -10,5 +10,5 @@ exportar asincrono funcion guardarPlazoFijo(items) {
       tnaNoClientes: item.tnaNoClientes,
       enlace: item.enlace || nulo,
     })),
-  )
+  );
 }

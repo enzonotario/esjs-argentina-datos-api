@@ -1,4 +1,4 @@
-importar { format, subDays, addDays, isBefore as esAntes } desde 'date-fns'
+importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
 importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
@@ -71,15 +71,13 @@ asincrono funcion extrearSerieOtros() {
   const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
   const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
 
-  const items = [
-    esperar extraerNaranjaX(),
-  ]
+  const items = [esperar extraerNaranjaX()]
 
   esperar escribirRuta(`/finanzas/fci/otros/ultimo`, items)
 
   esperar escribirRuta(
     `/finanzas/fci/otros/penultimo`,
-    leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || []
+    leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || [],
   )
 
   esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, items)
@@ -88,39 +86,39 @@ asincrono funcion extrearSerieOtros() {
 asincrono funcion extraerNaranjaX() {
   intentar {
     const solicitarToken = esperar axios.post(
-      import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_URL,
+      importar.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_URL,
       {
-        client_id: import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_ID,
-        client_secret: import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_SECRET,
-        audience: import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_AUDIENCE,
+        client_id: importar.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_ID,
+        client_secret: importar.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_SECRET,
+        audience: importar.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_AUDIENCE,
         grant_type: 'client_credentials',
-        cache: true
+        cache: verdadero,
       },
       {
         headers: {
-          'Content-Type': 'application/json'
-        }
-      }
+          'Content-Type': 'application/json',
+        },
+      },
     )
 
     const token = solicitarToken.data.access_token
 
     const rendimientos = esperar axios.get(
-      import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_URL,
+      importar.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_URL,
       {
         headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }
+          Authorization: `Bearer ${token}`,
+        },
+      },
     )
 
     retornar {
-      fondo: "NARANJA X",
+      fondo: 'NARANJA X',
       tna: rendimientos.data.tna / 100,
       tea: rendimientos.data.tea / 100,
       tope: rendimientos.data.tope,
-      fecha: format(crear Fecha(), 'yyyy-MM-dd')
-    }
+      fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+    };
   } capturar (error) {
     consola.error(error)
     retornar {}

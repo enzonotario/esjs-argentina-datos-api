@@ -8,5 +8,5 @@ exportar funcion guardarFeriados(año, feriados) {
       tipo: feriado.tipo,
       nombre: feriado.nombre,
     })),
-  )
+  );
 }

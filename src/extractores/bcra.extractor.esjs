@@ -15,7 +15,9 @@ exportar asincrono funcion extraerBcra(serie, desde, hasta) {
     })
   }
 
-  lanzar crear Error(`No se pudo extraer los datos del BCRA para la serie ${serie}`)
+  lanzar crear Error(
+    `No se pudo extraer los datos del BCRA para la serie ${serie}`,
+  )
 }
 
 asincrono funcion obtenerRespuesta(serie, desde, hasta) {

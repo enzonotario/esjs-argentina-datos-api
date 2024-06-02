@@ -1,4 +1,4 @@
-importar { format, subDays, addDays, isBefore as esAntes } desde 'date-fns'
+importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
 importar { escribirRuta } desde '@/utils/rutas.esjs'
 importar { guardarRendimientos } desde '@/finanzas/rendimientos/guardarRendimientos.esjs'
 importar { extraerBuenbit } desde '@/finanzas/rendimientos/extraerBuenbit.esjs'

@@ -52,5 +52,5 @@ funcion interpretarPorcentaje(valor) {
     retornar nulo
   }
 
-  retornar interpretarDecimal((Numero(porcentaje) / 100).fijarDecimales(4))
+  retornar interpretarDecimal((Numero(porcentaje) / 100).fijarDecimales(4));
 }

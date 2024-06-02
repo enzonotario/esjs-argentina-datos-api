@@ -10,5 +10,5 @@ exportar asincrono funcion guardarRendimientos(entidad, items) {
       apy: item.apy,
       fecha: item.fecha,
     })),
-  )
+  );
 }

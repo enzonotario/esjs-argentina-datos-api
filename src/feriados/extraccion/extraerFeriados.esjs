@@ -55,7 +55,8 @@ exportar asincrono funcion extraerFeriados(año) {
 }
 
 funcion limpiarTipo(tipo) {
-  retornar tipo.reemplazar(/[^a-zA-Z0-9]/g, '') // Eliminar caracteres no alfanuméricos
+  // Eliminar caracteres no alfanuméricos
+  retornar tipo.reemplazar(/[^a-zA-Z0-9]/g, '')
 }
 
 funcion interpretarTipo(tipo) {
