@@ -13,7 +13,7 @@ exportar asincrono funcion extraerFiwind() {
     para (const item de respuesta.data) {
       const moneda = item.currency.aMayusculas()
       const apy = Numero(item.apy)
-      const fecha = format(parseISO(item.createdAt), 'yyyy-MM-dd')
+      const fecha = format(parseISO(item.updatedAt), 'yyyy-MM-dd')
 
       items.agregar({
         moneda,
