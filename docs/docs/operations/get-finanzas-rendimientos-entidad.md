@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-rendimientos-entidad">
+<Path method="GET" id="get-finanzas-rendimientos-entidad">
 
 <template #header="header">
 
@@ -74,8 +74,10 @@ Las entidades disponibles son:
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-finanzas-rendimientos-entidad-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

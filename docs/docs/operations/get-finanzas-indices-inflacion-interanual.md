@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-indices-inflacion-interanual">
+<Path method="GET" id="get-finanzas-indices-inflacion-interanual">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Devuelve los índices de inflación interanuales.
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-finanzas-indices-inflacion-interanual-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

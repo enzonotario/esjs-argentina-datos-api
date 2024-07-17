@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-estado">
+<Path method="GET" id="get-estado">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Devuelve el estado de la API.
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-estado-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

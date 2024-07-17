@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-indices-uva">
+<Path method="GET" id="get-finanzas-indices-uva">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Devuelve los índices UVA.
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-finanzas-indices-uva-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-cotizaciones-dolares">
+<Path method="GET" id="get-cotizaciones-dolares">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Devuelve las cotizaciones de todas las casas de cambio.
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-cotizaciones-dolares-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-eventos-presidenciales">
+<Path method="GET" id="get-eventos-presidenciales">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Devuelve los eventos presidenciales.
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-eventos-presidenciales-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

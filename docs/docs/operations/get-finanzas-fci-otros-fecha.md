@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-fci-otros-fecha">
+<Path method="GET" id="get-finanzas-fci-otros-fecha">
 
 <template #header="header">
 
@@ -65,8 +65,10 @@ También se puede consultar el `ultimo` y `penultimo` día con valores utilizand
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-finanzas-fci-otros-fecha-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

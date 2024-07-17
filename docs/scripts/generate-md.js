@@ -58,7 +58,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="${operationId}">
+<Path method="GET" id="${operationId}">
 
 <template #header="header">
 
@@ -106,11 +106,13 @@ ${operation.description || ''}
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/${operationId}-footer.md -->
 
 </template>
 
-</Operation>
+</Path>
 `
   return markdown
 }

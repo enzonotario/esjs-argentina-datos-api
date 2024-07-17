@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-tasas-depositos-30-dias">
+<Path method="GET" id="get-finanzas-tasas-depositos-30-dias">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Tasas de interés por depósitos a 30 días de plazo.
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-finanzas-tasas-depositos-30-dias-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

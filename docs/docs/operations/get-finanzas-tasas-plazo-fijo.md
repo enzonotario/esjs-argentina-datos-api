@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-finanzas-tasas-plazo-fijo">
+<Path method="GET" id="get-finanzas-tasas-plazo-fijo">
 
 <template #header="header">
 
@@ -64,8 +64,10 @@ Las tasas son reportadas por los bancos al BCRA en cumplimiento del Régimen Inf
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-finanzas-tasas-plazo-fijo-footer.md -->
 
 </template>
 
-</Operation>
+</Path>

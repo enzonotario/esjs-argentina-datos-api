@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Operation method="GET" id="get-feriados">
+<Path method="GET" id="get-feriados">
 
 <template #header="header">
 
@@ -60,8 +60,10 @@ Devuelve los feriados del año indicado (o del año actual si no se especifica).
 
 <template #footer="footer">
 
+<OAFooter />
+
 <!--@include: ./parts/get-feriados-footer.md -->
 
 </template>
 
-</Operation>
+</Path>
