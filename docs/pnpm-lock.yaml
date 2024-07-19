@@ -54,8 +54,8 @@ importers:
         specifier: 1.2.2
         version: 1.2.2(@algolia/client-search@4.22.0)(postcss@8.4.33)(search-insights@2.13.0)(typescript@5.3.3)
       vitepress-theme-openapi:
-        specifier: 0.0.3-alpha.8
-        version: 0.0.3-alpha.8(vue@3.4.27(typescript@5.3.3))
+        specifier: 0.0.3-alpha.9
+        version: 0.0.3-alpha.9(vue@3.4.27(typescript@5.3.3))
 
 packages:
 
@@ -2265,8 +2265,8 @@ packages:
       terser:
         optional: true
 
-  vitepress-theme-openapi@0.0.3-alpha.8:
-    resolution: {integrity: sha512-CKklS3qTQEV3R1Fxqq7Eg1xCCN+T4JokXun0VZFA/xXjUvtUsrJJYD0YUaTPicYIV33dg5nbRBQc2uhy/6RDCQ==}
+  vitepress-theme-openapi@0.0.3-alpha.9:
+    resolution: {integrity: sha512-iWL3lKBlpjzgkjoRXPT68XRz4NLg1Ib4bYN6yNFNK9iheSbQF7GSlnN3jH3BB4mFEaP96G0dEQ178KJrAQ8XCg==}
     peerDependencies:
       vue: ^3.4.29
 
@@ -4775,7 +4775,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-theme-openapi@0.0.3-alpha.8(vue@3.4.27(typescript@5.3.3)):
+  vitepress-theme-openapi@0.0.3-alpha.9(vue@3.4.27(typescript@5.3.3)):
     dependencies:
       vue: 3.4.27(typescript@5.3.3)
 
