@@ -1,8 +1,13 @@
 {
   "name": "esjs-argentina-datos-api",
-  "version": "0.0.1",
-  "license": "MIT",
+  "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzonotario/esjs-argentina-datos-api.git"
+  },
+  "author": "Enzo Notario <hi@enzonotario.me>",
+  "license": "MIT",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build --ssr --mode=production",
