@@ -88,6 +88,13 @@ export default defineConfigWithTheme({
         ],
       },
     ],
+    nav: [
+      { text: 'Aviso Legal', link: '/docs/legal' },
+    ],
+    footer: {
+      message: 'Liberado bajo la <a href="https://github.com/enzonotario/esjs-argentina-datos-api/blob/main/LICENSE">Licencia MIT</a>.',
+      copyright: '<a href="/docs/legal">Aviso Legal</a>',
+    },
   },
 
   head: [
