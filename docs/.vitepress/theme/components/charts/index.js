@@ -28,4 +28,5 @@ export default {
     () => import('./ChartTasasDepositos30Dias.vue'),
   ),
   ChartIndicesUva: defineAsyncComponent(() => import('./ChartIndicesUva.vue')),
+  ChartIndicesRiesgoPais: defineAsyncComponent(() => import('./ChartIndicesRiesgoPais.vue')),
 }
