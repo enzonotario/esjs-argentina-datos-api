@@ -1,0 +1,16 @@
+importar axios desde 'axios'
+importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+
+exportar asincrono funcion extraerRiesgoPais() {
+  intentar {
+    const respuesta = esperar axios.get(
+      "https://mercados.ambito.com//riesgopais/jornada"
+    )
+
+    retornar interpretarDecimal(respuesta.data.valor)
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}

@@ -1,0 +1,35 @@
+importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+importar { extraerRiesgoPais } desde '@/finanzas/riesgoPais/extraerRiesgoPais.esjs'
+
+exportar porDefecto asincrono funcion () {
+  const riesgoPaisValor = esperar extraerRiesgoPais()
+  const fecha = crear Fecha()
+
+  esperar guardarUltimo(riesgoPaisValor, fecha)
+  esperar guardarHistorico(riesgoPaisValor, fecha)
+
+  retornar verdadero
+}
+
+asincrono funcion guardarUltimo(riesgoPaisValor, fecha) {
+  esperar escribirRuta('/finanzas/indices/riesgo-pais/ultimo', {
+    valor: riesgoPaisValor,
+    fecha: format(fecha, 'yyyy-MM-dd'),
+  })
+}
+
+asincrono funcion guardarHistorico(riesgoPaisValor, fecha) {
+  const historico = esperar leerRuta('/finanzas/indices/riesgo-pais')
+
+  const ultimo = historico ? historico[historico.longitud - 1] : indefinido
+
+  si (!ultimo || ultimo.fecha !== format(fecha, 'yyyy-MM-dd')) {
+    historico.agregar({
+      valor: riesgoPaisValor,
+      fecha: format(fecha, 'yyyy-MM-dd'),
+    })
+  }
+
+  esperar escribirRuta('/finanzas/indices/riesgo-pais', historico)
+}
