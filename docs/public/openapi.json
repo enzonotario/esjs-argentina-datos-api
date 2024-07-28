@@ -333,6 +333,67 @@
         ]
       }
     },
+    "/v1/finanzas/indices/riesgo-pais": {
+      "get": {
+        "summary": "Riesgo país",
+        "tags": [
+          "Finanzas",
+          "Índices"
+        ],
+        "description": "Devuelve una lista de riesgo país. Para obtener el último valor, consultar `/v1/finanzas/indices/riesgo-pais/ultimo`.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de riesgo país",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RiesgoPais"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-indices-riesgo-pais",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais\""
+          }
+        ]
+      }
+    },
+    "/v1/finanzas/indices/riesgo-pais/ultimo": {
+      "get": {
+        "summary": "Riesgo país (último)",
+        "tags": [
+          "Finanzas",
+          "Índices"
+        ],
+        "description": "Devuelve el último valor de riesgo país.",
+        "responses": {
+          "200": {
+            "description": "Devuelve el último valor de riesgo país",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RiesgoPais"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-indices-riesgo-pais-ultimo",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais/ultimo\""
+          }
+        ]
+      }
+    },
     "/v1/finanzas/tasas/plazoFijo": {
       "get": {
         "summary": "Plazo fijo",
@@ -859,6 +920,24 @@
           "Example 1": {
             "mes": "Enero",
             "indice": 2.3
+          }
+        }
+      },
+      "RiesgoPais": {
+        "title": "RiesgoPais",
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string"
+          },
+          "valor": {
+            "type": "number"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "fecha": "2020-01-01",
+            "valor": 123.45
           }
         }
       },
