@@ -46,11 +46,15 @@ async function setChartOptions() {
     series: [
       {
         name: 'Valor',
-        type: 'line',
-        data: seriesData.map(item => item.valor),
-        itemStyle: {
-          color: colors.indigo[500],
-        },
+        type: 'candlestick',
+        data: seriesData.map((item, index) => {
+          return [
+            seriesData[index - 1]?.valor || item.valor,
+            item.valor,
+            item.valor,
+            item.valor,
+          ]
+        }),
       },
     ],
     xAxis: {
@@ -66,7 +70,7 @@ async function setChartOptions() {
     dataZoom: [
       {
         type: 'inside',
-        start: 95,
+        start: 98,
         end: 100,
       },
       {
