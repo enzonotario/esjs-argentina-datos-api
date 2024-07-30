@@ -1,6 +1,7 @@
 importar { load } desde 'cheerio'
 importar { format, parse } desde 'date-fns'
 importar { extraerBcra } desde '@/extractores/bcra.extractor.esjs'
+importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
 
 exportar asincrono funcion extraerTasasDepositos30Dias(desde, hasta) {
   const html = esperar extraerBcra('1212', desde, hasta)
@@ -25,7 +26,7 @@ exportar asincrono funcion extraerTasasDepositos30Dias(desde, hasta) {
 }
 
 funcion interpretarPorcentaje(valor) {
-  const porcentaje = Numero(valor.reemplazar(',', '.').reemplazar('%', ''))
+  const porcentaje = interpretarDecimalConComa(valor.reemplazar('%', ''))
 
   si (!porcentaje) {
     retornar nulo

@@ -1,6 +1,7 @@
 importar { load } desde 'cheerio'
 importar { format } desde 'date-fns'
 importar axios desde 'axios'
+importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
 
 exportar asincrono funcion extraerPlazoFijo() {
   intentar {
@@ -46,7 +47,7 @@ exportar asincrono funcion obtenerRespuesta() {
 }
 
 funcion interpretarPorcentaje(valor) {
-  const porcentaje = Numero(valor.reemplazar(',', '.').reemplazar('%', ''))
+  const porcentaje = interpretarDecimalConComa(valor.reemplazar('%', ''))
 
   si (!porcentaje) {
     retornar nulo
