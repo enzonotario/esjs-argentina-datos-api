@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { FwbSelect } from 'flowbite-vue'
 import colors from 'tailwindcss/colors'
 import { format, parseISO, subDays } from 'date-fns'
 import { useApi } from '../../composables/useApi'
@@ -201,7 +200,11 @@ watch(
         Variación de los últimos 7 días
       </h3>
 
-      <FwbSelect v-model="casa" :options="options" />
+      <select v-model="casa" class="rounded p-2">
+        <option v-for="option in options" :key="option.value" :value="option.value">
+          {{ option.name }}
+        </option>
+      </select>
     </div>
 
     <div ref="chartRef" class="h-[50rem]" />

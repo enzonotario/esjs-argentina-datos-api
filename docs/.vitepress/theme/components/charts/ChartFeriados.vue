@@ -2,7 +2,6 @@
 import { ref, watch } from 'vue'
 import colors from 'tailwindcss/colors'
 import { collect } from 'collect.js'
-import { FwbInput, FwbSpinner } from 'flowbite-vue'
 import { format, parseISO } from 'date-fns'
 import { useApi } from '../../composables/useApi'
 import { useEcharts } from '../../composables/useEcharts'
@@ -244,15 +243,16 @@ watch(
         Feriados del año
       </h3>
 
-      <FwbInput
+      <input
         v-model="year"
         type="number"
-        :min="2000"
+        min="2000"
         :max="new Date().getFullYear()"
-        :step="1"
+        step="1"
+        class="rounded p-2 bg-muted"
       />
 
-      <FwbSpinner v-show="loading" size="6" />
+      <span v-if="loading" class="animate-spin h-6 w-6 border-t-2 border-b-2 border-gray-900 dark:border-gray-100 rounded-full"></span>
     </div>
 
     <div ref="chartRef" class="h-[33rem]" />

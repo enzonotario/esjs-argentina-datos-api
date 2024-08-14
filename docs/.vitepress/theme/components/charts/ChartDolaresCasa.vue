@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { collect } from 'collect.js'
-import { FwbSelect } from 'flowbite-vue'
 import colors from 'tailwindcss/colors'
 import * as echarts from 'echarts'
 import { format, parseISO } from 'date-fns'
@@ -195,7 +194,11 @@ watch(
         Cotización de dólar por casa de cambio
       </h3>
 
-      <FwbSelect v-model="casa" :options="options" />
+      <select v-model="casa" class="rounded p-2">
+        <option v-for="option in options" :value="option.value" :key="option.value">
+          {{ option.name }}
+        </option>
+      </select>
     </div>
 
     <div ref="chartRef" class="h-[50rem]" />
