@@ -8,7 +8,6 @@ import { useECharts } from '../plugins/echarts'
 import chartComponents from './components/charts'
 import GitHubStars from './components/GitHubStars.vue'
 
-import './base.css'
 import 'vitepress-theme-openapi/dist/style.css'
 import './style.css'
 
