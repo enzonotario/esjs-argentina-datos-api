@@ -2,12 +2,13 @@ import { theme, useOpenapi } from 'vitepress-theme-openapi'
 import DefaultTheme from 'vitepress/theme'
 import { setDefaultOptions } from 'date-fns'
 import { es } from 'date-fns/locale'
+import { h } from 'vue'
 import spec from '../../public/openapi.json' assert { type: 'json' }
 import { useECharts } from '../plugins/echarts'
 import chartComponents from './components/charts'
-import { h } from 'vue'
 import GitHubStars from './components/GitHubStars.vue'
 
+import './base.css'
 import 'vitepress-theme-openapi/dist/style.css'
 import './style.css'
 
