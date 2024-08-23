@@ -1,4 +1,4 @@
-import { theme, useOpenapi } from 'vitepress-theme-openapi'
+import { theme, useOpenapi, useTheme } from 'vitepress-theme-openapi'
 import DefaultTheme from 'vitepress/theme'
 import { setDefaultOptions } from 'date-fns'
 import { es } from 'date-fns/locale'
@@ -23,6 +23,10 @@ export default {
 
     const openapi = useOpenapi()
     openapi.setSpec(spec)
+
+    const themeConfig = useTheme()
+    themeConfig.setLocale('es')
+
     theme.enhanceApp({ app })
 
     app.use(useECharts)
