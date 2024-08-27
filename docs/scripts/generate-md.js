@@ -58,7 +58,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Path method="GET" id="${operationId}">
+<OAPath method="GET" id="${operationId}">
 
 <template #header="header">
 
@@ -78,7 +78,7 @@ ${operation.description || ''}
 
 ## {{ $t('Parameters') }}
 
-<Parameters operation-id="${operationId}" :parameters="parameters.parameters" />
+<OAParameters operation-id="${operationId}" :parameters="parameters.parameters" />
 
 </template>
 
@@ -86,21 +86,21 @@ ${operation.description || ''}
 
 ## {{ $t('Response') }}
 
-<Responses :responses="responses.responses" :schema="responses.schema" :responseType="responses.responseType" :isDark="isDark">
+<OAResponses :responses="responses.responses" :schema="responses.schema" :responseType="responses.responseType" :isDark="isDark">
 
 <template #body="body">
 
-<ResponseBody :schema="body.schema" :responseType="body.responseType" />
+<OAResponseBody :schema="body.schema" :responseType="body.responseType" />
 
 </template>
 
-</Responses>
+</OAResponses>
 
 </template>
 
 <template #try-it="tryIt">
 
-<TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
+<OATryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
 
 </template>
 
@@ -112,7 +112,7 @@ ${operation.description || ''}
 
 </template>
 
-</Path>
+</OAPath>
 `
   return markdown
 }

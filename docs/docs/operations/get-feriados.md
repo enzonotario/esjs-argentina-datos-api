@@ -12,7 +12,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<Path method="GET" id="get-feriados">
+<OAPath method="GET" id="get-feriados">
 
 <template #header="header">
 
@@ -32,7 +32,7 @@ Devuelve los feriados del año indicado (o del año actual si no se especifica).
 
 ## {{ $t('Parameters') }}
 
-<Parameters operation-id="get-feriados" :parameters="parameters.parameters" />
+<OAParameters operation-id="get-feriados" :parameters="parameters.parameters" />
 
 </template>
 
@@ -40,21 +40,21 @@ Devuelve los feriados del año indicado (o del año actual si no se especifica).
 
 ## {{ $t('Response') }}
 
-<Responses :responses="responses.responses" :schema="responses.schema" :responseType="responses.responseType" :isDark="isDark">
+<OAResponses :responses="responses.responses" :schema="responses.schema" :responseType="responses.responseType" :isDark="isDark">
 
 <template #body="body">
 
-<ResponseBody :schema="body.schema" :responseType="body.responseType" />
+<OAResponseBody :schema="body.schema" :responseType="body.responseType" />
 
 </template>
 
-</Responses>
+</OAResponses>
 
 </template>
 
 <template #try-it="tryIt">
 
-<TryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
+<OATryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
 
 </template>
 
@@ -66,4 +66,4 @@ Devuelve los feriados del año indicado (o del año actual si no se especifica).
 
 </template>
 
-</Path>
+</OAPath>
