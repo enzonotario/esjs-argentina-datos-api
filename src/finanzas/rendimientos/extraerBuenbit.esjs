@@ -5,7 +5,7 @@ importar axios desde 'axios'
 exportar asincrono funcion extraerBuenbit() {
   intentar {
     const respuesta = esperar axios.get(
-      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL,
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL,
     )
 
     si (respuesta.data.errors.longitud > 0) {

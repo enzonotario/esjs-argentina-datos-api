@@ -5,7 +5,7 @@ importar axios desde 'axios'
 exportar asincrono funcion extraerLemoncash() {
   intentar {
     const respuesta = esperar axios.get(
-      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_LEMONCASH_URL,
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_LEMONCASH_URL,
     )
 
     si (!respuesta.data || !respuesta.data.longitud) {

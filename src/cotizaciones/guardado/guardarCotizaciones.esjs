@@ -17,7 +17,7 @@ exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
 
   escribirRuta(`/cotizaciones/${fechaConBarra}`, cotizaciones)
 
-  cotizaciones.mapear((cotizacion) => {
+  cotizaciones.mapear(cotizacion => {
     escribirRuta(
       `/cotizaciones/${cotizacion.moneda.aMinusculas()}/${fechaConBarra}`,
       cotizacion,
@@ -25,8 +25,7 @@ exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
   })
 
   collect(cotizaciones)
-    .groupBy('moneda')
-    .mapear((cotizaciones, moneda) => {
+    .groupBy('moneda').mapear((cotizaciones, moneda) => {
       guardarHistoricoPorMoneda(moneda.aMinusculas(), cotizaciones, fecha)
     })
 
@@ -36,7 +35,7 @@ exportar asincrono funcion guardarCotizaciones(cotizaciones, fecha) {
 funcion guardarHistoricoPorMoneda(moneda, cotizaciones, fecha) {
   const actual = leerRuta(`/cotizaciones/${moneda}`)
 
-  const actualSinItemsConMismaFecha = actual.filtrar((item) => {
+  const actualSinItemsConMismaFecha = actual.filtrar(item => {
     const esMismaFecha = isSameDay(
       fecha,
       parse(item.fecha, 'yyyy-MM-dd', crear Fecha()),
@@ -53,7 +52,7 @@ funcion guardarHistoricoPorMoneda(moneda, cotizaciones, fecha) {
 funcion guardarHistorico(cotizaciones, fecha) {
   const actual = leerRuta(`/cotizaciones`)
 
-  const actualSinItemsConMismaFecha = actual.filtrar((item) => {
+  const actualSinItemsConMismaFecha = actual.filtrar(item => {
     const esMismaFecha = isSameDay(
       fecha,
       parse(item.fecha, 'yyyy-MM-dd', crear Fecha()),

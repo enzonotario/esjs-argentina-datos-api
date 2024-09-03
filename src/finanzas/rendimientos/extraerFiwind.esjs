@@ -5,7 +5,7 @@ importar axios desde 'axios'
 exportar asincrono funcion extraerFiwind() {
   intentar {
     const respuesta = esperar axios.get(
-      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL,
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL,
     )
 
     const items = []

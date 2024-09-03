@@ -11,8 +11,8 @@ describe('comprobarDolares', () => {
 
     collect(dolares)
       .groupBy('casa')
-      .map(async (dolaresPorCasa) => {
-        dolaresPorCasa.map(async (dolar) => {
+      .map(async dolaresPorCasa => {
+        dolaresPorCasa.map(async dolar => {
           const guardado = await leerRuta(
             `/cotizaciones/dolares/${dolar.casa}/${format(
               parseISO(dolar.fecha),
@@ -70,8 +70,8 @@ describe('comprobarDolares', () => {
 
     collect(dolares)
       .groupBy('casa')
-      .map(async (dolaresPorCasa) => {
-        dolaresPorCasa.map(async (dolar) => {
+      .map(async dolaresPorCasa => {
+        dolaresPorCasa.map(async dolar => {
           // Guardar
           const guardar = await escribirRuta(
             `/cotizaciones/dolares/${dolar.casa}/${format(
@@ -92,7 +92,7 @@ describe('comprobarDolares', () => {
           dolaresPorCasa
             .toArray()
             .sort((a, b) => a.casa.localeCompare(b.casa))
-            .map((dolar) => ({
+            .map(dolar => ({
               casa: dolar.casa,
               compra: dolar.compra,
               venta: dolar.venta,
@@ -155,7 +155,7 @@ describe('comprobarDolares', () => {
               'yyyy-MM-dd',
             ),
           )
-          .map((dolar) => ({
+          .map(dolar => ({
             ...dolar,
             fecha: format(fechaActual, 'yyyy-MM-dd'),
           }))
@@ -186,7 +186,7 @@ describe('comprobarDolares', () => {
       '/cotizaciones/dolares',
       collect(dolares)
         .sortBy('fecha')
-        .map((dolar) => ({
+        .map(dolar => ({
           casa: dolar.casa,
           compra: dolar.compra,
           venta: dolar.venta,
@@ -243,7 +243,7 @@ describe('comprobarDolares', () => {
               'fecha',
               format(subDays(new Date(fechaCopiada), 1), 'yyyy-MM-dd'),
             )
-            .map((dolar) => ({
+            .map(dolar => ({
               ...dolar,
               fecha: format(fechaActual, 'yyyy-MM-dd'),
             }))

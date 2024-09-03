@@ -29,10 +29,10 @@ exportar asincrono funcion obtenerRespuesta() {
 
   tabla.buscar('tbody tr').each((i, tr) => {
     const entidad = $(tr).buscar('td').eq(0).text()
-    const logo = $(tr).buscar('td').eq(1).buscar('img').attr('src')
+    const logo = $(tr).find('td').eq(1).buscar('img').attr('src')
     const tnaClientes = interpretarPorcentaje($(tr).buscar('td').eq(2).text())
     const tnaNoClientes = interpretarPorcentaje($(tr).buscar('td').eq(3).text())
-    const enlace = $(tr).buscar('td').eq(4).buscar('a').attr('href')
+    const enlace = $(tr).find('td').eq(4).buscar('a').attr('href')
 
     items.agregar({
       entidad: entidad.recortarEspacios(),

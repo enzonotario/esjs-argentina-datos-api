@@ -39,8 +39,7 @@ exportar asincrono funcion iniciar(comando) {
     caso '/v1/finanzas/fci':
       esperar fci()
       romper
-    porDefecto:
-      consola.escribir('No se encontro el comando')
+      porDefecto: consola.escribir('No se encontro el comando')
       romper
   }
 

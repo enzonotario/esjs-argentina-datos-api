@@ -5,10 +5,10 @@ importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 exportar asincrono funcion extraerRiesgoPais() {
   intentar {
     const respuesta = esperar axios.get(
-      "https://mercados.ambito.com//riesgopais/jornada"
+      'https://mercados.ambito.com//riesgopais/jornada',
     )
 
-    retornar interpretarDecimal(respuesta.data.valor)
+    retornar interpretarDecimal(respuesta.data.valor);
   } capturar (error) {
     consola.error(error)
     retornar []

@@ -9,7 +9,7 @@ app.use('*', cors())
 funcion registrarRuta(ruta) {
   app.get(ruta, asincrono (c) => {
     const json = fs.readFileSync(`./datos${ruta}/index.json`, 'utf8')
-    retornar c.json(JSON.analizar(json))
+    retornar c.json(JSON.analizar(json));
   })
 }
 
@@ -21,7 +21,7 @@ funcion registrarRutas(directorio) {
       registrarRutas(ruta)
     } sino {
       registrarRuta(
-        ruta.reemplazar(/^\.\/datos/, '').reemplazar(/\/index\.json$/, ''),
+        ruta.replace(/^\.\/datos/, '').reemplazar(/\/index\.json$/, ''),
       )
     }
   }

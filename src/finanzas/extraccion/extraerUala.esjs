@@ -1,0 +1,74 @@
+importar { format } desde 'date-fns'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+importar axios desde 'axios'
+
+mut respuestaGuardada = nulo
+
+exportar asincrono funcion extraerUalaCuentaRemunerada() {
+  intentar {
+    const respuesta = esperar obtenerRespuesta()
+
+    const cuentaRemunerada = respuesta.data.products.buscar(
+      producto => producto.productName === 'Cuenta Remunerada',
+    )
+
+    const valor = Numero(cuentaRemunerada.value.reemplazar('%', ''))
+
+    si (valor === nulo) {
+      lanzar crear Error('No se encontró el valor de la cuenta remunerada')
+    }
+
+    const tna = Numero((valor / 100).fijarDecimales(4))
+
+    const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
+
+    retornar {
+      fondo: 'UALA',
+      tna,
+      tea,
+      tope: nulo,
+      fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+    };
+  } capturar (error) {
+    consola.error('Error al extraer Uala', error.aCadena())
+
+    retornar nulo
+  }
+}
+
+asincrono funcion obtenerRespuesta() {
+  si (respuestaGuardada) {
+    retornar respuestaGuardada
+  }
+
+  intentar {
+    const solicitarToken = esperar axios.post(
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_UALA_TOKEN_URL,
+      {
+        username: import.meta.env.VITE_FINANZAS_RENDIMIENTOS_UALA_USERNAME,
+        password: import.meta.env.VITE_FINANZAS_RENDIMIENTOS_UALA_PASSWORD,
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      },
+    )
+
+    const token = solicitarToken.data.access
+
+    respuestaGuardada = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_UALA_URL,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    )
+
+    retornar respuestaGuardada
+  } capturar (error) {
+    consola.error('Error al obtener respuesta de Uala', error.aCadena())
+    retornar {}
+  }
+}

@@ -1,0 +1,29 @@
+importar axios desde 'axios'
+importar { collect } desde 'collect.js'
+importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
+importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
+
+exportar asincrono funcion extraerSerieOtros() {
+  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
+  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
+
+  const items = [
+    esperar extraerNaranjaX(),
+    esperar extraerUalaCuentaRemunerada(),
+  ].filtrar(item => item.fondo)
+
+  esperar escribirRuta(`/finanzas/fci/otros/ultimo`, items)
+
+  intentar {
+    esperar escribirRuta(
+      `/finanzas/fci/otros/penultimo`,
+      leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || [],
+    )
+  } capturar {}
+
+  intentar {
+    esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, items)
+  } capturar {}
+}

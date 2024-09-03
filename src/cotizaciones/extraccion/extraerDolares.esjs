@@ -7,7 +7,7 @@ exportar asincrono funcion extraerDolares() {
 
   const hoy = crear Fecha()
 
-  retornar dolares.mapear((dolar) => ({
+  retornar dolares.mapear(dolar => ({
     casa: dolar.casa,
     compra: dolar.compra,
     venta: dolar.venta,

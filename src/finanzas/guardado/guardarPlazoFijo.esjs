@@ -3,7 +3,7 @@ importar { escribirRuta } desde '@/utils/rutas.esjs'
 exportar asincrono funcion guardarPlazoFijo(items) {
   retornar escribirRuta(
     '/finanzas/tasas/plazoFijo',
-    items.mapear((item) => ({
+    items.mapear(item => ({
       entidad: item.entidad,
       logo: item.logo || nulo,
       tnaClientes: item.tnaClientes,

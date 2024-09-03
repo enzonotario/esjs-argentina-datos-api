@@ -7,7 +7,7 @@ exportar asincrono funcion guardarIndiceUVA(items) {
   const actual = esperar leerRuta(ruta)
 
   para (const item de items) {
-    si (!actual.buscar((i) => i.fecha === item.fecha)) {
+    si (!actual.buscar(i => i.fecha === item.fecha)) {
       actual.agregar(item)
     }
   }

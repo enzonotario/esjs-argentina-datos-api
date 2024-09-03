@@ -5,7 +5,7 @@ importar axios desde 'axios'
 exportar asincrono funcion extraerBelo() {
   intentar {
     const respuesta = esperar axios.get(
-      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_BELO_URL,
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_BELO_URL,
     )
 
     si (!respuesta.data || !respuesta.data.longitud) {

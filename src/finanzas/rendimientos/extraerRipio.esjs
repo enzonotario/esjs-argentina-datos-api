@@ -6,7 +6,7 @@ importar { collect } desde 'collect.js'
 exportar asincrono funcion extraerRipio() {
   intentar {
     const respuesta = esperar axios.get(
-      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_RIPIO_URL,
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_RIPIO_URL,
     )
 
     si (
@@ -17,24 +17,22 @@ exportar asincrono funcion extraerRipio() {
       retornar []
     }
 
-    retornar collect(respuesta.data.results)
-      .planoMapear(protocolo => protocolo.assets.mapear(asset => {
-        const apy = interpretarDecimal(asset.apy)
-        const tarifaGestion = asset.fees ? asset.fees.service : 0
+    retornar collect(respuesta.data.results).planoMapear(protocolo =>
+        protocolo.assets.map(asset => {
+          const apy = interpretarDecimal(asset.apy)
+          const tarifaGestion = asset.fees ? asset.fees.service : 0
 
-        retornar {
-          moneda: asset.currency,
-          apy: calcularApy(apy, tarifaGestion),
-          fecha: asset.timestamp.dividir(' ')[0],
-          protocolo: protocolo.name,
-          tarifaGestion,
-        }
-      }))
-      .groupBy('moneda')
-      .mapear((valores, key) => {
-        const maximoApy = collect(valores)
-          .sortByDesc('apy')
-          .first();
+          retornar {
+            moneda: asset.currency,
+            apy: calcularApy(apy, tarifaGestion),
+            fecha: asset.timestamp.dividir(' ')[0],
+            protocolo: protocolo.name,
+            tarifaGestion,
+          };
+        }),
+      )
+      .groupBy('moneda').mapear((valores, key) => {
+        const maximoApy = collect(valores).sortByDesc('apy').first()
 
         retornar {
           moneda: key,

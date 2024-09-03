@@ -6,7 +6,7 @@ importar { collect } desde 'collect.js'
 exportar asincrono funcion extraerLetsbit() {
   intentar {
     const respuesta = esperar axios.get(
-      importar.meta.env.VITE_FINANZAS_RENDIMIENTOS_LETSBIT_URL,
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_LETSBIT_URL,
     )
 
     si (!respuesta.data.longitud) {

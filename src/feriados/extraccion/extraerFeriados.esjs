@@ -29,8 +29,7 @@ exportar asincrono funcion extraerFeriados(año) {
     const mes = $(div).buscar('h3.com-text').text()
 
     // Iterar sobre cada feriado en el mes
-    $(div)
-      .buscar('ul.holidays-list li')
+    $(div).buscar('ul.holidays-list li')
       .each((j, li) => {
         // Extraer el día, tipo y nombre del feriado
         const dia = $(li).buscar('span').text()
@@ -42,9 +41,7 @@ exportar asincrono funcion extraerFeriados(año) {
           dia: Numero(dia),
           mes: mesesNumeros[mes],
           año,
-          fecha: crear Fecha(año, mesesNumeros[mes] - 1, Numero(dia))
-            .aCadenaISO()
-            .dividir('T')[0],
+          fecha: crear Fecha(año, mesesNumeros[mes] - 1, Numero(dia)).aCadenaISO().dividir('T')[0],
           tipo: interpretarTipo(limpiarTipo(tipo)),
           nombre,
         })
@@ -56,7 +53,7 @@ exportar asincrono funcion extraerFeriados(año) {
 
 funcion limpiarTipo(tipo) {
   // Eliminar caracteres no alfanuméricos
-  retornar tipo.reemplazar(/[^a-zA-Z0-9]/g, '')
+  retornar tipo.reemplazar(/[^a-zA-Z0-9]/g, '');
 }
 
 funcion interpretarTipo(tipo) {
@@ -67,7 +64,6 @@ funcion interpretarTipo(tipo) {
       retornar 'trasladable'
     caso 'bridge':
       retornar 'puente'
-    porDefecto:
-      retornar 'otro'
+      porDefecto: retornar 'otro'
   }
 }

@@ -18,7 +18,8 @@
     "docs:preview": "vitepress preview docs",
     "cron": "node ./dist/index.js",
     "api:dev": "vite --config vite.api.config.js --host",
-    "api:build": "vite build --config vite.api.config.js --ssr --mode=production"
+    "api:build": "vite build --config vite.api.config.js --ssr --mode=production",
+    "format": "prettier --write src"
   },
   "devDependencies": {
     "@es-js/vite-plugin-esjs": "^0.1.0-beta.1",
@@ -36,5 +37,15 @@
     "prettier-plugin-esjs": "^0.1.0-beta.1",
     "vite": "^5.0.0",
     "vitest": "^1.1.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "plugins": [
+        "prettier-plugin-esjs"
+    ]
   }
 }

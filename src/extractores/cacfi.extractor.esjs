@@ -54,7 +54,6 @@ funcion interpretarHorizonte(horizonte) {
       retornar 'largo'
     caso 'FLEX':
       retornar 'flex'
-    porDefecto:
-      retornar horizonte
+      porDefecto: retornar horizonte
   }
 }

@@ -10,8 +10,8 @@ exportar asincrono funcion extraerBcra(serie, desde, hasta) {
       consola.error('Error al extraer datos del BCRA', error)
     }
 
-    esperar crear Promesa((resuelve) => {
-      establecerTemporizador(resuelve, 700)
+    esperar crear Promesa(resuelve => {
+      setTimeout(resuelve, 700)
     })
   }
 

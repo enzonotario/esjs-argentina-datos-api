@@ -13,7 +13,7 @@ exportar asincrono funcion cronFeriados() {
 
   esperar escribirRuta(
     `/feriados`,
-    feriados.mapear((feriado) => ({
+    feriados.mapear(feriado => ({
       fecha: feriado.fecha,
       tipo: feriado.tipo,
       nombre: feriado.nombre,

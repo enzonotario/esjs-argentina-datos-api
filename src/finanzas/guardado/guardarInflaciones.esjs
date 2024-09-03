@@ -5,7 +5,7 @@ exportar asincrono funcion guardarInflaciones(items) {
   const actual = esperar leerRuta('/finanzas/indices/inflacion')
 
   para (const item de items) {
-    si (!actual.buscar((i) => i.fecha === item.fecha)) {
+    si (!actual.buscar(i => i.fecha === item.fecha)) {
       actual.agregar(item)
     }
   }

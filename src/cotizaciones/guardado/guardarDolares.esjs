@@ -17,13 +17,12 @@ exportar asincrono funcion guardarDolares(dolares, fecha) {
 
   escribirRuta(`/cotizaciones/dolares/${fechaConBarra}`, dolares)
 
-  dolares.mapear((dolar) => {
+  dolares.mapear(dolar => {
     escribirRuta(`/cotizaciones/dolares/${dolar.casa}/${fechaConBarra}`, dolar)
   })
 
   collect(dolares)
-    .groupBy('casa')
-    .mapear((dolares) => {
+    .groupBy('casa').mapear(dolares => {
       guardarHistoricoPorCasa(dolares.first().casa, dolares.toArray(), fecha)
     })
 
@@ -33,7 +32,7 @@ exportar asincrono funcion guardarDolares(dolares, fecha) {
 funcion guardarHistoricoPorCasa(casa, dolares, fecha) {
   const actual = leerRuta(`/cotizaciones/dolares/${casa}`)
 
-  const actualSinItemsConMismaFecha = actual.filtrar((item) => {
+  const actualSinItemsConMismaFecha = actual.filtrar(item => {
     const esMismaFecha = isSameDay(
       fecha,
       parse(item.fecha, 'yyyy-MM-dd', crear Fecha()),
@@ -50,7 +49,7 @@ funcion guardarHistoricoPorCasa(casa, dolares, fecha) {
 funcion guardarHistorico(dolares, fecha) {
   const actual = leerRuta(`/cotizaciones/dolares`)
 
-  const actualSinItemsConMismaFecha = actual.filtrar((item) => {
+  const actualSinItemsConMismaFecha = actual.filtrar(item => {
     const esMismaFecha = isSameDay(
       fecha,
       parse(item.fecha, 'yyyy-MM-dd', crear Fecha()),

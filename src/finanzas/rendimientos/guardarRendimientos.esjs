@@ -5,7 +5,7 @@ importar { format } desde 'date-fns'
 exportar asincrono funcion guardarRendimientos(entidad, items) {
   retornar escribirRuta(
     `/finanzas/rendimientos/${entidad}`,
-    items.mapear((item) => ({
+    items.mapear(item => ({
       moneda: item.moneda,
       apy: item.apy,
       fecha: item.fecha,

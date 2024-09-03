@@ -1,0 +1,48 @@
+importar axios desde 'axios'
+importar { format } desde 'date-fns'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+
+exportar asincrono funcion extraerNaranjaX() {
+  intentar {
+    const solicitarToken = esperar axios.post(
+      import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_URL,
+      {
+        client_id: import.meta.env
+          .VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_ID,
+        client_secret: import.meta.env
+          .VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_SECRET,
+        audience: import.meta.env
+          .VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_AUDIENCE,
+        grant_type: 'client_credentials',
+        cache: verdadero,
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      },
+    )
+
+    const token = solicitarToken.data.access_token
+
+    const rendimientos = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_PLAZOFIJO_NARANJAX_URL,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      },
+    )
+
+    retornar {
+      fondo: 'NARANJA X',
+      tna: rendimientos.data.tna / 100,
+      tea: rendimientos.data.tea / 100,
+      tope: rendimientos.data.tope,
+      fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+    };
+  } capturar (error) {
+    consola.error('Error al extraer Naranja X', error.aCadena())
+    retornar {}
+  }
+}
