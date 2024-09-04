@@ -2,10 +2,11 @@ importar { load } desde 'cheerio'
 importar { format } desde 'date-fns'
 importar axios desde 'axios'
 importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
+importar { extraerUalaPlazoFijo } desde '@/finanzas/extraccion/extraerUala.esjs'
 
 exportar asincrono funcion extraerPlazoFijo() {
   intentar {
-    const tasas = esperar obtenerRespuesta()
+    const tasas = [...(esperar obtenerRespuesta()), esperar extraerUalaPlazoFijo()]
 
     retornar tasas
   } capturar (error) {
@@ -14,36 +15,41 @@ exportar asincrono funcion extraerPlazoFijo() {
 }
 
 exportar asincrono funcion obtenerRespuesta() {
-  const respuesta = esperar axios.get(
-    'http://www.bcra.gob.ar/BCRAyVos/Plazos_fijos_online.asp',
-    {
-      responseType: 'arraybuffer',
-    },
-  )
+  intentar {
+    const respuesta = esperar axios.get(
+      'http://www.bcra.gob.ar/BCRAyVos/Plazos_fijos_online.asp',
+      {
+        responseType: 'arraybuffer',
+      },
+    )
 
-  const $ = load(respuesta.data.aCadena('latin1'))
+    const $ = load(respuesta.data.aCadena('latin1'))
 
-  const tabla = $('table')
+    const tabla = $('table')
 
-  const items = []
+    const items = []
 
-  tabla.buscar('tbody tr').each((i, tr) => {
-    const entidad = $(tr).buscar('td').eq(0).text()
-    const logo = $(tr).find('td').eq(1).buscar('img').attr('src')
-    const tnaClientes = interpretarPorcentaje($(tr).buscar('td').eq(2).text())
-    const tnaNoClientes = interpretarPorcentaje($(tr).buscar('td').eq(3).text())
-    const enlace = $(tr).find('td').eq(4).buscar('a').attr('href')
+    tabla.buscar('tbody tr').each((i, tr) => {
+      const entidad = $(tr).buscar('td').eq(0).text()
+      const logo = $(tr).find('td').eq(1).buscar('img').attr('src')
+      const tnaClientes = interpretarPorcentaje($(tr).buscar('td').eq(2).text())
+      const tnaNoClientes = interpretarPorcentaje($(tr).buscar('td').eq(3).text())
+      const enlace = $(tr).find('td').eq(4).buscar('a').attr('href')
 
-    items.agregar({
-      entidad: entidad.recortarEspacios(),
-      logo: crear URL(logo, 'https://www.bcra.gob.ar/').href,
-      tnaClientes,
-      tnaNoClientes,
-      enlace: enlace || nulo,
+      items.agregar({
+        entidad: entidad.recortarEspacios(),
+        logo: crear URL(logo, 'https://www.bcra.gob.ar/').href,
+        tnaClientes,
+        tnaNoClientes,
+        enlace: enlace || nulo,
+      })
     })
-  })
 
-  retornar items
+    retornar items
+  } capturar (error) {
+    consola.error('Error al obtener respuesta de tasas de plazo fijo', error)
+    retornar []
+  }
 }
 
 funcion interpretarPorcentaje(valor) {

@@ -30,7 +30,46 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
     };
   } capturar (error) {
-    consola.error('Error al extraer Uala', error.aCadena())
+    consola.error('Error al extraer Uala CuentaRemunerada', error.aCadena())
+
+    retornar nulo
+  }
+}
+
+exportar asincrono funcion extraerUalaPlazoFijo() {
+  intentar {
+    const respuesta = esperar obtenerRespuesta()
+
+    const plazoFijo = respuesta.data.products.buscar(
+      producto => producto.productName === 'Plazo Fijo',
+    )
+
+    const valor = plazoFijo.value
+
+    si (valor === nulo) {
+      lanzar crear Error('No se encontró el valor del plazo fijo')
+    }
+
+    const plazos = valor.dividir('|').mapear(plazo => {
+      const [tipo, valor] = plazo.dividir(':')
+      retornar {
+        tipo: tipo.recortarEspacios(),
+        valor: Numero(valor.recortarEspacios().reemplazar('%', '')),
+      };
+    })
+
+    const plazoFijo30 = plazos.buscar(plazo => plazo.tipo.incluye('30 días'))
+
+    const tna = Numero((plazoFijo30.valor / 100).fijarDecimales(4))
+
+    retornar {
+      entidad: 'UALA',
+      logo: 'https://www.uala.com.ar/assets/img/uala-logo.svg',
+      tnaClientes: tna,
+      tnaNoClientes: tna,
+    }
+  } capturar (error) {
+    consola.error('Error al extraer Uala PlazoFijo', error.aCadena())
 
     retornar nulo
   }
