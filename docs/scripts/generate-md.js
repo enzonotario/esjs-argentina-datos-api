@@ -1,13 +1,12 @@
 import fs from 'node:fs'
-import { useOpenapi } from 'vitepress-theme-openapi'
+import { OpenApi } from 'vitepress-theme-openapi'
 
 const loadJSON = (path) =>
   JSON.parse(fs.readFileSync(new URL(path, import.meta.url)))
 
 const spec = loadJSON('../public/openapi.json')
 
-const openapi = useOpenapi()
-openapi.setSpec(spec)
+const openapi = OpenApi({ spec })
 
 export function init() {
   return Object.keys(spec.paths).map((path) => {
@@ -21,28 +20,6 @@ export function init() {
 
 function generateMarkdown(operationId) {
   const operation = openapi.getOperation(operationId)
-
-  const schemas = openapi.getSchemas()
-
-  const response200 = operation.responses['200']
-
-  const responseType = response200.content['application/json'].schema.items
-    ? 'array'
-    : 'object'
-
-  const schemaTitle = (
-    responseType === 'array'
-      ? response200.content['application/json'].schema.items
-      : response200.content['application/json'].schema
-  ).$ref
-    .split('/')
-    .pop()
-
-  const schema = Object.values(schemas).find(
-    (schema) => schema.title === schemaTitle,
-  )
-
-  const schemaJson = useOpenapi().propertiesTypesJson(schema, responseType)
 
   const markdown = `---
 aside: false
@@ -58,61 +35,7 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAPath method="GET" id="${operationId}">
-
-<template #header="header">
-
-# ${operation.summary}
-
-</template>
-
-<template #description="description">
-
-${operation.description || ''}
-
-<!--@include: ./parts/${operationId}-description-after.md -->
-
-</template>
-
-<template #parameters="parameters">
-
-## {{ $t('Parameters') }}
-
-<OAParameters operation-id="${operationId}" :parameters="parameters.parameters" />
-
-</template>
-
-<template #responses="responses">
-
-## {{ $t('Response') }}
-
-<OAResponses :responses="responses.responses" :schema="responses.schema" :responseType="responses.responseType" :isDark="isDark">
-
-<template #body="body">
-
-<OAResponseBody :schema="body.schema" :responseType="body.responseType" />
-
-</template>
-
-</OAResponses>
-
-</template>
-
-<template #try-it="tryIt">
-
-<OATryWithVariables :operation-id="tryIt.operationId" :method="tryIt.method" :path="tryIt.path" :baseUrl="tryIt.baseUrl" :isDark="isDark" />
-
-</template>
-
-<template #footer="footer">
-
-<OAFooter />
-
-<!--@include: ./parts/${operationId}-footer.md -->
-
-</template>
-
-</OAPath>
+<OAOperation operation-id="${operationId}" />
 `
   return markdown
 }
