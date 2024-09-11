@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-feriados" />
+
+<!--@include: ./parts/get-feriados-footer.md -->

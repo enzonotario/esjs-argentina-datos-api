@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-eventos-presidenciales" />
+
+<!--@include: ./parts/get-eventos-presidenciales-footer.md -->

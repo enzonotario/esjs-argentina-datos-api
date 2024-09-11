@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-indices-uva" />
+
+<!--@include: ./parts/get-finanzas-indices-uva-footer.md -->

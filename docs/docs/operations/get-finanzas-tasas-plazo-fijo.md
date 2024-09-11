@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-tasas-plazo-fijo" />
+
+<!--@include: ./parts/get-finanzas-tasas-plazo-fijo-footer.md -->

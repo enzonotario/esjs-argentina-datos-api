@@ -36,6 +36,8 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="${operationId}" />
+
+<!--@include: ./parts/${operationId}-footer.md -->
 `
   return markdown
 }

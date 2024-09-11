@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-rendimientos" />
+
+<!--@include: ./parts/get-finanzas-rendimientos-footer.md -->

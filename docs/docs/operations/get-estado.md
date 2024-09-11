@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-estado" />
+
+<!--@include: ./parts/get-estado-footer.md -->

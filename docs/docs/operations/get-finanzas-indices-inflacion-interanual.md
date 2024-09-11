@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-indices-inflacion-interanual" />
+
+<!--@include: ./parts/get-finanzas-indices-inflacion-interanual-footer.md -->

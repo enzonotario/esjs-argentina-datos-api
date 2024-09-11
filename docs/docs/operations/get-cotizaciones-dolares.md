@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-cotizaciones-dolares" />
+
+<!--@include: ./parts/get-cotizaciones-dolares-footer.md -->

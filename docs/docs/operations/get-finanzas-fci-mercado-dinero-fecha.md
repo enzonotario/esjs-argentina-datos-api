@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-fci-mercado-dinero-fecha" />
+
+<!--@include: ./parts/get-finanzas-fci-mercado-dinero-fecha-footer.md -->

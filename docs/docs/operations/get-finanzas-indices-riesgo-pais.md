@@ -13,3 +13,5 @@ const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-indices-riesgo-pais" />
+
+<!--@include: ./parts/get-finanzas-indices-riesgo-pais-footer.md -->
