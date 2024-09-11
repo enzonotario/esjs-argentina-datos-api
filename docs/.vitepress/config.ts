@@ -35,31 +35,48 @@ export default defineConfigWithTheme({
     outline: [1, 3],
     sidebar: [
       {
-        text: `<span class="SidebarItem">
+        text: `<span class="OASidebarItem">
         <svg class="i-mdi-home w-5 h-5" />
-        <span class="SidebarItem-text">Inicio</span>
+        <span class="OASidebarItem-text">Inicio</span>
       </span>`,
         link: '/',
       },
       {
-        text: `<span class="SidebarItem">
+        text: `<span class="OASidebarItem">
         <svg class="i-mdi-github w-5 h-5" />
-        <span class="SidebarItem-text">GitHub</span>
+        <span class="OASidebarItem-text">GitHub</span>
       </span>`,
         link: 'https://github.com/enzonotario/esjs-argentina-datos-api',
       },
       {
         text: 'Eventos',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('Eventos')),
+          addDocsPrefix(sidebar.generateSidebarGroup('Eventos', '')),
         ],
       },
       {
         text: 'Cotizaciones históricas',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('Cotizaciones históricas')),
+          addDocsPrefix(sidebar.generateSidebarGroup('Cotizaciones históricas', '')),
         ],
       },
+      {
+        text: 'Cotización actual',
+        items: [
+          {
+            items: [
+              {
+                text: `<span class="OASidebarItem">
+              <svg class="i-mdi-currency-usd w-5 h-5" />
+              <span class="OASidebarItem-text">DolarApi</span> 
+              </span>`,
+                link: 'https://dolarapi.com/',
+              },
+            ],
+          },
+        ],
+      },
+
       {
         text: 'Finanzas',
         items: [
@@ -84,7 +101,7 @@ export default defineConfigWithTheme({
       {
         text: 'API',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('API')),
+          addDocsPrefix(sidebar.generateSidebarGroup('API', '')),
         ],
       },
     ],

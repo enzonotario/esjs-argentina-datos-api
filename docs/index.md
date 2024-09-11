@@ -45,4 +45,7 @@ head:
 import Home from '@theme/components/Home.vue';
 </script>
 
+<span v-if="false" class="i-mdi-currency-usd" /> <!-- Force import -->
+
 <Home />
+
