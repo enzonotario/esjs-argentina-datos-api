@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-finanzas-fci-mercado-dinero-fecha" />
+<OAOperation operation-id="get-finanzas-fci-mercado-dinero-fecha">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-finanzas-fci-mercado-dinero-fecha-footer.md -->
+
+</template>
+
+</OAOperation>

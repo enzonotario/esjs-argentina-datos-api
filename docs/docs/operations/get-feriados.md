@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-feriados" />
+<OAOperation operation-id="get-feriados">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-feriados-footer.md -->
+
+</template>
+
+</OAOperation>

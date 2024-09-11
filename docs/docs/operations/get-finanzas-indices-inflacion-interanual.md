@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-finanzas-indices-inflacion-interanual" />
+<OAOperation operation-id="get-finanzas-indices-inflacion-interanual">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-finanzas-indices-inflacion-interanual-footer.md -->
+
+</template>
+
+</OAOperation>

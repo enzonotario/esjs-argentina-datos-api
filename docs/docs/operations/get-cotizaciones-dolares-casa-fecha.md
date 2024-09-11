@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-cotizaciones-dolares-casa-fecha" />
+<OAOperation operation-id="get-cotizaciones-dolares-casa-fecha">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-cotizaciones-dolares-casa-fecha-footer.md -->
+
+</template>
+
+</OAOperation>

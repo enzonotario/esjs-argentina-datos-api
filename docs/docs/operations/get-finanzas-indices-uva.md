@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-finanzas-indices-uva" />
+<OAOperation operation-id="get-finanzas-indices-uva">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-finanzas-indices-uva-footer.md -->
+
+</template>
+
+</OAOperation>

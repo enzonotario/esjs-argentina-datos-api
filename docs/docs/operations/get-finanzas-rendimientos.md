@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-finanzas-rendimientos" />
+<OAOperation operation-id="get-finanzas-rendimientos">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-finanzas-rendimientos-footer.md -->
+
+</template>
+
+</OAOperation>

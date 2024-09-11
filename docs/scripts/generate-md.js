@@ -35,9 +35,17 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="${operationId}" />
+<OAOperation operation-id="${operationId}">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/${operationId}-footer.md -->
+
+</template>
+
+</OAOperation>
 `
   return markdown
 }

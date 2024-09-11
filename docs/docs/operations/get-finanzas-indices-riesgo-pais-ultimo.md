@@ -12,6 +12,14 @@ const route = useRoute()
 const { isDark } = useData()
 </script>
 
-<OAOperation operation-id="get-finanzas-indices-riesgo-pais-ultimo" />
+<OAOperation operation-id="get-finanzas-indices-riesgo-pais-ultimo">
+
+<template #footer="footer">
+
+<OAFooter />
 
 <!--@include: ./parts/get-finanzas-indices-riesgo-pais-ultimo-footer.md -->
+
+</template>
+
+</OAOperation>
