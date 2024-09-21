@@ -32,7 +32,7 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
   } capturar (error) {
     consola.error('Error al extraer Uala CuentaRemunerada', error.aCadena())
 
-    retornar nulo
+    retornar []
   }
 }
 
@@ -71,7 +71,7 @@ exportar asincrono funcion extraerUalaPlazoFijo() {
   } capturar (error) {
     consola.error('Error al extraer Uala PlazoFijo', error.aCadena())
 
-    retornar nulo
+    retornar []
   }
 }
 
