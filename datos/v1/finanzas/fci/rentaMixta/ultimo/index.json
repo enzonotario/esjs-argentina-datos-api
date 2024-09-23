@@ -4,7 +4,7 @@
     "fecha": null,
     "vcp": null,
     "ccp": null,
-    "patrimonio": 2241698845461.01
+    "patrimonio": 2241667636752.04
   },
   {
     "fondo": "Tipo de Renta Mixta: Acciones y Bonos",
@@ -74,6 +74,22 @@
     "patrimonio": 4147673710.78
   },
   {
+    "fondo": "Axis Estrategia 17 - Clase A",
+    "horizonte": "largo",
+    "fecha": "2024-09-20",
+    "vcp": 1397.048,
+    "ccp": 879260742.83,
+    "patrimonio": 1228369543.91
+  },
+  {
+    "fondo": "Axis Estrategia 17 - Clase B",
+    "horizonte": "largo",
+    "fecha": "2024-09-20",
+    "vcp": 1397.046,
+    "ccp": 655114083.25,
+    "patrimonio": 915224573.58
+  },
+  {
     "fondo": "Axis Estrategia 3 - Clase A",
     "horizonte": "medio",
     "fecha": "2024-09-20",
@@ -104,6 +120,22 @@
     "vcp": 5594.957,
     "ccp": 120378096.12,
     "patrimonio": 673510237.93
+  },
+  {
+    "fondo": "Axis Estrategia 6 - Clase A",
+    "horizonte": "medio",
+    "fecha": "2024-09-20",
+    "vcp": 3498.761,
+    "ccp": 12161808.56,
+    "patrimonio": 42551268.26
+  },
+  {
+    "fondo": "Axis Estrategia 6 - Clase B",
+    "horizonte": "medio",
+    "fecha": "2024-09-20",
+    "vcp": 3536.191,
+    "ccp": 1641095480.84,
+    "patrimonio": 5803226320.41
   },
   {
     "fondo": "IEB Estructurado - Clase A",
@@ -771,22 +803,6 @@
     "patrimonio": 4922286837.75
   },
   {
-    "fondo": "Axis Estrategia 17 - Clase A",
-    "horizonte": "largo",
-    "fecha": "2024-09-20",
-    "vcp": 1397.048,
-    "ccp": 879260742.83,
-    "patrimonio": 1228369543.91
-  },
-  {
-    "fondo": "Axis Estrategia 17 - Clase B",
-    "horizonte": "largo",
-    "fecha": "2024-09-20",
-    "vcp": 1397.046,
-    "ccp": 655114083.25,
-    "patrimonio": 915224573.58
-  },
-  {
     "fondo": "Axis Estrategia 19 - Clase A",
     "horizonte": "medio",
     "fecha": "2024-09-20",
@@ -833,22 +849,6 @@
     "vcp": 1068.845,
     "ccp": 743049469.24,
     "patrimonio": 794204924.66
-  },
-  {
-    "fondo": "Axis Estrategia 6 - Clase A",
-    "horizonte": "medio",
-    "fecha": "2024-09-20",
-    "vcp": 3498.761,
-    "ccp": 12161808.56,
-    "patrimonio": 42551268.26
-  },
-  {
-    "fondo": "Axis Estrategia 6 - Clase B",
-    "horizonte": "medio",
-    "fecha": "2024-09-20",
-    "vcp": 3536.191,
-    "ccp": 1641095480.84,
-    "patrimonio": 5803226320.41
   },
   {
     "fondo": "Axis Estrategia 7 - Clase A",
@@ -1090,12 +1090,12 @@
     "patrimonio": 11792114687.29
   },
   {
-    "fondo": "Pionero Renta Mixta I - Clase C",
+    "fondo": "Pionero Renta Mixta I - Clase C Ley N° 27.743",
     "horizonte": "medio",
-    "fecha": "2024-09-12",
-    "vcp": 1000,
-    "ccp": null,
-    "patrimonio": null
+    "fecha": "2024-09-20",
+    "vcp": 999.951,
+    "ccp": 117016542.89,
+    "patrimonio": 117010775.66
   },
   {
     "fondo": "Pionero Renta Mixta I RP D.596 - Clase A",
@@ -2167,12 +2167,12 @@
     "patrimonio": 224217336732.14
   },
   {
-    "fondo": "Pionero Patrimonio I - Clase C",
+    "fondo": "Pionero Patrimonio I - Clase C Ley N° 27.743",
     "horizonte": "largo",
-    "fecha": "2024-09-12",
-    "vcp": 1000,
-    "ccp": 640000000,
-    "patrimonio": 640000000
+    "fecha": "2024-09-20",
+    "vcp": 1010.379,
+    "ccp": 1398848770.01,
+    "patrimonio": 1413367415.32
   },
   {
     "fondo": "Adcap Balanceado XII - Clase A",
@@ -2355,7 +2355,7 @@
     "fecha": null,
     "vcp": null,
     "ccp": null,
-    "patrimonio": 29832084080387.72
+    "patrimonio": 29985449352979.8
   },
   {
     "fondo": "Allaria Cobertura Dinamica - Clase A",
@@ -3614,6 +3614,14 @@
     "patrimonio": null
   },
   {
+    "fondo": "Schroder Retorno Total - Clase D Ley N° 27.743",
+    "horizonte": "flex",
+    "fecha": "2024-09-20",
+    "vcp": 999.728,
+    "ccp": 345505.59,
+    "patrimonio": 345411.58
+  },
+  {
     "fondo": "FBA Renta Mixta - Clase A",
     "horizonte": "medio",
     "fecha": "2024-09-20",
@@ -3649,9 +3657,9 @@
     "fondo": "MAF Renta Mixta",
     "horizonte": "flex",
     "fecha": "2024-09-20",
-    "vcp": 127590.57,
-    "ccp": 45289087.83,
-    "patrimonio": 5778460539.98
+    "vcp": 126912.275,
+    "ccp": 45306944.13,
+    "patrimonio": 5750007357.03
   },
   {
     "fondo": "1810 Renta Mixta",
@@ -4042,15 +4050,15 @@
     "fecha": null,
     "vcp": null,
     "ccp": null,
-    "patrimonio": 818822824531.06
+    "patrimonio": 818822546035.01
   },
   {
     "fondo": "Superfondo Combinado - Clase A",
     "horizonte": "flex",
     "fecha": "2024-09-20",
     "vcp": 27595.011,
-    "ccp": 823835037.1,
-    "patrimonio": 22733737314.01
+    "ccp": 823834842.35,
+    "patrimonio": 22733731939.85
   },
   {
     "fondo": "Superfondo Combinado - Clase B",
@@ -4113,8 +4121,8 @@
     "horizonte": "largo",
     "fecha": "2024-09-20",
     "vcp": 768759.219,
-    "ccp": 34180319.55,
-    "patrimonio": 26276435755.76
+    "ccp": 34179964.28,
+    "patrimonio": 26276162633.87
   },
   {
     "fondo": "Supergestion - Clase B",
@@ -5267,36 +5275,12 @@
     "patrimonio": null
   },
   {
-    "fondo": "Pionero Renta Mixta I - Clase C Ley N° 27.743",
-    "horizonte": "medio",
-    "fecha": "2024-09-20",
-    "vcp": 999.951,
-    "ccp": 117016542.89,
-    "patrimonio": 117010775.66
-  },
-  {
-    "fondo": "Pionero Patrimonio I - Clase C Ley N° 27.743",
-    "horizonte": "largo",
-    "fecha": "2024-09-20",
-    "vcp": 1010.379,
-    "ccp": 1398848770.01,
-    "patrimonio": 1413367415.32
-  },
-  {
-    "fondo": "Schroder Retorno Total - Clase D Ley N° 27.743",
-    "horizonte": "flex",
-    "fecha": "2024-09-20",
-    "vcp": 999.728,
-    "ccp": 345505.59,
-    "patrimonio": 345411.58
-  },
-  {
     "fondo": "Fima Mix Dólares - Clase A",
     "horizonte": "medio",
     "fecha": "2024-09-20",
     "vcp": 1095.701,
-    "ccp": 22980644.9,
-    "patrimonio": 25179908.65
+    "ccp": 22978565.44,
+    "patrimonio": 25177630.18
   },
   {
     "fondo": "Fima Mix Dólares - Clase B",
