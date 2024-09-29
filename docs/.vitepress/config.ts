@@ -51,13 +51,19 @@ export default defineConfigWithTheme({
       {
         text: 'Eventos',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('Eventos', '')),
+          addDocsPrefix(sidebar.generateSidebarGroup({
+            tag: 'Eventos',
+            text: '',
+          })),
         ],
       },
       {
         text: 'Cotizaciones históricas',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('Cotizaciones históricas', '')),
+          addDocsPrefix(sidebar.generateSidebarGroup({
+            tag: 'Cotizaciones históricas',
+            text: '',
+          })),
         ],
       },
       {
@@ -81,19 +87,31 @@ export default defineConfigWithTheme({
         text: 'Finanzas',
         items: [
           addDocsPrefix({
-            ...sidebar.generateSidebarGroup(['Finanzas', 'Índices'], 'Índices'),
+            ...sidebar.generateSidebarGroup({
+              tag: ['Finanzas', 'Índices'],
+              text: 'Índices',
+            }),
             collapsed: true,
           }),
           addDocsPrefix({
-            ...sidebar.generateSidebarGroup(['Finanzas', 'Tasas'], 'Tasas'),
+            ...sidebar.generateSidebarGroup({
+              tag: ['Finanzas', 'Tasas'],
+              text: 'Tasas',
+            }),
             collapsed: true,
           }),
           addDocsPrefix({
-            ...sidebar.generateSidebarGroup(['Finanzas', 'Rendimientos'], 'Rendimientos'),
+            ...sidebar.generateSidebarGroup({
+              tag: ['Finanzas', 'Rendimientos'],
+              text: 'Rendimientos',
+            }),
             collapsed: true,
           }),
           addDocsPrefix({
-            ...sidebar.generateSidebarGroup(['Finanzas', 'FCI'], 'FCI'),
+            ...sidebar.generateSidebarGroup({
+              tag: ['Finanzas', 'FCI'],
+              text: 'FCI',
+            }),
             collapsed: true,
           }),
         ],
@@ -101,7 +119,10 @@ export default defineConfigWithTheme({
       {
         text: 'API',
         items: [
-          addDocsPrefix(sidebar.generateSidebarGroup('API', '')),
+          addDocsPrefix(sidebar.generateSidebarGroup({
+            tag: 'API',
+            text: '',
+          })),
         ],
       },
     ],
