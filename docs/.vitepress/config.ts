@@ -1,6 +1,6 @@
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfigWithTheme, loadEnv } from 'vitepress'
-import { useOpenapi, useSidebar } from 'vitepress-theme-openapi'
+import { useOpenapi, useSidebar } from 'vitepress-openapi'
 import spec from '../public/openapi.json' assert { type: 'json' }
 
 const env = loadEnv('', process.cwd())

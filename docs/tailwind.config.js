@@ -5,7 +5,7 @@ module.exports = {
     './.vitepress/theme/**/*.{js,vue,ts,json,md}',
     './.vitepress/config.{js,ts}',
     './**/*.md',
-    'node_modules/vitepress-theme-openapi/**/*.{js,jsx,ts,tsx}',
+    'node_modules/vitepress-openapi/**/*.{js,jsx,ts,tsx}',
   ],
   darkMode: 'class',
   plugins: [

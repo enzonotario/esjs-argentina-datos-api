@@ -1,5 +1,5 @@
 import fs from 'node:fs'
-import { OpenApi } from 'vitepress-theme-openapi'
+import { OpenApi } from 'vitepress-openapi'
 
 const loadJSON = (path) =>
   JSON.parse(fs.readFileSync(new URL(path, import.meta.url)))

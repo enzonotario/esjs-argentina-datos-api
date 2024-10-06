@@ -1,4 +1,4 @@
-import { theme, useOpenapi, useTheme } from 'vitepress-theme-openapi'
+import { theme, useOpenapi, useTheme } from 'vitepress-openapi'
 import DefaultTheme from 'vitepress/theme'
 import { setDefaultOptions } from 'date-fns'
 import { es } from 'date-fns/locale'
@@ -8,7 +8,7 @@ import { useECharts } from '../plugins/echarts'
 import chartComponents from './components/charts'
 import GitHubStars from './components/GitHubStars.vue'
 
-import 'vitepress-theme-openapi/dist/style.css'
+import 'vitepress-openapi/dist/style.css'
 import './style.css'
 
 export default {
