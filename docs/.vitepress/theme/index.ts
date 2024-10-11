@@ -25,7 +25,9 @@ export default {
     openapi.setSpec(spec)
 
     const themeConfig = useTheme()
-    themeConfig.setLocale('es')
+    themeConfig.setI18nConfig({
+      locale: 'es',
+    })
 
     theme.enhanceApp({ app })
 
