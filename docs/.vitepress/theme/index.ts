@@ -23,8 +23,10 @@ export default {
 
     const openapi = useOpenapi({
       spec,
-      i18n: {
-        locale: 'es',
+      config: {
+        i18n: {
+          locale: 'es',
+        },
       },
     })
 
