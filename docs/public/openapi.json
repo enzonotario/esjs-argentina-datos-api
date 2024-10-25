@@ -3,16 +3,12 @@
   "info": {
     "title": "ArgentinaDatos API",
     "version": "1.0.0",
-    "description": "API desarrollada en <a href=\"https://es.js.org?ref=argentinadatos.com\" target=\"_blank\">EsJS</a> que brinda información actualizada sobre diferentes datos de Argentina.\n\n¿Encontraste útil esta API? <strong>¡Dejá tu ⭐ en <a href=\"https://github.com/enzonotario/esjs-argentina-datos-api\" alt=\"GitHub\" target=\"_blank\">GitHub</a>!</strong>"
+    "description": "API pública, **no oficial**, desarrollada en [EsJS](https://es.js.org?ref=argentinadatos.com) que brinda información actualizada sobre diferentes datos de Argentina.\n\n<br/>¿Encontraste útil esta API? **¡Dejá tu ⭐ en [GitHub](https://github.com/enzonotario/esjs-argentina-datos-api)!**"
   },
   "servers": [
     {
       "url": "https://api.argentinadatos.com",
-      "description": "Producción"
-    },
-    {
-      "url": "http://localhost:5173",
-      "description": "Local"
+      "description": "Servidor principal"
     }
   ],
   "paths": {

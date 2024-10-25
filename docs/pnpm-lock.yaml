@@ -48,8 +48,8 @@ importers:
         specifier: 1.2.2
         version: 1.2.2(@algolia/client-search@4.22.0)(postcss@8.4.33)(search-insights@2.13.0)(typescript@5.3.3)
       vitepress-openapi:
-        specifier: 0.0.3-alpha.38
-        version: 0.0.3-alpha.38(tailwindcss@3.4.1)(vue@3.4.27(typescript@5.3.3))
+        specifier: https://pkg.pr.new/vitepress-openapi@63cfc48
+        version: https://pkg.pr.new/vitepress-openapi@63cfc48(tailwindcss@3.4.1)(vitepress@1.2.2(@algolia/client-search@4.22.0)(postcss@8.4.33)(search-insights@2.13.0)(typescript@5.3.3))(vue@3.4.27(typescript@5.3.3))
 
 packages:
 
@@ -2277,10 +2277,12 @@ packages:
       terser:
         optional: true
 
-  vitepress-openapi@0.0.3-alpha.38:
-    resolution: {integrity: sha512-TT8EJfJfPbQZM/srYw46YqndGzL3r1R59wusszH1U51xAkXmtXY5yKSdWk6bNSzfc1D0cEIFOy+La3WvFqjb1Q==}
+  vitepress-openapi@https://pkg.pr.new/vitepress-openapi@63cfc48:
+    resolution: {tarball: https://pkg.pr.new/vitepress-openapi@63cfc48}
+    version: 0.0.3-alpha.43
     peerDependencies:
-      vue: ^3.4.29
+      vitepress: '>=1.0.0'
+      vue: ^3.0.0
 
   vitepress@1.2.2:
     resolution: {integrity: sha512-uZ3nXR5NY4nYj3RJWCo5jev9qlNZAQo5SUXu1U0QSUx84cUm/o7hCTDVjZ4njVSVui+PsV1oAbdQOg8ygbaf4w==}
@@ -4800,7 +4802,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-openapi@0.0.3-alpha.38(tailwindcss@3.4.1)(vue@3.4.27(typescript@5.3.3)):
+  vitepress-openapi@https://pkg.pr.new/vitepress-openapi@63cfc48(tailwindcss@3.4.1)(vitepress@1.2.2(@algolia/client-search@4.22.0)(postcss@8.4.33)(search-insights@2.13.0)(typescript@5.3.3))(vue@3.4.27(typescript@5.3.3)):
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.4.27(typescript@5.3.3))
       class-variance-authority: 0.7.0
@@ -4809,6 +4811,7 @@ snapshots:
       radix-vue: 1.9.6(vue@3.4.27(typescript@5.3.3))
       tailwind-merge: 2.5.3
       tailwindcss-animate: 1.0.7(tailwindcss@3.4.1)
+      vitepress: 1.2.2(@algolia/client-search@4.22.0)(postcss@8.4.33)(search-insights@2.13.0)(typescript@5.3.3)
       vue: 3.4.27(typescript@5.3.3)
     transitivePeerDependencies:
       - '@vue/composition-api'

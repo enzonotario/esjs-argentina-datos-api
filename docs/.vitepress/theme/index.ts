@@ -1,4 +1,4 @@
-import { theme, useOpenapi, useTheme } from 'vitepress-openapi'
+import { theme, useOpenapi } from 'vitepress-openapi'
 import DefaultTheme from 'vitepress/theme'
 import { setDefaultOptions } from 'date-fns'
 import { es } from 'date-fns/locale'
@@ -21,15 +21,14 @@ export default {
   enhanceApp({ app }) {
     setDefaultOptions({ locale: es })
 
-    const openapi = useOpenapi()
-    openapi.setSpec(spec)
-
-    const themeConfig = useTheme()
-    themeConfig.setI18nConfig({
-      locale: 'es',
+    const openapi = useOpenapi({
+      spec,
+      i18n: {
+        locale: 'es',
+      },
     })
 
-    theme.enhanceApp({ app })
+    theme.enhanceApp({ app, openapi })
 
     app.use(useECharts)
     for (const [name, component] of Object.entries(chartComponents))

@@ -1,12 +1,12 @@
 import fs from 'node:fs'
-import { OpenApi } from 'vitepress-openapi'
+import { useOpenapi } from 'vitepress-openapi'
 
 const loadJSON = (path) =>
   JSON.parse(fs.readFileSync(new URL(path, import.meta.url)))
 
 const spec = loadJSON('../public/openapi.json')
 
-const openapi = OpenApi({ spec })
+const openapi = useOpenapi({ spec })
 
 export function init() {
   return Object.keys(spec.paths).map((path) => {

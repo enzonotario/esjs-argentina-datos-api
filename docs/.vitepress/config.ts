@@ -1,15 +1,13 @@
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfigWithTheme, loadEnv } from 'vitepress'
-import { useOpenapi, useSidebar } from 'vitepress-openapi'
+import { useSidebar } from 'vitepress-openapi'
 import spec from '../public/openapi.json' assert { type: 'json' }
 
 const env = loadEnv('', process.cwd())
 
 const gTag = env.VITE_GTAG
 
-const openapi = useOpenapi()
-openapi.setSpec(spec)
-const sidebar = useSidebar()
+const sidebar = useSidebar({ spec })
 
 function addDocsPrefix(group: string) {
   return {
