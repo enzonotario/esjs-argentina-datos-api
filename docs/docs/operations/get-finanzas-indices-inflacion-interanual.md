@@ -16,8 +16,6 @@ const { isDark } = useData()
 
 <template #footer="footer">
 
-<OAFooter />
-
 <!--@include: ./parts/get-finanzas-indices-inflacion-interanual-footer.md -->
 
 </template>

@@ -16,8 +16,6 @@ const { isDark } = useData()
 
 <template #footer="footer">
 
-<OAFooter />
-
 <!--@include: ./parts/get-finanzas-fci-renta-variable-fecha-footer.md -->
 
 </template>

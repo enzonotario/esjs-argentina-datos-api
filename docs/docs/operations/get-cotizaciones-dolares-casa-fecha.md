@@ -16,8 +16,6 @@ const { isDark } = useData()
 
 <template #footer="footer">
 
-<OAFooter />
-
 <!--@include: ./parts/get-cotizaciones-dolares-casa-fecha-footer.md -->
 
 </template>

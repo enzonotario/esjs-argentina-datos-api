@@ -39,8 +39,6 @@ const { isDark } = useData()
 
 <template #footer="footer">
 
-<OAFooter />
-
 <!--@include: ./parts/${operationId}-footer.md -->
 
 </template>
