@@ -6,24 +6,32 @@ importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
 
 exportar asincrono funcion extraerSerieOtros() {
+  const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
+
   const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
   const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
 
-  const items = [
+  const valoresExtraidos = [
     esperar extraerNaranjaX(),
     esperar extraerUalaCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
-  esperar escribirRuta(`/finanzas/fci/otros/ultimo`, items)
+  const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))
+    .groupBy('fondo').mapear(valoresNuevos =>
+      collect(valoresNuevos).sortByDesc('fecha').unique('fecha').first(),
+    )
+    .toArray()
+
+  esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
 
   intentar {
     esperar escribirRuta(
-      `/finanzas/fci/otros/penultimo`,
+      '/finanzas/fci/otros/penultimo',
       leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || [],
     )
   } capturar {}
 
   intentar {
-    esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, items)
+    esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, valoresNuevos)
   } capturar {}
 }
