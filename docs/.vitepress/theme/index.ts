@@ -27,6 +27,9 @@ export default {
         i18n: {
           locale: 'es',
         },
+        codeSamples: {
+          defaultHeaders: {},
+        },
       },
     })
 
