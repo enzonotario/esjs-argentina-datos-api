@@ -1,4 +1,4 @@
-import { theme, useOpenapi } from 'vitepress-openapi'
+import { generateCodeSample, theme, useOpenapi } from 'vitepress-openapi'
 import DefaultTheme from 'vitepress/theme'
 import { setDefaultOptions } from 'date-fns'
 import { es } from 'date-fns/locale'
@@ -29,6 +29,15 @@ export default {
         },
         codeSamples: {
           defaultHeaders: {},
+          generator: (lang, request) => {
+            if (lang === 'curl') {
+              const codeSample = generateCodeSample(lang, request)
+              return `${codeSample} \\
+-H "Content-Type: application/json"`
+            }
+
+            return generateCodeSample(lang, request)
+          },
         },
       },
     })
