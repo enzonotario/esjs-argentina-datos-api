@@ -66,7 +66,7 @@ describe('extraerUala', () => {
 
     expect(resultado).toEqual({
       entidad: 'UALA',
-      logo: 'https://www.uala.com.ar/assets/img/uala-logo.svg',
+      logo: 'https://icons.com.ar/icons/bancos-apps/uala.svg',
       tnaClientes: 0.37,
       tnaNoClientes: 0.37,
     })

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { extraerCacfi } from '@/extractores/cacfi.extractor.esjs'
+import { format, subDays } from 'date-fns'
 
 describe('extraerCacfi', () => {
   it('extrae las series de Cacfi', async () => {
@@ -10,8 +11,10 @@ describe('extraerCacfi', () => {
         'rentaMixta',
       ]
 
+      const yesterday = format(subDays(new Date(), 1), 'yyyy-MM-dd')
+
       for (const serie of series) {
-        const items = await extraerCacfi(serie, '2024-01-02')
+        const items = await extraerCacfi(serie, yesterday)
 
         expect(items).toBeDefined()
 
