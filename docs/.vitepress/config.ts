@@ -131,6 +131,14 @@ export default defineConfigWithTheme({
       message: 'Liberado bajo la <a href="https://github.com/enzonotario/esjs-argentina-datos-api/blob/main/LICENSE">Licencia MIT</a>.',
       copyright: '<a href="/docs/legal">Aviso Legal</a>',
     },
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'UNH9XU8JKG',
+        apiKey: '11a8390143d57724a4fd9b8b120899ce',
+        indexName: 'argentinadatos',
+      },
+    },
   },
 
   head: [
