@@ -5,6 +5,7 @@ importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
 importar { extraerSerieOtros } desde '@/finanzas/fci/extraerSerieOtros.esjs'
+importar { logGrupo, logError } desde '@/log.esjs'
 
 exportar porDefecto asincrono funcion () {
   esperar extraerSeriesDesdeCacfi()
@@ -20,6 +21,8 @@ asincrono funcion extraerSeriesDesdeCacfi() {
 }
 
 asincrono funcion ejecutarSerie(serie) {
+  const log = logGrupo({ comando: 'fci', fuente: 'cacfi', serie })
+
   const inicio = subDays(crear Fecha(), 10)
   const fin = addDays(crear Fecha(), 1)
   var fecha = inicio
@@ -30,7 +33,10 @@ asincrono funcion ejecutarSerie(serie) {
     const items = esperar extraerCacfi(serie, format(fecha, 'yyyy-MM-dd'))
 
     si (items.longitud === 0) {
-      consola.error(`No se encontraron datos para ${serie} en ${format(fecha, 'yyyy-MM-dd')}`)
+      logError(
+        log,
+        `No se encontraron datos para ${serie} en ${format(fecha, 'yyyy-MM-dd')}`,
+      )
       fecha = addDays(fecha, 1)
       continuar
     }

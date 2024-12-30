@@ -40,6 +40,10 @@ jobs:
       - name: Create .env file
         run: |
           touch .env
+          echo "VITE_AXIOM_ORG_ID=${{ secrets.VITE_AXIOM_ORG_ID }}" >> .env
+          echo "VITE_AXIOM_TOKEN=${{ secrets.VITE_AXIOM_TOKEN }}" >> .env
+          echo "VITE_AXIOM_DATASET=${{ secrets.VITE_AXIOM_DATASET }}" >> .env
+          echo "VITE_BANXICO_TOKEN=${{ secrets.VITE_BANXICO_TOKEN }}" >> .env
           echo "VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL }}" >> .env
           echo "VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL }}" >> .env
           echo "VITE_FINANZAS_RENDIMIENTOS_LETSBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_LETSBIT_URL }}" >> .env
