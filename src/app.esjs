@@ -6,6 +6,7 @@ importar fci desde '@/finanzas/fci/fci.comando.esjs'
 const predefinidos = {
   diario: ['/v1/cotizaciones', '/v1/finanzas'],
   mensual: ['/v1/feriados'],
+  fci: ['/v1/finanzas/fci'],
 }
 
 exportar asincrono funcion iniciar(comando) {
@@ -22,6 +23,7 @@ exportar asincrono funcion iniciar(comando) {
   elegir (comando) {
     caso 'diario':
     caso 'mensual':
+    caso 'fci':
       para (const path de predefinidos[comando]) {
         consola.escribir('- ' + path)
         esperar iniciar(path)

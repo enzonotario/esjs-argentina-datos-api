@@ -29,6 +29,12 @@ asincrono funcion ejecutarSerie(serie) {
   mientras (esAntes(fecha, fin)) {
     const items = esperar extraerCacfi(serie, format(fecha, 'yyyy-MM-dd'))
 
+    si (items.longitud === 0) {
+      consola.error(`No se encontraron datos para ${serie} en ${format(fecha, 'yyyy-MM-dd')}`)
+      fecha = addDays(fecha, 1)
+      continuar
+    }
+
     guardarCacfi(serie, items, fecha)
 
     fecha = addDays(fecha, 1)
@@ -55,9 +61,13 @@ asincrono funcion ejecutarSerie(serie) {
       }
     })
 
-  esperar escribirRuta(`/finanzas/fci/${serie}/penultimo`, penultimo)
+  si (penultimo.longitud !== 0) {
+    esperar escribirRuta(`/finanzas/fci/${serie}/penultimo`, penultimo)
+  }
 
-  esperar escribirRuta(`/finanzas/fci/${serie}/ultimo`, ultimo)
+  si (ultimo.longitud !== 0) {
+    esperar escribirRuta(`/finanzas/fci/${serie}/ultimo`, ultimo)
+  }
 
   retornar verdadero
 }

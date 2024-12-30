@@ -1,0 +1,89 @@
+name: Extraer valores de FCI
+
+on:
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          registry-url: https://registry.npmjs.org/
+          node-version: 18
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 4
+          run_install: false
+
+      - name: Create .env file
+        run: |
+          touch .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BUENBIT_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_FIWIND_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_LETSBIT_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_LETSBIT_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_BELO_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_BELO_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_LEMONCASH_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_LEMONCASH_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_RIPIO_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_RIPIO_URL }}" >> .env
+          echo "VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_URL=${{ secrets.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_URL }}" >> .env
+          echo "VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_ID=${{ secrets.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_ID }}" >> .env
+          echo "VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_SECRET=${{ secrets.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_CLIENT_SECRET }}" >> .env
+          echo "VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_AUDIENCE=${{ secrets.VITE_FINANZAS_PLAZOFIJO_NARANJAX_TOKEN_AUDIENCE }}" >> .env
+          echo "VITE_FINANZAS_PLAZOFIJO_NARANJAX_URL=${{ secrets.VITE_FINANZAS_PLAZOFIJO_NARANJAX_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_UALA_TOKEN_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_UALA_TOKEN_URL }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_UALA_USERNAME=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_UALA_USERNAME }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_UALA_PASSWORD=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_UALA_PASSWORD }}" >> .env
+          echo "VITE_FINANZAS_RENDIMIENTOS_UALA_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_UALA_URL }}" >> .env
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Run cron
+        run: pnpm run cron fci
+
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          
+          git add -A
+          timestamp=$(date -u)
+          timestampArg=$(date -u -d "3 hours")
+          git commit -m "Latest data: ${timestampArg}" || exit 0
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'datos'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -10,13 +10,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --ssr --mode=production",
-    "serve": "vite preview",
+    "build": "pnpm run cron:build",
+    "cron": "pnpm run cron:run",
+    "cron:build": "vite build --ssr --mode=production",
+    "cron:run": "node ./dist/index.js",
     "test": "vitest",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "cron": "node ./dist/index.js",
     "api:dev": "vite --config vite.api.config.js --host",
     "api:build": "vite build --config vite.api.config.js --ssr --mode=production",
     "format": "prettier --write src"
