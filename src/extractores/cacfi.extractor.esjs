@@ -15,6 +15,11 @@ exportar asincrono funcion extraerCacfi(serie, fecha) {
   intentar {
     const respuesta = esperar axios.get(
       `https://api.cafci.org.ar/estadisticas/informacion/diaria/${mapeoSerie[serie]}/${fecha}`,
+      {
+        headers: {
+          origin: 'https://www.cafci.org.ar',
+        },
+      },
     )
 
     si (respuesta.data.error) {
