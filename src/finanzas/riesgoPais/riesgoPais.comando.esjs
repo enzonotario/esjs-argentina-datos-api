@@ -1,35 +1,83 @@
-importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
+importar { format, subDays, addDays, isBefore como esAntes, parse } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerRiesgoPais } desde '@/finanzas/riesgoPais/extraerRiesgoPais.esjs'
 
 exportar porDefecto asincrono funcion () {
-  const riesgoPaisValor = esperar extraerRiesgoPais()
-  const fecha = crear Fecha()
+  const riesgoPaisValor = esperar extraerRiesgoPais(
+    subDays(crear Fecha(), 10),
+    crear Fecha(),
+  )
 
-  esperar guardarUltimo(riesgoPaisValor, fecha)
-  esperar guardarHistorico(riesgoPaisValor, fecha)
+  const valoresRellenados = esperar rellenarValores(riesgoPaisValor.reverso())
 
-  retornar verdadero
+  const ultimoValor = valoresRellenados[valoresRellenados.longitud - 1]
+
+  const rutasGuardadas = [
+    esperar guardarUltimo(ultimoValor),
+    esperar guardarHistorico(valoresRellenados),
+  ]
+
+  retornar rutasGuardadas
 }
 
-asincrono funcion guardarUltimo(riesgoPaisValor, fecha) {
-  esperar escribirRuta('/finanzas/indices/riesgo-pais/ultimo', {
-    valor: riesgoPaisValor,
-    fecha: format(fecha, 'yyyy-MM-dd'),
-  })
-}
+asincrono funcion rellenarValores(valores) {
+  const primerValor = valores[0]
 
-asincrono funcion guardarHistorico(riesgoPaisValor, fecha) {
-  const historico = esperar leerRuta('/finanzas/indices/riesgo-pais')
+  const nuevosValores = [primerValor]
 
-  const ultimo = historico ? historico[historico.longitud - 1] : indefinido
+  const fechaInicial = parse(primerValor.fecha, 'yyyy-MM-dd', crear Fecha())
+  mut desde = subDays(fechaInicial, 0)
+  const hasta = addDays(crear Fecha(), 0)
 
-  si (!ultimo || ultimo.fecha !== format(fecha, 'yyyy-MM-dd')) {
-    historico.agregar({
-      valor: riesgoPaisValor,
-      fecha: format(fecha, 'yyyy-MM-dd'),
-    })
+  mientras (esAntes(desde, hasta)) {
+    const fecha = format(desde, 'yyyy-MM-dd')
+
+    const valor = valores.buscar(v => v.fecha === fecha)
+
+    si (valor) {
+      nuevosValores.agregar(valor)
+    } sino {
+      const valorAnterior = nuevosValores[nuevosValores.longitud - 1]
+
+      nuevosValores.agregar({
+        valor: valorAnterior.valor,
+        fecha,
+      })
+    }
+
+    desde = addDays(desde, 1)
   }
 
-  esperar escribirRuta('/finanzas/indices/riesgo-pais', historico)
+  retornar nuevosValores
+}
+
+asincrono funcion guardarUltimo(ultimoRiesgoPais, fecha) {
+  const ruta = '/finanzas/indices/riesgo-pais/ultimo'
+
+  esperar escribirRuta(ruta, ultimoRiesgoPais)
+
+  retornar ruta
+}
+
+asincrono funcion guardarHistorico(valores) {
+  const ruta = '/finanzas/indices/riesgo-pais'
+
+  const historico = esperar leerRuta(ruta)
+
+  const nuevoHistorico = historico.mapear(valor => {
+    si (valores.algun(v => v.fecha === valor.fecha)) {
+      const nuevoValor = valores.buscar(v => v.fecha === valor.fecha)
+
+      retornar {
+        valor: nuevoValor.valor,
+        fecha: valor.fecha,
+      }
+    }
+
+    retornar valor
+  })
+
+  esperar escribirRuta(ruta, nuevoHistorico)
+
+  retornar ruta
 }

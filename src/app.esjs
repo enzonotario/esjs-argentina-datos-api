@@ -2,11 +2,13 @@ importar { cronFeriados } desde '@/feriados/feriados.cron.esjs'
 importar { cronCotizaciones } desde '@/cotizaciones/cotizaciones.cron.esjs'
 importar { cronFinanzas } desde '@/finanzas/finanzas.cron.esjs'
 importar fci desde '@/finanzas/fci/fci.comando.esjs'
+importar riesgoPais desde '@/finanzas/riesgoPais/riesgoPais.comando.esjs'
 
 const predefinidos = {
   diario: ['/v1/cotizaciones', '/v1/finanzas'],
   mensual: ['/v1/feriados'],
   fci: ['/v1/finanzas/fci'],
+  riesgoPais: ['/v1/finanzas/riesgo-pais'],
 }
 
 exportar asincrono funcion iniciar(comando) {
@@ -24,6 +26,7 @@ exportar asincrono funcion iniciar(comando) {
     caso 'diario':
     caso 'mensual':
     caso 'fci':
+    caso 'riesgoPais':
       para (const path de predefinidos[comando]) {
         consola.escribir('- ' + path)
         esperar iniciar(path)
@@ -40,6 +43,9 @@ exportar asincrono funcion iniciar(comando) {
       romper
     caso '/v1/finanzas/fci':
       esperar fci()
+      romper
+    caso '/v1/finanzas/riesgo-pais':
+      esperar riesgoPais()
       romper
       porDefecto: consola.escribir('No se encontro el comando')
       romper
