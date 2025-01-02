@@ -10,11 +10,13 @@ const mapeoSerie = {
 }
 
 exportar asincrono funcion extraerCacfi(serie, fecha) {
-  const log = logGrupo({ fuente: 'cacfi', serie })
+  const url = `https://api.cafci.org.ar/estadisticas/informacion/diaria/${mapeoSerie[serie]}/${fecha}`
+
+  const log = logGrupo({ fuente: 'cacfi', serie, url })
 
   intentar {
     const respuesta = esperar axios.get(
-      `https://api.cafci.org.ar/estadisticas/informacion/diaria/${mapeoSerie[serie]}/${fecha}`,
+      url,
       {
         headers: {
           origin: 'https://www.cafci.org.ar',
