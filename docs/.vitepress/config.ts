@@ -1,6 +1,7 @@
 import { URL, fileURLToPath } from 'node:url'
-import { defineConfigWithTheme, loadEnv } from 'vitepress'
+import { defineConfig, loadEnv, postcssIsolateStyles } from 'vitepress'
 import { useSidebar } from 'vitepress-openapi'
+import { genjiAttrs } from 'genji-theme-vitepress/config'
 import spec from '../public/openapi.json' assert { type: 'json' }
 
 const env = loadEnv('', process.cwd())
@@ -21,7 +22,7 @@ function addDocsPrefix(group: string) {
   }
 }
 
-export default defineConfigWithTheme({
+export default defineConfig({
   title: 'ArgentinaDatos API',
   description: 'API para diferentes datos de Argentina',
 
@@ -180,6 +181,18 @@ export default defineConfigWithTheme({
       alias: {
         '@': fileURLToPath(new URL('./', import.meta.url)),
       },
+    },
+    optimizeDeps: {
+      include: [
+        'genji-theme-vitepress > genji-runtime > esprima',
+        'genji-theme-vitepress > genji-runtime > estraverse',
+      ],
+    },
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(genjiAttrs)
     },
   },
 })

@@ -7,14 +7,23 @@ import spec from '../../public/openapi.json' assert { type: 'json' }
 import { useECharts } from '../plugins/echarts'
 import chartComponents from './components/charts'
 import GitHubStars from './components/GitHubStars.vue'
+import Layout from 'genji-theme-vitepress'
+import * as ObservablePlot from '@observablehq/plot'
 
 import 'vitepress-openapi/dist/style.css'
 import './style.css'
 
+const props = {
+  Theme: DefaultTheme,
+  library: {
+    Plot: ObservablePlot,
+  },
+}
+
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
   Layout() {
-    return h(DefaultTheme.Layout, null, {
+    return h(Layout, props, {
       'nav-bar-content-after': () => h(GitHubStars),
     })
   },
