@@ -6,13 +6,11 @@ mut respuestaGuardada = nulo
 
 exportar asincrono funcion extraerUalaCuentaRemunerada() {
   intentar {
-    const respuesta = esperar obtenerRespuesta()
+    const respuesta = esperar axios.get('https://comparatasas-gateway.ferminrp.com/uala-cuenta-remunerada')
 
-    const cuentaRemunerada = respuesta.data.products.buscar(
-      producto => producto.productName === 'Cuenta Remunerada',
-    )
+    const cuentaRemunerada = respuesta.data
 
-    const valor = Numero(cuentaRemunerada.value.reemplazar('%', ''))
+    const valor = Numero(cuentaRemunerada.tna)
 
     si (valor === nulo) {
       lanzar crear Error('No se encontró el valor de la cuenta remunerada')
@@ -26,7 +24,7 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
       fondo: 'UALA',
       tna,
       tea,
-      tope: nulo,
+      tope: cuentaRemunerada.limite,
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
     };
   } capturar (error) {
