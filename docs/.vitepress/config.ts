@@ -1,5 +1,5 @@
 import { URL, fileURLToPath } from 'node:url'
-import { defineConfig, loadEnv, postcssIsolateStyles } from 'vitepress'
+import { defineConfig, loadEnv } from 'vitepress'
 import { useSidebar } from 'vitepress-openapi'
 import { genjiAttrs } from 'genji-theme-vitepress/config'
 import spec from '../public/openapi.json' assert { type: 'json' }
