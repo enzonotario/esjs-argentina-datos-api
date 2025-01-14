@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --vp-font-family-base: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 .button-primary {
     @apply text-white bg-black hover:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-200 font-bold;
 }
