@@ -1,5 +1,7 @@
 # esjs-argentina-datos-api
 
+[![Desarrollado en EsJS](https://es.js.org/badge.svg)](https://es.js.org)
+
 API pública, **no oficial**, desarrollada en [EsJS](https://es.js.org/) que brinda información actualizada sobre diferentes datos de Argentina.
 
 ## Documentación
