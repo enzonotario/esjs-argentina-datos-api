@@ -1,4 +1,4 @@
-import { generateCodeSample, theme, useOpenapi } from 'vitepress-openapi'
+import { generateCodeSample, theme, useOpenapi } from 'vitepress-openapi/client'
 import DefaultTheme from 'vitepress/theme'
 import { setDefaultOptions } from 'date-fns'
 import { es } from 'date-fns/locale'
