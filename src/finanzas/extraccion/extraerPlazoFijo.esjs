@@ -2,11 +2,10 @@ importar { load } desde 'cheerio'
 importar { format } desde 'date-fns'
 importar axios desde 'axios'
 importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
-importar { extraerUalaPlazoFijo } desde '@/finanzas/extraccion/extraerUala.esjs'
 
 exportar asincrono funcion extraerPlazoFijo() {
   intentar {
-    const tasas = [...(esperar obtenerRespuesta()), esperar extraerUalaPlazoFijo()]
+    const tasas = [...(esperar obtenerRespuesta())]
 
     retornar tasas
   } capturar (error) {
