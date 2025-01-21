@@ -21,9 +21,6 @@ export default {
   ChartIndicesInflacionInteranual: defineAsyncComponent(
     () => import('./ChartIndicesInflacionInteranual.vue'),
   ),
-  ChartTasasPlazoFijo: defineAsyncComponent(
-    () => import('./ChartTasasPlazoFijo.vue'),
-  ),
   ChartTasasDepositos30Dias: defineAsyncComponent(
     () => import('./ChartTasasDepositos30Dias.vue'),
   ),
