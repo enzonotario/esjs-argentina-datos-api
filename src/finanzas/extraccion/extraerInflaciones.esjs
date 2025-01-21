@@ -1,26 +1,10 @@
 importar { load } desde 'cheerio'
 importar { format, parse } desde 'date-fns'
-importar { extraerBcra } desde '@/extractores/bcra.extractor.esjs'
+importar { extraerBcraApi } desde '@/extractores/bcra.extractor.esjs'
 importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
 
 exportar asincrono funcion extraerInflaciones(desde, hasta) {
-  const html = esperar extraerBcra('7931', desde, hasta)
-
-  const $ = load(html)
-
-  const tabla = $('table')
-
-  const inflaciones = []
-
-  tabla.buscar('tbody tr').each((i, tr) => {
-    const fecha = $(tr).buscar('td').eq(0).text()
-    const valor = $(tr).buscar('td').eq(1).text()
-
-    inflaciones.agregar({
-      fecha: format(parse(fecha, 'dd/MM/yyyy', crear Fecha()), 'yyyy-MM-dd'),
-      valor: interpretarDecimalConComa(valor),
-    })
-  })
+  const inflaciones = esperar extraerBcraApi(27, desde, hasta)
 
   retornar inflaciones
 }
