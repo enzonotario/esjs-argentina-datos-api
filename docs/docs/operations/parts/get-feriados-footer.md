@@ -1,4 +1,4 @@
-## Ejemplos
+## Ejemplos de uso
 
 <div class="flex flex-col gap-8">
 

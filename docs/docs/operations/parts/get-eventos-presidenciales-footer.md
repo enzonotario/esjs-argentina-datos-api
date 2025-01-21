@@ -1,3 +1,3 @@
-## Ejemplos
+## Ejemplos de uso
 
 <ChartEventosPresidenciales />
