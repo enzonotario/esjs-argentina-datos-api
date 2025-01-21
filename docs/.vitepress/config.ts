@@ -170,9 +170,6 @@ export default defineConfig({
         'genji-theme-vitepress > genji-runtime > estraverse',
       ],
     },
-    ssr: {
-      noExternal: ['vitepress-openapi'],
-    },
   },
 
   markdown: {
