@@ -5,11 +5,9 @@ title: Índices de inflación interanuales
 ---
 
 <script setup>
-import { useRoute, useData } from 'vitepress'
+import { useRoute } from 'vitepress'
 
 const route = useRoute()
-
-const { isDark } = useData()
 </script>
 
 <OAOperation operation-id="get-finanzas-indices-inflacion-interanual">

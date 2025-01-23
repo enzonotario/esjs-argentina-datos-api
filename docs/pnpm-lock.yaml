@@ -51,8 +51,8 @@ importers:
         specifier: ^1.6.1
         version: 1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3)
       vitepress-openapi:
-        specifier: ^0.0.3-alpha.57
-        version: 0.0.3-alpha.57(tailwindcss@3.4.17)(vitepress@1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
+        specifier: ^0.0.3-alpha.58
+        version: 0.0.3-alpha.58(tailwindcss@3.4.17)(vitepress@1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
 
 packages:
 
@@ -2715,8 +2715,8 @@ packages:
       terser:
         optional: true
 
-  vitepress-openapi@0.0.3-alpha.57:
-    resolution: {integrity: sha512-Pi23Hovf0u3ZyZVSTL4V1wx7DfXv/lieYpF6H4X0cdSchrA6q0Icd9IKMU7ggigQNX7hZoTuYRyuU/wx9iXzYg==}
+  vitepress-openapi@0.0.3-alpha.58:
+    resolution: {integrity: sha512-Wmbh0Bt4vsHoUbG6GV6RpMd4NpHTWFA0OPuaf0wRy0RFO3A95ZbXcFU6XCKU6sOcccLneD+1N79jdGVf6k8xog==}
     peerDependencies:
       vitepress: '>=1.0.0'
       vue: ^3.0.0
@@ -5840,7 +5840,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-openapi@0.0.3-alpha.57(tailwindcss@3.4.17)(vitepress@1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
+  vitepress-openapi@0.0.3-alpha.58(tailwindcss@3.4.17)(vitepress@1.6.1(@algolia/client-search@5.19.0)(postcss@8.5.1)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.5.13(typescript@5.7.3))
       class-variance-authority: 0.7.1
