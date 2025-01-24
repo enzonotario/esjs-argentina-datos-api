@@ -39,6 +39,7 @@ head:
   - ['meta', { property: 'og:site_name', content: 'ArgentinaDatos.com' }]
   - ['meta', { property: 'og:type', content: 'website' }]
   - ['meta', { property: 'og:locale', content: 'es_AR' }]
+  - ['meta', { property: 'og:image', content: 'https://argentinadatos.com/assets/og.png' }]
 ---
 
 <script setup>
