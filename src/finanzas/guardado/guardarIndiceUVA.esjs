@@ -1,5 +1,6 @@
 importar { escribirRuta } desde '@/utils/rutas.esjs'
 importar { leerRuta } desde '@/utils/rutas.esjs'
+importar { ordenarPorFecha } desde '@/utils/data.esjs'
 
 exportar asincrono funcion guardarIndiceUVA(items) {
   const ruta = '/finanzas/indices/uva'
@@ -12,5 +13,5 @@ exportar asincrono funcion guardarIndiceUVA(items) {
     }
   }
 
-  retornar escribirRuta(ruta, actual)
+  retornar escribirRuta(ruta, ordenarPorFecha(actual))
 }

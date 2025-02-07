@@ -6,7 +6,9 @@ mut respuestaGuardada = nulo
 
 exportar asincrono funcion extraerUalaCuentaRemunerada() {
   intentar {
-    const respuesta = esperar axios.get('https://comparatasas-gateway.ferminrp.com/uala-cuenta-remunerada')
+    const respuesta = esperar axios.get(
+      'https://comparatasas-gateway.ferminrp.com/uala-cuenta-remunerada',
+    )
 
     const cuentaRemunerada = respuesta.data
 
