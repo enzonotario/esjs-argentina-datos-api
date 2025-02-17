@@ -5,7 +5,7 @@ import { es } from 'date-fns/locale'
 import { h } from 'vue'
 import Layout from 'genji-theme-vitepress'
 import * as ObservablePlot from '@observablehq/plot'
-import spec from '../../public/openapi.json' assert { type: 'json' }
+import spec from '../../public/openapi.json' with { type: 'json' }
 import { useECharts } from '../plugins/echarts'
 import chartComponents from './components/charts'
 import GitHubStars from './components/GitHubStars.vue'
@@ -38,15 +38,6 @@ export default {
         },
         codeSamples: {
           defaultHeaders: {},
-          generator: (lang, request) => {
-            if (lang === 'curl') {
-              const codeSample = generateCodeSample(lang, request)
-              return `${codeSample} \\
--H "Content-Type: application/json"`
-            }
-
-            return generateCodeSample(lang, request)
-          },
         },
       },
     })

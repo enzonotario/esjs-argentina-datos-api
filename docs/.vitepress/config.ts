@@ -2,7 +2,7 @@ import { URL, fileURLToPath } from 'node:url'
 import { defineConfig, loadEnv } from 'vitepress'
 import { useSidebar } from 'vitepress-openapi'
 import { genjiAttrs } from 'genji-theme-vitepress/config'
-import spec from '../public/openapi.json' assert { type: 'json' }
+import spec from '../public/openapi.json' with { type: 'json' }
 
 const env = loadEnv('', process.cwd())
 
