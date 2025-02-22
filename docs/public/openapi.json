@@ -794,40 +794,40 @@
         ]
       }
     },
-    "/v1/senado/actas": {
+    "/v1/senado/senadores": {
       "get": {
-        "summary": "Actas del Senado",
+        "summary": "Senadores",
         "tags": [
           "Senado"
         ],
-        "description": "Devuelve las actas del Senado.",
+        "description": "Devuelve los senadores.",
         "responses": {
           "200": {
-            "description": "Devuelve una lista de actas del Senado",
+            "description": "Devuelve una lista de senadores",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/ActaSenado"
+                    "$ref": "#/components/schemas/Senador"
                   }
                 }
               }
             }
           }
         },
-        "operationId": "get-senado-actas",
+        "operationId": "get-senado-senadores",
         "x-code-samples": [
           {
             "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/actas\""
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/senadores\""
           }
         ]
       }
     },
     "/v1/senado/actas/{año}": {
       "get": {
-        "summary": "Actas del Senado por año",
+        "summary": "Actas por año",
         "tags": [
           "Senado"
         ],
@@ -870,33 +870,33 @@
         ]
       }
     },
-    "/v1/senado/senadores": {
+    "/v1/senado/actas": {
       "get": {
-        "summary": "Senadores",
+        "summary": "Actas",
         "tags": [
           "Senado"
         ],
-        "description": "Devuelve los senadores.",
+        "description": "Devuelve las actas del Senado.",
         "responses": {
           "200": {
-            "description": "Devuelve una lista de senadores",
+            "description": "Devuelve una lista de actas del Senado",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Senador"
+                    "$ref": "#/components/schemas/ActaSenado"
                   }
                 }
               }
             }
           }
         },
-        "operationId": "get-senado-senadores",
+        "operationId": "get-senado-actas",
         "x-code-samples": [
           {
             "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/senadores\""
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/actas\""
           }
         ]
       }
@@ -1280,29 +1280,6 @@
           }
         }
       },
-      "VotoData": {
-        "title": "VotoData",
-        "type": "object",
-        "properties": {
-          "nombre": {
-            "type": "string"
-          },
-          "voto": {
-            "type": "string",
-            "enum": [
-              "si",
-              "no",
-              "ausente",
-              "abstencion",
-              "no emite",
-              "desconocido"
-            ]
-          },
-          "banca": {
-            "type": "string"
-          }
-        }
-      },
       "Senador": {
         "title": "Senador",
         "type": "object",
@@ -1332,6 +1309,29 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      },
+      "VotoData": {
+        "title": "VotoData",
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "voto": {
+            "type": "string",
+            "enum": [
+              "si",
+              "no",
+              "ausente",
+              "abstencion",
+              "no emite",
+              "desconocido"
+            ]
+          },
+          "banca": {
+            "type": "string"
           }
         }
       }

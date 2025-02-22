@@ -116,6 +116,15 @@ export default defineConfig({
         ],
       },
       {
+        text: 'Senado',
+        items: [
+          addDocsPrefix(sidebar.generateSidebarGroup({
+            tag: 'Senado',
+            text: '',
+          })),
+        ],
+      },
+      {
         text: 'API',
         items: [
           addDocsPrefix(sidebar.generateSidebarGroup({
