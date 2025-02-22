@@ -869,6 +869,37 @@
           }
         ]
       }
+    },
+    "/v1/senado/senadores": {
+      "get": {
+        "summary": "Senadores",
+        "tags": [
+          "Senado"
+        ],
+        "description": "Devuelve los senadores.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de senadores",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Senador"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-senado-senadores",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/senadores\""
+          }
+        ]
+      }
     }
   },
   "components": {
@@ -1269,6 +1300,38 @@
           },
           "banca": {
             "type": "string"
+          }
+        }
+      },
+      "Senador": {
+        "title": "Senador",
+        "type": "object",
+        "properties": {
+          "foto": {
+            "type": "string",
+            "format": "uri"
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "provincia": {
+            "type": "string"
+          },
+          "partido": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "telefono": {
+            "type": "string"
+          },
+          "redes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
