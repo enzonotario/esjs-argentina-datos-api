@@ -62,40 +62,40 @@ export async function parseActa(
   return acta
 }
 
-function validateActa(acta: ActaData): boolean {
-  const totalVotos = acta.afirmativos + acta.negativos + acta.abstenciones
-
-  if (totalVotos !== acta.presentes) {
-    console.log(
-      `❌ Acta ${acta.actaId} no es válida: votos (${totalVotos}) != presentes (${acta.presentes})`,
-    )
-    return false
-  }
-
-  if (
-    acta.votos.filter(voto => voto.voto === 'si').length !== acta.afirmativos
-  ) {
-    console.log(
-      `❌ Acta ${acta.actaId} no es válida: votos afirmativos (${acta.afirmativos}) no coinciden`,
-    )
-    return false
-  }
-
-  if (acta.votos.filter(voto => voto.voto === 'no').length !== acta.negativos) {
-    console.log(
-      `❌ Acta ${acta.actaId} no es válida: votos negativos (${acta.negativos}) no coinciden`,
-    )
-    return false
-  }
-
-  if (
-    acta.votos.filter(voto => voto.voto === 'ausente').length !== acta.ausentes
-  ) {
-    console.log(
-      `❌ Acta ${acta.actaId} no es válida: votos ausentes (${acta.ausentes}) no coinciden`,
-    )
-    return false
-  }
-
-  return true
-}
+// function validateActa(acta: ActaData): boolean {
+//   const totalVotos = acta.afirmativos + acta.negativos + acta.abstenciones
+//
+//   if (totalVotos !== acta.presentes) {
+//     console.log(
+//       `❌ Acta ${acta.actaId} no es válida: votos (${totalVotos}) != presentes (${acta.presentes})`,
+//     )
+//     return false
+//   }
+//
+//   if (
+//     acta.votos.filter(voto => voto.voto === 'si').length !== acta.afirmativos
+//   ) {
+//     console.log(
+//       `❌ Acta ${acta.actaId} no es válida: votos afirmativos (${acta.afirmativos}) no coinciden`,
+//     )
+//     return false
+//   }
+//
+//   if (acta.votos.filter(voto => voto.voto === 'no').length !== acta.negativos) {
+//     console.log(
+//       `❌ Acta ${acta.actaId} no es válida: votos negativos (${acta.negativos}) no coinciden`,
+//     )
+//     return false
+//   }
+//
+//   if (
+//     acta.votos.filter(voto => voto.voto === 'ausente').length !== acta.ausentes
+//   ) {
+//     console.log(
+//       `❌ Acta ${acta.actaId} no es válida: votos ausentes (${acta.ausentes}) no coinciden`,
+//     )
+//     return false
+//   }
+//
+//   return true
+// }

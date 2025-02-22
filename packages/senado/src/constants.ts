@@ -1,13 +1,9 @@
-import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-export const DATOS_PATH = join(
-  __dirname,
-  '..',
-  '..',
-  '..',
-  'datos',
-  'v1',
-  'senado',
+export const DATOS_PATH = fileURLToPath(
+  new URL('../../../datos/v1/senado', import.meta.url),
 )
 
-export const STATIC_PATH = join(__dirname, '..', '..', '..', 'static', 'senado')
+export const STATIC_PATH = fileURLToPath(
+  new URL('../../../static/senado', import.meta.url),
+)

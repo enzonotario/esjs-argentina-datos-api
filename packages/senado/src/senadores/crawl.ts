@@ -22,7 +22,7 @@ export async function crawl(): Promise<Senador[]> {
 
   const senadores: Senador[] = []
 
-  $('tr').each((i, el) => {
+  $('tr').each((_, el) => {
     const $el = $(el)
     const foto = `https://www.senado.gob.ar${$el.find('img').attr('data-src')}`
     const nombre = $el.find('a').eq(1).text().trim().replace(/\s+/g, ' ')
@@ -31,7 +31,7 @@ export async function crawl(): Promise<Senador[]> {
     const email = $el.find('li').eq(0).text().trim()
     const telefono = $el.find('li').eq(1).text().trim()
     const redes = [
-      ...$el.find('li').map((i, el) => {
+      ...$el.find('li').map((_, el) => {
         return String($(el).find('a').attr('href'))
           .trim()
           .replace(/^mailto:/, '')
