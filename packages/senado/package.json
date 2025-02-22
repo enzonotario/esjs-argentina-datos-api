@@ -1,0 +1,25 @@
+{
+  "name": "@argentinadatos/senado",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.3.0",
+    "@types/node": "^22.13.5",
+    "cheerio": "^1.0.0",
+    "collect.js": "^4.36.1",
+    "date-fns": "^4.1.0",
+    "eslint": "^9.20.1",
+    "pdf-data-parser": "^1.2.15",
+    "pdf-parse": "^1.1.1",
+    "pdf-ts": "^0.0.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.6"
+  }
+}

@@ -793,6 +793,82 @@
           }
         ]
       }
+    },
+    "/v1/senado/actas": {
+      "get": {
+        "summary": "Actas del Senado",
+        "tags": [
+          "Senado"
+        ],
+        "description": "Devuelve las actas del Senado.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de actas del Senado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActaSenado"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-senado-actas",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/actas\""
+          }
+        ]
+      }
+    },
+    "/v1/senado/actas/{año}": {
+      "get": {
+        "summary": "Actas del Senado por año",
+        "tags": [
+          "Senado"
+        ],
+        "description": "Devuelve las actas del Senado del año indicado.",
+        "parameters": [
+          {
+            "name": "año",
+            "in": "path",
+            "description": "Año de consulta",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 2016,
+              "maximum": 2025
+            },
+            "example": 2024
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de actas del Senado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActaSenado"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-senado-actas-año",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/actas/{año}\""
+          }
+        ]
+      }
     }
   },
   "components": {
@@ -1096,6 +1172,103 @@
             "items": {
               "$ref": "#/components/schemas/Rendimiento"
             }
+          }
+        }
+      },
+      "ActaSenado": {
+        "title": "ActaSenado",
+        "type": "object",
+        "properties": {
+          "actaId": {
+            "type": "integer",
+            "nullable": true
+          },
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "proyecto": {
+            "type": "string"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "quorumTipo": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date"
+          },
+          "acta": {
+            "type": "string"
+          },
+          "mayoria": {
+            "type": "string"
+          },
+          "miembros": {
+            "type": "integer"
+          },
+          "afirmativos": {
+            "type": "integer"
+          },
+          "negativos": {
+            "type": "integer"
+          },
+          "abstenciones": {
+            "type": "integer"
+          },
+          "presentes": {
+            "type": "integer"
+          },
+          "ausentes": {
+            "type": "integer"
+          },
+          "amn": {
+            "type": "integer"
+          },
+          "resultado": {
+            "type": "string",
+            "enum": [
+              "afirmativa",
+              "negativa",
+              "cancelada lev.vot."
+            ]
+          },
+          "votos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VotoData"
+            }
+          },
+          "observaciones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "VotoData": {
+        "title": "VotoData",
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "voto": {
+            "type": "string",
+            "enum": [
+              "si",
+              "no",
+              "ausente",
+              "abstencion",
+              "no emite",
+              "desconocido"
+            ]
+          },
+          "banca": {
+            "type": "string"
           }
         }
       }
