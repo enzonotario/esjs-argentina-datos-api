@@ -72,7 +72,9 @@ function validateActa(acta: ActaData): boolean {
     return false
   }
 
-  if (acta.votos.filter(voto => voto.voto === 'si').length !== acta.afirmativos) {
+  if (
+    acta.votos.filter(voto => voto.voto === 'si').length !== acta.afirmativos
+  ) {
     console.log(
       `❌ Acta ${acta.actaId} no es válida: votos afirmativos (${acta.afirmativos}) no coinciden`,
     )
@@ -86,7 +88,9 @@ function validateActa(acta: ActaData): boolean {
     return false
   }
 
-  if (acta.votos.filter(voto => voto.voto === 'ausente').length !== acta.ausentes) {
+  if (
+    acta.votos.filter(voto => voto.voto === 'ausente').length !== acta.ausentes
+  ) {
     console.log(
       `❌ Acta ${acta.actaId} no es válida: votos ausentes (${acta.ausentes}) no coinciden`,
     )

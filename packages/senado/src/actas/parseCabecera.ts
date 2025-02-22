@@ -1,7 +1,5 @@
 import type { ActaData } from './parseActa.ts'
-import {
-  parse as parseDate,
-} from 'date-fns'
+import { parse as parseDate } from 'date-fns'
 import { PdfDataParser } from 'pdf-data-parser'
 import { ResultadoEnum } from './parseActa.ts'
 
@@ -32,31 +30,6 @@ export async function parseCabecera(pdfPath: string): Promise<ActaData> {
     votos: [],
     observaciones: [],
   }
-
-  /**
-   * result is like:
-   *     {
-   *         "actaId": 2529,
-   *         "titulo": "Habilitación del tratamiento sobre tablas para la interpelación al Jefe de Gabinete.",
-   *         "proyecto": "MOCION SOBRE TABLAS Nº 2530/24",
-   *         "descripcion": "VOTACION SIN NOMENCLAR",
-   *         "quorumTipo": "MAS 1/2 MC",
-   *         "fecha": "20/02/2025 16:29:45",
-   *         "acta": "5",
-   *         "mayoria": "DOS TERCIOS LEGISLADORES PRESENTES",
-   *         "miembros": 72,
-   *         "afirmativos": 42,
-   *         "negativos": 23,
-   *         "abstenciones": 0,
-   *         "presentes": 65,
-   *         "ausentes": 7,
-   *         "amn": 44,
-   *         "resultado": "negativa",
-   *         "votos": [
-   *         ],
-   *         "observaciones": []
-   *     }
-   */
 
   let inObservationsSection = false
 

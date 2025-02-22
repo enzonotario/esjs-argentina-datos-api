@@ -1,10 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { DATOS_PATH } from "../constants.ts";
+import { DATOS_PATH } from '../constants.ts'
 
-/**
- * For endpoints like `/actas/asd`, write to `/datos/actas/asd/index.json`
- */
 export function writeEndpoint(endpoint: string, data: any): string {
   const filePath = path.join(DATOS_PATH, ...endpoint.split('/'), 'index.json')
   const jsonData = JSON.stringify(data, null, 4)

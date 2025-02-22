@@ -1,5 +1,4 @@
 import type { ActaData } from './parseActa.ts'
-import * as fs from 'node:fs'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { readEndpoint } from '../utils/readEndpoint.ts'
@@ -7,11 +6,11 @@ import { writeEndpoint } from '../utils/writeEndpoint.ts'
 import { downloadPdf } from './downloadPdf.ts'
 import { parseActa } from './parseActa.ts'
 
-export async function crawl({ year }: { year?: number } = {}): Promise<ActaData[]> {
+export async function crawl({ year }: { year?: number } = {}): Promise<
+  ActaData[]
+> {
   const output: ActaData[] = []
   const yearToSearch = year || new Date().getFullYear()
-
-  fs.mkdirSync(`datos/actas/${yearToSearch}`, { recursive: true })
 
   const response = await fetch('https://www.senado.gob.ar/votaciones/actas', {
     method: 'POST',
@@ -35,18 +34,8 @@ export async function crawl({ year }: { year?: number } = {}): Promise<ActaData[
     const actaUrlLastPart = actaUrl?.split('/').pop()
     const actaId = Number(actaUrlLastPart)
 
-    // if (actaFecha && actaUrl && actaUrlLastPart) {
-    //   const pdfPath = await downloadPdf(actaId)
-    //
-    //   const acta = await parseActa(actaId, titulo, pdfPath)
-    //
-    //   writeEndpoint(`actas/${yearToSearch}/${actaId}`, acta)
-    //
-    //   output.push(acta)
-    // }
-
     if (actaFecha && actaUrl && actaUrlLastPart) {
-      const acta = await processActa(actaId, titulo, yearToSearch, output)
+      const acta = await processActa(actaId, titulo, yearToSearch)
 
       if (acta) {
         output.push(acta)
@@ -61,9 +50,17 @@ export async function crawl({ year }: { year?: number } = {}): Promise<ActaData[
   return output
 }
 
-async function processActa(actaId: number, titulo: string, yearToSearch: number): Promise<ActaData | null> {
+async function processActa(
+  actaId: number,
+  titulo: string,
+  yearToSearch: number,
+): Promise<ActaData | null> {
   try {
     const pdfPath = await downloadPdf(actaId)
+
+    if (!pdfPath) {
+      return null
+    }
 
     const acta = await parseActa(actaId, titulo, pdfPath)
 

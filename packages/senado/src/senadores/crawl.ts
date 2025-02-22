@@ -30,11 +30,15 @@ export async function crawl(): Promise<Senador[]> {
     const partido = $el.find('td').eq(3).text().trim()
     const email = $el.find('li').eq(0).text().trim()
     const telefono = $el.find('li').eq(1).text().trim()
-    const redes = ([
+    const redes = [
       ...$el.find('li').map((i, el) => {
-        return String($(el).find('a').attr('href')).trim().replace(/^mailto:/, '')
+        return String($(el).find('a').attr('href'))
+          .trim()
+          .replace(/^mailto:/, '')
       }),
-    ]).filter(Boolean).filter(red => red !== 'undefined')
+    ]
+      .filter(Boolean)
+      .filter(red => red !== 'undefined')
 
     if (!nombre) {
       return
