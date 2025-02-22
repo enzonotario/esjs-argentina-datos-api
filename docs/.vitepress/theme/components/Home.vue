@@ -16,7 +16,8 @@
         </h1>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto">
+      <!--      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto"> -->
+      <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-4">
         <div class="flex flex-col justify-center items-center text-center p-6 space-y-6 rounded border dark:border-gray-800">
           <h1 class="tagline font-bold">
             API Pública
@@ -60,6 +61,34 @@
             <a
               class="button button-secondary rounded-full"
               href="https://github.com/enzonotario/argentina-datos-app"
+              target="_blank" rel="noreferrer"
+            >
+              Ver en GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center text-center p-6 space-y-6 rounded border dark:border-gray-800">
+          <h1 class="tagline font-bold">
+            Senadores
+          </h1>
+
+          <p class="w-full max-w-sm">
+            Datos y visualizaciones sobre el Senado de la Nación
+          </p>
+
+          <div class="flex flex-row flex-wrap justify-center items-center gap-4">
+            <a
+              class="button button-primary rounded-full"
+              href="https://senadores.argentinadatos.com/"
+              target="_blank" rel="noreferrer"
+            >
+              Senadores
+            </a>
+
+            <a
+              class="button button-secondary rounded-full"
+              href="https://github.com/ferminrp/senadores"
               target="_blank" rel="noreferrer"
             >
               Ver en GitHub
