@@ -1,12 +1,8 @@
 import fs from 'node:fs'
-import path from 'node:path'
-import { STATIC_PATH } from '../constants.ts'
+import { getStaticPath } from './getStaticPath.ts'
 
 export function readStaticPdf(pdfPath: string): Buffer | null {
-  const filePath = path.join(
-    STATIC_PATH,
-    pdfPath.replace(STATIC_PATH, '').replace(/^\//, ''),
-  )
+  const filePath = getStaticPath(pdfPath)
 
   if (!fs.existsSync(filePath)) {
     return null
