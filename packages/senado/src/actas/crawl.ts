@@ -1,13 +1,14 @@
+import type { ActaData } from './parseActa.ts'
 import * as fs from 'node:fs'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
+import { readEndpoint } from '../utils/readEndpoint.ts'
+import { writeEndpoint } from '../utils/writeEndpoint.ts'
 import { downloadPdf } from './downloadPdf.ts'
 import { parseActa } from './parseActa.ts'
-import { readEndpoint } from './utils/readEndpoint.ts'
-import { writeEndpoint } from './utils/writeEndpoint.ts'
 
-export async function crawl({ year }: { year?: number } = {}): Promise<number> {
-  const output = []
+export async function crawl({ year }: { year?: number } = {}): Promise<ActaData[]> {
+  const output: ActaData[] = []
   const yearToSearch = year || new Date().getFullYear()
 
   fs.mkdirSync(`datos/actas/${yearToSearch}`, { recursive: true })
@@ -34,14 +35,22 @@ export async function crawl({ year }: { year?: number } = {}): Promise<number> {
     const actaUrlLastPart = actaUrl?.split('/').pop()
     const actaId = Number(actaUrlLastPart)
 
+    // if (actaFecha && actaUrl && actaUrlLastPart) {
+    //   const pdfPath = await downloadPdf(actaId)
+    //
+    //   const acta = await parseActa(actaId, titulo, pdfPath)
+    //
+    //   writeEndpoint(`actas/${yearToSearch}/${actaId}`, acta)
+    //
+    //   output.push(acta)
+    // }
+
     if (actaFecha && actaUrl && actaUrlLastPart) {
-      const pdfPath = await downloadPdf(actaId)
+      const acta = await processActa(actaId, titulo, yearToSearch, output)
 
-      const acta = await parseActa(actaId, titulo, pdfPath)
-
-      writeEndpoint(`actas/${yearToSearch}/${actaId}`, acta)
-
-      output.push(acta)
+      if (acta) {
+        output.push(acta)
+      }
     }
   }
 
@@ -49,7 +58,24 @@ export async function crawl({ year }: { year?: number } = {}): Promise<number> {
 
   saveAll(output)
 
-  return 0
+  return output
+}
+
+async function processActa(actaId: number, titulo: string, yearToSearch: number): Promise<ActaData | null> {
+  try {
+    const pdfPath = await downloadPdf(actaId)
+
+    const acta = await parseActa(actaId, titulo, pdfPath)
+
+    writeEndpoint(`actas/${yearToSearch}/${actaId}`, acta)
+
+    return acta
+  }
+  catch (error) {
+    console.error(`❌ Error al procesar Acta ${actaId}:`, error)
+
+    return null
+  }
 }
 
 function saveByYear(data: any, year: number) {
@@ -64,6 +90,8 @@ function saveByYear(data: any, year: number) {
     .all()
 
   writeEndpoint(`actas/${year}`, newData)
+
+  return newData
 }
 
 function saveAll(data: any) {

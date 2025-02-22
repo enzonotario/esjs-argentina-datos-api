@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import axios from 'axios'
-import { DATOS_PATH } from "./constants.ts";
+import { DATOS_PATH } from "../constants.ts";
 
 export const BASE_URL = 'https://www.senado.gob.ar/votaciones/verActaVotacion/'
 
