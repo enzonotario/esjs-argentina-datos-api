@@ -94,8 +94,11 @@ async function getData() {
     }))
   
   return Plot.plot({
-    marginTop: 200,
-    marginLeft: 200,
+    dark,
+    width,
+    marginTop: 150,
+    marginLeft: 150,
+    marginRight: 50,
     x: {
       axis: "top",
       tickRotate: -30,
@@ -108,16 +111,19 @@ async function getData() {
           x: "partido",
           y: "provincia",
           fill: "partido",
-          insetTop: 15,
         }
       ),
       Plot.text(senadores, {
         x: "partido",
         y: "provincia",
         text: d => data.find(p => p.partido === d.partido).valores.find(p => p.provincia === d.provincia).cantidad,
+        fill: "#000",
         dx: 0,
         dy: 0,
-        tip: {},
+        tip: {
+          fill: dark ? "#000" : "#fff",
+          stroke: dark ? "#fff" : "#000",
+        },
         fontSize: 12,
         fontWeigth: 800,
       }),
