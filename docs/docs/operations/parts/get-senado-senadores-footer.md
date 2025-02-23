@@ -108,6 +108,7 @@ async function getData() {
           x: "partido",
           y: "provincia",
           fill: "partido",
+          insetTop: 15,
         }
       ),
       Plot.text(senadores, {
