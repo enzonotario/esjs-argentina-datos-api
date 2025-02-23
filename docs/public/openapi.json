@@ -1284,9 +1284,8 @@
         "title": "Senador",
         "type": "object",
         "properties": {
-          "foto": {
-            "type": "string",
-            "format": "uri"
+          "id": {
+            "type": "string"
           },
           "nombre": {
             "type": "string"
@@ -1297,18 +1296,64 @@
           "partido": {
             "type": "string"
           },
+          "periodoLegal": {
+            "type": "object",
+            "properties": {
+              "inicio": {
+                "type": "string",
+                "format": "date",
+                "nullable": true
+              },
+              "fin": {
+                "type": "string",
+                "format": "date",
+                "nullable": true
+              }
+            }
+          },
+          "periodoReal": {
+            "type": "object",
+            "properties": {
+              "inicio": {
+                "type": "string",
+                "format": "date",
+                "nullable": true
+              },
+              "fin": {
+                "type": "string",
+                "format": "date",
+                "nullable": true
+              }
+            }
+          },
+          "reemplazo": {
+            "type": "string",
+            "nullable": true
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "foto": {
+            "type": "string",
+            "format": "uri",
+            "nullable": true
+          },
           "email": {
             "type": "string",
-            "format": "email"
+            "format": "email",
+            "nullable": true
           },
           "telefono": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "redes": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "nullable": true
           }
         }
       },

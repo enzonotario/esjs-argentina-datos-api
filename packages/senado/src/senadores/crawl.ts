@@ -1,4 +1,5 @@
 import * as cheerio from 'cheerio'
+import { readEndpoint } from '../utils/readEndpoint.ts'
 import { writeEndpoint } from '../utils/writeEndpoint.ts'
 
 export interface Senador {
@@ -12,6 +13,14 @@ export interface Senador {
 }
 
 export async function crawl(): Promise<Senador[]> {
+  const currentValues = readEndpoint('/senadores')
+
+  if (!currentValues) {
+    return []
+  }
+
+  const senadores = JSON.parse(currentValues) as Senador[]
+
   const response = await fetch(
     'https://www.senado.gob.ar/senadores/listados/listaSenadoRes',
   )
@@ -20,11 +29,8 @@ export async function crawl(): Promise<Senador[]> {
 
   const $ = cheerio.load(html)
 
-  const senadores: Senador[] = []
-
   $('tr').each((_, el) => {
     const $el = $(el)
-    const foto = `https://www.senado.gob.ar${$el.find('img').attr('data-src')}`
     const nombre = $el.find('a').eq(1).text().trim().replace(/\s+/g, ' ')
     const provincia = $el.find('td').eq(2).text().trim()
     const partido = $el.find('td').eq(3).text().trim()
@@ -44,17 +50,15 @@ export async function crawl(): Promise<Senador[]> {
       return
     }
 
-    const senador: Senador = {
-      foto,
-      nombre,
-      provincia,
-      partido,
-      email,
-      telefono,
-      redes,
-    }
+    const existingSenador = senadores.find(s => s.nombre === nombre)
 
-    senadores.push(senador)
+    if (existingSenador) {
+      existingSenador.provincia = provincia
+      existingSenador.partido = partido
+      existingSenador.email = email
+      existingSenador.telefono = telefono
+      existingSenador.redes = redes
+    }
   })
 
   writeEndpoint('/senadores', senadores)

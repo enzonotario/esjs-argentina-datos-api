@@ -5,16 +5,14 @@ import { crawlJson } from '../src/senadores/crawlJson'
 describe(
   'actas',
   () => {
-    it('crawl', async () => {
-      const result = await crawl()
-
-      console.log({ result })
+    it('crawlJson', async () => {
+      const result = await crawlJson()
 
       expect(result).toMatchSnapshot()
     })
 
-    it('crawlJson', async () => {
-      const result = await crawlJson()
+    it('crawl', async () => {
+      const result = await crawl()
 
       expect(result).toMatchSnapshot()
     })
