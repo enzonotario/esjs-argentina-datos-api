@@ -5,5 +5,5 @@ export const DATOS_PATH = fileURLToPath(
 )
 
 export const STATIC_PATH = fileURLToPath(
-  new URL('../../../static/senado', import.meta.url),
+  new URL('../../../datos/static/senado', import.meta.url),
 )
