@@ -1,17 +1,16 @@
 import axios from 'axios'
 import { getStaticPath } from '../utils/getStaticPath.ts'
-import { readStaticPdf } from '../utils/readStaticPdf.ts'
-import { writeStaticPdf } from '../utils/writeStaticPdf.ts'
+import { readStaticBuffer } from '../utils/readStaticBuffer.ts'
+import { writeStaticBuffer } from '../utils/writeStaticBuffer.ts'
 
 export const BASE_URL = 'https://www.senado.gob.ar/votaciones/verActaVotacion/'
 
 export async function downloadPdf(actaId: number): Promise<string | null> {
   const path = getStaticPath(`/actas/pdf/${actaId}.pdf`)
 
-  const currentPdf = readStaticPdf(path)
+  const currentPdf = readStaticBuffer(path)
 
   if (currentPdf) {
-    console.log(`🔍 Encontrado: ${actaId}.pdf`)
     return path
   }
 
@@ -22,5 +21,5 @@ export async function downloadPdf(actaId: number): Promise<string | null> {
     responseType: 'arraybuffer',
   })
 
-  return writeStaticPdf(path, response.data)
+  return writeStaticBuffer(path, response.data)
 }

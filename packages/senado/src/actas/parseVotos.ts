@@ -1,10 +1,10 @@
 import type { VotoData } from './parseActa.ts'
 import { pdfToText } from 'pdf-ts'
-import { readStaticPdf } from '../utils/readStaticPdf.ts'
+import { readStaticBuffer } from '../utils/readStaticBuffer.ts'
 import { VotoEnum } from './parseActa.ts'
 
 async function extract(pdfPath: string): Promise<string> {
-  const dataBuffer = readStaticPdf(pdfPath)
+  const dataBuffer = readStaticBuffer(pdfPath)
 
   if (!dataBuffer) {
     throw new Error(`No se pudo leer el archivo ${pdfPath}`)

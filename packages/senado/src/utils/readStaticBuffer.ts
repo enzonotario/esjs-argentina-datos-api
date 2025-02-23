@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import { getStaticPath } from './getStaticPath.ts'
 
-export function readStaticPdf(pdfPath: string): Buffer | null {
+export function readStaticBuffer(pdfPath: string): Buffer | null {
   const filePath = getStaticPath(pdfPath)
 
   if (!fs.existsSync(filePath)) {
