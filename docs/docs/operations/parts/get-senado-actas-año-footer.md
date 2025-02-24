@@ -148,3 +148,46 @@ year = Inputs.select([
   });
 })()
 ```
+
+## Presentismo por acta
+
+```js eval code=false
+(async () => {
+  const actas = await getData();
+  const colors = await getColors();
+
+  const data = actas.map(acta => ({
+    actaId: acta.actaId,
+    titulo: acta.titulo,
+    presentismo: acta.presentes / acta.miembros,
+    presentismoPorcentaje: Number(((acta.presentes / acta.miembros) * 100).toFixed(2)),
+  }));
+
+  return Plot.plot({
+    width,
+    marginLeft: 50,
+    marginBottom: 50,
+    color: {
+      type: "linear",
+      scheme: 'RdBu',
+    },
+    marks: [
+      Plot.dot(data, {
+        x: "actaId",
+        y: "presentismoPorcentaje",
+        title: d => `${d.titulo}: ${d.presentismoPorcentaje}%`,
+        fill: "presentismoPorcentaje",
+        size: 7,
+        stroke: dark ? colors.blue[300] : colors.blue[700],
+        strokeWidth: 1,
+        tip: {
+          fill: dark ? colors.gray[900] : colors.gray[100],
+          stroke: dark ? colors.gray[700] : colors.gray[300],
+        },
+      }),
+    ],
+    x: { label: "Acta" },
+    y: { label: "Presentismo" }
+  });
+})()
+```
