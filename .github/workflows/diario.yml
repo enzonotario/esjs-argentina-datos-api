@@ -73,9 +73,6 @@ jobs:
       - name: Run cron
         run: pnpm run cron diario
 
-      - name: Run senado:test:run
-        run: pnpm run senado:test:run
-
       - name: Commit and push if changes
         run: |
           git config --global user.name 'GitHub Actions'
