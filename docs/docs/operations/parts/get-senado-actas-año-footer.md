@@ -14,13 +14,13 @@ async function getData() {
 }
 ```
 
-### Distribución de votos por acta
-
 ```js eval code=false
 year = Inputs.select([
   ...Array.from({ length: new Date().getFullYear() - 1983 + 1 }, (_, i) => 1983 + i).reverse()
 ], { label: "Año" });
 ```
+
+### Distribución de votos por acta
 
 ```js eval code=false
 (async () => {
@@ -92,10 +92,6 @@ year = Inputs.select([
 
 ```js eval code=false
 (async () => {
-  /**
-   * actas schema:
-   * [{"actaId": 0,"titulo": "string","proyecto": "string","descripcion": "string","quorumTipo": "string","fecha": "string","acta": "string","mayoria": "string","miembros": 0,"afirmativos": 0,"negativos": 0,"abstenciones": 0,"presentes": 0,"ausentes": 0,"amn": 0,"resultado": "string","votos": [{"nombre": "string","voto": "string","banca": "string"}],"observaciones": ["string"]}]
-   */
   const actas = await getData();
   const colors = await getColors();
 
@@ -123,6 +119,32 @@ year = Inputs.select([
     ],
     x: { label: "Resultado" },
     y: { label: "Cantidad de actas" }
+  });
+})()
+```
+
+## Árbol de actas
+
+```js eval code=false
+(async () => {
+  const actas = await getData();
+
+  const paths = actas.map(acta => `Actas/${acta.resultado}/${acta.titulo}`);
+
+  return Plot.plot({
+    axis: null,
+    width,
+    marginTop: 50,
+    marginBottom: 50,
+    marginRight: 200,
+    marginLeft: 30,
+    marks: [
+      Plot.tree(paths, {
+        delimiter: "/",
+        textStroke: "none",
+        dot: true
+      })
+    ],
   });
 })()
 ```
