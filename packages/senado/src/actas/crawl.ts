@@ -1,6 +1,7 @@
 import type { ActaData } from './parseActa.ts'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
+import { getYear } from 'date-fns'
 import { readEndpoint } from '../utils/readEndpoint.ts'
 import { writeEndpoint } from '../utils/writeEndpoint.ts'
 import { downloadPdf } from './downloadPdf.ts'
@@ -37,7 +38,7 @@ export async function crawl({ year }: { year?: number } = {}): Promise<
     if (actaFecha && actaUrl && actaUrlLastPart) {
       const acta = await processActa(actaId, titulo, yearToSearch)
 
-      if (acta) {
+      if (acta && getYear(acta.fecha) === yearToSearch) {
         output.push(acta)
       }
     }
