@@ -25,7 +25,6 @@ year = Inputs.select([
 ```js eval code=false
 (async () => {
   const colors = await getColors();
-  console.log(colors)
   const actas = await getData();
   const colorsMap = {
     afirmativos: {
@@ -87,6 +86,43 @@ year = Inputs.select([
     y: { label: "Cantidad de votos" }
   });
 })()
-
 ```
 
+## Actas por resultado
+
+```js eval code=false
+(async () => {
+  /**
+   * actas schema:
+   * [{"actaId": 0,"titulo": "string","proyecto": "string","descripcion": "string","quorumTipo": "string","fecha": "string","acta": "string","mayoria": "string","miembros": 0,"afirmativos": 0,"negativos": 0,"abstenciones": 0,"presentes": 0,"ausentes": 0,"amn": 0,"resultado": "string","votos": [{"nombre": "string","voto": "string","banca": "string"}],"observaciones": ["string"]}]
+   */
+  const actas = await getData();
+  const colors = await getColors();
+
+  const data = [...new Set(actas.map(d => d.resultado))].map(resultado => ({
+    resultado,
+    cantidad: actas.filter(d => d.resultado === resultado).length,
+  }));
+
+  return Plot.plot({
+    width,
+    marginLeft: 150,
+    marks: [
+      Plot.barX(data, {
+        y: "resultado",
+        x: "cantidad",
+        title: d => `${d.resultado}: ${d.cantidad}`,
+        tip: {
+          fill: dark ? colors.gray[900] : colors.gray[100],
+          stroke: dark ? colors.gray[700] : colors.gray[300],
+        },
+        sort: {
+          y: "-x",
+        }
+      }),
+    ],
+    x: { label: "Resultado" },
+    y: { label: "Cantidad de actas" }
+  });
+})()
+```
