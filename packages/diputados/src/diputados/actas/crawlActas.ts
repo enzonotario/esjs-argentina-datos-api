@@ -1,5 +1,6 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
+import { formatISO, parse } from 'date-fns'
 import { USER_AGENT, VOTACIONES_BASE_URL } from '../../constants.ts'
 import { readEndpoint } from '../../utils/readEndpoint.ts'
 import { titleCaseSpanish } from '../../utils/titleCaseSpanish.ts'
@@ -27,7 +28,6 @@ interface Acta {
   titulo: string
   resultado: string
   fecha: string
-  hora: string
   presidente: string
   votosAfirmativos: number
   votosNegativos: number
@@ -103,7 +103,8 @@ export function parseActa(html: string): Acta | null {
   const resultado = $('ul.col-in li.col-middle h3').text().trim().toLowerCase()
   const dateTime = $('ul.col h5.text-muted').text().trim()
   const [fecha, hora] = dateTime.split(' - ')
-  const presidente = $('div#custom-share h4 b').text().trim()
+  const date = formatISO(parse(`${fecha} ${hora}`, 'dd/MM/yyyy HH:mm', new Date()))
+  const presidente = titleCaseSpanish($('div#custom-share h4 b').text().trim().toLowerCase())
 
   const afirmativosUl = $('div.col-lg-2.col-sm-6 ul h4:contains("AFIRMATIVOS")').parent()
   const negativosUl = $('div.col-lg-2.col-sm-6 ul h4:contains("NEGATIVOS")').parent()
@@ -142,9 +143,8 @@ export function parseActa(html: string): Acta | null {
     numeroActa,
     titulo,
     resultado,
-    fecha,
-    hora,
-    presidente: titleCaseSpanish(presidente.toLowerCase()),
+    fecha: date,
+    presidente,
     votosAfirmativos,
     votosNegativos,
     abstenciones,
