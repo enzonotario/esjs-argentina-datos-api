@@ -1,6 +1,7 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { USER_AGENT, VOTACIONES_BASE_URL } from '../../constants.ts'
+import { readEndpoint } from '../../utils/readEndpoint.ts'
 import { titleCaseSpanish } from '../../utils/titleCaseSpanish.ts'
 import { writeEndpoint } from '../../utils/writeEndpoint.ts'
 
@@ -13,13 +14,10 @@ enum TipoVoto {
 }
 
 interface Voto {
-  diputadoId: string
-  // imagen: string
   diputado: string
-  // bloque: string
-  // provincia: string
   tipoVoto: TipoVoto
-  // videoDiscurso: string | null
+  imagen: string
+  videoDiscurso: string | null
 }
 
 interface Acta {
@@ -38,6 +36,8 @@ interface Acta {
   votos: Voto[]
 }
 
+const diputados = JSON.parse(readEndpoint('diputados') || '[]')
+
 export async function crawlActas(
   { year }: { year: number } = { year: new Date().getFullYear() },
 ): Promise<Acta[]> {
@@ -49,6 +49,8 @@ export async function crawlActas(
   ).filter(Boolean) as Acta[]
 
   writeEndpoint('actas', actas)
+
+  writeEndpoint('diputados', diputados)
 
   return actas
 }
@@ -116,23 +118,21 @@ export function parseActa(html: string): Acta | null {
   const votos: Voto[] = []
   $('#myTable tbody tr').each((i, row) => {
     const imagen = $(row).find('td:nth-child(1) img').attr('src') || ''
-    // imagen is like:  "imagen": "https://votaciones.hcdn.gob.ar/assets/diputados/A4774",
-    const diputadoId = imagen.split('/').pop() || ''
-    const diputado = $(row).find('td:nth-child(2)').text().trim()
-    const bloque = $(row).find('td:nth-child(3)').text().trim()
-    const provincia = $(row).find('td:nth-child(4)').text().trim()
+    const diputado = titleCaseSpanish($(row).find('td:nth-child(2)').text().trim().toLowerCase())
     const tipoVoto = parseTipoVoto($(row).find('td:nth-child(5) span.label').text().trim())
     const videoButton = $(row).find('td:nth-child(6) button')
     const videoDiscurso = videoButton.length > 0 && !videoButton.prop('disabled') ? videoButton.attr('onclick')?.match(/'([^']+)'/)?.[1] || null : null
 
+    const diputadoData = diputados.find((d: any) => `${d.apellido}, ${d.nombre}` === diputado)
+    if (diputadoData && !diputadoData.foto) {
+      diputadoData.foto = imagen
+    }
+
     votos.push({
-      // imagen,
-      diputadoId,
-      diputado: titleCaseSpanish(diputado.toLowerCase()),
-      // bloque: titleCaseSpanish(bloque.toLowerCase()),
-      // provincia: titleCaseSpanish(provincia.toLowerCase()),
+      diputado,
       tipoVoto,
-      // videoDiscurso,
+      imagen,
+      videoDiscurso,
     })
   })
 

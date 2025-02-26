@@ -8,28 +8,6 @@ it('crawl', async () => {
   expect(Array.isArray(result)).toBe(true)
   expect(result.length).toBeGreaterThan(0)
 
-  /**
-   *
-   * export interface Diputado {
-   *   id: string
-   *   nombre: string
-   *   apellido: string
-   *   genero: string
-   *   provincia: string
-   *   periodoMandato: {
-   *     inicio: string | null
-   *     fin: string | null
-   *   }
-   *   juramentoFecha: string
-   *   ceseFecha: string
-   *   bloque: string
-   *   periodoBloque: {
-   *     inicio: string | null
-   *     fin: string | null
-   *   }
-   * }
-   */
-
   for (const diputado of result) {
     expect(diputado).toMatchObject({
       id: expect.any(String),
