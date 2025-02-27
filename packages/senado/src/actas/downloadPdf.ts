@@ -1,12 +1,12 @@
+import { getStaticPath } from '@argentinadatos/core/src/utils/getStaticPath.ts'
+import { readStaticBuffer } from '@argentinadatos/core/src/utils/readStaticBuffer.ts'
+import { writeStaticBuffer } from '@argentinadatos/core/src/utils/writeStaticBuffer.ts'
 import axios from 'axios'
-import { getStaticPath } from '../utils/getStaticPath.ts'
-import { readStaticBuffer } from '../utils/readStaticBuffer.ts'
-import { writeStaticBuffer } from '../utils/writeStaticBuffer.ts'
 
 export const BASE_URL = 'https://www.senado.gob.ar/votaciones/verActaVotacion/'
 
 export async function downloadPdf(actaId: number): Promise<string | null> {
-  const path = getStaticPath(`/actas/pdf/${actaId}.pdf`)
+  const path = getStaticPath(`/senado/actas/pdf/${actaId}.pdf`)
 
   const currentPdf = readStaticBuffer(path)
 

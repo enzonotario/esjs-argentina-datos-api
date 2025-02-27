@@ -1,16 +1,16 @@
-import { describe, expect, it } from 'vitest'
-import { crawl } from '../src/actas/crawl'
+import { expect, it } from 'vitest'
+import { crawlActas } from '../src/actas/crawlActas'
 
-describe(
-  'actas',
-  () => {
-    it('crawl', async () => {
-      const result = await crawl()
+it(
+  'crawlActas',
+  async () => {
+    const result = await crawlActas()
 
-      expect(result).toBeDefined()
-      expect(Array.isArray(result)).toBe(true)
-      expect(result.length).toBeGreaterThan(0)
-      expect(result[0]).toMatchObject({
+    expect(result).toBeDefined()
+    expect(Array.isArray(result)).toBe(true)
+    expect(result.length).toBeGreaterThan(0)
+    for (const acta of result) {
+      expect(acta).toMatchObject({
         actaId: expect.any(Number),
         titulo: expect.any(String),
         proyecto: expect.any(String),
@@ -30,7 +30,7 @@ describe(
         votos: expect.any(Array),
         observaciones: expect.any(Array),
       })
-    })
+    }
   },
   {
     timeout: 300000,

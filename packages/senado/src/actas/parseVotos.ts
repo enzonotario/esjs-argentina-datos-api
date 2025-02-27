@@ -1,6 +1,6 @@
 import type { VotoData } from './parseActa.ts'
+import { readStaticBuffer } from '@argentinadatos/core/src/utils/readStaticBuffer.ts'
 import { pdfToText } from 'pdf-ts'
-import { readStaticBuffer } from '../utils/readStaticBuffer.ts'
 import { VotoEnum } from './parseActa.ts'
 
 async function extract(pdfPath: string): Promise<string> {

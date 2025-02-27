@@ -1,16 +1,16 @@
-import { describe, expect, it } from 'vitest'
-import { crawl } from '../src/senadores/crawl'
+import { expect, it } from 'vitest'
+import { crawlSenadores } from '../src/senadores/crawlSenadores'
 
-describe(
-  'actas',
-  () => {
-    it('crawl', async () => {
-      const result = await crawl()
+it(
+  'crawlSenadores',
+  async () => {
+    const result = await crawlSenadores()
 
-      expect(result).toBeDefined()
-      expect(Array.isArray(result)).toBe(true)
-      expect(result.length).toBeGreaterThan(0)
-      expect(result[0]).toMatchObject({
+    expect(result).toBeDefined()
+    expect(Array.isArray(result)).toBe(true)
+    expect(result.length).toBeGreaterThan(0)
+    for (const senador of result) {
+      expect(senador).toMatchObject({
         id: expect.any(String),
         nombre: expect.any(String),
         provincia: expect.any(String),
@@ -29,8 +29,9 @@ describe(
         telefono: expect.toBeOneOf([null, expect.any(String)]),
         redes: expect.toBeOneOf([null, expect.any(Array)]),
       })
-    }, {
-      timeout: 300000,
-    })
+    }
+  },
+  {
+    timeout: 300000,
   },
 )

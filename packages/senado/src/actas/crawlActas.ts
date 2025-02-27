@@ -1,13 +1,13 @@
 import type { ActaData } from './parseActa.ts'
+import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
+import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { getYear } from 'date-fns'
-import { readEndpoint } from '../utils/readEndpoint.ts'
-import { writeEndpoint } from '../utils/writeEndpoint.ts'
 import { downloadPdf } from './downloadPdf.ts'
 import { parseActa } from './parseActa.ts'
 
-export async function crawl({ year }: { year?: number } = {}): Promise<
+export async function crawlActas({ year }: { year?: number } = {}): Promise<
   ActaData[]
 > {
   const output: ActaData[] = []
@@ -65,7 +65,7 @@ async function processActa(
 
     const acta = await parseActa(actaId, titulo, pdfPath)
 
-    writeEndpoint(`actas/${yearToSearch}/${actaId}`, acta)
+    writeEndpoint(`/senado/actas/${yearToSearch}/${actaId}`, acta)
 
     return acta
   }
@@ -77,7 +77,7 @@ async function processActa(
 }
 
 function saveByYear(data: any, year: number) {
-  const currentValues = readEndpoint(`actas/${year}`) || '[]'
+  const currentValues = readEndpoint(`/senado/actas/${year}`) || '[]'
 
   const currentData = JSON.parse(currentValues)
 
@@ -87,13 +87,13 @@ function saveByYear(data: any, year: number) {
     .sortBy('actaId')
     .all()
 
-  writeEndpoint(`actas/${year}`, newData)
+  writeEndpoint(`/senado/actas/${year}`, newData)
 
   return newData
 }
 
 function saveAll(data: any) {
-  const currentValues = readEndpoint('actas') || '[]'
+  const currentValues = readEndpoint('/senado/actas') || '[]'
 
   const currentData = JSON.parse(currentValues)
 
@@ -103,5 +103,5 @@ function saveAll(data: any) {
     .sortBy('actaId')
     .all()
 
-  writeEndpoint('actas', newData)
+  writeEndpoint('/senado/actas', newData)
 }

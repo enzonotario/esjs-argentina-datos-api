@@ -1,7 +1,7 @@
-import { crawl } from './actas/crawl.ts'
+import { crawlActas } from './actas/crawlActas.ts'
 
 export async function main() {
-  await crawl()
+  await crawlActas()
 
   return 0
 }

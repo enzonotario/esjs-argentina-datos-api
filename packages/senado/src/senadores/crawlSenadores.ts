@@ -1,11 +1,11 @@
+import { getStaticPublicUrl } from '@argentinadatos/core/src/utils/getStaticPublicUrl.ts'
+import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
+import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
+import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
+import { writeStaticBuffer } from '@argentinadatos/core/src/utils/writeStaticBuffer.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { format, parse } from 'date-fns'
-import { getStaticPublicUrl } from '../utils/getStaticPublicUrl.ts'
-import { readEndpoint } from '../utils/readEndpoint.ts'
-import { titleCaseSpanish } from '../utils/titleCaseSpanish.ts'
-import { writeEndpoint } from '../utils/writeEndpoint.ts'
-import { writeStaticBuffer } from '../utils/writeStaticBuffer.ts'
 
 export interface Senador {
   id: string
@@ -28,18 +28,19 @@ export interface Senador {
   redes: string[] | null
 }
 
-const JSON_URL = 'https://www.senado.gob.ar/micrositios/DatosAbiertos/ExportarListadoSenadoresHistorico/json'
+const JSON_URL
+  = 'https://www.senado.gob.ar/micrositios/DatosAbiertos/ExportarListadoSenadoresHistorico/json'
 
-export async function crawl(): Promise<Senador[]> {
+export async function crawlSenadores(): Promise<Senador[]> {
   await processJson()
 
   await processWeb()
 
-  return JSON.parse(readEndpoint('/senadores') || '[]')
+  return JSON.parse(readEndpoint('/senado/senadores') || '[]')
 }
 
 async function processJson() {
-  const currentValues = JSON.parse(readEndpoint('/senadores') || '[]')
+  const currentValues = JSON.parse(readEndpoint('/senado/senadores') || '[]')
 
   const json = await downloadJson()
 
@@ -65,7 +66,7 @@ async function processJson() {
           const dataBuffer = Buffer.from(response.data)
 
           const path = writeStaticBuffer(
-            `/senadores/${senador.id}.gif`,
+            `/senado/senadores/${senador.id}.gif`,
             dataBuffer,
           )
 
@@ -82,7 +83,7 @@ async function processJson() {
   )
 
   writeEndpoint(
-    '/senadores',
+    '/senado/senadores',
     senadores.map((senador: Senador, i: number) => ({
       ...senador,
       foto: photos[i],
@@ -139,7 +140,7 @@ function parseFecha(fecha: string) {
 }
 
 async function processWeb(): Promise<Senador[]> {
-  const senadores = JSON.parse(readEndpoint('/senadores') || '[]')
+  const senadores = JSON.parse(readEndpoint('/senado/senadores') || '[]')
 
   const response = await fetch(
     'https://www.senado.gob.ar/senadores/listados/listaSenadoRes',
@@ -181,7 +182,7 @@ async function processWeb(): Promise<Senador[]> {
     }
   })
 
-  writeEndpoint('/senadores', senadores)
+  writeEndpoint('/senado/senadores', senadores)
 
   return senadores
 }
