@@ -1,12 +1,11 @@
 import type { Collection } from 'collect.js'
+import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
+import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { formatISO, getYear, parse } from 'date-fns'
 import { USER_AGENT, VOTACIONES_BASE_URL } from '../../constants.ts'
-import { readEndpoint } from '../../utils/readEndpoint.ts'
-import { titleCaseSpanish } from '../../utils/titleCaseSpanish.ts'
-import { writeEndpoint } from '../../utils/writeEndpoint.ts'
 
 enum TipoVoto {
   Afirmativo = 'afirmativo',
@@ -39,25 +38,27 @@ interface Acta {
   votos: Voto[]
 }
 
-const currentValues = JSON.parse(readEndpoint('actas') || '[]')
+const currentValues = JSON.parse(readEndpoint('diputados/actas') || '[]')
 
-const diputados = JSON.parse(readEndpoint('diputados') || '[]')
+const diputados = JSON.parse(readEndpoint('diputados/diputados') || '[]')
 
 export async function crawlActas(): Promise<Acta[]> {
   const votacionesUrls = await getVotacionesUrls()
 
-  const newValues = (await Promise.all(
-    votacionesUrls.map(url => parseVotacionPage(url)),
-  )
+  const newValues = (
+    await Promise.all(votacionesUrls.map(url => parseVotacionPage(url)))
   ).filter(Boolean)
 
   // Save all actas.
   const actas = collect(newValues)
     .merge(currentValues)
-    .unique((acta: Acta) => `${formatISO(acta.fecha)}-${acta.periodo}-${acta.reunion}-${acta.numeroActa}`)
+    .unique(
+      (acta: Acta) =>
+        `${formatISO(acta.fecha)}-${acta.periodo}-${acta.reunion}-${acta.numeroActa}`,
+    )
     .sortBy('fecha')
     .all() as Acta[]
-  writeEndpoint('actas', actas)
+  writeEndpoint('diputados/actas', actas)
 
   // Save actas by year.
   collect(actas)
@@ -67,10 +68,10 @@ export async function crawlActas(): Promise<Acta[]> {
       year,
       actas: actas.all(),
     }))
-    .each(({ year, actas }) => writeEndpoint(`actas/${year}`, actas))
+    .each(({ year, actas }) => writeEndpoint(`diputados/actas/${year}`, actas))
 
   // Update diputados with missing photos.
-  writeEndpoint('diputados', diputados)
+  writeEndpoint('diputados/diputados', diputados)
 
   return actas
 }
@@ -88,11 +89,9 @@ async function getVotacionesUrls() {
 
   const links = $('a[href^="/votacion/"]')
 
-  const urls = links
+  return links
     .map((_, element) => VOTACIONES_BASE_URL + $(element).attr('href'))
     .get()
-
-  return urls
 }
 
 async function parseVotacionPage(url: string) {
@@ -120,33 +119,57 @@ function parseActa(id: string, html: string): Acta | null {
   const $ = cheerio.load(html)
 
   const title = $('h5 b').text().trim()
-  const [periodo, reunion, numeroActa] = title.split(' - ').map(s => s.replace(/\D+/g, '')) // Extract numbers
+  const [periodo, reunion, numeroActa] = title
+    .split(' - ')
+    .map(s => s.replace(/\D+/g, '')) // Extract numbers
   const titulo = $('ul.col h4.black-opacity').text().trim()
   const resultado = $('ul.col-in li.col-middle h3').text().trim().toLowerCase()
   const dateTime = $('ul.col h5.text-muted').text().trim()
   const [fecha, hora] = dateTime.split(' - ')
   const fechaHora = parseFechaHora(fecha, hora)
-  const presidente = titleCaseSpanish($('div#custom-share h4 b').text().trim().toLowerCase())
+  const presidente = titleCaseSpanish(
+    $('div#custom-share h4 b').text().trim().toLowerCase(),
+  )
 
-  const afirmativosUl = $('div.col-lg-2.col-sm-6 ul h4:contains("AFIRMATIVOS")').parent()
-  const negativosUl = $('div.col-lg-2.col-sm-6 ul h4:contains("NEGATIVOS")').parent()
-  const abstencionesUl = $('div.col-lg-2.col-sm-6 ul h4:contains("ABSTENCIONES")').parent()
-  const ausentesUl = $('div.col-lg-2.col-sm-6 ul h4:contains("AUSENTES")').parent()
+  const afirmativosUl = $(
+    'div.col-lg-2.col-sm-6 ul h4:contains("AFIRMATIVOS")',
+  ).parent()
+  const negativosUl = $(
+    'div.col-lg-2.col-sm-6 ul h4:contains("NEGATIVOS")',
+  ).parent()
+  const abstencionesUl = $(
+    'div.col-lg-2.col-sm-6 ul h4:contains("ABSTENCIONES")',
+  ).parent()
+  const ausentesUl = $(
+    'div.col-lg-2.col-sm-6 ul h4:contains("AUSENTES")',
+  ).parent()
 
-  const votosAfirmativos = Number.parseInt(afirmativosUl.find('h3').text().trim(), 10) || 0
-  const votosNegativos = Number.parseInt(negativosUl.find('h3').text().trim(), 10) || 0
-  const abstenciones = Number.parseInt(abstencionesUl.find('h3').text().trim(), 10) || 0
+  const votosAfirmativos
+    = Number.parseInt(afirmativosUl.find('h3').text().trim(), 10) || 0
+  const votosNegativos
+    = Number.parseInt(negativosUl.find('h3').text().trim(), 10) || 0
+  const abstenciones
+    = Number.parseInt(abstencionesUl.find('h3').text().trim(), 10) || 0
   const ausentes = Number.parseInt(ausentesUl.find('h3').text().trim(), 10) || 0
 
   const votos: Voto[] = []
   $('#myTable tbody tr').each((_, row) => {
     const imagen = $(row).find('td:nth-child(1) img').attr('src') || ''
-    const diputado = titleCaseSpanish($(row).find('td:nth-child(2)').text().trim().toLowerCase())
-    const tipoVoto = parseTipoVoto($(row).find('td:nth-child(5) span.label').text().trim())
+    const diputado = titleCaseSpanish(
+      $(row).find('td:nth-child(2)').text().trim().toLowerCase(),
+    )
+    const tipoVoto = parseTipoVoto(
+      $(row).find('td:nth-child(5) span.label').text().trim(),
+    )
     const videoButton = $(row).find('td:nth-child(6) button')
-    const videoDiscurso = videoButton.length > 0 && !videoButton.prop('disabled') ? videoButton.attr('onclick')?.match(/'([^']+)'/)?.[1] || null : null
+    const videoDiscurso
+      = videoButton.length > 0 && !videoButton.prop('disabled')
+        ? videoButton.attr('onclick')?.match(/'([^']+)'/)?.[1] || null
+        : null
 
-    const diputadoData = diputados.find((d: any) => `${d.apellido}, ${d.nombre}` === diputado)
+    const diputadoData = diputados.find(
+      (d: any) => `${d.apellido}, ${d.nombre}` === diputado,
+    )
     if (diputadoData && !diputadoData.foto) {
       diputadoData.foto = imagen
     }

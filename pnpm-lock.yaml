@@ -111,11 +111,47 @@ importers:
         specifier: ^0.0.3-alpha.63
         version: 0.0.3-alpha.63(tailwindcss@3.4.17)(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
 
+  packages/core:
+    devDependencies:
+      '@antfu/eslint-config':
+        specifier: ^4.3.0
+        version: 4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3))(@vue/compiler-sfc@3.5.13)(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3)(vitest@3.0.6(@types/debug@4.1.12)(@types/node@22.13.5)(jiti@1.21.7)(jsdom@26.0.0)(tsx@4.19.3)(yaml@2.7.0))
+      '@types/node':
+        specifier: ^22.13.5
+        version: 22.13.5
+      axios:
+        specifier: ^1.7.9
+        version: 1.7.9
+      collect.js:
+        specifier: ^4.36.1
+        version: 4.36.1
+      date-fns:
+        specifier: ^4.1.0
+        version: 4.1.0
+      eslint:
+        specifier: ^9.20.1
+        version: 9.21.0(jiti@1.21.7)
+      title-case:
+        specifier: ^4.3.2
+        version: 4.3.2
+      typescript:
+        specifier: ~5.7.2
+        version: 5.7.3
+      vite:
+        specifier: ^6.1.0
+        version: 6.1.1(@types/node@22.13.5)(jiti@1.21.7)(tsx@4.19.3)(yaml@2.7.0)
+      vitest:
+        specifier: ^3.0.6
+        version: 3.0.6(@types/debug@4.1.12)(@types/node@22.13.5)(jiti@1.21.7)(jsdom@26.0.0)(tsx@4.19.3)(yaml@2.7.0)
+
   packages/diputados:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.3.0
         version: 4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3))(@vue/compiler-sfc@3.5.13)(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3)(vitest@3.0.6(@types/debug@4.1.12)(@types/node@22.13.5)(jiti@1.21.7)(jsdom@26.0.0)(tsx@4.19.3)(yaml@2.7.0))
+      '@argentinadatos/core':
+        specifier: workspace:*
+        version: link:../core
       '@types/node':
         specifier: ^22.13.5
         version: 22.13.5

@@ -1,12 +1,12 @@
+import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
+import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
+import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { formatISO, parseISO } from 'date-fns'
 import iconv from 'iconv-lite'
 import { BASE_URL } from '../../constants.ts'
-import { readEndpoint } from '../../utils/readEndpoint.ts'
-import { titleCaseSpanish } from '../../utils/titleCaseSpanish.ts'
-import { writeEndpoint } from '../../utils/writeEndpoint.ts'
 
 export interface Diputado {
   id: string
@@ -29,7 +29,7 @@ export interface Diputado {
 }
 
 const currentValues = JSON.parse(
-  readEndpoint('diputados') || '[]',
+  readEndpoint('diputados/diputados') || '[]',
 ) as Diputado[]
 
 export async function crawlDiputados(): Promise<Diputado[]> {
@@ -66,7 +66,7 @@ async function processWeb(): Promise<Diputado[]> {
     .sortBy('periodoMandato.inicio')
     .all() as Diputado[]
 
-  writeEndpoint('diputados', diputados)
+  writeEndpoint('diputados/diputados', diputados)
 
   return diputados
 }
