@@ -108,8 +108,8 @@ importers:
         specifier: ^1.6.1
         version: 1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3)
       vitepress-openapi:
-        specifier: ^0.0.3-alpha.63
-        version: 0.0.3-alpha.63(tailwindcss@3.4.17)(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
+        specifier: https://pkg.pr.new/vitepress-openapi@5461e0c
+        version: https://pkg.pr.new/vitepress-openapi@5461e0c(tailwindcss@3.4.17)(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
 
   packages/core:
     devDependencies:
@@ -5703,8 +5703,9 @@ packages:
       yaml:
         optional: true
 
-  vitepress-openapi@0.0.3-alpha.63:
-    resolution: {integrity: sha512-oS7h+oTPbpcFcD58uxE8NerHBjZudYTqnnAvKLRc+h51avPa/z0qAHhxOAuKqWum8Ezdu/wEQBE3MkSg2y+UKQ==}
+  vitepress-openapi@https://pkg.pr.new/vitepress-openapi@5461e0c:
+    resolution: {tarball: https://pkg.pr.new/vitepress-openapi@5461e0c}
+    version: 0.0.3-alpha.63
     peerDependencies:
       vitepress: '>=1.0.0'
       vue: ^3.0.0
@@ -12307,7 +12308,7 @@ snapshots:
       tsx: 4.19.3
       yaml: 2.7.0
 
-  vitepress-openapi@0.0.3-alpha.63(tailwindcss@3.4.17)(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
+  vitepress-openapi@https://pkg.pr.new/vitepress-openapi@5461e0c(tailwindcss@3.4.17)(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       '@vueuse/core': 12.7.0(typescript@5.7.3)
       class-variance-authority: 0.7.1
