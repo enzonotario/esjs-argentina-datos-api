@@ -155,7 +155,7 @@ async function getData() {
               return colorsMap[count].bg;
             }
 
-            return dark ? colors.indigo[100] : colors.indigo[500];
+            return dark ? colors.indigo[500] : colors.indigo[100];
           },
         }
       ),
