@@ -900,6 +900,101 @@
           }
         ]
       }
+    },
+    "/v1/diputados/diputados": {
+      "get": {
+        "summary": "Diputados",
+        "tags": [
+          "Diputados"
+        ],
+        "description": "Devuelve los diputados.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de diputados",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Diputado"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-diputados-diputados",
+        "x-code-samples": [
+          {
+            "lang": "curl",
+            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/diputados/diputados\""
+          }
+        ]
+      }
+    },
+    "/v1/diputados/actas/{año}": {
+      "get": {
+        "summary": "Actas por año",
+        "tags": [
+          "Diputados"
+        ],
+        "description": "Devuelve las actas de Diputados del año indicado.",
+        "parameters": [
+          {
+            "name": "año",
+            "in": "path",
+            "description": "Año de consulta",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 2016,
+              "maximum": 2025
+            },
+            "example": 2025
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de actas de Diputados",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActaDiputados"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-diputados-actas-año"
+      }
+    },
+    "/v1/diputados/actas": {
+      "get": {
+        "summary": "Actas",
+        "tags": [
+          "Diputados"
+        ],
+        "description": "Devuelve las actas de Diputados.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de actas de Diputados",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ActaDiputados"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-diputados-actas"
+      }
     }
   },
   "components": {
@@ -1377,6 +1472,144 @@
           },
           "banca": {
             "type": "string"
+          }
+        }
+      },
+      "Diputado": {
+        "title": "Diputado",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "apellido": {
+            "type": "string"
+          },
+          "genero": {
+            "type": "string"
+          },
+          "provincia": {
+            "type": "string"
+          },
+          "periodoMandato": {
+            "type": "object",
+            "properties": {
+              "inicio": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              },
+              "fin": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              }
+            }
+          },
+          "juramentoFecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ceseFecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bloque": {
+            "type": "string"
+          },
+          "periodoBloque": {
+            "type": "object",
+            "properties": {
+              "inicio": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              },
+              "fin": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              }
+            }
+          },
+          "foto": {
+            "type": "string",
+            "format": "uri",
+            "nullable": true
+          }
+        }
+      },
+      "ActaDiputados": {
+        "title": "ActaDiputados",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "periodo": {
+            "type": "string"
+          },
+          "reunion": {
+            "type": "string"
+          },
+          "numeroActa": {
+            "type": "string"
+          },
+          "titulo": {
+            "type": "string"
+          },
+          "resultado": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "presidente": {
+            "type": "string"
+          },
+          "votosAfirmativos": {
+            "type": "integer"
+          },
+          "votosNegativos": {
+            "type": "integer"
+          },
+          "abstenciones": {
+            "type": "integer"
+          },
+          "ausentes": {
+            "type": "integer"
+          },
+          "votos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "diputado": {
+                  "type": "string"
+                },
+                "tipoVoto": {
+                  "type": "string",
+                  "enum": [
+                    "afirmativo",
+                    "negativo",
+                    "abstencion",
+                    "ausente",
+                    "presidente"
+                  ]
+                },
+                "imagen": {
+                  "type": "string"
+                },
+                "videoDiscurso": {
+                  "type": "string",
+                  "nullable": true
+                }
+              }
+            }
           }
         }
       }

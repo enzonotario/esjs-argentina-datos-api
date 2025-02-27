@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Actas del Senado
+title: Actas
 ---
 
 <script setup>

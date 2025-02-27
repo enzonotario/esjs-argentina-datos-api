@@ -125,6 +125,15 @@ export default defineConfig({
         ],
       },
       {
+        text: 'Diputados',
+        items: [
+          addDocsPrefix(sidebar.generateSidebarGroup({
+            tag: 'Diputados',
+            text: '',
+          })),
+        ],
+      },
+      {
         text: 'API',
         items: [
           addDocsPrefix(sidebar.generateSidebarGroup({

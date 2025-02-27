@@ -1,7 +1,7 @@
 ---
 aside: false
 outline: false
-title: Actas del Senado por año
+title: Actas por año
 ---
 
 <script setup>
