@@ -88,23 +88,23 @@ async function getData() {
 
   const colorsMap = {
     1: {
-      bg: dark ? colors.red[500] : colors.red[100],
+      bg: dark ? colors.red[800] : colors.red[100],
       fg: dark ? colors.red[100] : colors.red[900],
     },
     2: {
-      bg: dark ? colors.pink[500] : colors.pink[100],
+      bg: dark ? colors.pink[800] : colors.pink[100],
       fg: dark ? colors.pink[100] : colors.pink[900],
     },
     3: {
-      bg: dark ? colors.orange[500] : colors.orange[100],
+      bg: dark ? colors.orange[800] : colors.orange[100],
       fg: dark ? colors.orange[100] : colors.orange[900],
     },
     4: {
-      bg: dark ? colors.teal[500] : colors.teal[100],
+      bg: dark ? colors.teal[800] : colors.teal[100],
       fg: dark ? colors.teal[100] : colors.teal[900],
     },
     5: {
-      bg: dark ? colors.blue[500] : colors.blue[100],
+      bg: dark ? colors.blue[800] : colors.blue[100],
       fg: dark ? colors.blue[100] : colors.blue[900],
     },
   }
@@ -155,7 +155,7 @@ async function getData() {
               return colorsMap[count].bg;
             }
 
-            return dark ? colors.indigo[500] : colors.indigo[100];
+            return dark ? colors.indigo[800] : colors.indigo[100];
           },
         }
       ),
