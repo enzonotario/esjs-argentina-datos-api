@@ -1,5 +1,6 @@
 import type { Collection } from 'collect.js'
 import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
+import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
@@ -167,12 +168,13 @@ function parseActa(id: string, html: string): Acta | null {
         ? videoButton.attr('onclick')?.match(/'([^']+)'/)?.[1] || null
         : null
 
-    const diputadoData = diputados.find(
-      (d: any) => `${d.apellido}, ${d.nombre}` === diputado,
-    )
-    if (diputadoData && !diputadoData.foto) {
-      diputadoData.foto = imagen
-    }
+    // Update diputado with missing photo.
+    diputados.filter((d: any) => `${d.apellido}, ${d.nombre}` === diputado)
+      .forEach((d: any) => {
+        if (!d.foto) {
+          d.foto = imagen
+        }
+      })
 
     votos.push({
       diputado,
