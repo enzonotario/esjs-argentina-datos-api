@@ -33,10 +33,6 @@ const currentValues = JSON.parse(
 ) as Diputado[]
 
 export async function crawlDiputados(): Promise<Diputado[]> {
-  return await processWeb()
-}
-
-async function processWeb(): Promise<Diputado[]> {
   const page = await parsePage(`${BASE_URL}/dataset/legisladores`)
 
   const csvPage = await parseCsvPage(page.csvPageUrl)
@@ -45,24 +41,11 @@ async function processWeb(): Promise<Diputado[]> {
 
   const newValues = parseCsv(csv)
 
-  const diputados = collect(currentValues)
-    .map((currentValue: Diputado) => {
-      const newValue = newValues.find(
-        (newValue: Diputado) => newValue.id === currentValue.id,
-      )
-      return {
-        ...newValue,
-        foto: currentValue.foto,
-      }
-    })
-    .merge(
-      newValues.filter((newValue: Diputado) => {
-        return !currentValues.find(
-          (currentValue: Diputado) => currentValue.id === newValue.id,
-        )
-      }),
-    )
-    .unique('id')
+  const diputados = collect([
+    ...currentValues,
+    ...newValues,
+  ])
+    .sortBy('id')
     .sortBy('periodoMandato.inicio')
     .all() as Diputado[]
 
