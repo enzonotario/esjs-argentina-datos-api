@@ -94,6 +94,24 @@
               Ver en GitHub
             </a>
           </div>
+
+          <div class="flex flex-row flex-wrap justify-center items-center gap-4">
+            <a
+              class="button button-primary rounded-full"
+              href="https://diputados.argentinadatos.com/"
+              target="_blank" rel="noreferrer"
+            >
+              Diputados
+            </a>
+
+            <a
+              class="button button-secondary rounded-full"
+              href="https://github.com/enzonotario/diputados"
+              target="_blank" rel="noreferrer"
+            >
+              Ver en GitHub
+            </a>
+          </div>
         </div>
       </div>
 
