@@ -94,6 +94,16 @@
               Ver en GitHub
             </a>
           </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center text-center p-6 space-y-6 rounded border dark:border-gray-800">
+          <h1 class="tagline font-bold">
+            Diputados
+          </h1>
+
+          <p class="w-full max-w-sm">
+            Datos y visualizaciones sobre la Cámara de Diputados
+          </p>
 
           <div class="flex flex-row flex-wrap justify-center items-center gap-4">
             <a
@@ -114,6 +124,7 @@
           </div>
         </div>
       </div>
+
 
       <div class="flex flex-row justify-center items-center space-x-4">
         <p class="w-full max-w-sm text-center">
