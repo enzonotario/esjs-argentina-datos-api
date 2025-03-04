@@ -208,7 +208,7 @@ function parseTipoVoto(voto: string): TipoVoto {
   if (voto.includes('NEGATIVO')) {
     return TipoVoto.Negativo
   }
-  if (voto.includes('ABSTENCIÓN')) {
+  if (voto.includes('ABSTENCIÓN') || voto.includes('ABSTENCION')) {
     return TipoVoto.Abstencion
   }
   if (voto.includes('AUSENTE')) {

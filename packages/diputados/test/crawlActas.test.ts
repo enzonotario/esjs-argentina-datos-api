@@ -1,9 +1,13 @@
+import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint'
+import { collect } from 'collect.js'
 import { expect, it } from 'vitest'
 import { crawlActas } from '../src/diputados/actas/crawlActas'
 
 it(
   'crawlActas',
   async () => {
+    const currentValues = JSON.parse(readEndpoint('diputados/actas') || '[]')
+
     const result = await crawlActas()
 
     expect(result).toBeDefined()
@@ -39,6 +43,10 @@ it(
         ]),
       })
     }
+
+    console.log({
+      diffIds: collect(result).pluck('id').diff(currentValues.map(v => v.id)).all(),
+    })
   },
   {
     timeout: 300000,
