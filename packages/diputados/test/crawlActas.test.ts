@@ -16,12 +16,13 @@ it(
 
     for (const item of result) {
       expect(item).toMatchObject({
+        id: expect.any(String),
         periodo: expect.any(String),
         reunion: expect.any(String),
         numeroActa: expect.any(String),
         titulo: expect.any(String),
         resultado: expect.any(String),
-        fecha: expect.any(Date),
+        fecha: expect.any(String),
         presidente: expect.any(String),
         votosAfirmativos: expect.any(Number),
         votosNegativos: expect.any(Number),

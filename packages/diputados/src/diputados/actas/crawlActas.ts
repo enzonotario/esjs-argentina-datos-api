@@ -44,7 +44,9 @@ const currentValues = JSON.parse(readEndpoint('diputados/actas') || '[]')
 const diputados = JSON.parse(readEndpoint('diputados/diputados') || '[]')
 
 export async function crawlActas(): Promise<Acta[]> {
-  const votacionesUrls = await getVotacionesUrls()
+  const currentIds = collect(currentValues).pluck('id').all() as string[]
+
+  const votacionesUrls = await getVotacionesUrls(currentIds)
 
   const newValues = (
     await Promise.all(votacionesUrls.map(url => parseVotacionPage(url)))
@@ -77,7 +79,7 @@ export async function crawlActas(): Promise<Acta[]> {
   return actas
 }
 
-async function getVotacionesUrls() {
+async function getVotacionesUrls(currentIds: string[]) {
   const response = await axios.get(VOTACIONES_BASE_URL, {
     headers: {
       'User-Agent': USER_AGENT,
@@ -88,11 +90,21 @@ async function getVotacionesUrls() {
 
   const $ = cheerio.load(html)
 
-  const links = $('a[href^="/votacion/"]')
+  const linksElements = $('a[href^="/votacion/"]')
 
-  return links
+  const links = linksElements
     .map((_, element) => VOTACIONES_BASE_URL + $(element).attr('href'))
     .get()
+
+  const firstLink = links[0]
+
+  const firstId = firstLink.split('/').pop() as string
+
+  const ids = Array.from({ length: Number.parseInt(firstId, 10) }, (_, i) => String(i))
+
+  return ids
+    .filter(id => !currentIds.includes(id))
+    .map(id => `${VOTACIONES_BASE_URL}/${id}`)
 }
 
 async function parseVotacionPage(url: string) {
