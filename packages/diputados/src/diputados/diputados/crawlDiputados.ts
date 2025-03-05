@@ -1,5 +1,6 @@
 import { getStaticPublicUrl } from '@argentinadatos/core/src/utils/getStaticPublicUrl.ts'
 import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
+import { readStaticBuffer } from '@argentinadatos/core/src/utils/readStaticBuffer.ts'
 import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import { writeStaticBuffer } from '@argentinadatos/core/src/utils/writeStaticBuffer.ts'
@@ -8,7 +9,7 @@ import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { formatISO, parseISO } from 'date-fns'
 import iconv from 'iconv-lite'
-import { BASE_URL, USER_AGENT } from "../../constants.ts";
+import { BASE_URL, USER_AGENT } from '../../constants.ts'
 
 export interface Diputado {
   id: string
@@ -192,7 +193,14 @@ async function enhanceWithPhoto(diputado: Diputado): Promise<Diputado> {
   if (fotoFromCurrentValues?.startsWith('https://votaciones.hcdn.gob.ar/assets/diputados/')) {
     const path = `/diputados/diputados/${diputado.id}.jpg`
 
-    await saveFoto(path, fotoFromCurrentValues)
+    if (!readStaticBuffer(path)) {
+      try {
+        await saveFoto(path, fotoFromCurrentValues)
+      }
+      catch {
+        return diputado
+      }
+    }
 
     const foto = getStaticPublicUrl(path)
 
@@ -229,11 +237,7 @@ async function saveFoto(path: string, foto: string) {
   }
 
   if (!response) {
-    console.error('Failed to fetch foto', {
-      path,
-      foto,
-    })
-    return
+    throw new Error('Error fetching foto')
   }
 
   writeStaticBuffer(path, response.data)
