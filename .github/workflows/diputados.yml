@@ -23,7 +23,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: szenius/set-timezone@v2.0
+      - name: Set timezone
+        uses: szenius/set-timezone@v2.0
         with:
           timezoneLinux: "America/Argentina/Buenos_Aires"
           timezoneMacos: "America/Argentina/Buenos_Aires"
