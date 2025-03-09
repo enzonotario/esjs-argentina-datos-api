@@ -172,7 +172,7 @@ function parsePeriodo(inicio: string, fin: string) {
 
 function parseFecha(fecha: string): string | null {
   try {
-    return formatISO(parseISO(fecha))
+    return formatISO(parseISO(fecha.trim()))
   }
   catch (error) {
     console.warn('Invalid fecha', {

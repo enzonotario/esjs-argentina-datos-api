@@ -119,11 +119,16 @@ async function parseVotacionPage(url: string) {
 
     return parseActa(id, response.data)
   }
-  catch (error) {
-    console.error('Error parsing votacion page', {
-      url,
-      error,
-    })
+  catch (error: any) {
+    if (error.response?.status === 404) {
+      console.warn('Votacion page not found', { url })
+    }
+    // else {
+    // console.error('Error fetching votacion page', {
+    //   url,
+    //   error,
+    // })
+    // }
     return null
   }
 }

@@ -22,7 +22,9 @@
     "api:build": "vite build --config vite.api.config.js --ssr --mode=production",
     "format": "prettier --write src",
     "senado:test": "cd packages/senado && pnpm test",
-    "senado:test:run": "cd packages/senado && pnpm run test:run"
+    "senado:test:run": "cd packages/senado && pnpm run test:run",
+    "diputados:test": "cd packages/diputados && pnpm test",
+    "diputados:test:run": "cd packages/diputados && pnpm run test:run"
   },
   "devDependencies": {
     "@es-js/vite-plugin-esjs": "^0.1.0-beta.1",
