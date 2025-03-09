@@ -1,8 +1,8 @@
 name: Actualización de datos de Diputados
 
 on:
-#  schedule:
-#    - cron: '10 21 * * *' # Actualiza a las 21:10 UTC (18:10 ART)
+  schedule:
+    - cron: '10 21 * * *' # Actualiza a las 21:10 UTC (18:10 ART)
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
