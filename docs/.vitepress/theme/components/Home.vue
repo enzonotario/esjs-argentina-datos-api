@@ -17,7 +17,7 @@
       </div>
 
       <!--      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto"> -->
-      <div class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto">
         <div class="flex flex-col justify-center items-center text-center p-6 space-y-6 rounded border dark:border-gray-800">
           <h1 class="tagline font-bold">
             API Pública
@@ -74,7 +74,7 @@
           </h1>
 
           <p class="w-full max-w-sm">
-            Datos y visualizaciones sobre el Senado de la Nación
+            Explora y analiza las votaciones de los proyectos en el Senado de la Nación
           </p>
 
           <div class="flex flex-row flex-wrap justify-center items-center gap-4">
@@ -102,7 +102,7 @@
           </h1>
 
           <p class="w-full max-w-sm">
-            Datos y visualizaciones sobre la Cámara de Diputados
+            Explora y analiza las votaciones de los proyectos en la Cámara de Diputados de la Nación
           </p>
 
           <div class="flex flex-row flex-wrap justify-center items-center gap-4">
