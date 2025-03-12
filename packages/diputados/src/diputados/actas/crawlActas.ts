@@ -5,7 +5,7 @@ import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
-import { formatISO, getYear, parse } from 'date-fns'
+import { getYear, parse } from 'date-fns'
 import { USER_AGENT, VOTACIONES_BASE_URL } from '../../constants.ts'
 
 enum TipoVoto {
@@ -46,7 +46,8 @@ const diputados = JSON.parse(readEndpoint('diputados/diputados') || '[]')
 export async function crawlActas(): Promise<Acta[]> {
   const currentIds = collect(currentValues).pluck('id').all() as string[]
 
-  const votacionesUrls = await getVotacionesUrls(currentIds)
+  const votacionesUrls = (await getVotacionesUrls(currentIds))
+    .slice(-500)
 
   const newValues = (
     await Promise.all(votacionesUrls.map(url => parseVotacionPage(url)))
@@ -54,10 +55,17 @@ export async function crawlActas(): Promise<Acta[]> {
 
   // Save all actas.
   const actas = collect(newValues)
-    .merge(currentValues)
+    .merge(
+      currentValues.map((acta: Acta) => ({
+        ...acta,
+        fecha: new Date(acta.fecha),
+      })),
+    )
+    // @ts-expect-error: TS can't infer the type of the collection
+    .filter((acta: Acta) => acta.fecha instanceof Date)
     .unique(
       (acta: Acta) =>
-        `${formatISO(acta.fecha)}-${acta.periodo}-${acta.reunion}-${acta.numeroActa}`,
+        `${acta.periodo}-${acta.reunion}-${acta.numeroActa}`,
     )
     .sortBy('fecha')
     .all() as Acta[]
@@ -69,7 +77,9 @@ export async function crawlActas(): Promise<Acta[]> {
     // @ts-expect-error: TS can't infer the type of the collection
     .map((actas: Collection<Acta>, year: number) => ({
       year,
-      actas: actas.all(),
+      actas: actas
+        .sortBy('fecha')
+        .all(),
     }))
     .each(({ year, actas }) => writeEndpoint(`diputados/actas/${year}`, actas))
 
@@ -77,6 +87,23 @@ export async function crawlActas(): Promise<Acta[]> {
   writeEndpoint('diputados/diputados', diputados)
 
   return actas
+}
+
+async function fetchWithRetry(url: string, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await axios.get(url, {
+        headers: {
+          'User-Agent': USER_AGENT,
+        },
+      })
+    }
+    catch (error: any) {
+      if (i === retries - 1) {
+        throw error
+      }
+    }
+  }
 }
 
 async function getVotacionesUrls(currentIds: string[]) {
@@ -104,18 +131,18 @@ async function getVotacionesUrls(currentIds: string[]) {
 
   return ids
     .filter(id => !currentIds.includes(id))
-    .map(id => `${VOTACIONES_BASE_URL}/${id}`)
+    .map(id => `${VOTACIONES_BASE_URL}/votacion/${id}`)
 }
 
 async function parseVotacionPage(url: string) {
   const id = url.split('/').pop() as string
 
   try {
-    const response = await axios.get(url, {
-      headers: {
-        'User-Agent': USER_AGENT,
-      },
-    })
+    const response = await fetchWithRetry(url)
+
+    if (!response) {
+      throw new Error('Empty response')
+    }
 
     return parseActa(id, response.data)
   }
@@ -123,12 +150,9 @@ async function parseVotacionPage(url: string) {
     if (error.response?.status === 404) {
       console.warn('Votacion page not found', { url })
     }
-    // else {
-    // console.error('Error fetching votacion page', {
-    //   url,
-    //   error,
-    // })
-    // }
+    else if (error?.response?.status === 403) {
+      console.warn('Forbidden access', { url })
+    }
     return null
   }
 }

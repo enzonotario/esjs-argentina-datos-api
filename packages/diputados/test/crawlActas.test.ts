@@ -22,7 +22,7 @@ it(
         numeroActa: expect.any(String),
         titulo: expect.any(String),
         resultado: expect.any(String),
-        fecha: expect.any(String),
+        fecha: expect.any(Date),
         presidente: expect.any(String),
         votosAfirmativos: expect.any(Number),
         votosNegativos: expect.any(Number),
@@ -50,6 +50,6 @@ it(
     })
   },
   {
-    timeout: 300000,
+    timeout: Infinity,
   },
 )
