@@ -37,7 +37,13 @@ export default {
           locale: 'es',
         },
         codeSamples: {
-          defaultHeaders: {},
+          generator: async (lang, request) => {
+            if (lang === 'curl') {
+              return `curl -L '${request.url}'`
+            }
+
+            return generateCodeSample(lang, request)
+          },
         },
       },
     })
