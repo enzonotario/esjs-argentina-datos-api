@@ -1,54 +1,23 @@
 importar { format, subDays, addDays, isBefore como esAntes, parse } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerRiesgoPais } desde '@/finanzas/riesgoPais/extraerRiesgoPais.esjs'
+importar collect desde 'collect.js'
 
 exportar porDefecto asincrono funcion () {
-  const riesgoPaisValor = esperar extraerRiesgoPais(
-    subDays(crear Fecha(), 10),
-    crear Fecha(),
+  const valoresExtraidos = collect(
+    esperar extraerRiesgoPais(subDays(crear Fecha(), 10), crear Fecha()),
   )
+    .sortBy('fecha')
+    .toArray()
 
-  const valoresRellenados = esperar rellenarValores(riesgoPaisValor.reverso())
-
-  const ultimoValor = valoresRellenados[valoresRellenados.longitud - 1]
+  const ultimoValor = valoresExtraidos[valoresExtraidos.longitud - 1]
 
   const rutasGuardadas = [
     esperar guardarUltimo(ultimoValor),
-    esperar guardarHistorico(valoresRellenados),
+    esperar guardarHistorico(valoresExtraidos),
   ]
 
   retornar rutasGuardadas
-}
-
-asincrono funcion rellenarValores(valores) {
-  const primerValor = valores[0]
-
-  const nuevosValores = [primerValor]
-
-  const fechaInicial = parse(primerValor.fecha, 'yyyy-MM-dd', crear Fecha())
-  mut desde = subDays(fechaInicial, 0)
-  const hasta = addDays(crear Fecha(), 0)
-
-  mientras (esAntes(desde, hasta)) {
-    const fecha = format(desde, 'yyyy-MM-dd')
-
-    const valor = valores.buscar(v => v.fecha === fecha)
-
-    si (valor) {
-      nuevosValores.agregar(valor)
-    } sino {
-      const valorAnterior = nuevosValores[nuevosValores.longitud - 1]
-
-      nuevosValores.agregar({
-        valor: valorAnterior.valor,
-        fecha,
-      })
-    }
-
-    desde = addDays(desde, 1)
-  }
-
-  retornar nuevosValores
 }
 
 asincrono funcion guardarUltimo(ultimoRiesgoPais, fecha) {
@@ -64,18 +33,23 @@ asincrono funcion guardarHistorico(valores) {
 
   const historico = esperar leerRuta(ruta)
 
-  const nuevoHistorico = historico.mapear(valor => {
-    si (valores.algun(v => v.fecha === valor.fecha)) {
-      const nuevoValor = valores.buscar(v => v.fecha === valor.fecha)
+  const nuevoHistorico = collect(
+    historico.mapear(item => {
+      const nuevoValor = valores.buscar(v => v.fecha === item.fecha)
 
-      retornar {
-        valor: nuevoValor.valor,
-        fecha: valor.fecha,
+      si (nuevoValor) {
+        retornar {
+          valor: nuevoValor.valor,
+          fecha: item.fecha,
+        }
       }
-    }
 
-    retornar valor
-  })
+      retornar item
+    }),
+  )
+    .merge(valores.filtrar(v => !historico.algun(h => h.fecha === v.fecha)))
+    .sortBy('fecha')
+    .toArray()
 
   esperar escribirRuta(ruta, nuevoHistorico)
 
