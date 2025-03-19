@@ -47,7 +47,7 @@ export async function crawlActas(): Promise<Acta[]> {
   const currentIds = collect(currentValues).pluck('id').all() as string[]
 
   const votacionesUrls = (await getVotacionesUrls(currentIds))
-    .slice(-500)
+    .slice(-50)
 
   const newValues = (
     await Promise.all(votacionesUrls.map(url => parseVotacionPage(url)))
