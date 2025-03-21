@@ -149,14 +149,14 @@ function parseCsv(csv: string): Diputado[] {
         genero,
         provincia: titleCaseSpanish(provincia.toLowerCase()),
         periodoMandato: parsePeriodo(inicioMandato, finMandato),
-        juramentoFecha: formatISO(parseISO(juramentoFecha)),
-        ceseFecha: formatISO(parseISO(ceseFecha)),
+        juramentoFecha: parseFecha(juramentoFecha),
+        ceseFecha: parseFecha(ceseFecha),
         bloque: titleCaseSpanish(bloque.toLowerCase()),
         periodoBloque: parsePeriodo(bloqueInicio, bloqueFin),
         foto: getFoto(id),
       } as Diputado
     })
-    .filter(diputado => diputado !== null)
+    .filter(diputado => diputado && diputado.juramentoFecha && diputado.periodoMandato.inicio)
 }
 
 function parseNombreApellido(texto: string) {
