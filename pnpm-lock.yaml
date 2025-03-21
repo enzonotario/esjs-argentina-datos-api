@@ -96,8 +96,8 @@ importers:
         specifier: 8.22.0
         version: 8.22.0
       genji-theme-vitepress:
-        specifier: ^0.2.6
-        version: 0.2.6(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
+        specifier: ^0.2.8
+        version: 0.2.8(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
       postcss:
         specifier: ^8.4.33
         version: 8.5.3
@@ -3399,11 +3399,11 @@ packages:
   functions-have-names@1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
 
-  genji-runtime@0.2.6:
-    resolution: {integrity: sha512-wFp01RcOOgK7df1gX9aJZrGxxbiSPm5KfRk0zU39Hylslsb2vf2vWJHdp4AMepfRmG+AizG0w/kyoxhP+OwM1A==}
+  genji-runtime@0.2.8:
+    resolution: {integrity: sha512-PQtQGtDOnY9kkUw6WxfYKinly6VqTP4KwYp1LDeSCuskAI1Monl4S5OtkftsoPJiCHvKxWYmTazeq3MZ+vEssg==}
 
-  genji-theme-vitepress@0.2.6:
-    resolution: {integrity: sha512-teY0HtjIl0oM9M/a6etLoU4Tt1GteV09SZa8DSDMZT5HKAKE0xVf7XOM00jxHB75Ijw1Lz5Q1wmY5bKEk0x/MA==}
+  genji-theme-vitepress@0.2.8:
+    resolution: {integrity: sha512-+O44QFhhPB92o1aSMsHwZkGqT+J+nIsUU9U/+WDN+qyrbTqcZi3RqR5J6qW4s4uH2V1sEONsn95/gjCQhBmmJw==}
     peerDependencies:
       vitepress: '>=1.0.0'
       vue: '>=3.0.0'
@@ -9603,16 +9603,16 @@ snapshots:
 
   functions-have-names@1.2.3: {}
 
-  genji-runtime@0.2.6:
+  genji-runtime@0.2.8:
     dependencies:
       '@observablehq/inputs': 0.10.6
       '@observablehq/inspector': 5.0.1
       esprima: 4.0.1
       estraverse: 5.3.0
 
-  genji-theme-vitepress@0.2.6(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
+  genji-theme-vitepress@0.2.8(vitepress@1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
     dependencies:
-      genji-runtime: 0.2.6
+      genji-runtime: 0.2.8
       vitepress: 1.6.3(@algolia/client-search@5.20.3)(@types/node@22.13.5)(axios@1.7.9)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3)
       vue: 3.5.13(typescript@5.7.3)
 

@@ -8,13 +8,9 @@ async function getColors() {
 
 ```js eval code=false inspector=false
 async function getData() {
-  const now = new Date();
-
   const data = await fetch('https://api.argentinadatos.com/v1/diputados/diputados').then((res) => res.json())
 
-  return data.filter(item => {
-    return new Date(item.periodoMandato.fin) >= now && new Date(item.ceseFecha) >= now;
-  });
+  return data
 }
 ```
 
@@ -22,7 +18,10 @@ async function getData() {
 
 ```js eval code=false
 (async () => {
-  const diputados = await getData()
+  const diputados = (await getData())
+    .filter(item => {
+      return new Date(item.periodoMandato.fin) >= new Date() && new Date(item.ceseFecha) >= new Date();
+    })
 
   const data = Array.from(new Set(diputados.map(d => d.bloque)))
     .map(bloque => ({
@@ -51,7 +50,10 @@ async function getData() {
 
 ```js eval code=false
 (async () => {
-  const diputados = await getData()
+  const diputados = (await getData())
+    .filter(item => {
+      return new Date(item.periodoMandato.fin) >= new Date() && new Date(item.ceseFecha) >= new Date();
+    })
 
   const data = Array.from(new Set(diputados.map(d => d.provincia)))
     .map(provincia => ({
@@ -119,6 +121,9 @@ async function getData() {
     }))
 
   const diputados = (data)
+    .filter(item => {
+      return new Date(item.periodoMandato.fin) >= new Date() && new Date(item.ceseFecha) >= new Date();
+    })
     .sort((a, b) => {
       const aCount = diputadosBloques.find(p => p.bloque === a.bloque).valores.find(p => p.provincia === a.provincia).cantidad;
       const bCount = diputadosBloques.find(p => p.bloque === b.bloque).valores.find(p => p.provincia === b.provincia).cantidad;
