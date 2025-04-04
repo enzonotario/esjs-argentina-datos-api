@@ -716,7 +716,7 @@
           "Finanzas",
           "Rendimientos"
         ],
-        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)\n\n- [Belo](https://www.belo.app/?ref=argentinadatos.com)\n\n- [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)\n\n- [Ripio](https://www.ripio.com/ar/?ref=argentinadatos.com)",
+        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)\n\n- [Belo](https://www.belo.app/?ref=argentinadatos.com)\n\n- [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)\n\n- [Ripio](https://www.ripio.com/ar/?ref=argentinadatos.com)\n\n- [Satoshi Tango](https://www.satoshitango.com/?ref=argentinadatos.com)",
         "responses": {
           "200": {
             "description": "Devuelve una lista de rendimientos",
@@ -749,7 +749,7 @@
           "Finanzas",
           "Rendimientos"
         ],
-        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)\n\n- [Belo](https://www.belo.app/?ref=argentinadatos.com)\n\n- [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)\n\n- [Ripio](https://www.ripio.com/ar/?ref=argentinadatos.com)",
+        "description": "Rendimientos de distintas monedas por entidad.\n\nLas entidades disponibles son:\n\n- [Buenbit](https://buenbit.com/?ref=argentinadatos.com)\n\n- [Fiwind](https://www.fiwind.io/?ref=argentinadatos.com)\n\n- [Letsbit](https://letsbit.io/?ref=argentinadatos.com)\n\n- [Belo](https://www.belo.app/?ref=argentinadatos.com)\n\n- [Lemon Cash](https://www.lemon.me/?ref=argentinadatos.com)\n\n- [Ripio](https://www.ripio.com/ar/?ref=argentinadatos.com)\n\n- [Satoshi Tango](https://www.satoshitango.com/?ref=argentinadatos.com)",
         "parameters": [
           {
             "name": "entidad",
@@ -764,7 +764,8 @@
                 "letsbit",
                 "belo",
                 "lemoncash",
-                "ripio"
+                "ripio",
+                "satoshitango"
               ]
             },
             "example": "buenbit"
