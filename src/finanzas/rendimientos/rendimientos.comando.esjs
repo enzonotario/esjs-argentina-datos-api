@@ -7,6 +7,7 @@ importar { extraerLetsbit } desde '@/finanzas/rendimientos/extraerLetsbit.esjs'
 importar { extraerBelo } desde '@/finanzas/rendimientos/extraerBelo.esjs'
 importar { extraerLemoncash } desde '@/finanzas/rendimientos/extraerLemoncash.esjs'
 importar { extraerRipio } desde '@/finanzas/rendimientos/extraerRipio.esjs'
+importar { extraerSatoshiTango } desde '@/finanzas/rendimientos/extraerSatoshiTango.esjs'
 
 exportar porDefecto asincrono funcion () {
   const entidades = {
@@ -16,6 +17,7 @@ exportar porDefecto asincrono funcion () {
     belo: esperar extraerBelo(),
     lemoncash: esperar extraerLemoncash(),
     ripio: esperar extraerRipio(),
+    satoshitango: esperar extraerSatoshiTango(),
   }
 
   para (const [entidad, rendimientos] de Object.entradas(entidades)) {

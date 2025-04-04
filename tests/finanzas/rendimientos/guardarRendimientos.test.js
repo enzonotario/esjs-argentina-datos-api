@@ -7,6 +7,7 @@ import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
 import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
 import { extraerLemoncash } from '@/finanzas/rendimientos/extraerLemoncash.esjs'
 import { extraerRipio } from '@/finanzas/rendimientos/extraerRipio.esjs'
+import { extraerSatoshiTango } from '@/finanzas/rendimientos/extraerSatoshiTango.esjs'
 
 async function testGuardarRendimientos(entidad, funcionExtraccion) {
   const items = await funcionExtraccion()
@@ -45,5 +46,9 @@ describe('guardarRendimientos', () => {
 
   it('guarda ripio', async () => {
     await testGuardarRendimientos('ripio', extraerRipio)
+  })
+
+  it('guarda satoshitango', async () => {
+    await testGuardarRendimientos('satoshitango', extraerSatoshiTango)
   })
 })

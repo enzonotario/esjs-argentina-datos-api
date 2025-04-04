@@ -1,0 +1,34 @@
+importar { load } desde 'cheerio'
+importar { format } desde 'date-fns'
+importar axios desde 'axios'
+importar { collect } desde 'collect.js'
+
+exportar asincrono funcion extraerSatoshiTango() {
+  intentar {
+    const respuesta = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_SATOSHITANGO_URL,
+    )
+
+    si (
+      !respuesta.data ||
+      !respuesta.data.data ||
+      !respuesta.data.data.result ||
+      !respuesta.data.data.result.length
+    ) {
+      retornar []
+    }
+
+    retornar collect(respuesta.data.data.result).mapear(asset => {
+      const apy = interpretarDecimal(asset.apy)
+
+      retornar {
+        moneda: asset.symbol,
+        apy,
+        fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+      }
+    }).toArray()
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
