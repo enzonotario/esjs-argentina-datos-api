@@ -7,6 +7,7 @@ export enum VotoEnum {
   Ausente = 'ausente',
   Abstencion = 'abstencion',
   NoEmite = 'no emite',
+  LevVot = 'lev.vot.',
   Desconocido = 'desconocido',
 }
 

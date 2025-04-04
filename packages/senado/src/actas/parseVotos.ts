@@ -77,6 +77,8 @@ function getVotoEnum(voto: string): VotoEnum | string {
       return VotoEnum.Abstencion
     case 'no emit.':
       return VotoEnum.NoEmite
+    case 'lev.vot.':
+      return VotoEnum.LevVot
     default:
       console.warn(`Voto desconocido: ${voto}`)
       return voto
