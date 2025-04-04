@@ -4,6 +4,7 @@ importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
+importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/extraerSupervielle.esjs'
 
 exportar asincrono funcion extraerSerieOtros() {
   const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
@@ -14,6 +15,7 @@ exportar asincrono funcion extraerSerieOtros() {
   const valoresExtraidos = [
     esperar extraerNaranjaX(),
     esperar extraerUalaCuentaRemunerada(),
+    esperar extraerSupervielleCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
   const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))

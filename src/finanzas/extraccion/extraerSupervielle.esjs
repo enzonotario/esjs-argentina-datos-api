@@ -1,0 +1,46 @@
+importar { format } desde 'date-fns'
+importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
+  intentar {
+    const respuesta = esperar axios.get(
+      'https://api.comparatasas.ar/cuentas-remuneradas',
+    )
+
+    const lista = respuesta.data
+
+    const cuentaRemunerada = lista.buscar(
+      cuenta => cuenta.nombre === 'Supervielle',
+    )
+
+    si (cuentaRemunerada === nulo) {
+      lanzar crear Error('No se encontró la cuenta remunerada')
+    }
+
+    const valor = Numero(cuentaRemunerada.tna)
+
+    si (valor === nulo) {
+      lanzar crear Error('No se encontró el valor de la cuenta remunerada')
+    }
+
+    const tna = Numero((valor / 100).fijarDecimales(4))
+
+    const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
+
+    retornar {
+      fondo: 'SUPERVIELLE',
+      tna,
+      tea,
+      tope: cuentaRemunerada.limite,
+      fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+    };
+  } capturar (error) {
+    consola.error(
+      'Error al extraer Supervielle CuentaRemunerada',
+      error.aCadena(),
+    )
+
+    retornar []
+  }
+}
