@@ -5,6 +5,7 @@ importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
 importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/extraerSupervielle.esjs'
+importar { extraerBrubankCuentaRemunerada } desde '@/finanzas/extraccion/extraerBrubank.esjs'
 
 exportar asincrono funcion extraerSerieOtros() {
   const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
@@ -16,6 +17,7 @@ exportar asincrono funcion extraerSerieOtros() {
     esperar extraerNaranjaX(),
     esperar extraerUalaCuentaRemunerada(),
     esperar extraerSupervielleCuentaRemunerada(),
+    esperar extraerBrubankCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
   const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))
