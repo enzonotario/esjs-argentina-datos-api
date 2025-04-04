@@ -7,10 +7,16 @@ mut respuestaGuardada = nulo
 exportar asincrono funcion extraerUalaCuentaRemunerada() {
   intentar {
     const respuesta = esperar axios.get(
-      'https://comparatasas-gateway.ferminrp.com/uala-cuenta-remunerada',
+      'https://api.comparatasas.ar/cuentas-remuneradas',
     )
 
-    const cuentaRemunerada = respuesta.data
+    const lista = respuesta.data
+
+    const cuentaRemunerada = lista.buscar(cuenta => cuenta.nombre === 'Ualá')
+
+    si (cuentaRemunerada === nulo) {
+      lanzar crear Error('No se encontró la cuenta remunerada')
+    }
 
     const valor = Numero(cuentaRemunerada.tna)
 
