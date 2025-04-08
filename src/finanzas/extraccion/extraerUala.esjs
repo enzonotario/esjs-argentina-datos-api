@@ -1,10 +1,13 @@
 importar { format } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar axios desde 'axios'
+importar { logGrupo, logError } desde '@/log.esjs'
 
 mut respuestaGuardada = nulo
 
 exportar asincrono funcion extraerUalaCuentaRemunerada() {
+  const log = logGrupo({ fuente: 'extraerUala', tipo: 'cuentaRemunerada' })
+
   intentar {
     const respuesta = esperar axios.get(
       'https://api.comparatasas.ar/cuentas-remuneradas',
@@ -36,13 +39,14 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
     };
   } capturar (error) {
-    consola.error('Error al extraer Uala CuentaRemunerada', error.aCadena())
-
+    logError(log, error)
     retornar []
   }
 }
 
 exportar asincrono funcion extraerUalaPlazoFijo() {
+  const log = logGrupo({ fuente: 'extraerUala', tipo: 'plazoFijo' })
+
   intentar {
     const respuesta = esperar obtenerRespuesta()
 
@@ -75,8 +79,7 @@ exportar asincrono funcion extraerUalaPlazoFijo() {
       tnaNoClientes: tna,
     }
   } capturar (error) {
-    consola.error('Error al extraer Uala PlazoFijo', error.aCadena())
-
+    logError(log, error)
     retornar []
   }
 }
