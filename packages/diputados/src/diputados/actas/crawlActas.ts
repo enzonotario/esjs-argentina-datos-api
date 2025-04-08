@@ -127,7 +127,9 @@ async function getVotacionesUrls(currentIds: string[]) {
 
   const firstId = firstLink.split('/').pop() as string
 
-  const ids = Array.from({ length: 100 }, (_, i) => String(Number(firstId) + i - 50))
+  const take = 50
+
+  const ids = Array.from({ length: take + 1 }, (_, i) => String(Number(firstId) + i - take))
 
   return ids
     .filter(id => !currentIds.includes(id))
