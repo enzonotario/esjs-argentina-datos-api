@@ -6,8 +6,11 @@ importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
 importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/extraerSupervielle.esjs'
 importar { extraerBrubankCuentaRemunerada } desde '@/finanzas/extraccion/extraerBrubank.esjs'
+importar { logGrupo } desde '@/log.esjs'
 
 exportar asincrono funcion extraerSerieOtros() {
+  const log = logGrupo({ comando: 'finanzas.fci.otros' })
+
   const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
 
   const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
@@ -25,6 +28,11 @@ exportar asincrono funcion extraerSerieOtros() {
       collect(valoresNuevos).sortByDesc('fecha').unique('fecha').first(),
     )
     .toArray()
+
+  log.info(
+    '[/v1/finanzas/fci/otros]: Valores extraídos',
+    valoresNuevos,
+  )
 
   esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
 
