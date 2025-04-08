@@ -33,6 +33,10 @@ exportar asincrono funcion extraerSerieOtros() {
     '[/v1/finanzas/fci/otros]: Valores extraídos',
     valoresNuevos,
   )
+  consola.escribir(
+    '[/v1/finanzas/fci/otros]: Valores extraídos',
+    valoresNuevos,
+  )
 
   esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
 
