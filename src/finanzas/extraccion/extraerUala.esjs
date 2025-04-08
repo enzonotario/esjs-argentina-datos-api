@@ -9,11 +9,11 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
   const log = logGrupo({ fuente: 'extraerUala', tipo: 'cuentaRemunerada' })
 
   intentar {
-    const respuesta = esperar axios.get(
+    const respuesta = esperar fetch(
       'https://api.comparatasas.ar/cuentas-remuneradas',
     )
 
-    const lista = respuesta.data
+    const lista = esperar respuesta.json()
 
     const cuentaRemunerada = lista.buscar(cuenta => cuenta.nombre === 'Ualá')
 

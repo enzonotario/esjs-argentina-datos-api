@@ -1,14 +1,13 @@
 importar { format } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
-importar axios desde 'axios'
 
 exportar asincrono funcion extraerBrubankCuentaRemunerada() {
   intentar {
-    const respuesta = esperar axios.get(
+    const respuesta = esperar fetch(
       'https://api.comparatasas.ar/cuentas-remuneradas',
     )
 
-    const lista = respuesta.data
+    const lista = esperar respuesta.json()
 
     const cuentaRemunerada = lista.buscar(
       cuenta => cuenta.nombre === 'Brubank',
