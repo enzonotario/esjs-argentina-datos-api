@@ -32,14 +32,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           registry-url: https://registry.npmjs.org/
-          node-version: 18
+          node-version: 22
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 4
-          run_install: false
 
       - name: Create .env file
         run: |
