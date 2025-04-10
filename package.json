@@ -8,6 +8,7 @@
   },
   "author": "Enzo Notario <hi@enzonotario.me>",
   "license": "MIT",
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "dev": "vite --host",
     "build": "pnpm run cron:build",
