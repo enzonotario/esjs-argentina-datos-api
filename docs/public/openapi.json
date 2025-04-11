@@ -48,13 +48,7 @@
             }
           }
         },
-        "operationId": "get-feriados",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/feriados/{año}\""
-          }
-        ]
+        "operationId": "get-feriados"
       }
     },
     "/v1/cotizaciones/dolares": {
@@ -79,13 +73,7 @@
             }
           }
         },
-        "operationId": "get-cotizaciones-dolares",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/cotizaciones/dolares/{casa}\""
-          }
-        ]
+        "operationId": "get-cotizaciones-dolares"
       }
     },
     "/v1/cotizaciones/dolares/{casa}": {
@@ -132,13 +120,7 @@
             }
           }
         },
-        "operationId": "get-cotizaciones-dolares-casa",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/cotizaciones/dolares/{casa}\""
-          }
-        ]
+        "operationId": "get-cotizaciones-dolares-casa"
       }
     },
     "/v1/cotizaciones/dolares/{casa}/{fecha}": {
@@ -193,13 +175,7 @@
             }
           }
         },
-        "operationId": "get-cotizaciones-dolares-casa-fecha",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/cotizaciones/dolares/{casa}/{fecha}\""
-          }
-        ]
+        "operationId": "get-cotizaciones-dolares-casa-fecha"
       }
     },
     "/v1/eventos/presidenciales": {
@@ -224,13 +200,7 @@
             }
           }
         },
-        "operationId": "get-eventos-presidenciales",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/eventos/presidenciales\""
-          }
-        ]
+        "operationId": "get-eventos-presidenciales"
       }
     },
     "/v1/finanzas/indices/inflacion": {
@@ -257,12 +227,6 @@
           }
         },
         "operationId": "get-finanzas-indices-inflacion",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/inflacion\""
-          }
-        ],
         "x-sidebar-title": "Inflación mensual"
       }
     },
@@ -290,12 +254,6 @@
           }
         },
         "operationId": "get-finanzas-indices-inflacion-interanual",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/inflacionInteranual\""
-          }
-        ],
         "x-sidebar-title": "Inflación interanual"
       }
     },
@@ -322,13 +280,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-indices-uva",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/uva\""
-          }
-        ]
+        "operationId": "get-finanzas-indices-uva"
       }
     },
     "/v1/finanzas/indices/riesgo-pais": {
@@ -354,13 +306,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-indices-riesgo-pais",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais\""
-          }
-        ]
+        "operationId": "get-finanzas-indices-riesgo-pais"
       }
     },
     "/v1/finanzas/indices/riesgo-pais/ultimo": {
@@ -383,13 +329,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-indices-riesgo-pais-ultimo",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais/ultimo\""
-          }
-        ]
+        "operationId": "get-finanzas-indices-riesgo-pais-ultimo"
       }
     },
     "/v1/finanzas/tasas/plazoFijo": {
@@ -415,13 +355,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-tasas-plazo-fijo",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/tasas/plazoFijo\""
-          }
-        ]
+        "operationId": "get-finanzas-tasas-plazo-fijo"
       }
     },
     "/v1/finanzas/tasas/depositos30Dias": {
@@ -447,13 +381,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-tasas-depositos-30-dias",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/tasas/depositos30Dias\""
-          }
-        ]
+        "operationId": "get-finanzas-tasas-depositos-30-dias"
       }
     },
     "/v1/finanzas/fci/mercadoDinero/{fecha}": {
@@ -492,13 +420,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-fci-mercado-dinero-fecha",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/mercadoDinero/{fecha}\""
-          }
-        ]
+        "operationId": "get-finanzas-fci-mercado-dinero-fecha"
       }
     },
     "/v1/finanzas/fci/rentaVariable/{fecha}": {
@@ -537,13 +459,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-fci-renta-variable-fecha",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/rentaVariable/{fecha}\""
-          }
-        ]
+        "operationId": "get-finanzas-fci-renta-variable-fecha"
       }
     },
     "/v1/finanzas/fci/rentaFija/{fecha}": {
@@ -582,13 +498,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-fci-renta-fija-fecha",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/rentaFija/{fecha}\""
-          }
-        ]
+        "operationId": "get-finanzas-fci-renta-fija-fecha"
       }
     },
     "/v1/finanzas/fci/rentaMixta/{fecha}": {
@@ -627,13 +537,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-fci-renta-mixta-fecha",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/rentaMixta/{fecha}\""
-          }
-        ]
+        "operationId": "get-finanzas-fci-renta-mixta-fecha"
       }
     },
     "/v1/finanzas/fci/otros/{fecha}": {
@@ -672,13 +576,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-fci-otros-fecha",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/fci/otros/{fecha}\""
-          }
-        ]
+        "operationId": "get-finanzas-fci-otros-fecha"
       }
     },
     "/v1/estado": {
@@ -700,13 +598,7 @@
             }
           }
         },
-        "operationId": "get-estado",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/estado\""
-          }
-        ]
+        "operationId": "get-estado"
       }
     },
     "/v1/finanzas/rendimientos": {
@@ -733,12 +625,6 @@
           }
         },
         "operationId": "get-finanzas-rendimientos",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/rendimientos/{entidad}\""
-          }
-        ],
         "x-sidebar-title": "De entidades"
       }
     },
@@ -786,13 +672,7 @@
             }
           }
         },
-        "operationId": "get-finanzas-rendimientos-entidad",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/finanzas/rendimientos/{entidad}\""
-          }
-        ]
+        "operationId": "get-finanzas-rendimientos-entidad"
       }
     },
     "/v1/senado/senadores": {
@@ -817,13 +697,7 @@
             }
           }
         },
-        "operationId": "get-senado-senadores",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/senadores\""
-          }
-        ]
+        "operationId": "get-senado-senadores"
       }
     },
     "/v1/senado/actas/{año}": {
@@ -862,13 +736,7 @@
             }
           }
         },
-        "operationId": "get-senado-actas-año",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/actas/{año}\""
-          }
-        ]
+        "operationId": "get-senado-actas-año"
       }
     },
     "/v1/senado/actas": {
@@ -893,13 +761,7 @@
             }
           }
         },
-        "operationId": "get-senado-actas",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/senado/actas\""
-          }
-        ]
+        "operationId": "get-senado-actas"
       }
     },
     "/v1/diputados/diputados": {
@@ -924,13 +786,7 @@
             }
           }
         },
-        "operationId": "get-diputados-diputados",
-        "x-code-samples": [
-          {
-            "lang": "curl",
-            "source": "curl -X GET \\\n \"https://api.argentinadatos.com/v1/diputados/diputados\""
-          }
-        ]
+        "operationId": "get-diputados-diputados"
       }
     },
     "/v1/diputados/actas/{año}": {
