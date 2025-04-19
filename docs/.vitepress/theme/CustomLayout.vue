@@ -17,7 +17,7 @@ const { Layout } = DefaultTheme
     </template>
 
     <template #nav-bar-content-after>
-      <GitHubStars />
+      <GitHubStars class="hidden sm:block" />
     </template>
   </Layout>
 </template>
