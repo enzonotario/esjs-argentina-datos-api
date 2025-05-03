@@ -114,12 +114,15 @@ async function getData() {
         return d
     })
 }
-
 ```
 
 ```js eval code=false
 (async () => {
   const data = await getData()
+  
+  const dark = document.documentElement.classList.contains('dark')
+  
+  const today = new Date().toISOString().slice(0, 10)
   
   return Plot.plot({
     width: 350,
@@ -127,30 +130,40 @@ async function getData() {
     padding: 0,
     x: {
       axis: 'top',
+      label: "Semana del mes",
+      labelOffset: 30
     },
     y: {
       tickFormat: Plot.formatWeekday("es", "narrow"), 
       tickSize: 0,
+      label: "Día de la semana"
     },
     facet: {
       data: data,
       y: d => d.mes,
+      label: null
     },
     fy: {
       tickFormat: d => new Date(0, d, 1).toLocaleString('es-ES', { month: 'long' }),
+      labelAnchor: "center"
     },
     marks: [
       Plot.cell(data, {
         x: d => d.semanaMes,
         y: d => d.diaSemana,
         fill: d => d.color,
+        stroke: d => d.fecha === today ? "#8b5cf6" : d.color,
+        strokeWidth: d => d.fecha === today ? 3 : 0,
         tip: {
           format: {
-            fecha: true,
-            x:  d => `Semana ${d}`,
+            fecha: d => new Date(d).toLocaleDateString('es-ES', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}),
+            nombre: true,
+            tipo: true,
+            x: d => `Semana ${d}`,
             y: d => new Date(0, 0, d).toLocaleString('es-ES', { weekday: 'long' }),
             fy: d => new Date(0, d, 1).toLocaleString('es-ES', { month: 'long' }),
             stroke: false,
+            strokeWidth: false,
           }
         },
       }),
@@ -161,9 +174,10 @@ async function getData() {
         fill: d => d.colorTexto,
         align: 'center',
         baseline: 'middle',
-        fontSize: 8,
+        fontSize: 12,
+        fontWeight: d => d.fecha === today ? "bold" : "normal"
       }),
-    ]
+    ],
   })
 })()
 ```
