@@ -24,7 +24,7 @@
           </h1>
 
           <p class="w-full max-w-sm">
-            API RESTful para acceder a datos de Argentina
+            API desarrollada en <a href="https://es.js.org/?ref=argentinadatos.com" target="_blank" rel="noreferrer" class="font-bold">EsJS</a> para acceder a datos de Argentina
           </p>
 
           <div class="flex flex-row flex-wrap justify-center items-center gap-4">
@@ -123,13 +123,6 @@
             </a>
           </div>
         </div>
-      </div>
-
-
-      <div class="flex flex-row justify-center items-center space-x-4">
-        <p class="w-full max-w-sm text-center">
-          Desarrollado con <a href="https://es.js.org/?ref=argentinadatos.com" target="_blank" rel="noreferrer" class="font-bold">EsJS</a>
-        </p>
       </div>
     </section>
   </div>
