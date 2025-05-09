@@ -3,7 +3,6 @@ import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
-import { getYear } from 'date-fns'
 import { downloadPdf } from './downloadPdf.ts'
 import { parseActa } from './parseActa.ts'
 
@@ -27,28 +26,46 @@ export async function crawlActas({ year }: { year?: number } = {}): Promise<
 
   const actas = $('table#actasTable tbody tr')
 
-  for (let i = 0; i < actas.length; i++) {
-    const acta = actas.eq(i)
-    const actaFecha = Number.parseInt(acta.find('td').eq(0).text().trim())
-    const titulo = acta.find('td').eq(2).text().trim()
-    const actaUrl = acta.find('td a').attr('href')
-    const actaUrlLastPart = actaUrl?.split('/').pop()
-    const actaId = Number(actaUrlLastPart)
+  const firstActaId = Number(
+    actas
+      .eq(0)
+      .find('td a')
+      .attr('href')
+      ?.split('/')
+      .pop(),
+  )
 
-    if (actaFecha && actaUrl && actaUrlLastPart) {
-      const acta = await processActa(actaId, titulo, yearToSearch)
+  await Promise.all(
+    Array.from({ length: 100 }, (_, i) => {
+      const actaId = firstActaId + i - 50
 
-      if (acta && getYear(acta.fecha) === yearToSearch) {
-        output.push(acta)
-      }
-    }
-  }
+      return processActa(actaId, '', yearToSearch)
+    }),
+  )
 
   saveByYear(output, yearToSearch)
 
   saveAll(output)
 
   return output
+}
+
+async function scrapeActas(actaId: number): Promise<string> {
+  try {
+    const url = `https://www.senado.gob.ar/votaciones/detalleActa/${actaId}`
+    const response = await fetch(url)
+    const html = await response.text()
+
+    const $ = cheerio.load(html)
+
+    const titulo = ($('div.row div.col-lg-6.col-sm-6:first-child p:nth-child(2)').text().trim()).replace(/[\n\t\r]/g, '').replace(/\s+/g, ' ')
+
+    return titulo
+  }
+  catch (error) {
+    console.error(`❌ Error al obtener título del Acta ${actaId}:`, error)
+    return ''
+  }
 }
 
 async function processActa(
@@ -63,7 +80,11 @@ async function processActa(
       return null
     }
 
-    const acta = await parseActa(actaId, titulo, pdfPath)
+    const tituloFromHtml = await scrapeActas(actaId)
+
+    const finalTitulo = tituloFromHtml || titulo
+
+    const acta = await parseActa(actaId, finalTitulo, pdfPath)
 
     writeEndpoint(`/senado/actas/${yearToSearch}/${actaId}`, acta)
 
