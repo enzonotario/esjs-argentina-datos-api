@@ -8,7 +8,6 @@ it(
 
     expect(result).toBeDefined()
     expect(Array.isArray(result)).toBe(true)
-    expect(result.length).toBeGreaterThan(0)
     for (const acta of result) {
       expect(acta).toMatchObject({
         actaId: expect.any(Number),

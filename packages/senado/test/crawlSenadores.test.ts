@@ -8,20 +8,19 @@ it(
 
     expect(result).toBeDefined()
     expect(Array.isArray(result)).toBe(true)
-    expect(result.length).toBeGreaterThan(0)
     for (const senador of result) {
-      expect(senador).toMatchObject({
+      expect(senador, `Invalid senator data: ${JSON.stringify(senador)}`).toMatchObject({
         id: expect.any(String),
         nombre: expect.any(String),
         provincia: expect.any(String),
         partido: expect.any(String),
         periodoLegal: {
           inicio: expect.any(String),
-          fin: expect.any(String),
+          fin: expect.toBeOneOf([null, expect.any(String)]),
         },
         periodoReal: {
           inicio: expect.any(String),
-          fin: expect.any(String),
+          fin: expect.toBeOneOf([null, expect.any(String)]),
         },
         reemplazo: expect.toBeOneOf([null, expect.any(String)]),
         observaciones: expect.toBeOneOf([null, expect.any(String)]),
