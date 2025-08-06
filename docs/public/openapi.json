@@ -24,7 +24,7 @@
             "name": "año",
             "in": "path",
             "description": "Año de consulta",
-            "required": false,
+            "required": true,
             "schema": {
               "type": "integer",
               "minimum": 2016,
