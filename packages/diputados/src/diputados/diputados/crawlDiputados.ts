@@ -117,7 +117,9 @@ function parseCsv(csv: string): Diputado[] {
   return lines
     .slice(1)
     .map((line) => {
-      const fields = line.split(',')
+      const fields = line
+        .split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/) // Split by comma, but ignore commas inside quotes.
+        .map(field => field.trim().replace(/^"|"$/g, '')) // Remove quotes around fields.
 
       if (fields.length !== 12) {
         console.warn('Invalid line', {
