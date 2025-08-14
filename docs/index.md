@@ -50,3 +50,12 @@ import Home from '@theme/components/Home.vue';
 
 <Home />
 
+<div class="text-center">
+
+<h2>Sponsors</h2>
+
+<div class="flex justify-center">
+<SponsorsAvatars />
+</div>
+
+</div>

@@ -144,7 +144,7 @@ export default defineConfig({
       },
     ],
     nav: [
-      { text: 'Aviso Legal', link: '/docs/legal' },
+      { text: 'Sponsors', link: '/docs/sponsors' },
     ],
     footer: {
       message: 'Liberado bajo la <a href="https://github.com/enzonotario/esjs-argentina-datos-api/blob/main/LICENSE">Licencia MIT</a>.',

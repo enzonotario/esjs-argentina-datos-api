@@ -9,6 +9,7 @@ import spec from '../../public/openapi.json' with { type: 'json' }
 import { useECharts } from '../plugins/echarts'
 import chartComponents from './components/charts'
 import CustomLayout from './CustomLayout.vue'
+import SponsorsAvatars from './components/sponsors/SponsorsAvatars.vue'
 
 import 'vitepress-openapi/dist/style.css'
 import './style.css'
@@ -53,5 +54,7 @@ export default {
     app.use(useECharts)
     for (const [name, component] of Object.entries(chartComponents))
       app.component(name, component)
+
+    app.component('SponsorsAvatars', SponsorsAvatars)
   },
 }
