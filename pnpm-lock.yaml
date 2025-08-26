@@ -56,6 +56,9 @@ importers:
       prettier-plugin-esjs:
         specifier: ^0.1.0-beta.2
         version: 0.1.0-beta.2(prettier@3.5.3)
+      sitemap:
+        specifier: ^8.0.0
+        version: 8.0.0
       vite:
         specifier: ^6.2.6
         version: 6.2.6(@types/node@22.14.0)(jiti@1.21.7)(yaml@2.7.1)
@@ -311,17 +314,20 @@ packages:
 
   '@antfu/eslint-config-basic@0.35.3':
     resolution: {integrity: sha512-NbWJKNgd3Ky3/ok2Z88cXNme/6I9otkiaB+FYLFgQE81sfMAhKpLKXtTSwzdcKMzhKDqUchAijt0BxjE/mcTJg==}
+    deprecated: Deprecated, please migrate to @antfu/eslint-config with the flat config
     peerDependencies:
       eslint: '>=7.4.0'
 
   '@antfu/eslint-config-ts@0.35.3':
     resolution: {integrity: sha512-FS5hir2ghXYlJWAiB2bpT9oAr0kpSNmYbaJWWkztocJG95AORl4tWzxMTkLT+TxaOmhuwJszcrMTHy5RgHL8/w==}
+    deprecated: Deprecated, please migrate to @antfu/eslint-config with the flat config
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
 
   '@antfu/eslint-config-vue@0.35.3':
     resolution: {integrity: sha512-BA3vGLyuzqtEUb9gfgE7YzBT+a4oUnQuUPasIUfN/BVXaEhRVYlMmUgxN4ekQLuzOgUjUH13lqplXtkLJ62t9g==}
+    deprecated: Deprecated, please migrate to @antfu/eslint-config with the flat config
     peerDependencies:
       eslint: '>=7.4.0'
 
@@ -1396,11 +1402,17 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
+  '@types/node@17.0.45':
+    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+
   '@types/node@22.14.0':
     resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
+
+  '@types/sax@1.2.7':
+    resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
 
   '@types/semver@7.7.0':
     resolution: {integrity: sha512-k107IF4+Xr7UHjwDc7Cfd6PRQfbdkiRabXGRjo07b4WyPahFBZCZ1sE+BNxYIJPPg73UkfOsVOLwqVc/6ETrIA==}
@@ -4792,6 +4804,9 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
+  sax@1.4.1:
+    resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
+
   schema-utils@0.4.7:
     resolution: {integrity: sha512-v/iwU6wvwGK8HbU9yi3/nhGzP0yGSuhQMzL6ySiec1FSrZZDkhm4noOSWzrNFo/jEc+SJY6jRTwuwbSXJPDUnQ==}
     engines: {node: '>= 4'}
@@ -4888,6 +4903,11 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  sitemap@8.0.0:
+    resolution: {integrity: sha512-+AbdxhM9kJsHtruUF39bwS/B0Fytw6Fr1o4ZAIAEqA6cke2xcoO2GleBw9Zw7nRzILVEgz7zBM5GiTJjie1G9A==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    hasBin: true
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -6752,11 +6772,17 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
+  '@types/node@17.0.45': {}
+
   '@types/node@22.14.0':
     dependencies:
       undici-types: 6.21.0
 
   '@types/normalize-package-data@2.4.4': {}
+
+  '@types/sax@1.2.7':
+    dependencies:
+      '@types/node': 22.14.0
 
   '@types/semver@7.7.0': {}
 
@@ -11035,6 +11061,8 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+  sax@1.4.1: {}
+
   schema-utils@0.4.7:
     dependencies:
       ajv: 6.12.6
@@ -11154,6 +11182,13 @@ snapshots:
   signal-exit@4.1.0: {}
 
   sisteransi@1.0.5: {}
+
+  sitemap@8.0.0:
+    dependencies:
+      '@types/node': 17.0.45
+      '@types/sax': 1.2.7
+      arg: 5.0.2
+      sax: 1.4.1
 
   slash@3.0.0: {}
 

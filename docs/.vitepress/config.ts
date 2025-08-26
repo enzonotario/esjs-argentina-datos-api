@@ -2,7 +2,12 @@ import { URL, fileURLToPath } from 'node:url'
 import { defineConfig, loadEnv } from 'vitepress'
 import { useSidebar } from 'vitepress-openapi'
 import { genjiAttrs } from 'genji-theme-vitepress/config'
+import { SitemapStream } from 'sitemap'
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
 import spec from '../public/openapi.json' with { type: 'json' }
+
+const links = []
 
 const env = loadEnv('', process.cwd())
 
@@ -194,5 +199,34 @@ export default defineConfig({
     config: (md) => {
       md.use(genjiAttrs)
     },
+  },
+
+  /**
+   * Sitemap generation
+   */
+  cleanUrls: false,
+  transformHtml: (_, id, { pageData }) => {
+    if (!/[\\/]404\.html$/.test(id)) {
+      links.push({
+        /* conatins index.md? */
+        url: pageData.relativePath.endsWith('index.md')
+          ? '/'
+          : `${pageData.relativePath.replace(
+            /((^|\/)index)?\.md$/,
+            '$2',
+          )}.html`,
+        lastmod: pageData.lastUpdated,
+      })
+    }
+  },
+  buildEnd: async ({ outDir }) => {
+    const sitemap = new SitemapStream({
+      hostname: 'https://argentinadatos.com/docs/',
+    })
+    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+    sitemap.pipe(writeStream)
+    links.forEach(link => sitemap.write(link))
+    sitemap.end()
+    await new Promise(resolve => writeStream.on('finish', resolve))
   },
 })
