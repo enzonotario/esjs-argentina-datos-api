@@ -24,6 +24,10 @@ const { Layout } = DefaultTheme
     <template #layout-bottom>
       <DonateBanner />
     </template>
+
+    <template #doc-footer-before>
+      <Ads />
+    </template>
   </Layout>
 </template>
 
