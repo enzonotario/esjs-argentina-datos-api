@@ -1,6 +1,10 @@
 name: Extraer valores de FCI
 
 on:
+  schedule:
+    - cron: '30 22 * * *' # 19:30 ART
+    - cron: '30 23 * * *' # 20:30 ART
+    - cron: '30 0 * * *'  # 21:30 ART
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
