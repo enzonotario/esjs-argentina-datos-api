@@ -6,6 +6,7 @@ importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
 importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/extraerSupervielle.esjs'
 importar { extraerBrubankCuentaRemunerada } desde '@/finanzas/extraccion/extraerBrubank.esjs'
+importar { extraerFiwindARS } desde '@/finanzas/extraccion/extraerFiwindARS.esjs'
 importar { logGrupo } desde '@/log.esjs'
 
 exportar asincrono funcion extraerSerieOtros() {
@@ -21,6 +22,7 @@ exportar asincrono funcion extraerSerieOtros() {
     esperar extraerUalaCuentaRemunerada(),
     esperar extraerSupervielleCuentaRemunerada(),
     esperar extraerBrubankCuentaRemunerada(),
+    esperar extraerFiwindARS(),
   ].filtrar(item => item.fondo)
 
   const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))

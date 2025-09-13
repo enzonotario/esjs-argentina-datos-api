@@ -1,0 +1,22 @@
+importar { format} desde 'date-fns'
+importar { extraerFiwind } desde '@/finanzas/rendimientos/extraerFiwind.esjs'
+
+exportar asincrono funcion extraerFiwindARS() {
+  const rendimientos = esperar extraerFiwind()
+
+  const fiwindARS = rendimientos.buscar(
+    item => item.moneda === 'ARS' && item.apy > 0,
+  )
+
+  si (!fiwindARS) {
+    retornar nulo
+  }
+
+  retornar {
+    fondo: 'FIWIND',
+    tna: Numero((fiwindARS.bonusValue / 100).fijarDecimales(4)),
+    tea: Numero(((1 + fiwindARS.bonusValue / 100 / 365) ** 365 - 1).fijarDecimales(4)),
+    tope: fiwindARS.bonusThreshold,
+    fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+  };
+}

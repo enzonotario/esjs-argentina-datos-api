@@ -19,6 +19,8 @@ exportar asincrono funcion extraerFiwind() {
         moneda,
         apy,
         fecha,
+        bonusValue: Numero(item.bonusValue),
+        bonusThreshold: item.bonusThreshold,
       })
     }
 
