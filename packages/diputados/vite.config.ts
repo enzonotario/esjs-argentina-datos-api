@@ -2,6 +2,8 @@
 import type { TestSpecification } from 'vitest/node'
 import { defineConfig } from 'vite'
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+
 const filesOrder = ['crawlDiputados.test.ts', 'crawlActas.test.ts']
 
 class CustomSequencer {
