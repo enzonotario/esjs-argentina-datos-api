@@ -8,20 +8,33 @@ importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/ext
 importar { extraerFiwindARS } desde '@/finanzas/extraccion/extraerFiwindARS.esjs'
 importar { logGrupo } desde '@/log.esjs'
 
+const log = logGrupo({ comando: 'finanzas.fci.otros' })
+
 exportar asincrono funcion extraerSerieOtros() {
-  const log = logGrupo({ comando: 'finanzas.fci.otros' })
-
   const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
-
-  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
-  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
 
   const valoresExtraidos = [
     esperar extraerNaranjaX(),
     esperar extraerUalaCuentaRemunerada(),
-    esperar extraerSupervielleCuentaRemunerada(),
     esperar extraerFiwindARS(),
   ].filtrar(item => item.fondo)
+
+  guardarValores(valoresActuales, valoresExtraidos)
+}
+
+exportar asincrono funcion extraerSerieOtrosIA() {
+  const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
+
+  const valoresExtraidos = [
+    esperar extraerSupervielleCuentaRemunerada(),
+  ].filtrar(item => item.fondo)
+
+  guardarValores(valoresActuales, valoresExtraidos)
+}
+
+asincrono funcion guardarValores(valoresActuales, valoresExtraidos) {
+  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
+  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
 
   const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))
     .groupBy('fondo').mapear(valoresNuevos =>

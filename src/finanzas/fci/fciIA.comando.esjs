@@ -1,0 +1,6 @@
+importar { extraerSerieOtrosIA } desde '@/finanzas/fci/extraerSerieOtros.esjs'
+
+exportar porDefecto asincrono funcion () {
+  esperar extraerSerieOtrosIA()
+}
+

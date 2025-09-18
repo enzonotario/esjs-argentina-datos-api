@@ -1,23 +1,69 @@
-importar { format } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+importar { format } desde 'date-fns'
+importar { logGrupo, logError, logMensaje } desde '@/log.esjs'
+
+const FIRECRAWL_API_URL = `${import.meta.env.VITE_FIRECRAWL_BASE_URL}/v2/scrape`
 
 exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
+  const log = logGrupo({
+    fuente: 'extraerSupervielle',
+    tipo: 'cuentaRemunerada',
+  })
+
   intentar {
-    const respuesta = esperar fetch(
-      'https://api.comparatasas.ar/cuentas-remuneradas',
-    )
+    const respuesta = esperar fetch(FIRECRAWL_API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.aTexto({
+        url: 'https://www.supervielle.com.ar/personas/cuentas/cuenta-remunerada',
+        onlyMainContent: verdadero,
+        maxAge: 0, // no cache
+        formats: [
+          'markdown',
+          {
+            type: 'json',
+            schema: {
+              type: 'object',
+              required: ['tna', 'tope'],
+              properties: {
+                tna: {
+                  type: 'number',
+                },
+                tope: {
+                  type: 'number',
+                },
+              },
+            },
+          },
+        ],
+      }),
+    })
 
-    const lista = esperar respuesta.json()
-
-    const cuentaRemunerada = lista.buscar(
-      cuenta => cuenta.nombre === 'Supervielle',
-    )
-
-    si (cuentaRemunerada === nulo) {
-      lanzar crear Error('No se encontró la cuenta remunerada')
+    si (!respuesta.ok) {
+      logMensaje(log, 'Respuesta no OK de Firecrawl', {
+        status: respuesta.status,
+        statusText: respuesta.statusText,
+      })
+      lanzar crear Error(
+        `Error en la solicitud a Firecrawl: ${respuesta.status} ${respuesta.statusText}`,
+      )
     }
 
-    const valor = Numero(cuentaRemunerada.tna)
+    const datos = esperar respuesta.json()
+
+    si (
+      !datos.success ||
+      !datos.data ||
+      !datos.data.json ||
+      datos.data.json.tna === nulo
+    ) {
+      logMensaje(log, 'Datos inválidos de Firecrawl', { datos })
+      lanzar crear Error('Error en la respuesta de Firecrawl')
+    }
+
+    const valor = Numero(datos.data.json.tna)
 
     si (valor === nulo) {
       lanzar crear Error('No se encontró el valor de la cuenta remunerada')
@@ -31,15 +77,11 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
       fondo: 'SUPERVIELLE',
       tna,
       tea,
-      tope: cuentaRemunerada.limite,
+      tope: datos.data.json.tope,
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
     };
   } capturar (error) {
-    consola.error(
-      'Error al extraer Supervielle CuentaRemunerada',
-      error.aCadena(),
-    )
-
+    logError(log, error)
     retornar []
   }
 }
