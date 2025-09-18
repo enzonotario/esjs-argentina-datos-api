@@ -1,7 +1,8 @@
 importar { format } desde 'date-fns'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar axios desde 'axios'
-importar { logGrupo, logError } desde '@/log.esjs'
+importar { logGrupo, logError, logMensaje } desde '@/log.esjs'
+importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
 
 mut respuestaGuardada = nulo
 
@@ -48,35 +49,36 @@ exportar asincrono funcion extraerUalaPlazoFijo() {
   const log = logGrupo({ fuente: 'extraerUala', tipo: 'plazoFijo' })
 
   intentar {
-    const respuesta = esperar obtenerRespuesta()
+    const enlace = 'https://www.uala.com.ar/inversiones/plazo-fijo'
 
-    const plazoFijo = respuesta.data.products.buscar(
-      producto => producto.productName === 'Plazo Fijo',
-    )
+    const respuesta = esperar fetch(enlace)
 
-    const valor = plazoFijo.value
-
-    si (valor === nulo) {
-      lanzar crear Error('No se encontró el valor del plazo fijo')
+    si (!respuesta.ok) {
+      lanzar crear Error(
+        `Error al obtener la página de Ualá: ${respuesta.statusText}`,
+      )
     }
 
-    const plazos = valor.dividir('|').mapear(plazo => {
-      const [tipo, valor] = plazo.dividir(':')
-      retornar {
-        tipo: tipo.recortarEspacios(),
-        valor: Numero(valor.recortarEspacios().reemplazar('%', '')),
-      };
-    })
+    const htmlText = esperar respuesta.text()
 
-    const plazoFijo30 = plazos.buscar(plazo => plazo.tipo.incluye('30 días'))
+    const tnaRegex = /TNA\s+30\s+días:\s+(\d+[.,]\d+)%/i
+    const coincidencias = htmlText.coincidir(tnaRegex)
 
-    const tna = Numero((plazoFijo30.valor / 100).fijarDecimales(4))
+    si (!coincidencias || !coincidencias[1]) {
+      logMensaje(log, 'No se encontró la tasa TNA en la página de Ualá', {
+        htmlText,
+      })
+      lanzar crear Error('No se pudo encontrar la tasa TNA en la página de Ualá')
+    }
+
+    const tna = interpretarDecimalConComa(coincidencias[1]) / 100
 
     retornar {
       entidad: 'UALA',
       logo: 'https://icons.com.ar/icons/bancos-apps/uala.svg',
       tnaClientes: tna,
       tnaNoClientes: tna,
+      enlace,
     }
   } capturar (error) {
     logError(log, error)

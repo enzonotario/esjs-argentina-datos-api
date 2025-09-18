@@ -26,13 +26,6 @@ const traceId =
   Mate.aleatorio().aCadena(36).subcadena(2, 15) +
   Mate.aleatorio().aCadena(36).subcadena(2, 15)
 
-exportar funcion logMensaje(mensaje, extra) {
-  logger.info(mensaje, {
-    traceId,
-    ...extra,
-  })
-}
-
 exportar funcion logGrupo(grupo) {
   retornar logger.child({
     traceId,
@@ -45,5 +38,12 @@ exportar funcion logError(grupo, error) {
     msg: 'Error',
     errorMessage: error.message,
     errorStack: error.stack,
+  })
+}
+
+exportar funcion logMensaje(grupo, mensaje, extra = {}) {
+  grupo.info({
+    msg: mensaje,
+    ...extra,
   })
 }
