@@ -25,9 +25,9 @@ exportar asincrono funcion extraerSerieOtros() {
 exportar asincrono funcion extraerSerieOtrosIA() {
   const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
 
-  const valoresExtraidos = [
-    esperar extraerSupervielleCuentaRemunerada(),
-  ].filtrar(item => item.fondo)
+  const valoresExtraidos = [esperar extraerSupervielleCuentaRemunerada()].filtrar(
+    item => item.fondo,
+  )
 
   guardarValores(valoresActuales, valoresExtraidos)
 }
@@ -42,14 +42,8 @@ asincrono funcion guardarValores(valoresActuales, valoresExtraidos) {
     )
     .toArray()
 
-  log.info(
-    '[/v1/finanzas/fci/otros]: Valores extraídos',
-    valoresNuevos,
-  )
-  consola.escribir(
-    '[/v1/finanzas/fci/otros]: Valores extraídos',
-    valoresNuevos,
-  )
+  log.info('[/v1/finanzas/fci/otros]: Valores extraídos', valoresNuevos)
+  consola.escribir('[/v1/finanzas/fci/otros]: Valores extraídos', valoresNuevos)
 
   esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
 
