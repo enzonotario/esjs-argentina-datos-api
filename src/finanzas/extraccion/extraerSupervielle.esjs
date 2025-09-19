@@ -79,6 +79,8 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
       tea,
       tope: datos.data.json.tope,
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+      condiciones: nulo,
+      condicionesCorto: 'Clientes Plan Sueldo',
     };
   } capturar (error) {
     logError(log, error)

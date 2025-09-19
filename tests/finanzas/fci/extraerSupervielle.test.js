@@ -11,6 +11,8 @@ describe('extraerSupervielle', () => {
       tea: expect.any(Number),
       tna: expect.any(Number),
       tope: expect.any(Number),
+      condiciones: null,
+      condicionesCorto: expect.any(String),
     })
   }, {
     timeout: 10000,
