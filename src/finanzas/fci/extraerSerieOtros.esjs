@@ -15,7 +15,6 @@ exportar asincrono funcion extraerSerieOtros() {
 
   const valoresExtraidos = [
     esperar extraerNaranjaX(),
-    esperar extraerUalaCuentaRemunerada(),
     esperar extraerFiwindARS(),
   ].filtrar(item => item.fondo)
 
@@ -25,9 +24,10 @@ exportar asincrono funcion extraerSerieOtros() {
 exportar asincrono funcion extraerSerieOtrosIA() {
   const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
 
-  const valoresExtraidos = [esperar extraerSupervielleCuentaRemunerada()].filtrar(
-    item => item.fondo,
-  )
+  const valoresExtraidos = [
+    esperar extraerSupervielleCuentaRemunerada(),
+    ...(esperar extraerUalaCuentaRemunerada()),
+  ].filtrar(item => item.fondo)
 
   guardarValores(valoresActuales, valoresExtraidos)
 }
