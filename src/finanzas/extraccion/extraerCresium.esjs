@@ -4,9 +4,9 @@ importar { logGrupo, logError, logMensaje } desde '@/log.esjs'
 
 const FIRECRAWL_API_URL = `${import.meta.env.VITE_FIRECRAWL_BASE_URL}/v2/scrape`
 
-exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
+exportar asincrono funcion extraerCresiumCuentaRemunerada() {
   const log = logGrupo({
-    fuente: 'extraerSupervielle',
+    fuente: 'extraerCresium',
     tipo: 'cuentaRemunerada',
   })
 
@@ -17,7 +17,7 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
         'Content-Type': 'application/json',
       },
       body: JSON.aTexto({
-        url: 'https://www.supervielle.com.ar/personas/cuentas/cuenta-remunerada',
+        url: 'https://cresium.com/',
         onlyMainContent: verdadero,
         maxAge: 0, // no cache
         formats: [
@@ -29,9 +29,6 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
               required: ['tna', 'tope'],
               properties: {
                 tna: {
-                  type: 'number',
-                },
-                tope: {
                   type: 'number',
                 },
               },
@@ -74,13 +71,13 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 
     retornar {
-      fondo: 'SUPERVIELLE',
+      fondo: 'CRESIUM',
       tna,
       tea,
-      tope: datos.data.json.tope,
+      tope: nulo,
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
       condiciones: nulo,
-      condicionesCorto: 'Solo Clientes Plan Sueldo.',
+      condicionesCorto: 'Solo Personas Jurídicas.',
     };
   } capturar (error) {
     logError(log, error)

@@ -5,6 +5,7 @@ importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerUalaCuentaRemunerada } desde '@/finanzas/extraccion/extraerUala.esjs'
 importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/extraerSupervielle.esjs'
+importar { extraerCresiumCuentaRemunerada } desde '@/finanzas/extraccion/extraerCresium.esjs'
 importar { extraerFiwindARS } desde '@/finanzas/extraccion/extraerFiwindARS.esjs'
 importar { logGrupo } desde '@/log.esjs'
 
@@ -26,6 +27,7 @@ exportar asincrono funcion extraerSerieOtrosIA() {
 
   const valoresExtraidos = [
     esperar extraerSupervielleCuentaRemunerada(),
+    esperar extraerCresiumCuentaRemunerada(),
     ...(esperar extraerUalaCuentaRemunerada()),
   ].filtrar(item => item.fondo)
 

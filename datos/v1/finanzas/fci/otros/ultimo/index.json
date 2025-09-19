@@ -20,7 +20,7 @@
     "tope": 1000000,
     "fecha": "2025-09-18",
     "condiciones": null,
-    "condicionesCorto": "Clientes Plan Sueldo"
+    "condicionesCorto": "Solo Clientes Plan Sueldo."
   },
   {
     "fondo": "FIWIND",
@@ -37,5 +37,14 @@
     "condiciones": "Si acumulás $500.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 5% = 45% TNA. ¡La mejor tasa del mercado!",
     "condicionesCorto": "Acumula $500.000 para subir tu tasa a 45% TNA.",
     "fecha": "2025-09-18"
+  },
+  {
+    "fondo": "CRESIUM",
+    "tna": 0.413,
+    "tea": 0.511,
+    "tope": null,
+    "fecha": "2025-09-18",
+    "condiciones": null,
+    "condicionesCorto": "Solo Personas Jurídicas."
   }
 ]
