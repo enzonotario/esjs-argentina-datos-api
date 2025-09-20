@@ -24,6 +24,7 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
           'markdown',
           {
             type: 'json',
+            prompt: 'Extrae la tasa de la cuenta remunerada de Supervielle en formato JSON. Para la TNA usa números decimales (por ejemplo 0.75 para 75%).',
             schema: {
               type: 'object',
               required: ['tna', 'tope'],
@@ -69,7 +70,7 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
       lanzar crear Error('No se encontró el valor de la cuenta remunerada')
     }
 
-    const tna = Numero((valor / 100).fijarDecimales(4))
+    const tna = Numero((valor).fijarDecimales(4))
 
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 

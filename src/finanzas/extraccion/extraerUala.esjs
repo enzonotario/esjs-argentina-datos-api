@@ -26,6 +26,7 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
           'markdown',
           {
             type: 'json',
+            prompt: 'Extrae las tasas de las cuentas remuneradas Normal y Plus. En condicionesCorto asegúrate de que quede claro que monto se debe consumir para acceder a la cuenta Plus. Por ejemplo: [ { "fondo": "UALA", "tna": 0.4, "tope": 1500000, "fecha": "2025-09-19" }, { "fondo": "UALA PLUS", "tna": 0.45, "tope": 1500000, "condiciones": "Si acumulás $500.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 5%", "condicionesCorto": "Acumulá $500.000 entre inversiones y consumos", "fecha": "2025-09-19" } ]',
             schema: {
               type: 'object',
               required: ['cuentaRemuneradaNormal', 'cuentaRemuneradaPlus'],
@@ -89,16 +90,16 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
     retornar [
       {
         fondo: 'UALA',
-        tna: Numero((datos.data.json.cuentaRemuneradaNormal.tna / 100).fijarDecimales(4)),
-        tea: Numero(((1 + datos.data.json.cuentaRemuneradaNormal.tna / 100 / 365) **
+        tna: Numero((datos.data.json.cuentaRemuneradaNormal.tna).fijarDecimales(4)),
+        tea: Numero(((1 + datos.data.json.cuentaRemuneradaNormal.tna / 365) **
           365 - 1).fijarDecimales(4)),
         tope: datos.data.json.cuentaRemuneradaNormal.tope,
         fecha: format(crear Fecha(), 'yyyy-MM-dd'),
       },
       {
         fondo: 'UALA PLUS',
-        tna: Numero((datos.data.json.cuentaRemuneradaPlus.tna / 100).fijarDecimales(4)),
-        tea: Numero(((1 + datos.data.json.cuentaRemuneradaPlus.tna / 100 / 365) ** 365 - 1).fijarDecimales(4)),
+        tna: Numero((datos.data.json.cuentaRemuneradaPlus.tna).fijarDecimales(4)),
+        tea: Numero(((1 + datos.data.json.cuentaRemuneradaPlus.tna / 365) ** 365 - 1).fijarDecimales(4)),
         tope: datos.data.json.cuentaRemuneradaPlus.tope,
         condiciones: datos.data.json.cuentaRemuneradaPlus.condiciones,
         condicionesCorto: datos.data.json.cuentaRemuneradaPlus.condicionesCorto,
