@@ -26,7 +26,7 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
           'markdown',
           {
             type: 'json',
-            prompt: 'Extrae las tasas de las cuentas remuneradas Normal y Plus. En condicionesCorto asegúrate de que quede claro que monto se debe consumir para acceder a la cuenta Plus. Por ejemplo: [ { "fondo": "UALA", "tna": 0.4, "tope": 1500000, "fecha": "2025-09-19" }, { "fondo": "UALA PLUS", "tna": 0.45, "tope": 1500000, "condiciones": "Si acumulás $500.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 5%", "condicionesCorto": "Acumulá $500.000 entre inversiones y consumos", "fecha": "2025-09-19" } ]',
+            prompt: 'Extrae las tasas de las cuentas remuneradas Normal y Plus. Para la TNA usa números decimales (por ejemplo 0.75 para 75%). En condicionesCorto asegúrate de que quede claro que monto se debe consumir para acceder a la cuenta Plus. Por ejemplo: [ { "fondo": "UALA", "tna": 0.4, "tope": 1500000, "fecha": "2025-09-19" }, { "fondo": "UALA PLUS", "tna": 0.45, "tope": 1500000, "condiciones": "Si acumulás $500.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 5%", "condicionesCorto": "Acumulá $500.000 entre inversiones y consumos", "fecha": "2025-09-19" } ]',
             schema: {
               type: 'object',
               required: ['cuentaRemuneradaNormal', 'cuentaRemuneradaPlus'],
