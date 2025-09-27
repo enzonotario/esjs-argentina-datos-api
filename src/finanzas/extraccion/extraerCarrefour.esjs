@@ -38,7 +38,7 @@ exportar asincrono funcion extraerCarrefourCuentaRemunerada() {
       lanzar crear Error('Error en la respuesta de Carrefour API')
     }
 
-    const valor = Numero(datos.data.tna)
+    const valor = Numero(datos.data.tna) / 100
 
     si (valor === nulo || isNaN(valor)) {
       lanzar crear Error('No se encontró el valor de la cuenta remunerada')
