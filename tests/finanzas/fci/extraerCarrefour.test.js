@@ -7,7 +7,7 @@ describe('extraerCarrefour', () => {
 
     expect(resultado).toMatchObject({
       fecha: expect.any(String),
-      fondo: 'CARREFOUR',
+      fondo: 'CARREFOUR BANCO',
       tea: expect.any(Number),
       tna: expect.any(Number),
       tope: expect.toBeOneOf([null, expect.any(Number)]),

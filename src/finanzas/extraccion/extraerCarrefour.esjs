@@ -49,7 +49,7 @@ exportar asincrono funcion extraerCarrefourCuentaRemunerada() {
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 
     retornar {
-      fondo: 'CARREFOUR',
+      fondo: 'CARREFOUR BANCO',
       tna,
       tea,
       tope: datos.data.tope || nulo,
