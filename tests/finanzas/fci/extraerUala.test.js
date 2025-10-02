@@ -5,7 +5,7 @@ describe('extraerUala', () => {
   it('extrae Uala Cuenta Remunerada correctamente', async () => {
     const resultado = await extraerUalaCuentaRemunerada()
 
-    expect(resultado.length).toBe(2)
+    expect(resultado.length).toBe(3)
     expect(resultado[0]).toMatchObject({
       fecha: expect.any(String),
       fondo: 'UALA',
@@ -15,7 +15,7 @@ describe('extraerUala', () => {
     })
     expect(resultado[1]).toMatchObject({
       fecha: expect.any(String),
-      fondo: 'UALA PLUS',
+      fondo: 'UALA PLUS 1',
       tea: expect.any(Number),
       tna: expect.any(Number),
       tope: expect.any(Number),
@@ -23,6 +23,6 @@ describe('extraerUala', () => {
       condicionesCorto: expect.any(String),
     })
   }, {
-    timeout: 30000,
+    timeout: 300000,
   })
 })

@@ -26,27 +26,23 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
           'markdown',
           {
             type: 'json',
-            prompt: 'Extrae las tasas de las cuentas remuneradas Normal y Plus. Para la TNA usa números decimales (por ejemplo 0.75 para 75%). En condicionesCorto asegúrate de que quede claro que monto se debe consumir para acceder a la cuenta Plus. Por ejemplo: [ { "fondo": "UALA", "tna": 0.4, "tope": 1500000, "fecha": "2025-09-19" }, { "fondo": "UALA PLUS", "tna": 0.45, "tope": 1500000, "condiciones": "Si acumulás $500.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 5%", "condicionesCorto": "Acumulá $500.000 entre inversiones y consumos", "fecha": "2025-09-19" } ]',
+            prompt: 'Extrae las tasas de las cuentas remuneradas Normal y Plus (en los niveles que haya). Para la TNA usa números decimales (por ejemplo 0.75 para 75%). En condicionesCorto asegúrate de que quede claro que monto se debe consumir para acceder a la cuenta Plus. Respetá los nombres/formatos de los fondos del ejemplo. Por ejemplo: [ { "fondo": "UALA", "tna": 0.4, "tope": 1500000, "fecha": "2025-09-19" }, { "fondo": "UALA PLUS 1", "tna": 0.45, "tope": 1500000, "condiciones": "Si acumulás $250.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 3%", "condicionesCorto": "Acumulá $250.000 entre inversiones y consumos para acceder a la tasa Plus 1 el próximo mes", "fecha": "2025-09-19" }, { "fondo": "UALA PLUS 2", "tna": 0.5, "tope": 1500000, "condiciones": "Si acumulás $500.000 o más entre ciertas operaciones este mes, el próximo tu tasa sube 5%", "condicionesCorto": "Acumulá $500.000 entre inversiones y consumos para acceder a la tasa Plus 2 el próximo mes", "fecha": "2025-09-19" } ]',
             schema: {
               type: 'object',
               required: ['cuentaRemuneradaNormal', 'cuentaRemuneradaPlus'],
               properties: {
-                cuentaRemuneradaNormal: {
-                  type: 'object',
-                  required: ['tna', 'tope'],
-                  properties: {
-                    tna: { type: 'number' },
-                    tope: { type: 'number' },
-                  },
-                },
-                cuentaRemuneradaPlus: {
-                  type: 'object',
-                  required: ['tna', 'tope'],
-                  properties: {
-                    tna: { type: 'number' },
-                    tope: { type: 'number' },
-                    condiciones: { type: 'string' },
-                    condicionesCorto: { type: 'string', maxLength: 100 },
+                fondos: {
+                  type: 'array',
+                  items: {
+                    type: 'object',
+                    required: ['fondo', 'tna', 'tope'],
+                    properties: {
+                      fondo: { type: 'string' },
+                      tna: { type: 'number' },
+                      tope: { type: 'number' },
+                      condiciones: { type: 'string' },
+                      condicionesCorto: { type: 'string', maxLength: 100 },
+                    },
                   },
                 },
               },
@@ -72,39 +68,23 @@ exportar asincrono funcion extraerUalaCuentaRemunerada() {
       !datos.success ||
       !datos.data ||
       !datos.data.json ||
-      !datos.data.json.cuentaRemuneradaNormal ||
-      datos.data.json.cuentaRemuneradaNormal.tna === nulo ||
-      !datos.data.json.cuentaRemuneradaPlus ||
-      datos.data.json.cuentaRemuneradaPlus.tna === nulo
+      !Array.isArray(datos.data.json.fondos) ||
+      datos.data.json.fondos.length === 0
     ) {
       logMensaje(log, 'Datos inválidos de Firecrawl', { datos })
       lanzar crear Error('Error en la respuesta de Firecrawl')
     }
 
-    const valor = Numero(datos.data.json.cuentaRemuneradaNormal.tna)
-
-    si (valor === nulo) {
-      lanzar crear Error('No se encontró el valor de la cuenta remunerada')
-    }
-
     retornar [
-      {
-        fondo: 'UALA',
-        tna: Numero((datos.data.json.cuentaRemuneradaNormal.tna).fijarDecimales(4)),
-        tea: Numero(((1 + datos.data.json.cuentaRemuneradaNormal.tna / 365) **
-          365 - 1).fijarDecimales(4)),
-        tope: datos.data.json.cuentaRemuneradaNormal.tope,
+      ...datos.data.json.fondos.map(f => ({
+        fondo: f.fondo,
+        tna: Numero((f.tna).fijarDecimales(4)),
+        tea: Numero(((1 + f.tna / 365) ** 365 - 1).fijarDecimales(4)),
+        tope: f.tope,
+        condiciones: f.condiciones,
+        condicionesCorto: f.condicionesCorto,
         fecha: format(crear Fecha(), 'yyyy-MM-dd'),
-      },
-      {
-        fondo: 'UALA PLUS',
-        tna: Numero((datos.data.json.cuentaRemuneradaPlus.tna).fijarDecimales(4)),
-        tea: Numero(((1 + datos.data.json.cuentaRemuneradaPlus.tna / 365) ** 365 - 1).fijarDecimales(4)),
-        tope: datos.data.json.cuentaRemuneradaPlus.tope,
-        condiciones: datos.data.json.cuentaRemuneradaPlus.condiciones,
-        condicionesCorto: datos.data.json.cuentaRemuneradaPlus.condicionesCorto,
-        fecha: format(crear Fecha(), 'yyyy-MM-dd'),
-      },
+      }))
     ];
   } capturar (error) {
     logError(log, error)
