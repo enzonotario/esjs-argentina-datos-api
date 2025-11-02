@@ -1,18 +1,5 @@
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 
 exportar asincrono funcion guardarPlazoFijo(items) {
-  const actual = esperar leerRuta('/finanzas/tasas/plazoFijo')
-
-  const valores = [
-    ...actual.mapear(itemActual => {
-      si (items.buscar(i => i.entidad === itemActual.entidad)) {
-        retornar items.buscar(i => i.entidad === itemActual.entidad);
-      }
-
-      retornar itemActual
-    }),
-    ...items.filtrar(item => !actual.buscar(i => i.entidad === item.entidad)),
-  ]
-
-  retornar escribirRuta('/finanzas/tasas/plazoFijo', valores)
+  retornar escribirRuta('/finanzas/tasas/plazoFijo', items)
 }
