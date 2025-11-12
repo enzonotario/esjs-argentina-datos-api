@@ -37,7 +37,9 @@ exportar funcion logError(grupo, error) {
   grupo.error({
     msg: 'Error',
     errorMessage: error.message,
+    errorName: error.name,
     errorStack: error.stack,
+    errorType: error.constructor ? error.constructor.nombre : 'Desconocido',
   })
 }
 
