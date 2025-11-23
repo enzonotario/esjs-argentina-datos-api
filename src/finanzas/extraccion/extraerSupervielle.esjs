@@ -12,7 +12,7 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
   intentar {
     const datos = esperar scrapearConFirecrawl(log, {
       url: 'https://www.supervielle.com.ar/personas/cuentas/cuenta-remunerada',
-      prompt: 'Extrae la tasa de la cuenta remunerada de Supervielle en formato JSON. Para la TNA usa números decimales (por ejemplo 0.75 para 75%).',
+      prompt: 'Extrae la tasa de la cuenta remunerada en pesos de Supervielle en formato JSON. Para la TNA usa números decimales (por ejemplo 0.75 para 75%).',
       schema: {
         tna: {
           type: 'number',
