@@ -1,7 +1,6 @@
-importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { format } desde 'date-fns'
-importar { logGrupo, logError, logMensaje } desde '@/log.esjs'
-importar { scrapearConFirecrawl } desde './firecrawl.esjs'
+importar { logGrupo, logError } desde '@/log.esjs'
+importar axios desde 'axios'
 
 exportar asincrono funcion extraerCresiumCuentaRemunerada() {
   const log = logGrupo({
@@ -10,30 +9,22 @@ exportar asincrono funcion extraerCresiumCuentaRemunerada() {
   })
 
   intentar {
-    const datos = esperar scrapearConFirecrawl(log, {
-      url: 'https://cresium.com/',
-      prompt:
-        'Extrae la tasa de la cuenta remunerada de Cresium en formato JSON. Para la TNA usa números decimales (por ejemplo 0.75 para 75%).',
-      schema: {
-        tna: {
-          type: 'number',
-        },
-      },
-      required: ['tna', 'tope'],
-    })
+    const respuesta = esperar axios.get(import.meta.env.VITE_FINANZAS_CRESIUM_URL)
 
-    si (datos.tna === nulo) {
-      logMensaje(log, 'TNA nulo en respuesta de Firecrawl', { datos })
-      lanzar crear Error('TNA nulo en la respuesta de Firecrawl')
+    si (
+      !respuesta ||
+      !respuesta.data ||
+      !respuesta.data.data ||
+      respuesta.data.data.value == nulo
+    ) {
+      lanzar crear Error(
+        'No se encontró el valor de TNA en la respuesta de la API',
+      )
     }
 
-    const valor = Numero(datos.tna)
-
-    si (valor === nulo) {
-      lanzar crear Error('No se encontró el valor de la cuenta remunerada')
-    }
-
-    const tna = Numero((valor).fijarDecimales(4))
+    // El valor viene como porcentaje (ej: 24 para 24%), lo convertimos a decimal
+    const valorPorcentaje = Numero(respuesta.data.data.value)
+    const tna = Numero((valorPorcentaje / 100).fijarDecimales(4))
 
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 

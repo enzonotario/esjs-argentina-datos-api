@@ -21,6 +21,7 @@ exportar asincrono funcion extraerSerieOtros() {
     esperar extraerFiwindARS(),
     esperar extraerCarrefourCuentaRemunerada(),
     esperar extraerMontemarPayCuentaRemunerada(),
+    esperar extraerCresiumCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
   guardarValores(valoresActuales, valoresExtraidos)
@@ -31,7 +32,6 @@ exportar asincrono funcion extraerSerieOtrosIA() {
 
   const valoresExtraidos = [
     esperar extraerSupervielleCuentaRemunerada(),
-    esperar extraerCresiumCuentaRemunerada(),
     ...(esperar extraerUalaCuentaRemunerada()),
   ].filtrar(item => item.fondo)
 
