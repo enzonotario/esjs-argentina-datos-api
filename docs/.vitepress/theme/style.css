@@ -22,10 +22,10 @@
     text-center
 }
 
-.VPNavBar.top, .dark .VPNavBar.top {
-    background-color: transparent !important;
-    backdrop-filter: none !important;
-}
+/*.VPNavBar.top, .dark .VPNavBar.top {*/
+    /*background-color: transparent !important;*/
+    /*backdrop-filter: none !important;*/
+/*}*/
 .VPNavBar {
     background-color: rgba(255, 255, 255, .7) !important;
     backdrop-filter: blur(12px);
@@ -41,10 +41,25 @@
     transition: background-color 0.3s ease-in-out;
 }
 .VPNavBar.top .divider, .dark .VPNavBar.top .divider {
-    background-color: transparent !important;
+    background-color: var(--vp-c-gutter) !important;
 }
 .VPNavBar:not(.home.top) .divider-line {
-    background-color: transparent !important;
+    background-color: var(--vp-c-gutter) !important;
+}
+@media (min-width: 960px) {
+    .VPNavBar.has-sidebar .divider {
+        padding-left: 0 !important;
+    }
+}
+@media (min-width: 1440px) {
+    .VPNavBar.has-sidebar .divider {
+        padding-left: 0 !important;
+    }
+}
+@media (min-width: 960px) {
+    .VPNavBarTitle.has-sidebar .title {
+        border-bottom-color: transparent !important;
+    }
 }
 
 .VPLocalNav {
