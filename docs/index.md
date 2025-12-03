@@ -46,16 +46,6 @@ head:
 import Home from '@theme/components/Home.vue';
 </script>
 
-<span v-if="false" class="i-mdi-currency-usd" /> <!-- Force import -->
+<span v-if="false" class="i-mdi-currency-usd i-mdi-code-json i-mdi-chart-areaspline i-mdi-account-group i-mdi-account-multiple i-mdi-book-open-variant i-mdi-github i-mdi-open-in-new i-mdi-heart" />
 
 <Home />
-
-<div class="text-center">
-
-<h2>Sponsors</h2>
-
-<div class="flex justify-center">
-<SponsorsAvatars />
-</div>
-
-</div>
