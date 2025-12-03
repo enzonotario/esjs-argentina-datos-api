@@ -266,7 +266,7 @@ const dataSources = {
         <SponsorsAvatars :size="52" />
       </div>
 
-      <div class="ads-wrapper">
+      <div class="banner-wrapper">
         <Ads />
       </div>
     </section>
@@ -942,7 +942,7 @@ const dataSources = {
   justify-content: center;
 }
 
-.ads-wrapper {
+.banner-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
