@@ -1,0 +1,21 @@
+exportar asincrono funcion extraerBelo() {
+  intentar {
+    const respuesta = esperar fetch('https://api.belo.app/public/yield-rates')
+    const datos = esperar respuesta.json()
+
+    si (!datos.AR || !datos.AR.ARGt) {
+      retornar []
+    }
+
+    retornar [
+      {
+        token: 'ARGt',
+        entidad: 'belo',
+        tna: interpretarDecimal(datos.AR.ARGt),
+      },
+    ];
+  } capturar (error) {
+    consola.error('Error al extraer datos de Belo', error)
+    retornar []
+  }
+}

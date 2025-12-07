@@ -25,7 +25,8 @@
     "senado:test": "cd packages/senado && pnpm test",
     "senado:test:run": "cd packages/senado && pnpm run test:run",
     "diputados:test": "cd packages/diputados && pnpm test",
-    "diputados:test:run": "cd packages/diputados && pnpm run test:run"
+    "diputados:test:run": "cd packages/diputados && pnpm run test:run",
+    "migrate": "node scripts/migrate.js"
   },
   "devDependencies": {
     "@es-js/vite-plugin-esjs": "^0.1.0-beta.2",
@@ -57,5 +58,10 @@
     "plugins": [
       "prettier-plugin-esjs"
     ]
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "better-sqlite3": "^12.5.0",
+    "db-static-api": "0.0.1-alpha.0"
   }
 }

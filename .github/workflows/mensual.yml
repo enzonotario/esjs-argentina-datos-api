@@ -62,6 +62,8 @@ jobs:
           echo "VITE_FINANZAS_RENDIMIENTOS_UALA_URL=${{ secrets.VITE_FINANZAS_RENDIMIENTOS_UALA_URL }}" >> .env
           echo "VITE_CARREFOUR_API_URL=${{ secrets.VITE_CARREFOUR_API_URL }}" >> .env
           echo "VITE_FINANZAS_CRESIUM_URL=${{ secrets.VITE_FINANZAS_CRESIUM_URL }}" >> .env
+          echo "VITE_TURSO_DATABASE_URL=${{ secrets.VITE_TURSO_DATABASE_URL }}" >> .env
+          echo "VITE_TURSO_AUTH_TOKEN=${{ secrets.VITE_TURSO_AUTH_TOKEN }}" >> .env
 
       - name: Install dependencies
         run: pnpm install
