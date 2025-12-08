@@ -384,6 +384,32 @@
         "operationId": "get-finanzas-tasas-depositos-30-dias"
       }
     },
+    "/v1/finanzas/criptopesos": {
+      "get": {
+        "summary": "Criptopesos",
+        "tags": [
+          "Finanzas",
+          "Tasas"
+        ],
+        "description": "Tasas Nominales Anuales (TNA) de criptopesos por entidad.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de tasas de criptopesos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Criptopeso"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-criptopesos"
+      }
+    },
     "/v1/finanzas/fci/mercadoDinero/{fecha}": {
       "get": {
         "summary": "Mercado de dinero",
@@ -1051,6 +1077,32 @@
           "Example 1": {
             "entidad": "Banco de la Nación Argentina",
             "tna": 123.45
+          }
+        }
+      },
+      "Criptopeso": {
+        "title": "Criptopeso",
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "Token del criptopeso (ej: ARGt, wARS)"
+          },
+          "entidad": {
+            "type": "string",
+            "description": "Nombre de la entidad que ofrece el criptopeso"
+          },
+          "tna": {
+            "type": "number",
+            "description": "Tasa Nominal Anual en porcentaje",
+            "format": "float"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "token": "ARGt",
+            "entidad": "Belo",
+            "tna": 0.25
           }
         }
       },
