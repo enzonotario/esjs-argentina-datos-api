@@ -158,7 +158,7 @@ function parseCsv(csv: string): Diputado[] {
         foto: getFoto(id),
       } as Diputado
     })
-    .filter(diputado => diputado && diputado.juramentoFecha && diputado.periodoMandato.inicio)
+    .filter(diputado => diputado && diputado.periodoMandato.inicio)
 }
 
 function parseNombreApellido(texto: string) {
