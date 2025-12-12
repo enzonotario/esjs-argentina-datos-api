@@ -44,6 +44,12 @@ jobs:
       - uses: pnpm/action-setup@v4
         name: Install pnpm
 
+      - name: Create .env file
+        run: |
+          touch .env
+          echo "VITE_TURSO_DATABASE_URL=${{ secrets.VITE_TURSO_DATABASE_URL }}" >> .env
+          echo "VITE_TURSO_AUTH_TOKEN=${{ secrets.VITE_TURSO_AUTH_TOKEN }}" >> .env
+
       - name: Install dependencies
         run: pnpm install
 

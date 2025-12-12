@@ -1,15 +1,16 @@
 import type { ActaData } from './parseActa.ts'
+import { shouldWriteFromDatabase, shouldWriteJsonFiles } from '@argentinadatos/core/src/utils/database-mode.ts'
 import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
+import { ActasDatabaseService } from './database/service.ts'
 import { downloadPdf } from './downloadPdf.ts'
 import { parseActa } from './parseActa.ts'
 
 export async function crawlActas({ year }: { year?: number } = {}): Promise<
   ActaData[]
 > {
-  const output: ActaData[] = []
   const yearToSearch = year || new Date().getFullYear()
 
   const response = await fetch('https://www.senado.gob.ar/votaciones/actas', {
@@ -24,10 +25,10 @@ export async function crawlActas({ year }: { year?: number } = {}): Promise<
 
   const $ = cheerio.load(html)
 
-  const actas = $('table#actasTable tbody tr')
+  const actasRows = $('table#actasTable tbody tr')
 
   const firstActaId = Number(
-    actas
+    actasRows
       .eq(0)
       .find('td a')
       .attr('href')
@@ -35,7 +36,7 @@ export async function crawlActas({ year }: { year?: number } = {}): Promise<
       .pop(),
   )
 
-  await Promise.all(
+  const actas = await Promise.all(
     Array.from({ length: 100 }, (_, i) => {
       const actaId = firstActaId + i - 50
 
@@ -43,11 +44,44 @@ export async function crawlActas({ year }: { year?: number } = {}): Promise<
     }),
   )
 
-  saveByYear(output, yearToSearch)
+  const validActas = actas.filter(Boolean) as ActaData[]
 
-  saveAll(output)
+  if (shouldWriteJsonFiles()) {
+    saveByYear(validActas, yearToSearch)
+    saveAll(validActas)
+  }
 
-  return output
+  const TURSO_DATABASE_URL = process.env.VITE_TURSO_DATABASE_URL
+  const TURSO_AUTH_TOKEN = process.env.VITE_TURSO_AUTH_TOKEN
+
+  if (TURSO_DATABASE_URL && TURSO_AUTH_TOKEN && shouldWriteFromDatabase()) {
+    const db = new ActasDatabaseService(TURSO_DATABASE_URL, TURSO_AUTH_TOKEN)
+
+    try {
+      await db.initialize()
+
+      const timestamp = new Date().toISOString()
+
+      const itemsToInsert = validActas
+        .filter(acta => acta.actaId)
+        .map(acta => ({
+          actaId: acta.actaId!,
+          año: yearToSearch,
+          data: acta,
+          timestamp,
+        }))
+
+      await db.insertBatchActas(itemsToInsert)
+
+      await generateEndpointEstatico(db, yearToSearch)
+      await generateEndpointEstaticoAll(db)
+    }
+    finally {
+      db.close()
+    }
+  }
+
+  return validActas
 }
 
 async function scrapeActas(actaId: number): Promise<string> {
@@ -86,7 +120,9 @@ async function processActa(
 
     const acta = await parseActa(actaId, finalTitulo, pdfPath)
 
-    writeEndpoint(`/senado/actas/${yearToSearch}/${actaId}`, acta)
+    if (shouldWriteJsonFiles()) {
+      writeEndpoint(`/senado/actas/${yearToSearch}/${actaId}`, acta)
+    }
 
     return acta
   }
@@ -98,6 +134,10 @@ async function processActa(
 }
 
 function saveByYear(data: any, year: number) {
+  if (!shouldWriteJsonFiles()) {
+    return data
+  }
+
   const currentValues = readEndpoint(`/senado/actas/${year}`) || '[]'
 
   const currentData = JSON.parse(currentValues)
@@ -114,6 +154,10 @@ function saveByYear(data: any, year: number) {
 }
 
 function saveAll(data: any) {
+  if (!shouldWriteJsonFiles()) {
+    return data
+  }
+
   const currentValues = readEndpoint('/senado/actas') || '[]'
 
   const currentData = JSON.parse(currentValues)
@@ -125,4 +169,16 @@ function saveAll(data: any) {
     .all()
 
   writeEndpoint('/senado/actas', newData)
+}
+
+async function generateEndpointEstatico(db: ActasDatabaseService, año: number) {
+  const todosLosDatos = await db.getActasByAño(año)
+
+  writeEndpoint(`/senado/actas/${año}`, todosLosDatos)
+}
+
+async function generateEndpointEstaticoAll(db: ActasDatabaseService) {
+  const todosLosDatos = await db.getAllActas()
+
+  writeEndpoint('/senado/actas', todosLosDatos)
 }

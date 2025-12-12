@@ -4,12 +4,14 @@ import { readStaticBuffer } from '@argentinadatos/core/src/utils/readStaticBuffe
 import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import { writeStaticBuffer } from '@argentinadatos/core/src/utils/writeStaticBuffer.ts'
+import { shouldWriteJsonFiles, shouldWriteFromDatabase } from '@argentinadatos/core/src/utils/database-mode.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { formatISO, parseISO } from 'date-fns'
 import iconv from 'iconv-lite'
 import { BASE_URL, USER_AGENT } from '../../constants.ts'
+import { DiputadosDatabaseService } from './database/service.ts'
 
 export interface Diputado {
   id: string
@@ -60,9 +62,42 @@ export async function crawlDiputados(): Promise<Diputado[]> {
     )
   }
 
-  writeEndpoint('diputados/diputados', diputados)
+  if (shouldWriteJsonFiles()) {
+    writeEndpoint('diputados/diputados', diputados)
+  }
+
+  const TURSO_DATABASE_URL = process.env.VITE_TURSO_DATABASE_URL
+  const TURSO_AUTH_TOKEN = process.env.VITE_TURSO_AUTH_TOKEN
+
+  if (TURSO_DATABASE_URL && TURSO_AUTH_TOKEN && shouldWriteFromDatabase()) {
+    const db = new DiputadosDatabaseService(TURSO_DATABASE_URL, TURSO_AUTH_TOKEN)
+
+    try {
+      await db.initialize()
+
+      const timestamp = new Date().toISOString()
+
+      const itemsToInsert = diputados.map(diputado => ({
+        diputado,
+        timestamp,
+      }))
+
+      await db.insertBatchDiputados(itemsToInsert)
+
+      await generateEndpointEstatico(db)
+    }
+    finally {
+      db.close()
+    }
+  }
 
   return diputados
+}
+
+async function generateEndpointEstatico(db: DiputadosDatabaseService) {
+  const todosLosDatos = await db.getAllDiputados()
+
+  writeEndpoint('diputados/diputados', todosLosDatos)
 }
 
 async function parsePage(url: string) {

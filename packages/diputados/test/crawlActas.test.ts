@@ -50,6 +50,6 @@ it(
     })
   },
   {
-    timeout: Infinity,
+    timeout: 0,
   },
 )

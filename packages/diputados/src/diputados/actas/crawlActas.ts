@@ -1,4 +1,5 @@
 import type { Collection } from 'collect.js'
+import { shouldWriteFromDatabase, shouldWriteJsonFiles } from '@argentinadatos/core/src/utils/database-mode.ts'
 import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
 import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
@@ -7,6 +8,7 @@ import * as cheerio from 'cheerio'
 import { collect } from 'collect.js'
 import { getYear, parse } from 'date-fns'
 import { USER_AGENT, VOTACIONES_BASE_URL } from '../../constants.ts'
+import { ActasDatabaseService } from './database/service.ts'
 
 enum TipoVoto {
   Afirmativo = 'afirmativo',
@@ -69,24 +71,70 @@ export async function crawlActas(): Promise<Acta[]> {
     )
     .sortBy('fecha')
     .all() as Acta[]
-  writeEndpoint('diputados/actas', actas)
 
-  // Save actas by year.
-  collect(actas)
-    .groupBy((acta: Acta) => getYear(acta.fecha))
-    // @ts-expect-error: TS can't infer the type of the collection
-    .map((actas: Collection<Acta>, year: number) => ({
-      year,
-      actas: actas
-        .sortBy('fecha')
-        .all(),
-    }))
-    .each(({ year, actas }) => writeEndpoint(`diputados/actas/${year}`, actas))
+  if (shouldWriteJsonFiles()) {
+    writeEndpoint('diputados/actas', actas)
 
-  // Update diputados with missing photos.
-  writeEndpoint('diputados/diputados', diputados)
+    collect(actas)
+      .groupBy((acta: Acta) => getYear(acta.fecha))
+      // @ts-expect-error: TS can't infer the type of the collection
+      .map((actas: Collection<Acta>, year: number) => ({
+        year,
+        actas: actas
+          .sortBy('fecha')
+          .all(),
+      }))
+      .each(({ year, actas }) => writeEndpoint(`diputados/actas/${year}`, actas))
+
+    writeEndpoint('diputados/diputados', diputados)
+  }
+
+  const TURSO_DATABASE_URL = process.env.VITE_TURSO_DATABASE_URL
+  const TURSO_AUTH_TOKEN = process.env.VITE_TURSO_AUTH_TOKEN
+
+  if (TURSO_DATABASE_URL && TURSO_AUTH_TOKEN && shouldWriteFromDatabase()) {
+    const db = new ActasDatabaseService(TURSO_DATABASE_URL, TURSO_AUTH_TOKEN)
+
+    try {
+      await db.initialize()
+
+      const timestamp = new Date().toISOString()
+
+      const itemsToInsert = actas.map(acta => ({
+        acta,
+        año: getYear(acta.fecha),
+        timestamp,
+      }))
+
+      await db.insertBatchActas(itemsToInsert)
+
+      await generateEndpointEstatico(db, actas)
+    }
+    finally {
+      db.close()
+    }
+  }
 
   return actas
+}
+
+async function generateEndpointEstatico(db: ActasDatabaseService, actas: Acta[]) {
+  const todosLosDatos = await db.getAllActas()
+
+  writeEndpoint('diputados/actas', todosLosDatos)
+
+  const years = collect(actas)
+    .groupBy((acta: Acta) => getYear(acta.fecha))
+    .all()
+
+  for (const [year, actasByYear] of Object.entries(years)) {
+    const yearNum = Number(year)
+    if (isNaN(yearNum) || !isFinite(yearNum)) {
+      continue
+    }
+    const actasData = await db.getActasByAño(yearNum)
+    writeEndpoint(`diputados/actas/${year}`, actasData)
+  }
 }
 
 async function fetchWithRetry(url: string, retries = 3) {
@@ -127,11 +175,12 @@ async function getVotacionesUrls(currentIds: string[]) {
 
   const firstId = firstLink.split('/').pop() as string
 
-  const take = 50
+  const idsToRight = Array.from({ length: 50 }, (_, i) => String(Number(firstId) + i))
+  const idsToLeft = Array.from({ length: 50 }, (_, i) => String(Number(firstId) - i - 1))
 
-  const ids = Array.from({ length: take + 1 }, (_, i) => String(Number(firstId) + i - take))
+  const allIds = [...idsToRight, ...idsToLeft]
 
-  return ids
+  return allIds
     .filter(id => !currentIds.includes(id))
     .map(id => `${VOTACIONES_BASE_URL}/votacion/${id}`)
 }

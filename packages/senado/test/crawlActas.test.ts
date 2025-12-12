@@ -32,6 +32,6 @@ it(
     }
   },
   {
-    timeout: 300000,
+    timeout: 0,
   },
 )

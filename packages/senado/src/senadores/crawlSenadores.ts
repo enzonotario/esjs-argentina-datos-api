@@ -3,9 +3,11 @@ import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
 import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
 import { writeEndpoint } from '@argentinadatos/core/src/utils/writeEndpoint.ts'
 import { writeStaticBuffer } from '@argentinadatos/core/src/utils/writeStaticBuffer.ts'
+import { shouldWriteJsonFiles, shouldWriteFromDatabase } from '@argentinadatos/core/src/utils/database-mode.ts'
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { format, parse } from 'date-fns'
+import { SenadoresDatabaseService } from './database/service.ts'
 
 export interface Senador {
   id: string
@@ -82,15 +84,41 @@ async function processJson() {
     }),
   )
 
-  writeEndpoint(
-    '/senado/senadores',
-    senadores.map((senador: Senador, i: number) => ({
-      ...senador,
-      foto: photos[i],
-    })),
-  )
+  const senadoresConFotos = senadores.map((senador: Senador, i: number) => ({
+    ...senador,
+    foto: photos[i],
+  }))
 
-  return senadores
+  if (shouldWriteJsonFiles()) {
+    writeEndpoint('/senado/senadores', senadoresConFotos)
+  }
+
+  const TURSO_DATABASE_URL = process.env.VITE_TURSO_DATABASE_URL
+  const TURSO_AUTH_TOKEN = process.env.VITE_TURSO_AUTH_TOKEN
+
+  if (TURSO_DATABASE_URL && TURSO_AUTH_TOKEN && shouldWriteFromDatabase()) {
+    const db = new SenadoresDatabaseService(TURSO_DATABASE_URL, TURSO_AUTH_TOKEN)
+
+    try {
+      await db.initialize()
+
+      const timestamp = new Date().toISOString()
+
+      const itemsToInsert = senadoresConFotos.map(senador => ({
+        senador,
+        timestamp,
+      }))
+
+      await db.insertBatchSenadores(itemsToInsert)
+
+      await generateEndpointEstatico(db)
+    }
+    finally {
+      db.close()
+    }
+  }
+
+  return senadoresConFotos
 }
 
 async function downloadJson() {
@@ -182,7 +210,40 @@ async function processWeb(): Promise<Senador[]> {
     }
   })
 
-  writeEndpoint('/senado/senadores', senadores)
+  if (shouldWriteJsonFiles()) {
+    writeEndpoint('/senado/senadores', senadores)
+  }
+
+  const TURSO_DATABASE_URL = process.env.VITE_TURSO_DATABASE_URL
+  const TURSO_AUTH_TOKEN = process.env.VITE_TURSO_AUTH_TOKEN
+
+  if (TURSO_DATABASE_URL && TURSO_AUTH_TOKEN && shouldWriteFromDatabase()) {
+    const db = new SenadoresDatabaseService(TURSO_DATABASE_URL, TURSO_AUTH_TOKEN)
+
+    try {
+      await db.initialize()
+
+      const timestamp = new Date().toISOString()
+
+      const itemsToInsert = senadores.map(senador => ({
+        senador,
+        timestamp,
+      }))
+
+      await db.insertBatchSenadores(itemsToInsert)
+
+      await generateEndpointEstatico(db)
+    }
+    finally {
+      db.close()
+    }
+  }
 
   return senadores
+}
+
+async function generateEndpointEstatico(db: SenadoresDatabaseService) {
+  const todosLosDatos = await db.getAllSenadores()
+
+  writeEndpoint('/senado/senadores', todosLosDatos)
 }

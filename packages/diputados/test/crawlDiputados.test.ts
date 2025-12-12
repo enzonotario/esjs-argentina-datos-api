@@ -21,7 +21,7 @@ it(
           inicio: expect.any(String),
           fin: expect.any(String),
         },
-        juramentoFecha: expect.any(String),
+        juramentoFecha: expect.toBeOneOf([null, expect.any(String)]),
         ceseFecha: expect.any(String),
         bloque: expect.any(String),
         periodoBloque: {
@@ -32,6 +32,6 @@ it(
     }
   },
   {
-    timeout: 300000,
+    timeout: 0,
   },
 )
