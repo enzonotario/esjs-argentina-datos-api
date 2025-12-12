@@ -158,6 +158,10 @@ importers:
         version: 3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@1.21.7)(yaml@2.7.1)
 
   packages/diputados:
+    dependencies:
+      '@libsql/client':
+        specifier: ^0.15.15
+        version: 0.15.15
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.3.0
@@ -200,6 +204,10 @@ importers:
         version: 3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@1.21.7)(yaml@2.7.1)
 
   packages/senado:
+    dependencies:
+      '@libsql/client':
+        specifier: ^0.15.15
+        version: 0.15.15
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.3.0
