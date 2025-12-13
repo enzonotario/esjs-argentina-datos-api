@@ -1,0 +1,33 @@
+importar { format } desde 'date-fns'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerLucaMoney() {
+  intentar {
+    const respuesta = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_LUCAMONEY_URL,
+    )
+
+    si (!respuesta.data || !respuesta.data.data) {
+      retornar []
+    }
+
+    const items = []
+    const fecha = format(crear Fecha(), 'yyyy-MM-dd')
+    const data = respuesta.data.data
+
+    const moneda = data.asset.aMayusculas()
+    const apy = Numero(data.apy_luca)
+
+    items.agregar({
+      moneda,
+      apy,
+      fecha,
+    })
+
+    retornar items
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
+
