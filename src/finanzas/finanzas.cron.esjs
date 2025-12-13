@@ -13,6 +13,8 @@ importar rendimientos desde '@/finanzas/rendimientos/rendimientos.comando.esjs'
 importar riesgoPais desde '@/finanzas/riesgoPais/riesgoPais.comando.esjs'
 importar { extraerBelo } desde '@/finanzas/criptopesos/extraccion/extraerBelo.esjs'
 importar { guardarCriptopesos } desde '@/finanzas/criptopesos/guardado/guardarCriptopesos.esjs'
+importar { extraerTna } desde '@/finanzas/hipotecariosUva/extraccion/extraerTna.esjs'
+importar { guardarTna } desde '@/finanzas/hipotecariosUva/guardado/guardarTna.esjs'
 
 importar { subMonths, addMonths, format, subDays, addDays } desde 'date-fns'
 
@@ -26,6 +28,7 @@ exportar asincrono funcion cronFinanzas() {
   esperar rendimientos()
   esperar riesgoPais()
   esperar criptopesos()
+  esperar hipotecariosUva()
 }
 
 asincrono funcion inflacionMensual() {
@@ -105,5 +108,15 @@ asincrono funcion criptopesos() {
     esperar guardarCriptopesos(datos)
   } capturar (error) {
     consola.error('Error al extraer criptopesos', error)
+  }
+}
+
+asincrono funcion hipotecariosUva() {
+  intentar {
+    const datos = extraerTna()
+
+    esperar guardarTna(datos)
+  } capturar (error) {
+    consola.error('Error al extraer TNA de hipotecarios UVA', error)
   }
 }

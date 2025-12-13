@@ -410,6 +410,32 @@
         "operationId": "get-finanzas-criptopesos"
       }
     },
+    "/v1/finanzas/hipotecarios-uva": {
+      "get": {
+        "summary": "Créditos Hipotecarios UVA - TNA",
+        "tags": [
+          "Finanzas",
+          "Tasas"
+        ],
+        "description": "Tasas Nominales Anuales (TNA) de créditos hipotecarios UVA por entidad bancaria.",
+        "responses": {
+          "200": {
+            "description": "Devuelve una lista de TNA de créditos hipotecarios UVA",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HipotecarioUvaTna"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-hipotecarios-uva"
+      }
+    },
     "/v1/finanzas/fci/mercadoDinero/{fecha}": {
       "get": {
         "summary": "Mercado de dinero",
@@ -1103,6 +1129,32 @@
             "token": "ARGt",
             "entidad": "Belo",
             "tna": 0.25
+          }
+        }
+      },
+      "HipotecarioUvaTna": {
+        "title": "HipotecarioUvaTna",
+        "type": "object",
+        "properties": {
+          "entidad": {
+            "type": "string",
+            "description": "Nombre oficial de la entidad bancaria que ofrece el crédito hipotecario UVA"
+          },
+          "nombreComercial": {
+            "type": "string",
+            "description": "Nombre comercial de la entidad bancaria"
+          },
+          "tna": {
+            "type": "number",
+            "description": "Tasa Nominal Anual en porcentaje",
+            "format": "float"
+          }
+        },
+        "x-examples": {
+          "Example 1": {
+            "entidad": "BANCO NACIÓN ARGENTINA",
+            "nombreComercial": "Banco Nación",
+            "tna": 6
           }
         }
       },
