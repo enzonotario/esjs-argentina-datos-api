@@ -410,12 +410,12 @@
         "operationId": "get-finanzas-criptopesos"
       }
     },
-    "/v1/finanzas/hipotecarios-uva": {
+    "/v1/finanzas/creditos/hipotecariosUva": {
       "get": {
         "summary": "Créditos Hipotecarios UVA",
         "tags": [
           "Finanzas",
-          "Tasas"
+          "Créditos"
         ],
         "description": "Tasas Nominales Anuales (TNA) de créditos hipotecarios UVA por entidad bancaria.",
         "responses": {
@@ -1147,7 +1147,7 @@
           },
           "tna": {
             "type": "number",
-            "description": "Tasa Nominal Anual en porcentaje",
+            "description": "Tasa Nominal Anual",
             "format": "float"
           }
         },
