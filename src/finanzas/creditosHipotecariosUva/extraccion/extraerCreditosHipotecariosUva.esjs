@@ -16,11 +16,16 @@ exportar asincrono funcion extraerCreditosHipotecariosUva() {
       },
     })
 
-    retornar respuesta.data.mapear(item => ({
-      entidad: item['Entidad'],
-      nombreComercial: item['Nombre Comercial'],
-      tnaPorcentaje: interpretarDecimalConComa(item['TNA Porcentaje']),
-    }))
+    retornar respuesta.data.mapear(item => {
+      const porcentaje = interpretarDecimalConComa(item['TNA Porcentaje'])
+      const tna = porcentaje ? porcentaje / 100 : nulo
+
+      retornar {
+        entidad: item['Entidad'],
+        nombreComercial: item['Nombre Comercial'],
+        tna,
+      }
+    })
   } capturar (error) {
     consola.error('Error al extraer créditos hipotecarios UVA', error)
     retornar []
