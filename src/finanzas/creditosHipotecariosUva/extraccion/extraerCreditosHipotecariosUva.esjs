@@ -1,0 +1,29 @@
+importar axios desde 'axios'
+importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
+
+exportar asincrono funcion extraerCreditosHipotecariosUva() {
+  intentar {
+    const url = import.meta.env.VITE_FINANZAS_CREDITOS_HIPOTECARIOS_UVA_SHEETDB_URL
+    const token = import.meta.env.VITE_FINANZAS_CREDITOS_HIPOTECARIOS_UVA_SHEETDB_TOKEN
+
+    si (!url || !token) {
+      lanzar crear Error('VITE_FINANZAS_CREDITOS_HIPOTECARIOS_UVA_SHEETDB_URL y VITE_FINANZAS_CREDITOS_HIPOTECARIOS_UVA_SHEETDB_TOKEN deben estar definidos')
+    }
+
+    const respuesta = esperar axios.get(url, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+
+    retornar respuesta.data.mapear(item => ({
+      entidad: item['Entidad'],
+      nombreComercial: item['Nombre Comercial'],
+      tnaPorcentaje: interpretarDecimalConComa(item['TNA Porcentaje']),
+    }))
+  } capturar (error) {
+    consola.error('Error al extraer créditos hipotecarios UVA', error)
+    retornar []
+  }
+}
+

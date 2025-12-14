@@ -15,6 +15,10 @@ importar { extraerBelo } desde '@/finanzas/criptopesos/extraccion/extraerBelo.es
 importar { guardarCriptopesos } desde '@/finanzas/criptopesos/guardado/guardarCriptopesos.esjs'
 importar { extraerTna } desde '@/finanzas/hipotecariosUva/extraccion/extraerTna.esjs'
 importar { guardarTna } desde '@/finanzas/hipotecariosUva/guardado/guardarTna.esjs'
+importar { extraerCreditosHipotecariosUva } desde '@/finanzas/creditosHipotecariosUva/extraccion/extraerCreditosHipotecariosUva.esjs'
+importar { guardarCreditosHipotecariosUva } desde '@/finanzas/creditosHipotecariosUva/guardado/guardarCreditosHipotecariosUva.esjs'
+importar { extraerInflacionREM } desde '@/finanzas/inflacionREM/extraccion/extraerInflacionREM.esjs'
+importar { guardarInflacionREM } desde '@/finanzas/inflacionREM/guardado/guardarInflacionREM.esjs'
 
 importar { subMonths, addMonths, format, subDays, addDays } desde 'date-fns'
 
@@ -29,6 +33,8 @@ exportar asincrono funcion cronFinanzas() {
   esperar riesgoPais()
   esperar criptopesos()
   esperar hipotecariosUva()
+  esperar creditosHipotecariosUva()
+  esperar inflacionREM()
 }
 
 asincrono funcion inflacionMensual() {
@@ -118,5 +124,25 @@ asincrono funcion hipotecariosUva() {
     esperar guardarTna(datos)
   } capturar (error) {
     consola.error('Error al extraer TNA de hipotecarios UVA', error)
+  }
+}
+
+asincrono funcion creditosHipotecariosUva() {
+  intentar {
+    const datos = esperar extraerCreditosHipotecariosUva()
+
+    esperar guardarCreditosHipotecariosUva(datos)
+  } capturar (error) {
+    consola.error('Error al extraer créditos hipotecarios UVA', error)
+  }
+}
+
+asincrono funcion inflacionREM() {
+  intentar {
+    const datos = esperar extraerInflacionREM()
+
+    esperar guardarInflacionREM(datos)
+  } capturar (error) {
+    consola.error('Error al extraer inflación REM', error)
   }
 }

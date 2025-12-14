@@ -1,0 +1,6 @@
+importar { escribirRuta } desde '@/utils/rutas.esjs'
+
+exportar asincrono funcion guardarCreditosHipotecariosUva(items) {
+  retornar escribirRuta('/finanzas/creditos/hipotecariosUva', items)
+}
+

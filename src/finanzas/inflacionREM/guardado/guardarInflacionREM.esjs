@@ -1,0 +1,6 @@
+importar { escribirRuta } desde '@/utils/rutas.esjs'
+
+exportar asincrono funcion guardarInflacionREM(items) {
+  retornar escribirRuta('/finanzas/inflacion/rem', items)
+}
+
