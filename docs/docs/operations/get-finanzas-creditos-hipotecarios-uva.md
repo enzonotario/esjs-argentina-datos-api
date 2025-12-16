@@ -10,11 +10,11 @@ import { useRoute } from 'vitepress'
 const route = useRoute()
 </script>
 
-<OAOperation operation-id="get-finanzas-hipotecarios-uva">
+<OAOperation operation-id="get-finanzas-creditos-hipotecarios-uva">
 
 <template #footer="footer">
 
-<!--@include: ./parts/get-finanzas-hipotecarios-uva-footer.md -->
+<!--@include: ./parts/get-finanzas-creditos-hipotecarios-uva-footer.md -->
 
 </template>
 

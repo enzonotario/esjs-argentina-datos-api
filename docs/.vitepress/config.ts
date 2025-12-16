@@ -229,4 +229,9 @@ export default defineConfig({
     sitemap.end()
     await new Promise(resolve => writeStream.on('finish', resolve))
   },
+
+  rewrites: {
+    '/docs/get-finanzas-hipotecarios-uva.html': '/docs/get-finanzas-creditos-hipotecarios-uva.html',
+    '/docs/get-finanzas-hipotecarios-uva': '/docs/get-finanzas-creditos-hipotecarios-uva.html',
+  },
 })
