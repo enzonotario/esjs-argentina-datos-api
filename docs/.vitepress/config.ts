@@ -231,7 +231,7 @@ export default defineConfig({
   },
 
   rewrites: {
-    '/docs/get-finanzas-hipotecarios-uva.html': '/docs/get-finanzas-creditos-hipotecarios-uva.html',
-    '/docs/get-finanzas-hipotecarios-uva': '/docs/get-finanzas-creditos-hipotecarios-uva.html',
+    '/docs/operations/get-finanzas-hipotecarios-uva.html': '/docs/operations/get-finanzas-creditos-hipotecarios-uva.html',
+    '/docs/operations/get-finanzas-hipotecarios-uva': '/docs/operations/get-finanzas-creditos-hipotecarios-uva.html',
   },
 })
