@@ -9,6 +9,7 @@ import { extraerRipio } from '@/finanzas/rendimientos/extraerRipio.esjs'
 import { extraerSatoshiTango } from '@/finanzas/rendimientos/extraerSatoshiTango.esjs'
 import { extraerLucaMoney } from '@/finanzas/rendimientos/extraerLucaMoney.esjs'
 import { extraerDecrypto } from '@/finanzas/rendimientos/extraerDecrypto.esjs'
+import { extraerVesseo } from '@/finanzas/rendimientos/extraerVesseo.esjs'
 
 function testItems(items) {
   expect(items.length).toBeGreaterThan(0)
@@ -71,6 +72,12 @@ describe('extraerRendimientos', () => {
 
   it('guarda decrypto', async () => {
     const items = await extraerDecrypto()
+
+    testItems(items)
+  })
+
+  it('guarda vesseo', async () => {
+    const items = await extraerVesseo()
 
     testItems(items)
   })

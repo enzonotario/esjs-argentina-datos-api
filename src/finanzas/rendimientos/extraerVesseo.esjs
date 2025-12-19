@@ -1,0 +1,35 @@
+importar { format } desde 'date-fns'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerVesseo() {
+  intentar {
+    const respuesta = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_VESSEO_URL,
+    )
+
+    si (!respuesta.data || !respuesta.data.yield || !respuesta.data.ratesBaseAmounts) {
+      retornar []
+    }
+
+    const items = []
+    const fecha = format(crear Fecha(), 'yyyy-MM-dd')
+    const yieldRate = Numero(respuesta.data.yield.rate)
+    const apy = yieldRate * 100
+
+    const usdcKey = Object.claves(respuesta.data.ratesBaseAmounts).buscar(clave => clave.incluye('USDC'))
+
+    si (usdcKey) {
+      items.agregar({
+        moneda: 'USDC',
+        apy,
+        fecha,
+      })
+    }
+
+    retornar items
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
+
