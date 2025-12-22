@@ -5,11 +5,64 @@ importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
 importar { extraerSerieOtros } desde '@/finanzas/fci/extraerSerieOtros.esjs'
+importar { extraerUalaCuentaRemuneradaDesdeSheets } desde '@/finanzas/extraccion/extraerUalaDesdeSheets.esjs'
 importar { logGrupo, logError } desde '@/log.esjs'
 
 exportar porDefecto asincrono funcion () {
   esperar extraerSeriesDesdeCacfi()
   esperar extraerSerieOtros()
+  esperar extraerUalaDesdeSheets()
+}
+
+asincrono funcion extraerUalaDesdeSheets() {
+  const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
+  const valoresExtraidos = (esperar extraerUalaCuentaRemuneradaDesdeSheets()).filtrar(item => item.fondo)
+
+  si (valoresExtraidos.longitud === 0) {
+    retornar
+  }
+
+  const fondosUala = ['UALA', 'UALA PLUS 1', 'UALA PLUS 2']
+  const valoresActualesUala = valoresActuales.filtrar(v => fondosUala.incluye(v.fondo))
+
+  para (var i = 0; i < valoresExtraidos.length; i++) {
+    const valorExtraido = valoresExtraidos[i]
+    const valorActual = valoresActualesUala.buscar(v => v.fondo === valorExtraido.fondo)
+
+    si (valorActual) {
+      si (valorActual.tope !== nulo && valorActual.tope !== indefinido) {
+        valorExtraido.tope = valorActual.tope
+      }
+      si (valorActual.condiciones !== nulo && valorActual.condiciones !== indefinido) {
+        valorExtraido.condiciones = valorActual.condiciones
+      }
+      si (valorActual.condicionesCorto !== nulo && valorActual.condicionesCorto !== indefinido) {
+        valorExtraido.condicionesCorto = valorActual.condicionesCorto
+      }
+    }
+  }
+
+  const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))
+    .groupBy('fondo').mapear(valoresNuevos =>
+      collect(valoresNuevos).sortByDesc('fecha').unique('fecha').first(),
+    )
+    .toArray()
+
+  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
+  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
+
+  esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
+
+  intentar {
+    esperar escribirRuta(
+      '/finanzas/fci/otros/penultimo',
+      leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || [],
+    )
+  } capturar {}
+
+  intentar {
+    esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, valoresNuevos)
+  } capturar {}
 }
 
 asincrono funcion extraerSeriesDesdeCacfi() {

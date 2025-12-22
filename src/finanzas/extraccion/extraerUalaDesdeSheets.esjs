@@ -1,0 +1,133 @@
+importar axios desde 'axios'
+importar { format, parse, isAfter, differenceInDays } desde 'date-fns'
+importar { logGrupo, logError } desde '@/log.esjs'
+importar { interpretarDecimalConComa } desde '@/utils/numeros.esjs'
+
+exportar asincrono funcion extraerUalaCuentaRemuneradaDesdeSheets() {
+  const log = logGrupo({
+    fuente: 'extraerUalaDesdeSheets',
+    tipo: 'cuentaRemunerada',
+  })
+
+  intentar {
+    const apiKey = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY
+    const spreadsheetId = import.meta.env.VITE_GOOGLE_SHEETS_SPREADSHEET_ID
+
+    si (!apiKey) {
+      lanzar crear Error('VITE_GOOGLE_SHEETS_API_KEY debe estar definido')
+    }
+
+    si (!spreadsheetId) {
+      lanzar crear Error('VITE_GOOGLE_SHEETS_SPREADSHEET_ID debe estar definido')
+    }
+
+    const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/A:G?key=${apiKey}`
+
+    const respuesta = esperar axios.get(url)
+
+    si (!respuesta.data || !respuesta.data.values || respuesta.data.values.length === 0) {
+      logError(log, crear Error('No se encontraron datos en el Google Sheet'))
+      retornar []
+    }
+
+    const filas = respuesta.data.values
+    const hoy = crear Fecha()
+    hoy.setHours(0, 0, 0, 0)
+
+    var fechaMasCercana = nulo
+    var indiceFilaMasCercana = -1
+    var diferenciaMinima = Infinito
+
+    para (var i = 1; i < filas.length; i++) {
+      const fila = filas[i]
+      si (!fila || fila.length === 0 || !fila[0]) {
+        continuar
+      }
+
+      intentar {
+        const fechaTexto = fila[0].trim()
+        const fecha = parse(fechaTexto, 'dd/MM/yy', crear Fecha())
+        fecha.setHours(0, 0, 0, 0)
+
+        si (isAfter(fecha, hoy)) {
+          continuar
+        }
+
+        const diferencia = differenceInDays(hoy, fecha)
+
+        si (diferencia >= 0 && diferencia < diferenciaMinima) {
+          diferenciaMinima = diferencia
+          fechaMasCercana = fecha
+          indiceFilaMasCercana = i
+        }
+      } capturar (error) {
+        continuar
+      }
+    }
+
+    si (indiceFilaMasCercana === -1 || !fechaMasCercana) {
+      logError(log, crear Error('No se encontró una fecha válida anterior a hoy'))
+      retornar []
+    }
+
+    const filaSeleccionada = filas[indiceFilaMasCercana]
+    const fechaFormateada = format(fechaMasCercana, 'yyyy-MM-dd')
+
+    const tope = filaSeleccionada[1] && filaSeleccionada[1].trim() !== '' 
+      ? Numero(interpretarDecimalConComa(filaSeleccionada[1])) 
+      : nulo
+
+    const fondos = []
+
+    si (filaSeleccionada[2] && filaSeleccionada[2].trim() !== '') {
+      const tna = interpretarDecimalConComa(filaSeleccionada[2])
+      fondos.agregar({
+        fondo: 'UALA',
+        tna: Numero(tna.fijarDecimales(4)),
+        tea: Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4)),
+        tope,
+        fecha: fechaFormateada,
+        condiciones: nulo,
+        condicionesCorto: nulo,
+      })
+    }
+
+    si (filaSeleccionada[3] && filaSeleccionada[3].trim() !== '') {
+      const tna = interpretarDecimalConComa(filaSeleccionada[3])
+      const condicionesCorto = filaSeleccionada[5] && filaSeleccionada[5].trim() !== ''
+        ? filaSeleccionada[5].trim()
+        : nulo
+      fondos.agregar({
+        fondo: 'UALA PLUS 1',
+        tna: Numero(tna.fijarDecimales(4)),
+        tea: Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4)),
+        tope,
+        fecha: fechaFormateada,
+        condiciones: nulo,
+        condicionesCorto,
+      })
+    }
+
+    si (filaSeleccionada[4] && filaSeleccionada[4].trim() !== '') {
+      const tna = interpretarDecimalConComa(filaSeleccionada[4])
+      const condicionesCorto = filaSeleccionada[6] && filaSeleccionada[6].trim() !== ''
+        ? filaSeleccionada[6].trim()
+        : nulo
+      fondos.agregar({
+        fondo: 'UALA PLUS 2',
+        tna: Numero(tna.fijarDecimales(4)),
+        tea: Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4)),
+        tope,
+        fecha: fechaFormateada,
+        condiciones: nulo,
+        condicionesCorto,
+      })
+    }
+
+    retornar fondos
+  } capturar (error) {
+    logError(log, error)
+    retornar []
+  }
+}
+

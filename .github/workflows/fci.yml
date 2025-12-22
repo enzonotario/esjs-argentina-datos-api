@@ -71,6 +71,8 @@ jobs:
           echo "VITE_FINANZAS_CREDITOS_HIPOTECARIOS_UVA_SHEETDB_TOKEN=${{ secrets.VITE_FINANZAS_CREDITOS_HIPOTECARIOS_UVA_SHEETDB_TOKEN }}" >> .env
           echo "VITE_FINANZAS_INFLACION_REM_SHEETDB_URL=${{ secrets.VITE_FINANZAS_INFLACION_REM_SHEETDB_URL }}" >> .env
           echo "VITE_FINANZAS_INFLACION_REM_SHEETDB_TOKEN=${{ secrets.VITE_FINANZAS_INFLACION_REM_SHEETDB_TOKEN }}" >> .env
+          echo "VITE_GOOGLE_SHEETS_API_KEY=${{ secrets.VITE_GOOGLE_SHEETS_API_KEY }}" >> .env
+          echo "VITE_GOOGLE_SHEETS_SPREADSHEET_ID=${{ secrets.VITE_GOOGLE_SHEETS_SPREADSHEET_ID }}" >> .env
 
       - name: Install dependencies
         run: pnpm install
