@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import colors from 'tailwindcss/colors'
+import { format, parseISO } from 'date-fns'
 import { useApi } from '../../composables/useApi'
 import { useEcharts } from '../../composables/useEcharts'
 
@@ -37,13 +38,67 @@ async function setChartOptions() {
   setOptions({
     tooltip: {
       trigger: 'axis',
-      formatter: '{a} <br/>{b} : {c}%',
+      axisPointer: {
+        type: 'cross',
+      },
+      formatter: (params: any) => {
+        const date = params[0].axisValue
+        const value = parseFloat(params[0].value)
+        const dataIndex = seriesData.findIndex(item => item.fecha === date)
+        const currentItem = seriesData[dataIndex]
+        const prevItem = seriesData[dataIndex - 1]
+
+        if (!currentItem) {
+          return ''
+        }
+
+        const currentTasa = currentItem.valor * 100
+        const prevTasa = prevItem?.valor ? prevItem.valor * 100 : currentTasa
+        const variacion = currentTasa - prevTasa
+        const variacionPorcentaje = prevTasa !== 0
+          ? ((variacion / prevTasa) * 100).toFixed(2)
+          : '0.00'
+        const isSubida = variacion > 0
+        const variacionColor = isSubida ? colors.green[500] : colors.red[500]
+        const variacionSigno = isSubida ? '+' : ''
+
+        return `<div class="flex flex-col gap-1">
+          <div class="font-semibold">${format(parseISO(date), 'dd/MM/yyyy')}</div>
+          <div class="flex items-center gap-2">
+            <span>Tasa de interés:</span>
+            <span class="font-bold">${currentTasa.toFixed(2)}%</span>
+          </div>
+          ${prevItem ? `
+            <div class="flex items-center gap-2">
+              <span>Variación:</span>
+              <span class="font-bold" style="color: ${variacionColor}">
+                ${variacionSigno}${variacion.toFixed(2)} p.p.
+                (${variacionSigno}${variacionPorcentaje}%)
+              </span>
+            </div>
+            <div class="text-xs text-gray-500">
+              vs. día anterior: ${prevTasa.toFixed(2)}%
+            </div>
+          ` : ''}
+        </div>`
+      },
     },
     legend: {
       left: 'left',
       data: ['Tasa de interés'],
       textStyle: {
         color: theme.value === 'dark' ? colors.gray[100] : colors.gray[800],
+      },
+    },
+    toolbox: {
+      top: 20,
+      right: 10,
+      feature: {
+        dataZoom: {
+          yAxisIndex: 'none',
+        },
+        restore: {},
+        saveAsImage: {},
       },
     },
     series: [
@@ -54,6 +109,11 @@ async function setChartOptions() {
         itemStyle: {
           color: colors.indigo[500],
         },
+        lineStyle: {
+          width: 2,
+        },
+        symbol: 'circle',
+        symbolSize: 4,
       },
     ],
     xAxis: {
@@ -62,27 +122,35 @@ async function setChartOptions() {
       axisLabel: {
         color: theme.value === 'dark' ? colors.gray[100] : colors.gray[800],
         fontSize: autoFontSize.value,
+        formatter: (value: string) => {
+          return format(parseISO(value), 'dd/MM/yyyy')
+        },
+        rotate: 45,
       },
     },
     yAxis: {
       type: 'value',
       axisLabel: {
         color: theme.value === 'dark' ? colors.gray[100] : colors.gray[800],
+        formatter: (value: number) => {
+          return `${value.toFixed(1)}%`
+        },
       },
     },
     dataZoom: [
       {
-        type: 'inside',
-        start: 0,
+        type: 'slider',
+        start: 95,
         end: 100,
-      },
-      {
-        start: 0,
-        end: 10,
         handleSize: '80%',
         handleStyle: {
           color: colors.indigo[500],
         },
+      },
+      {
+        type: 'inside',
+        start: 95,
+        end: 100,
       },
     ],
   } as any)

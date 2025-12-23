@@ -105,12 +105,18 @@ async function setChartOptions(casa: string) {
     },
     dataZoom: [
       {
-        type: 'inside',
+        type: 'slider',
         start: 10,
         end: 0,
+        handleSize: '80%',
+        handleStyle: {
+          color: colors.indigo[500],
+        },
       },
       {
-        startValue: 0,
+        type: 'inside',
+        start: 95,
+        end: 100,
       },
     ],
     toolbox: {

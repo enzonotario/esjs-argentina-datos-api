@@ -150,12 +150,18 @@ async function setChartOptions() {
     },
     dataZoom: [
       {
+        type: 'slider',
+        start: 95,
+        end: 100,
+        handleSize: '80%',
+        handleStyle: {
+          color: colors.indigo[500],
+        },
+      },
+      {
         type: 'inside',
         start: 95,
         end: 100,
-      },
-      {
-        startValue: 0,
       },
     ],
     toolbox: {

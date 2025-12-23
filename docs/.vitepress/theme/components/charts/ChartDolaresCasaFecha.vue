@@ -90,13 +90,29 @@ async function setChartOptions(casa: string) {
       },
       formatter: (params: any) => {
         const date = params[0].axisValue
+        const dataIndex = dolares.findIndex(item => item.fecha === date)
+        const currentDolar = dolares[dataIndex]
+        const prevDolar = dolares[dataIndex - 1]
 
         const items = params
           .map((item: any) => {
+            if (item.seriesName === 'Variación') {
+              const variacion = parseFloat(item.value)
+              const variacionColor = variacion > 0 ? colors.red[500] : colors.green[500]
+              const variacionSigno = variacion > 0 ? '+' : ''
+              return `
+                <div>
+                  <span>${item.seriesName}:</span>
+                  <span class="font-bold" style="color: ${variacionColor}">
+                    ${variacionSigno}$${variacion.toFixed(2)}
+                  </span>
+                </div>
+              `
+            }
             return `
               <div>
                 <span>${item.seriesName}:</span>
-                <span class="font-bold">$${item.value}</span>
+                <span class="font-bold">$${item.value.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
               </div>
             `
           })
@@ -104,8 +120,13 @@ async function setChartOptions(casa: string) {
 
         return `
           <div class="flex flex-col gap-1">
-            <div>${format(parseISO(date), 'dd/MM/yyyy')}</div>
+            <div class="font-semibold">${format(parseISO(date), 'dd/MM/yyyy')}</div>
             ${items}
+            ${prevDolar ? `
+              <div class="text-xs text-gray-500 mt-1">
+                vs. día anterior: $${prevDolar.venta.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+              </div>
+            ` : ''}
           </div>
         `
       },
