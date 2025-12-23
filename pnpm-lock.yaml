@@ -121,8 +121,8 @@ importers:
         specifier: ^1.6.3
         version: 1.6.3(@algolia/client-search@5.23.3)(@types/node@24.10.1)(axios@1.13.2)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3)
       vitepress-openapi:
-        specifier: ^0.1.0
-        version: 0.1.0(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.23.3)(@types/node@24.10.1)(axios@1.13.2)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
+        specifier: ^0.1.13
+        version: 0.1.13(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.23.3)(@types/node@24.10.1)(axios@1.13.2)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
 
   packages/core:
     devDependencies:
@@ -4267,6 +4267,9 @@ packages:
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
+  markdown-it-link-attributes@4.0.1:
+    resolution: {integrity: sha512-pg5OK0jPLg62H4k7M9mRJLT61gUp9nvG0XveKYHMOOluASo9OEF13WlXrpAp2aj35LbedAy3QOCgQCw0tkLKAQ==}
+
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
 
@@ -6009,8 +6012,8 @@ packages:
       yaml:
         optional: true
 
-  vitepress-openapi@0.1.0:
-    resolution: {integrity: sha512-7oqVdZEZ9HKeaCx6Fhc4O5ZJsAJNOSnSSAUPn2PDUMZU4hchjGaO1lGg5enY4w4s0Jysyt0yzpF7K6DtP8dt+g==}
+  vitepress-openapi@0.1.13:
+    resolution: {integrity: sha512-cu0d07Gn6NCtWCNWtNI91bM41OeLBX5wdKRSCxaC1wZv9RSBNZ35KKT9GW5+Eb0qDx0wBtGeXZ9fIGf5QT3xGA==}
     peerDependencies:
       vitepress: '>=1.0.0'
       vue: ^3.0.0
@@ -10673,6 +10676,8 @@ snapshots:
 
   mark.js@8.11.1: {}
 
+  markdown-it-link-attributes@4.0.1: {}
+
   markdown-table@3.0.4: {}
 
   math-intrinsics@1.1.0: {}
@@ -12862,12 +12867,13 @@ snapshots:
       jiti: 1.21.7
       yaml: 2.7.1
 
-  vitepress-openapi@0.1.0(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.23.3)(@types/node@24.10.1)(axios@1.13.2)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
+  vitepress-openapi@0.1.13(typescript@5.7.3)(vitepress@1.6.3(@algolia/client-search@5.23.3)(@types/node@24.10.1)(axios@1.13.2)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       '@vueuse/core': 13.4.0(vue@3.5.13(typescript@5.7.3))
       class-variance-authority: 0.7.1
       clsx: 2.1.1
       lucide-vue-next: 0.503.0(vue@3.5.13(typescript@5.7.3))
+      markdown-it-link-attributes: 4.0.1
       reka-ui: 2.3.1(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
       vitepress: 1.6.3(@algolia/client-search@5.23.3)(@types/node@24.10.1)(axios@1.13.2)(postcss@8.5.3)(search-insights@2.17.3)(typescript@5.7.3)
       vue: 3.5.13(typescript@5.7.3)
