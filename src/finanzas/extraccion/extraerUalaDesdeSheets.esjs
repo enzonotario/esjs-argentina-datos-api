@@ -10,15 +10,15 @@ exportar asincrono funcion extraerUalaCuentaRemuneradaDesdeSheets() {
   })
 
   intentar {
-    const apiKey = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY
-    const spreadsheetId = import.meta.env.VITE_GOOGLE_SHEETS_SPREADSHEET_ID
+    const apiKey = import.meta.env.VITE_GSHEETS_API_KEY
+    const spreadsheetId = import.meta.env.VITE_GSHEETS_UALA_SPREADSHEET_ID
 
     si (!apiKey) {
-      lanzar crear Error('VITE_GOOGLE_SHEETS_API_KEY debe estar definido')
+      lanzar crear Error('VITE_GSHEETS_API_KEY debe estar definido')
     }
 
     si (!spreadsheetId) {
-      lanzar crear Error('VITE_GOOGLE_SHEETS_SPREADSHEET_ID debe estar definido')
+      lanzar crear Error('VITE_GSHEETS_UALA_SPREADSHEET_ID debe estar definido')
     }
 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/A:G?key=${apiKey}`
