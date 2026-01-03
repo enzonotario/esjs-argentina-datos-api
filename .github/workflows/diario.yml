@@ -74,6 +74,8 @@ jobs:
           echo "VITE_GSHEETS_API_KEY=${{ secrets.VITE_GSHEETS_API_KEY }}" >> .env
           echo "VITE_GSHEETS_UALA_SPREADSHEET_ID=${{ secrets.VITE_GSHEETS_UALA_SPREADSHEET_ID }}" >> .env
           echo "VITE_GSHEETS_ASTROPAY_SPREADSHEET_ID=${{ secrets.VITE_GSHEETS_ASTROPAY_SPREADSHEET_ID }}" >> .env
+          echo "FIRECRAWL_API_URL=${{ secrets.FIRECRAWL_API_URL }}" >> .env
+          echo "FIRECRAWL_API_KEY=${{ secrets.FIRECRAWL_API_KEY }}" >> .env
 
       - name: Install dependencies
         run: pnpm install
