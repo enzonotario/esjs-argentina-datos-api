@@ -4,13 +4,17 @@ importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
 importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { extraerCacfi } desde '@/extractores/cacfi.extractor.esjs'
-importar { extraerSerieOtros } desde '@/finanzas/fci/extraerSerieOtros.esjs'
+importar {
+  extraerSerieOtros,
+  extraerSerieOtrosIA,
+} desde '@/finanzas/fci/extraerSerieOtros.esjs'
 importar { extraerUalaCuentaRemuneradaDesdeSheets } desde '@/finanzas/extraccion/extraerUalaDesdeSheets.esjs'
 importar { logGrupo, logError } desde '@/log.esjs'
 
 exportar porDefecto asincrono funcion () {
   esperar extraerSeriesDesdeCacfi()
   esperar extraerSerieOtros()
+  esperar extraerSerieOtrosIA()
   esperar extraerUalaDesdeSheets()
 }
 
@@ -23,20 +27,30 @@ asincrono funcion extraerUalaDesdeSheets() {
   }
 
   const fondosUala = ['UALA', 'UALA PLUS 1', 'UALA PLUS 2']
-  const valoresActualesUala = valoresActuales.filtrar(v => fondosUala.incluye(v.fondo))
+  const valoresActualesUala = valoresActuales.filtrar(v =>
+    fondosUala.incluye(v.fondo),
+  )
 
-  para (var i = 0; i < valoresExtraidos.length; i++) {
+  para (var i = 0; i < valoresExtraidos.longitud; i++) {
     const valorExtraido = valoresExtraidos[i]
-    const valorActual = valoresActualesUala.buscar(v => v.fondo === valorExtraido.fondo)
+    const valorActual = valoresActualesUala.buscar(
+      v => v.fondo === valorExtraido.fondo,
+    )
 
     si (valorActual) {
       si (valorActual.tope !== nulo && valorActual.tope !== indefinido) {
         valorExtraido.tope = valorActual.tope
       }
-      si (valorActual.condiciones !== nulo && valorActual.condiciones !== indefinido) {
+      si (
+        valorActual.condiciones !== nulo &&
+        valorActual.condiciones !== indefinido
+      ) {
         valorExtraido.condiciones = valorActual.condiciones
       }
-      si (valorActual.condicionesCorto !== nulo && valorActual.condicionesCorto !== indefinido) {
+      si (
+        valorActual.condicionesCorto !== nulo &&
+        valorActual.condicionesCorto !== indefinido
+      ) {
         valorExtraido.condicionesCorto = valorActual.condicionesCorto
       }
     }

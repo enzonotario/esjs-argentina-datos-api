@@ -1,6 +1,7 @@
 importar { logMensaje, logError } desde '@/log.esjs'
 
 const FIRECRAWL_API_URL = `${import.meta.env.VITE_FIRECRAWL_BASE_URL}/v2/scrape`
+const FIRECRAWL_API_KEY = import.meta.env.VITE_FIRECRAWL_API_KEY
 
 exportar asincrono funcion scrapearConFirecrawl(log, configuracion) {
   const { url, prompt, schema, required } = configuracion
@@ -33,6 +34,7 @@ exportar asincrono funcion scrapearConFirecrawl(log, configuracion) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'x-api-key': FIRECRAWL_API_KEY,
       },
       body: JSON.aTexto(body),
     })

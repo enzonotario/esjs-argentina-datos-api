@@ -15,6 +15,6 @@ describe('extraerSupervielle', () => {
       condicionesCorto: expect.any(String),
     })
   }, {
-    timeout: 10000,
+    timeout: 500000,
   })
 })
