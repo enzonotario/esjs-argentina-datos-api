@@ -42,8 +42,8 @@ jobs:
           touch .env
           echo "VITE_TURSO_DATABASE_URL=${{ secrets.VITE_TURSO_DATABASE_URL }}" >> .env
           echo "VITE_TURSO_AUTH_TOKEN=${{ secrets.VITE_TURSO_AUTH_TOKEN }}" >> .env
-          echo "FIRECRAWL_API_URL=${{ secrets.FIRECRAWL_API_URL }}" >> .env
-          echo "FIRECRAWL_API_KEY=${{ secrets.FIRECRAWL_API_KEY }}" >> .env
+          echo "VITE_FIRECRAWL_BASE_URL=${{ secrets.VITE_FIRECRAWL_BASE_URL }}" >> .env
+          echo "VITE_FIRECRAWL_API_KEY=${{ secrets.VITE_FIRECRAWL_API_KEY }}" >> .env
 
       - name: Install dependencies
         run: pnpm install
