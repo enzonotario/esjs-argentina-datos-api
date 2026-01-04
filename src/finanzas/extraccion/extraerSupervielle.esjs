@@ -12,44 +12,53 @@ exportar asincrono funcion extraerSupervielleCuentaRemunerada() {
   intentar {
     const datos = esperar scrapearConFirecrawl(log, {
       url: 'https://www.supervielle.com.ar/personas/cuentas/cuenta-remunerada',
-      prompt: 'Extrae la tasa de la cuenta remunerada en pesos de Supervielle en formato JSON. Para la TNA usa números decimales (por ejemplo 0.75 para 75%). El tope es el monto máximo que se puede remunerar.',
+      prompt:
+        'Extrae la TNA (Tasa Nominal Anual) y el tope máximo de remuneración de la cuenta remunerada en pesos de Supervielle. Para la TNA usa números decimales (por ejemplo 0.75 para 75%, 0.42 para 42%). El tope es el monto máximo en pesos que se puede remunerar. Si no se especifica un tope, deja el campo vacío.',
       schema: {
         tna: {
           type: 'number',
+          description:
+            'Tasa Nominal Anual en formato decimal (ej: 0.75 para 75%)',
         },
         tope: {
           type: 'number',
+          description: 'Monto máximo en pesos que se puede remunerar',
         },
       },
-      required: ['tna', 'tope'],
+      required: ['tna'],
     })
 
-    si (datos.tna === nulo) {
-      logMensaje(log, 'TNA nulo en respuesta de Firecrawl', { datos })
-      lanzar crear Error('TNA nulo en la respuesta de Firecrawl')
+    si (!datos || tipoDe datos.tna !== 'number') {
+      logMensaje(log, 'Datos inválidos de Supervielle: falta TNA', { datos })
+      lanzar crear Error('Datos inválidos de Supervielle: falta TNA')
     }
 
     const valor = Numero(datos.tna)
-
-    si (valor === nulo) {
-      lanzar crear Error('No se encontró el valor de la cuenta remunerada')
-    }
 
     const tna = Numero((valor).fijarDecimales(4))
 
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 
+    logMensaje(log, 'Extracción de Supervielle exitosa', {
+      tna,
+      tea,
+      tope: datos.tope,
+    })
+
     retornar {
       fondo: 'SUPERVIELLE',
       tna,
       tea,
-      tope: datos.tope,
+      tope: datos.tope || nulo,
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
       condiciones: nulo,
       condicionesCorto: 'Solo Clientes Plan Sueldo.',
     };
   } capturar (error) {
     logError(log, error)
+    logMensaje(log, 'Error al extraer datos de Supervielle', {
+      errorMessage: error.message,
+    })
     retornar []
   }
 }

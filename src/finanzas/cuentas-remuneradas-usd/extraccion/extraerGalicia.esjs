@@ -1,0 +1,48 @@
+importar { scrapearConFirecrawl } desde '@/finanzas/extraccion/firecrawl.esjs'
+importar { logMensaje, logError, logGrupo } desde '@/log.esjs'
+
+exportar asincrono funcion extraerGalicia() {
+  const log = logGrupo({
+    fuente: 'extraerGalicia',
+    tipo: 'cuentaRemuneradaUsd',
+  })
+
+  intentar {
+    const configuracion = {
+      url: 'https://www.galicia.ar/personas/beneficios-dolares',
+      prompt:
+        'Extrae la tasa de rendimiento anual y el tope máximo de remuneración de la cuenta remunerada en dólares. Para la tasa usa números decimales (por ejemplo 0.035 para 3.5%).',
+      schema: {
+        tasa: {
+          type: 'number',
+          description: 'Tasa de rendimiento anual en formato decimal',
+        },
+        tope: {
+          type: 'number',
+          description: 'Monto máximo en dólares que se puede remunerar',
+        },
+      },
+      required: ['tasa'],
+    }
+
+    const datos = esperar scrapearConFirecrawl(log, configuracion)
+
+    si (!datos || tipoDe datos.tasa !== 'number') {
+      lanzar crear Error('Datos inválidos de Galicia: falta tasa')
+    }
+
+    retornar [
+      {
+        entidad: 'galicia',
+        tasa: datos.tasa,
+        tope: datos.tope || nulo,
+      },
+    ]
+  } capturar (error) {
+    logError(log, error)
+    logMensaje(log, 'Error al extraer datos de Galicia', {
+      errorMessage: error.message,
+    })
+    retornar []
+  }
+}
