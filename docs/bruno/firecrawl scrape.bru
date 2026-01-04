@@ -1,0 +1,51 @@
+meta {
+  name: firecrawl scrape
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{firecrawlBaseUrl}}/v2/scrape
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  x-api-key: {{firecrawlApiKey}}
+}
+
+body:json {
+  {
+    "url": "https://www.supervielle.com.ar/personas/cuentas/cuenta-remunerada-dolares",
+    "onlyMainContent": true,
+    "maxAge": 0,
+    "formats": [
+      "markdown",
+      {
+        "type": "json",
+        "prompt": "Extrae la tasa de la cuenta remunerada en dolares en formato JSON. Para la TNA usa números decimales (por ejemplo 0.2 para 2%).",
+        "schema": {
+          "type": "object",
+          "required": [
+            "tna",
+            "tope"
+          ],
+          "properties": {
+            "tna": {
+              "type": "number"
+            },
+            "tope": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
