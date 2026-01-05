@@ -33,7 +33,7 @@ exportar asincrono funcion extraerGalicia() {
 
     retornar [
       {
-        entidad: 'galicia',
+        entidad: 'GALICIA',
         tasa: datos.tasa,
         tope: datos.tope || nulo,
       },

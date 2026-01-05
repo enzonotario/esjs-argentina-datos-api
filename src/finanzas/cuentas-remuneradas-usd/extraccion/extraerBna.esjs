@@ -33,7 +33,7 @@ exportar asincrono funcion extraerBna() {
 
     retornar [
       {
-        entidad: 'bna',
+        entidad: 'BNA',
         tasa: datos.tasa,
         tope: datos.tope || nulo,
       },

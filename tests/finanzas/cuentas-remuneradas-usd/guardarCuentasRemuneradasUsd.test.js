@@ -9,25 +9,25 @@ const TEST_AUTH_TOKEN = import.meta.env.VITE_TURSO_AUTH_TOKEN || 'test-token'
 describe('guardarCuentasRemuneradasUsd', () => {
   it('guarda nuevos valores en la base de datos', async () => {
     const items = [
-      { entidad: 'galicia', tasa: 3.5, tope: 10000 },
+      { entidad: 'GALICIA', tasa: 3.5, tope: 10000 },
     ]
 
     await guardarCuentasRemuneradasUsd(items, TEST_URL, TEST_AUTH_TOKEN)
 
     const db = new CuentasRemuneradasUsdDatabaseService(TEST_URL, TEST_AUTH_TOKEN)
     await db.initialize()
-    const ultimo = await db.getLatestCuentaRemuneradaByEntity('galicia')
+    const ultimo = await db.getLatestCuentaRemuneradaByEntity('GALICIA')
     db.close()
 
     expect(ultimo).toBeDefined()
-    expect(ultimo.entidad).toBe('galicia')
+    expect(ultimo.entidad).toBe('GALICIA')
     expect(ultimo.tasa).toBe(3.5)
     expect(ultimo.tope).toBe(10000)
   })
 
   it('no guarda valores duplicados', async () => {
     const items = [
-      { entidad: 'galicia', tasa: 3.5, tope: 10000 },
+      { entidad: 'GALICIA', tasa: 3.5, tope: 10000 },
     ]
 
     await guardarCuentasRemuneradasUsd(items, TEST_URL, TEST_AUTH_TOKEN)
@@ -38,17 +38,17 @@ describe('guardarCuentasRemuneradasUsd', () => {
     const todos = await db.getAllLatestCuentasRemuneradasUsd()
     db.close()
 
-    const galiciaEntries = todos.filter(r => r.entidad === 'galicia')
+    const galiciaEntries = todos.filter(r => r.entidad === 'GALICIA')
     expect(galiciaEntries.length).toBeGreaterThanOrEqual(1)
   })
 
   it('guarda valores cuando cambian', async () => {
     const items1 = [
-      { entidad: 'galicia', tasa: 3.5, tope: 10000 },
+      { entidad: 'GALICIA', tasa: 3.5, tope: 10000 },
     ]
 
     const items2 = [
-      { entidad: 'galicia', tasa: 4.0, tope: 15000 },
+      { entidad: 'GALICIA', tasa: 4.0, tope: 15000 },
     ]
 
     await guardarCuentasRemuneradasUsd(items1, TEST_URL, TEST_AUTH_TOKEN)
@@ -56,7 +56,7 @@ describe('guardarCuentasRemuneradasUsd', () => {
 
     const db = new CuentasRemuneradasUsdDatabaseService(TEST_URL, TEST_AUTH_TOKEN)
     await db.initialize()
-    const ultimo = await db.getLatestCuentaRemuneradaByEntity('galicia')
+    const ultimo = await db.getLatestCuentaRemuneradaByEntity('GALICIA')
     db.close()
 
     expect(ultimo.tasa).toBe(4.0)
@@ -65,7 +65,7 @@ describe('guardarCuentasRemuneradasUsd', () => {
 
   it('genera el endpoint estatico correctamente', async () => {
     const items = [
-      { entidad: 'galicia', tasa: 3.5, tope: 10000 },
+      { entidad: 'GALICIA', tasa: 3.5, tope: 10000 },
     ]
 
     await guardarCuentasRemuneradasUsd(items, TEST_URL, TEST_AUTH_TOKEN)
@@ -76,10 +76,10 @@ describe('guardarCuentasRemuneradasUsd', () => {
     expect(Array.isArray(guardado)).toBe(true)
     expect(guardado.length).toBeGreaterThan(0)
 
-    const galiciaEntry = guardado.find(r => r.entidad === 'galicia')
+    const galiciaEntry = guardado.find(r => r.entidad === 'GALICIA')
     expect(galiciaEntry).toBeDefined()
     expect(galiciaEntry).toEqual({
-      entidad: 'galicia',
+      entidad: 'GALICIA',
       tasa: 3.5,
       tope: 10000,
     })

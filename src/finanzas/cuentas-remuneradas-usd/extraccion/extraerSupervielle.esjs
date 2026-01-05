@@ -38,7 +38,7 @@ exportar asincrono funcion extraerSupervielle() {
 
     retornar [
       {
-        entidad: 'supervielle',
+        entidad: 'SUPERVIELLE',
         tasa: datos.tasa,
         tope: datos.tope || nulo,
       },

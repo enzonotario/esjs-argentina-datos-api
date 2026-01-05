@@ -24,12 +24,12 @@ describe('CuentasRemuneradasUsdDatabaseService', () => {
 
   it('inserta una cuenta remunerada USD', async () => {
     const timestamp = new Date().toISOString()
-    await db.insertCuentaRemuneradaUsd('galicia', 3.5, 10000, timestamp)
+    await db.insertCuentaRemuneradaUsd('GALICIA', 3.5, 10000, timestamp)
 
-    const ultimo = await db.getLatestCuentaRemuneradaByEntity('galicia')
+    const ultimo = await db.getLatestCuentaRemuneradaByEntity('GALICIA')
 
     expect(ultimo).toBeDefined()
-    expect(ultimo.entidad).toBe('galicia')
+    expect(ultimo.entidad).toBe('GALICIA')
     expect(ultimo.tasa).toBe(3.5)
     expect(ultimo.tope).toBe(10000)
     expect(ultimo.timestamp).toBe(timestamp)
@@ -39,10 +39,10 @@ describe('CuentasRemuneradasUsdDatabaseService', () => {
     const timestamp1 = new Date(Date.now() - 1000).toISOString()
     const timestamp2 = new Date().toISOString()
 
-    await db.insertCuentaRemuneradaUsd('galicia', 3.5, 10000, timestamp1)
-    await db.insertCuentaRemuneradaUsd('galicia', 4.0, 15000, timestamp2)
+    await db.insertCuentaRemuneradaUsd('GALICIA', 3.5, 10000, timestamp1)
+    await db.insertCuentaRemuneradaUsd('GALICIA', 4.0, 15000, timestamp2)
 
-    const ultimo = await db.getLatestCuentaRemuneradaByEntity('galicia')
+    const ultimo = await db.getLatestCuentaRemuneradaByEntity('GALICIA')
 
     expect(ultimo.tasa).toBe(4.0)
     expect(ultimo.tope).toBe(15000)
@@ -51,14 +51,14 @@ describe('CuentasRemuneradasUsdDatabaseService', () => {
   it('obtiene todas las ultimas cuentas remuneradas USD', async () => {
     const timestamp = new Date().toISOString()
 
-    await db.insertCuentaRemuneradaUsd('galicia', 3.5, 10000, timestamp)
-    await db.insertCuentaRemuneradaUsd('santander', 3.2, 20000, timestamp)
+    await db.insertCuentaRemuneradaUsd('GALICIA', 3.5, 10000, timestamp)
+    await db.insertCuentaRemuneradaUsd('SANTANDER', 3.2, 20000, timestamp)
 
     const todos = await db.getAllLatestCuentasRemuneradasUsd()
 
     expect(todos.length).toBeGreaterThanOrEqual(2)
-    expect(todos.find(r => r.entidad === 'galicia')).toBeDefined()
-    expect(todos.find(r => r.entidad === 'santander')).toBeDefined()
+    expect(todos.find(r => r.entidad === 'GALICIA')).toBeDefined()
+    expect(todos.find(r => r.entidad === 'SANTANDER')).toBeDefined()
   })
 
   it('retorna null si no existe la entidad', async () => {

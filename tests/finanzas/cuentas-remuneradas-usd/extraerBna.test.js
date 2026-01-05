@@ -13,7 +13,7 @@ describe('extraerBna', () => {
 
     expect(resultado).toHaveLength(1)
     expect(resultado[0]).toEqual({
-      entidad: 'bna',
+      entidad: 'BNA',
       tasa: 3.0,
       tope: 20000,
     })

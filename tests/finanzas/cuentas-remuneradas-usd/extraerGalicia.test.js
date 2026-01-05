@@ -13,7 +13,7 @@ describe('extraerGalicia', () => {
 
     expect(resultado).toHaveLength(1)
     expect(resultado[0]).toEqual({
-      entidad: 'galicia',
+      entidad: 'GALICIA',
       tasa: 3.5,
       tope: 10000,
     })

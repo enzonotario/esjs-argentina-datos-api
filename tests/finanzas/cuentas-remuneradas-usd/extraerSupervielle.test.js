@@ -13,7 +13,7 @@ describe('extraerSupervielle', () => {
 
     expect(resultado).toHaveLength(1)
     expect(resultado[0]).toEqual({
-      entidad: 'supervielle',
+      entidad: 'SUPERVIELLE',
       tasa: 4.0,
       tope: 15000,
     })
