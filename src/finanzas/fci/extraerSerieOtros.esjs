@@ -8,6 +8,7 @@ importar { extraerCresiumCuentaRemunerada } desde '@/finanzas/extraccion/extraer
 importar { extraerFiwindARS } desde '@/finanzas/extraccion/extraerFiwindARS.esjs'
 importar { extraerCarrefourCuentaRemunerada } desde '@/finanzas/extraccion/extraerCarrefour.esjs'
 importar { extraerMontemarPayCuentaRemunerada } desde '@/finanzas/extraccion/extraerMontemarPay.esjs'
+importar { extraerBeloCuentaRemunerada } desde '@/finanzas/extraccion/extraerBelo.esjs'
 importar { logGrupo } desde '@/log.esjs'
 
 const log = logGrupo({ comando: 'finanzas.fci.otros' })
@@ -21,6 +22,7 @@ exportar asincrono funcion extraerSerieOtros() {
     esperar extraerCarrefourCuentaRemunerada(),
     esperar extraerMontemarPayCuentaRemunerada(),
     esperar extraerCresiumCuentaRemunerada(),
+    esperar extraerBeloCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
   guardarValores(valoresActuales, valoresExtraidos)
