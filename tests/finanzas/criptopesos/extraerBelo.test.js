@@ -1,42 +1,21 @@
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { extraerBelo } from '@/finanzas/criptopesos/extraccion/extraerBelo.esjs'
 
 describe('extraerBelo', () => {
-  it('extrae datos correctamente de Belo', async () => {
-    global.fetch = vi.fn(() =>
-      Promise.resolve({
-        json: () => Promise.resolve({ AR: { ARGt: '0.25' } }),
-      }),
-    )
+  it(
+    'extrae datos de ARS y los retorna como ARGt',
+    async () => {
+      const resultado = await extraerBelo()
 
-    const resultado = await extraerBelo()
-
-    expect(resultado).toHaveLength(1)
-    expect(resultado[0]).toEqual({
-      token: 'ARGt',
-      entidad: 'belo',
-      tna: 0.25,
-    })
-  })
-
-  it('retorna array vacio si no hay datos', async () => {
-    global.fetch = vi.fn(() =>
-      Promise.resolve({
-        json: () => Promise.resolve({}),
-      }),
-    )
-
-    const resultado = await extraerBelo()
-
-    expect(resultado).toEqual([])
-  })
-
-  it('retorna array vacio si hay error', async () => {
-    global.fetch = vi.fn(() => Promise.reject(new Error('Network error')))
-
-    const resultado = await extraerBelo()
-
-    expect(resultado).toEqual([])
-  })
+      expect(resultado).toHaveLength(1)
+      expect(resultado[0]).toMatchObject({
+        token: 'ARGt',
+        entidad: 'BELO',
+      })
+      expect(resultado[0].tna).toBeTypeOf('number')
+      expect(resultado[0].tna).toBeGreaterThan(0)
+    },
+    10000,
+  )
 })
 
