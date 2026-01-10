@@ -39,7 +39,7 @@ exportar asincrono funcion extraerBnaCuentaRemunerada() {
 
     const valor = Numero(datos.tna)
 
-    const tna = Numero((valor).fijarDecimales(4))
+    const tna = Numero(valor.fijarDecimales(4))
 
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 
@@ -68,4 +68,3 @@ exportar asincrono funcion extraerBnaCuentaRemunerada() {
     retornar []
   }
 }
-
