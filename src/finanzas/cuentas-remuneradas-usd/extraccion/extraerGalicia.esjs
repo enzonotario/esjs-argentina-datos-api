@@ -11,7 +11,7 @@ exportar asincrono funcion extraerGalicia() {
     const configuracion = {
       url: 'https://www.galicia.ar/personas/beneficios-dolares',
       prompt:
-        'Extrae la tasa de rendimiento anual y el tope máximo de remuneración de la cuenta remunerada en dólares. Para la tasa usa números decimales (por ejemplo 0.035 para 3.5%).',
+        'Extrae la tasa de rendimiento anual y el tope máximo de remuneración (no de extracción) de la cuenta remunerada en dólares. Para la tasa usa números decimales (por ejemplo 0.035 para 3.5%).',
       schema: {
         tasa: {
           type: 'number',
