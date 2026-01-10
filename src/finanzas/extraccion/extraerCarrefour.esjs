@@ -1,6 +1,7 @@
 importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
 importar { format } desde 'date-fns'
 importar { logGrupo, logError, logMensaje } desde '@/log.esjs'
+importar { extraerCarrefourCondiciones } desde './extraerCarrefourCondiciones.esjs'
 
 exportar asincrono funcion extraerCarrefourCuentaRemunerada() {
   const log = logGrupo({
@@ -48,12 +49,33 @@ exportar asincrono funcion extraerCarrefourCuentaRemunerada() {
 
     const tea = Numero(((1 + tna / 365) ** 365 - 1).fijarDecimales(4))
 
+    const condicionesData = esperar extraerCarrefourCondiciones()
+
+    var condiciones = nulo
+    var condicionesCorto = nulo
+
+    si (condicionesData && condicionesData.topeRecargaMensual) {
+      const topeFormateado = condicionesData.topeRecargaMensual.aCadenaLocalizada(
+        'es-AR',
+        {
+          style: 'currency',
+          currency: 'ARS',
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        },
+      )
+      condiciones = `Permite ingresar ${topeFormateado} / mes`
+      condicionesCorto = `Permite ingresar ${topeFormateado} / mes`
+    }
+
     retornar {
       fondo: 'CARREFOUR BANCO',
       tna,
       tea,
       tope: datos.data.tope || nulo,
       fecha: format(crear Fecha(), 'yyyy-MM-dd'),
+      condiciones,
+      condicionesCorto,
     };
   } capturar (error) {
     logError(log, error)
