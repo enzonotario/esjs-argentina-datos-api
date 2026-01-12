@@ -4,10 +4,13 @@ import { fileURLToPath } from 'node:url'
 import { dirname } from 'node:path'
 import { createClient } from '@libsql/client'
 import { parse, compareAsc } from 'date-fns'
+import { config } from 'dotenv'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const rootDir = join(__dirname, '..')
+
+config({ path: join(rootDir, '.env') })
 
 const TURSO_DATABASE_URL = process.env.VITE_TURSO_DATABASE_URL
 const TURSO_AUTH_TOKEN = process.env.VITE_TURSO_AUTH_TOKEN
@@ -243,9 +246,9 @@ async function main() {
     for (const item of datosParaInsertar) {
       const ultimo = await getLatestFciOtrosByFondo(db, item.fondo)
 
-      if (!ultimo || 
-          ultimo.tna !== item.tna || 
-          ultimo.tea !== item.tea || 
+      if (!ultimo ||
+          ultimo.tna !== item.tna ||
+          ultimo.tea !== item.tea ||
           ultimo.tope !== item.tope ||
           ultimo.condiciones !== item.condiciones ||
           ultimo.condicionesCorto !== item.condicionesCorto) {
