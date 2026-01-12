@@ -1,4 +1,3 @@
-importar axios desde 'axios'
 importar { collect } desde 'collect.js'
 importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
 importar { guardarCacfi } desde '@/finanzas/fci/guardarCacfi.esjs'
@@ -9,7 +8,12 @@ importar {
   extraerSerieOtrosIA,
 } desde '@/finanzas/fci/extraerSerieOtros.esjs'
 importar { extraerUalaCuentaRemuneradaDesdeSheets } desde '@/finanzas/extraccion/extraerUalaDesdeSheets.esjs'
+importar { guardarSerieOtros } desde '@/finanzas/fci/guardado/guardarSerieOtros.esjs'
+importar { FciOtrosDatabaseService } desde '@/finanzas/fci/database/service.esjs'
 importar { logGrupo, logError } desde '@/log.esjs'
+
+const TURSO_DATABASE_URL = import.meta.env.VITE_TURSO_DATABASE_URL
+const TURSO_AUTH_TOKEN = import.meta.env.VITE_TURSO_AUTH_TOKEN
 
 exportar porDefecto asincrono funcion () {
   esperar extraerSeriesDesdeCacfi()
@@ -19,64 +23,52 @@ exportar porDefecto asincrono funcion () {
 }
 
 asincrono funcion extraerUalaDesdeSheets() {
-  const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
   const valoresExtraidos = (esperar extraerUalaCuentaRemuneradaDesdeSheets()).filtrar(item => item.fondo)
 
   si (valoresExtraidos.longitud === 0) {
     retornar
   }
 
-  const fondosUala = ['UALA', 'UALA PLUS 1', 'UALA PLUS 2']
-  const valoresActualesUala = valoresActuales.filtrar(v =>
-    fondosUala.incluye(v.fondo),
-  )
+  const db = crear FciOtrosDatabaseService(TURSO_DATABASE_URL, TURSO_AUTH_TOKEN)
 
-  para (var i = 0; i < valoresExtraidos.longitud; i++) {
-    const valorExtraido = valoresExtraidos[i]
-    const valorActual = valoresActualesUala.buscar(
-      v => v.fondo === valorExtraido.fondo,
-    )
+  intentar {
+    esperar db.initialize()
 
-    si (valorActual) {
-      si (valorActual.tope !== nulo && valorActual.tope !== indefinido) {
-        valorExtraido.tope = valorActual.tope
-      }
-      si (
-        valorActual.condiciones !== nulo &&
-        valorActual.condiciones !== indefinido
-      ) {
-        valorExtraido.condiciones = valorActual.condiciones
-      }
-      si (
-        valorActual.condicionesCorto !== nulo &&
-        valorActual.condicionesCorto !== indefinido
-      ) {
-        valorExtraido.condicionesCorto = valorActual.condicionesCorto
+    const fondosUala = ['UALA', 'UALA PLUS 1', 'UALA PLUS 2']
+
+    para (var i = 0; i < valoresExtraidos.longitud; i++) {
+      const valorExtraido = valoresExtraidos[i]
+      const ultimo = esperar db.getLatestFciOtrosByFondo(valorExtraido.fondo)
+
+      si (ultimo) {
+        si (ultimo.tope !== nulo && ultimo.tope !== indefinido) {
+          valorExtraido.tope = ultimo.tope
+        }
+        si (
+          ultimo.condiciones !== nulo &&
+          ultimo.condiciones !== indefinido
+        ) {
+          valorExtraido.condiciones = ultimo.condiciones
+        }
+        si (
+          ultimo.condicionesCorto !== nulo &&
+          ultimo.condicionesCorto !== indefinido
+        ) {
+          valorExtraido.condicionesCorto = ultimo.condicionesCorto
+        }
       }
     }
+
+    const fechaActual = format(crear Fecha(), 'yyyy-MM-dd')
+    const valoresConFecha = valoresExtraidos.mapear(item => ({
+      ...item,
+      fecha: item.fecha || fechaActual,
+    }))
+
+    esperar guardarSerieOtros(valoresConFecha)
+  } finalmente {
+    db.close()
   }
-
-  const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))
-    .groupBy('fondo').mapear(valoresNuevos =>
-      collect(valoresNuevos).sortByDesc('fecha').unique('fecha').first(),
-    )
-    .toArray()
-
-  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
-  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
-
-  esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
-
-  intentar {
-    esperar escribirRuta(
-      '/finanzas/fci/otros/penultimo',
-      leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || [],
-    )
-  } capturar {}
-
-  intentar {
-    esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, valoresNuevos)
-  } capturar {}
 }
 
 asincrono funcion extraerSeriesDesdeCacfi() {

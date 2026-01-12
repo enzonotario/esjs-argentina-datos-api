@@ -26,7 +26,8 @@
     "senado:test:run": "cd packages/senado && pnpm run test:run",
     "diputados:test": "cd packages/diputados && pnpm test",
     "diputados:test:run": "cd packages/diputados && pnpm run test:run",
-    "migrate": "node scripts/migrate.js"
+    "migrate": "node scripts/migrate.js",
+    "seed:fci-otros": "node scripts/seed-fci-otros.js"
   },
   "devDependencies": {
     "@es-js/vite-plugin-esjs": "^0.1.0-beta.2",

@@ -1,7 +1,4 @@
-importar axios desde 'axios'
-importar { collect } desde 'collect.js'
-importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
-importar { escribirRuta, leerRuta } desde '@/utils/rutas.esjs'
+importar { format } desde 'date-fns'
 importar { extraerNaranjaX } desde '@/finanzas/fci/extraerNaranjaX.esjs'
 importar { extraerSupervielleCuentaRemunerada } desde '@/finanzas/extraccion/extraerSupervielle.esjs'
 importar { extraerBnaCuentaRemunerada } desde '@/finanzas/extraccion/extraerBna.esjs'
@@ -10,13 +7,12 @@ importar { extraerFiwindARS } desde '@/finanzas/extraccion/extraerFiwindARS.esjs
 importar { extraerCarrefourCuentaRemunerada } desde '@/finanzas/extraccion/extraerCarrefour.esjs'
 importar { extraerMontemarPayCuentaRemunerada } desde '@/finanzas/extraccion/extraerMontemarPay.esjs'
 importar { extraerBeloCuentaRemunerada } desde '@/finanzas/extraccion/extraerBelo.esjs'
+importar { guardarSerieOtros } desde '@/finanzas/fci/guardado/guardarSerieOtros.esjs'
 importar { logGrupo } desde '@/log.esjs'
 
 const log = logGrupo({ comando: 'finanzas.fci.otros' })
 
 exportar asincrono funcion extraerSerieOtros() {
-  const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
-
   const valoresExtraidos = [
     esperar extraerNaranjaX(),
     esperar extraerFiwindARS(),
@@ -26,43 +22,40 @@ exportar asincrono funcion extraerSerieOtros() {
     esperar extraerBeloCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
-  guardarValores(valoresActuales, valoresExtraidos)
+  si (valoresExtraidos.longitud === 0) {
+    retornar
+  }
+
+  const fechaActual = format(crear Fecha(), 'yyyy-MM-dd')
+  const valoresConFecha = valoresExtraidos.mapear(item => ({
+    ...item,
+    fecha: item.fecha || fechaActual,
+  }))
+
+  log.info('[/v1/finanzas/fci/otros]: Valores extraídos', valoresConFecha)
+  consola.escribir('[/v1/finanzas/fci/otros]: Valores extraídos', valoresConFecha)
+
+  esperar guardarSerieOtros(valoresConFecha)
 }
 
 exportar asincrono funcion extraerSerieOtrosIA() {
-  const valoresActuales = leerRuta('/finanzas/fci/otros/ultimo') || []
-
   const valoresExtraidos = [
     esperar extraerSupervielleCuentaRemunerada(),
     esperar extraerBnaCuentaRemunerada(),
   ].filtrar(item => item.fondo)
 
-  guardarValores(valoresActuales, valoresExtraidos)
-}
+  si (valoresExtraidos.longitud === 0) {
+    retornar
+  }
 
-asincrono funcion guardarValores(valoresActuales, valoresExtraidos) {
-  const fechaConBarras = format(crear Fecha(), 'yyyy/MM/dd')
-  const ayerConBarras = format(subDays(crear Fecha(), 1), 'yyyy/MM/dd')
+  const fechaActual = format(crear Fecha(), 'yyyy-MM-dd')
+  const valoresConFecha = valoresExtraidos.mapear(item => ({
+    ...item,
+    fecha: item.fecha || fechaActual,
+  }))
 
-  const valoresNuevos = collect(valoresActuales.concatenar(valoresExtraidos))
-    .groupBy('fondo').mapear(valoresNuevos =>
-      collect(valoresNuevos).sortByDesc('fecha').unique('fecha').first(),
-    )
-    .toArray()
+  log.info('[/v1/finanzas/fci/otros]: Valores extraídos IA', valoresConFecha)
+  consola.escribir('[/v1/finanzas/fci/otros]: Valores extraídos IA', valoresConFecha)
 
-  log.info('[/v1/finanzas/fci/otros]: Valores extraídos', valoresNuevos)
-  consola.escribir('[/v1/finanzas/fci/otros]: Valores extraídos', valoresNuevos)
-
-  esperar escribirRuta('/finanzas/fci/otros/ultimo', valoresNuevos)
-
-  intentar {
-    esperar escribirRuta(
-      '/finanzas/fci/otros/penultimo',
-      leerRuta(`/finanzas/fci/otros/${ayerConBarras}`) || [],
-    )
-  } capturar {}
-
-  intentar {
-    esperar escribirRuta(`/finanzas/fci/otros/${fechaConBarras}`, valoresNuevos)
-  } capturar {}
+  esperar guardarSerieOtros(valoresConFecha)
 }
