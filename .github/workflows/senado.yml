@@ -5,6 +5,11 @@ on:
 #    - cron: '10 21 * * *' # Actualiza a las 21:10 UTC (18:10 ART)
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   update:
     uses: ./.github/workflows/reusable-data-update.yml
