@@ -1,0 +1,15 @@
+name: Actualización de rendimientos
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # 09:00 ART
+  workflow_dispatch:
+
+jobs:
+  update:
+    uses: ./.github/workflows/reusable-data-update.yml
+    with:
+      run_command: pnpm run cron rendimientos
+      needs_build: true
+      env_preset: full
+    secrets: inherit
