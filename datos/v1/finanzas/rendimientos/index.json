@@ -364,8 +364,8 @@
     "rendimientos": [
       {
         "moneda": "ARS",
-        "apy": 24.2,
-        "fecha": "2026-02-03",
+        "apy": 24.5,
+        "fecha": "2026-02-04",
         "bonusValue": 32,
         "bonusThreshold": 750000
       },
@@ -432,7 +432,7 @@
     "rendimientos": [
       {
         "moneda": "ARS",
-        "apy": 27.07,
+        "apy": 26.78,
         "fecha": "2026-02-04"
       },
       {
@@ -657,14 +657,30 @@
     "rendimientos": [
       {
         "moneda": "USDC",
-        "apy": 7.81,
+        "apy": 6.52,
         "fecha": "2026-02-04"
       }
     ]
   },
   {
     "entidad": "decrypto",
-    "rendimientos": []
+    "rendimientos": [
+      {
+        "moneda": "BTC",
+        "apy": 2.5,
+        "fecha": "2026-02-04"
+      },
+      {
+        "moneda": "ETH",
+        "apy": 3,
+        "fecha": "2026-02-04"
+      },
+      {
+        "moneda": "USDT",
+        "apy": 6.75,
+        "fecha": "2026-02-04"
+      }
+    ]
   },
   {
     "entidad": "vesseo",
