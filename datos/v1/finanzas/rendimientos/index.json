@@ -607,17 +607,17 @@
       },
       {
         "moneda": "DAI",
-        "apy": 2.87,
+        "apy": 2.88,
         "fecha": "2026-02-14"
       },
       {
         "moneda": "USDC",
-        "apy": 2.72,
+        "apy": 2.73,
         "fecha": "2026-02-14"
       },
       {
         "moneda": "ETH",
-        "apy": 1.57,
+        "apy": 4.18,
         "fecha": "2026-02-14"
       },
       {
@@ -632,12 +632,12 @@
     "rendimientos": [
       {
         "moneda": "USDC",
-        "apy": 3,
+        "apy": 3.5,
         "fecha": "2026-02-14"
       },
       {
         "moneda": "ETH",
-        "apy": 0.9,
+        "apy": 1,
         "fecha": "2026-02-14"
       },
       {
@@ -657,14 +657,30 @@
     "rendimientos": [
       {
         "moneda": "USDC",
-        "apy": 6.31,
+        "apy": 6.27,
         "fecha": "2026-02-14"
       }
     ]
   },
   {
     "entidad": "decrypto",
-    "rendimientos": []
+    "rendimientos": [
+      {
+        "moneda": "BTC",
+        "apy": 2.5,
+        "fecha": "2026-02-14"
+      },
+      {
+        "moneda": "ETH",
+        "apy": 3,
+        "fecha": "2026-02-14"
+      },
+      {
+        "moneda": "USDT",
+        "apy": 6.75,
+        "fecha": "2026-02-14"
+      }
+    ]
   },
   {
     "entidad": "vesseo",
