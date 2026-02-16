@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { leerRuta } from '@/utils/rutas.esjs'
 import { guardarRendimientos } from '@/finanzas/rendimientos/guardarRendimientos.esjs'
-import { extraerBuenbit } from '@/finanzas/rendimientos/extraerBuenbit.esjs'
+import { extraerNexo } from '@/finanzas/rendimientos/extraerNexo.esjs'
 import { extraerFiwind } from '@/finanzas/rendimientos/extraerFiwind.esjs'
 import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
 import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
@@ -25,8 +25,8 @@ async function testGuardarRendimientos(entidad, funcionExtraccion) {
 }
 
 describe('guardarRendimientos', () => {
-  it('guarda buenbit', async () => {
-    await testGuardarRendimientos('buenbit', extraerBuenbit)
+  it('guarda nexo', async () => {
+    await testGuardarRendimientos('nexo', extraerNexo)
   })
 
   it('guarda fiwind', async () => {

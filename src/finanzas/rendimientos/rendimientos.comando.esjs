@@ -1,7 +1,7 @@
 importar { format, subDays, addDays, isBefore como esAntes } desde 'date-fns'
 importar { escribirRuta } desde '@/utils/rutas.esjs'
 importar { guardarRendimientos } desde '@/finanzas/rendimientos/guardarRendimientos.esjs'
-importar { extraerBuenbit } desde '@/finanzas/rendimientos/extraerBuenbit.esjs'
+importar { extraerNexo } desde '@/finanzas/rendimientos/extraerNexo.esjs'
 importar { extraerFiwind } desde '@/finanzas/rendimientos/extraerFiwind.esjs'
 importar { extraerLetsbit } desde '@/finanzas/rendimientos/extraerLetsbit.esjs'
 importar { extraerBelo } desde '@/finanzas/rendimientos/extraerBelo.esjs'
@@ -15,7 +15,7 @@ importar { extraerAstroPay } desde '@/finanzas/rendimientos/extraerAstroPay.esjs
 
 exportar porDefecto asincrono funcion () {
   const entidades = {
-    buenbit: esperar extraerBuenbit(),
+    nexo: esperar extraerNexo(),
     fiwind: esperar extraerFiwind(),
     letsbit: esperar extraerLetsbit(),
     belo: esperar extraerBelo(),

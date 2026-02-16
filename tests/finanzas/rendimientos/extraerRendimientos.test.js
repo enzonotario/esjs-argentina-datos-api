@@ -1,6 +1,6 @@
 
 import { describe, expect, it } from 'vitest'
-import { extraerBuenbit } from '@/finanzas/rendimientos/extraerBuenbit.esjs'
+import { extraerNexo } from '@/finanzas/rendimientos/extraerNexo.esjs'
 import { extraerFiwind } from '@/finanzas/rendimientos/extraerFiwind.esjs'
 import { extraerLetsbit } from '@/finanzas/rendimientos/extraerLetsbit.esjs'
 import { extraerBelo } from '@/finanzas/rendimientos/extraerBelo.esjs'
@@ -23,8 +23,8 @@ function testItems(items) {
 }
 
 describe('extraerRendimientos', () => {
-  it('guarda buenbit', async () => {
-    const items = await extraerBuenbit()
+  it('guarda nexo', async () => {
+    const items = await extraerNexo()
 
     testItems(items)
   })

@@ -1,0 +1,41 @@
+importar { format } desde 'date-fns'
+importar axios desde 'axios'
+
+exportar asincrono funcion extraerNexo() {
+  intentar {
+    const respuesta = esperar axios.get(
+      import.meta.env.VITE_FINANZAS_RENDIMIENTOS_NEXO_URL,
+      {
+        headers: {
+          'X-Comparatasas-Api-Key': import.meta.env.VITE_FINANZAS_RENDIMIENTOS_NEXO_API_KEY,
+        },
+      },
+    )
+
+    const items = []
+
+    const fecha = format(crear Fecha(), 'yyyy-MM-dd')
+
+    const entidad = respuesta.data.buscar(e => e.entidad === 'Nexo')
+
+    si (!entidad) {
+      retornar []
+    }
+
+    para (const item de entidad.rendimientos) {
+      const moneda = item.moneda.aMayusculas()
+      const apy = Numero(item.apy)
+
+      items.agregar({
+        moneda,
+        apy,
+        fecha,
+      })
+    }
+
+    retornar items
+  } capturar (error) {
+    consola.error(error)
+    retornar []
+  }
+}
