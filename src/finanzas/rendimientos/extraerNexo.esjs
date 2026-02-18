@@ -24,7 +24,7 @@ exportar asincrono funcion extraerNexo() {
 
     para (const item de entidad.rendimientos) {
       const moneda = item.moneda.aMayusculas()
-      const apy = Numero(item.apy)
+      const apy = Numero(item.apy) * 100
 
       items.agregar({
         moneda,
