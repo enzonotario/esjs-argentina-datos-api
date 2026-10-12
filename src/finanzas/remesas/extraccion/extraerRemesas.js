@@ -3,6 +3,7 @@ import { logMensaje, logError, logGrupo } from '@/log.js'
 import { extraerCocosRemesas } from '@/finanzas/remesas/extraccion/extraerCocosRemesas.js'
 import { extraerBeloRemesas } from '@/finanzas/remesas/extraccion/extraerBeloRemesas.js'
 import { extraerRipioRemesas } from '@/finanzas/remesas/extraccion/extraerRipioRemesas.js'
+import { extraerFuentesDirectasRemesas } from '@/finanzas/remesas/extraccion/extraerRemesasDirectas.js'
 
 const REMESAS_URL = 'https://www.dolarito.ar/remotito'
 const PREFIJO_NEXT_PUSH = 'self.__next_f.push('
@@ -384,6 +385,19 @@ Ejemplo Takenos:
   )
 }
 
+export function reemplazarRemesa(remesas, remesa) {
+  const clave = remesa?.compania?.toLowerCase()
+
+  if (!clave) return
+
+  const indice = remesas.findIndex(
+    item => item.compania?.toLowerCase() === clave,
+  )
+
+  if (indice >= 0) remesas[indice] = remesa
+  else remesas.push(remesa)
+}
+
 function agregarRemesaOpcional(
   log,
   remesas,
@@ -391,19 +405,8 @@ function agregarRemesaOpcional(
   { nombre, exito, fallo },
 ) {
   if (resultado.status === 'fulfilled') {
-    const yaExiste = remesas.some(
-      remesa => remesa.compania?.toLowerCase() === nombre.toLowerCase(),
-    )
-
-    if (!yaExiste) {
-      remesas.push(resultado.value)
-      logMensaje(log, exito)
-    } else {
-      logMensaje(
-        log,
-        `extraerRemesas: ${nombre} ya presente, se omite duplicado`,
-      )
-    }
+    reemplazarRemesa(remesas, resultado.value)
+    logMensaje(log, exito, { compania: nombre })
     return
   }
 
@@ -420,19 +423,42 @@ export async function extraerRemesas() {
   })
 
   try {
-    const [resultadoPrincipal, resultadoCocos, resultadoBelo, resultadoRipio] =
-      await Promise.allSettled([
-        extraerFilasRemesas(log),
-        extraerCocosRemesas(log),
-        extraerBeloRemesas(log),
-        extraerRipioRemesas(log),
-      ])
+    const [
+      resultadoPrincipal,
+      resultadoCocos,
+      resultadoBelo,
+      resultadoRipio,
+      resultadoDirectas,
+    ] = await Promise.allSettled([
+      extraerFilasRemesas(log),
+      extraerCocosRemesas(log),
+      extraerBeloRemesas(log),
+      extraerRipioRemesas(log),
+      extraerFuentesDirectasRemesas(log),
+    ])
 
     const remesas =
       resultadoPrincipal.status === 'fulfilled' ? resultadoPrincipal.value : []
 
+    if (resultadoDirectas.status === 'fulfilled') {
+      for (const fuente of resultadoDirectas.value) {
+        if (!fuente.ok) continue
+
+        reemplazarRemesa(remesas, fuente.remesa)
+        logMensaje(
+          log,
+          `extraerRemesas: ${fuente.remesa.compania} desde fuente oficial`,
+        )
+      }
+    } else {
+      logError(log, resultadoDirectas.reason)
+      logMensaje(log, 'extraerRemesas: falló el lote de fuentes oficiales', {
+        errorMessage: resultadoDirectas.reason?.message,
+      })
+    }
+
     if (resultadoCocos.status === 'fulfilled') {
-      remesas.push(resultadoCocos.value)
+      reemplazarRemesa(remesas, resultadoCocos.value)
       logMensaje(log, 'extraerRemesas: Cocos desde rendimientos.co agregado')
     } else {
       logError(log, resultadoCocos.reason)

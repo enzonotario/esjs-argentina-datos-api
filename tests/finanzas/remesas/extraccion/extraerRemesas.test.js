@@ -192,8 +192,10 @@ describe.skipIf(!tieneFirecrawl)('extraerRemesas', () => {
 
     expect(takenos).toBeDefined()
 
+    expect(takenos.costoRecibirPagos).toBe('0')
+
     if (takenos?.detalles?.costoRecibirPagos) {
-      expect(takenos.detalles.costoRecibirPagos).toContain('Para ACH es 0')
+      expect(takenos.detalles.costoRecibirPagos).toMatch(/25 USD|Para ACH es 0/)
     }
 
     const cocos = remesas.find(row => row.compania.toLowerCase() === 'cocos')
