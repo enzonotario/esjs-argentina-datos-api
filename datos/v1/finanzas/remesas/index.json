@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2026-09-02T01:21:56.420Z",
+  "fechaActualizacion": "2026-10-13T00:42:39.689Z",
   "remesas": [
     {
       "compania": "wallbit",
@@ -10,10 +10,17 @@
       "costoRecibirPagos": "0",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
-      "retiroArs": "0",
-      "detalles": null,
-      "calificacionAndroid": 4.6,
-      "calificacionIos": 4.6
+      "retiroArs": "FX",
+      "detalles": {
+        "inversiones": "Cuenta remunerada desde 2,75% APR e inversiones en EE.UU.",
+        "tarjetaUsa": "Tarjeta Visa Platinum de la cuenta en Estados Unidos.",
+        "costoRecibirPagos": "Depósitos ACH, Wire, moneda local y cripto gratis en el plan Classic.",
+        "costoMantenimientoTarjeta": "Plan Classic: 0 USD/mes. Emisión de tarjeta virtual: 5 USD, pago único.",
+        "costoTarjeta": "Uso en USD gratis. En otra moneda, sin comisión en USD o 2% FX.",
+        "retiroArs": "Retiro a moneda local con FX estándar. En algunos países hay 0,35 USD fijos por transacción."
+      },
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
       "compania": "takenos",
@@ -25,12 +32,18 @@
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "1%",
       "retiroArs": "0",
-      "detalles": null,
-      "calificacionAndroid": 4,
-      "calificacionIos": 4
+      "detalles": {
+        "moneda": "Los pagos se acreditan como USD digital.",
+        "tarjetaUsa": "TakeCard para compras internacionales con USD digital.",
+        "costoRecibirPagos": "ACH en USD gratis. Wire en USD: 25 USD.",
+        "costoTarjeta": "TakeCard: 1% por compra. Spicy Card: sin comisión de gasto.",
+        "retiroArs": "Retiros en ARS a cuenta bancaria argentina gratis."
+      },
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
-      "compania": "grabrfi",
+      "compania": "Global66",
       "cuentaPropia": true,
       "moneda": "FIAT",
       "inversiones": false,
@@ -38,13 +51,19 @@
       "costoRecibirPagos": "0",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
-      "retiroArs": "5 USD",
-      "detalles": null,
-      "calificacionAndroid": 4.6,
-      "calificacionIos": 4.6
+      "retiroArs": "0",
+      "detalles": {
+        "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
+        "inversiones": "No permite inversiones",
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
+        "calificacionAndroid": "4,75/5",
+        "calificacionIos": "4,75/5"
+      },
+      "calificacionAndroid": 4.75,
+      "calificacionIos": 4.75
     },
     {
-      "compania": "airtm",
+      "compania": "Airtm",
       "cuentaPropia": true,
       "moneda": "CRIPTO",
       "inversiones": true,
@@ -53,26 +72,39 @@
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
       "retiroArs": "0",
-      "detalles": null,
+      "detalles": {
+        "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
+        "inversiones": "Permite inversiones (Stacking cripto.)",
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
+        "calificacionAndroid": "4,65/5",
+        "calificacionIos": "4,65/5"
+      },
       "calificacionAndroid": 4.65,
       "calificacionIos": 4.65
     },
     {
-      "compania": "global66",
+      "compania": "grabrfi",
       "cuentaPropia": true,
-      "moneda": "FIAT",
+      "moneda": "CRIPTO",
       "inversiones": false,
       "tarjetaUsa": true,
       "costoRecibirPagos": "0",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
-      "retiroArs": "0",
-      "detalles": null,
-      "calificacionAndroid": 4.75,
-      "calificacionIos": 4.75
+      "retiroArs": "5 USD",
+      "detalles": {
+        "moneda": "El saldo de la cuenta global está en dólares digitales (USDB o USDC).",
+        "inversiones": "Boost es un incentivo promocional, no un producto de inversión.",
+        "tarjetaUsa": "Visa prepaga emitida por Lead Bank (EE.UU.).",
+        "costoRecibirPagos": "ACH entrante: 0 USD. Wire doméstico entrante en EE.UU.: 15 USD.",
+        "costoTarjeta": "Compras en EE.UU. gratis. Compras fuera de EE.UU.: 1,5%.",
+        "retiroArs": "Retiro a moneda local en Argentina: 5 USD."
+      },
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
-      "compania": "astropay",
+      "compania": "AstroPay",
       "cuentaPropia": true,
       "moneda": "FIAT",
       "inversiones": true,
@@ -81,7 +113,13 @@
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
       "retiroArs": "0",
-      "detalles": null,
+      "detalles": {
+        "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
+        "inversiones": "Permite inversiones (El balance que se tiene en AstroPay se invierte para generar rendimiento en dólares y en pesos.)",
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
+        "calificacionAndroid": "4,40/5",
+        "calificacionIos": "4,40/5"
+      },
       "calificacionAndroid": 4.4,
       "calificacionIos": 4.4
     },
@@ -90,28 +128,39 @@
       "cuentaPropia": true,
       "moneda": "FIAT",
       "inversiones": false,
-      "tarjetaUsa": true,
+      "tarjetaUsa": false,
       "costoRecibirPagos": "1%",
-      "costoMantenimientoTarjeta": "29,95 USD",
-      "costoTarjeta": "1% a 3%",
-      "retiroArs": "2%",
-      "detalles": null,
-      "calificacionAndroid": 4.35,
-      "calificacionIos": 4.35
+      "costoMantenimientoTarjeta": "29.95 USD",
+      "costoTarjeta": "1.8% a 3.5%",
+      "retiroArs": "1.2% a 4%",
+      "detalles": {
+        "tarjetaUsa": "Payoneer publica tarjeta y fees en USD. La página de precios no dice que esté emitida en EE.UU.",
+        "costoRecibirPagos": "1% (mín. 1 USD) si la receiving account no está en tu moneda local. ACH bank debit en EE.UU.: 1%. En moneda local: gratis.",
+        "costoMantenimientoTarjeta": "Fee anual de la tarjeta: 29,95 USD. Fee anual de cuenta si recibís menos de 6.000 USD en 12 meses.",
+        "costoTarjeta": "Compras sin conversión: hasta 1,8%. Con conversión: hasta 3,5%.",
+        "retiroArs": "Retiro a banco en moneda local del destinatario: 1,2% a 4%."
+      },
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
-      "compania": "lemon",
+      "compania": "Lemon",
       "cuentaPropia": true,
       "moneda": "CRIPTO",
       "inversiones": true,
       "tarjetaUsa": false,
       "costoRecibirPagos": "2%",
-      "costoMantenimientoTarjeta": "No tiene tarjeta emitida en EEUU.",
-      "costoTarjeta": "No tiene tarjeta emitida en EEUU.",
+      "costoMantenimientoTarjeta": "Sin tarjeta",
+      "costoTarjeta": "Sin tarjeta",
       "retiroArs": "0",
       "detalles": {
+        "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
+        "inversiones": "Permite inversiones (Stacking cripto.)",
+        "tarjetaUsa": "No tiene tarjeta emitida en EE.UU.",
         "costoMantenimientoTarjeta": "No tiene tarjeta emitida en EEUU.",
-        "costoTarjeta": "No tiene tarjeta emitida en EEUU."
+        "costoTarjeta": "No tiene tarjeta emitida en EEUU.",
+        "calificacionAndroid": "4/5",
+        "calificacionIos": "4/5"
       },
       "calificacionAndroid": 4,
       "calificacionIos": 4
@@ -121,14 +170,22 @@
       "cuentaPropia": true,
       "moneda": "CRIPTO",
       "inversiones": true,
-      "tarjetaUsa": true,
+      "tarjetaUsa": false,
       "costoRecibirPagos": "3 USD",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
       "retiroArs": "0",
-      "detalles": null,
-      "calificacionAndroid": 4.4,
-      "calificacionIos": 4.4
+      "detalles": {
+        "cuentaPropia": "Datos de cuenta en EE.UU. en ARQ. Depósito desde cuentas USD: 3 USDc.",
+        "inversiones": "Guardar dólares digitales y sumar rewards no tiene costo extra.",
+        "tarjetaUsa": "La página de costos no dice que la ARQCard esté emitida en EE.UU.",
+        "costoRecibirPagos": "3 USDc al depositar desde cuentas en dólares, euros o cripto, y al usar los datos de cuenta de EE.UU.",
+        "costoMantenimientoTarjeta": "Tarjeta virtual sin cargo. Envío de tarjeta física: 4,99 USD.",
+        "costoTarjeta": "Pagos con ARQCard sin cargo. Si el comercio cobra en pesos argentinos: 5%.",
+        "retiroArs": "Transferencias en moneda local sin cargo. Extracción en ATM: 1% (no es el retiro a banco)."
+      },
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
       "compania": "wise",
@@ -136,16 +193,17 @@
       "moneda": "FIAT",
       "inversiones": false,
       "tarjetaUsa": false,
-      "costoRecibirPagos": "6,11 USD",
-      "costoMantenimientoTarjeta": "No tiene tarjeta emitida en EEUU.",
-      "costoTarjeta": "No tiene tarjeta emitida en EEUU.",
-      "retiroArs": "1%",
+      "costoRecibirPagos": "0",
+      "costoMantenimientoTarjeta": null,
+      "costoTarjeta": null,
+      "retiroArs": null,
       "detalles": {
-        "costoMantenimientoTarjeta": "No tiene tarjeta emitida en EEUU.",
-        "costoTarjeta": "No tiene tarjeta emitida en EEUU."
+        "cuentaPropia": "Wise da datos de cuenta para cobrar. No es una cuenta bancaria propia en EE.UU.",
+        "tarjetaUsa": "La página de cobros no publica una tarjeta emitida en EE.UU.",
+        "costoRecibirPagos": "Pagos domésticos (ACH, no wire) gratis. Wire o SWIFT en USD: 6,11 USD."
       },
-      "calificacionAndroid": 4.85,
-      "calificacionIos": 4.85
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
       "compania": "Cocos",
@@ -161,7 +219,7 @@
         "costoRecibirPagos": "Mínimo 2.5 USD. todo gratis · wire/ach"
       },
       "calificacionAndroid": 4.8,
-      "calificacionIos": 4.81
+      "calificacionIos": 4.82
     },
     {
       "compania": "Belo",
@@ -169,21 +227,21 @@
       "moneda": "CRIPTO",
       "inversiones": true,
       "tarjetaUsa": true,
-      "costoRecibirPagos": "0.5%",
+      "costoRecibirPagos": "3 USD (ACH) / 20 USD (Wire)",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
-      "retiroArs": ">0%",
+      "retiroArs": "0",
       "detalles": {
-        "cuentaPropia": "Permite recibir pagos desde plataformas internacionales como PayPal y Upwork.",
+        "cuentaPropia": "Permite abrir cuenta en dólares (ACH, Wire) para recibir pagos.",
         "moneda": "Los fondos se acreditan como dólares digitales (USDC).",
         "inversiones": "Rendimientos / yield disponibles en la app",
-        "tarjetaUsa": "Tarjeta emitida en el exterior (Belo LUX) para pagar en dólares.",
-        "costoRecibirPagos": "Comisión por depósito de 0.5% para transferencias ACH y Wire.",
-        "costoMantenimientoTarjeta": "No tiene costo de mantenimiento mensual.",
-        "costoTarjeta": "Sin costo por uso de la tarjeta internacional.",
-        "retiroArs": "Costo por convertir a ARS no especificado."
+        "tarjetaUsa": "Tarjeta emitida en el exterior (Visa Global)",
+        "costoRecibirPagos": "Costo por recibir pagos a través de ACH y Wire.",
+        "costoMantenimientoTarjeta": "Sin costo de mantenimiento",
+        "costoTarjeta": "Sin costo de uso de tarjeta internacional",
+        "retiroArs": "No se detalla costo de retiro o conversión a ARS."
       },
-      "calificacionAndroid": 4.5,
+      "calificacionAndroid": 4.6,
       "calificacionIos": 4.83
     },
     {
@@ -197,14 +255,14 @@
       "costoTarjeta": "0%",
       "retiroArs": "/",
       "detalles": {
-        "cuentaPropia": "AHORA puedes tener una cuenta en el exterior para depositar y/o transferir dólares desde el extranjero.",
-        "moneda": "Acreditación en UXD, convirtiendo automáticamente 1 USD a 1 UXD.",
-        "inversiones": "Hold en UXD genera un interés del 2% anual, acreditado diariamente.",
-        "tarjetaUsa": "Ripio Card emitida en Argentina y no está bajo un esquema internacional.",
+        "cuentaPropia": "Permite contar en el exterior en USD (ACH/Wire)",
+        "moneda": "Acreedita UXD como cripto al depositar USD",
+        "inversiones": "Genera un 2% anual en UXD como recompensa",
+        "tarjetaUsa": "Tarjeta de uso internacional está emitida en Argentina",
         "costoRecibirPagos": "1.5% + 0.50 USD (ACH) o + 20 USD (Wire). Mantenimiento cuenta exterior: 5 USD/año (persona física)",
-        "costoMantenimientoTarjeta": "Card sin mantenimiento; la cuenta exterior cobra 5 USD/año (persona física)",
-        "costoTarjeta": "Cashback desde 2% en cripto / 0.5% en ARS (no es fee de uso)",
-        "retiroArs": "No fue especificado."
+        "costoMantenimientoTarjeta": "Sin costo asociado.",
+        "costoTarjeta": "Sin costo por uso.",
+        "retiroArs": "Costo de transferencia/convertir a ARS."
       },
       "calificacionAndroid": 4.5,
       "calificacionIos": 4.3
