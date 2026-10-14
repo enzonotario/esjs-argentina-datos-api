@@ -2,7 +2,7 @@
   "fondoId": "612",
   "claseId": "3326",
   "nombre": "Adcap Moneda - Clase C",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "adcap-moneda-clase-c",
@@ -24017,6 +24017,22 @@
       "patrimonio": null,
       "retornoDiario": 0.159078,
       "retornoAcumulado": 1560.32085,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-moneda-clase-c",
+      "fondoId": "612",
+      "claseId": "3326",
+      "nombre": "Adcap Moneda - Clase C",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 33261.589,
+      "patrimonio": null,
+      "retornoDiario": -0.281438,
+      "retornoAcumulado": 1555.648074,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

@@ -2,7 +2,7 @@
   "fondoId": "593",
   "claseId": "4568",
   "nombre": "MEGAQM Pesos - Clase E",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "megaqm-pesos-clase-e",
@@ -8322,6 +8322,22 @@
       "retornoDiario": 0.051307,
       "retornoAcumulado": 69.0695,
       "flujoEstimado": -70425106.250458,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-pesos-clase-e",
+      "fondoId": "593",
+      "claseId": "4568",
+      "nombre": "MEGAQM Pesos - Clase E",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1694.267,
+      "patrimonio": 4332368476.24,
+      "retornoDiario": 0.211274,
+      "retornoAcumulado": 69.4267,
+      "flujoEstimado": -350241392.724524,
       "origen": "cnv-excel"
     }
   ]

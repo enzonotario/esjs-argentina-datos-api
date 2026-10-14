@@ -2,7 +2,7 @@
   "fondoId": "886",
   "claseId": "2576",
   "nombre": "Argenfunds Retorno Absoluto - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "argenfunds-retorno-absoluto-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.021255,
       "retornoAcumulado": 1171.496698,
       "flujoEstimado": -0.029588,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-retorno-absoluto-clase-b",
+      "fondoId": "886",
+      "claseId": "2576",
+      "nombre": "Argenfunds Retorno Absoluto - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 15921.753,
+      "patrimonio": 2008155.7,
+      "retornoDiario": -0.106928,
+      "retornoAcumulado": 1170.137115,
+      "flujoEstimado": 0.019208,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "143",
   "claseId": "1719",
   "nombre": "Schroder Argentina - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "schroder-argentina-clase-a",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.242883,
       "retornoAcumulado": 4662.48649,
       "flujoEstimado": -104114451.477835,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-argentina-clase-a",
+      "fondoId": "143",
+      "claseId": "1719",
+      "nombre": "Schroder Argentina - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 963158.313,
+      "patrimonio": 4267087930.28,
+      "retornoDiario": -0.071029,
+      "retornoAcumulado": 4659.103739,
+      "flujoEstimado": -73499461.117287,
       "origen": "cnv-excel"
     }
   ]

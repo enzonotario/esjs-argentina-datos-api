@@ -2,7 +2,7 @@
   "fondoId": "21",
   "claseId": "1843",
   "nombre": "Fima Acciones - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "fima-acciones-clase-b",
@@ -25954,6 +25954,22 @@
       "retornoDiario": -0.218636,
       "retornoAcumulado": 5024.71608,
       "flujoEstimado": -17120528.581619,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-acciones-clase-b",
+      "fondoId": "21",
+      "claseId": "1843",
+      "nombre": "Fima Acciones - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 272357.783,
+      "patrimonio": 51592519047.66,
+      "retornoDiario": 1.516613,
+      "retornoAcumulado": 5102.438171,
+      "flujoEstimado": -54550205.650803,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "676",
   "claseId": "1418",
   "nombre": "Consultatio Global - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-global-clase-d",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.177642,
       "retornoAcumulado": 2697.323832,
       "flujoEstimado": 120.500473,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-global-clase-d",
+      "fondoId": "676",
+      "claseId": "1418",
+      "nombre": "Consultatio Global - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 49115.912,
+      "patrimonio": 21884654819.08,
+      "retornoDiario": 0.193268,
+      "retornoAcumulado": 2702.73015,
+      "flujoEstimado": -430.567581,
       "origen": "cnv-excel"
     }
   ]

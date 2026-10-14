@@ -2,7 +2,7 @@
   "fondoId": "285",
   "claseId": "285",
   "nombre": "Schroder Corto Plazo - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "schroder-corto-plazo-clase-b",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.169492,
       "retornoAcumulado": 4703.512213,
       "flujoEstimado": -41.942596,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-corto-plazo-clase-b",
+      "fondoId": "285",
+      "claseId": "285",
+      "nombre": "Schroder Corto Plazo - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 542233.837,
+      "patrimonio": 10176116936.87,
+      "retornoDiario": 0.047537,
+      "retornoAcumulado": 4705.795639,
+      "flujoEstimado": -44.84753,
       "origen": "cnv-excel"
     }
   ]

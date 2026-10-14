@@ -2,7 +2,7 @@
   "fondoId": "1831",
   "claseId": "6296",
   "nombre": "ConoSur Ahorro Dólar - Clase E",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "conosur-ahorro-dolar-clase-e",
@@ -2194,6 +2194,22 @@
       "retornoDiario": 0.002835,
       "retornoAcumulado": 2.2799,
       "flujoEstimado": -0.673209,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-ahorro-dolar-clase-e",
+      "fondoId": "1831",
+      "claseId": "6296",
+      "nombre": "ConoSur Ahorro Dólar - Clase E",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1023.032,
+      "patrimonio": 4122166.75,
+      "retornoDiario": 0.022781,
+      "retornoAcumulado": 2.3032,
+      "flujoEstimado": -19394.424164,
       "origen": "cnv-excel"
     }
   ]

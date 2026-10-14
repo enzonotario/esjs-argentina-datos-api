@@ -2,7 +2,7 @@
   "fondoId": "1848",
   "claseId": "6375",
   "nombre": "Fundcorp Long Performance Plus II - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "fundcorp-long-performance-plus-ii-clase-a",
@@ -1986,6 +1986,22 @@
       "retornoDiario": 0.081569,
       "retornoAcumulado": -42.69537,
       "flujoEstimado": 0.260525,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-long-performance-plus-ii-clase-a",
+      "fondoId": "1848",
+      "claseId": "6375",
+      "nombre": "Fundcorp Long Performance Plus II - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 573.671,
+      "patrimonio": 744284.66,
+      "retornoDiario": 0.119025,
+      "retornoAcumulado": -42.627163,
+      "flujoEstimado": -0.12179,
       "origen": "cnv-excel"
     }
   ]

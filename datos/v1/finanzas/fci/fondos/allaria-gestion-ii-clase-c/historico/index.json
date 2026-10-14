@@ -2,7 +2,7 @@
   "fondoId": "1448",
   "claseId": "4254",
   "nombre": "Allaria Gestion II - Clase C",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "allaria-gestion-ii-clase-c",
@@ -11250,6 +11250,22 @@
       "retornoDiario": 0.065294,
       "retornoAcumulado": 152.4082,
       "flujoEstimado": 6364.362968,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-gestion-ii-clase-c",
+      "fondoId": "1448",
+      "claseId": "4254",
+      "nombre": "Allaria Gestion II - Clase C",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2522.033,
+      "patrimonio": 46228468490.3,
+      "retornoDiario": -0.081178,
+      "retornoAcumulado": 152.2033,
+      "flujoEstimado": -8108.671967,
       "origen": "cnv-excel"
     }
   ]

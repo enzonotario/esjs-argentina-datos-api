@@ -2,7 +2,7 @@
   "fondoId": "521",
   "claseId": "1053",
   "nombre": "Allaria Renta Mixta - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "allaria-renta-mixta-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": 0.052853,
       "retornoAcumulado": 4625.457902,
       "flujoEstimado": -0.010061,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-renta-mixta-clase-b",
+      "fondoId": "521",
+      "claseId": "1053",
+      "nombre": "Allaria Renta Mixta - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 571765.683,
+      "patrimonio": 11746986.23,
+      "retornoDiario": 0.204675,
+      "retornoAcumulado": 4635.129724,
+      "flujoEstimado": -0.014306,
       "origen": "cnv-excel"
     }
   ]

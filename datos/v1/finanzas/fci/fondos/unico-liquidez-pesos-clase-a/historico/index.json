@@ -2,7 +2,7 @@
   "fondoId": "2008",
   "claseId": "6721",
   "nombre": "Unico Liquidez Pesos - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "unico-liquidez-pesos-clase-a",
@@ -306,6 +306,22 @@
       "retornoDiario": 0.059494,
       "retornoAcumulado": 1.2465,
       "flujoEstimado": 0.000022,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "unico-liquidez-pesos-clase-a",
+      "fondoId": "2008",
+      "claseId": "6721",
+      "nombre": "Unico Liquidez Pesos - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1014.965,
+      "patrimonio": 10149.65,
+      "retornoDiario": 0.246922,
+      "retornoAcumulado": 1.4965,
+      "flujoEstimado": 0.000012,
       "origen": "cnv-excel"
     }
   ]

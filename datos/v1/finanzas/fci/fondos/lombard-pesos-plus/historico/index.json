@@ -2,7 +2,7 @@
   "fondoId": "605",
   "claseId": "1225",
   "nombre": "Lombard Pesos Plus",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "lombard-pesos-plus",
@@ -13330,6 +13330,22 @@
       "retornoDiario": 0.129297,
       "retornoAcumulado": 732.784076,
       "flujoEstimado": 212.76088,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-pesos-plus",
+      "fondoId": "605",
+      "claseId": "1225",
+      "nombre": "Lombard Pesos Plus",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 12651.585,
+      "patrimonio": 21562551707.13,
+      "retornoDiario": -0.219993,
+      "retornoAcumulado": 730.952007,
+      "flujoEstimado": -657.032917,
       "origen": "cnv-excel"
     }
   ]

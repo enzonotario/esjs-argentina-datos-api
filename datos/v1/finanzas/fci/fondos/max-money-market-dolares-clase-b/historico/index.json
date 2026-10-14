@@ -2,7 +2,7 @@
   "fondoId": "1613",
   "claseId": "5310",
   "nombre": "Max Money Market Dólares - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "max-money-market-dolares-clase-b",
@@ -6194,6 +6194,22 @@
       "retornoDiario": 0.002556,
       "retornoAcumulado": 1.7062,
       "flujoEstimado": 587972.475684,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-money-market-dolares-clase-b",
+      "fondoId": "1613",
+      "claseId": "5310",
+      "nombre": "Max Money Market Dólares - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1017.153,
+      "patrimonio": 78889719.12,
+      "retornoDiario": 0.008947,
+      "retornoAcumulado": 1.7153,
+      "flujoEstimado": -319411.316897,
       "origen": "cnv-excel"
     }
   ]

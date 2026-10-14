@@ -2,7 +2,7 @@
   "fondoId": "1714",
   "claseId": "5765",
   "nombre": "Pellegrini Liquidez Pesos Clase C",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "pellegrini-liquidez-pesos-clase-c",
@@ -4370,6 +4370,22 @@
       "retornoDiario": 0.055118,
       "retornoAcumulado": 12.1839,
       "flujoEstimado": 491979086.703064,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-liquidez-pesos-clase-c",
+      "fondoId": "1714",
+      "claseId": "5765",
+      "nombre": "Pellegrini Liquidez Pesos Clase C",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1124.318,
+      "patrimonio": 113005262630.93,
+      "retornoDiario": 0.220976,
+      "retornoAcumulado": 12.4318,
+      "flujoEstimado": 22806.941971,
       "origen": "cnv-excel"
     }
   ]

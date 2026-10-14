@@ -2,7 +2,7 @@
   "fondoId": "1482",
   "claseId": "4393",
   "nombre": "Toronto Trust Renta Dólar - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "toronto-trust-renta-dolar-clase-a",
@@ -9426,6 +9426,22 @@
       "retornoDiario": 0.032114,
       "retornoAcumulado": 13.0726,
       "flujoEstimado": 21733.226996,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-renta-dolar-clase-a",
+      "fondoId": "1482",
+      "claseId": "4393",
+      "nombre": "Toronto Trust Renta Dólar - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1130.516,
+      "patrimonio": 13056220.38,
+      "retornoDiario": -0.018572,
+      "retornoAcumulado": 13.0516,
+      "flujoEstimado": -54198.750672,
       "origen": "cnv-excel"
     }
   ]

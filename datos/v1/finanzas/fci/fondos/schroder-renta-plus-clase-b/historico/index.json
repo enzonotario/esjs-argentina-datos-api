@@ -2,7 +2,7 @@
   "fondoId": "609",
   "claseId": "1231",
   "nombre": "Schroder Renta Plus - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "schroder-renta-plus-clase-b",
@@ -26194,6 +26194,22 @@
       "retornoDiario": 0.214345,
       "retornoAcumulado": 4173.050102,
       "flujoEstimado": -6192474613.116272,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-plus-clase-b",
+      "fondoId": "609",
+      "claseId": "1231",
+      "nombre": "Schroder Renta Plus - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 145123.969,
+      "patrimonio": 383869948100.38,
+      "retornoDiario": 0.04253,
+      "retornoAcumulado": 4174.86743,
+      "flujoEstimado": -5977785975.67688,
       "origen": "cnv-excel"
     }
   ]

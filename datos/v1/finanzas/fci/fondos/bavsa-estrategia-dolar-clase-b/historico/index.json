@@ -2,7 +2,7 @@
   "fondoId": "1692",
   "claseId": "5645",
   "nombre": "BAVSA Estrategia Dolar - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "bavsa-estrategia-dolar-clase-b",
@@ -4418,6 +4418,22 @@
       "retornoDiario": 0.15933,
       "retornoAcumulado": 26.449525,
       "flujoEstimado": -17949.511617,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-estrategia-dolar-clase-b",
+      "fondoId": "1692",
+      "claseId": "5645",
+      "nombre": "BAVSA Estrategia Dolar - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1268.538,
+      "patrimonio": 7608278.6,
+      "retornoDiario": 0.047084,
+      "retornoAcumulado": 26.509063,
+      "flujoEstimado": -105.305567,
       "origen": "cnv-excel"
     }
   ]

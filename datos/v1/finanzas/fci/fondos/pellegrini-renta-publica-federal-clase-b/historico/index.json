@@ -2,7 +2,7 @@
   "fondoId": "772",
   "claseId": "1737",
   "nombre": "Pellegrini Renta Publica Federal - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-publica-federal-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.135863,
       "retornoAcumulado": 3871.141824,
       "flujoEstimado": 133.134766,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-publica-federal-clase-b",
+      "fondoId": "772",
+      "claseId": "1737",
+      "nombre": "Pellegrini Renta Publica Federal - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 88380.275,
+      "patrimonio": 17717745547.46,
+      "retornoDiario": 0.098963,
+      "retornoAcumulado": 3875.071772,
+      "flujoEstimado": -203.017296,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1872",
   "claseId": "6473",
   "nombre": "Champaquí Renta Plus - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "champaqui-renta-plus-clase-b",
@@ -1250,6 +1250,22 @@
       "retornoDiario": 0.272856,
       "retornoAcumulado": 6.3158,
       "flujoEstimado": -1044.211243,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-renta-plus-clase-b",
+      "fondoId": "1872",
+      "claseId": "6473",
+      "nombre": "Champaquí Renta Plus - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1062.85,
+      "patrimonio": 1098681574.17,
+      "retornoDiario": -0.02897,
+      "retornoAcumulado": 6.285,
+      "flujoEstimado": 104000044.513064,
       "origen": "cnv-excel"
     }
   ]

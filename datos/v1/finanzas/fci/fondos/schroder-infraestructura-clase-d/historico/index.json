@@ -2,7 +2,7 @@
   "fondoId": "356",
   "claseId": "1725",
   "nombre": "Schroder Infraestructura - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "schroder-infraestructura-clase-d",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.084686,
       "retornoAcumulado": 3700.562467,
       "flujoEstimado": -281.46579,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-infraestructura-clase-d",
+      "fondoId": "356",
+      "claseId": "1725",
+      "nombre": "Schroder Infraestructura - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Infraestructura",
+      "categoriaKey": null,
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 70240.027,
+      "patrimonio": 128659238908.45,
+      "retornoDiario": -0.01703,
+      "retornoAcumulado": 3699.915227,
+      "flujoEstimado": -875.442398,
       "origen": "cnv-excel"
     }
   ]

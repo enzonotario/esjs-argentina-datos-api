@@ -2,7 +2,7 @@
   "fondoId": "1636",
   "claseId": "5430",
   "nombre": "Crecer Liquidez - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "crecer-liquidez-clase-b",
@@ -5778,6 +5778,22 @@
       "retornoDiario": 0.052813,
       "retornoAcumulado": 45.3053,
       "flujoEstimado": -5854550185.925201,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-liquidez-clase-b",
+      "fondoId": "1636",
+      "claseId": "5430",
+      "nombre": "Crecer Liquidez - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1456.142,
+      "patrimonio": 156967509007.98,
+      "retornoDiario": 0.212587,
+      "retornoAcumulado": 45.6142,
+      "flujoEstimado": 1424603204.523865,
       "origen": "cnv-excel"
     }
   ]

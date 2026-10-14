@@ -2,7 +2,7 @@
   "fondoId": "510",
   "claseId": "1031",
   "nombre": "Gainvest Renta Variable - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "gainvest-renta-variable-clase-a",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.182406,
       "retornoAcumulado": 6156.700329,
       "flujoEstimado": 1144608.231816,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-renta-variable-clase-a",
+      "fondoId": "510",
+      "claseId": "1031",
+      "nombre": "Gainvest Renta Variable - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": null,
+      "valorCuotaparte": 594501.862,
+      "patrimonio": 1655937002.75,
+      "retornoDiario": 1.275507,
+      "retornoAcumulado": 6236.505008,
+      "flujoEstimado": 4350007.069323,
       "origen": "cnv-excel"
     }
   ]

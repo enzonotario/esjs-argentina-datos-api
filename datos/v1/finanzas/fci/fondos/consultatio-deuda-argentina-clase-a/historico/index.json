@@ -2,7 +2,7 @@
   "fondoId": "281",
   "claseId": "1073",
   "nombre": "Consultatio Deuda Argentina - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-deuda-argentina-clase-a",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.179557,
       "retornoAcumulado": 9221.59151,
       "flujoEstimado": 71795017.183586,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-deuda-argentina-clase-a",
+      "fondoId": "281",
+      "claseId": "1073",
+      "nombre": "Consultatio Deuda Argentina - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2529000.904,
+      "patrimonio": 19520371248.94,
+      "retornoDiario": 0.207717,
+      "retornoAcumulado": 9240.954022,
+      "flujoEstimado": 61147050.248512,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "448",
   "claseId": "858",
   "nombre": "Quiron Savings - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "quiron-savings-clase-b",
@@ -24850,6 +24850,22 @@
       "retornoDiario": 0.128941,
       "retornoAcumulado": 3196.747468,
       "flujoEstimado": -9994633.533158,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-savings-clase-b",
+      "fondoId": "448",
+      "claseId": "858",
+      "nombre": "Quiron Savings - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 405019.929,
+      "patrimonio": 1769413636.53,
+      "retornoDiario": 0.124741,
+      "retornoAcumulado": 3200.859868,
+      "flujoEstimado": -37481623.602956,
       "origen": "cnv-excel"
     }
   ]

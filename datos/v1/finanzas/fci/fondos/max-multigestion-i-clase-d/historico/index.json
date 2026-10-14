@@ -2,7 +2,7 @@
   "fondoId": "1518",
   "claseId": "4543",
   "nombre": "Max Multigestión I - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "max-multigestion-i-clase-d",
@@ -8482,6 +8482,22 @@
       "retornoDiario": 0.112768,
       "retornoAcumulado": 20.2045,
       "flujoEstimado": -1484675954.457413,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-multigestion-i-clase-d",
+      "fondoId": "1518",
+      "claseId": "4543",
+      "nombre": "Max Multigestión I - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1199.885,
+      "patrimonio": 77575817694.7,
+      "retornoDiario": -0.179694,
+      "retornoAcumulado": 19.9885,
+      "flujoEstimado": -1699433874.406784,
       "origen": "cnv-excel"
     }
   ]

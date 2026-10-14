@@ -2,7 +2,7 @@
   "fondoId": "1202",
   "claseId": "3292",
   "nombre": "Consultatio Gestion Xl Dolar - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-xl-dolar-clase-a",
@@ -24833,6 +24833,22 @@
       "patrimonio": null,
       "retornoDiario": 0.125159,
       "retornoAcumulado": 22.2375,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-xl-dolar-clase-a",
+      "fondoId": "1202",
+      "claseId": "3292",
+      "nombre": "Consultatio Gestion Xl Dolar - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1221.545,
+      "patrimonio": null,
+      "retornoDiario": -0.067901,
+      "retornoAcumulado": 22.1545,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

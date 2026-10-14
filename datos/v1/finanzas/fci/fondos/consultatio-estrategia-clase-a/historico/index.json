@@ -2,7 +2,7 @@
   "fondoId": "648",
   "claseId": "1335",
   "nombre": "Consultatio Estrategia - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-estrategia-clase-a",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.207728,
       "retornoAcumulado": 3105.41151,
       "flujoEstimado": -0.000754,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-estrategia-clase-a",
+      "fondoId": "648",
+      "claseId": "1335",
+      "nombre": "Consultatio Estrategia - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 111950.551,
+      "patrimonio": 28342446.31,
+      "retornoDiario": 0.035788,
+      "retornoAcumulado": 3106.558676,
+      "flujoEstimado": 0.154118,
       "origen": "cnv-excel"
     }
   ]

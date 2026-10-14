@@ -2,7 +2,7 @@
   "fondoId": "1504",
   "claseId": "4500",
   "nombre": "SBS Retorno Sustentable ASG - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "sbs-retorno-sustentable-asg-clase-b",
@@ -7810,6 +7810,22 @@
       "retornoDiario": 0.184518,
       "retornoAcumulado": 65.4922,
       "flujoEstimado": 1.474039,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-retorno-sustentable-asg-clase-b",
+      "fondoId": "1504",
+      "claseId": "4500",
+      "nombre": "SBS Retorno Sustentable ASG - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "ASG",
+      "categoriaKey": null,
+      "horizonte": null,
+      "valorCuotaparte": 1656.143,
+      "patrimonio": 16561429.22,
+      "retornoDiario": 0.07378,
+      "retornoAcumulado": 65.6143,
+      "flujoEstimado": -0.844553,
       "origen": "cnv-excel"
     }
   ]

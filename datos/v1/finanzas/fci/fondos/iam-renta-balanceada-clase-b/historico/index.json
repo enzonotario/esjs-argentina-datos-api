@@ -2,7 +2,7 @@
   "fondoId": "1205",
   "claseId": "3319",
   "nombre": "IAM Renta Balanceada - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "iam-renta-balanceada-clase-b",
@@ -24338,6 +24338,22 @@
       "retornoDiario": 0.055709,
       "retornoAcumulado": 1332.7078,
       "flujoEstimado": -86010502.661462,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-balanceada-clase-b",
+      "fondoId": "1205",
+      "claseId": "3319",
+      "nombre": "IAM Renta Balanceada - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14303.505,
+      "patrimonio": 6052935100.47,
+      "retornoDiario": -0.164535,
+      "retornoAcumulado": 1330.3505,
+      "flujoEstimado": 24993313.17704,
       "origen": "cnv-excel"
     }
   ]

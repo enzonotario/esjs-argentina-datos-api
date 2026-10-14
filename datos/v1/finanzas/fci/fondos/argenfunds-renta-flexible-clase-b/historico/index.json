@@ -2,7 +2,7 @@
   "fondoId": "679",
   "claseId": "1425",
   "nombre": "Argenfunds Renta Flexible - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-flexible-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.20963,
       "retornoAcumulado": 1474.171099,
       "flujoEstimado": -15.133208,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-flexible-clase-b",
+      "fondoId": "679",
+      "claseId": "1425",
+      "nombre": "Argenfunds Renta Flexible - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 40724.504,
+      "patrimonio": 3342258113.49,
+      "retornoDiario": -0.009109,
+      "retornoAcumulado": 1474.027705,
+      "flujoEstimado": 210000011.632427,
       "origen": "cnv-excel"
     }
   ]

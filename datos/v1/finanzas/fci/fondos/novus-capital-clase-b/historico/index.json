@@ -2,7 +2,7 @@
   "fondoId": "1493",
   "claseId": "4454",
   "nombre": "Novus Capital - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "novus-capital-clase-b",
@@ -9554,6 +9554,22 @@
       "retornoDiario": 0.357372,
       "retornoAcumulado": 25.4143,
       "flujoEstimado": -2.935318,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-capital-clase-b",
+      "fondoId": "1493",
+      "claseId": "4454",
+      "nombre": "Novus Capital - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1253.654,
+      "patrimonio": 13682345.77,
+      "retornoDiario": -0.038991,
+      "retornoAcumulado": 25.3654,
+      "flujoEstimado": 2153.41441,
       "origen": "cnv-excel"
     }
   ]

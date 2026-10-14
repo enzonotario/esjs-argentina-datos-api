@@ -2,7 +2,7 @@
   "fondoId": "532",
   "claseId": "1076",
   "nombre": "Consultatio Renta Nacional - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-renta-nacional-clase-a",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.196632,
       "retornoAcumulado": 3415.144657,
       "flujoEstimado": -68824425.81868,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-renta-nacional-clase-a",
+      "fondoId": "532",
+      "claseId": "1076",
+      "nombre": "Consultatio Renta Nacional - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 231965.868,
+      "patrimonio": 9632344072.83,
+      "retornoDiario": 0.082745,
+      "retornoAcumulado": 3418.053272,
+      "flujoEstimado": -81351176.522909,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1359",
   "claseId": "3889",
   "nombre": "Max Renta Fija Dolares - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "max-renta-fija-dolares-clase-d",
@@ -8482,6 +8482,22 @@
       "retornoDiario": 0.048386,
       "retornoAcumulado": 11.2437,
       "flujoEstimado": -0.089187,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-renta-fija-dolares-clase-d",
+      "fondoId": "1359",
+      "claseId": "3889",
+      "nombre": "Max Renta Fija Dolares - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1112.726,
+      "patrimonio": 409119.01,
+      "retornoDiario": 0.025979,
+      "retornoAcumulado": 11.2726,
+      "flujoEstimado": 0.112606,
       "origen": "cnv-excel"
     }
   ]

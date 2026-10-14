@@ -2,7 +2,7 @@
   "fondoId": "1710",
   "claseId": "5726",
   "nombre": "Axis Estrategia Dólar 5 - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "axis-estrategia-dolar-5-clase-b",
@@ -3138,6 +3138,22 @@
       "retornoDiario": 0.096203,
       "retornoAcumulado": 5.0869,
       "flujoEstimado": 0.238639,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-estrategia-dolar-5-clase-b",
+      "fondoId": "1710",
+      "claseId": "5726",
+      "nombre": "Axis Estrategia Dólar 5 - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1051.016,
+      "patrimonio": 624838.25,
+      "retornoDiario": 0.013988,
+      "retornoAcumulado": 5.1016,
+      "flujoEstimado": -0.180175,
       "origen": "cnv-excel"
     }
   ]

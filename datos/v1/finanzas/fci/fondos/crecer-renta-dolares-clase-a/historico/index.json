@@ -2,7 +2,7 @@
   "fondoId": "1637",
   "claseId": "5432",
   "nombre": "Crecer Renta Dólares - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "crecer-renta-dolares-clase-a",
@@ -5730,6 +5730,22 @@
       "retornoDiario": 0.262985,
       "retornoAcumulado": 14.0318,
       "flujoEstimado": -13719.320436,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-renta-dolares-clase-a",
+      "fondoId": "1637",
+      "claseId": "5432",
+      "nombre": "Crecer Renta Dólares - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1139.331,
+      "patrimonio": 8219835.61,
+      "retornoDiario": -0.086555,
+      "retornoAcumulado": 13.9331,
+      "flujoEstimado": -4362.748395,
       "origen": "cnv-excel"
     }
   ]

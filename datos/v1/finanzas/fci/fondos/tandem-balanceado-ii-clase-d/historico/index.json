@@ -2,7 +2,7 @@
   "fondoId": "1783",
   "claseId": "6089",
   "nombre": "Tandem Balanceado II - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "tandem-balanceado-ii-clase-d",
@@ -2786,6 +2786,22 @@
       "retornoDiario": 0.663531,
       "retornoAcumulado": 4.2088,
       "flujoEstimado": -79.755596,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tandem-balanceado-ii-clase-d",
+      "fondoId": "1783",
+      "claseId": "6089",
+      "nombre": "Tandem Balanceado II - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1043.251,
+      "patrimonio": 454397880.67,
+      "retornoDiario": 0.111603,
+      "retornoAcumulado": 4.3251,
+      "flujoEstimado": 92743897.671541,
       "origen": "cnv-excel"
     }
   ]

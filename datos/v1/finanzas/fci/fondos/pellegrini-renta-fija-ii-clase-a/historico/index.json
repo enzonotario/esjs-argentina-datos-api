@@ -2,7 +2,7 @@
   "fondoId": "1270",
   "claseId": "3537",
   "nombre": "Pellegrini Renta Fija II - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-fija-ii-clase-a",
@@ -19762,6 +19762,22 @@
       "retornoDiario": 0.114887,
       "retornoAcumulado": 1546.9882,
       "flujoEstimado": 14820848.608347,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-fija-ii-clase-a",
+      "fondoId": "1270",
+      "claseId": "3537",
+      "nombre": "Pellegrini Renta Fija II - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 16504.694,
+      "patrimonio": 11042537633.44,
+      "retornoDiario": 0.211368,
+      "retornoAcumulado": 1550.4694,
+      "flujoEstimado": -58845820.690781,
       "origen": "cnv-excel"
     }
   ]

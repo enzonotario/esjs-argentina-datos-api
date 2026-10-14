@@ -2,7 +2,7 @@
   "fondoId": "1598",
   "claseId": "5257",
   "nombre": "Novus Renta Capital - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "novus-renta-capital-clase-b",
@@ -7010,6 +7010,22 @@
       "retornoDiario": 0.237524,
       "retornoAcumulado": 73.7835,
       "flujoEstimado": 9237.57592,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-renta-capital-clase-b",
+      "fondoId": "1598",
+      "claseId": "5257",
+      "nombre": "Novus Renta Capital - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1741.968,
+      "patrimonio": 18224495922.8,
+      "retornoDiario": 0.237825,
+      "retornoAcumulado": 74.1968,
+      "flujoEstimado": -3619.471703,
       "origen": "cnv-excel"
     }
   ]

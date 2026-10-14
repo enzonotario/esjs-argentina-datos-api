@@ -2,7 +2,7 @@
   "fondoId": "1554",
   "claseId": "4850",
   "nombre": "Pionero Money Market Dólar - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "pionero-money-market-dolar-clase-a",
@@ -7874,6 +7874,22 @@
       "retornoDiario": 0.001764,
       "retornoAcumulado": 2.0188,
       "flujoEstimado": 4360411.383496,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-money-market-dolar-clase-a",
+      "fondoId": "1554",
+      "claseId": "4850",
+      "nombre": "Pionero Money Market Dólar - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1020.264,
+      "patrimonio": 234799016.24,
+      "retornoDiario": 0.00745,
+      "retornoAcumulado": 2.0264,
+      "flujoEstimado": -900296.01067,
       "origen": "cnv-excel"
     }
   ]

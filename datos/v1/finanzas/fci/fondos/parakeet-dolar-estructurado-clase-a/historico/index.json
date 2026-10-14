@@ -2,7 +2,7 @@
   "fondoId": "1748",
   "claseId": "5904",
   "nombre": "Parakeet Dólar Estructurado - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "parakeet-dolar-estructurado-clase-a",
@@ -2818,6 +2818,22 @@
       "retornoDiario": 0.047883,
       "retornoAcumulado": 5.306,
       "flujoEstimado": 0.001692,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-dolar-estructurado-clase-a",
+      "fondoId": "1748",
+      "claseId": "5904",
+      "nombre": "Parakeet Dólar Estructurado - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1055.629,
+      "patrimonio": 10636.63,
+      "retornoDiario": 0.243956,
+      "retornoAcumulado": 5.5629,
+      "flujoEstimado": 0.004463,
       "origen": "cnv-excel"
     }
   ]

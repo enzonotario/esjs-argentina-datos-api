@@ -2,7 +2,7 @@
   "fondoId": "1289",
   "claseId": "3605",
   "nombre": "Consultatio Gestion IV - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-iv-clase-a",
@@ -18833,6 +18833,22 @@
       "patrimonio": null,
       "retornoDiario": 0.015061,
       "retornoAcumulado": 34.1458,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-iv-clase-a",
+      "fondoId": "1289",
+      "claseId": "3605",
+      "nombre": "Consultatio Gestion IV - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1341.485,
+      "patrimonio": null,
+      "retornoDiario": 0.002013,
+      "retornoAcumulado": 34.1485,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

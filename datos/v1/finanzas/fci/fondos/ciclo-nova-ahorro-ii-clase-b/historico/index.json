@@ -2,7 +2,7 @@
   "fondoId": "1983",
   "claseId": "6665",
   "nombre": "Ciclo Nova Ahorro II - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-ahorro-ii-clase-b",
@@ -594,6 +594,22 @@
       "retornoDiario": 0.05414,
       "retornoAcumulado": 2.3822,
       "flujoEstimado": -5.820611,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-ahorro-ii-clase-b",
+      "fondoId": "1983",
+      "claseId": "6665",
+      "nombre": "Ciclo Nova Ahorro II - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1026.043,
+      "patrimonio": 102605335.59,
+      "retornoDiario": 0.216932,
+      "retornoAcumulado": 2.6043,
+      "flujoEstimado": 2.759674,
       "origen": "cnv-excel"
     }
   ]

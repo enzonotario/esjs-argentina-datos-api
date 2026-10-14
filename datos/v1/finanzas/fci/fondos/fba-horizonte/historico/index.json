@@ -2,7 +2,7 @@
   "fondoId": "322",
   "claseId": "350",
   "nombre": "FBA Horizonte",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "fba-horizonte",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.097011,
       "retornoAcumulado": 701.802898,
       "flujoEstimado": -20535242.905946,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-horizonte",
+      "fondoId": "322",
+      "claseId": "350",
+      "nombre": "FBA Horizonte",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 358704.208,
+      "patrimonio": 3794737208.58,
+      "retornoDiario": -0.16804,
+      "retornoAcumulado": 700.455551,
+      "flujoEstimado": -35453921.879616,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "888",
   "claseId": "2590",
   "nombre": "Fundcorp Liquidez - Clase C",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "fundcorp-liquidez-clase-c",
@@ -25826,6 +25826,22 @@
       "retornoDiario": 0.053301,
       "retornoAcumulado": 1512.560365,
       "flujoEstimado": -2630083912.481529,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-liquidez-clase-c",
+      "fondoId": "888",
+      "claseId": "2590",
+      "nombre": "Fundcorp Liquidez - Clase C",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 20052.26,
+      "patrimonio": 41021028960.6,
+      "retornoDiario": 0.218607,
+      "retornoAcumulado": 1516.085532,
+      "flujoEstimado": 5851775518.492744,
       "origen": "cnv-excel"
     }
   ]

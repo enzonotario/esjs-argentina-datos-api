@@ -2,7 +2,7 @@
   "fondoId": "438",
   "claseId": "831",
   "nombre": "SBS Renta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "sbs-renta-pesos-clase-b",
@@ -26130,6 +26130,22 @@
       "retornoDiario": 0.182743,
       "retornoAcumulado": 6895.240873,
       "flujoEstimado": 1539999921.205177,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-pesos-clase-b",
+      "fondoId": "438",
+      "claseId": "831",
+      "nombre": "SBS Renta Pesos - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1713699.604,
+      "patrimonio": 40448449662.1,
+      "retornoDiario": 0.031803,
+      "retornoAcumulado": 6897.465542,
+      "flujoEstimado": -1200000145.849159,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "684",
   "claseId": "1443",
   "nombre": "GSS Cobertura - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "gss-cobertura-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": -0.042926,
       "retornoAcumulado": 2464.243349,
       "flujoEstimado": -14.260282,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gss-cobertura-clase-b",
+      "fondoId": "684",
+      "claseId": "1443",
+      "nombre": "GSS Cobertura - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 66617.429,
+      "patrimonio": 4355211294.53,
+      "retornoDiario": -0.00858,
+      "retornoAcumulado": 2464.023347,
+      "flujoEstimado": 18.451735,
       "origen": "cnv-excel"
     }
   ]

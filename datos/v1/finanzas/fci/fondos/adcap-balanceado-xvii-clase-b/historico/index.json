@@ -2,7 +2,7 @@
   "fondoId": "1458",
   "claseId": "4310",
   "nombre": "Adcap Balanceado XVII - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-xvii-clase-b",
@@ -10722,6 +10722,22 @@
       "retornoDiario": -0.089544,
       "retornoAcumulado": 55.6497,
       "flujoEstimado": 20.446759,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-xvii-clase-b",
+      "fondoId": "1458",
+      "claseId": "4310",
+      "nombre": "Adcap Balanceado XVII - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1560.357,
+      "patrimonio": 184853448.82,
+      "retornoDiario": 0.247993,
+      "retornoAcumulado": 56.0357,
+      "flujoEstimado": -5.069757,
       "origen": "cnv-excel"
     }
   ]

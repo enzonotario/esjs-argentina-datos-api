@@ -2,7 +2,7 @@
   "fondoId": "431",
   "claseId": "6171",
   "nombre": "Pionero FF - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "pionero-ff-clase-b",
@@ -2690,6 +2690,22 @@
       "retornoDiario": 0.168353,
       "retornoAcumulado": 19.542965,
       "flujoEstimado": -28181485.853508,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-ff-clase-b",
+      "fondoId": "431",
+      "claseId": "6171",
+      "nombre": "Pionero FF - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 273194.108,
+      "patrimonio": 41079798905.02,
+      "retornoDiario": 0.211295,
+      "retornoAcumulado": 19.795553,
+      "flujoEstimado": -101100010.530426,
       "origen": "cnv-excel"
     }
   ]

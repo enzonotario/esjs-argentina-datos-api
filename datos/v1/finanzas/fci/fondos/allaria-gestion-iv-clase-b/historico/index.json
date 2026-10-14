@@ -2,7 +2,7 @@
   "fondoId": "1525",
   "claseId": "4578",
   "nombre": "Allaria Gestion IV - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "allaria-gestion-iv-clase-b",
@@ -8594,6 +8594,22 @@
       "retornoDiario": -0.101841,
       "retornoAcumulado": 9.3729,
       "flujoEstimado": 0.00851,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-gestion-iv-clase-b",
+      "fondoId": "1525",
+      "claseId": "4578",
+      "nombre": "Allaria Gestion IV - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1110.41,
+      "patrimonio": 11052.83,
+      "retornoDiario": 1.525149,
+      "retornoAcumulado": 11.041,
+      "flujoEstimado": 0.000231,
       "origen": "cnv-excel"
     }
   ]

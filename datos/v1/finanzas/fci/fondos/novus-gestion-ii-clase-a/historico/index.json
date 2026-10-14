@@ -2,7 +2,7 @@
   "fondoId": "1551",
   "claseId": "4774",
   "nombre": "Novus Gestion II - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "novus-gestion-ii-clase-a",
@@ -7906,6 +7906,22 @@
       "retornoDiario": 0.376458,
       "retornoAcumulado": 82.431,
       "flujoEstimado": 52.553026,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-gestion-ii-clase-a",
+      "fondoId": "1551",
+      "claseId": "4774",
+      "nombre": "Novus Gestion II - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1824.343,
+      "patrimonio": 744096577.44,
+      "retornoDiario": 0.001809,
+      "retornoAcumulado": 82.4343,
+      "flujoEstimado": 250062.649965,
       "origen": "cnv-excel"
     }
   ]

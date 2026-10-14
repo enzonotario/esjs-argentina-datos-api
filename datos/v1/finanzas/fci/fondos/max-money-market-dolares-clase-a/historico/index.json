@@ -2,7 +2,7 @@
   "fondoId": "1613",
   "claseId": "5309",
   "nombre": "Max Money Market Dólares - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "max-money-market-dolares-clase-a",
@@ -6194,6 +6194,22 @@
       "retornoDiario": 0.002362,
       "retornoAcumulado": 1.6241,
       "flujoEstimado": -1241.98698,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-money-market-dolares-clase-a",
+      "fondoId": "1613",
+      "claseId": "5309",
+      "nombre": "Max Money Market Dólares - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1016.327,
+      "patrimonio": 7491360.93,
+      "retornoDiario": 0.008463,
+      "retornoAcumulado": 1.6327,
+      "flujoEstimado": -16125.884843,
       "origen": "cnv-excel"
     }
   ]

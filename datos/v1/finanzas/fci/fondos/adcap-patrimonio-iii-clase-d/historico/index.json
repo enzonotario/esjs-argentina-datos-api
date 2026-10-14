@@ -2,7 +2,7 @@
   "fondoId": "1959",
   "claseId": "6687",
   "nombre": "Adcap Patrimonio III - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "adcap-patrimonio-iii-clase-d",
@@ -418,6 +418,22 @@
       "retornoDiario": 0.0482,
       "retornoAcumulado": 0.0482,
       "flujoEstimado": -0.082531,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-patrimonio-iii-clase-d",
+      "fondoId": "1959",
+      "claseId": "6687",
+      "nombre": "Adcap Patrimonio III - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1000.727,
+      "patrimonio": 243584.59,
+      "retornoDiario": 0.024488,
+      "retornoAcumulado": 0.0727,
+      "flujoEstimado": -0.024397,
       "origen": "cnv-excel"
     }
   ]

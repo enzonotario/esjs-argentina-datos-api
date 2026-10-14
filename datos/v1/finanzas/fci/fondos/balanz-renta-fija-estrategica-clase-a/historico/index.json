@@ -2,7 +2,7 @@
   "fondoId": "666",
   "claseId": "1390",
   "nombre": "Balanz Renta Fija Estrategica - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "balanz-renta-fija-estrategica-clase-a",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.102159,
       "retornoAcumulado": 4004.057353,
       "flujoEstimado": -628035.810869,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-renta-fija-estrategica-clase-a",
+      "fondoId": "666",
+      "claseId": "1390",
+      "nombre": "Balanz Renta Fija Estrategica - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 113202.847,
+      "patrimonio": 1513455941.01,
+      "retornoDiario": -0.062882,
+      "retornoAcumulado": 4001.476639,
+      "flujoEstimado": -587216.090499,
       "origen": "cnv-excel"
     }
   ]

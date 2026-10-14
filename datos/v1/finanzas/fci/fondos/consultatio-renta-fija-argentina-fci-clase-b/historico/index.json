@@ -2,7 +2,7 @@
   "fondoId": "495",
   "claseId": "999",
   "nombre": "Consultatio Renta Fija Argentina F.C.I. - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-renta-fija-argentina-fci-clase-b",
@@ -26066,6 +26066,22 @@
       "retornoDiario": 0.058852,
       "retornoAcumulado": 3195.699428,
       "flujoEstimado": -84.442234,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-renta-fija-argentina-fci-clase-b",
+      "fondoId": "495",
+      "claseId": "999",
+      "nombre": "Consultatio Renta Fija Argentina F.C.I. - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 761519.738,
+      "patrimonio": 21658947471.85,
+      "retornoDiario": -0.190009,
+      "retornoAcumulado": 3189.437314,
+      "flujoEstimado": 87.146477,
       "origen": "cnv-excel"
     }
   ]

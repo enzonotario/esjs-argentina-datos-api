@@ -2,7 +2,7 @@
   "fondoId": "1958",
   "claseId": "6670",
   "nombre": "Adcap Patrimonio II - Clase F",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "adcap-patrimonio-ii-clase-f",
@@ -465,6 +465,22 @@
       "patrimonio": null,
       "retornoDiario": 0.172074,
       "retornoAcumulado": -0.5696,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-patrimonio-ii-clase-f",
+      "fondoId": "1958",
+      "claseId": "6670",
+      "nombre": "Adcap Patrimonio II - Clase F",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 994.743,
+      "patrimonio": null,
+      "retornoDiario": 0.044151,
+      "retornoAcumulado": -0.5257,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

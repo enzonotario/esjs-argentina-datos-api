@@ -2,7 +2,7 @@
   "fondoId": "1566",
   "claseId": "5029",
   "nombre": "Ualintec Cobertura - Clase C",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "ualintec-cobertura-clase-c",
@@ -7842,6 +7842,22 @@
       "retornoDiario": 0.265596,
       "retornoAcumulado": 92.2667,
       "flujoEstimado": -0.265595,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-cobertura-clase-c",
+      "fondoId": "1566",
+      "claseId": "5029",
+      "nombre": "Ualintec Cobertura - Clase C",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1921.536,
+      "patrimonio": 1028799.23,
+      "retornoDiario": -0.058825,
+      "retornoAcumulado": 92.1536,
+      "flujoEstimado": 0.267203,
       "origen": "cnv-excel"
     }
   ]

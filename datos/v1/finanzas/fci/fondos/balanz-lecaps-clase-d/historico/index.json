@@ -2,7 +2,7 @@
   "fondoId": "1297",
   "claseId": "3674",
   "nombre": "Balanz Lecaps - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "balanz-lecaps-clase-d",
@@ -17506,6 +17506,22 @@
       "retornoDiario": 0.076587,
       "retornoAcumulado": 1385.3357,
       "flujoEstimado": 15000001076.575275,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-lecaps-clase-d",
+      "fondoId": "1297",
+      "claseId": "3674",
+      "nombre": "Balanz Lecaps - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14882.934,
+      "patrimonio": 44451238036.66,
+      "retornoDiario": 0.199127,
+      "retornoAcumulado": 1388.2934,
+      "flujoEstimado": -3262608831.221626,
       "origen": "cnv-excel"
     }
   ]

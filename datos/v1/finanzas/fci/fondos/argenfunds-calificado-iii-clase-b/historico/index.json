@@ -2,7 +2,7 @@
   "fondoId": "1873",
   "claseId": "6477",
   "nombre": "Argenfunds Calificado III - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "argenfunds-calificado-iii-clase-b",
@@ -1570,6 +1570,22 @@
       "retornoDiario": 0.699841,
       "retornoAcumulado": 3.2696,
       "flujoEstimado": 0.251309,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-calificado-iii-clase-b",
+      "fondoId": "1873",
+      "claseId": "6477",
+      "nombre": "Argenfunds Calificado III - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1024.303,
+      "patrimonio": 2048606.54,
+      "retornoDiario": -0.812727,
+      "retornoAcumulado": 2.4303,
+      "flujoEstimado": 1.16332,
       "origen": "cnv-excel"
     }
   ]

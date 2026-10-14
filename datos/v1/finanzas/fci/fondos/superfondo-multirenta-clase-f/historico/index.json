@@ -2,7 +2,7 @@
   "fondoId": "645",
   "claseId": "1324",
   "nombre": "Superfondo Multirenta - Clase F",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "superfondo-multirenta-clase-f",
@@ -26225,6 +26225,22 @@
       "patrimonio": null,
       "retornoDiario": 0.212994,
       "retornoAcumulado": 26.3285,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-multirenta-clase-f",
+      "fondoId": "645",
+      "claseId": "1324",
+      "nombre": "Superfondo Multirenta - Clase F",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1258.034,
+      "patrimonio": null,
+      "retornoDiario": -0.415662,
+      "retornoAcumulado": 25.8034,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

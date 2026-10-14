@@ -2,7 +2,7 @@
   "fondoId": "1556",
   "claseId": "6228",
   "nombre": "Pionero Ahorro Dolár Plus - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "pionero-ahorro-dolar-plus-clase-d",
@@ -2258,6 +2258,22 @@
       "retornoDiario": 1.208195,
       "retornoAcumulado": 2.446372,
       "flujoEstimado": -8.155776,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-ahorro-dolar-plus-clase-d",
+      "fondoId": "1556",
+      "claseId": "6228",
+      "nombre": "Pionero Ahorro Dolár Plus - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 968.635,
+      "patrimonio": 28003515.09,
+      "retornoDiario": -0.50516,
+      "retornoAcumulado": 1.928854,
+      "flujoEstimado": 26.025208,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1510",
   "claseId": "4514",
   "nombre": "Tandem Pesos Ahorro Plus - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "tandem-pesos-ahorro-plus-clase-d",
@@ -8466,6 +8466,22 @@
       "retornoDiario": 0.060724,
       "retornoAcumulado": 53.5751,
       "flujoEstimado": -539955559.339348,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tandem-pesos-ahorro-plus-clase-d",
+      "fondoId": "1510",
+      "claseId": "4514",
+      "nombre": "Tandem Pesos Ahorro Plus - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1539.487,
+      "patrimonio": 31818645595.8,
+      "retornoDiario": 0.243269,
+      "retornoAcumulado": 53.9487,
+      "flujoEstimado": -3417629940.941097,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1222",
   "claseId": "3924",
   "nombre": "Consultatio Zero - Clase D",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-zero-clase-d",
@@ -15138,6 +15138,22 @@
       "retornoDiario": 0.045326,
       "retornoAcumulado": 382.4981,
       "flujoEstimado": 46284798917.79942,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-zero-clase-d",
+      "fondoId": "1222",
+      "claseId": "3924",
+      "nombre": "Consultatio Zero - Clase D",
+      "fecha": "2026-10-13",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 4833.341,
+      "patrimonio": 922482165.79,
+      "retornoDiario": 0.173265,
+      "retornoAcumulado": 383.3341,
+      "flujoEstimado": -81046271847.07623,
       "origen": "cnv-excel"
     }
   ]

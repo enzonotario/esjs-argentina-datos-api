@@ -2,7 +2,7 @@
   "fondoId": "639",
   "claseId": "1296",
   "nombre": "Consultatio One Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "consultatio-one-ahorro-clase-b",
@@ -26194,6 +26194,22 @@
       "retornoDiario": 0.136275,
       "retornoAcumulado": 5646.889503,
       "flujoEstimado": -307.086494,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-one-ahorro-clase-b",
+      "fondoId": "639",
+      "claseId": "1296",
+      "nombre": "Consultatio One Ahorro - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 197010.872,
+      "patrimonio": 43607413855.83,
+      "retornoDiario": 0.192999,
+      "retornoAcumulado": 5657.980925,
+      "flujoEstimado": 47.499069,
       "origen": "cnv-excel"
     }
   ]

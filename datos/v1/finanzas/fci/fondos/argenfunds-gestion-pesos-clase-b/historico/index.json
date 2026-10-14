@@ -2,7 +2,7 @@
   "fondoId": "1381",
   "claseId": "3968",
   "nombre": "Argenfunds Gestión Pesos - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "argenfunds-gestion-pesos-clase-b",
@@ -14498,6 +14498,22 @@
       "retornoDiario": 0.062264,
       "retornoAcumulado": 144.5947,
       "flujoEstimado": 2999992529.636185,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-gestion-pesos-clase-b",
+      "fondoId": "1381",
+      "claseId": "3968",
+      "nombre": "Argenfunds Gestión Pesos - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2444.727,
+      "patrimonio": 75460576207.33,
+      "retornoDiario": -0.049878,
+      "retornoAcumulado": 144.4727,
+      "flujoEstimado": -999989270.535141,
       "origen": "cnv-excel"
     }
   ]

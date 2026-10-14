@@ -2,7 +2,7 @@
   "fondoId": "709",
   "claseId": "1519",
   "nombre": "Delta Renta Dolares - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "delta-renta-dolares-clase-b",
@@ -25538,6 +25538,22 @@
       "retornoDiario": 0.234762,
       "retornoAcumulado": 85.014563,
       "flujoEstimado": -1.860184,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-renta-dolares-clase-b",
+      "fondoId": "709",
+      "claseId": "1519",
+      "nombre": "Delta Renta Dolares - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1397.488,
+      "patrimonio": 3097540.56,
+      "retornoDiario": 0.002576,
+      "retornoAcumulado": 85.01933,
+      "flujoEstimado": 1.669454,
       "origen": "cnv-excel"
     }
   ]

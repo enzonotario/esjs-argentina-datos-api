@@ -2,7 +2,7 @@
   "fondoId": "1661",
   "claseId": "5548",
   "nombre": "Balanz Renta Variable Global - Clase B",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "balanz-renta-variable-global-clase-b",
@@ -4098,6 +4098,22 @@
       "retornoDiario": 0.582317,
       "retornoAcumulado": 12.3594,
       "flujoEstimado": -0.125118,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-renta-variable-global-clase-b",
+      "fondoId": "1661",
+      "claseId": "5548",
+      "nombre": "Balanz Renta Variable Global - Clase B",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1122.358,
+      "patrimonio": 267746.76,
+      "retornoDiario": -0.110004,
+      "retornoAcumulado": 12.2358,
+      "flujoEstimado": 0.176306,
       "origen": "cnv-excel"
     }
   ]

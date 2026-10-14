@@ -2,7 +2,7 @@
   "fondoId": "1606",
   "claseId": "5285",
   "nombre": "Parakeet Dinámico - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "parakeet-dinamico-clase-a",
@@ -6610,6 +6610,22 @@
       "retornoDiario": 0.102705,
       "retornoAcumulado": 59.7479,
       "flujoEstimado": -0.011068,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-dinamico-clase-a",
+      "fondoId": "1606",
+      "claseId": "5285",
+      "nombre": "Parakeet Dinámico - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1598.773,
+      "patrimonio": 36063.5,
+      "retornoDiario": 0.081003,
+      "retornoAcumulado": 59.8773,
+      "flujoEstimado": 0.011136,
       "origen": "cnv-excel"
     }
   ]

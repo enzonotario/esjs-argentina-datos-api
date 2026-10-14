@@ -2,7 +2,7 @@
   "fondoId": "1515",
   "claseId": "4528",
   "nombre": "Balanz Soja - Clase A",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "balanz-soja-clase-a",
@@ -8978,6 +8978,22 @@
       "retornoDiario": 0.213607,
       "retornoAcumulado": 91.6941,
       "flujoEstimado": -3465559.551141,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-soja-clase-a",
+      "fondoId": "1515",
+      "claseId": "4528",
+      "nombre": "Balanz Soja - Clase A",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1908.636,
+      "patrimonio": 3469616924.25,
+      "retornoDiario": -0.433242,
+      "retornoAcumulado": 90.8636,
+      "flujoEstimado": -121160679.272307,
       "origen": "cnv-excel"
     }
   ]

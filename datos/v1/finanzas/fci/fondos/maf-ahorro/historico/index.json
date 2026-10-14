@@ -2,7 +2,7 @@
   "fondoId": "641",
   "claseId": "1300",
   "nombre": "MAF Ahorro",
-  "fechaActualizacion": "2026-10-13T18:36:44.000Z",
+  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
   "historico": [
     {
       "slug": "maf-ahorro",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.169301,
       "retornoAcumulado": 2985.580141,
       "flujoEstimado": -99.434593,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-ahorro",
+      "fondoId": "641",
+      "claseId": "1300",
+      "nombre": "MAF Ahorro",
+      "fecha": "2026-10-13",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 89407.47,
+      "patrimonio": 11329582769.26,
+      "retornoDiario": 0.04296,
+      "retornoAcumulado": 2986.905708,
+      "flujoEstimado": 15000102.34553,
       "origen": "cnv-excel"
     }
   ]
