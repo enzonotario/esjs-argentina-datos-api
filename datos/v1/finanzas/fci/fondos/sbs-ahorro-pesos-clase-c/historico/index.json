@@ -2,7 +2,7 @@
   "fondoId": "443",
   "claseId": "3295",
   "nombre": "SBS Ahorro Pesos - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "sbs-ahorro-pesos-clase-c",
@@ -19058,6 +19058,22 @@
       "retornoDiario": 0.227469,
       "retornoAcumulado": 858.9206,
       "flujoEstimado": 8755055399.561882,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-ahorro-pesos-clase-c",
+      "fondoId": "443",
+      "claseId": "3295",
+      "nombre": "SBS Ahorro Pesos - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 9594.467,
+      "patrimonio": 28050299508.74,
+      "retornoDiario": 0.054864,
+      "retornoAcumulado": 859.4467,
+      "flujoEstimado": -9077095821.308704,
       "origen": "cnv-excel"
     }
   ]

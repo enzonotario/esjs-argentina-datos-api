@@ -2,7 +2,7 @@
   "fondoId": "148",
   "claseId": "304",
   "nombre": "Superfondo Acciones - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "superfondo-acciones-clase-b",
@@ -26194,6 +26194,22 @@
       "retornoDiario": 1.606888,
       "retornoAcumulado": 9415.620363,
       "flujoEstimado": 3.983752,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-acciones-clase-b",
+      "fondoId": "148",
+      "claseId": "304",
+      "nombre": "Superfondo Acciones - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 761312.309,
+      "patrimonio": 1041993739.09,
+      "retornoDiario": -0.674295,
+      "retornoAcumulado": 9351.456994,
+      "flujoEstimado": -2.184827,
       "origen": "cnv-excel"
     }
   ]

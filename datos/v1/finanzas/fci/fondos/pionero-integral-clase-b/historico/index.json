@@ -2,7 +2,7 @@
   "fondoId": "1415",
   "claseId": "6636",
   "nombre": "Pionero Integral - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "pionero-integral-clase-b",
@@ -738,6 +738,22 @@
       "retornoDiario": -0.095477,
       "retornoAcumulado": 3.9049,
       "flujoEstimado": -32654.577141,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-integral-clase-b",
+      "fondoId": "1415",
+      "claseId": "6636",
+      "nombre": "Pionero Integral - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1038.992,
+      "patrimonio": 43828229123.82,
+      "retornoDiario": -0.005486,
+      "retornoAcumulado": 3.8992,
+      "flujoEstimado": 32751.526421,
       "origen": "cnv-excel"
     }
   ]

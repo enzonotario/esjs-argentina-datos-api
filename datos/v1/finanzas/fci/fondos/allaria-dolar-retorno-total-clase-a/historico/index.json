@@ -2,7 +2,7 @@
   "fondoId": "1545",
   "claseId": "4658",
   "nombre": "Allaria Dólar Retorno Total - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-retorno-total-clase-a",
@@ -8338,6 +8338,22 @@
       "retornoDiario": -0.724706,
       "retornoAcumulado": 32.5212,
       "flujoEstimado": 351171.464483,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-retorno-total-clase-a",
+      "fondoId": "1545",
+      "claseId": "4658",
+      "nombre": "Allaria Dólar Retorno Total - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1317.721,
+      "patrimonio": 54921894.85,
+      "retornoDiario": -0.565268,
+      "retornoAcumulado": 31.7721,
+      "flujoEstimado": 366649.327354,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "287",
   "claseId": "6218",
   "nombre": "FBA Renta Fija Pesos II - Clase B3",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fba-renta-fija-pesos-ii-clase-b3",
@@ -2466,6 +2466,22 @@
       "retornoDiario": 0.010466,
       "retornoAcumulado": 19.511992,
       "flujoEstimado": 3989010673.995514,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-fija-pesos-ii-clase-b3",
+      "fondoId": "287",
+      "claseId": "6218",
+      "nombre": "FBA Renta Fija Pesos II - Clase B3",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 261551.237,
+      "patrimonio": 162086050997.29,
+      "retornoDiario": 0.00933,
+      "retornoAcumulado": 19.523143,
+      "flujoEstimado": -6269676313.86676,
       "origen": "cnv-excel"
     }
   ]

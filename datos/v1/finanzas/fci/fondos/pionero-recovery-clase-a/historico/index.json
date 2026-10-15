@@ -2,7 +2,7 @@
   "fondoId": "1417",
   "claseId": "4139",
   "nombre": "Pionero Recovery - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "pionero-recovery-clase-a",
@@ -12530,6 +12530,22 @@
       "retornoDiario": 0.647732,
       "retornoAcumulado": 167.5259,
       "flujoEstimado": -4918713.777944,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-recovery-clase-a",
+      "fondoId": "1417",
+      "claseId": "4139",
+      "nombre": "Pionero Recovery - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2639.041,
+      "patrimonio": 1554229633.4,
+      "retornoDiario": -1.353813,
+      "retornoAcumulado": 163.9041,
+      "flujoEstimado": -15067680.523535,
       "origen": "cnv-excel"
     }
   ]

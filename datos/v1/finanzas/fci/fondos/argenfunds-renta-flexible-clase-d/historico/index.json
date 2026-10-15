@@ -2,7 +2,7 @@
   "fondoId": "679",
   "claseId": "2043",
   "nombre": "Argenfunds Renta Flexible - Clase D",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-flexible-clase-d",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -95.151609,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-flexible-clase-d",
+      "fondoId": "679",
+      "claseId": "2043",
+      "nombre": "Argenfunds Renta Flexible - Clase D",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 0.94,
+      "patrimonio": null,
+      "retornoDiario": 0.320171,
+      "retornoAcumulado": -95.136086,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

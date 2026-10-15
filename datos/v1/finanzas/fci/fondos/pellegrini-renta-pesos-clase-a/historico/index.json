@@ -2,7 +2,7 @@
   "fondoId": "120",
   "claseId": "120",
   "nombre": "Pellegrini Renta Pesos - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-pesos-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.219997,
       "retornoAcumulado": 1446.791249,
       "flujoEstimado": -5307342297.376404,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-pesos-clase-a",
+      "fondoId": "120",
+      "claseId": "120",
+      "nombre": "Pellegrini Renta Pesos - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 26455.299,
+      "patrimonio": 173262389235.21,
+      "retornoDiario": 0.05535,
+      "retornoAcumulado": 1447.647404,
+      "flujoEstimado": -12605076666.081726,
       "origen": "cnv-excel"
     }
   ]

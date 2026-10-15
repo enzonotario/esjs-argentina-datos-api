@@ -2,7 +2,7 @@
   "fondoId": "681",
   "claseId": "1429",
   "nombre": "Argenfunds Renta Total - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-total-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.118263,
       "retornoAcumulado": 147.580886,
       "flujoEstimado": -155.317167,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-total-clase-b",
+      "fondoId": "681",
+      "claseId": "1429",
+      "nombre": "Argenfunds Renta Total - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 9375.756,
+      "patrimonio": 5332471926.6,
+      "retornoDiario": 0.053571,
+      "retornoAcumulado": 147.713518,
+      "flujoEstimado": 8.01966,
       "origen": "cnv-excel"
     }
   ]

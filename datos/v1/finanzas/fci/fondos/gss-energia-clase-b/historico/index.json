@@ -2,7 +2,7 @@
   "fondoId": "740",
   "claseId": "1615",
   "nombre": "GSS Energia - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "gss-energia-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.046611,
       "retornoAcumulado": 2578.68026,
       "flujoEstimado": -214518.886808,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gss-energia-clase-b",
+      "fondoId": "740",
+      "claseId": "1615",
+      "nombre": "GSS Energia - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 89851.787,
+      "patrimonio": 6689724654.51,
+      "retornoDiario": -0.094224,
+      "retornoAcumulado": 2576.156294,
+      "flujoEstimado": -7.946527,
       "origen": "cnv-excel"
     }
   ]

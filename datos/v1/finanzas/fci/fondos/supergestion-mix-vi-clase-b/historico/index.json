@@ -2,7 +2,7 @@
   "fondoId": "406",
   "claseId": "731",
   "nombre": "Supergestion Mix VI - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "supergestion-mix-vi-clase-b",
@@ -26238,10 +26238,26 @@
       "categoriaKey": "rentaFija",
       "horizonte": "Corto Plazo",
       "valorCuotaparte": 192543.016,
-      "patrimonio": 76598416238.31,
+      "patrimonio": 76598416238.3,
       "retornoDiario": 0.057597,
       "retornoAcumulado": 2440.605521,
-      "flujoEstimado": -46930176.493317,
+      "flujoEstimado": -46930176.503311,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-mix-vi-clase-b",
+      "fondoId": "406",
+      "claseId": "731",
+      "nombre": "Supergestion Mix VI - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 192613.212,
+      "patrimonio": 76125430487.81,
+      "retornoDiario": 0.036457,
+      "retornoAcumulado": 2441.531758,
+      "flujoEstimado": -500911235.097992,
       "origen": "cnv-excel"
     }
   ]

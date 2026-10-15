@@ -2,7 +2,7 @@
   "fondoId": "882",
   "claseId": "2560",
   "nombre": "Argenfunds Liquidez - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-liquidez-clase-a",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.198675,
       "retornoAcumulado": 1297.044526,
       "flujoEstimado": -27810661.296382,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-liquidez-clase-a",
+      "fondoId": "882",
+      "claseId": "2560",
+      "nombre": "Argenfunds Liquidez - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 18033.29,
+      "patrimonio": 538692773.85,
+      "retornoDiario": 0.049228,
+      "retornoAcumulado": 1297.732258,
+      "flujoEstimado": 155553.001599,
       "origen": "cnv-excel"
     }
   ]

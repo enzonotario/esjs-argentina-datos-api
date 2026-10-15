@@ -2,7 +2,7 @@
   "fondoId": "894",
   "claseId": "2645",
   "nombre": "Delta Gestion IX - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "delta-gestion-ix-clase-a",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.158314,
       "retornoAcumulado": 1592.216747,
       "flujoEstimado": -232111.225553,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-ix-clase-a",
+      "fondoId": "894",
+      "claseId": "2645",
+      "nombre": "Delta Gestion IX - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 23660.514,
+      "patrimonio": 591643265.85,
+      "retornoDiario": 0.150163,
+      "retornoAcumulado": 1594.757825,
+      "flujoEstimado": 791975.104884,
       "origen": "cnv-excel"
     }
   ]

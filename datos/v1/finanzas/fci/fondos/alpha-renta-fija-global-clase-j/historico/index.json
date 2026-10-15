@@ -2,7 +2,7 @@
   "fondoId": "297",
   "claseId": "3665",
   "nombre": "Alpha Renta Fija Global - Clase J",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "alpha-renta-fija-global-clase-j",
@@ -16626,6 +16626,22 @@
       "retornoDiario": 0.022714,
       "retornoAcumulado": 1.2816,
       "flujoEstimado": 0.103729,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-fija-global-clase-j",
+      "fondoId": "297",
+      "claseId": "3665",
+      "nombre": "Alpha Renta Fija Global - Clase J",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1012.701,
+      "patrimonio": 5815295.98,
+      "retornoDiario": -0.011354,
+      "retornoAcumulado": 1.2701,
+      "flujoEstimado": 0.143665,
       "origen": "cnv-excel"
     }
   ]

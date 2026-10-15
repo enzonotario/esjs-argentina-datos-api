@@ -2,7 +2,7 @@
   "fondoId": "1221",
   "claseId": "3383",
   "nombre": "Pionero Gestion - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "pionero-gestion-clase-b",
@@ -22738,6 +22738,22 @@
       "retornoDiario": -0.195611,
       "retornoAcumulado": 4046.8052,
       "flujoEstimado": 744.0392,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-gestion-clase-b",
+      "fondoId": "1221",
+      "claseId": "3383",
+      "nombre": "Pionero Gestion - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 41516.909,
+      "patrimonio": 121687923109.27,
+      "retornoDiario": 0.117818,
+      "retornoAcumulado": 4051.6909,
+      "flujoEstimado": 353.871567,
       "origen": "cnv-excel"
     }
   ]

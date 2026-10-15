@@ -2,7 +2,7 @@
   "fondoId": "1497",
   "claseId": "4471",
   "nombre": "MEGAQM Gestión Balanceada Dólares - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "megaqm-gestion-balanceada-dolares-clase-b",
@@ -9330,6 +9330,22 @@
       "retornoDiario": -0.128403,
       "retornoAcumulado": 84.4155,
       "flujoEstimado": -0.17845,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-gestion-balanceada-dolares-clase-b",
+      "fondoId": "1497",
+      "claseId": "4471",
+      "nombre": "MEGAQM Gestión Balanceada Dólares - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1844.045,
+      "patrimonio": 2726052.15,
+      "retornoDiario": -0.005965,
+      "retornoAcumulado": 84.4045,
+      "flujoEstimado": 0.628673,
       "origen": "cnv-excel"
     }
   ]

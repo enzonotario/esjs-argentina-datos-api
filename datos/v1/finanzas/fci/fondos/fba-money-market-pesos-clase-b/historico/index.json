@@ -2,7 +2,7 @@
   "fondoId": "111",
   "claseId": "944",
   "nombre": "FBA Money Market Pesos - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fba-money-market-pesos-clase-b",
@@ -26222,10 +26222,26 @@
       "categoriaKey": "mercadoDinero",
       "horizonte": "Corto Plazo",
       "valorCuotaparte": 198576.194,
-      "patrimonio": 3645192724971.59,
+      "patrimonio": 3645192724972.92,
       "retornoDiario": 0.20578,
       "retornoAcumulado": 1432.94986,
-      "flujoEstimado": -116925321301.14453,
+      "flujoEstimado": -116925321299.81445,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-money-market-pesos-clase-b",
+      "fondoId": "111",
+      "claseId": "944",
+      "nombre": "FBA Money Market Pesos - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 198676.297,
+      "patrimonio": 3669850037690.97,
+      "retornoDiario": 0.05041,
+      "retornoAcumulado": 1433.722625,
+      "flujoEstimado": 22819771065.3916,
       "origen": "cnv-excel"
     }
   ]

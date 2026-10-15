@@ -2,7 +2,7 @@
   "fondoId": "226",
   "claseId": "3244",
   "nombre": "Supergestion - Clase H",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "supergestion-clase-h",
@@ -25938,6 +25938,22 @@
       "retornoDiario": 0.330919,
       "retornoAcumulado": 4059.3608,
       "flujoEstimado": -0.139361,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-clase-h",
+      "fondoId": "226",
+      "claseId": "3244",
+      "nombre": "Supergestion - Clase H",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 41517.284,
+      "patrimonio": 16089166.96,
+      "retornoDiario": -0.183499,
+      "retornoAcumulado": 4051.7284,
+      "flujoEstimado": -0.034608,
       "origen": "cnv-excel"
     }
   ]

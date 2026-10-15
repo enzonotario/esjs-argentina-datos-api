@@ -2,7 +2,7 @@
   "fondoId": "1280",
   "claseId": "3564",
   "nombre": "Transatlantica Liquidez Pesos - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "transatlantica-liquidez-pesos-clase-a",
@@ -18818,6 +18818,22 @@
       "retornoDiario": 0.211341,
       "retornoAcumulado": 802.9594,
       "flujoEstimado": -224222278.127128,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "transatlantica-liquidez-pesos-clase-a",
+      "fondoId": "1280",
+      "claseId": "3564",
+      "nombre": "Transatlantica Liquidez Pesos - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 9034.526,
+      "patrimonio": 2601298288.81,
+      "retornoDiario": 0.05462,
+      "retornoAcumulado": 803.4526,
+      "flujoEstimado": 37764569.26528,
       "origen": "cnv-excel"
     }
   ]

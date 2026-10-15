@@ -2,7 +2,7 @@
   "fondoId": "419",
   "claseId": "771",
   "nombre": "Delta Select - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "delta-select-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 1.515801,
       "retornoAcumulado": 5269.272037,
       "flujoEstimado": -10633980.147104,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-select-clase-a",
+      "fondoId": "419",
+      "claseId": "771",
+      "nombre": "Delta Select - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 630397.008,
+      "patrimonio": 6113834763.62,
+      "retornoDiario": -1.039215,
+      "retornoAcumulado": 5213.473749,
+      "flujoEstimado": -4419764.467525,
       "origen": "cnv-excel"
     }
   ]

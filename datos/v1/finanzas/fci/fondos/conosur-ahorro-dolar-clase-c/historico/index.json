@@ -2,7 +2,7 @@
   "fondoId": "1831",
   "claseId": "6295",
   "nombre": "ConoSur Ahorro Dólar - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "conosur-ahorro-dolar-clase-c",
@@ -2226,6 +2226,22 @@
       "retornoDiario": 0.028316,
       "retornoAcumulado": 129.2657,
       "flujoEstimado": -931.174154,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-ahorro-dolar-clase-c",
+      "fondoId": "1831",
+      "claseId": "6295",
+      "nombre": "ConoSur Ahorro Dólar - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2293.054,
+      "patrimonio": 284647.76,
+      "retornoDiario": 0.017316,
+      "retornoAcumulado": 129.3054,
+      "flujoEstimado": 259.813909,
       "origen": "cnv-excel"
     }
   ]

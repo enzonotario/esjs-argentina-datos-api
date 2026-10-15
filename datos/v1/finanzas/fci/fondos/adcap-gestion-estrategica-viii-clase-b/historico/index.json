@@ -2,7 +2,7 @@
   "fondoId": "1094",
   "claseId": "3234",
   "nombre": "Adcap Gestion Estrategica VIII - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-gestion-estrategica-viii-clase-b",
@@ -370,6 +370,22 @@
       "retornoDiario": -0.026649,
       "retornoAcumulado": 2.4144,
       "flujoEstimado": -2141.165565,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-gestion-estrategica-viii-clase-b",
+      "fondoId": "1094",
+      "claseId": "3234",
+      "nombre": "Adcap Gestion Estrategica VIII - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1024.386,
+      "patrimonio": 18163843697.66,
+      "retornoDiario": 0.023629,
+      "retornoAcumulado": 2.4386,
+      "flujoEstimado": 13940.507565,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "733",
   "claseId": "1599",
   "nombre": "Toronto Trust Liquidez Dólar - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "toronto-trust-liquidez-dolar-clase-a",
@@ -25842,6 +25842,22 @@
       "retornoDiario": -0.01677,
       "retornoAcumulado": 15.53988,
       "flujoEstimado": 40000.993207,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-liquidez-dolar-clase-a",
+      "fondoId": "733",
+      "claseId": "1599",
+      "nombre": "Toronto Trust Liquidez Dólar - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1234.576,
+      "patrimonio": 1829028.32,
+      "retornoDiario": 0.034923,
+      "retornoAcumulado": 15.580229,
+      "flujoEstimado": -0.608779,
       "origen": "cnv-excel"
     }
   ]

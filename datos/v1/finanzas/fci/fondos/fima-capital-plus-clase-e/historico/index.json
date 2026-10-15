@@ -2,7 +2,7 @@
   "fondoId": "540",
   "claseId": "5791",
   "nombre": "Fima Capital Plus - Clase E",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fima-capital-plus-clase-e",
@@ -4242,6 +4242,22 @@
       "retornoDiario": -0.054214,
       "retornoAcumulado": 15.111105,
       "flujoEstimado": -0.026675,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-capital-plus-clase-e",
+      "fondoId": "540",
+      "claseId": "5791",
+      "nombre": "Fima Capital Plus - Clase E",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 102766.282,
+      "patrimonio": 16412971.39,
+      "retornoDiario": 0.033053,
+      "retornoAcumulado": 15.149152,
+      "flujoEstimado": -0.136953,
       "origen": "cnv-excel"
     }
   ]

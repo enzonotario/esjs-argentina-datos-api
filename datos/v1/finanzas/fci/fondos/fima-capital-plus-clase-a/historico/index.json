@@ -2,7 +2,7 @@
   "fondoId": "540",
   "claseId": "1092",
   "nombre": "Fima Capital Plus - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fima-capital-plus-clase-a",
@@ -25950,10 +25950,26 @@
       "categoriaKey": "rentaFija",
       "horizonte": "Mediano Plazo",
       "valorCuotaparte": 95190.198,
-      "patrimonio": 21015711851.8,
+      "patrimonio": 21015719260.45,
       "retornoDiario": -0.064775,
       "retornoAcumulado": 1555.144631,
-      "flujoEstimado": -8358088.687782,
+      "flujoEstimado": -8350680.037781,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-capital-plus-clase-a",
+      "fondoId": "540",
+      "claseId": "1092",
+      "nombre": "Fima Capital Plus - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 95219.146,
+      "patrimonio": 21028419185.25,
+      "retornoDiario": 0.030411,
+      "retornoAcumulado": 1555.647972,
+      "flujoEstimado": 6308834.415703,
       "origen": "cnv-excel"
     }
   ]

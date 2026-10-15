@@ -2,7 +2,7 @@
   "fondoId": "1810",
   "claseId": "6211",
   "nombre": "Balanz Capital Estrategia VI USD - Clase D",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "balanz-capital-estrategia-vi-usd-clase-d",
@@ -2370,6 +2370,22 @@
       "retornoDiario": 0.039426,
       "retornoAcumulado": -1.042,
       "flujoEstimado": 0.000002,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-capital-estrategia-vi-usd-clase-d",
+      "fondoId": "1810",
+      "claseId": "6211",
+      "nombre": "Balanz Capital Estrategia VI USD - Clase D",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 988.2,
+      "patrimonio": 988.2,
+      "retornoDiario": -0.139453,
+      "retornoAcumulado": -1.18,
+      "flujoEstimado": -0.000001,
       "origen": "cnv-excel"
     }
   ]

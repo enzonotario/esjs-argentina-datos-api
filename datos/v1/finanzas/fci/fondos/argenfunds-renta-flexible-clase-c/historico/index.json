@@ -2,7 +2,7 @@
   "fondoId": "679",
   "claseId": "2042",
   "nombre": "Argenfunds Renta Flexible - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-flexible-clase-c",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -95.150995,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-flexible-clase-c",
+      "fondoId": "679",
+      "claseId": "2042",
+      "nombre": "Argenfunds Renta Flexible - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 0.907,
+      "patrimonio": null,
+      "retornoDiario": 0.331858,
+      "retornoAcumulado": -95.134903,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

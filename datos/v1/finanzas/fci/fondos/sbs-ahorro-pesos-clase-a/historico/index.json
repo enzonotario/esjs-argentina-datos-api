@@ -2,7 +2,7 @@
   "fondoId": "443",
   "claseId": "839",
   "nombre": "SBS Ahorro Pesos - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "sbs-ahorro-pesos-clase-a",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.216471,
       "retornoAcumulado": 1346.237058,
       "flujoEstimado": -1386765335.76709,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-ahorro-pesos-clase-a",
+      "fondoId": "443",
+      "claseId": "839",
+      "nombre": "SBS Ahorro Pesos - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 159325.646,
+      "patrimonio": 26636075268.46,
+      "retornoDiario": 0.052122,
+      "retornoAcumulado": 1346.990862,
+      "flujoEstimado": 7998454.431728,
       "origen": "cnv-excel"
     }
   ]

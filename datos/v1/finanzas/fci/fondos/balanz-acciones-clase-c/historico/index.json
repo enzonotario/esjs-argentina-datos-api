@@ -2,7 +2,7 @@
   "fondoId": "669",
   "claseId": "2381",
   "nombre": "Balanz Acciones - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "balanz-acciones-clase-c",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 1.558647,
       "retornoAcumulado": 5852.441844,
       "flujoEstimado": 50.591549,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-acciones-clase-c",
+      "fondoId": "669",
+      "claseId": "2381",
+      "nombre": "Balanz Acciones - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 64518.802,
+      "patrimonio": 19030525004.19,
+      "retornoDiario": -1.259976,
+      "retornoAcumulado": 5777.442482,
+      "flujoEstimado": -80.725666,
       "origen": "cnv-excel"
     }
   ]

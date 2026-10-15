@@ -2,7 +2,7 @@
   "fondoId": "1439",
   "claseId": "4228",
   "nombre": "Schroder Patrimonio Dos - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "schroder-patrimonio-dos-clase-c",
@@ -9106,6 +9106,22 @@
       "retornoDiario": -0.264246,
       "retornoAcumulado": 7.6067,
       "flujoEstimado": 19738.868744,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-patrimonio-dos-clase-c",
+      "fondoId": "1439",
+      "claseId": "4228",
+      "nombre": "Schroder Patrimonio Dos - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1076.407,
+      "patrimonio": 120804345072.25,
+      "retornoDiario": 0.031597,
+      "retornoAcumulado": 7.6407,
+      "flujoEstimado": 13254.282883,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "363",
   "claseId": "990",
   "nombre": "Alpha Renta Capital - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "alpha-renta-capital-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.084153,
       "retornoAcumulado": 2638.739513,
       "flujoEstimado": -43138235.899052,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-capital-clase-b",
+      "fondoId": "363",
+      "claseId": "990",
+      "nombre": "Alpha Renta Capital - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 56914807.354,
+      "patrimonio": 13745237453.59,
+      "retornoDiario": -0.084349,
+      "retornoAcumulado": 2636.429402,
+      "flujoEstimado": -32558106.745138,
       "origen": "cnv-excel"
     }
   ]

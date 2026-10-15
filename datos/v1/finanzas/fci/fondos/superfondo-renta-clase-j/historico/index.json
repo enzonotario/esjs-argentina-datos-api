@@ -2,7 +2,7 @@
   "fondoId": "149",
   "claseId": "3243",
   "nombre": "Superfondo Renta $ - Clase J",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-clase-j",
@@ -25953,6 +25953,22 @@
       "patrimonio": null,
       "retornoDiario": 0.096099,
       "retornoAcumulado": 4740.1901,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-clase-j",
+      "fondoId": "149",
+      "claseId": "3243",
+      "nombre": "Superfondo Renta $ - Clase J",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 48406.091,
+      "patrimonio": null,
+      "retornoDiario": 0.008657,
+      "retornoAcumulado": 4740.6091,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

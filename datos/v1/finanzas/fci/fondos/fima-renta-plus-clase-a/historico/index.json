@@ -2,7 +2,7 @@
   "fondoId": "191",
   "claseId": "191",
   "nombre": "Fima Renta Plus - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fima-renta-plus-clase-a",
@@ -25982,10 +25982,26 @@
       "categoriaKey": "rentaFija",
       "horizonte": "Largo Plazo",
       "valorCuotaparte": 986071.683,
-      "patrimonio": 95064325709.19,
+      "patrimonio": 95064329860.57,
       "retornoDiario": 0.321655,
       "retornoAcumulado": 3876.020465,
-      "flujoEstimado": -55180163.380249,
+      "flujoEstimado": -55176012.000244,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-plus-clase-a",
+      "fondoId": "191",
+      "claseId": "191",
+      "nombre": "Fima Renta Plus - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 986267.938,
+      "patrimonio": 95544038963.36,
+      "retornoDiario": 0.019903,
+      "retornoAcumulado": 3876.8118,
+      "flujoEstimado": 460788449.217834,
       "origen": "cnv-excel"
     }
   ]

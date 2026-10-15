@@ -2,7 +2,7 @@
   "fondoId": "530",
   "claseId": "2025",
   "nombre": "Argenfunds Renta Fija - Clase D",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-fija-clase-d",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -95.149955,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-fija-clase-d",
+      "fondoId": "530",
+      "claseId": "2025",
+      "nombre": "Argenfunds Renta Fija - Clase D",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 3.702,
+      "patrimonio": null,
+      "retornoDiario": 0.270856,
+      "retornoAcumulado": -95.136818,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

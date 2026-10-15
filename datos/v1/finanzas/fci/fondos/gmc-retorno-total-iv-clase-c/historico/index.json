@@ -2,7 +2,7 @@
   "fondoId": "1751",
   "claseId": "5919",
   "nombre": "GMC Retorno Total IV - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "gmc-retorno-total-iv-clase-c",
@@ -2642,6 +2642,22 @@
       "retornoDiario": 0.161523,
       "retornoAcumulado": 17.82,
       "flujoEstimado": 565173.102289,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gmc-retorno-total-iv-clase-c",
+      "fondoId": "1751",
+      "claseId": "5919",
+      "nombre": "GMC Retorno Total IV - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1179.5,
+      "patrimonio": 4292690746.36,
+      "retornoDiario": 0.110338,
+      "retornoAcumulado": 17.95,
+      "flujoEstimado": -29052.421002,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "759",
   "claseId": "1682",
   "nombre": "1810 Mas Ahorro",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "1810-mas-ahorro",
@@ -26162,6 +26162,22 @@
       "retornoDiario": -0.009831,
       "retornoAcumulado": 3181.137086,
       "flujoEstimado": -4601390268.481934,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-mas-ahorro",
+      "fondoId": "759",
+      "claseId": "1682",
+      "nombre": "1810 Mas Ahorro",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 70301.092,
+      "patrimonio": 173042620150.83,
+      "retornoDiario": 0.024659,
+      "retornoAcumulado": 3181.946169,
+      "flujoEstimado": -109592829.542267,
       "origen": "cnv-excel"
     }
   ]

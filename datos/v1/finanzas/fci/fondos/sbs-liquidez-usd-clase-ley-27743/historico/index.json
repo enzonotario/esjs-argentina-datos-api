@@ -2,7 +2,7 @@
   "fondoId": "1588",
   "claseId": "5244",
   "nombre": "SBS Liquidez USD - Clase Ley 27.743",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "sbs-liquidez-usd-clase-ley-27743",
@@ -5714,6 +5714,22 @@
       "retornoDiario": 0.01028,
       "retornoAcumulado": 1.93965,
       "flujoEstimado": -0.00057,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-liquidez-usd-clase-ley-27743",
+      "fondoId": "1588",
+      "claseId": "5244",
+      "nombre": "SBS Liquidez USD - Clase Ley 27.743",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": null,
+      "valorCuotaparte": 1021.536,
+      "patrimonio": 1951.29,
+      "retornoDiario": 0.001077,
+      "retornoAcumulado": 1.940748,
+      "flujoEstimado": -0.001015,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1401",
   "claseId": "4062",
   "nombre": "Adcap Balanceado XXVI - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-xxvi-clase-a",
@@ -13042,6 +13042,22 @@
       "retornoDiario": 0.075676,
       "retornoAcumulado": 504.6107,
       "flujoEstimado": -609856.839588,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-xxvi-clase-a",
+      "fondoId": "1401",
+      "claseId": "4062",
+      "nombre": "Adcap Balanceado XXVI - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 6042.519,
+      "patrimonio": 17193249211.72,
+      "retornoDiario": -0.059344,
+      "retornoAcumulado": 504.2519,
+      "flujoEstimado": -2050726.082539,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1856",
   "claseId": "6419",
   "nombre": "BAVSA Renta Balanceado IX - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-ix-clase-a",
@@ -1714,6 +1714,22 @@
       "retornoDiario": 0.416556,
       "retornoAcumulado": 10.9134,
       "flujoEstimado": -19155.019886,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-ix-clase-a",
+      "fondoId": "1856",
+      "claseId": "6419",
+      "nombre": "BAVSA Renta Balanceado IX - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1094.438,
+      "patrimonio": 790407961.95,
+      "retornoDiario": -1.324998,
+      "retornoAcumulado": 9.4438,
+      "flujoEstimado": -7340.604288,
       "origen": "cnv-excel"
     }
   ]

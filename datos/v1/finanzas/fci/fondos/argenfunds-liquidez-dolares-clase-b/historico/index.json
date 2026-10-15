@@ -2,7 +2,7 @@
   "fondoId": "1631",
   "claseId": "5410",
   "nombre": "Argenfunds Liquidez Dólares - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-liquidez-dolares-clase-b",
@@ -6098,6 +6098,22 @@
       "retornoDiario": 0.006879,
       "retornoAcumulado": 1.7596,
       "flujoEstimado": 0.818023,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-liquidez-dolares-clase-b",
+      "fondoId": "1631",
+      "claseId": "5410",
+      "nombre": "Argenfunds Liquidez Dólares - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1017.613,
+      "patrimonio": 2078512.68,
+      "retornoDiario": 0.001671,
+      "retornoAcumulado": 1.7613,
+      "flujoEstimado": 141698.836381,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "858",
   "claseId": "2458",
   "nombre": "Delta Patrimonio I - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "delta-patrimonio-i-clase-a",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.505442,
       "retornoAcumulado": 1530.413527,
       "flujoEstimado": -3847581.574651,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-patrimonio-i-clase-a",
+      "fondoId": "858",
+      "claseId": "2458",
+      "nombre": "Delta Patrimonio I - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 33909.158,
+      "patrimonio": 361272552.11,
+      "retornoDiario": 0.045256,
+      "retornoAcumulado": 1531.151388,
+      "flujoEstimado": -14545.206824,
       "origen": "cnv-excel"
     }
   ]

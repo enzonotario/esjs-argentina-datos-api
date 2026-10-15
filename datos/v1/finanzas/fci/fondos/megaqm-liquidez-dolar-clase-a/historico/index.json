@@ -2,7 +2,7 @@
   "fondoId": "764",
   "claseId": "1695",
   "nombre": "MEGAQM Liquidez Dólar - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "megaqm-liquidez-dolar-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.011432,
       "retornoAcumulado": 2.76688,
       "flujoEstimado": -2790017.993079,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-liquidez-dolar-clase-a",
+      "fondoId": "764",
+      "claseId": "1695",
+      "nombre": "MEGAQM Liquidez Dólar - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1014.818,
+      "patrimonio": 84089040.1,
+      "retornoDiario": 0.002956,
+      "retornoAcumulado": 2.769918,
+      "flujoEstimado": 476813.025625,
       "origen": "cnv-excel"
     }
   ]

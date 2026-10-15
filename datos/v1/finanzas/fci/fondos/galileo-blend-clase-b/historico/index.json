@@ -2,7 +2,7 @@
   "fondoId": "1245",
   "claseId": "3456",
   "nombre": "Galileo Blend - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "galileo-blend-clase-b",
@@ -6706,6 +6706,22 @@
       "retornoDiario": 0.347663,
       "retornoAcumulado": 22.5832,
       "flujoEstimado": 10.608818,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-blend-clase-b",
+      "fondoId": "1245",
+      "claseId": "3456",
+      "nombre": "Galileo Blend - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1222.068,
+      "patrimonio": 185262107.83,
+      "retornoDiario": -0.307057,
+      "retornoAcumulado": 22.2068,
+      "flujoEstimado": -65.562384,
       "origen": "cnv-excel"
     }
   ]

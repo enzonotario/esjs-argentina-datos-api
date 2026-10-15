@@ -2,7 +2,7 @@
   "fondoId": "1414",
   "claseId": "4129",
   "nombre": "Allaria Dinámico III - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "allaria-dinamico-iii-clase-a",
@@ -13042,6 +13042,22 @@
       "retornoDiario": 0.1764,
       "retornoAcumulado": 113.0166,
       "flujoEstimado": -31467059.833361,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dinamico-iii-clase-a",
+      "fondoId": "1414",
+      "claseId": "4129",
+      "nombre": "Allaria Dinámico III - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2130.099,
+      "patrimonio": 10685968376.37,
+      "retornoDiario": -0.003145,
+      "retornoAcumulado": 113.0099,
+      "flujoEstimado": 411317.148958,
       "origen": "cnv-excel"
     }
   ]

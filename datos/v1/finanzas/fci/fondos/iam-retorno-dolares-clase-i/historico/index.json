@@ -2,7 +2,7 @@
   "fondoId": "1594",
   "claseId": "5236",
   "nombre": "IAM Retorno Dólares - Clase I",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "iam-retorno-dolares-clase-i",
@@ -750,10 +750,26 @@
       "categoriaKey": "mercadoDinero",
       "horizonte": "Corto Plazo",
       "valorCuotaparte": 1039.071,
-      "patrimonio": 1050328048,
+      "patrimonio": 1050320965.47,
       "retornoDiario": 0.019444,
       "retornoAcumulado": 0.333037,
-      "flujoEstimado": 2326533.359493,
+      "flujoEstimado": 2319450.829493,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-retorno-dolares-clase-i",
+      "fondoId": "1594",
+      "claseId": "5236",
+      "nombre": "IAM Retorno Dólares - Clase I",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1039.12,
+      "patrimonio": 1051991317.2,
+      "retornoDiario": 0.004716,
+      "retornoAcumulado": 0.337768,
+      "flujoEstimado": 1620818.593268,
       "origen": "cnv-excel"
     }
   ]

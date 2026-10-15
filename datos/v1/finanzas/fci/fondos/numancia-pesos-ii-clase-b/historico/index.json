@@ -2,7 +2,7 @@
   "fondoId": "1715",
   "claseId": "5769",
   "nombre": "Numancia Pesos II - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "numancia-pesos-ii-clase-b",
@@ -4290,6 +4290,22 @@
       "retornoDiario": 0.030605,
       "retornoAcumulado": 24.2025,
       "flujoEstimado": 705.335602,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "numancia-pesos-ii-clase-b",
+      "fondoId": "1715",
+      "claseId": "5769",
+      "nombre": "Numancia Pesos II - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1255.621,
+      "patrimonio": 150699700543.28,
+      "retornoDiario": 1.094664,
+      "retornoAcumulado": 25.5621,
+      "flujoEstimado": 23677.676849,
       "origen": "cnv-excel"
     }
   ]

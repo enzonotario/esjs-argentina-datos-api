@@ -2,7 +2,7 @@
   "fondoId": "1402",
   "claseId": "4070",
   "nombre": "Adcap Balanceado III - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-iii-clase-a",
@@ -10914,6 +10914,22 @@
       "retornoDiario": 0.364416,
       "retornoAcumulado": 435.0971,
       "flujoEstimado": -31067263.595461,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-iii-clase-a",
+      "fondoId": "1402",
+      "claseId": "4070",
+      "nombre": "Adcap Balanceado III - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 5355.845,
+      "patrimonio": 11964808447.59,
+      "retornoDiario": 0.091086,
+      "retornoAcumulado": 435.5845,
+      "flujoEstimado": 30374203.907642,
       "origen": "cnv-excel"
     }
   ]

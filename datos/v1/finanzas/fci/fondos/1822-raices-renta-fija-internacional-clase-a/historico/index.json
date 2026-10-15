@@ -2,7 +2,7 @@
   "fondoId": "1852",
   "claseId": "6390",
   "nombre": "1822 Raices Renta Fija Internacional - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "1822-raices-renta-fija-internacional-clase-a",
@@ -1986,6 +1986,22 @@
       "retornoDiario": 0.02191,
       "retornoAcumulado": -0.4796,
       "flujoEstimado": -1572.258455,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1822-raices-renta-fija-internacional-clase-a",
+      "fondoId": "1852",
+      "claseId": "6390",
+      "nombre": "1822 Raices Renta Fija Internacional - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 995.17,
+      "patrimonio": 2317699.91,
+      "retornoDiario": -0.003416,
+      "retornoAcumulado": -0.483,
+      "flujoEstimado": 0.495317,
       "origen": "cnv-excel"
     }
   ]

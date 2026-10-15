@@ -2,7 +2,7 @@
   "fondoId": "428",
   "claseId": "795",
   "nombre": "Compass Ahorro - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "compass-ahorro-clase-a",
@@ -26210,6 +26210,22 @@
       "retornoDiario": -0.0032,
       "retornoAcumulado": 1913.502408,
       "flujoEstimado": -10697274.561707,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-ahorro-clase-a",
+      "fondoId": "428",
+      "claseId": "795",
+      "nombre": "Compass Ahorro - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 100385.37,
+      "patrimonio": 4185922904.17,
+      "retornoDiario": 0.008077,
+      "retornoAcumulado": 1913.665029,
+      "flujoEstimado": -10255927.431438,
       "origen": "cnv-excel"
     }
   ]

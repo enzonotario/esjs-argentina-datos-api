@@ -2,7 +2,7 @@
   "fondoId": "880",
   "claseId": "2545",
   "nombre": "Argenfunds Renta Variable - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-variable-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 1.406292,
       "retornoAcumulado": 20.923075,
       "flujoEstimado": -1184.39676,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-variable-clase-b",
+      "fondoId": "880",
+      "claseId": "2545",
+      "nombre": "Argenfunds Renta Variable - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 841.328,
+      "patrimonio": 2509156704.98,
+      "retornoDiario": -1.14003,
+      "retornoAcumulado": 19.544515,
+      "flujoEstimado": 106.950118,
       "origen": "cnv-excel"
     }
   ]

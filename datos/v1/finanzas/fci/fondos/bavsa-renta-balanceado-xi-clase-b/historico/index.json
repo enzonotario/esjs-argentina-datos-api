@@ -2,7 +2,7 @@
   "fondoId": "1877",
   "claseId": "6492",
   "nombre": "BAVSA Renta Balanceado XI - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-xi-clase-b",
@@ -1458,6 +1458,22 @@
       "retornoDiario": -0.062597,
       "retornoAcumulado": 6.9667,
       "flujoEstimado": 1788.131112,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-xi-clase-b",
+      "fondoId": "1877",
+      "claseId": "6492",
+      "nombre": "BAVSA Renta Balanceado XI - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1070.044,
+      "patrimonio": 3345756237.49,
+      "retornoDiario": 0.035245,
+      "retornoAcumulado": 7.0044,
+      "flujoEstimado": -216.24533,
       "origen": "cnv-excel"
     }
   ]

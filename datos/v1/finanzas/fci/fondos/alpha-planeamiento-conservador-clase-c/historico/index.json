@@ -2,7 +2,7 @@
   "fondoId": "5",
   "claseId": "972",
   "nombre": "Alpha Planeamiento Conservador - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "alpha-planeamiento-conservador-clase-c",
@@ -26161,6 +26161,22 @@
       "patrimonio": null,
       "retornoDiario": -0.007486,
       "retornoAcumulado": -95.161719,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-planeamiento-conservador-clase-c",
+      "fondoId": "5",
+      "claseId": "972",
+      "nombre": "Alpha Planeamiento Conservador - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 200.908,
+      "patrimonio": null,
+      "retornoDiario": 0.279013,
+      "retornoAcumulado": -95.14822,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

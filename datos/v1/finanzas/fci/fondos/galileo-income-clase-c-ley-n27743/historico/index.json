@@ -2,7 +2,7 @@
   "fondoId": "747",
   "claseId": "4817",
   "nombre": "Galileo Income - Clase C Ley N°27.743",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "galileo-income-clase-c-ley-n27743",
@@ -8034,6 +8034,22 @@
       "retornoDiario": 0.018414,
       "retornoAcumulado": 5.3756,
       "flujoEstimado": -0.86455,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-income-clase-c-ley-n27743",
+      "fondoId": "747",
+      "claseId": "4817",
+      "nombre": "Galileo Income - Clase C Ley N°27.743",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1053.664,
+      "patrimonio": 2166194.33,
+      "retornoDiario": -0.008731,
+      "retornoAcumulado": 5.3664,
+      "flujoEstimado": 0.106932,
       "origen": "cnv-excel"
     }
   ]

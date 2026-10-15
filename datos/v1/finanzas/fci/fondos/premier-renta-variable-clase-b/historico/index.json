@@ -2,7 +2,7 @@
   "fondoId": "227",
   "claseId": "784",
   "nombre": "Premier Renta Variable - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "premier-renta-variable-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 1.499515,
       "retornoAcumulado": 5568.117303,
       "flujoEstimado": -23588541.760185,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-variable-clase-b",
+      "fondoId": "227",
+      "claseId": "784",
+      "nombre": "Premier Renta Variable - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1211108.015,
+      "patrimonio": 6857243254.41,
+      "retornoDiario": -1.100957,
+      "retornoAcumulado": 5505.713777,
+      "flujoEstimado": -61420676.018615,
       "origen": "cnv-excel"
     }
   ]

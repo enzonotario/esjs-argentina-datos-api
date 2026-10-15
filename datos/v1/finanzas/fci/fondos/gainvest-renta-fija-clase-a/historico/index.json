@@ -2,7 +2,7 @@
   "fondoId": "353",
   "claseId": "597",
   "nombre": "Gainvest Renta Fija - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "gainvest-renta-fija-clase-a",
@@ -26114,6 +26114,22 @@
       "retornoDiario": 0.052635,
       "retornoAcumulado": 617.021719,
       "flujoEstimado": 0.708896,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-renta-fija-clase-a",
+      "fondoId": "353",
+      "claseId": "597",
+      "nombre": "Gainvest Renta Fija - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 104170.356,
+      "patrimonio": 155295843.44,
+      "retornoDiario": 0.009444,
+      "retornoAcumulado": 617.089435,
+      "flujoEstimado": -0.404553,
       "origen": "cnv-excel"
     }
   ]

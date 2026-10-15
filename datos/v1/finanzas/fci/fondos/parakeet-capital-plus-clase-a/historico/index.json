@@ -2,7 +2,7 @@
   "fondoId": "1560",
   "claseId": "5003",
   "nombre": "Parakeet Capital Plus - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "parakeet-capital-plus-clase-a",
@@ -7874,6 +7874,22 @@
       "retornoDiario": 1.074082,
       "retornoAcumulado": 10.4955,
       "flujoEstimado": 75.442771,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-capital-plus-clase-a",
+      "fondoId": "1560",
+      "claseId": "5003",
+      "nombre": "Parakeet Capital Plus - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1098.381,
+      "patrimonio": 156680128.36,
+      "retornoDiario": -0.594956,
+      "retornoAcumulado": 9.8381,
+      "flujoEstimado": -27.349889,
       "origen": "cnv-excel"
     }
   ]

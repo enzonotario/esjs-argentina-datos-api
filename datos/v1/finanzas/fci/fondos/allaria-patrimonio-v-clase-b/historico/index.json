@@ -2,7 +2,7 @@
   "fondoId": "1300",
   "claseId": "3694",
   "nombre": "Allaria Patrimonio V - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "allaria-patrimonio-v-clase-b",
@@ -18386,6 +18386,22 @@
       "retornoDiario": 0.171838,
       "retornoAcumulado": 1797.3616,
       "flujoEstimado": 843.081436,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-patrimonio-v-clase-b",
+      "fondoId": "1300",
+      "claseId": "3694",
+      "nombre": "Allaria Patrimonio V - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 18983.62,
+      "patrimonio": 103122965000.25,
+      "retornoDiario": 0.052726,
+      "retornoAcumulado": 1798.362,
+      "flujoEstimado": -1025115828.285492,
       "origen": "cnv-excel"
     }
   ]

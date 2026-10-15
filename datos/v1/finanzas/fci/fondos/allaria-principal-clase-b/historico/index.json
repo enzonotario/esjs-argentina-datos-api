@@ -2,7 +2,7 @@
   "fondoId": "1223",
   "claseId": "3389",
   "nombre": "Allaria Principal - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "allaria-principal-clase-b",
@@ -22626,6 +22626,22 @@
       "retornoDiario": 0.298853,
       "retornoAcumulado": 1736.3741,
       "flujoEstimado": 1112.358002,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-principal-clase-b",
+      "fondoId": "1223",
+      "claseId": "3389",
+      "nombre": "Allaria Principal - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 18377.393,
+      "patrimonio": 26135331315.4,
+      "retornoDiario": 0.074342,
+      "retornoAcumulado": 1737.7393,
+      "flujoEstimado": -1102.055672,
       "origen": "cnv-excel"
     }
   ]

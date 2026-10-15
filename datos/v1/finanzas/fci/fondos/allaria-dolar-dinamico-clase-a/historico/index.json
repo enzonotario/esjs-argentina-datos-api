@@ -2,7 +2,7 @@
   "fondoId": "1435",
   "claseId": "4206",
   "nombre": "Allaria Dólar Dinámico  - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-dinamico-clase-a",
@@ -11950,10 +11950,26 @@
       "categoriaKey": "rentaFija",
       "horizonte": "Mediano Plazo",
       "valorCuotaparte": 1229.438,
-      "patrimonio": 86717924.36,
+      "patrimonio": 86709924.36,
       "retornoDiario": 0.000976,
       "retornoAcumulado": 22.9438,
-      "flujoEstimado": -7961.696387,
+      "flujoEstimado": -15961.696387,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-dinamico-clase-a",
+      "fondoId": "1435",
+      "claseId": "4206",
+      "nombre": "Allaria Dólar Dinámico  - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1229.592,
+      "patrimonio": 86941496.08,
+      "retornoDiario": 0.012526,
+      "retornoAcumulado": 22.9592,
+      "flujoEstimado": 220710.434875,
       "origen": "cnv-excel"
     }
   ]

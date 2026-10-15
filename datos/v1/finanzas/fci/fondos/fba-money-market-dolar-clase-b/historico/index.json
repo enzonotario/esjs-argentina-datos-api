@@ -2,7 +2,7 @@
   "fondoId": "1662",
   "claseId": "5551",
   "nombre": "FBA Money Market Dólar - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fba-money-market-dolar-clase-b",
@@ -5154,6 +5154,22 @@
       "retornoDiario": 0.005357,
       "retornoAcumulado": 0.8054,
       "flujoEstimado": 20567.375128,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-money-market-dolar-clase-b",
+      "fondoId": "1662",
+      "claseId": "5551",
+      "nombre": "FBA Money Market Dólar - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1008.067,
+      "patrimonio": 69377965.16,
+      "retornoDiario": 0.00129,
+      "retornoAcumulado": 0.8067,
+      "flujoEstimado": 25089.569446,
       "origen": "cnv-excel"
     }
   ]

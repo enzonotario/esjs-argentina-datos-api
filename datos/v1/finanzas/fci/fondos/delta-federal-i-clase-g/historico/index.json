@@ -2,7 +2,7 @@
   "fondoId": "469",
   "claseId": "1918",
   "nombre": "Delta Federal I - Clase G",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "delta-federal-i-clase-g",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0.12178,
       "retornoAcumulado": -89.737599,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-federal-i-clase-g",
+      "fondoId": "469",
+      "claseId": "1918",
+      "nombre": "Delta Federal I - Clase G",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 49.117,
+      "patrimonio": null,
+      "retornoDiario": -0.429767,
+      "retornoAcumulado": -89.781704,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

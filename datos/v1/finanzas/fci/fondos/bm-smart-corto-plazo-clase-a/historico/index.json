@@ -2,7 +2,7 @@
   "fondoId": "1503",
   "claseId": "4497",
   "nombre": "BM Smart Corto Plazo - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "bm-smart-corto-plazo-clase-a",
@@ -8962,6 +8962,22 @@
       "retornoDiario": 0.023954,
       "retornoAcumulado": 110.8697,
       "flujoEstimado": 22555464.179595,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bm-smart-corto-plazo-clase-a",
+      "fondoId": "1503",
+      "claseId": "4497",
+      "nombre": "BM Smart Corto Plazo - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2108.389,
+      "patrimonio": 992441796.54,
+      "retornoDiario": -0.014606,
+      "retornoAcumulado": 110.8389,
+      "flujoEstimado": -3043563.178047,
       "origen": "cnv-excel"
     }
   ]

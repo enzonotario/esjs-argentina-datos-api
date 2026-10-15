@@ -2,7 +2,7 @@
   "fondoId": "1359",
   "claseId": "3888",
   "nombre": "Max Renta Fija Dolares - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "max-renta-fija-dolares-clase-c",
@@ -8498,6 +8498,22 @@
       "retornoDiario": 0.020495,
       "retornoAcumulado": 14.1981,
       "flujoEstimado": 2099.704553,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-renta-fija-dolares-clase-c",
+      "fondoId": "1359",
+      "claseId": "3888",
+      "nombre": "Max Renta Fija Dolares - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1142.237,
+      "patrimonio": 1496487.95,
+      "retornoDiario": 0.022417,
+      "retornoAcumulado": 14.2237,
+      "flujoEstimado": -15679.126521,
       "origen": "cnv-excel"
     }
   ]

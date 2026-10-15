@@ -2,7 +2,7 @@
   "fondoId": "589",
   "claseId": "1192",
   "nombre": "Adcap Cima Renta Fija Nacional - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-cima-renta-fija-nacional-clase-b",
@@ -26130,6 +26130,22 @@
       "retornoDiario": 0.072961,
       "retornoAcumulado": 2300.574997,
       "flujoEstimado": -1.726039,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-cima-renta-fija-nacional-clase-b",
+      "fondoId": "589",
+      "claseId": "1192",
+      "nombre": "Adcap Cima Renta Fija Nacional - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 130534.93,
+      "patrimonio": 298169288.68,
+      "retornoDiario": 0.055489,
+      "retornoAcumulado": 2301.907064,
+      "flujoEstimado": 1.460492,
       "origen": "cnv-excel"
     }
   ]

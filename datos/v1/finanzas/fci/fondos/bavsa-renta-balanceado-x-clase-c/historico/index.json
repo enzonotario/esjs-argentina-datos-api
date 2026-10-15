@@ -2,7 +2,7 @@
   "fondoId": "1876",
   "claseId": "6489",
   "nombre": "BAVSA Renta Balanceado X - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-x-clase-c",
@@ -1458,6 +1458,22 @@
       "retornoDiario": 0.114557,
       "retornoAcumulado": 7.4058,
       "flujoEstimado": 5462.819714,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-x-clase-c",
+      "fondoId": "1876",
+      "claseId": "6489",
+      "nombre": "BAVSA Renta Balanceado X - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1074.263,
+      "patrimonio": 8640631525.34,
+      "retornoDiario": 0.019086,
+      "retornoAcumulado": 7.4263,
+      "flujoEstimado": -4135.225142,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1923",
   "claseId": "6424",
   "nombre": "Tango Ahorro USD - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "tango-ahorro-usd-clase-b",
@@ -130,6 +130,22 @@
       "retornoDiario": -0.01767,
       "retornoAcumulado": 0.1526,
       "flujoEstimado": -0.469536,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tango-ahorro-usd-clase-b",
+      "fondoId": "1923",
+      "claseId": "6424",
+      "nombre": "Tango Ahorro USD - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1000.826,
+      "patrimonio": 1098912.19,
+      "retornoDiario": -0.069893,
+      "retornoAcumulado": 0.0826,
+      "flujoEstimado": 25713.495391,
       "origen": "cnv-excel"
     }
   ]

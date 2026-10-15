@@ -2,7 +2,7 @@
   "fondoId": "1787",
   "claseId": "6100",
   "nombre": "FBA Renta Fija Dólar Latam I - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fba-renta-fija-dolar-latam-i-clase-b",
@@ -3090,6 +3090,22 @@
       "retornoDiario": 0.001099,
       "retornoAcumulado": 0.0564,
       "flujoEstimado": -0.009607,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-fija-dolar-latam-i-clase-b",
+      "fondoId": "1787",
+      "claseId": "6100",
+      "nombre": "FBA Renta Fija Dólar Latam I - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1000.566,
+      "patrimonio": 100056.64,
+      "retornoDiario": 0.0002,
+      "retornoAcumulado": 0.0566,
+      "flujoEstimado": 0.079887,
       "origen": "cnv-excel"
     }
   ]

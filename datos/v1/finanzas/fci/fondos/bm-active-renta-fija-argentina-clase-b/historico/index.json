@@ -2,7 +2,7 @@
   "fondoId": "1236",
   "claseId": "3429",
   "nombre": "BM Active Renta Fija Argentina - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "bm-active-renta-fija-argentina-clase-b",
@@ -22082,6 +22082,22 @@
       "retornoDiario": 0.094221,
       "retornoAcumulado": 2088.7264,
       "flujoEstimado": 139999835.874264,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bm-active-renta-fija-argentina-clase-b",
+      "fondoId": "1236",
+      "claseId": "3429",
+      "nombre": "BM Active Renta Fija Argentina - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 21887.736,
+      "patrimonio": 8243371599.46,
+      "retornoDiario": 0.002157,
+      "retornoAcumulado": 2088.7736,
+      "flujoEstimado": 9251992.311038,
       "origen": "cnv-excel"
     }
   ]

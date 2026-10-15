@@ -2,7 +2,7 @@
   "fondoId": "493",
   "claseId": "993",
   "nombre": "Consultatio Ahorro Plus Argentina F.C.I. - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "consultatio-ahorro-plus-argentina-fci-clase-a",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.04705,
       "retornoAcumulado": 2646.030447,
       "flujoEstimado": 18881165.743752,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-ahorro-plus-argentina-fci-clase-a",
+      "fondoId": "493",
+      "claseId": "993",
+      "nombre": "Consultatio Ahorro Plus Argentina F.C.I. - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 214769.966,
+      "patrimonio": 4536621460.04,
+      "retornoDiario": 0.020596,
+      "retornoAcumulado": 2646.596021,
+      "flujoEstimado": -75497996.579671,
       "origen": "cnv-excel"
     }
   ]

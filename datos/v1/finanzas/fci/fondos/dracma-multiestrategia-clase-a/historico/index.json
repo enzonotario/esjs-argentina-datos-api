@@ -2,7 +2,7 @@
   "fondoId": "1483",
   "claseId": "4397",
   "nombre": "Dracma Multiestrategia - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "dracma-multiestrategia-clase-a",
@@ -9826,6 +9826,22 @@
       "retornoDiario": -0.066332,
       "retornoAcumulado": 5.46,
       "flujoEstimado": 19.509448,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "dracma-multiestrategia-clase-a",
+      "fondoId": "1483",
+      "claseId": "4397",
+      "nombre": "Dracma Multiestrategia - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1054.6,
+      "patrimonio": 137091270.86,
+      "retornoDiario": 0,
+      "retornoAcumulado": 5.46,
+      "flujoEstimado": 932.09,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "806",
   "claseId": "2102",
   "nombre": "Fundcorp Long Performance - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "fundcorp-long-performance-clase-c",
@@ -25826,6 +25826,22 @@
       "retornoDiario": 0.103777,
       "retornoAcumulado": 1276.174265,
       "flujoEstimado": 0.183692,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-long-performance-clase-c",
+      "fondoId": "806",
+      "claseId": "2102",
+      "nombre": "Fundcorp Long Performance - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 13572.558,
+      "patrimonio": 150485865.64,
+      "retornoDiario": 0.075378,
+      "retornoAcumulado": 1277.211596,
+      "flujoEstimado": -6.701548,
       "origen": "cnv-excel"
     }
   ]

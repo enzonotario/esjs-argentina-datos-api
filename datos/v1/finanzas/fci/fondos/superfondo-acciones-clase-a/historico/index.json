@@ -2,7 +2,7 @@
   "fondoId": "148",
   "claseId": "148",
   "nombre": "Superfondo Acciones - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "superfondo-acciones-clase-a",
@@ -26190,10 +26190,26 @@
       "categoriaKey": "rentaVariable",
       "horizonte": "Largo Plazo",
       "valorCuotaparte": 490924.019,
-      "patrimonio": 179903376477.85,
+      "patrimonio": 179903512474.49,
       "retornoDiario": 1.592273,
       "retornoAcumulado": 8290.686008,
-      "flujoEstimado": -647949239.639832,
+      "flujoEstimado": -647813242.999847,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-acciones-clase-a",
+      "fondoId": "148",
+      "claseId": "148",
+      "nombre": "Superfondo Acciones - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 487596.198,
+      "patrimonio": 178547293600.88,
+      "retornoDiario": -0.677869,
+      "retornoAcumulado": 8233.808161,
+      "flujoEstimado": -136708732.634277,
       "origen": "cnv-excel"
     }
   ]

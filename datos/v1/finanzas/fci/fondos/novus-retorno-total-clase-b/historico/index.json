@@ -2,7 +2,7 @@
   "fondoId": "1646",
   "claseId": "5481",
   "nombre": "Novus Retorno Total - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "novus-retorno-total-clase-b",
@@ -5138,6 +5138,22 @@
       "retornoDiario": -0.140121,
       "retornoAcumulado": 23.4342,
       "flujoEstimado": -419.546923,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-retorno-total-clase-b",
+      "fondoId": "1646",
+      "claseId": "5481",
+      "nombre": "Novus Retorno Total - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1228.652,
+      "patrimonio": 652828446.44,
+      "retornoDiario": -0.460974,
+      "retornoAcumulado": 22.8652,
+      "flujoEstimado": 197.930923,
       "origen": "cnv-excel"
     }
   ]

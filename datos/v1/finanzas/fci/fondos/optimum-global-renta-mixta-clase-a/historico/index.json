@@ -2,7 +2,7 @@
   "fondoId": "399",
   "claseId": "2312",
   "nombre": "Optimum Global Renta Mixta - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "optimum-global-renta-mixta-clase-a",
@@ -26146,6 +26146,22 @@
       "retornoDiario": -0.016844,
       "retornoAcumulado": 2500.24147,
       "flujoEstimado": -0.031139,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "optimum-global-renta-mixta-clase-a",
+      "fondoId": "399",
+      "claseId": "2312",
+      "nombre": "Optimum Global Renta Mixta - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 818770.353,
+      "patrimonio": 17488530.34,
+      "retornoDiario": -0.004227,
+      "retornoAcumulado": 2500.131564,
+      "flujoEstimado": 0.041425,
       "origen": "cnv-excel"
     }
   ]

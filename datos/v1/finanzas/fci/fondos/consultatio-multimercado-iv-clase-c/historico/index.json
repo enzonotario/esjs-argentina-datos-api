@@ -2,7 +2,7 @@
   "fondoId": "1284",
   "claseId": "3579",
   "nombre": "Consultatio Multimercado IV - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "consultatio-multimercado-iv-clase-c",
@@ -19053,10 +19053,26 @@
       "categoria": "Renta Fija",
       "categoriaKey": "rentaFija",
       "horizonte": "Mediano Plazo",
-      "valorCuotaparte": 1561.377,
+      "valorCuotaparte": 1561.367,
       "patrimonio": null,
-      "retornoDiario": 0.071847,
-      "retornoAcumulado": 56.1377,
+      "retornoDiario": 0.071206,
+      "retornoAcumulado": 56.1367,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-multimercado-iv-clase-c",
+      "fondoId": "1284",
+      "claseId": "3579",
+      "nombre": "Consultatio Multimercado IV - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1561.922,
+      "patrimonio": null,
+      "retornoDiario": 0.035546,
+      "retornoAcumulado": 56.1922,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

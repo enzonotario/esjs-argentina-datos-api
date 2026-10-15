@@ -2,7 +2,7 @@
   "fondoId": "1495",
   "claseId": "4459",
   "nombre": "Ualintec Renta Variable Pesos - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "ualintec-renta-variable-pesos-clase-a",
@@ -9474,6 +9474,22 @@
       "retornoDiario": 1.41705,
       "retornoAcumulado": 115.645,
       "flujoEstimado": -18801587.434193,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-renta-variable-pesos-clase-a",
+      "fondoId": "1495",
+      "claseId": "4459",
+      "nombre": "Ualintec Renta Variable Pesos - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2135.262,
+      "patrimonio": 1131105909.01,
+      "retornoDiario": -0.982541,
+      "retornoAcumulado": 113.5262,
+      "flujoEstimado": 4524803.17976,
       "origen": "cnv-excel"
     }
   ]

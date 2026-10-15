@@ -2,7 +2,7 @@
   "fondoId": "370",
   "claseId": "3223",
   "nombre": "Delta Acciones - Clase I",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "delta-acciones-clase-i",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -94.520359,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-acciones-clase-i",
+      "fondoId": "370",
+      "claseId": "3223",
+      "nombre": "Delta Acciones - Clase I",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 0.797,
+      "patrimonio": null,
+      "retornoDiario": 0.377834,
+      "retornoAcumulado": -94.499655,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

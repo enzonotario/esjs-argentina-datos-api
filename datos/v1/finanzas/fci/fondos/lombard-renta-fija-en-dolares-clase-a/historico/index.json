@@ -2,7 +2,7 @@
   "fondoId": "725",
   "claseId": "1572",
   "nombre": "Lombard Renta Fija en Dolares - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "lombard-renta-fija-en-dolares-clase-a",
@@ -26002,6 +26002,22 @@
       "retornoDiario": 0.012521,
       "retornoAcumulado": 16.709269,
       "flujoEstimado": 11727.807705,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-renta-fija-en-dolares-clase-a",
+      "fondoId": "725",
+      "claseId": "1572",
+      "nombre": "Lombard Renta Fija en Dolares - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1245.98,
+      "patrimonio": 145716034.9,
+      "retornoDiario": -0.002809,
+      "retornoAcumulado": 16.705991,
+      "flujoEstimado": -12360.824374,
       "origen": "cnv-excel"
     }
   ]

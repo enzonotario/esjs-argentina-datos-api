@@ -2,7 +2,7 @@
   "fondoId": "742",
   "claseId": "6613",
   "nombre": "Allaria Diversificado - Clase P",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "allaria-diversificado-clase-p",
@@ -914,6 +914,22 @@
       "retornoDiario": -0.548772,
       "retornoAcumulado": 3.7694,
       "flujoEstimado": 0.030755,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-diversificado-clase-p",
+      "fondoId": "742",
+      "claseId": "6613",
+      "nombre": "Allaria Diversificado - Clase P",
+      "fecha": "2026-10-14",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1030.101,
+      "patrimonio": 56688.86,
+      "retornoDiario": -0.731719,
+      "retornoAcumulado": 3.0101,
+      "flujoEstimado": 11999.987308,
       "origen": "cnv-excel"
     }
   ]

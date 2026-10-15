@@ -2,7 +2,7 @@
   "fondoId": "1337",
   "claseId": "3825",
   "nombre": "Gainvest Balanceado V - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "gainvest-balanceado-v-clase-b",
@@ -16146,6 +16146,22 @@
       "retornoDiario": 0.021861,
       "retornoAcumulado": 181.3844,
       "flujoEstimado": 2.606,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-balanceado-v-clase-b",
+      "fondoId": "1337",
+      "claseId": "3825",
+      "nombre": "Gainvest Balanceado V - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2815.614,
+      "patrimonio": 5653769717.29,
+      "retornoDiario": 0.062903,
+      "retornoAcumulado": 181.5614,
+      "flujoEstimado": -216.000874,
       "origen": "cnv-excel"
     }
   ]

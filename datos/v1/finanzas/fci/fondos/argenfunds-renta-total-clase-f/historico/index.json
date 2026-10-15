@@ -2,7 +2,7 @@
   "fondoId": "681",
   "claseId": "2192",
   "nombre": "Argenfunds Renta Total - Clase F",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-total-clase-f",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -93.49833,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-total-clase-f",
+      "fondoId": "681",
+      "claseId": "2192",
+      "nombre": "Argenfunds Renta Total - Clase F",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1.327,
+      "patrimonio": null,
+      "retornoDiario": 0.226586,
+      "retornoAcumulado": -93.483599,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

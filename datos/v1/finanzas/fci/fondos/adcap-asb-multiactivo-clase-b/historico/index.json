@@ -2,7 +2,7 @@
   "fondoId": "1626",
   "claseId": "5396",
   "nombre": "Adcap ASB Multiactivo - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-asb-multiactivo-clase-b",
@@ -6082,6 +6082,22 @@
       "retornoDiario": 0.864796,
       "retornoAcumulado": 26.506132,
       "flujoEstimado": -106741537.334573,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-asb-multiactivo-clase-b",
+      "fondoId": "1626",
+      "claseId": "5396",
+      "nombre": "Adcap ASB Multiactivo - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1197.418,
+      "patrimonio": 627986685.38,
+      "retornoDiario": -1.407479,
+      "retornoAcumulado": 24.725585,
+      "flujoEstimado": -26.178147,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1498",
   "claseId": "4475",
   "nombre": "Argentaria BAVSA Global - Clase D",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argentaria-bavsa-global-clase-d",
@@ -9074,6 +9074,22 @@
       "retornoDiario": 0.787368,
       "retornoAcumulado": 123.0366,
       "flujoEstimado": -229.883953,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argentaria-bavsa-global-clase-d",
+      "fondoId": "1498",
+      "claseId": "4475",
+      "nombre": "Argentaria BAVSA Global - Clase D",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2211.606,
+      "patrimonio": 5413299988.65,
+      "retornoDiario": -0.841118,
+      "retornoAcumulado": 121.1606,
+      "flujoEstimado": -200.769446,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "546",
   "claseId": "1106",
   "nombre": "MAF Renta Fija Cobertura - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "maf-renta-fija-cobertura-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": -0.098675,
       "retornoAcumulado": 2790.176167,
       "flujoEstimado": -2.185275,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-renta-fija-cobertura-clase-b",
+      "fondoId": "546",
+      "claseId": "1106",
+      "nombre": "MAF Renta Fija Cobertura - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 287206.289,
+      "patrimonio": 530952162.22,
+      "retornoDiario": -0.035991,
+      "retornoAcumulado": 2789.13595,
+      "flujoEstimado": -3.574247,
       "origen": "cnv-excel"
     }
   ]

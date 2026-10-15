@@ -2,7 +2,7 @@
   "fondoId": "1572",
   "claseId": "5111",
   "nombre": "Parakeet Income - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "parakeet-income-clase-a",
@@ -7586,6 +7586,22 @@
       "retornoDiario": 0.124942,
       "retornoAcumulado": 14.6761,
       "flujoEstimado": 36493.215234,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-income-clase-a",
+      "fondoId": "1572",
+      "claseId": "5111",
+      "nombre": "Parakeet Income - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1145.816,
+      "patrimonio": 10217956.27,
+      "retornoDiario": -0.082406,
+      "retornoAcumulado": 14.5816,
+      "flujoEstimado": 2138.519802,
       "origen": "cnv-excel"
     }
   ]

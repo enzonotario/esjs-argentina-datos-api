@@ -2,7 +2,7 @@
   "fondoId": "1870",
   "claseId": "6278",
   "nombre": "Mills M1000 Balanceado Pesos - Clase XDB2",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "mills-m1000-balanceado-pesos-clase-xdb2",
@@ -402,6 +402,22 @@
       "retornoDiario": 0.076766,
       "retornoAcumulado": 2.337,
       "flujoEstimado": -223.165187,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mills-m1000-balanceado-pesos-clase-xdb2",
+      "fondoId": "1870",
+      "claseId": "6278",
+      "nombre": "Mills M1000 Balanceado Pesos - Clase XDB2",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1023.417,
+      "patrimonio": 281409340.16,
+      "retornoDiario": 0.004593,
+      "retornoAcumulado": 2.3417,
+      "flujoEstimado": 206.222102,
       "origen": "cnv-excel"
     }
   ]

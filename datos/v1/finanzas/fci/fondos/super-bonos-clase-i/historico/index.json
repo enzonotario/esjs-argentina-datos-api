@@ -2,7 +2,7 @@
   "fondoId": "341",
   "claseId": "3460",
   "nombre": "Super Bonos - Clase I",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "super-bonos-clase-i",
@@ -21138,6 +21138,22 @@
       "retornoDiario": -0.277282,
       "retornoAcumulado": 1336.061196,
       "flujoEstimado": -28306039.301102,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "super-bonos-clase-i",
+      "fondoId": "341",
+      "claseId": "3460",
+      "nombre": "Super Bonos - Clase I",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14373.901,
+      "patrimonio": 52143266926.05,
+      "retornoDiario": 0.072824,
+      "retornoAcumulado": 1337.10699,
+      "flujoEstimado": -6045352434.095474,
       "origen": "cnv-excel"
     }
   ]

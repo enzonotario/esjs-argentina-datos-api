@@ -2,7 +2,7 @@
   "fondoId": "587",
   "claseId": "1188",
   "nombre": "Schroder Renta Global Tres - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "schroder-renta-global-tres-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": -0.049083,
       "retornoAcumulado": 50557.413725,
       "flujoEstimado": -0.000062,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-global-tres-clase-b",
+      "fondoId": "587",
+      "claseId": "1188",
+      "nombre": "Schroder Renta Global Tres - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2376404.395,
+      "patrimonio": 18875.59,
+      "retornoDiario": -0.007363,
+      "retornoAcumulado": 50553.683576,
+      "flujoEstimado": -0.000088,
       "origen": "cnv-excel"
     }
   ]

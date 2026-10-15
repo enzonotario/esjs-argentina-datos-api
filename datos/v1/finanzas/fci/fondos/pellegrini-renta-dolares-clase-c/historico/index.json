@@ -2,7 +2,7 @@
   "fondoId": "770",
   "claseId": "1734",
   "nombre": "Pellegrini Renta Dólares - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-dolares-clase-c",
@@ -26242,6 +26242,22 @@
       "retornoDiario": -0.064306,
       "retornoAcumulado": 186.224368,
       "flujoEstimado": 0.271151,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-dolares-clase-c",
+      "fondoId": "770",
+      "claseId": "1734",
+      "nombre": "Pellegrini Renta Dólares - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2331.404,
+      "patrimonio": 1980999.72,
+      "retornoDiario": 0.146951,
+      "retornoAcumulado": 186.644978,
+      "flujoEstimado": -0.608179,
       "origen": "cnv-excel"
     }
   ]

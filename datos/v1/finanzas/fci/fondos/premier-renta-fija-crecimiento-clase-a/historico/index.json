@@ -2,7 +2,7 @@
   "fondoId": "180",
   "claseId": "180",
   "nombre": "Premier Renta Fija Crecimiento - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "premier-renta-fija-crecimiento-clase-a",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.368155,
       "retornoAcumulado": 4403.944291,
       "flujoEstimado": 0.047251,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-fija-crecimiento-clase-a",
+      "fondoId": "180",
+      "claseId": "180",
+      "nombre": "Premier Renta Fija Crecimiento - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 599574.797,
+      "patrimonio": 19806387.18,
+      "retornoDiario": 0.304791,
+      "retornoAcumulado": 4417.671892,
+      "flujoEstimado": -0.068367,
       "origen": "cnv-excel"
     }
   ]

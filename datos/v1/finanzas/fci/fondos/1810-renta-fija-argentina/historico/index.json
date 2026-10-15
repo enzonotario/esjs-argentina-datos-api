@@ -2,7 +2,7 @@
   "fondoId": "760",
   "claseId": "1683",
   "nombre": "1810 Renta Fija Argentina",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "1810-renta-fija-argentina",
@@ -26162,6 +26162,22 @@
       "retornoDiario": -0.098631,
       "retornoAcumulado": 4008.577792,
       "flujoEstimado": -374006319.842766,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-renta-fija-argentina",
+      "fondoId": "760",
+      "claseId": "1683",
+      "nombre": "1810 Renta Fija Argentina",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 79694.841,
+      "patrimonio": 18491460000.71,
+      "retornoDiario": 0.054132,
+      "retornoAcumulado": 4010.801844,
+      "flujoEstimado": -13187052.949184,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1203",
   "claseId": "3312",
   "nombre": "Compass Renta Plus II - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "compass-renta-plus-ii-clase-b",
@@ -24482,6 +24482,22 @@
       "retornoDiario": 0.071276,
       "retornoAcumulado": 873.1059,
       "flujoEstimado": -1629.885628,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-plus-ii-clase-b",
+      "fondoId": "1203",
+      "claseId": "3312",
+      "nombre": "Compass Renta Plus II - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 9735.042,
+      "patrimonio": 36560456081.93,
+      "retornoDiario": 0.040931,
+      "retornoAcumulado": 873.5042,
+      "flujoEstimado": 66.136276,
       "origen": "cnv-excel"
     }
   ]

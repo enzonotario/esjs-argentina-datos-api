@@ -2,7 +2,7 @@
   "fondoId": "670",
   "claseId": "1402",
   "nombre": "Delta Gestion V - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "delta-gestion-v-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.198715,
       "retornoAcumulado": 3291.353466,
       "flujoEstimado": -289.084969,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-v-clase-b",
+      "fondoId": "670",
+      "claseId": "1402",
+      "nombre": "Delta Gestion V - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 96579.945,
+      "patrimonio": 26644648522.05,
+      "retornoDiario": -0.157523,
+      "retornoAcumulado": 3286.011292,
+      "flujoEstimado": -32.171005,
       "origen": "cnv-excel"
     }
   ]

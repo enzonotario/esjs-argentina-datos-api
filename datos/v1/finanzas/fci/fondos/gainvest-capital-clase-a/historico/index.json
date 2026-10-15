@@ -2,7 +2,7 @@
   "fondoId": "597",
   "claseId": "1210",
   "nombre": "Gainvest Capital - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "gainvest-capital-clase-a",
@@ -26130,6 +26130,22 @@
       "retornoDiario": 1.696029,
       "retornoAcumulado": -56.012167,
       "flujoEstimado": -0.019641,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-capital-clase-a",
+      "fondoId": "597",
+      "claseId": "1210",
+      "nombre": "Gainvest Capital - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1234.565,
+      "patrimonio": 94500.85,
+      "retornoDiario": -0.548826,
+      "retornoAcumulado": -56.253583,
+      "flujoEstimado": -0.002583,
       "origen": "cnv-excel"
     }
   ]

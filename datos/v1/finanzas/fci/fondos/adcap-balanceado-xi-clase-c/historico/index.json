@@ -2,7 +2,7 @@
   "fondoId": "1254",
   "claseId": "3483",
   "nombre": "Adcap Balanceado XI - Clase C",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-xi-clase-c",
@@ -20354,6 +20354,22 @@
       "retornoDiario": 0.020704,
       "retornoAcumulado": 2845.9239,
       "flujoEstimado": 281.198463,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-xi-clase-c",
+      "fondoId": "1254",
+      "claseId": "3483",
+      "nombre": "Adcap Balanceado XI - Clase C",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 29460.756,
+      "patrimonio": 23709390848.34,
+      "retornoDiario": 0.005149,
+      "retornoAcumulado": 2846.0756,
+      "flujoEstimado": -62.172405,
       "origen": "cnv-excel"
     }
   ]

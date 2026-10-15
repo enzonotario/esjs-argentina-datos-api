@@ -2,7 +2,7 @@
   "fondoId": "356",
   "claseId": "600",
   "nombre": "Schroder Infraestructura - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "schroder-infraestructura-clase-b",
@@ -26194,6 +26194,22 @@
       "retornoDiario": -0.024708,
       "retornoAcumulado": 3534.713036,
       "flujoEstimado": -271955463.096252,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-infraestructura-clase-b",
+      "fondoId": "356",
+      "claseId": "600",
+      "nombre": "Schroder Infraestructura - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Infraestructura",
+      "categoriaKey": null,
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 66320.204,
+      "patrimonio": 182918408790.41,
+      "retornoDiario": 0.131972,
+      "retornoAcumulado": 3539.509853,
+      "flujoEstimado": 3210.033752,
       "origen": "cnv-excel"
     }
   ]

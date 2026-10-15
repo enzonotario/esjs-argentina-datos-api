@@ -2,7 +2,7 @@
   "fondoId": "1579",
   "claseId": "5138",
   "nombre": "Adcap Gestión Estratégica II - Clase B",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "adcap-gestion-estrategica-ii-clase-b",
@@ -4942,10 +4942,26 @@
       "categoriaKey": "rentaFija",
       "horizonte": "Mediano Plazo",
       "valorCuotaparte": 1333.004,
-      "patrimonio": 11041356340.4,
+      "patrimonio": 10891356340.4,
       "retornoDiario": 0.056521,
       "retornoAcumulado": 33.3004,
-      "flujoEstimado": 306793375.528099,
+      "flujoEstimado": 156793375.528099,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-gestion-estrategica-ii-clase-b",
+      "fondoId": "1579",
+      "claseId": "5138",
+      "nombre": "Adcap Gestión Estratégica II - Clase B",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1332.086,
+      "patrimonio": 10734520099.83,
+      "retornoDiario": -0.068867,
+      "retornoAcumulado": 33.2086,
+      "flujoEstimado": -149335690.199057,
       "origen": "cnv-excel"
     }
   ]

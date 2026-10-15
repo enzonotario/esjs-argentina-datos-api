@@ -2,7 +2,7 @@
   "fondoId": "683",
   "claseId": "2040",
   "nombre": "Argenfunds Renta Dinamica - Clase D",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-dinamica-clase-d",
@@ -26225,6 +26225,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -95.148687,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-dinamica-clase-d",
+      "fondoId": "683",
+      "claseId": "2040",
+      "nombre": "Argenfunds Renta Dinamica - Clase D",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 0.865,
+      "patrimonio": null,
+      "retornoDiario": 0.23175,
+      "retornoAcumulado": -95.137444,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

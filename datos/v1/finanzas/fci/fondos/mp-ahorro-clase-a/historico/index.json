@@ -2,7 +2,7 @@
   "fondoId": "1625",
   "claseId": "5393",
   "nombre": "MP Ahorro - Clase A",
-  "fechaActualizacion": "2026-10-14T01:11:24.000Z",
+  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
   "historico": [
     {
       "slug": "mp-ahorro-clase-a",
@@ -5922,6 +5922,22 @@
       "retornoDiario": 0.064676,
       "retornoAcumulado": 21.7626,
       "flujoEstimado": 2687583257.261658,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mp-ahorro-clase-a",
+      "fondoId": "1625",
+      "claseId": "5393",
+      "nombre": "MP Ahorro - Clase A",
+      "fecha": "2026-10-14",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1218.048,
+      "patrimonio": 290286580459.58,
+      "retornoDiario": 0.034658,
+      "retornoAcumulado": 21.8048,
+      "flujoEstimado": 40885848.717163,
       "origen": "cnv-excel"
     }
   ]
