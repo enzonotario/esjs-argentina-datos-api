@@ -10,7 +10,7 @@ next: false
 
 # Privacidad
 
-**Actualización:** 14 de octubre de 2026.
+**Actualización:** 15 de octubre de 2026.
 
 ## Qué es esta página
 
@@ -46,16 +46,17 @@ No hay publicidad. No hay un perfil de usuario de la API.
 Estos servicios también tratan datos de conexión. Pueden tratarlos fuera de Argentina.
 
 - **Cloudflare** actúa como proxy y como protección del servicio. Ve la IP para entregar el pedido y para la seguridad. ArgentinaDatos no copia esos registros a una base propia.
-- **El servidor de origen** guarda un access log, que rota, y estadísticas de tráfico. La IP completa entra en el conteo de direcciones frecuentes. No entra en el conteo de visitantes únicos. El proveedor de la máquina puede guardar registros de red propios, según su política. Esos registros no se usan para analítica ni para identificar a una persona.
+- **El servidor de origen** guarda un access log, que rota, y estadísticas de tráfico. La IP completa entra en el conteo de direcciones frecuentes, hasta 50 direcciones por período. No entra en el conteo de visitantes únicos. El proveedor de la máquina puede guardar registros de red propios, según su política. Esos registros no se usan para analítica ni para identificar a una persona.
 - **Google Analytics** mide visitas en los sitios. [Google Analytics 4 usa la IP para una ubicación aproximada y no la guarda en los informes](https://support.google.com/analytics/answer/11598602?hl=en).
 - **Algolia** solo interviene en la búsqueda de esta documentación. Una consulta a la API no pasa por Algolia. La política de Algolia está en [algolia.com/policies/privacy](https://www.algolia.com/policies/privacy).
 
 ## Cuánto tiempo
 
-- El access log permanece hasta que rota el archivo.
-- Las estadísticas por hora se conservan 30 días.
-- Las estadísticas por día se conservan 395 días.
-- Cloudflare conserva sus registros según su [política de privacidad](https://www.cloudflare.com/privacypolicy/).
+El access log del proxy no tiene un plazo máximo en días. El archivo en uso se rota cuando pasa de 20 MB. Además de ese archivo quedan como máximo 5 copias comprimidas. Cuando aparece una sexta, se borra la más vieja. El tiempo que eso cubre depende del volumen de pedidos.
+
+Las estadísticas por hora se conservan 30 días. Las estadísticas por día se conservan 395 días. En esos plazos, el conteo de direcciones frecuentes guarda la IP completa. No se recorta y no va como hash. Es un conteo de pedidos por dirección, no el renglón de cada consulta. El tope es de 50 direcciones por período. El resto entra en un grupo de otras, sin la dirección. El conteo de visitantes únicos no guarda la IP.
+
+Cloudflare conserva sus registros según su [política de privacidad](https://www.cloudflare.com/privacypolicy/). Esos registros no son las copias del access log.
 
 No prometemos un borrado manual de cada log de infraestructura.
 
