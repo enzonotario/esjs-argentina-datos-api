@@ -19,3 +19,5 @@ ArgentinaDatos.com y sus colaboradores declinan toda responsabilidad respecto al
 Los usuarios reconocen que los datos proporcionados por ArgentinaDatos.com son meramente informativos y pueden no reflejar con total exactitud la realidad o estar completamente actualizados en todo momento. La información oficial debe ser consultada en las fuentes gubernamentales correspondientes.
 
 El uso de ArgentinaDatos.com implica la aceptación de estos términos y condiciones. ArgentinaDatos.com se reserva el derecho de modificar, actualizar, suspender o interrumpir el servicio o cualquier parte de su contenido en cualquier momento sin previo aviso.
+
+El tratamiento de datos de conexión está en [Privacidad y datos de conexión](/docs/privacidad).

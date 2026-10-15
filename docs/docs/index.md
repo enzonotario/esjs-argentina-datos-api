@@ -23,7 +23,7 @@ Ver en GitHub
 
 ## Aviso Legal
 
-ArgentinaDatos.com es un proyecto de código abierto que brinda datos de fuentes públicas. Para más información, consulta la seción de [Aviso Legal](/docs/legal).
+ArgentinaDatos.com es un proyecto de código abierto que brinda datos de fuentes públicas. Para más información, consulta la seción de [Aviso Legal](/docs/legal). El tratamiento de datos de conexión está en [Privacidad](/docs/privacidad).
 
 ## Sponsors
 
