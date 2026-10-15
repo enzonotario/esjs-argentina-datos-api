@@ -3,7 +3,7 @@ import { extraerBelo } from '@/finanzas/criptopesos/extraccion/extraerBelo.js'
 
 describe('extraerBelo', () => {
   it(
-    'extrae APY de ARGt en Belo API y lo retorna como ARGt/BELO con TNA',
+    'extrae la TNA publicada de ARGt en Belo API y la retorna como ARGt/BELO',
     async () => {
       const resultado = await extraerBelo()
 

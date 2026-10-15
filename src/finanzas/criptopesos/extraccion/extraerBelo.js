@@ -1,6 +1,5 @@
 import { logGrupo, logError, logMensaje } from '@/log.js'
 import axios from 'axios'
-import { apyToTna } from '@/finanzas/criptopesos/apyToTna.js'
 
 export async function extraerBelo() {
   const log = logGrupo({
@@ -34,12 +33,8 @@ export async function extraerBelo() {
       return []
     }
 
-    // Belo publica `rate` como APY decimal (igual que en rendimientos).
-    // Convertimos a TNA con capitalización diaria, mismo criterio que Ripio.
-    const apyDecimal = Number(argt.rate)
-    const n = 365
-    const tnaCalculada = apyToTna(apyDecimal, n)
-    const tna = Number(tnaCalculada.toFixed(4))
+    // Belo publica `rate` como TNA decimal. No convertir desde APY.
+    const tna = Number(Number(argt.rate).toFixed(4))
 
     if (isNaN(tna) || tna < 0) {
       throw new Error('Valor de TNA inválido para Belo ARGt')
