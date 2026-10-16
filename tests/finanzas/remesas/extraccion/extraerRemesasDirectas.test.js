@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { logGrupo } from '@/log.js'
 import { mapearAstropayRemesas } from '@/finanzas/remesas/extraccion/extraerAstropayRemesas.js'
 import { mapearGlobal66Remesas } from '@/finanzas/remesas/extraccion/extraerGlobal66Remesas.js'
+import { mapearLemonRemesas } from '@/finanzas/remesas/extraccion/extraerLemonRemesas.js'
 import { mapearArqRemesas } from '@/finanzas/remesas/extraccion/extraerArqRemesas.js'
 import { mapearGrabrfiRemesas } from '@/finanzas/remesas/extraccion/extraerGrabrfiRemesas.js'
 import { mapearPayoneerRemesas } from '@/finanzas/remesas/extraccion/extraerPayoneerRemesas.js'
@@ -187,6 +188,35 @@ describe('mapear remesas desde fuente oficial', () => {
     })
     expect(remesa.detalles.cuentaPropia).toContain('proveedor de pagos')
     expect(remesa.detalles.costoRecibirPagos).toContain('10 USD')
+  })
+
+  it('lee Lemon desde la tarjeta y el centro de ayuda', () => {
+    const remesa = mapearLemonRemesas(`
+      Pedí tu VISA Lemon Card desde la app sin costo de envío ni mantenimiento.
+      ACH domésticas e internacionales tienen una comisión de 1.5%.
+      Wires domésticas tienen una comisión de 1.5% + 12 USD fijos.
+      No serás el titular de una cuenta bancaria.
+      Bridge requiere que abones 4 USD para abrir la cuenta virtual.
+      Todo tu saldo en Dólar Digital genera rendimientos, sin tope.
+      Retiros en pesos 0,00 ARS.
+      Desde USDt los consumos se procesan 1 a 1 vs USD.
+      Desde otra crypto se aplica una comisión de 0.3%.
+      Desde ARS se aplica una comisión de 0.5%.
+    `)
+
+    expect(remesa).toMatchObject({
+      compania: 'Lemon',
+      cuentaPropia: false,
+      moneda: 'CRIPTO',
+      inversiones: true,
+      tarjetaUsa: false,
+      costoRecibirPagos: '1.5%',
+      costoMantenimientoTarjeta: '0',
+      costoTarjeta: '0',
+      retiroArs: '0',
+    })
+    expect(remesa.detalles.cuentaPropia).toContain('Lead Bank')
+    expect(remesa.detalles.costoRecibirPagos).toContain('12 USD')
   })
 
   it('lee ARQ desde el help center', () => {

@@ -7,7 +7,7 @@ import { fuenteWallbitRemesas } from '@/finanzas/remesas/extraccion/extraerWallb
 import { fuenteWiseRemesas } from '@/finanzas/remesas/extraccion/extraerWiseRemesas.js'
 
 /**
- * Proveedores que siguen en Dolarito: AirTM y Lemon.
+ * Proveedores que siguen en Dolarito: AirTM.
  */
 export const FUENTES_REMESAS_DIRECTAS = [
   fuenteWallbitRemesas,

@@ -5,6 +5,7 @@ import { extraerRipioRemesas } from '@/finanzas/remesas/extraccion/extraerRipioR
 import { extraerFuentesDirectasRemesas } from '@/finanzas/remesas/extraccion/extraerRemesasDirectas.js'
 import { extraerAstropayRemesas } from '@/finanzas/remesas/extraccion/extraerAstropayRemesas.js'
 import { extraerGlobal66Remesas } from '@/finanzas/remesas/extraccion/extraerGlobal66Remesas.js'
+import { extraerLemonRemesas } from '@/finanzas/remesas/extraccion/extraerLemonRemesas.js'
 import { extraerRemesasDolarito } from '@/finanzas/remesas/extraccion/extraerRemesasDolarito.js'
 
 const ALIAS_COMPANIA_REMESA = {
@@ -139,6 +140,7 @@ export async function extraerRemesas() {
       resultadoDirectas,
       resultadoAstropay,
       resultadoGlobal66,
+      resultadoLemon,
     ] = await Promise.allSettled([
       extraerRemesasDolarito(log),
       extraerCocosRemesas(log),
@@ -147,6 +149,7 @@ export async function extraerRemesas() {
       extraerFuentesDirectasRemesas(log),
       extraerAstropayRemesas(log),
       extraerGlobal66Remesas(log),
+      extraerLemonRemesas(log),
     ])
 
     const remesas =
@@ -201,6 +204,12 @@ export async function extraerRemesas() {
       nombre: 'Global66',
       exito: 'extraerRemesas: Global66 desde global66.com agregado',
       fallo: 'extraerRemesas: falló Global66 desde global66.com',
+    })
+
+    agregarRemesaOpcional(log, remesas, resultadoLemon, {
+      nombre: 'Lemon',
+      exito: 'extraerRemesas: Lemon desde lemon.me agregado',
+      fallo: 'extraerRemesas: falló Lemon desde lemon.me',
     })
 
     if (remesas.length === 0 && resultadoPrincipal.status === 'rejected') {
