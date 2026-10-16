@@ -60,13 +60,18 @@ To a bank account in the recipient's local currency 1.2% – 4%.
 `
 
 const ARQ = `
-U.S. account details on ARQ.
-Maintain your digital dollars or euros. earn rewards at no additional cost.
+This article refers to costs for customers with residence address in Argentina.
+3 USDc fee when depositing funds from US dollar accounts.
 Virtual ARQ: Get your virtual card without any charge.
 Deposits and transfers in local currencies without fees.
-3 USDc fee when depositing funds from US dollar accounts.
 International purchases in Argentine pesos: 5% commission.
 ATM withdrawals: 1% commission.
+Global card: $2.99 USDc. Local card: $2,000.00 ARS.
+It is a card issued outside Argentina.
+Local card: Card issued in Argentina.
+Beneficiary name: Your name. Bank name: Lead Bank. Type of account: Checking account.
+you get your own US account details. Transaction cost: $3 USD per transaction.
+Maintain your digital dollars and earn rewards at no additional cost.
 `
 
 describe('mapear remesas desde fuente oficial', () => {
@@ -219,13 +224,16 @@ describe('mapear remesas desde fuente oficial', () => {
     expect(remesa.detalles.costoRecibirPagos).toContain('12 USD')
   })
 
-  it('lee ARQ desde el help center', () => {
+  it('lee ARQ desde las páginas de Argentina', () => {
     expect(mapearArqRemesas(ARQ)).toMatchObject({
       compania: 'arq',
       cuentaPropia: true,
       moneda: 'CRIPTO',
+      inversiones: true,
+      tarjetaUsa: false,
       costoRecibirPagos: '3 USD',
       costoMantenimientoTarjeta: '0 USD',
+      costoTarjeta: '0%',
       retiroArs: '0',
     })
   })
@@ -254,7 +262,7 @@ describe('mapear remesas desde fuente oficial', () => {
 })
 
 describe('fuentes oficiales vivas', () => {
-  it('parsea las seis páginas oficiales', async () => {
+  it('parsea las páginas oficiales de una sola URL', async () => {
     const log = logGrupo({ fuente: 'test', tipo: 'extraccion' })
     const resultados = await extraerFuentesDirectasRemesas(log)
     const fallos = resultados.filter(resultado => !resultado.ok)
@@ -275,6 +283,5 @@ describe('fuentes oficiales vivas', () => {
     expect(porNombre.wise.costoRecibirPagos).toBe('0')
     expect(porNombre.wise.detalles.costoRecibirPagos).toContain('6,11 USD')
     expect(porNombre.payoneer.costoRecibirPagos).toBe('1%')
-    expect(porNombre.arq.costoRecibirPagos).toBe('3 USD')
   }, 60000)
 })
