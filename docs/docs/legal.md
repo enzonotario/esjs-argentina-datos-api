@@ -20,4 +20,6 @@ Los usuarios reconocen que los datos proporcionados por ArgentinaDatos.com son m
 
 El uso de ArgentinaDatos.com implica la aceptación de estos términos y condiciones. ArgentinaDatos.com se reserva el derecho de modificar, actualizar, suspender o interrumpir el servicio o cualquier parte de su contenido en cualquier momento sin previo aviso.
 
+Las condiciones de uso de los datos están en [Uso de los datos](/docs/uso).
+
 El tratamiento de datos de conexión está en [Privacidad y datos de conexión](/docs/privacidad).
