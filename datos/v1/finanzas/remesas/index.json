@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2026-10-13T00:42:39.689Z",
+  "fechaActualizacion": "2026-10-16T21:57:14.815Z",
   "remesas": [
     {
       "compania": "wallbit",
@@ -54,10 +54,7 @@
       "retiroArs": "0",
       "detalles": {
         "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
-        "inversiones": "No permite inversiones",
-        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
-        "calificacionAndroid": "4,75/5",
-        "calificacionIos": "4,75/5"
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso"
       },
       "calificacionAndroid": 4.75,
       "calificacionIos": 4.75
@@ -75,9 +72,7 @@
       "detalles": {
         "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
         "inversiones": "Permite inversiones (Stacking cripto.)",
-        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
-        "calificacionAndroid": "4,65/5",
-        "calificacionIos": "4,65/5"
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso"
       },
       "calificacionAndroid": 4.65,
       "calificacionIos": 4.65
@@ -105,23 +100,25 @@
     },
     {
       "compania": "AstroPay",
-      "cuentaPropia": true,
+      "cuentaPropia": false,
       "moneda": "FIAT",
-      "inversiones": true,
+      "inversiones": false,
       "tarjetaUsa": true,
-      "costoRecibirPagos": "1%",
-      "costoMantenimientoTarjeta": "0 USD",
-      "costoTarjeta": "0%",
-      "retiroArs": "0",
+      "costoRecibirPagos": null,
+      "costoMantenimientoTarjeta": "0 ARS",
+      "costoTarjeta": "0 ARS",
+      "retiroArs": null,
       "detalles": {
-        "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
-        "inversiones": "Permite inversiones (El balance que se tiene en AstroPay se invierte para generar rendimiento en dólares y en pesos.)",
-        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
-        "calificacionAndroid": "4,40/5",
-        "calificacionIos": "4,40/5"
+        "cuentaPropia": "AstroPay da instrucciones ACH, SWIFT o Wire a nombre del usuario. La cuenta en USD no es una cuenta personal: es una cuenta FBO agrupada.",
+        "inversiones": "Los términos dicen que el saldo no devenga intereses para el usuario. El rendimiento del programa de efectivo de la cuenta en custodia queda para AstroPay.",
+        "tarjetaUsa": "AstroCard Global, emitida en el exterior.",
+        "costoRecibirPagos": "Las páginas oficiales no publican un porcentaje fijo por recibir ACH, SWIFT o Wire. Las comisiones de transferencia pueden variar y se muestran en la app.",
+        "costoMantenimientoTarjeta": "Anexo de la tarjeta en Argentina: emisión de la primera virtual, mantenimiento, renovación y cierre, 0 ARS.",
+        "costoTarjeta": "Anexo de la tarjeta en Argentina: consumos, 0 ARS. La página de tarjetas dice que la virtual sale sin costo.",
+        "retiroArs": "Retiro por cajero en Argentina: 0 ARS. Un retiro bancario en una moneda distinta de USD se convierte al tipo de cambio de la app, a costo del usuario. No publican un porcentaje fijo."
       },
-      "calificacionAndroid": 4.4,
-      "calificacionIos": 4.4
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
       "compania": "payoneer",
@@ -145,25 +142,25 @@
     },
     {
       "compania": "Lemon",
-      "cuentaPropia": true,
+      "cuentaPropia": false,
       "moneda": "CRIPTO",
       "inversiones": true,
       "tarjetaUsa": false,
-      "costoRecibirPagos": "2%",
-      "costoMantenimientoTarjeta": "Sin tarjeta",
-      "costoTarjeta": "Sin tarjeta",
+      "costoRecibirPagos": "1.5%",
+      "costoMantenimientoTarjeta": "0",
+      "costoTarjeta": "0",
       "retiroArs": "0",
       "detalles": {
-        "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
-        "inversiones": "Permite inversiones (Stacking cripto.)",
-        "tarjetaUsa": "No tiene tarjeta emitida en EE.UU.",
-        "costoMantenimientoTarjeta": "No tiene tarjeta emitida en EEUU.",
-        "costoTarjeta": "No tiene tarjeta emitida en EEUU.",
-        "calificacionAndroid": "4/5",
-        "calificacionIos": "4/5"
+        "cuentaPropia": "Bridge asigna una cuenta virtual en Lead Bank. Tenés el account number para depositar, pero no sos el titular de la cuenta bancaria. Abrirla cuesta 4 USD en USDt y se vuelve a debitar a los 12 meses si la usás.",
+        "inversiones": "El saldo en dólar digital (USDt) genera rendimientos, sin tope. La tasa la publica la app y puede cambiar.",
+        "tarjetaUsa": "La VISA Lemon Card no está emitida en EE.UU. Las compras internacionales no pagan la percepción del 30%.",
+        "costoRecibirPagos": "ACH doméstica e internacional: 1,5%, acreditado en USDt. Wire doméstica: 1,5% más 12 USD, con mínimo de 100 USD.",
+        "costoMantenimientoTarjeta": "La VISA Lemon Card se pide sin costo de envío ni mantenimiento.",
+        "costoTarjeta": "Un consumo en moneda extranjera pagado con USDt se procesa 1 a 1 contra el USD. Desde otra crypto, 0,3%. Desde pesos, 0,5%.",
+        "retiroArs": "Los retiros en pesos son 0,00 ARS."
       },
-      "calificacionAndroid": 4,
-      "calificacionIos": 4
+      "calificacionAndroid": null,
+      "calificacionIos": null
     },
     {
       "compania": "arq",
@@ -227,19 +224,19 @@
       "moneda": "CRIPTO",
       "inversiones": true,
       "tarjetaUsa": true,
-      "costoRecibirPagos": "3 USD (ACH) / 20 USD (Wire)",
+      "costoRecibirPagos": "0%",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
       "retiroArs": "0",
       "detalles": {
-        "cuentaPropia": "Permite abrir cuenta en dólares (ACH, Wire) para recibir pagos.",
+        "cuentaPropia": "Se permite abrir cuenta en dólares (ACH/Wire).",
         "moneda": "Los fondos se acreditan como dólares digitales (USDC).",
         "inversiones": "Rendimientos / yield disponibles en la app",
-        "tarjetaUsa": "Tarjeta emitida en el exterior (Visa Global)",
-        "costoRecibirPagos": "Costo por recibir pagos a través de ACH y Wire.",
+        "tarjetaUsa": "Se menciona tarjeta emitida en el exterior (belo LUX)",
+        "costoRecibirPagos": "3 USD por ACH y 20 USD por Wire; transferencia desde Airtm tiene 0% de comisión.",
         "costoMantenimientoTarjeta": "Sin costo de mantenimiento",
-        "costoTarjeta": "Sin costo de uso de tarjeta internacional",
-        "retiroArs": "No se detalla costo de retiro o conversión a ARS."
+        "costoTarjeta": "Sin costo por uso de tarjeta internacional",
+        "retiroArs": "Información no disponible"
       },
       "calificacionAndroid": 4.6,
       "calificacionIos": 4.83
@@ -253,16 +250,16 @@
       "costoRecibirPagos": "1.5%",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
-      "retiroArs": "/",
+      "retiroArs": "0",
       "detalles": {
-        "cuentaPropia": "Permite contar en el exterior en USD (ACH/Wire)",
-        "moneda": "Acreedita UXD como cripto al depositar USD",
-        "inversiones": "Genera un 2% anual en UXD como recompensa",
-        "tarjetaUsa": "Tarjeta de uso internacional está emitida en Argentina",
+        "cuentaPropia": "Permite cuentas en el exterior para recibir USD y acreditar como UXD.",
+        "moneda": "Acredita como Criptodólar (UXD) en lugar de dólares fiat.",
+        "inversiones": "Ofrece un 2% de recompensas anuales sobre los UXD mantenidos.",
+        "tarjetaUsa": "La Ripio Card es local (Visa prepaga) y no emitida en el exterior.",
         "costoRecibirPagos": "1.5% + 0.50 USD (ACH) o + 20 USD (Wire). Mantenimiento cuenta exterior: 5 USD/año (persona física)",
-        "costoMantenimientoTarjeta": "Sin costo asociado.",
-        "costoTarjeta": "Sin costo por uso.",
-        "retiroArs": "Costo de transferencia/convertir a ARS."
+        "costoMantenimientoTarjeta": "Sin costo de mantenimiento",
+        "costoTarjeta": "Sin costo por uso",
+        "retiroArs": "No mencionado"
       },
       "calificacionAndroid": 4.5,
       "calificacionIos": 4.3
