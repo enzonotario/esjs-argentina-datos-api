@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2026-10-16T21:57:14.815Z",
+  "fechaActualizacion": "2026-10-16T22:30:26.126Z",
   "remesas": [
     {
       "compania": "wallbit",
@@ -54,7 +54,9 @@
       "retiroArs": "0",
       "detalles": {
         "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
-        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso"
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
+        "calificacionAndroid": "Puntaje en Google Play Store (ej. 4.75)",
+        "calificacionIos": "Puntaje en App Store (ej. 4.75)"
       },
       "calificacionAndroid": 4.75,
       "calificacionIos": 4.75
@@ -72,7 +74,9 @@
       "detalles": {
         "cuentaPropia": "Cuenta propia a tu nombre (checking account)",
         "inversiones": "Permite inversiones (Stacking cripto.)",
-        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso"
+        "tarjetaUsa": "Tiene tarjeta, sin costo de mantenimiento ni uso",
+        "calificacionAndroid": "Puntaje en Google Play Store (ej. 4.65)",
+        "calificacionIos": "Puntaje en App Store (ej. 4.65)"
       },
       "calificacionAndroid": 4.65,
       "calificacionIos": 4.65
@@ -173,13 +177,13 @@
       "costoTarjeta": "0%",
       "retiroArs": "0",
       "detalles": {
-        "cuentaPropia": "Datos de cuenta en EE.UU. en ARQ. Depósito desde cuentas USD: 3 USDc.",
+        "cuentaPropia": "Para un wire, el beneficiario es tu nombre, en una cuenta checking de Lead Bank. Recibir o enviar con esos datos de EE.UU. cuesta 3 USD por operación y se acredita en dólares digitales.",
         "inversiones": "Guardar dólares digitales y sumar rewards no tiene costo extra.",
-        "tarjetaUsa": "La página de costos no dice que la ARQCard esté emitida en EE.UU.",
-        "costoRecibirPagos": "3 USDc al depositar desde cuentas en dólares, euros o cripto, y al usar los datos de cuenta de EE.UU.",
-        "costoMantenimientoTarjeta": "Tarjeta virtual sin cargo. Envío de tarjeta física: 4,99 USD.",
-        "costoTarjeta": "Pagos con ARQCard sin cargo. Si el comercio cobra en pesos argentinos: 5%.",
-        "retiroArs": "Transferencias en moneda local sin cargo. Extracción en ATM: 1% (no es el retiro a banco)."
+        "tarjetaUsa": "La Global está emitida fuera de Argentina y gasta dólares digitales. La Local está emitida en Argentina y gasta pesos. No dicen que la Global sea de EE.UU.",
+        "costoRecibirPagos": "Depósito desde cuentas en dólares: 3 USDc. Lo mismo al usar los datos de cuenta de EE.UU. El plan Standard es el de estas cifras; Premium cambia algunas.",
+        "costoMantenimientoTarjeta": "La virtual no tiene cargo. En el plan Standard, la física global sale 2,99 USDc y la local 2.000 ARS.",
+        "costoTarjeta": "Los pagos con ARQCard no tienen cargo. Si el comercio cobra en pesos argentinos: 5%.",
+        "retiroArs": "Transferencias en moneda local sin cargo. La extracción en cajero es 1% y no es el retiro a un banco."
       },
       "calificacionAndroid": null,
       "calificacionIos": null
@@ -224,19 +228,19 @@
       "moneda": "CRIPTO",
       "inversiones": true,
       "tarjetaUsa": true,
-      "costoRecibirPagos": "0%",
+      "costoRecibirPagos": "3 USD (ACH) / 20 USD (Wire)",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
       "retiroArs": "0",
       "detalles": {
-        "cuentaPropia": "Se permite abrir cuenta en dólares (ACH/Wire).",
-        "moneda": "Los fondos se acreditan como dólares digitales (USDC).",
+        "cuentaPropia": "Se puede abrir una cuenta en dólares (USD) sin costo",
+        "moneda": "Los fondos se acreditan como dólares digitales (USDC)",
         "inversiones": "Rendimientos / yield disponibles en la app",
-        "tarjetaUsa": "Se menciona tarjeta emitida en el exterior (belo LUX)",
-        "costoRecibirPagos": "3 USD por ACH y 20 USD por Wire; transferencia desde Airtm tiene 0% de comisión.",
-        "costoMantenimientoTarjeta": "Sin costo de mantenimiento",
-        "costoTarjeta": "Sin costo por uso de tarjeta internacional",
-        "retiroArs": "Información no disponible"
+        "tarjetaUsa": "Ofrece tarjeta emitida en el exterior (Visa Global)",
+        "costoRecibirPagos": "Comisión fija de 3 USD por ACH y 20 USD por Wire",
+        "costoMantenimientoTarjeta": "No hay costo de mantenimiento mensual",
+        "costoTarjeta": "Costo de uso de tarjeta internacional es 0%",
+        "retiroArs": "Costo de retirar o convertir a ARS no especificado"
       },
       "calificacionAndroid": 4.6,
       "calificacionIos": 4.83
@@ -250,16 +254,16 @@
       "costoRecibirPagos": "1.5%",
       "costoMantenimientoTarjeta": "0 USD",
       "costoTarjeta": "0%",
-      "retiroArs": "0",
+      "retiroArs": "/",
       "detalles": {
-        "cuentaPropia": "Permite cuentas en el exterior para recibir USD y acreditar como UXD.",
-        "moneda": "Acredita como Criptodólar (UXD) en lugar de dólares fiat.",
-        "inversiones": "Ofrece un 2% de recompensas anuales sobre los UXD mantenidos.",
-        "tarjetaUsa": "La Ripio Card es local (Visa prepaga) y no emitida en el exterior.",
+        "cuentaPropia": "Permite apertura de cuenta en el exterior.",
+        "moneda": "Acredita en Criptodólares (UXD).",
+        "inversiones": "Genera 2% anual de recompensa.",
+        "tarjetaUsa": "Ripio Card es una Visa prepaga argentina.",
         "costoRecibirPagos": "1.5% + 0.50 USD (ACH) o + 20 USD (Wire). Mantenimiento cuenta exterior: 5 USD/año (persona física)",
         "costoMantenimientoTarjeta": "Sin costo de mantenimiento",
-        "costoTarjeta": "Sin costo por uso",
-        "retiroArs": "No mencionado"
+        "costoTarjeta": "Sin costo de uso",
+        "retiroArs": "Información sobre costo de conversión no especificada."
       },
       "calificacionAndroid": 4.5,
       "calificacionIos": 4.3
