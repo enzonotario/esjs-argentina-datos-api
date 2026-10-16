@@ -2,7 +2,7 @@
   "fondoId": "22",
   "claseId": "22",
   "nombre": "Fima PB Acciones - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fima-pb-acciones-clase-a",
@@ -25982,10 +25982,26 @@
       "categoriaKey": "rentaVariable",
       "horizonte": "Largo Plazo",
       "valorCuotaparte": 2752456.018,
-      "patrimonio": 37174467193.77,
+      "patrimonio": 37174576879.14,
       "retornoDiario": -1.498552,
       "retornoAcumulado": 4502.435084,
-      "flujoEstimado": -132693145.737801,
+      "flujoEstimado": -132583460.367798,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-pb-acciones-clase-a",
+      "fondoId": "22",
+      "claseId": "22",
+      "nombre": "Fima PB Acciones - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2786537.794,
+      "patrimonio": 37621243106.43,
+      "retornoDiario": 1.238231,
+      "retornoAcumulado": 4559.423883,
+      "flujoEstimado": -13640907.746346,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "111",
   "claseId": "4813",
   "nombre": "FBA Money Market Pesos - Clase J Ley Nº 27.743",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fba-money-market-pesos-clase-j-ley-n-27743",
@@ -8078,10 +8078,26 @@
       "categoriaKey": "mercadoDinero",
       "horizonte": "Corto Plazo",
       "valorCuotaparte": 180533.966,
-      "patrimonio": 138174372.28,
+      "patrimonio": 137974372.28,
       "retornoDiario": 0.046569,
       "retornoAcumulado": 69.039857,
-      "flujoEstimado": -499999.828426,
+      "flujoEstimado": -699999.828426,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-money-market-pesos-clase-j-ley-n-27743",
+      "fondoId": "111",
+      "claseId": "4813",
+      "nombre": "FBA Money Market Pesos - Clase J Ley Nº 27.743",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 180618.895,
+      "patrimonio": 136439280.18,
+      "retornoDiario": 0.047043,
+      "retornoAcumulado": 69.119379,
+      "flujoEstimado": -1599999.383952,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "665",
   "claseId": "1387",
   "nombre": "IAM Renta Capital - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "iam-renta-capital-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.103802,
       "retornoAcumulado": 2971.18045,
       "flujoEstimado": -7888114.95783,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-capital-clase-b",
+      "fondoId": "665",
+      "claseId": "1387",
+      "nombre": "IAM Renta Capital - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 95647.02,
+      "patrimonio": 7980749824.86,
+      "retornoDiario": 0.1731,
+      "retornoAcumulado": 2976.496667,
+      "flujoEstimado": 8999983.970111,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "119",
   "claseId": "119",
   "nombre": "Pellegrini Renta Fija Plus - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-fija-plus-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": -0.366446,
       "retornoAcumulado": 5470.052872,
       "flujoEstimado": -32333886.854225,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-fija-plus-clase-a",
+      "fondoId": "119",
+      "claseId": "119",
+      "nombre": "Pellegrini Renta Fija Plus - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 409598.273,
+      "patrimonio": 22426687044.83,
+      "retornoDiario": 0.172439,
+      "retornoAcumulado": 5479.657825,
+      "flujoEstimado": 45897258.836327,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "193",
   "claseId": "735",
   "nombre": "Fima Ahorro Pesos - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fima-ahorro-pesos-clase-c",
@@ -25966,10 +25966,26 @@
       "categoriaKey": "rentaFija",
       "horizonte": "Corto Plazo",
       "valorCuotaparte": 801399.439,
-      "patrimonio": 261048525793.37,
+      "patrimonio": 261048525897.37,
       "retornoDiario": 0.019253,
       "retornoAcumulado": 2259.236484,
-      "flujoEstimado": 753803934.006042,
+      "flujoEstimado": 753804038.006042,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-ahorro-pesos-clase-c",
+      "fondoId": "193",
+      "claseId": "735",
+      "nombre": "Fima Ahorro Pesos - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 802400.938,
+      "patrimonio": 263915168784.71,
+      "retornoDiario": 0.124969,
+      "retornoAcumulado": 2262.184792,
+      "flujoEstimado": 2540413155.011292,
       "origen": "cnv-excel"
     }
   ]

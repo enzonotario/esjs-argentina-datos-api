@@ -2,7 +2,7 @@
   "fondoId": "580",
   "claseId": "1177",
   "nombre": "Chaco Renta Fija I - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "chaco-renta-fija-i-clase-b",
@@ -25250,6 +25250,22 @@
       "retornoDiario": 0.066391,
       "retornoAcumulado": 3010.078161,
       "flujoEstimado": 13.815079,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chaco-renta-fija-i-clase-b",
+      "fondoId": "580",
+      "claseId": "1177",
+      "nombre": "Chaco Renta Fija I - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 140236.937,
+      "patrimonio": 1761731738.15,
+      "retornoDiario": 0.120878,
+      "retornoAcumulado": 3013.837562,
+      "flujoEstimado": -5.492176,
       "origen": "cnv-excel"
     }
   ]

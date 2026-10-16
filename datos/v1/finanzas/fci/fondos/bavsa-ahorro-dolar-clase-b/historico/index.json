@@ -2,7 +2,7 @@
   "fondoId": "1552",
   "claseId": "4788",
   "nombre": "BAVSA Ahorro Dólar - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "bavsa-ahorro-dolar-clase-b",
@@ -7826,6 +7826,22 @@
       "retornoDiario": 0.003619,
       "retornoAcumulado": 2.25438,
       "flujoEstimado": -231716.644792,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-ahorro-dolar-clase-b",
+      "fondoId": "1552",
+      "claseId": "4788",
+      "nombre": "BAVSA Ahorro Dólar - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1022.592,
+      "patrimonio": 14244247.93,
+      "retornoDiario": 0.003814,
+      "retornoAcumulado": 2.25828,
+      "flujoEstimado": -154702.075008,
       "origen": "cnv-excel"
     }
   ]

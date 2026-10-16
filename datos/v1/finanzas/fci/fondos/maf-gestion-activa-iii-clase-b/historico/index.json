@@ -2,7 +2,7 @@
   "fondoId": "1513",
   "claseId": "4524",
   "nombre": "MAF Gestión Activa III - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "maf-gestion-activa-iii-clase-b",
@@ -9026,6 +9026,22 @@
       "retornoDiario": 0.107498,
       "retornoAcumulado": 119.8675,
       "flujoEstimado": 3784999674.033777,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-gestion-activa-iii-clase-b",
+      "fondoId": "1513",
+      "claseId": "4524",
+      "nombre": "MAF Gestión Activa III - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2202.931,
+      "patrimonio": 8024391299.72,
+      "retornoDiario": 0.193571,
+      "retornoAcumulado": 120.2931,
+      "flujoEstimado": 180.466158,
       "origen": "cnv-excel"
     }
   ]

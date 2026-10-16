@@ -2,7 +2,7 @@
   "fondoId": "1521",
   "claseId": "4553",
   "nombre": "Adcap Balanceado XX - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-xx-clase-b",
@@ -8530,6 +8530,22 @@
       "retornoDiario": -0.002692,
       "retornoAcumulado": 67.1632,
       "flujoEstimado": -4545.525009,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-xx-clase-b",
+      "fondoId": "1521",
+      "claseId": "4553",
+      "nombre": "Adcap Balanceado XX - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1672.11,
+      "patrimonio": 63095826470.55,
+      "retornoDiario": 0.028595,
+      "retornoAcumulado": 67.211,
+      "flujoEstimado": 5954.349899,
       "origen": "cnv-excel"
     }
   ]

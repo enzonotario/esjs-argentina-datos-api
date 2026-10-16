@@ -2,7 +2,7 @@
   "fondoId": "832",
   "claseId": "2356",
   "nombre": "Balanz Opportunity - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "balanz-opportunity-clase-a",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.020432,
       "retornoAcumulado": 2417.031071,
       "flujoEstimado": -13858461.924473,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-opportunity-clase-a",
+      "fondoId": "832",
+      "claseId": "2356",
+      "nombre": "Balanz Opportunity - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 42975.668,
+      "patrimonio": 17369585053.93,
+      "retornoDiario": 0.198368,
+      "retornoAcumulado": 2422.024043,
+      "flujoEstimado": -63679026.745853,
       "origen": "cnv-excel"
     }
   ]

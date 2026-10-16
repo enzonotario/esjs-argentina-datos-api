@@ -2,7 +2,7 @@
   "fondoId": "615",
   "claseId": "2251",
   "nombre": "Galileo Acciones - Clase D",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "galileo-acciones-clase-d",
@@ -26208,6 +26208,22 @@
       "valorCuotaparte": 2.811,
       "patrimonio": null,
       "retornoDiario": -0.035562,
+      "retornoAcumulado": -95.06643,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-acciones-clase-d",
+      "fondoId": "615",
+      "claseId": "2251",
+      "nombre": "Galileo Acciones - Clase D",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2.811,
+      "patrimonio": null,
+      "retornoDiario": 0,
       "retornoAcumulado": -95.06643,
       "flujoEstimado": null,
       "origen": "cnv-excel"

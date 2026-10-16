@@ -2,7 +2,7 @@
   "fondoId": "583",
   "claseId": "1181",
   "nombre": "Argenfunds Renta Argentina - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-argentina-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.299514,
       "retornoAcumulado": 3586.609084,
       "flujoEstimado": 10.539864,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-argentina-clase-b",
+      "fondoId": "583",
+      "claseId": "1181",
+      "nombre": "Argenfunds Renta Argentina - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 189926.905,
+      "patrimonio": 67639304549.6,
+      "retornoDiario": 0.510195,
+      "retornoAcumulado": 3605.417982,
+      "flujoEstimado": 182.221954,
       "origen": "cnv-excel"
     }
   ]

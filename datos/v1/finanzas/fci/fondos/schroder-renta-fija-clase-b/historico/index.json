@@ -2,7 +2,7 @@
   "fondoId": "48",
   "claseId": "48",
   "nombre": "Schroder Renta Fija - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "schroder-renta-fija-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": -0.022897,
       "retornoAcumulado": 5121.985801,
       "flujoEstimado": 11.96326,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-fija-clase-b",
+      "fondoId": "48",
+      "claseId": "48",
+      "nombre": "Schroder Renta Fija - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 81131.894,
+      "patrimonio": 3315434389.82,
+      "retornoDiario": 0.10185,
+      "retornoAcumulado": 5127.304409,
+      "flujoEstimado": -17.633105,
       "origen": "cnv-excel"
     }
   ]

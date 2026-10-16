@@ -2,7 +2,7 @@
   "fondoId": "1544",
   "claseId": "4655",
   "nombre": "Champaquí Renta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "champaqui-renta-pesos-clase-b",
@@ -8338,6 +8338,22 @@
       "retornoDiario": 0.05589,
       "retornoAcumulado": 111.6057,
       "flujoEstimado": -167330202.462524,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-renta-pesos-clase-b",
+      "fondoId": "1544",
+      "claseId": "4655",
+      "nombre": "Champaquí Renta Pesos - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2118.499,
+      "patrimonio": 13731792629.6,
+      "retornoDiario": 0.115403,
+      "retornoAcumulado": 111.8499,
+      "flujoEstimado": 94502586.36775,
       "origen": "cnv-excel"
     }
   ]

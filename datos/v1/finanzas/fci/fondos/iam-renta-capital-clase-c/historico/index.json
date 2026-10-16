@@ -2,7 +2,7 @@
   "fondoId": "665",
   "claseId": "1388",
   "nombre": "IAM Renta Capital - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "iam-renta-capital-clase-c",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.101526,
       "retornoAcumulado": 3081.653322,
       "flujoEstimado": -300001.752713,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-capital-clase-c",
+      "fondoId": "665",
+      "claseId": "1388",
+      "nombre": "IAM Renta Capital - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 92243.251,
+      "patrimonio": 288955709.64,
+      "retornoDiario": 0.175382,
+      "retornoAcumulado": 3087.233376,
+      "flujoEstimado": -3386464.325048,
       "origen": "cnv-excel"
     }
   ]

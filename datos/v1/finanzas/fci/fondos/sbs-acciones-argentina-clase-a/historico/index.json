@@ -2,7 +2,7 @@
   "fondoId": "436",
   "claseId": "820",
   "nombre": "SBS Acciones Argentina - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "sbs-acciones-argentina-clase-a",
@@ -26194,6 +26194,22 @@
       "retornoDiario": -1.143268,
       "retornoAcumulado": 6087.419696,
       "flujoEstimado": 2152891.192001,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-acciones-argentina-clase-a",
+      "fondoId": "436",
+      "claseId": "820",
+      "nombre": "SBS Acciones Argentina - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1510428.643,
+      "patrimonio": 16737731172.49,
+      "retornoDiario": 0.715957,
+      "retornoAcumulado": 6131.718935,
+      "flujoEstimado": -151446438.379353,
       "origen": "cnv-excel"
     }
   ]

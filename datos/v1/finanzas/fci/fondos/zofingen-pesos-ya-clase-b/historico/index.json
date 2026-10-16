@@ -2,7 +2,7 @@
   "fondoId": "1559",
   "claseId": "5001",
   "nombre": "Zofingen Pesos Ya - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "zofingen-pesos-ya-clase-b",
@@ -7586,6 +7586,22 @@
       "retornoDiario": 0.052206,
       "retornoAcumulado": 57.5358,
       "flujoEstimado": 9581849596.122368,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "zofingen-pesos-ya-clase-b",
+      "fondoId": "1559",
+      "claseId": "5001",
+      "nombre": "Zofingen Pesos Ya - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1576.078,
+      "patrimonio": 26043126562.9,
+      "retornoDiario": 0.045704,
+      "retornoAcumulado": 57.6078,
+      "flujoEstimado": -8238847839.212635,
       "origen": "cnv-excel"
     }
   ]

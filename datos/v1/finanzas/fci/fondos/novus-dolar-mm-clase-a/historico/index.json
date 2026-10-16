@@ -2,7 +2,7 @@
   "fondoId": "1731",
   "claseId": "5848",
   "nombre": "Novus Dólar MM - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "novus-dolar-mm-clase-a",
@@ -2114,6 +2114,22 @@
       "retornoDiario": 0.001497,
       "retornoAcumulado": 0.2339,
       "flujoEstimado": -3387.97592,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-dolar-mm-clase-a",
+      "fondoId": "1731",
+      "claseId": "5848",
+      "nombre": "Novus Dólar MM - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1002.356,
+      "patrimonio": 1502309.28,
+      "retornoDiario": 0.001696,
+      "retornoAcumulado": 0.2356,
+      "flujoEstimado": -19128.953155,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1688",
   "claseId": "5631",
   "nombre": "Novus Renta Variable - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "novus-renta-variable-clase-a",
@@ -2434,6 +2434,22 @@
       "retornoDiario": -1.145199,
       "retornoAcumulado": 3.827,
       "flujoEstimado": -30818.362894,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-renta-variable-clase-a",
+      "fondoId": "1688",
+      "claseId": "5631",
+      "nombre": "Novus Renta Variable - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": null,
+      "valorCuotaparte": 1047.085,
+      "patrimonio": 8962565108.96,
+      "retornoDiario": 0.849008,
+      "retornoAcumulado": 4.7085,
+      "flujoEstimado": 7886.323954,
       "origen": "cnv-excel"
     }
   ]

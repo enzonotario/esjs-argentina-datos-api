@@ -2,7 +2,7 @@
   "fondoId": "505",
   "claseId": "1021",
   "nombre": "MAF Acciones Argentinas - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "maf-acciones-argentinas-clase-b",
@@ -26274,6 +26274,22 @@
       "retornoDiario": -1.064045,
       "retornoAcumulado": 6655.645717,
       "flujoEstimado": -11.629912,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-acciones-argentinas-clase-b",
+      "fondoId": "505",
+      "claseId": "1021",
+      "nombre": "MAF Acciones Argentinas - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": null,
+      "valorCuotaparte": 873870.654,
+      "patrimonio": 5977848868.84,
+      "retornoDiario": 0.634946,
+      "retornoAcumulado": 6698.540431,
+      "flujoEstimado": 11.278841,
       "origen": "cnv-excel"
     }
   ]

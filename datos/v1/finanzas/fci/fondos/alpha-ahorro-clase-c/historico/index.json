@@ -2,7 +2,7 @@
   "fondoId": "73",
   "claseId": "700",
   "nombre": "Alpha Ahorro - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "alpha-ahorro-clase-c",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.048359,
       "retornoAcumulado": 2385.654524,
       "flujoEstimado": -61680794.912842,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-ahorro-clase-c",
+      "fondoId": "73",
+      "claseId": "700",
+      "nombre": "Alpha Ahorro - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 11475.345,
+      "patrimonio": 95323570603.45,
+      "retornoDiario": 0.06609,
+      "retornoAcumulado": 2387.297283,
+      "flujoEstimado": 155681566.520172,
       "origen": "cnv-excel"
     }
   ]

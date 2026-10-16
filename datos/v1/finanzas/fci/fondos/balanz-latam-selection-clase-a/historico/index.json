@@ -2,7 +2,7 @@
   "fondoId": "1685",
   "claseId": "5618",
   "nombre": "Balanz Latam Selection - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "balanz-latam-selection-clase-a",
@@ -2114,6 +2114,22 @@
       "retornoDiario": -0.200733,
       "retornoAcumulado": 16.7865,
       "flujoEstimado": 152899824.578163,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-latam-selection-clase-a",
+      "fondoId": "1685",
+      "claseId": "5618",
+      "nombre": "Balanz Latam Selection - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1153.451,
+      "patrimonio": 4088993390.61,
+      "retornoDiario": -1.234218,
+      "retornoAcumulado": 15.3451,
+      "flujoEstimado": 39958443.680533,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1601",
   "claseId": "5267",
   "nombre": "SBS Patrimonio III - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "sbs-patrimonio-iii-clase-b",
@@ -6834,6 +6834,22 @@
       "retornoDiario": 0.042403,
       "retornoAcumulado": 83.0839,
       "flujoEstimado": -4631.844627,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-patrimonio-iii-clase-b",
+      "fondoId": "1601",
+      "claseId": "5267",
+      "nombre": "SBS Patrimonio III - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1832.196,
+      "patrimonio": 25779484540.74,
+      "retornoDiario": 0.074119,
+      "retornoAcumulado": 83.2196,
+      "flujoEstimado": -2065.230446,
       "origen": "cnv-excel"
     }
   ]

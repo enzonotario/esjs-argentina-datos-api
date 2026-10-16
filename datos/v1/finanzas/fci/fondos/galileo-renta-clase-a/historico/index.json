@@ -2,7 +2,7 @@
   "fondoId": "840",
   "claseId": "2394",
   "nombre": "Galileo Renta - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "galileo-renta-clase-a",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.011479,
       "retornoAcumulado": 5262.026956,
       "flujoEstimado": -150995.367783,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-renta-clase-a",
+      "fondoId": "840",
+      "claseId": "2394",
+      "nombre": "Galileo Renta - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 52675.218,
+      "patrimonio": 336818954.92,
+      "retornoDiario": 0.16856,
+      "retornoAcumulado": 5271.065195,
+      "flujoEstimado": 7000001.762875,
       "origen": "cnv-excel"
     }
   ]

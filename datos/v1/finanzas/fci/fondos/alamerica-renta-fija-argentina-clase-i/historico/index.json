@@ -2,7 +2,7 @@
   "fondoId": "800",
   "claseId": "2467",
   "nombre": "Alamerica Renta Fija Argentina - Clase I",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "alamerica-renta-fija-argentina-clase-i",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.072372,
       "retornoAcumulado": -1.693044,
       "flujoEstimado": 3.260286,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alamerica-renta-fija-argentina-clase-i",
+      "fondoId": "800",
+      "claseId": "2467",
+      "nombre": "Alamerica Renta Fija Argentina - Clase I",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1507917.967,
+      "patrimonio": 4226440160.32,
+      "retornoDiario": 0.147533,
+      "retornoAcumulado": -1.548009,
+      "flujoEstimado": 499999988.006355,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "546",
   "claseId": "1105",
   "nombre": "MAF Renta Fija Cobertura - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "maf-renta-fija-cobertura-clase-a",
@@ -15906,6 +15906,22 @@
       "retornoDiario": -0.03695,
       "retornoAcumulado": 1893.570087,
       "flujoEstimado": 147998.541968,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-renta-fija-cobertura-clase-a",
+      "fondoId": "546",
+      "claseId": "1105",
+      "nombre": "MAF Renta Fija Cobertura - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 284238.406,
+      "patrimonio": 878094603.35,
+      "retornoDiario": -0.020235,
+      "retornoAcumulado": 1893.16669,
+      "flujoEstimado": 0.834138,
       "origen": "cnv-excel"
     }
   ]

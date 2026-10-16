@@ -2,7 +2,7 @@
   "fondoId": "1412",
   "claseId": "4120",
   "nombre": "Novus Income - Clase F",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "novus-income-clase-f",
@@ -12994,6 +12994,22 @@
       "retornoDiario": 0.135772,
       "retornoAcumulado": 477.1175,
       "flujoEstimado": 856.970465,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-income-clase-f",
+      "fondoId": "1412",
+      "claseId": "4120",
+      "nombre": "Novus Income - Clase F",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 5762.711,
+      "patrimonio": 15133429357.15,
+      "retornoDiario": -0.14666,
+      "retornoAcumulado": 476.2711,
+      "flujoEstimado": -1366.370247,
       "origen": "cnv-excel"
     }
   ]

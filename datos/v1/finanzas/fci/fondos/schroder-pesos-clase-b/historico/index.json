@@ -2,7 +2,7 @@
   "fondoId": "610",
   "claseId": "1232",
   "nombre": "Schroder Pesos - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "schroder-pesos-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": -0.050957,
       "retornoAcumulado": 2111.995092,
       "flujoEstimado": -0.002327,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-pesos-clase-b",
+      "fondoId": "610",
+      "claseId": "1232",
+      "nombre": "Schroder Pesos - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 45141.915,
+      "patrimonio": 234380.08,
+      "retornoDiario": 0.080635,
+      "retornoAcumulado": 2113.778741,
+      "flujoEstimado": -0.000106,
       "origen": "cnv-excel"
     }
   ]

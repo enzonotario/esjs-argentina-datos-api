@@ -2,7 +2,7 @@
   "fondoId": "1866",
   "claseId": "6454",
   "nombre": "Tandem Global IV - Clase D",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "tandem-global-iv-clase-d",
@@ -1682,6 +1682,22 @@
       "retornoDiario": 0.006963,
       "retornoAcumulado": 0.5369,
       "flujoEstimado": 15000.264553,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tandem-global-iv-clase-d",
+      "fondoId": "1866",
+      "claseId": "6454",
+      "nombre": "Tandem Global IV - Clase D",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1005.476,
+      "patrimonio": 7093244.26,
+      "retornoDiario": 0.010643,
+      "retornoAcumulado": 0.5476,
+      "flujoEstimado": 312503.812594,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1805",
   "claseId": "6187",
   "nombre": "Chimpay Agresivo - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "chimpay-agresivo-clase-b",
@@ -2434,6 +2434,22 @@
       "retornoDiario": -2.70459,
       "retornoAcumulado": -0.258,
       "flujoEstimado": 44.99947,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chimpay-agresivo-clase-b",
+      "fondoId": "1805",
+      "claseId": "6187",
+      "nombre": "Chimpay Agresivo - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1019.788,
+      "patrimonio": 2533936731.21,
+      "retornoDiario": 2.242586,
+      "retornoAcumulado": 1.9788,
+      "flujoEstimado": -446.83369,
       "origen": "cnv-excel"
     }
   ]

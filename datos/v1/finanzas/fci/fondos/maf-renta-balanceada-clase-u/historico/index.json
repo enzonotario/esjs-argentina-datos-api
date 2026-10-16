@@ -2,7 +2,7 @@
   "fondoId": "584",
   "claseId": "1182",
   "nombre": "MAF Renta Balanceada - Clase U",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "maf-renta-balanceada-clase-u",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.128248,
       "retornoAcumulado": 4330.853877,
       "flujoEstimado": 39758.89727,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-renta-balanceada-clase-u",
+      "fondoId": "584",
+      "claseId": "1182",
+      "nombre": "MAF Renta Balanceada - Clase U",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 214271.358,
+      "patrimonio": 8500986529.28,
+      "retornoDiario": 0.107855,
+      "retornoAcumulado": 4335.632767,
+      "flujoEstimado": -259184.263923,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "575",
   "claseId": "1167",
   "nombre": "Adcap Balanceado I - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-i-clase-a",
@@ -23378,6 +23378,22 @@
       "retornoDiario": -0.005289,
       "retornoAcumulado": 3744.126869,
       "flujoEstimado": 0.00525,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-i-clase-a",
+      "fondoId": "575",
+      "claseId": "1167",
+      "nombre": "Adcap Balanceado I - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 142411.787,
+      "patrimonio": 3940017.55,
+      "retornoDiario": 0.121694,
+      "retornoAcumulado": 3748.804942,
+      "flujoEstimado": 0.002895,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "731",
   "claseId": "1591",
   "nombre": "IAM Renta Dólares - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "iam-renta-dolares-clase-c",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.109505,
       "retornoAcumulado": 74.572492,
       "flujoEstimado": -9939.333799,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-dolares-clase-c",
+      "fondoId": "731",
+      "claseId": "1591",
+      "nombre": "IAM Renta Dólares - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1815.241,
+      "patrimonio": 4242431.11,
+      "retornoDiario": 0.181683,
+      "retornoAcumulado": 74.889661,
+      "flujoEstimado": 107993.772708,
       "origen": "cnv-excel"
     }
   ]

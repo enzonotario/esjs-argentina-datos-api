@@ -2,7 +2,7 @@
   "fondoId": "389",
   "claseId": "809",
   "nombre": "GSS III - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "gss-iii-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.037843,
       "retornoAcumulado": 4320.666552,
       "flujoEstimado": -1.4619,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gss-iii-clase-a",
+      "fondoId": "389",
+      "claseId": "809",
+      "nombre": "GSS III - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 552730.772,
+      "patrimonio": 332500723.22,
+      "retornoDiario": 0.102169,
+      "retornoAcumulado": 4325.183118,
+      "flujoEstimado": 1.324229,
       "origen": "cnv-excel"
     }
   ]

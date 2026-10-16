@@ -2,7 +2,7 @@
   "fondoId": "1564",
   "claseId": "5021",
   "nombre": "Ualintec Pesos Plus - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "ualintec-pesos-plus-clase-a",
@@ -7874,6 +7874,22 @@
       "retornoDiario": 0.02309,
       "retornoAcumulado": 103.5977,
       "flujoEstimado": 45497010.590216,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-pesos-plus-clase-a",
+      "fondoId": "1564",
+      "claseId": "5021",
+      "nombre": "Ualintec Pesos Plus - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2040.029,
+      "patrimonio": 11678583393.54,
+      "retornoDiario": 0.19902,
+      "retornoAcumulado": 104.0029,
+      "flujoEstimado": -7970607.48922,
       "origen": "cnv-excel"
     }
   ]

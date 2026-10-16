@@ -2,7 +2,7 @@
   "fondoId": "1739",
   "claseId": "5875",
   "nombre": "SBS Patrimonio VIII - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "sbs-patrimonio-viii-clase-b",
@@ -3730,6 +3730,22 @@
       "retornoDiario": -0.015593,
       "retornoAcumulado": 43.687149,
       "flujoEstimado": 4594.551422,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-patrimonio-viii-clase-b",
+      "fondoId": "1739",
+      "claseId": "5875",
+      "nombre": "SBS Patrimonio VIII - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1445.613,
+      "patrimonio": 47062222222.34,
+      "retornoDiario": 0.202052,
+      "retornoAcumulado": 43.977471,
+      "flujoEstimado": 699979639.981895,
       "origen": "cnv-excel"
     }
   ]

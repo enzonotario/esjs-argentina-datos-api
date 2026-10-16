@@ -2,7 +2,7 @@
   "fondoId": "1282",
   "claseId": "3572",
   "nombre": "Consultatio Multimercado I - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-multimercado-i-clase-b",
@@ -19106,6 +19106,22 @@
       "retornoDiario": -0.075233,
       "retornoAcumulado": 78.5111,
       "flujoEstimado": 0.000563,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-multimercado-i-clase-b",
+      "fondoId": "1282",
+      "claseId": "3572",
+      "nombre": "Consultatio Multimercado I - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1788.97,
+      "patrimonio": 1771.08,
+      "retornoDiario": 0.216177,
+      "retornoAcumulado": 78.897,
+      "flujoEstimado": -0.00041,
       "origen": "cnv-excel"
     }
   ]

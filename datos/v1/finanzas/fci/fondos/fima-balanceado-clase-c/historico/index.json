@@ -2,7 +2,7 @@
   "fondoId": "165",
   "claseId": "3979",
   "nombre": "Fima Balanceado - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fima-balanceado-clase-c",
@@ -14402,6 +14402,22 @@
       "retornoDiario": 0.197445,
       "retornoAcumulado": 632.3316,
       "flujoEstimado": -158.057449,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-balanceado-clase-c",
+      "fondoId": "165",
+      "claseId": "3979",
+      "nombre": "Fima Balanceado - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 7312.573,
+      "patrimonio": 13210006021.34,
+      "retornoDiario": -0.146696,
+      "retornoAcumulado": 631.2573,
+      "flujoEstimado": 228.409204,
       "origen": "cnv-excel"
     }
   ]

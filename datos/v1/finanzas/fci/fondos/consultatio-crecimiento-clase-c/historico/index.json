@@ -2,7 +2,7 @@
   "fondoId": "585",
   "claseId": "1185",
   "nombre": "Consultatio Crecimiento - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-crecimiento-clase-c",
@@ -26177,6 +26177,22 @@
       "patrimonio": null,
       "retornoDiario": 0.024493,
       "retornoAcumulado": 3606.825769,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-crecimiento-clase-c",
+      "fondoId": "585",
+      "claseId": "1185",
+      "nombre": "Consultatio Crecimiento - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 233045.818,
+      "patrimonio": null,
+      "retornoDiario": 0.212229,
+      "retornoAcumulado": 3614.692738,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

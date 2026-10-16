@@ -2,7 +2,7 @@
   "fondoId": "804",
   "claseId": "2093",
   "nombre": "Consultatio Gestion I - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-i-clase-b",
@@ -23938,6 +23938,22 @@
       "retornoDiario": 0.043946,
       "retornoAcumulado": 208.6977,
       "flujoEstimado": 5966.366711,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-i-clase-b",
+      "fondoId": "804",
+      "claseId": "2093",
+      "nombre": "Consultatio Gestion I - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 3092.381,
+      "patrimonio": 28226602351.97,
+      "retornoDiario": 0.175058,
+      "retornoAcumulado": 209.2381,
+      "flujoEstimado": 1140.373932,
       "origen": "cnv-excel"
     }
   ]

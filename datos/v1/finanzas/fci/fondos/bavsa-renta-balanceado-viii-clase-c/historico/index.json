@@ -2,7 +2,7 @@
   "fondoId": "1822",
   "claseId": "6261",
   "nombre": "BAVSA Renta Balanceado VIII - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-viii-clase-c",
@@ -2066,6 +2066,22 @@
       "retornoDiario": -0.094347,
       "retornoAcumulado": 7.0568,
       "flujoEstimado": -717.963556,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-viii-clase-c",
+      "fondoId": "1822",
+      "claseId": "6261",
+      "nombre": "BAVSA Renta Balanceado VIII - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1073.978,
+      "patrimonio": 2729161124.17,
+      "retornoDiario": 0.318523,
+      "retornoAcumulado": 7.3978,
+      "flujoEstimado": 1237.789218,
       "origen": "cnv-excel"
     }
   ]

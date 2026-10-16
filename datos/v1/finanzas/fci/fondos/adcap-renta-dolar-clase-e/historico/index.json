@@ -2,7 +2,7 @@
   "fondoId": "750",
   "claseId": "1646",
   "nombre": "Adcap Renta Dólar - Clase E",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "adcap-renta-dolar-clase-e",
@@ -25890,6 +25890,22 @@
       "retornoDiario": 0.051497,
       "retornoAcumulado": 33.171425,
       "flujoEstimado": 6405.711278,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-renta-dolar-clase-e",
+      "fondoId": "750",
+      "claseId": "1646",
+      "nombre": "Adcap Renta Dólar - Clase E",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1374.169,
+      "patrimonio": 6559882.86,
+      "retornoDiario": 0.04157,
+      "retornoAcumulado": 33.226784,
+      "flujoEstimado": 10195.256221,
       "origen": "cnv-excel"
     }
   ]

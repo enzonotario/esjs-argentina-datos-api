@@ -2,7 +2,7 @@
   "fondoId": "1705",
   "claseId": "5677",
   "nombre": "BAVSA Multiestrategia I - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "bavsa-multiestrategia-i-clase-a",
@@ -2434,6 +2434,22 @@
       "retornoDiario": 0.133506,
       "retornoAcumulado": 1.6289,
       "flujoEstimado": 1030.238689,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-multiestrategia-i-clase-a",
+      "fondoId": "1705",
+      "claseId": "5677",
+      "nombre": "BAVSA Multiestrategia I - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1015.783,
+      "patrimonio": 1823894283.78,
+      "retornoDiario": -0.049789,
+      "retornoAcumulado": 1.5783,
+      "flujoEstimado": 129551805.373901,
       "origen": "cnv-excel"
     }
   ]

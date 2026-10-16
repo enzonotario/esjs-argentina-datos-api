@@ -2,7 +2,7 @@
   "fondoId": "1690",
   "claseId": "5638",
   "nombre": "Pionero Dólar Gestión - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "pionero-dolar-gestion-clase-b",
@@ -4738,6 +4738,22 @@
       "retornoDiario": 0.076278,
       "retornoAcumulado": 0.8929,
       "flujoEstimado": 1.502219,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-dolar-gestion-clase-b",
+      "fondoId": "1690",
+      "claseId": "5638",
+      "nombre": "Pionero Dólar Gestión - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1009.163,
+      "patrimonio": 26799763.48,
+      "retornoDiario": 0.023193,
+      "retornoAcumulado": 0.9163,
+      "flujoEstimado": 9.284275,
       "origen": "cnv-excel"
     }
   ]

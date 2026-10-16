@@ -2,7 +2,7 @@
   "fondoId": "1244",
   "claseId": "3452",
   "nombre": "Allaria Dolar Crecimiento - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-crecimiento-clase-b",
@@ -21138,6 +21138,22 @@
       "retornoDiario": -0.055112,
       "retornoAcumulado": -52.849,
       "flujoEstimado": -0.002242,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-crecimiento-clase-b",
+      "fondoId": "1244",
+      "claseId": "3452",
+      "nombre": "Allaria Dolar Crecimiento - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 473.279,
+      "patrimonio": 2352269.14,
+      "retornoDiario": 0.375178,
+      "retornoAcumulado": -52.6721,
+      "flujoEstimado": 2.609878,
       "origen": "cnv-excel"
     }
   ]

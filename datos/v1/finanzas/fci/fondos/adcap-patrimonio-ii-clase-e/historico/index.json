@@ -2,7 +2,7 @@
   "fondoId": "1958",
   "claseId": "6669",
   "nombre": "Adcap Patrimonio II - Clase E",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "adcap-patrimonio-ii-clase-e",
@@ -498,6 +498,22 @@
       "retornoDiario": -0.012997,
       "retornoAcumulado": -0.7555,
       "flujoEstimado": -35498.032246,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-patrimonio-ii-clase-e",
+      "fondoId": "1958",
+      "claseId": "6669",
+      "nombre": "Adcap Patrimonio II - Clase E",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 992.685,
+      "patrimonio": 2219629.98,
+      "retornoDiario": 0.024183,
+      "retornoAcumulado": -0.7315,
+      "flujoEstimado": 5998.796997,
       "origen": "cnv-excel"
     }
   ]

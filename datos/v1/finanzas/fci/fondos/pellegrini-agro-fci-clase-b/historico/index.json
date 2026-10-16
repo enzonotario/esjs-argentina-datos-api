@@ -2,7 +2,7 @@
   "fondoId": "529",
   "claseId": "1068",
   "nombre": "Pellegrini Agro FCI - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "pellegrini-agro-fci-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.352605,
       "retornoAcumulado": 3013.139577,
       "flujoEstimado": 0.7465,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-agro-fci-clase-b",
+      "fondoId": "529",
+      "claseId": "1068",
+      "nombre": "Pellegrini Agro FCI - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 70789.396,
+      "patrimonio": 1103937009.95,
+      "retornoDiario": -0.275818,
+      "retornoAcumulado": 3004.552974,
+      "flujoEstimado": -11.02578,
       "origen": "cnv-excel"
     }
   ]

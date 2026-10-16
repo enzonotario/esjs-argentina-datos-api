@@ -2,7 +2,7 @@
   "fondoId": "599",
   "claseId": "1217",
   "nombre": "Consultatio Rofex 20 - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-rofex-20-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -1.053052,
       "retornoAcumulado": 6414.970257,
       "flujoEstimado": 20.696999,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-rofex-20-clase-b",
+      "fondoId": "599",
+      "claseId": "1217",
+      "nombre": "Consultatio Rofex 20 - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 293693.29,
+      "patrimonio": 32972623128.53,
+      "retornoDiario": 0.568005,
+      "retornoAcumulado": 6451.975621,
+      "flujoEstimado": 91.933308,
       "origen": "cnv-excel"
     }
   ]

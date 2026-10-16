@@ -2,7 +2,7 @@
   "fondoId": "1313",
   "claseId": "3739",
   "nombre": "Fima Mix II - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fima-mix-ii-clase-a",
@@ -16222,10 +16222,26 @@
       "categoriaKey": "rentaMixta",
       "horizonte": "Largo Plazo",
       "valorCuotaparte": 11061.839,
-      "patrimonio": 6873727614.23,
+      "patrimonio": 6873737706.99,
       "retornoDiario": -0.474467,
       "retornoAcumulado": 1006.1839,
-      "flujoEstimado": -62511824.079226,
+      "flujoEstimado": -62501731.319226,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-mix-ii-clase-a",
+      "fondoId": "1313",
+      "claseId": "3739",
+      "nombre": "Fima Mix II - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 11096.363,
+      "patrimonio": 6885721780.73,
+      "retornoDiario": 0.3121,
+      "retornoAcumulado": 1009.6363,
+      "flujoEstimado": -9468861.643516,
       "origen": "cnv-excel"
     }
   ]

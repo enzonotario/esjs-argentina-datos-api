@@ -2,7 +2,7 @@
   "fondoId": "496",
   "claseId": "1000",
   "nombre": "Quiron Fixed Income - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "quiron-fixed-income-clase-a",
@@ -24882,6 +24882,22 @@
       "retornoDiario": -0.072589,
       "retornoAcumulado": 2353.873235,
       "flujoEstimado": 186065887.411824,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-fixed-income-clase-a",
+      "fondoId": "496",
+      "claseId": "1000",
+      "nombre": "Quiron Fixed Income - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 212786.734,
+      "patrimonio": 1659591580.17,
+      "retornoDiario": 0.051148,
+      "retornoAcumulado": 2355.128336,
+      "flujoEstimado": -50025581.748617,
       "origen": "cnv-excel"
     }
   ]

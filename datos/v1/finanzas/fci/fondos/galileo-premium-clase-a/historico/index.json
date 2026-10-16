@@ -2,7 +2,7 @@
   "fondoId": "543",
   "claseId": "1101",
   "nombre": "Galileo Premium - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "galileo-premium-clase-a",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.048518,
       "retornoAcumulado": 2341.053776,
       "flujoEstimado": 973116.401758,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-premium-clase-a",
+      "fondoId": "543",
+      "claseId": "1101",
+      "nombre": "Galileo Premium - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 255479.21,
+      "patrimonio": 4884019493.05,
+      "retornoDiario": 0.563977,
+      "retornoAcumulado": 2354.820752,
+      "flujoEstimado": -2491273.688265,
       "origen": "cnv-excel"
     }
   ]

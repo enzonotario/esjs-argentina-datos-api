@@ -2,7 +2,7 @@
   "fondoId": "89",
   "claseId": "1207",
   "nombre": "Consultatio Balance Fund - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-balance-fund-clase-a",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.058103,
       "retornoAcumulado": 4273.467691,
       "flujoEstimado": 72641637.054241,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-balance-fund-clase-a",
+      "fondoId": "89",
+      "claseId": "1207",
+      "nombre": "Consultatio Balance Fund - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 4186901.54,
+      "patrimonio": 8847150440.34,
+      "retornoDiario": 0.169025,
+      "retornoAcumulado": 4280.859953,
+      "flujoEstimado": -24878507.109434,
       "origen": "cnv-excel"
     }
   ]

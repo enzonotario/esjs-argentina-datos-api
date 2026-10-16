@@ -2,7 +2,7 @@
   "fondoId": "1208",
   "claseId": "3342",
   "nombre": "Pellegrini Proteccion - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "pellegrini-proteccion-clase-c",
@@ -23714,6 +23714,22 @@
       "retornoDiario": -0.145972,
       "retornoAcumulado": 2123.618,
       "flujoEstimado": -5998152.788132,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-proteccion-clase-c",
+      "fondoId": "1208",
+      "claseId": "3342",
+      "nombre": "Pellegrini Proteccion - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 22300.819,
+      "patrimonio": 52803683299.55,
+      "retornoDiario": 0.290693,
+      "retornoAcumulado": 2130.0819,
+      "flujoEstimado": -1486.49279,
       "origen": "cnv-excel"
     }
   ]

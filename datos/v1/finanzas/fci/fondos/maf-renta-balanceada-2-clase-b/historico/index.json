@@ -2,7 +2,7 @@
   "fondoId": "548",
   "claseId": "1110",
   "nombre": "MAF Renta Balanceada 2 - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "maf-renta-balanceada-2-clase-b",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.013541,
       "retornoAcumulado": 281.476117,
       "flujoEstimado": -197.134833,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-renta-balanceada-2-clase-b",
+      "fondoId": "548",
+      "claseId": "1110",
+      "nombre": "MAF Renta Balanceada 2 - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 8218.941,
+      "patrimonio": 4724714115.16,
+      "retornoDiario": 0.157079,
+      "retornoAcumulado": 282.075336,
+      "flujoEstimado": 164.571012,
       "origen": "cnv-excel"
     }
   ]

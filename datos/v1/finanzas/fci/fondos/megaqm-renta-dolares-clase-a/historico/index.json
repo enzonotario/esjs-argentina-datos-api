@@ -2,7 +2,7 @@
   "fondoId": "1585",
   "claseId": "5169",
   "nombre": "MEGAQM Renta Dólares - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "megaqm-renta-dolares-clase-a",
@@ -7362,6 +7362,22 @@
       "retornoDiario": 0.062038,
       "retornoAcumulado": 6.614,
       "flujoEstimado": 3204.900074,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-renta-dolares-clase-a",
+      "fondoId": "1585",
+      "claseId": "5169",
+      "nombre": "MEGAQM Renta Dólares - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1065.835,
+      "patrimonio": 7639125.85,
+      "retornoDiario": -0.028608,
+      "retornoAcumulado": 6.5835,
+      "flujoEstimado": 23382.215403,
       "origen": "cnv-excel"
     }
   ]

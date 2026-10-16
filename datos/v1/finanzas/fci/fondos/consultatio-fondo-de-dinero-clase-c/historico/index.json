@@ -2,7 +2,7 @@
   "fondoId": "1281",
   "claseId": "3570",
   "nombre": "Consultatio Fondo de Dinero - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-fondo-de-dinero-clase-c",
@@ -19153,6 +19153,22 @@
       "patrimonio": null,
       "retornoDiario": 0.038033,
       "retornoAcumulado": 501.8177,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-fondo-de-dinero-clase-c",
+      "fondoId": "1281",
+      "claseId": "3570",
+      "nombre": "Consultatio Fondo de Dinero - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 6020.466,
+      "patrimonio": null,
+      "retornoDiario": 0.038035,
+      "retornoAcumulado": 502.0466,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

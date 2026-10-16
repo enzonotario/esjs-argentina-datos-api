@@ -2,7 +2,7 @@
   "fondoId": "1292",
   "claseId": "3616",
   "nombre": "Schroder Renta Global Cinco - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "schroder-renta-global-cinco-clase-a",
@@ -16082,6 +16082,22 @@
       "retornoDiario": -0.024373,
       "retornoAcumulado": 1235.483634,
       "flujoEstimado": 0.005355,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-global-cinco-clase-a",
+      "fondoId": "1292",
+      "claseId": "3616",
+      "nombre": "Schroder Renta Global Cinco - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 16949.751,
+      "patrimonio": 267753.56,
+      "retornoDiario": 0.245917,
+      "retornoAcumulado": 1238.76781,
+      "flujoEstimado": -0.006266,
       "origen": "cnv-excel"
     }
   ]

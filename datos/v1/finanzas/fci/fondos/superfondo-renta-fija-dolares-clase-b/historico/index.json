@@ -2,7 +2,7 @@
   "fondoId": "654",
   "claseId": "1347",
   "nombre": "Superfondo Renta Fija Dólares - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-dolares-clase-b",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.060777,
       "retornoAcumulado": 35.294577,
       "flujoEstimado": 20010.571187,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-dolares-clase-b",
+      "fondoId": "654",
+      "claseId": "1347",
+      "nombre": "Superfondo Renta Fija Dólares - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 433.305,
+      "patrimonio": 14212573.15,
+      "retornoDiario": 0.07275,
+      "retornoAcumulado": 35.393004,
+      "flujoEstimado": -16.682469,
       "origen": "cnv-excel"
     }
   ]

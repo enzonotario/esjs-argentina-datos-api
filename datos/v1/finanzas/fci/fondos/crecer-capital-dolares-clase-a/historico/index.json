@@ -2,7 +2,7 @@
   "fondoId": "1814",
   "claseId": "6226",
   "nombre": "Crecer Capital Dolares - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "crecer-capital-dolares-clase-a",
@@ -2498,6 +2498,22 @@
       "retornoDiario": 0.01352,
       "retornoAcumulado": 2.8239,
       "flujoEstimado": 1500.803945,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-capital-dolares-clase-a",
+      "fondoId": "1814",
+      "claseId": "6226",
+      "nombre": "Crecer Capital Dolares - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1028.189,
+      "patrimonio": 12815364.01,
+      "retornoDiario": -0.004863,
+      "retornoAcumulado": 2.8189,
+      "flujoEstimado": 99848.195606,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "856",
   "claseId": "2452",
   "nombre": "Valiant Renta Fija - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "valiant-renta-fija-clase-a",
@@ -26034,6 +26034,22 @@
       "retornoDiario": 0.035475,
       "retornoAcumulado": 2177.782715,
       "flujoEstimado": -30.312558,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-fija-clase-a",
+      "fondoId": "856",
+      "claseId": "2452",
+      "nombre": "Valiant Renta Fija - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 29686.911,
+      "patrimonio": 4601766667.24,
+      "retornoDiario": 0.186639,
+      "retornoAcumulado": 2182.033935,
+      "flujoEstimado": -45.549601,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1351",
   "claseId": "3854",
   "nombre": "Max Ahorro Pesos - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "max-ahorro-pesos-clase-a",
@@ -14482,6 +14482,22 @@
       "retornoDiario": 0.035379,
       "retornoAcumulado": 804.8177,
       "flujoEstimado": 1572504248.649018,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-ahorro-pesos-clase-a",
+      "fondoId": "1351",
+      "claseId": "3854",
+      "nombre": "Max Ahorro Pesos - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 9063.845,
+      "patrimonio": 6593365684.17,
+      "retornoDiario": 0.173162,
+      "retornoAcumulado": 806.3845,
+      "flujoEstimado": 275402227.574244,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1571",
   "claseId": "5109",
   "nombre": "Parakeet Global - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "parakeet-global-clase-b",
@@ -7602,6 +7602,22 @@
       "retornoDiario": -0.051371,
       "retornoAcumulado": 6.6209,
       "flujoEstimado": -0.860708,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-global-clase-b",
+      "fondoId": "1571",
+      "claseId": "5109",
+      "nombre": "Parakeet Global - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1067.481,
+      "patrimonio": 5440215.06,
+      "retornoDiario": 0.119301,
+      "retornoAcumulado": 6.7481,
+      "flujoEstimado": -2.74055,
       "origen": "cnv-excel"
     }
   ]

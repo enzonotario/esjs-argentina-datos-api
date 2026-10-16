@@ -2,7 +2,7 @@
   "fondoId": "1526",
   "claseId": "4582",
   "nombre": "Champaquí Renta Dólar - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "champaqui-renta-dolar-clase-b",
@@ -8642,6 +8642,22 @@
       "retornoDiario": 0.075429,
       "retornoAcumulado": 20.6014,
       "flujoEstimado": -1.835958,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-renta-dolar-clase-b",
+      "fondoId": "1526",
+      "claseId": "4582",
+      "nombre": "Champaquí Renta Dólar - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1206.4,
+      "patrimonio": 2890712.95,
+      "retornoDiario": 0.032006,
+      "retornoAcumulado": 20.64,
+      "flujoEstimado": 0.97475,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1210",
   "claseId": "3349",
   "nombre": "Allaria Dinámico - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "allaria-dinamico-clase-b",
@@ -23490,6 +23490,22 @@
       "retornoDiario": 0.005142,
       "retornoAcumulado": 1772.9475,
       "flujoEstimado": 94.124249,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dinamico-clase-b",
+      "fondoId": "1210",
+      "claseId": "3349",
+      "nombre": "Allaria Dinámico - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 18752.384,
+      "patrimonio": 21023526856.3,
+      "retornoDiario": 0.122315,
+      "retornoAcumulado": 1775.2384,
+      "flujoEstimado": 747.266426,
       "origen": "cnv-excel"
     }
   ]

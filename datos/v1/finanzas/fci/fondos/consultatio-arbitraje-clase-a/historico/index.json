@@ -2,7 +2,7 @@
   "fondoId": "763",
   "claseId": "1690",
   "nombre": "Consultatio Arbitraje - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "consultatio-arbitraje-clase-a",
@@ -26146,6 +26146,22 @@
       "retornoDiario": -0.019723,
       "retornoAcumulado": 983.029318,
       "flujoEstimado": -0.001978,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-arbitraje-clase-a",
+      "fondoId": "763",
+      "claseId": "1690",
+      "nombre": "Consultatio Arbitraje - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 20262.02,
+      "patrimonio": 517586.85,
+      "retornoDiario": 0.074263,
+      "retornoAcumulado": 983.833607,
+      "flujoEstimado": 0.009722,
       "origen": "cnv-excel"
     }
   ]

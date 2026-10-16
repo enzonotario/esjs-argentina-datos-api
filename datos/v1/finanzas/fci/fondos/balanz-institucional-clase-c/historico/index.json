@@ -2,7 +2,7 @@
   "fondoId": "791",
   "claseId": "1820",
   "nombre": "Balanz Institucional - Clase C",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "balanz-institucional-clase-c",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.006893,
       "retornoAcumulado": 4733.374182,
       "flujoEstimado": 113.471485,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-institucional-clase-c",
+      "fondoId": "791",
+      "claseId": "1820",
+      "nombre": "Balanz Institucional - Clase C",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 133588.375,
+      "patrimonio": 28801946109.19,
+      "retornoDiario": 0.089993,
+      "retornoAcumulado": 4737.723877,
+      "flujoEstimado": -153.71566,
       "origen": "cnv-excel"
     }
   ]

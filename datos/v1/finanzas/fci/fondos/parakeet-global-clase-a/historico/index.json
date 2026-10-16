@@ -2,7 +2,7 @@
   "fondoId": "1571",
   "claseId": "5108",
   "nombre": "Parakeet Global - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "parakeet-global-clase-a",
@@ -7602,6 +7602,22 @@
       "retornoDiario": -0.052661,
       "retornoAcumulado": 5.7146,
       "flujoEstimado": 10777.793454,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-global-clase-a",
+      "fondoId": "1571",
+      "claseId": "5108",
+      "nombre": "Parakeet Global - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1058.393,
+      "patrimonio": 19327928.92,
+      "retornoDiario": 0.117959,
+      "retornoAcumulado": 5.8393,
+      "flujoEstimado": -24848.716614,
       "origen": "cnv-excel"
     }
   ]

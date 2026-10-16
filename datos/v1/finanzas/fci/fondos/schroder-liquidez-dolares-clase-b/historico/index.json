@@ -2,7 +2,7 @@
   "fondoId": "1879",
   "claseId": "6499",
   "nombre": "Schroder Liquidez Dolares - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "schroder-liquidez-dolares-clase-b",
@@ -1666,6 +1666,22 @@
       "retornoDiario": 0.002292,
       "retornoAcumulado": 0.3707,
       "flujoEstimado": 4998.940956,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-liquidez-dolares-clase-b",
+      "fondoId": "1879",
+      "claseId": "6499",
+      "nombre": "Schroder Liquidez Dolares - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1003.73,
+      "patrimonio": 39951397.47,
+      "retornoDiario": 0.002292,
+      "retornoAcumulado": 0.373,
+      "flujoEstimado": 19.175397,
       "origen": "cnv-excel"
     }
   ]

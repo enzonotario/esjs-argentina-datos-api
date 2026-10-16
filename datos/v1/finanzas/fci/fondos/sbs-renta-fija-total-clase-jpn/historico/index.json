@@ -2,7 +2,7 @@
   "fondoId": "1237",
   "claseId": "3432",
   "nombre": "SBS Renta Fija Total - Clase JPN",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "sbs-renta-fija-total-clase-jpn",
@@ -21826,6 +21826,22 @@
       "retornoDiario": -0.098704,
       "retornoAcumulado": 1362.046541,
       "flujoEstimado": 2927.571243,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-fija-total-clase-jpn",
+      "fondoId": "1237",
+      "claseId": "3432",
+      "nombre": "SBS Renta Fija Total - Clase JPN",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14635.306,
+      "patrimonio": 70506532616.17,
+      "retornoDiario": 0.103508,
+      "retornoAcumulado": 1363.559871,
+      "flujoEstimado": -2317788482.335953,
       "origen": "cnv-excel"
     }
   ]

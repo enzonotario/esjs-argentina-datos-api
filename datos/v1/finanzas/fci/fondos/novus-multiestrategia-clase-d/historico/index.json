@@ -2,7 +2,7 @@
   "fondoId": "1485",
   "claseId": "4412",
   "nombre": "Novus Multiestrategia - Clase D",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "novus-multiestrategia-clase-d",
@@ -9762,6 +9762,22 @@
       "retornoDiario": 0.128681,
       "retornoAcumulado": 69.551,
       "flujoEstimado": -24.676734,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-multiestrategia-clase-d",
+      "fondoId": "1485",
+      "claseId": "4412",
+      "nombre": "Novus Multiestrategia - Clase D",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1695.409,
+      "patrimonio": 4796609173.71,
+      "retornoDiario": -0.005957,
+      "retornoAcumulado": 69.5409,
+      "flujoEstimado": -0.829284,
       "origen": "cnv-excel"
     }
   ]

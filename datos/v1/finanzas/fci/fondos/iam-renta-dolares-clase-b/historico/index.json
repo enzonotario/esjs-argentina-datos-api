@@ -2,7 +2,7 @@
   "fondoId": "731",
   "claseId": "1590",
   "nombre": "IAM Renta Dólares - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "iam-renta-dolares-clase-b",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.109518,
       "retornoAcumulado": 74.570609,
       "flujoEstimado": 55615.193582,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-dolares-clase-b",
+      "fondoId": "731",
+      "claseId": "1590",
+      "nombre": "IAM Renta Dólares - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1844.323,
+      "patrimonio": 25268813.53,
+      "retornoDiario": 0.181697,
+      "retornoAcumulado": 74.887798,
+      "flujoEstimado": -3535.277307,
       "origen": "cnv-excel"
     }
   ]

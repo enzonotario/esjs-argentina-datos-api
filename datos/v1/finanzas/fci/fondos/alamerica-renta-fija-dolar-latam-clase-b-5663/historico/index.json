@@ -2,7 +2,7 @@
   "fondoId": "893",
   "claseId": "5663",
   "nombre": "Alamerica Renta Fija Dolar Latam - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "alamerica-renta-fija-dolar-latam-clase-b",
@@ -26098,6 +26098,22 @@
       "retornoDiario": -0.03152,
       "retornoAcumulado": 3.166937,
       "flujoEstimado": 0.000014,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alamerica-renta-fija-dolar-latam-clase-b-5663",
+      "fondoId": "893",
+      "claseId": "5663",
+      "nombre": "Alamerica Renta Fija Dolar Latam - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1243.745,
+      "patrimonio": 254.52,
+      "retornoDiario": 0.295545,
+      "retornoAcumulado": 3.471843,
+      "flujoEstimado": -0.000005,
       "origen": "cnv-excel"
     }
   ]

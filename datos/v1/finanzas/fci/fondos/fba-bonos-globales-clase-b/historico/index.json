@@ -2,7 +2,7 @@
   "fondoId": "435",
   "claseId": "819",
   "nombre": "FBA Bonos Globales - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fba-bonos-globales-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.010288,
       "retornoAcumulado": 436.493512,
       "flujoEstimado": -0.00063,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-bonos-globales-clase-b",
+      "fondoId": "435",
+      "claseId": "819",
+      "nombre": "FBA Bonos Globales - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 132137.618,
+      "patrimonio": 99679.43,
+      "retornoDiario": 0.032533,
+      "retornoAcumulado": 436.668049,
+      "flujoEstimado": 0.001838,
       "origen": "cnv-excel"
     }
   ]

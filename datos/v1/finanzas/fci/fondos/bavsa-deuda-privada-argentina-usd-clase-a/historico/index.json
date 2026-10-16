@@ -2,7 +2,7 @@
   "fondoId": "1770",
   "claseId": "6038",
   "nombre": "BAVSA Deuda Privada Argentina USD - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "bavsa-deuda-privada-argentina-usd-clase-a",
@@ -3058,6 +3058,22 @@
       "retornoDiario": 0.125661,
       "retornoAcumulado": 5.34034,
       "flujoEstimado": 3215.632358,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-deuda-privada-argentina-usd-clase-a",
+      "fondoId": "1770",
+      "claseId": "6038",
+      "nombre": "BAVSA Deuda Privada Argentina USD - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1053.744,
+      "patrimonio": 22877829.4,
+      "retornoDiario": 0.036835,
+      "retornoAcumulado": 5.379142,
+      "flujoEstimado": 105504.752867,
       "origen": "cnv-excel"
     }
   ]

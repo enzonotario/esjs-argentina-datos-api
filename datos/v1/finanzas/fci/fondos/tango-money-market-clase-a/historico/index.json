@@ -2,7 +2,7 @@
   "fondoId": "1823",
   "claseId": "6263",
   "nombre": "Tango Money Market - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "tango-money-market-clase-a",
@@ -1906,6 +1906,22 @@
       "retornoDiario": 0.051536,
       "retornoAcumulado": 9.1068,
       "flujoEstimado": -133235661.611528,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tango-money-market-clase-a",
+      "fondoId": "1823",
+      "claseId": "6263",
+      "nombre": "Tango Money Market - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1091.611,
+      "patrimonio": 1708976452.64,
+      "retornoDiario": 0.049768,
+      "retornoAcumulado": 9.1611,
+      "flujoEstimado": 282518443.294958,
       "origen": "cnv-excel"
     }
   ]

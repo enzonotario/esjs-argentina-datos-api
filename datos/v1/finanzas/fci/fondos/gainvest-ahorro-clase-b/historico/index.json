@@ -2,7 +2,7 @@
   "fondoId": "460",
   "claseId": "3687",
   "nombre": "Gainvest Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "gainvest-ahorro-clase-b",
@@ -18386,6 +18386,22 @@
       "retornoDiario": -1.530008,
       "retornoAcumulado": 86.7573,
       "flujoEstimado": -0.139063,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-ahorro-clase-b",
+      "fondoId": "460",
+      "claseId": "3687",
+      "nombre": "Gainvest Ahorro - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1867.573,
+      "patrimonio": 827195.77,
+      "retornoDiario": 0,
+      "retornoAcumulado": 86.7573,
+      "flujoEstimado": 0.11,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1773",
   "claseId": "6048",
   "nombre": "BAVSA Global III - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "bavsa-global-iii-clase-b",
@@ -2866,6 +2866,22 @@
       "retornoDiario": 0.013945,
       "retornoAcumulado": 26.9426,
       "flujoEstimado": 7098.459621,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-global-iii-clase-b",
+      "fondoId": "1773",
+      "claseId": "6048",
+      "nombre": "BAVSA Global III - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1271.209,
+      "patrimonio": 18742228636.5,
+      "retornoDiario": 0.140457,
+      "retornoAcumulado": 27.1209,
+      "flujoEstimado": -5188.329117,
       "origen": "cnv-excel"
     }
   ]

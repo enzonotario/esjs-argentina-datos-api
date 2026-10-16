@@ -2,7 +2,7 @@
   "fondoId": "1718",
   "claseId": "5775",
   "nombre": "Valiant Money Market Dolares - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "valiant-money-market-dolares-clase-a",
@@ -4242,6 +4242,22 @@
       "retornoDiario": 0.003259,
       "retornoAcumulado": 1.2533,
       "flujoEstimado": 45864.966912,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-money-market-dolares-clase-a",
+      "fondoId": "1718",
+      "claseId": "5775",
+      "nombre": "Valiant Money Market Dolares - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1012.567,
+      "patrimonio": 2146271.97,
+      "retornoDiario": 0.003358,
+      "retornoAcumulado": 1.2567,
+      "flujoEstimado": -121990.385692,
       "origen": "cnv-excel"
     }
   ]

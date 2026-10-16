@@ -2,7 +2,7 @@
   "fondoId": "1462",
   "claseId": "4323",
   "nombre": "Max Dinamico III - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "max-dinamico-iii-clase-b",
@@ -10306,6 +10306,22 @@
       "retornoDiario": -0.165906,
       "retornoAcumulado": 29.3159,
       "flujoEstimado": 14401.832794,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-dinamico-iii-clase-b",
+      "fondoId": "1462",
+      "claseId": "4323",
+      "nombre": "Max Dinamico III - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1295.516,
+      "patrimonio": 40618168103.26,
+      "retornoDiario": 0.182267,
+      "retornoAcumulado": 29.5516,
+      "flujoEstimado": -10837.024902,
       "origen": "cnv-excel"
     }
   ]

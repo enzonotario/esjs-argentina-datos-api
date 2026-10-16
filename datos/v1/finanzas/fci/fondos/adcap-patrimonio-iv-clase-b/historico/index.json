@@ -2,7 +2,7 @@
   "fondoId": "1364",
   "claseId": "3911",
   "nombre": "Adcap Patrimonio IV - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "adcap-patrimonio-iv-clase-b",
@@ -15522,6 +15522,22 @@
       "retornoDiario": 0.041265,
       "retornoAcumulado": 2064.4679,
       "flujoEstimado": -14.547567,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-patrimonio-iv-clase-b",
+      "fondoId": "1364",
+      "claseId": "3911",
+      "nombre": "Adcap Patrimonio IV - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 21660.731,
+      "patrimonio": 1164399756.23,
+      "retornoDiario": 0.074161,
+      "retornoAcumulado": 2066.0731,
+      "flujoEstimado": 25.924273,
       "origen": "cnv-excel"
     }
   ]

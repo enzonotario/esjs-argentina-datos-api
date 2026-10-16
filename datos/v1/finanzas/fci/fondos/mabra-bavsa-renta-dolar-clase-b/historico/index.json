@@ -2,7 +2,7 @@
   "fondoId": "1720",
   "claseId": "5782",
   "nombre": "Mabra BAVSA Renta Dólar - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "mabra-bavsa-renta-dolar-clase-b",
@@ -4082,6 +4082,22 @@
       "retornoDiario": 0.019536,
       "retornoAcumulado": 7.5133,
       "flujoEstimado": 33001.348092,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mabra-bavsa-renta-dolar-clase-b",
+      "fondoId": "1720",
+      "claseId": "5782",
+      "nombre": "Mabra BAVSA Renta Dólar - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1075.324,
+      "patrimonio": 1598966.37,
+      "retornoDiario": 0.017765,
+      "retornoAcumulado": 7.5324,
+      "flujoEstimado": -1.066111,
       "origen": "cnv-excel"
     }
   ]

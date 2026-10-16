@@ -2,7 +2,7 @@
   "fondoId": "513",
   "claseId": "1036",
   "nombre": "Arpenta Ahorro Pesos",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "arpenta-ahorro-pesos",
@@ -26034,6 +26034,22 @@
       "retornoDiario": 0.070067,
       "retornoAcumulado": 6711.100108,
       "flujoEstimado": 0.149434,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "arpenta-ahorro-pesos",
+      "fondoId": "513",
+      "claseId": "1036",
+      "nombre": "Arpenta Ahorro Pesos",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 77733.604,
+      "patrimonio": 329887287.96,
+      "retornoDiario": 0.285075,
+      "retornoAcumulado": 6730.516839,
+      "flujoEstimado": -1.190493,
       "origen": "cnv-excel"
     }
   ]

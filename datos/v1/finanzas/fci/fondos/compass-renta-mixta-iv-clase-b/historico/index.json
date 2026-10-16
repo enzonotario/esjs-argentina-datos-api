@@ -2,7 +2,7 @@
   "fondoId": "1684",
   "claseId": "5614",
   "nombre": "Compass Renta Mixta IV - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "compass-renta-mixta-iv-clase-b",
@@ -4754,6 +4754,22 @@
       "retornoDiario": 0.009076,
       "retornoAcumulado": 40.977514,
       "flujoEstimado": -2180.391697,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-mixta-iv-clase-b",
+      "fondoId": "1684",
+      "claseId": "5614",
+      "nombre": "Compass Renta Mixta IV - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1422.663,
+      "patrimonio": 12869596124.56,
+      "retornoDiario": 0.084279,
+      "retornoAcumulado": 41.096329,
+      "flujoEstimado": 1326.691303,
       "origen": "cnv-excel"
     }
   ]

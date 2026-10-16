@@ -2,7 +2,7 @@
   "fondoId": "1698",
   "claseId": "5671",
   "nombre": "Parakeet Blend - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "parakeet-blend-clase-a",
@@ -3618,6 +3618,22 @@
       "retornoDiario": 0.035961,
       "retornoAcumulado": 9.3234,
       "flujoEstimado": 0.001556,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-blend-clase-a",
+      "fondoId": "1698",
+      "claseId": "5671",
+      "nombre": "Parakeet Blend - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1093.994,
+      "patrimonio": 789098.09,
+      "retornoDiario": 0.069519,
+      "retornoAcumulado": 9.3994,
+      "flujoEstimado": 0.128085,
       "origen": "cnv-excel"
     }
   ]

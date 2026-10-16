@@ -2,7 +2,7 @@
   "fondoId": "1545",
   "claseId": "4659",
   "nombre": "Allaria Dólar Retorno Total - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-retorno-total-clase-b",
@@ -8354,6 +8354,22 @@
       "retornoDiario": -0.563908,
       "retornoAcumulado": 32.5678,
       "flujoEstimado": 175047.788015,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-retorno-total-clase-b",
+      "fondoId": "1545",
+      "claseId": "4659",
+      "nombre": "Allaria Dólar Retorno Total - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1328.2,
+      "patrimonio": 12732801.45,
+      "retornoDiario": 0.190242,
+      "retornoAcumulado": 32.82,
+      "flujoEstimado": 128951.122322,
       "origen": "cnv-excel"
     }
   ]

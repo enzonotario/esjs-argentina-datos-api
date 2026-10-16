@@ -2,7 +2,7 @@
   "fondoId": "1804",
   "claseId": "6181",
   "nombre": "MP Empresas Argentinas - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "mp-empresas-argentinas-clase-a",
@@ -1618,6 +1618,22 @@
       "retornoDiario": -1.056062,
       "retornoAcumulado": -10.8339,
       "flujoEstimado": -331203851.958679,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mp-empresas-argentinas-clase-a",
+      "fondoId": "1804",
+      "claseId": "6181",
+      "nombre": "MP Empresas Argentinas - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 897.082,
+      "patrimonio": 47148402207.71,
+      "retornoDiario": 0.607966,
+      "retornoAcumulado": -10.2918,
+      "flujoEstimado": -396376749.63707,
       "origen": "cnv-excel"
     }
   ]

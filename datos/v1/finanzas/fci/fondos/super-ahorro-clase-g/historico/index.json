@@ -2,7 +2,7 @@
   "fondoId": "151",
   "claseId": "3256",
   "nombre": "Super Ahorro $ - Clase G",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "super-ahorro-clase-g",
@@ -25854,10 +25854,26 @@
       "categoriaKey": "mercadoDinero",
       "horizonte": "Corto Plazo",
       "valorCuotaparte": 14482.823,
-      "patrimonio": 12721324898.25,
+      "patrimonio": 12721324898.24,
       "retornoDiario": 0.048702,
       "retornoAcumulado": 1348.2823,
-      "flujoEstimado": -318100863.33835,
+      "flujoEstimado": -318100863.348351,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "super-ahorro-clase-g",
+      "fondoId": "151",
+      "claseId": "3256",
+      "nombre": "Super Ahorro $ - Clase G",
+      "fecha": "2026-10-15",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 14489.921,
+      "patrimonio": 12984912263.32,
+      "retornoDiario": 0.04901,
+      "retornoAcumulado": 1348.9921,
+      "flujoEstimado": 257352643.747374,
       "origen": "cnv-excel"
     }
   ]

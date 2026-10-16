@@ -2,7 +2,7 @@
   "fondoId": "1459",
   "claseId": "4313",
   "nombre": "Fima Mix Dólares - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "fima-mix-dolares-clase-b",
@@ -10274,6 +10274,22 @@
       "retornoDiario": 0.10567,
       "retornoAcumulado": 42.386,
       "flujoEstimado": -22475.32777,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-mix-dolares-clase-b",
+      "fondoId": "1459",
+      "claseId": "4313",
+      "nombre": "Fima Mix Dólares - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1423.919,
+      "patrimonio": 30167813.99,
+      "retornoDiario": 0.004144,
+      "retornoAcumulado": 42.3919,
+      "flujoEstimado": -37008.495976,
       "origen": "cnv-excel"
     }
   ]

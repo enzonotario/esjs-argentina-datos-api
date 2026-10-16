@@ -2,7 +2,7 @@
   "fondoId": "631",
   "claseId": "1278",
   "nombre": "Superfondo Combinado - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "superfondo-combinado-clase-a",
@@ -26158,10 +26158,26 @@
       "categoriaKey": "rentaMixta",
       "horizonte": null,
       "valorCuotaparte": 52145.311,
-      "patrimonio": 31311209401.18,
+      "patrimonio": 31311208956.27,
       "retornoDiario": -0.137007,
       "retornoAcumulado": 4354.416163,
-      "flujoEstimado": -958469.214645,
+      "flujoEstimado": -958914.124645,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-combinado-clase-a",
+      "fondoId": "631",
+      "claseId": "1278",
+      "nombre": "Superfondo Combinado - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 52278.127,
+      "patrimonio": 30712822885.95,
+      "retornoDiario": 0.254704,
+      "retornoAcumulado": 4365.761722,
+      "flujoEstimado": -678136971.97998,
       "origen": "cnv-excel"
     }
   ]

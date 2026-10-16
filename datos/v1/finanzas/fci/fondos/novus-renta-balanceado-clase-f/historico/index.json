@@ -2,7 +2,7 @@
   "fondoId": "1325",
   "claseId": "4169",
   "nombre": "Novus Renta Balanceado - Clase F",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "novus-renta-balanceado-clase-f",
@@ -12002,6 +12002,22 @@
       "retornoDiario": 0.091823,
       "retornoAcumulado": 8.3514,
       "flujoEstimado": 448.792836,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-renta-balanceado-clase-f-4169",
+      "fondoId": "1325",
+      "claseId": "4169",
+      "nombre": "Novus Renta Balanceado - Clase F",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1082.544,
+      "patrimonio": 1118176543.28,
+      "retornoDiario": -0.089524,
+      "retornoAcumulado": 8.2544,
+      "flujoEstimado": 299999569.383421,
       "origen": "cnv-excel"
     }
   ]

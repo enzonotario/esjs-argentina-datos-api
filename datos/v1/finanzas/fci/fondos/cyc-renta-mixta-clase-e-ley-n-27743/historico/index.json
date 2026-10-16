@@ -2,7 +2,7 @@
   "fondoId": "815",
   "claseId": "5095",
   "nombre": "CYC Renta Mixta - Clase E Ley N° 27.743",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "cyc-renta-mixta-clase-e-ley-n-27743",
@@ -7330,6 +7330,22 @@
       "retornoDiario": -1.192188,
       "retornoAcumulado": 3.6738,
       "flujoEstimado": 0.064914,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-renta-mixta-clase-e-ley-n-27743",
+      "fondoId": "815",
+      "claseId": "5095",
+      "nombre": "CYC Renta Mixta - Clase E Ley N° 27.743",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1041.017,
+      "patrimonio": 230977.57,
+      "retornoDiario": 0.412737,
+      "retornoAcumulado": 4.1017,
+      "flujoEstimado": 0.089045,
       "origen": "cnv-excel"
     }
   ]

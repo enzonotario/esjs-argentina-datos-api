@@ -2,7 +2,7 @@
   "fondoId": "1494",
   "claseId": "4456",
   "nombre": "Novus Renta Dólar - Clase A",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "novus-renta-dolar-clase-a",
@@ -9538,6 +9538,22 @@
       "retornoDiario": 1.448313,
       "retornoAcumulado": 35.5387,
       "flujoEstimado": 0.001762,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-renta-dolar-clase-a",
+      "fondoId": "1494",
+      "claseId": "4456",
+      "nombre": "Novus Renta Dólar - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1348.392,
+      "patrimonio": 113248.83,
+      "retornoDiario": -0.516089,
+      "retornoAcumulado": 34.8392,
+      "flujoEstimado": 0.036571,
       "origen": "cnv-excel"
     }
   ]

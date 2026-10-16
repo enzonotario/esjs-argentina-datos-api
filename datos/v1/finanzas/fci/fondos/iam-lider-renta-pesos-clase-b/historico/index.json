@@ -2,7 +2,7 @@
   "fondoId": "1735",
   "claseId": "5869",
   "nombre": "IAM Lider Renta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "iam-lider-renta-pesos-clase-b",
@@ -3890,6 +3890,22 @@
       "retornoDiario": 0.023904,
       "retornoAcumulado": 36.832,
       "flujoEstimado": 0.019498,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-lider-renta-pesos-clase-b",
+      "fondoId": "1735",
+      "claseId": "5869",
+      "nombre": "IAM Lider Renta Pesos - Clase B",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1368.643,
+      "patrimonio": 136864.3,
+      "retornoDiario": 0.023606,
+      "retornoAcumulado": 36.8643,
+      "flujoEstimado": -0.010564,
       "origen": "cnv-excel"
     }
   ]

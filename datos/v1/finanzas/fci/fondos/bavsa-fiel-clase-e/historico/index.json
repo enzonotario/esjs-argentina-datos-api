@@ -2,7 +2,7 @@
   "fondoId": "1970",
   "claseId": "6795",
   "nombre": "BAVSA Fiel - Clase E",
-  "fechaActualizacion": "2026-10-14T23:29:01.000Z",
+  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
   "historico": [
     {
       "slug": "bavsa-fiel-clase-e",
@@ -18,6 +18,22 @@
       "retornoDiario": null,
       "retornoAcumulado": 0,
       "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-fiel-clase-e",
+      "fondoId": "1970",
+      "claseId": "6795",
+      "nombre": "BAVSA Fiel - Clase E",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1008.187,
+      "patrimonio": 1610158280.57,
+      "retornoDiario": 0.33828,
+      "retornoAcumulado": 0.33828,
+      "flujoEstimado": 1033.484814,
       "origen": "cnv-excel"
     }
   ]
