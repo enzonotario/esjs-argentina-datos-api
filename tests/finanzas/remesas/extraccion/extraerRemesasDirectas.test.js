@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { logGrupo } from '@/log.js'
+import { mapearAstropayRemesas } from '@/finanzas/remesas/extraccion/extraerAstropayRemesas.js'
 import { mapearArqRemesas } from '@/finanzas/remesas/extraccion/extraerArqRemesas.js'
 import { mapearGrabrfiRemesas } from '@/finanzas/remesas/extraccion/extraerGrabrfiRemesas.js'
 import { mapearPayoneerRemesas } from '@/finanzas/remesas/extraccion/extraerPayoneerRemesas.js'
@@ -127,6 +128,34 @@ describe('mapear remesas desde fuente oficial', () => {
       retiroArs: '1.2% a 4%',
       tarjetaUsa: false,
     })
+  })
+
+  it('lee AstroPay desde tarjetas, anexo argentino y cuenta USD', () => {
+    const remesa = mapearAstropayRemesas(`
+      Tu tarjeta virtual lista en minutos y sin costo.
+      AstroCard Global. Emitida en el exterior.
+      Costo de emisión de la primera tarjeta AstroPay virtual 0 ARS.
+      Costo de mantenimiento, renovación y cierre de cuenta 0 ARS.
+      Costo por consumos con la tarjeta 0 ARS.
+      El dinero no devengan intereses.
+      Esta cuenta no es una cuenta personal a nombre del usuario.
+      Recibir fondos a través de ACH, SWIFT o Wire.
+      Usted no recibirá intereses.
+    `)
+
+    expect(remesa).toMatchObject({
+      compania: 'AstroPay',
+      cuentaPropia: false,
+      moneda: 'FIAT',
+      inversiones: false,
+      tarjetaUsa: true,
+      costoRecibirPagos: null,
+      costoMantenimientoTarjeta: '0 ARS',
+      costoTarjeta: '0 ARS',
+      retiroArs: null,
+    })
+    expect(remesa.detalles.cuentaPropia).toContain('FBO')
+    expect(remesa.detalles.costoRecibirPagos).toContain('no publican')
   })
 
   it('lee ARQ desde el help center', () => {

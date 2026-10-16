@@ -3,6 +3,7 @@ import { extraerCocosRemesas } from '@/finanzas/remesas/extraccion/extraerCocosR
 import { extraerBeloRemesas } from '@/finanzas/remesas/extraccion/extraerBeloRemesas.js'
 import { extraerRipioRemesas } from '@/finanzas/remesas/extraccion/extraerRipioRemesas.js'
 import { extraerFuentesDirectasRemesas } from '@/finanzas/remesas/extraccion/extraerRemesasDirectas.js'
+import { extraerAstropayRemesas } from '@/finanzas/remesas/extraccion/extraerAstropayRemesas.js'
 import { extraerRemesasDolarito } from '@/finanzas/remesas/extraccion/extraerRemesasDolarito.js'
 
 const ALIAS_COMPANIA_REMESA = {
@@ -135,12 +136,14 @@ export async function extraerRemesas() {
       resultadoBelo,
       resultadoRipio,
       resultadoDirectas,
+      resultadoAstropay,
     ] = await Promise.allSettled([
       extraerRemesasDolarito(log),
       extraerCocosRemesas(log),
       extraerBeloRemesas(log),
       extraerRipioRemesas(log),
       extraerFuentesDirectasRemesas(log),
+      extraerAstropayRemesas(log),
     ])
 
     const remesas =
@@ -183,6 +186,12 @@ export async function extraerRemesas() {
       nombre: 'Ripio',
       exito: 'extraerRemesas: Ripio desde ripio.com agregado',
       fallo: 'extraerRemesas: falló Ripio desde ripio.com',
+    })
+
+    agregarRemesaOpcional(log, remesas, resultadoAstropay, {
+      nombre: 'AstroPay',
+      exito: 'extraerRemesas: AstroPay desde astropay.com agregado',
+      fallo: 'extraerRemesas: falló AstroPay desde astropay.com',
     })
 
     if (remesas.length === 0 && resultadoPrincipal.status === 'rejected') {
