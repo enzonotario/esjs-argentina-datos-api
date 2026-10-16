@@ -1,14 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import { logGrupo } from '@/log.js'
+import { mapearArqRemesas } from '@/finanzas/remesas/extraccion/extraerArqRemesas.js'
+import { mapearGrabrfiRemesas } from '@/finanzas/remesas/extraccion/extraerGrabrfiRemesas.js'
+import { mapearPayoneerRemesas } from '@/finanzas/remesas/extraccion/extraerPayoneerRemesas.js'
+import { mapearTakenosRemesas } from '@/finanzas/remesas/extraccion/extraerTakenosRemesas.js'
+import { mapearWallbitRemesas } from '@/finanzas/remesas/extraccion/extraerWallbitRemesas.js'
+import { mapearWiseRemesas } from '@/finanzas/remesas/extraccion/extraerWiseRemesas.js'
 import {
   extraerFuentesDirectasRemesas,
   htmlATexto,
-  mapearArqRemesas,
-  mapearGrabrfiRemesas,
-  mapearPayoneerRemesas,
-  mapearTakenosRemesas,
-  mapearWallbitRemesas,
-  mapearWiseRemesas,
 } from '@/finanzas/remesas/extraccion/extraerRemesasDirectas.js'
 import { reemplazarRemesa } from '@/finanzas/remesas/extraccion/extraerRemesas.js'
 
