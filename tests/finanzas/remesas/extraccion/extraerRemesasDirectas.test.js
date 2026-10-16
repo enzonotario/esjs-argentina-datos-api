@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { logGrupo } from '@/log.js'
 import { mapearAstropayRemesas } from '@/finanzas/remesas/extraccion/extraerAstropayRemesas.js'
+import { mapearGlobal66Remesas } from '@/finanzas/remesas/extraccion/extraerGlobal66Remesas.js'
 import { mapearArqRemesas } from '@/finanzas/remesas/extraccion/extraerArqRemesas.js'
 import { mapearGrabrfiRemesas } from '@/finanzas/remesas/extraccion/extraerGrabrfiRemesas.js'
 import { mapearPayoneerRemesas } from '@/finanzas/remesas/extraccion/extraerPayoneerRemesas.js'
@@ -156,6 +157,36 @@ describe('mapear remesas desde fuente oficial', () => {
     })
     expect(remesa.detalles.cuentaPropia).toContain('FBO')
     expect(remesa.detalles.costoRecibirPagos).toContain('no publican')
+  })
+
+  it('lee Global66 desde tarjeta, cobros y centro de ayuda', () => {
+    const remesa = mapearGlobal66Remesas(`
+      Sin conversiones automáticas ni recargos por moneda extranjera.
+      Las transferencias ACH son gratuitas.
+      Wire y SWIFT tienen un costo fijo de recepción de $10 USD.
+      Tu Smart Card no tiene comisiones de mantenimiento si realizás al menos una compra al mes.
+      Sin cargos ocultos por compras internacionales.
+      En Argentina, la tarjeta está disponible exclusivamente en formato virtual.
+      Tu cuenta en dólares funciona como una cuenta bancaria en USD (tipo Checking).
+      Sin costos de mantención.
+      Recepción gratuita.
+      Rendimiento de hasta 6% anual.
+      Global66 no permite que las transferencias lleguen a tu nombre, sino al nombre de su proveedor de pagos.
+    `)
+
+    expect(remesa).toMatchObject({
+      compania: 'Global66',
+      cuentaPropia: false,
+      moneda: 'FIAT',
+      inversiones: true,
+      tarjetaUsa: false,
+      costoRecibirPagos: '0',
+      costoMantenimientoTarjeta: '0 si hay 1 compra al mes',
+      costoTarjeta: '0',
+      retiroArs: null,
+    })
+    expect(remesa.detalles.cuentaPropia).toContain('proveedor de pagos')
+    expect(remesa.detalles.costoRecibirPagos).toContain('10 USD')
   })
 
   it('lee ARQ desde el help center', () => {
