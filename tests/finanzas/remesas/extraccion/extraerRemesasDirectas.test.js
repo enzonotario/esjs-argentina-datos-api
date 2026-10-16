@@ -168,6 +168,7 @@ describe('mapear remesas desde fuente oficial', () => {
   it('lee Global66 desde tarjeta, cobros y centro de ayuda', () => {
     const remesa = mapearGlobal66Remesas(`
       Sin conversiones automáticas ni recargos por moneda extranjera.
+      Es una tarjeta digital y global.
       Las transferencias ACH son gratuitas.
       Wire y SWIFT tienen un costo fijo de recepción de $10 USD.
       Tu Smart Card no tiene comisiones de mantenimiento si realizás al menos una compra al mes.
@@ -185,7 +186,7 @@ describe('mapear remesas desde fuente oficial', () => {
       cuentaPropia: false,
       moneda: 'FIAT',
       inversiones: true,
-      tarjetaUsa: false,
+      tarjetaUsa: true,
       costoRecibirPagos: '0',
       costoMantenimientoTarjeta: '0 si hay 1 compra al mes',
       costoTarjeta: '0',
@@ -230,7 +231,7 @@ describe('mapear remesas desde fuente oficial', () => {
       cuentaPropia: true,
       moneda: 'CRIPTO',
       inversiones: true,
-      tarjetaUsa: false,
+      tarjetaUsa: true,
       costoRecibirPagos: '3 USD',
       costoMantenimientoTarjeta: '0 USD',
       costoTarjeta: '0%',

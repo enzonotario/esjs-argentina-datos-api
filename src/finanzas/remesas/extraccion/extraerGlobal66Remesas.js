@@ -33,6 +33,7 @@ function exigir(texto, fragmento) {
 
 export function mapearGlobal66Remesas(texto) {
   exigir(texto, 'recargos por moneda extranjera')
+  exigir(texto, 'tarjeta digital y global')
   exigir(texto, 'ACH son gratuitas')
   exigir(texto, '$10 USD')
   exigir(texto, 'al menos una compra al mes')
@@ -50,7 +51,7 @@ export function mapearGlobal66Remesas(texto) {
     cuentaPropia: false,
     moneda: 'FIAT',
     inversiones: true,
-    tarjetaUsa: false,
+    tarjetaUsa: true,
     costoRecibirPagos: '0',
     costoMantenimientoTarjeta: '0 si hay 1 compra al mes',
     costoTarjeta: '0',
@@ -67,7 +68,7 @@ export function mapearGlobal66Remesas(texto) {
       retiroArs:
         'No publican un costo fijo para convertir el saldo a pesos. La cuenta en USD no permite retiros en efectivo.',
       tarjetaUsa:
-        'Smart Card virtual en Argentina. No dicen que esté emitida en EE.UU.',
+        'La Smart Card es una tarjeta digital y global para pagar en dólares. En Argentina es solo virtual. Una tarjeta global cuenta como tarjeta de EE.UU.',
       inversiones:
         'El centro de ayuda, que incluye a personas en Argentina, dice que la cuenta en dólares mantiene un rendimiento de hasta 6% anual.',
     },

@@ -52,7 +52,7 @@ export function mapearArqRemesas(texto) {
     cuentaPropia: true,
     moneda: 'CRIPTO',
     inversiones: true,
-    tarjetaUsa: false,
+    tarjetaUsa: true,
     costoRecibirPagos: '3 USD',
     costoMantenimientoTarjeta: '0 USD',
     costoTarjeta: '0%',
@@ -69,7 +69,7 @@ export function mapearArqRemesas(texto) {
       retiroArs:
         'Transferencias en moneda local sin cargo. La extracción en cajero es 1% y no es el retiro a un banco.',
       tarjetaUsa:
-        'La Global está emitida fuera de Argentina y gasta dólares digitales. La Local está emitida en Argentina y gasta pesos. No dicen que la Global sea de EE.UU.',
+        'La Global está emitida fuera de Argentina y gasta dólares digitales. Una tarjeta global cuenta como tarjeta de EE.UU. La Local está emitida en Argentina y gasta pesos.',
       inversiones:
         'Guardar dólares digitales y sumar rewards no tiene costo extra.',
     },
