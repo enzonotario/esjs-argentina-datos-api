@@ -2,7 +2,7 @@
   "fondoId": "1273",
   "claseId": "3545",
   "nombre": "Galileo Multi Strategy - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "galileo-multi-strategy-clase-a",
@@ -19746,6 +19746,22 @@
       "retornoDiario": 0.064417,
       "retornoAcumulado": 42.6014,
       "flujoEstimado": -158552.00403,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-multi-strategy-clase-a",
+      "fondoId": "1273",
+      "claseId": "3545",
+      "nombre": "Galileo Multi Strategy - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1425.008,
+      "patrimonio": 44508011.32,
+      "retornoDiario": -0.070546,
+      "retornoAcumulado": 42.5008,
+      "flujoEstimado": 56799.329832,
       "origen": "cnv-excel"
     }
   ]

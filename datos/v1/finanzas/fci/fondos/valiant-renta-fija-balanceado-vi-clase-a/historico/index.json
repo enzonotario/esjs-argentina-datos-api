@@ -2,7 +2,7 @@
   "fondoId": "1802",
   "claseId": "6172",
   "nombre": "Valiant Renta Fija Balanceado VI - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "valiant-renta-fija-balanceado-vi-clase-a",
@@ -2706,6 +2706,22 @@
       "retornoDiario": 0.286938,
       "retornoAcumulado": 12.5065,
       "flujoEstimado": -121.261968,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-fija-balanceado-vi-clase-a",
+      "fondoId": "1802",
+      "claseId": "6172",
+      "nombre": "Valiant Renta Fija Balanceado VI - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1128.263,
+      "patrimonio": 945370771.3,
+      "retornoDiario": 0.28425,
+      "retornoAcumulado": 12.8263,
+      "flujoEstimado": 72.770865,
       "origen": "cnv-excel"
     }
   ]

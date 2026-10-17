@@ -2,7 +2,7 @@
   "fondoId": "1892",
   "claseId": "6535",
   "nombre": "Ciclo Nova Balanceado - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-balanceado-clase-b",
@@ -1394,6 +1394,22 @@
       "retornoDiario": 0.053675,
       "retornoAcumulado": 7.3707,
       "flujoEstimado": 1836.31217,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-balanceado-clase-b",
+      "fondoId": "1892",
+      "claseId": "6535",
+      "nombre": "Ciclo Nova Balanceado - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1076.52,
+      "patrimonio": 7388035521.05,
+      "retornoDiario": 0.26199,
+      "retornoAcumulado": 7.652,
+      "flujoEstimado": 1000001303.945691,
       "origen": "cnv-excel"
     }
   ]

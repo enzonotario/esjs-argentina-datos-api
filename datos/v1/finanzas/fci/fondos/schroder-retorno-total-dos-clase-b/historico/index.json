@@ -2,7 +2,7 @@
   "fondoId": "752",
   "claseId": "1651",
   "nombre": "Schroder Retorno Total Dos - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "schroder-retorno-total-dos-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.05636,
       "retornoAcumulado": 3.808031,
       "flujoEstimado": 13.167996,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-retorno-total-dos-clase-b",
+      "fondoId": "752",
+      "claseId": "1651",
+      "nombre": "Schroder Retorno Total Dos - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 399.676,
+      "patrimonio": 21956069.26,
+      "retornoDiario": 0.05783,
+      "retornoAcumulado": 3.868064,
+      "flujoEstimado": -12.553565,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "166",
   "claseId": "1379",
   "nombre": "Superfondo Renta Fija - Clase F",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-clase-f",
@@ -26161,6 +26161,22 @@
       "patrimonio": null,
       "retornoDiario": 0.173895,
       "retornoAcumulado": 6169.021629,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-clase-f",
+      "fondoId": "166",
+      "claseId": "1379",
+      "nombre": "Superfondo Renta Fija - Clase F",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 156081.811,
+      "patrimonio": null,
+      "retornoDiario": 0.291181,
+      "retornoAcumulado": 6187.275826,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

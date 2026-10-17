@@ -2,7 +2,7 @@
   "fondoId": "530",
   "claseId": "2173",
   "nombre": "Argenfunds Renta Fija - Clase E",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-fija-clase-e",
@@ -26273,6 +26273,22 @@
       "patrimonio": null,
       "retornoDiario": 0.30722,
       "retornoAcumulado": -95.125047,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-fija-clase-e",
+      "fondoId": "530",
+      "claseId": "2173",
+      "nombre": "Argenfunds Renta Fija - Clase E",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 0.651,
+      "patrimonio": null,
+      "retornoDiario": -0.306279,
+      "retornoAcumulado": -95.139978,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

@@ -2,7 +2,7 @@
   "fondoId": "1171",
   "claseId": "3142",
   "nombre": "Valiant Total Return RP",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "valiant-total-return-rp",
@@ -25858,6 +25858,22 @@
       "retornoDiario": -0.007198,
       "retornoAcumulado": 19.392944,
       "flujoEstimado": 0.004522,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-total-return-rp",
+      "fondoId": "1171",
+      "claseId": "3142",
+      "nombre": "Valiant Total Return RP",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1319.787,
+      "patrimonio": 17567.68,
+      "retornoDiario": 0.007199,
+      "retornoAcumulado": 19.401539,
+      "flujoEstimado": -0.004607,
       "origen": "cnv-excel"
     }
   ]

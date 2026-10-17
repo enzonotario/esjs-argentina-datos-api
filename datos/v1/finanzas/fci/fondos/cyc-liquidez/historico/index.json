@@ -2,7 +2,7 @@
   "fondoId": "1316",
   "claseId": "3748",
   "nombre": "CYC Liquidez",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "cyc-liquidez",
@@ -14482,6 +14482,22 @@
       "retornoDiario": 0.050328,
       "retornoAcumulado": 517.8596,
       "flujoEstimado": -6607108569.90608,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-liquidez",
+      "fondoId": "1316",
+      "claseId": "3748",
+      "nombre": "CYC Liquidez",
+      "fecha": "2026-10-16",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 6181.64,
+      "patrimonio": 15452028606.23,
+      "retornoDiario": 0.049267,
+      "retornoAcumulado": 518.164,
+      "flujoEstimado": 927414951.272961,
       "origen": "cnv-excel"
     }
   ]

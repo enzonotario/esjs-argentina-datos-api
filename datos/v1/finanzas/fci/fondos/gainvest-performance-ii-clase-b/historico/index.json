@@ -2,7 +2,7 @@
   "fondoId": "1649",
   "claseId": "5490",
   "nombre": "Gainvest Performance II - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "gainvest-performance-ii-clase-b",
@@ -5601,6 +5601,22 @@
       "patrimonio": 420.16,
       "retornoDiario": 0.00238,
       "retornoAcumulado": -57.984,
+      "flujoEstimado": 0,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-performance-ii-clase-b",
+      "fondoId": "1649",
+      "claseId": "5490",
+      "nombre": "Gainvest Performance II - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 425.39,
+      "patrimonio": 425.39,
+      "retornoDiario": 1.244764,
+      "retornoAcumulado": -57.461,
       "flujoEstimado": 0,
       "origen": "cnv-excel"
     }

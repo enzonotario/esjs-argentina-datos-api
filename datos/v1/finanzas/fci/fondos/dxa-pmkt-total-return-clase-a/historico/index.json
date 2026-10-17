@@ -2,7 +2,7 @@
   "fondoId": "1707",
   "claseId": "5716",
   "nombre": "DXA PMKT Total Return - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "dxa-pmkt-total-return-clase-a",
@@ -4034,6 +4034,22 @@
       "retornoDiario": 0.040185,
       "retornoAcumulado": 49.37,
       "flujoEstimado": 308945.69647,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "dxa-pmkt-total-return-clase-a",
+      "fondoId": "1707",
+      "claseId": "5716",
+      "nombre": "DXA PMKT Total Return - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1482,
+      "patrimonio": 8583069581.48,
+      "retornoDiario": -0.78329,
+      "retornoAcumulado": 48.2,
+      "flujoEstimado": -539426.519576,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1738",
   "claseId": "5873",
   "nombre": "BAVSA Renta Balanceado III - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-iii-clase-b",
@@ -3698,6 +3698,22 @@
       "retornoDiario": 0.073335,
       "retornoAcumulado": 49.834,
       "flujoEstimado": 1338399867.547222,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-iii-clase-b",
+      "fondoId": "1738",
+      "claseId": "5873",
+      "nombre": "BAVSA Renta Balanceado III - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1499.409,
+      "patrimonio": 25245062992.24,
+      "retornoDiario": 0.071346,
+      "retornoAcumulado": 49.9409,
+      "flujoEstimado": 8011.139938,
       "origen": "cnv-excel"
     }
   ]

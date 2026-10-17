@@ -2,7 +2,7 @@
   "fondoId": "334",
   "claseId": "385",
   "nombre": "SBS Tavelli Renta - Clase P",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "sbs-tavelli-renta-clase-p",
@@ -26210,6 +26210,22 @@
       "retornoDiario": 0.112548,
       "retornoAcumulado": 2867.849044,
       "flujoEstimado": -358723.352317,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-tavelli-renta-clase-p",
+      "fondoId": "334",
+      "claseId": "385",
+      "nombre": "SBS Tavelli Renta - Clase P",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 899844.525,
+      "patrimonio": 1025917388.76,
+      "retornoDiario": 0.356739,
+      "retornoAcumulado": 2878.436515,
+      "flujoEstimado": 180000.448208,
       "origen": "cnv-excel"
     }
   ]

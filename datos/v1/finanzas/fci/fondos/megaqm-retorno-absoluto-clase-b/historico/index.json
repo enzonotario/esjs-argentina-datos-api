@@ -2,7 +2,7 @@
   "fondoId": "923",
   "claseId": "1636",
   "nombre": "MEGAQM Retorno Absoluto - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "megaqm-retorno-absoluto-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.108629,
       "retornoAcumulado": 7159.585203,
       "flujoEstimado": 38717012.678787,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-retorno-absoluto-clase-b",
+      "fondoId": "923",
+      "claseId": "1636",
+      "nombre": "MEGAQM Retorno Absoluto - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 150751.61,
+      "patrimonio": 101908860706.32,
+      "retornoDiario": 0.230673,
+      "retornoAcumulado": 7176.331108,
+      "flujoEstimado": -44978457.253326,
       "origen": "cnv-excel"
     }
   ]

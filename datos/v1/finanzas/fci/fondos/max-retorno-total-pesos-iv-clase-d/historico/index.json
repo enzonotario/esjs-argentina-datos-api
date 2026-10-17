@@ -2,7 +2,7 @@
   "fondoId": "1729",
   "claseId": "5837",
   "nombre": "Max Retorno Total Pesos IV - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "max-retorno-total-pesos-iv-clase-d",
@@ -2050,6 +2050,22 @@
       "retornoDiario": 0.14152,
       "retornoAcumulado": 11.1662,
       "flujoEstimado": 15016.963997,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-retorno-total-pesos-iv-clase-d",
+      "fondoId": "1729",
+      "claseId": "5837",
+      "nombre": "Max Retorno Total Pesos IV - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": null,
+      "valorCuotaparte": 1113.751,
+      "patrimonio": 33290143203.39,
+      "retornoDiario": 0.187917,
+      "retornoAcumulado": 11.3751,
+      "flujoEstimado": -17280.146641,
       "origen": "cnv-excel"
     }
   ]

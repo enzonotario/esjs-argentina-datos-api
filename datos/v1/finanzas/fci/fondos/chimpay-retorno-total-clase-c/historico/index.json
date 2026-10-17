@@ -2,7 +2,7 @@
   "fondoId": "1806",
   "claseId": "6189",
   "nombre": "Chimpay Retorno Total - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "chimpay-retorno-total-clase-c",
@@ -2450,6 +2450,22 @@
       "retornoDiario": 1.673804,
       "retornoAcumulado": -0.5436,
       "flujoEstimado": -3520.110176,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chimpay-retorno-total-clase-c",
+      "fondoId": "1806",
+      "claseId": "6189",
+      "nombre": "Chimpay Retorno Total - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 987.265,
+      "patrimonio": 26929222593.27,
+      "retornoDiario": -0.733889,
+      "retornoAcumulado": -1.2735,
+      "flujoEstimado": -4148.776669,
       "origen": "cnv-excel"
     }
   ]

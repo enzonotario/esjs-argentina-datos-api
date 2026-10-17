@@ -2,7 +2,7 @@
   "fondoId": "1705",
   "claseId": "5709",
   "nombre": "Consultatio Estrategia V - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "consultatio-estrategia-v-clase-c",
@@ -4209,6 +4209,22 @@
       "patrimonio": null,
       "retornoDiario": 0.008298,
       "retornoAcumulado": -14.4343,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-estrategia-v-clase-c",
+      "fondoId": "1705",
+      "claseId": "5709",
+      "nombre": "Consultatio Estrategia V - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 855.222,
+      "patrimonio": null,
+      "retornoDiario": -0.050838,
+      "retornoAcumulado": -14.4778,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

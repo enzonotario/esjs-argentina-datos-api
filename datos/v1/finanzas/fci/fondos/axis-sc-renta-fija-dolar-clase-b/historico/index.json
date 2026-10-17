@@ -2,7 +2,7 @@
   "fondoId": "1471",
   "claseId": "4347",
   "nombre": "Axis S&C Renta Fija Dolar - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "axis-sc-renta-fija-dolar-clase-b",
@@ -9954,6 +9954,22 @@
       "retornoDiario": 0.103382,
       "retornoAcumulado": 48.4388,
       "flujoEstimado": -5.777164,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-sc-renta-fija-dolar-clase-b",
+      "fondoId": "1471",
+      "claseId": "4347",
+      "nombre": "Axis S&C Renta Fija Dolar - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1480.739,
+      "patrimonio": 18961613.23,
+      "retornoDiario": -0.245825,
+      "retornoAcumulado": 48.0739,
+      "flujoEstimado": 2247.215162,
       "origen": "cnv-excel"
     }
   ]

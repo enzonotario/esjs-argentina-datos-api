@@ -2,7 +2,7 @@
   "fondoId": "1864",
   "claseId": "6443",
   "nombre": "Cocos Dólar Money Market - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "cocos-dolar-money-market-clase-c",
@@ -1730,6 +1730,22 @@
       "retornoDiario": 0.001895,
       "retornoAcumulado": 0.2533,
       "flujoEstimado": -519023.41702,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cocos-dolar-money-market-clase-c",
+      "fondoId": "1864",
+      "claseId": "6443",
+      "nombre": "Cocos Dólar Money Market - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1002.548,
+      "patrimonio": 63306950.71,
+      "retornoDiario": 0.001496,
+      "retornoAcumulado": 0.2548,
+      "flujoEstimado": 604998.01282,
       "origen": "cnv-excel"
     }
   ]

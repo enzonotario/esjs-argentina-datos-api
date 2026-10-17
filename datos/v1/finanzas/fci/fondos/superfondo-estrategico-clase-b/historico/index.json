@@ -2,7 +2,7 @@
   "fondoId": "646",
   "claseId": "1326",
   "nombre": "Superfondo Estrategico - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "superfondo-estrategico-clase-b",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.124154,
       "retornoAcumulado": 22.1863,
       "flujoEstimado": 0.526118,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-estrategico-clase-b",
+      "fondoId": "646",
+      "claseId": "1326",
+      "nombre": "Superfondo Estrategico - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 498.249,
+      "patrimonio": 1229590.23,
+      "retornoDiario": -0.350399,
+      "retornoAcumulado": 21.75816,
+      "flujoEstimado": -0.606071,
       "origen": "cnv-excel"
     }
   ]

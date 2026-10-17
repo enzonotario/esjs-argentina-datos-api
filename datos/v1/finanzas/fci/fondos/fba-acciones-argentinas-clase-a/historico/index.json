@@ -2,7 +2,7 @@
   "fondoId": "433",
   "claseId": "814",
   "nombre": "FBA Acciones Argentinas - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "fba-acciones-argentinas-clase-a",
@@ -26210,6 +26210,22 @@
       "retornoDiario": 0.625449,
       "retornoAcumulado": 4751.649551,
       "flujoEstimado": -250052727.362534,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-acciones-argentinas-clase-a",
+      "fondoId": "433",
+      "claseId": "814",
+      "nombre": "FBA Acciones Argentinas - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 562370.875,
+      "patrimonio": 44385167105.88,
+      "retornoDiario": -0.235599,
+      "retornoAcumulado": 4740.219097,
+      "flujoEstimado": 207790842.182793,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1410",
   "claseId": "4111",
   "nombre": "ACA Valores Retorno Total - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "aca-valores-retorno-total-clase-c",
@@ -2770,6 +2770,22 @@
       "retornoDiario": 0.14104,
       "retornoAcumulado": 18.3602,
       "flujoEstimado": 27084.212921,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "aca-valores-retorno-total-clase-c",
+      "fondoId": "1410",
+      "claseId": "4111",
+      "nombre": "ACA Valores Retorno Total - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1186.206,
+      "patrimonio": 92596712915.12,
+      "retornoDiario": 0.220006,
+      "retornoAcumulado": 18.6206,
+      "flujoEstimado": -39791.857834,
       "origen": "cnv-excel"
     }
   ]

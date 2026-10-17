@@ -2,7 +2,7 @@
   "fondoId": "317",
   "claseId": "1865",
   "nombre": "Compass Opportunity - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "compass-opportunity-clase-d",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.097043,
       "retornoAcumulado": 12.773472,
       "flujoEstimado": 0.003618,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-opportunity-clase-d",
+      "fondoId": "317",
+      "claseId": "1865",
+      "nombre": "Compass Opportunity - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 299.955,
+      "patrimonio": 1831.04,
+      "retornoDiario": -0.067964,
+      "retornoAcumulado": 12.696826,
+      "flujoEstimado": -0.004702,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1719",
   "claseId": "5778",
   "nombre": "Mabra BAVSA Pesos Plus - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "mabra-bavsa-pesos-plus-clase-b",
@@ -4082,6 +4082,22 @@
       "retornoDiario": 0.060661,
       "retornoAcumulado": 38.89804,
       "flujoEstimado": -17498131.410659,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mabra-bavsa-pesos-plus-clase-b",
+      "fondoId": "1719",
+      "claseId": "5778",
+      "nombre": "Mabra BAVSA Pesos Plus - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1389.718,
+      "patrimonio": 7824498408.13,
+      "retornoDiario": 0.060408,
+      "retornoAcumulado": 38.981946,
+      "flujoEstimado": -12566663.77101,
       "origen": "cnv-excel"
     }
   ]

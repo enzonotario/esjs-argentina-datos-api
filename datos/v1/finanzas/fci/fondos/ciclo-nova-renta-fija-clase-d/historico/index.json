@@ -2,7 +2,7 @@
   "fondoId": "891",
   "claseId": "2601",
   "nombre": "Ciclo Nova Renta Fija - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-renta-fija-clase-d",
@@ -26033,6 +26033,22 @@
       "patrimonio": null,
       "retornoDiario": 0.170455,
       "retornoAcumulado": -78.981879,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-renta-fija-clase-d",
+      "fondoId": "891",
+      "claseId": "2601",
+      "nombre": "Ciclo Nova Renta Fija - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 8.79,
+      "patrimonio": null,
+      "retornoDiario": -0.283607,
+      "retornoAcumulado": -79.041488,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

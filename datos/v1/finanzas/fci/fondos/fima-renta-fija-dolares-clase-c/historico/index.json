@@ -2,7 +2,7 @@
   "fondoId": "1460",
   "claseId": "4317",
   "nombre": "Fima Renta Fija Dólares - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "fima-renta-fija-dolares-clase-c",
@@ -10338,6 +10338,22 @@
       "retornoDiario": -0.0555,
       "retornoAcumulado": 12.9104,
       "flujoEstimado": 541758.131916,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-fija-dolares-clase-c",
+      "fondoId": "1460",
+      "claseId": "4317",
+      "nombre": "Fima Renta Fija Dólares - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1131.262,
+      "patrimonio": 140613739.26,
+      "retornoDiario": 0.191125,
+      "retornoAcumulado": 13.1262,
+      "flujoEstimado": 210003.048315,
       "origen": "cnv-excel"
     }
   ]

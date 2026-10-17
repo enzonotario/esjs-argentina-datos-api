@@ -2,7 +2,7 @@
   "fondoId": "845",
   "claseId": "3550",
   "nombre": "FBA Cobertura Pesos - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "fba-cobertura-pesos-clase-a",
@@ -19602,6 +19602,22 @@
       "retornoDiario": 0.125212,
       "retornoAcumulado": 884.850712,
       "flujoEstimado": -170342803.139606,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-cobertura-pesos-clase-a",
+      "fondoId": "845",
+      "claseId": "3550",
+      "nombre": "FBA Cobertura Pesos - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 19878.428,
+      "patrimonio": 23505047345.58,
+      "retornoDiario": 0.229886,
+      "retornoAcumulado": 887.11475,
+      "flujoEstimado": 239243085.250961,
       "origen": "cnv-excel"
     }
   ]

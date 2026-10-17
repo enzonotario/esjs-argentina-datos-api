@@ -2,7 +2,7 @@
   "fondoId": "1574",
   "claseId": "5119",
   "nombre": "Schroder Crecimiento Tres - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "schroder-crecimiento-tres-clase-b",
@@ -7586,6 +7586,22 @@
       "retornoDiario": 0.118149,
       "retornoAcumulado": 84.3078,
       "flujoEstimado": 7406.939066,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-crecimiento-tres-clase-b",
+      "fondoId": "1574",
+      "claseId": "5119",
+      "nombre": "Schroder Crecimiento Tres - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1844.208,
+      "patrimonio": 15982232640.33,
+      "retornoDiario": 0.06131,
+      "retornoAcumulado": 84.4208,
+      "flujoEstimado": -8181752.204332,
       "origen": "cnv-excel"
     }
   ]

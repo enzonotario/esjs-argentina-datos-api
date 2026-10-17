@@ -2,7 +2,7 @@
   "fondoId": "1780",
   "claseId": "6074",
   "nombre": "Allaria Calificado II - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "allaria-calificado-ii-clase-c",
@@ -2722,6 +2722,22 @@
       "retornoDiario": 0.21703,
       "retornoAcumulado": 13.3173,
       "flujoEstimado": -18422.050526,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-calificado-ii-clase-c",
+      "fondoId": "1780",
+      "claseId": "6074",
+      "nombre": "Allaria Calificado II - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1136.018,
+      "patrimonio": 33597550482.14,
+      "retornoDiario": 0.251065,
+      "retornoAcumulado": 13.6018,
+      "flujoEstimado": 4263.091343,
       "origen": "cnv-excel"
     }
   ]

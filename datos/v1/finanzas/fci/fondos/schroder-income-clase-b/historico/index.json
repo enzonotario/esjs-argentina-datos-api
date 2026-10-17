@@ -2,7 +2,7 @@
   "fondoId": "833",
   "claseId": "2364",
   "nombre": "Schroder Income - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "schroder-income-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.080299,
       "retornoAcumulado": 14.923491,
       "flujoEstimado": 4942.176414,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-income-clase-b",
+      "fondoId": "833",
+      "claseId": "2364",
+      "nombre": "Schroder Income - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1196.105,
+      "patrimonio": 114519729.42,
+      "retornoDiario": -0.03201,
+      "retornoAcumulado": 14.886703,
+      "flujoEstimado": 22.37613,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "539",
   "claseId": "1089",
   "nombre": "Consultatio Renta Balanceada - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "consultatio-renta-balanceada-clase-a",
@@ -26193,6 +26193,22 @@
       "patrimonio": null,
       "retornoDiario": 0.028444,
       "retornoAcumulado": 8676.357898,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-renta-balanceada-clase-a",
+      "fondoId": "539",
+      "claseId": "1089",
+      "nombre": "Consultatio Renta Balanceada - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 860823.492,
+      "patrimonio": null,
+      "retornoDiario": 0.471724,
+      "retornoAcumulado": 8717.758079,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

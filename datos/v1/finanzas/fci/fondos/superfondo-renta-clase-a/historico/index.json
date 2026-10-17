@@ -2,7 +2,7 @@
   "fondoId": "149",
   "claseId": "149",
   "nombre": "Superfondo Renta $ - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-clase-a",
@@ -26194,6 +26194,22 @@
       "retornoDiario": 0.211364,
       "retornoAcumulado": 4511.536711,
       "flujoEstimado": -306231040.734192,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-clase-a",
+      "fondoId": "149",
+      "claseId": "149",
+      "nombre": "Superfondo Renta $ - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 141682.41,
+      "patrimonio": 265925240740.59,
+      "retornoDiario": 0.34021,
+      "retornoAcumulado": 4527.225639,
+      "flujoEstimado": 2857861278.62262,
       "origen": "cnv-excel"
     }
   ]

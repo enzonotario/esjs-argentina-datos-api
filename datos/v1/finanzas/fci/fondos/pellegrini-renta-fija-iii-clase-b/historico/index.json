@@ -2,7 +2,7 @@
   "fondoId": "1329",
   "claseId": "3795",
   "nombre": "Pellegrini Renta Fija III - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-fija-iii-clase-b",
@@ -16402,6 +16402,22 @@
       "retornoDiario": 0.029554,
       "retornoAcumulado": 1111.3817,
       "flujoEstimado": -2000006294.854645,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-fija-iii-clase-b",
+      "fondoId": "1329",
+      "claseId": "3795",
+      "nombre": "Pellegrini Renta Fija III - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 12142.651,
+      "patrimonio": 90439194464.12,
+      "retornoDiario": 0.238026,
+      "retornoAcumulado": 1114.2651,
+      "flujoEstimado": -999999060.011139,
       "origen": "cnv-excel"
     }
   ]

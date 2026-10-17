@@ -2,7 +2,7 @@
   "fondoId": "617",
   "claseId": "2257",
   "nombre": "Galileo Renta Fija - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "galileo-renta-fija-clase-d",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -95.066809,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-renta-fija-clase-d",
+      "fondoId": "617",
+      "claseId": "2257",
+      "nombre": "Galileo Renta Fija - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1.792,
+      "patrimonio": null,
+      "retornoDiario": -0.333704,
+      "retornoAcumulado": -95.083272,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

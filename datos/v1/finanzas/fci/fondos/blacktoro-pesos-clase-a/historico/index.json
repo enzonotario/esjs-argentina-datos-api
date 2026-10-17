@@ -2,7 +2,7 @@
   "fondoId": "1901",
   "claseId": "6573",
   "nombre": "Blacktoro Pesos - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "blacktoro-pesos-clase-a",
@@ -1106,6 +1106,22 @@
       "retornoDiario": 0.053202,
       "retornoAcumulado": 4.374,
       "flujoEstimado": 26341744.197541,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "blacktoro-pesos-clase-a",
+      "fondoId": "1901",
+      "claseId": "6573",
+      "nombre": "Blacktoro Pesos - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1044.257,
+      "patrimonio": 624355483.44,
+      "retornoDiario": 0.049533,
+      "retornoAcumulado": 4.4257,
+      "flujoEstimado": 52670262.984312,
       "origen": "cnv-excel"
     }
   ]

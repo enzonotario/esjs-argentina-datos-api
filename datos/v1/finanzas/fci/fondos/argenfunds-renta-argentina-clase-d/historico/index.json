@@ -2,7 +2,7 @@
   "fondoId": "583",
   "claseId": "2034",
   "nombre": "Argenfunds Renta Argentina - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-argentina-clase-d",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0.159795,
       "retornoAcumulado": -90.22915,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-argentina-clase-d",
+      "fondoId": "583",
+      "claseId": "2034",
+      "nombre": "Argenfunds Renta Argentina - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 3.125,
+      "patrimonio": null,
+      "retornoDiario": -0.287173,
+      "retornoAcumulado": -90.25721,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

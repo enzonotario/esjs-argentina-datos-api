@@ -2,7 +2,7 @@
   "fondoId": "1770",
   "claseId": "6041",
   "nombre": "BAVSA Deuda Privada Argentina USD - Clase D Ley N° 27.743",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "bavsa-deuda-privada-argentina-usd-clase-d-ley-n-27743",
@@ -1618,6 +1618,22 @@
       "retornoDiario": 0.038195,
       "retornoAcumulado": 2.6716,
       "flujoEstimado": 0.025392,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-deuda-privada-argentina-usd-clase-d-ley-n-27743",
+      "fondoId": "1770",
+      "claseId": "6041",
+      "nombre": "BAVSA Deuda Privada Argentina USD - Clase D Ley N° 27.743",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1026.235,
+      "patrimonio": 1026234.73,
+      "retornoDiario": -0.046848,
+      "retornoAcumulado": 2.6235,
+      "flujoEstimado": -0.713882,
       "origen": "cnv-excel"
     }
   ]

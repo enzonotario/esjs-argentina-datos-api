@@ -2,7 +2,7 @@
   "fondoId": "852",
   "claseId": "2429",
   "nombre": "Fima Renta Fija Internacional - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "fima-renta-fija-internacional-clase-a",
@@ -25074,6 +25074,22 @@
       "retornoDiario": 0.066108,
       "retornoAcumulado": 21.040036,
       "flujoEstimado": -109.992419,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-fija-internacional-clase-a",
+      "fondoId": "852",
+      "claseId": "2429",
+      "nombre": "Fima Renta Fija Internacional - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1263.987,
+      "patrimonio": 598101.03,
+      "retornoDiario": 0.005538,
+      "retornoAcumulado": 21.046739,
+      "flujoEstimado": -0.331019,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1839",
   "claseId": "6337",
   "nombre": "Wise Capital Foreign Equity - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "wise-capital-foreign-equity-clase-a",
@@ -2082,6 +2082,22 @@
       "retornoDiario": 0.2156,
       "retornoAcumulado": 15.8334,
       "flujoEstimado": 500409.129662,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "wise-capital-foreign-equity-clase-a",
+      "fondoId": "1839",
+      "claseId": "6337",
+      "nombre": "Wise Capital Foreign Equity - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1152.403,
+      "patrimonio": 535619812.65,
+      "retornoDiario": -0.512028,
+      "retornoAcumulado": 15.2403,
+      "flujoEstimado": -385.73116,
       "origen": "cnv-excel"
     }
   ]

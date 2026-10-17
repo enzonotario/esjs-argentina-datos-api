@@ -2,7 +2,7 @@
   "fondoId": "1404",
   "claseId": "4088",
   "nombre": "Schroder Retorno Total Cuatro - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "schroder-retorno-total-cuatro-clase-b",
@@ -13394,6 +13394,22 @@
       "retornoDiario": 0.005649,
       "retornoAcumulado": 4.4412,
       "flujoEstimado": 12.65406,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-retorno-total-cuatro-clase-b",
+      "fondoId": "1404",
+      "claseId": "4088",
+      "nombre": "Schroder Retorno Total Cuatro - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1044.761,
+      "patrimonio": 77939371.31,
+      "retornoDiario": 0.033416,
+      "retornoAcumulado": 4.4761,
+      "flujoEstimado": -88385.255238,
       "origen": "cnv-excel"
     }
   ]

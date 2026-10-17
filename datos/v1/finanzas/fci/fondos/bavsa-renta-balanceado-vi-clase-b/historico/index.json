@@ -2,7 +2,7 @@
   "fondoId": "1793",
   "claseId": "6133",
   "nombre": "BAVSA Renta Balanceado VI - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-vi-clase-b",
@@ -2706,6 +2706,22 @@
       "retornoDiario": 0.238861,
       "retornoAcumulado": 18.3841,
       "flujoEstimado": -8922.826809,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-vi-clase-b",
+      "fondoId": "1793",
+      "claseId": "6133",
+      "nombre": "BAVSA Renta Balanceado VI - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1186.202,
+      "patrimonio": 18760877429.41,
+      "retornoDiario": 0.199436,
+      "retornoAcumulado": 18.6202,
+      "flujoEstimado": 12718.230576,
       "origen": "cnv-excel"
     }
   ]

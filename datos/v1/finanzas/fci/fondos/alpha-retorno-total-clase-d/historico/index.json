@@ -2,7 +2,7 @@
   "fondoId": "184",
   "claseId": "983",
   "nombre": "Alpha Retorno Total - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "alpha-retorno-total-clase-d",
@@ -26210,6 +26210,22 @@
       "retornoDiario": 0.052157,
       "retornoAcumulado": 203.411376,
       "flujoEstimado": 0.005005,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-retorno-total-clase-d",
+      "fondoId": "184",
+      "claseId": "983",
+      "nombre": "Alpha Retorno Total - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 27715.573,
+      "patrimonio": 620.98,
+      "retornoDiario": -0.393383,
+      "retornoAcumulado": 202.217806,
+      "flujoEstimado": -0.007493,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "868",
   "claseId": "2497",
   "nombre": "Dracma Balanceado - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "dracma-balanceado-clase-a",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.227057,
       "retornoAcumulado": 6957.391123,
       "flujoEstimado": -4950623.282269,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "dracma-balanceado-clase-a",
+      "fondoId": "868",
+      "claseId": "2497",
+      "nombre": "Dracma Balanceado - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 132451.954,
+      "patrimonio": 2564731438.83,
+      "retornoDiario": -0.409682,
+      "retornoAcumulado": 6928.478263,
+      "flujoEstimado": -9.944047,
       "origen": "cnv-excel"
     }
   ]

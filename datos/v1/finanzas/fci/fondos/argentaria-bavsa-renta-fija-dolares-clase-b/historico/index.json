@@ -2,7 +2,7 @@
   "fondoId": "1785",
   "claseId": "6096",
   "nombre": "Argentaria BAVSA Renta Fija Dólares - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "argentaria-bavsa-renta-fija-dolares-clase-b",
@@ -2178,6 +2178,22 @@
       "retornoDiario": 0.091014,
       "retornoAcumulado": 3.158517,
       "flujoEstimado": 9645.43994,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argentaria-bavsa-renta-fija-dolares-clase-b",
+      "fondoId": "1785",
+      "claseId": "6096",
+      "nombre": "Argentaria BAVSA Renta Fija Dólares - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1031.195,
+      "patrimonio": 1087330.05,
+      "retornoDiario": -0.034124,
+      "retornoAcumulado": 3.123316,
+      "flujoEstimado": -0.632621,
       "origen": "cnv-excel"
     }
   ]

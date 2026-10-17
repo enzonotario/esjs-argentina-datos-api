@@ -2,7 +2,7 @@
   "fondoId": "654",
   "claseId": "1346",
   "nombre": "Superfondo Renta Fija Dólares - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-dolares-clase-a",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.072143,
       "retornoAcumulado": 32.212046,
       "flujoEstimado": 1803331.216507,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-dolares-clase-a",
+      "fondoId": "654",
+      "claseId": "1346",
+      "nombre": "Superfondo Renta Fija Dólares - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 421.559,
+      "patrimonio": 316221110.5,
+      "retornoDiario": -0.030828,
+      "retornoAcumulado": 32.171288,
+      "flujoEstimado": 3467519.479231,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1887",
   "claseId": "6524",
   "nombre": "Argenfunds Financiamiento Pesos II - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "argenfunds-financiamiento-pesos-ii-clase-b",
@@ -1538,6 +1538,22 @@
       "retornoDiario": -0.001123,
       "retornoAcumulado": -2.0483,
       "flujoEstimado": 0.571942,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-financiamiento-pesos-ii-clase-b",
+      "fondoId": "1887",
+      "claseId": "6524",
+      "nombre": "Argenfunds Financiamiento Pesos II - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 979.507,
+      "patrimonio": 952067.18,
+      "retornoDiario": -0.001021,
+      "retornoAcumulado": -2.0493,
+      "flujoEstimado": -0.399291,
       "origen": "cnv-excel"
     }
   ]

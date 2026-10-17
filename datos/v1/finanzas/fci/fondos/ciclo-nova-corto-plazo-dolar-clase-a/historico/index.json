@@ -2,7 +2,7 @@
   "fondoId": "1600",
   "claseId": "5263",
   "nombre": "Ciclo Nova Corto Plazo Dólar - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-corto-plazo-dolar-clase-a",
@@ -6898,6 +6898,22 @@
       "retornoDiario": 0.002533,
       "retornoAcumulado": 2.6293,
       "flujoEstimado": 1154.989388,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-corto-plazo-dolar-clase-a",
+      "fondoId": "1600",
+      "claseId": "5263",
+      "nombre": "Ciclo Nova Corto Plazo Dólar - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1026.317,
+      "patrimonio": 19056447.58,
+      "retornoDiario": 0.002339,
+      "retornoAcumulado": 2.6317,
+      "flujoEstimado": 44867.319539,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1689",
   "claseId": "5636",
   "nombre": "SBS Renta Mixta V - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "sbs-renta-mixta-v-clase-b",
@@ -4434,6 +4434,22 @@
       "retornoDiario": 0.042884,
       "retornoAcumulado": 8.243361,
       "flujoEstimado": 8.413638,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-mixta-v-clase-b",
+      "fondoId": "1689",
+      "claseId": "5636",
+      "nombre": "SBS Renta Mixta V - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1082.771,
+      "patrimonio": 20223490,
+      "retornoDiario": 0.028269,
+      "retornoAcumulado": 8.27396,
+      "flujoEstimado": -14.056685,
       "origen": "cnv-excel"
     }
   ]

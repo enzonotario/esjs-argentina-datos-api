@@ -2,7 +2,7 @@
   "fondoId": "1486",
   "claseId": "4422",
   "nombre": "Novus Gestion - Clase F",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "novus-gestion-clase-f",
@@ -9778,6 +9778,22 @@
       "retornoDiario": 0.233948,
       "retornoAcumulado": 139.758,
       "flujoEstimado": -6651.291374,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-gestion-clase-f",
+      "fondoId": "1486",
+      "claseId": "4422",
+      "nombre": "Novus Gestion - Clase F",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 2405.012,
+      "patrimonio": 38969476215.61,
+      "retornoDiario": 0.309979,
+      "retornoAcumulado": 140.5012,
+      "flujoEstimado": 1746.27092,
       "origen": "cnv-excel"
     }
   ]

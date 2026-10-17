@@ -2,7 +2,7 @@
   "fondoId": "634",
   "claseId": "1434",
   "nombre": "IAM Renta Crecimiento - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "iam-renta-crecimiento-clase-c",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.082499,
       "retornoAcumulado": 2790.745067,
       "flujoEstimado": -194766976.642546,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-crecimiento-clase-c",
+      "fondoId": "634",
+      "claseId": "1434",
+      "nombre": "IAM Renta Crecimiento - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 118883.972,
+      "patrimonio": 2097278149.66,
+      "retornoDiario": 0.215584,
+      "retornoAcumulado": 2796.977064,
+      "flujoEstimado": -5666868.769608,
       "origen": "cnv-excel"
     }
   ]

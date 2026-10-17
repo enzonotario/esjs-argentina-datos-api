@@ -2,7 +2,7 @@
   "fondoId": "1993",
   "claseId": "6671",
   "nombre": "Puente Renta Fija Pesos IV - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "puente-renta-fija-pesos-iv-clase-b",
@@ -530,6 +530,22 @@
       "retornoDiario": 0.009494,
       "retornoAcumulado": 0.0707,
       "flujoEstimado": 907294348.792326,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "puente-renta-fija-pesos-iv-clase-b",
+      "fondoId": "1993",
+      "claseId": "6671",
+      "nombre": "Puente Renta Fija Pesos IV - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1002.381,
+      "patrimonio": 9500585434.72,
+      "retornoDiario": 0.167282,
+      "retornoAcumulado": 0.2381,
+      "flujoEstimado": 1394.615629,
       "origen": "cnv-excel"
     }
   ]

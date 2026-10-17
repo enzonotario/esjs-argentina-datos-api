@@ -2,7 +2,7 @@
   "fondoId": "864",
   "claseId": "2487",
   "nombre": "Consultatio Gestion II - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-ii-clase-a",
@@ -26257,6 +26257,22 @@
       "patrimonio": null,
       "retornoDiario": 0.047911,
       "retornoAcumulado": 5.8713,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-ii-clase-a",
+      "fondoId": "864",
+      "claseId": "2487",
+      "nombre": "Consultatio Gestion II - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1055.165,
+      "patrimonio": null,
+      "retornoDiario": -0.335124,
+      "retornoAcumulado": 5.5165,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

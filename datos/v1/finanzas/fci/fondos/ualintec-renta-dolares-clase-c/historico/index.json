@@ -2,7 +2,7 @@
   "fondoId": "1563",
   "claseId": "5020",
   "nombre": "Ualintec Renta Dólares - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "ualintec-renta-dolares-clase-c",
@@ -7890,6 +7890,22 @@
       "retornoDiario": 0.055405,
       "retornoAcumulado": 20.8142,
       "flujoEstimado": 0.002743,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-renta-dolares-clase-c",
+      "fondoId": "1563",
+      "claseId": "5020",
+      "nombre": "Ualintec Renta Dólares - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1209.001,
+      "patrimonio": 959026.86,
+      "retornoDiario": 0.071101,
+      "retornoAcumulado": 20.9001,
+      "flujoEstimado": 0.046823,
       "origen": "cnv-excel"
     }
   ]

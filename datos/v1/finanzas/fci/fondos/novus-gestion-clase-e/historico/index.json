@@ -2,7 +2,7 @@
   "fondoId": "1486",
   "claseId": "4421",
   "nombre": "Novus Gestion - Clase E",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "novus-gestion-clase-e",
@@ -9778,6 +9778,22 @@
       "retornoDiario": 0.234,
       "retornoAcumulado": 68.042,
       "flujoEstimado": 0.0004,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-gestion-clase-e",
+      "fondoId": "1486",
+      "claseId": "4421",
+      "nombre": "Novus Gestion - Clase E",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1685.629,
+      "patrimonio": 8155.12,
+      "retornoDiario": 0.309982,
+      "retornoAcumulado": 68.5629,
+      "flujoEstimado": -0.001289,
       "origen": "cnv-excel"
     }
   ]

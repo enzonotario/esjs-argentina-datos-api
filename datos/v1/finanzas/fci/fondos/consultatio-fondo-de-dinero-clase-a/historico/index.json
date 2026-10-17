@@ -2,7 +2,7 @@
   "fondoId": "1281",
   "claseId": "3568",
   "nombre": "Consultatio Fondo de Dinero - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "consultatio-fondo-de-dinero-clase-a",
@@ -19169,6 +19169,22 @@
       "patrimonio": null,
       "retornoDiario": 0.038028,
       "retornoAcumulado": 453.2254,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-fondo-de-dinero-clase-a",
+      "fondoId": "1281",
+      "claseId": "3568",
+      "nombre": "Consultatio Fondo de Dinero - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 5534.356,
+      "patrimonio": null,
+      "retornoDiario": 0.037995,
+      "retornoAcumulado": 453.4356,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

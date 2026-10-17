@@ -2,7 +2,7 @@
   "fondoId": "1807",
   "claseId": "6200",
   "nombre": "Chimpay Pesos Conservador - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "chimpay-pesos-conservador-clase-b",
@@ -2450,6 +2450,22 @@
       "retornoDiario": 0.200978,
       "retornoAcumulado": 19.8557,
       "flujoEstimado": -20893436.107184,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chimpay-pesos-conservador-clase-b",
+      "fondoId": "1807",
+      "claseId": "6200",
+      "nombre": "Chimpay Pesos Conservador - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1201.256,
+      "patrimonio": 5382695343.58,
+      "retornoDiario": 0.225187,
+      "retornoAcumulado": 20.1256,
+      "flujoEstimado": -3203.458694,
       "origen": "cnv-excel"
     }
   ]

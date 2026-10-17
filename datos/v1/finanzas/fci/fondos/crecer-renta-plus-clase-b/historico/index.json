@@ -2,7 +2,7 @@
   "fondoId": "1639",
   "claseId": "5437",
   "nombre": "Crecer Renta Plus - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "crecer-renta-plus-clase-b",
@@ -5778,6 +5778,22 @@
       "retornoDiario": 0.102283,
       "retornoAcumulado": 48.9552,
       "flujoEstimado": -60618413.514114,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-renta-plus-clase-b",
+      "fondoId": "1639",
+      "claseId": "5437",
+      "nombre": "Crecer Renta Plus - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1493.501,
+      "patrimonio": 71496112662.17,
+      "retornoDiario": 0.265113,
+      "retornoAcumulado": 49.3501,
+      "flujoEstimado": 240009.448334,
       "origen": "cnv-excel"
     }
   ]

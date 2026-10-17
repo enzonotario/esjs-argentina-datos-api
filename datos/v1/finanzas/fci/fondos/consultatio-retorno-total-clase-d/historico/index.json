@@ -2,7 +2,7 @@
   "fondoId": "675",
   "claseId": "1414",
   "nombre": "Consultatio Retorno Total - Clase D",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "consultatio-retorno-total-clase-d",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.154787,
       "retornoAcumulado": 3100.349583,
       "flujoEstimado": -0.004177,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-retorno-total-clase-d",
+      "fondoId": "675",
+      "claseId": "1414",
+      "nombre": "Consultatio Retorno Total - Clase D",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 63209.333,
+      "patrimonio": 528401.05,
+      "retornoDiario": 0.21081,
+      "retornoAcumulado": 3107.096226,
+      "flujoEstimado": 0.001068,
       "origen": "cnv-excel"
     }
   ]

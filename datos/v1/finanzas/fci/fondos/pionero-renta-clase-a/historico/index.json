@@ -2,7 +2,7 @@
   "fondoId": "101",
   "claseId": "101",
   "nombre": "Pionero Renta - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "pionero-renta-clase-a",
@@ -25954,6 +25954,22 @@
       "retornoDiario": 0.083757,
       "retornoAcumulado": 6280.901493,
       "flujoEstimado": 170518567.781822,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-clase-a",
+      "fondoId": "101",
+      "claseId": "101",
+      "nombre": "Pionero Renta - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1823998.69,
+      "patrimonio": 23123136213.89,
+      "retornoDiario": 0.272366,
+      "retornoAcumulado": 6298.280889,
+      "flujoEstimado": 100235494.966167,
       "origen": "cnv-excel"
     }
   ]

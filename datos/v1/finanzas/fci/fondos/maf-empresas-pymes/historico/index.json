@@ -2,7 +2,7 @@
   "fondoId": "552",
   "claseId": "1116",
   "nombre": "MAF Empresas Pymes",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "maf-empresas-pymes",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.063408,
       "retornoAcumulado": 1923.344272,
       "flujoEstimado": 104.682785,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-empresas-pymes",
+      "fondoId": "552",
+      "claseId": "1116",
+      "nombre": "MAF Empresas Pymes",
+      "fecha": "2026-10-16",
+      "categoria": "PyMEs",
+      "categoriaKey": null,
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 114799.816,
+      "patrimonio": 57576929376.46,
+      "retornoDiario": 0.114461,
+      "retornoAcumulado": 1925.660215,
+      "flujoEstimado": -45.478043,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "495",
   "claseId": "998",
   "nombre": "Consultatio Renta Fija Argentina F.C.I. - Clase A",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "consultatio-renta-fija-argentina-fci-clase-a",
@@ -26114,6 +26114,22 @@
       "retornoDiario": 0.161898,
       "retornoAcumulado": 2985.820766,
       "flujoEstimado": -10014455.967262,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-renta-fija-argentina-fci-clase-a",
+      "fondoId": "495",
+      "claseId": "998",
+      "nombre": "Consultatio Renta Fija Argentina F.C.I. - Clase A",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 660124.792,
+      "patrimonio": 1565387399.37,
+      "retornoDiario": 0.351098,
+      "retornoAcumulado": 2996.655035,
+      "flujoEstimado": -46034.815822,
       "origen": "cnv-excel"
     }
   ]

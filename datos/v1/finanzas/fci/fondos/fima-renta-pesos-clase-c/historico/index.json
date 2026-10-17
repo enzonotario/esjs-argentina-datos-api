@@ -2,7 +2,7 @@
   "fondoId": "68",
   "claseId": "1242",
   "nombre": "Fima Renta Pesos - Clase C",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "fima-renta-pesos-clase-c",
@@ -26018,6 +26018,22 @@
       "retornoDiario": 0.233187,
       "retornoAcumulado": 3890.449681,
       "flujoEstimado": -92.202698,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-pesos-clase-c",
+      "fondoId": "68",
+      "claseId": "1242",
+      "nombre": "Fima Renta Pesos - Clase C",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 216759.571,
+      "patrimonio": 119492237079.14,
+      "retornoDiario": 0.254783,
+      "retornoAcumulado": 3900.616649,
+      "flujoEstimado": -50000602.115982,
       "origen": "cnv-excel"
     }
   ]

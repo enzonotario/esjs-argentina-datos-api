@@ -2,7 +2,7 @@
   "fondoId": "838",
   "claseId": "2384",
   "nombre": "CMA Acciones - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "cma-acciones-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.24377,
       "retornoAcumulado": 5572.988807,
       "flujoEstimado": 6.829238,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-acciones-clase-b",
+      "fondoId": "838",
+      "claseId": "2384",
+      "nombre": "CMA Acciones - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 78732.643,
+      "patrimonio": 905271095.27,
+      "retornoDiario": 0.197832,
+      "retornoAcumulado": 5584.211807,
+      "flujoEstimado": -1.376501,
       "origen": "cnv-excel"
     }
   ]

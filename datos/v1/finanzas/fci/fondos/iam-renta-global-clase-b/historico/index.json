@@ -2,7 +2,7 @@
   "fondoId": "1349",
   "claseId": "3849",
   "nombre": "IAM Renta Global - Clase B",
-  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
+  "fechaActualizacion": "2026-10-17T02:08:44.000Z",
   "historico": [
     {
       "slug": "iam-renta-global-clase-b",
@@ -15794,6 +15794,22 @@
       "retornoDiario": 0.096567,
       "retornoAcumulado": 3.036485,
       "flujoEstimado": -0.014682,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-global-clase-b",
+      "fondoId": "1349",
+      "claseId": "3849",
+      "nombre": "IAM Renta Global - Clase B",
+      "fecha": "2026-10-16",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1010.524,
+      "patrimonio": 25033.91,
+      "retornoDiario": -1.922868,
+      "retornoAcumulado": 1.05523,
+      "flujoEstimado": 0.006481,
       "origen": "cnv-excel"
     }
   ]
