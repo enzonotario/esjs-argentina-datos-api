@@ -2,7 +2,7 @@
   "fondoId": "743",
   "claseId": "1625",
   "nombre": "First Renta Dolares - Clase A",
-  "fechaActualizacion": "2026-10-15T23:45:58.000Z",
+  "fechaActualizacion": "2026-10-16T18:27:56.000Z",
   "historico": [
     {
       "slug": "first-renta-dolares-clase-a",
@@ -25458,6 +25458,22 @@
       "retornoDiario": 0.086784,
       "retornoAcumulado": 89.577322,
       "flujoEstimado": 4107.000089,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-dolares-clase-a",
+      "fondoId": "743",
+      "claseId": "1625",
+      "nombre": "First Renta Dolares - Clase A",
+      "fecha": "2026-10-15",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1762.116,
+      "patrimonio": 4224973.53,
+      "retornoDiario": -0.005675,
+      "retornoAcumulado": 89.566564,
+      "flujoEstimado": 38665.91644,
       "origen": "cnv-excel"
     }
   ]
