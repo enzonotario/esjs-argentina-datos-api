@@ -54,6 +54,10 @@ export async function extraerPlazoFijo() {
     registrosTuPlazoFijo,
   )
 
+  if (!uala || Array.isArray(uala) || typeof uala.entidad !== 'string') {
+    return enriquecidos
+  }
+
   return [...enriquecidos, uala]
 }
 

@@ -15,6 +15,9 @@ describe('extraerPlazoFijo', () => {
       expect(items.length).toBeGreaterThan(0)
 
       for (const item of items) {
+        expect(Array.isArray(item)).toBe(false)
+        expect(typeof item.entidad).toBe('string')
+        expect(item.entidad.trim()).not.toBe('')
         if (item.logo !== null && item.logo !== undefined) {
           expect(typeof item.logo).toBe('string')
         }
