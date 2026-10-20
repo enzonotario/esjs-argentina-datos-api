@@ -2,7 +2,7 @@
   "fondoId": "891",
   "claseId": "2598",
   "nombre": "Ciclo Nova Renta Fija - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-renta-fija-clase-a",
@@ -26050,6 +26050,22 @@
       "retornoDiario": -0.214956,
       "retornoAcumulado": 1412.638835,
       "flujoEstimado": 182097.397099,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-renta-fija-clase-a",
+      "fondoId": "891",
+      "claseId": "2598",
+      "nombre": "Ciclo Nova Renta Fija - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 12684.828,
+      "patrimonio": 556194581.23,
+      "retornoDiario": -0.052878,
+      "retornoAcumulado": 1411.838986,
+      "flujoEstimado": -638222.222751,
       "origen": "cnv-excel"
     }
   ]

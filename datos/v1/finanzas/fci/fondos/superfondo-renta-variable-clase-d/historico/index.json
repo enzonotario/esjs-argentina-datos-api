@@ -2,7 +2,7 @@
   "fondoId": "51",
   "claseId": "2160",
   "nombre": "Superfondo Renta Variable - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-variable-clase-d",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": -0.40389,
       "retornoAcumulado": 7605.893685,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-variable-clase-d",
+      "fondoId": "51",
+      "claseId": "2160",
+      "nombre": "Superfondo Renta Variable - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 95185.207,
+      "patrimonio": null,
+      "retornoDiario": -1.86782,
+      "retornoAcumulado": 7461.961474,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

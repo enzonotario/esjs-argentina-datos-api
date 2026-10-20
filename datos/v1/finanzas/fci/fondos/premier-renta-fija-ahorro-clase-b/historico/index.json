@@ -2,7 +2,7 @@
   "fondoId": "282",
   "claseId": "785",
   "nombre": "Premier Renta Fija Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "premier-renta-fija-ahorro-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.183877,
       "retornoAcumulado": 2454.64878,
       "flujoEstimado": 460826462.485519,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-fija-ahorro-clase-b",
+      "fondoId": "282",
+      "claseId": "785",
+      "nombre": "Premier Renta Fija Ahorro - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 890288.73,
+      "patrimonio": 70016375756.02,
+      "retornoDiario": 0.064865,
+      "retornoAcumulado": 2456.305854,
+      "flujoEstimado": 223205606.401596,
       "origen": "cnv-excel"
     }
   ]

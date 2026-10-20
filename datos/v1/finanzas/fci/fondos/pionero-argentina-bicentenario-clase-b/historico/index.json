@@ -2,7 +2,7 @@
   "fondoId": "822",
   "claseId": "2301",
   "nombre": "Pionero Argentina Bicentenario - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pionero-argentina-bicentenario-clase-b",
@@ -25922,6 +25922,22 @@
       "retornoDiario": 0.336084,
       "retornoAcumulado": 4574.265034,
       "flujoEstimado": -126.086636,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-argentina-bicentenario-clase-b",
+      "fondoId": "822",
+      "claseId": "2301",
+      "nombre": "Pionero Argentina Bicentenario - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 70504.652,
+      "patrimonio": 29023551128.72,
+      "retornoDiario": -0.005301,
+      "retornoAcumulado": 4574.017228,
+      "flujoEstimado": 241.184795,
       "origen": "cnv-excel"
     }
   ]

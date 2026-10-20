@@ -2,7 +2,7 @@
   "fondoId": "1567",
   "claseId": "5055",
   "nombre": "Toronto Trust Money Market Dólar - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "toronto-trust-money-market-dolar-clase-b",
@@ -7666,6 +7666,22 @@
       "retornoDiario": 0.00186,
       "retornoAcumulado": 2.1636,
       "flujoEstimado": -1905108.011931,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-money-market-dolar-clase-b",
+      "fondoId": "1567",
+      "claseId": "5055",
+      "nombre": "Toronto Trust Money Market Dólar - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1021.707,
+      "patrimonio": 35710697.94,
+      "retornoDiario": 0.00695,
+      "retornoAcumulado": 2.1707,
+      "flujoEstimado": 826034.464378,
       "origen": "cnv-excel"
     }
   ]

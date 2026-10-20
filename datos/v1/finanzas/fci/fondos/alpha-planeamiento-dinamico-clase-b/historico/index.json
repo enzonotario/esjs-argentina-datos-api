@@ -2,7 +2,7 @@
   "fondoId": "186",
   "claseId": "186",
   "nombre": "Alpha Planeamiento Dinamico - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-planeamiento-dinamico-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.099037,
       "retornoAcumulado": 4496.43383,
       "flujoEstimado": -3491235.986363,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-planeamiento-dinamico-clase-b",
+      "fondoId": "186",
+      "claseId": "186",
+      "nombre": "Alpha Planeamiento Dinamico - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 50949110.29,
+      "patrimonio": 4550109314.07,
+      "retornoDiario": -0.74955,
+      "retornoAcumulado": 4461.981259,
+      "flujoEstimado": -39728899.966481,
       "origen": "cnv-excel"
     }
   ]

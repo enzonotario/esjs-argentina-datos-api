@@ -2,7 +2,7 @@
   "fondoId": "595",
   "claseId": "1206",
   "nombre": "Allaria Renta Balanceada I - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "allaria-renta-balanceada-i-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.353326,
       "retornoAcumulado": 4131.671225,
       "flujoEstimado": -8.333742,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-renta-balanceada-i-clase-b",
+      "fondoId": "595",
+      "claseId": "1206",
+      "nombre": "Allaria Renta Balanceada I - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 212566.994,
+      "patrimonio": 13611869771.97,
+      "retornoDiario": -0.095289,
+      "retornoAcumulado": 4127.638891,
+      "flujoEstimado": -74.784184,
       "origen": "cnv-excel"
     }
   ]

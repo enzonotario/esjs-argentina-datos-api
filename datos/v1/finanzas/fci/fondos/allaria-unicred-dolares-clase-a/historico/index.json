@@ -2,7 +2,7 @@
   "fondoId": "1489",
   "claseId": "4441",
   "nombre": "Allaria Unicred Dólares - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "allaria-unicred-dolares-clase-a",
@@ -9730,6 +9730,22 @@
       "retornoDiario": 0.019512,
       "retornoAcumulado": 16.8752,
       "flujoEstimado": 125787.611069,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-unicred-dolares-clase-a",
+      "fondoId": "1489",
+      "claseId": "4441",
+      "nombre": "Allaria Unicred Dólares - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1172.992,
+      "patrimonio": 14969790.08,
+      "retornoDiario": 0.36278,
+      "retornoAcumulado": 17.2992,
+      "flujoEstimado": -446700.974247,
       "origen": "cnv-excel"
     }
   ]

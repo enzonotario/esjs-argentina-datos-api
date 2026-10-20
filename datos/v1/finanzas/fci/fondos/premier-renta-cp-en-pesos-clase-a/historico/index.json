@@ -2,7 +2,7 @@
   "fondoId": "225",
   "claseId": "225",
   "nombre": "Premier Renta CP en Pesos - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "premier-renta-cp-en-pesos-clase-a",
@@ -26194,6 +26194,22 @@
       "retornoDiario": 0.054728,
       "retornoAcumulado": 1417.296491,
       "flujoEstimado": -5212634644.921387,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-cp-en-pesos-clase-a",
+      "fondoId": "225",
+      "claseId": "225",
+      "nombre": "Premier Renta CP en Pesos - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 191018.504,
+      "patrimonio": 390647320668.07,
+      "retornoDiario": 0.164413,
+      "retornoAcumulado": 1419.791126,
+      "flujoEstimado": 1892.173218,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1984",
   "claseId": "6784",
   "nombre": "GMC Multiestrategia - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "gmc-multiestrategia-clase-c",
@@ -162,6 +162,22 @@
       "retornoDiario": 0.052212,
       "retornoAcumulado": 0.689978,
       "flujoEstimado": -376.547666,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gmc-multiestrategia-clase-c",
+      "fondoId": "1984",
+      "claseId": "6784",
+      "nombre": "GMC Multiestrategia - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1009.59,
+      "patrimonio": 1013575795.88,
+      "retornoDiario": 0.162309,
+      "retornoAcumulado": 0.853406,
+      "flujoEstimado": -279.703199,
       "origen": "cnv-excel"
     }
   ]

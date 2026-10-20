@@ -2,7 +2,7 @@
   "fondoId": "1829",
   "claseId": "6288",
   "nombre": "Mills Renta Fija Dólares - Clase XDB1",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "mills-renta-fija-dolares-clase-xdb1",
@@ -1554,6 +1554,22 @@
       "retornoDiario": -0.15903,
       "retornoAcumulado": -2.7519,
       "flujoEstimado": -301.03351,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mills-renta-fija-dolares-clase-xdb1",
+      "fondoId": "1829",
+      "claseId": "6288",
+      "nombre": "Mills Renta Fija Dólares - Clase XDB1",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 967.259,
+      "patrimonio": 4193217.49,
+      "retornoDiario": -0.536977,
+      "retornoAcumulado": -3.2741,
+      "flujoEstimado": -1.635892,
       "origen": "cnv-excel"
     }
   ]

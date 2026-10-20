@@ -2,7 +2,7 @@
   "fondoId": "805",
   "claseId": "2099",
   "nombre": "Fundcorp Long Performance Plus - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fundcorp-long-performance-plus-clase-c",
@@ -25890,6 +25890,22 @@
       "retornoDiario": 0.015558,
       "retornoAcumulado": 18.947595,
       "flujoEstimado": -1.265864,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-long-performance-plus-clase-c",
+      "fondoId": "805",
+      "claseId": "2099",
+      "nombre": "Fundcorp Long Performance Plus - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 675.031,
+      "patrimonio": 3365004.86,
+      "retornoDiario": 0.003852,
+      "retornoAcumulado": 18.952176,
+      "flujoEstimado": 1.215052,
       "origen": "cnv-excel"
     }
   ]

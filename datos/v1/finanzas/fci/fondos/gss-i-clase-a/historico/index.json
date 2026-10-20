@@ -2,7 +2,7 @@
   "fondoId": "387",
   "claseId": "807",
   "nombre": "GSS I - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "gss-i-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.071407,
       "retornoAcumulado": 2112.565034,
       "flujoEstimado": 2.424107,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gss-i-clase-a",
+      "fondoId": "387",
+      "claseId": "807",
+      "nombre": "GSS I - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 312369.652,
+      "patrimonio": 520265399.72,
+      "retornoDiario": 0.183374,
+      "retornoAcumulado": 2116.622309,
+      "flujoEstimado": 1.862846,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "121",
   "claseId": "121",
   "nombre": "Pellegrini Renta",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.05126,
       "retornoAcumulado": 393.055362,
       "flujoEstimado": -5.532355,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta",
+      "fondoId": "121",
+      "claseId": "121",
+      "nombre": "Pellegrini Renta",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 7315,
+      "patrimonio": 62879539.49,
+      "retornoDiario": 0.15366,
+      "retornoAcumulado": 393.812992,
+      "flujoEstimado": 4.47607,
       "origen": "cnv-excel"
     }
   ]

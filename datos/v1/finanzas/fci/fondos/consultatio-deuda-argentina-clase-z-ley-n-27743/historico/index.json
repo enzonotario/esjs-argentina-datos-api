@@ -2,7 +2,7 @@
   "fondoId": "281",
   "claseId": "5042",
   "nombre": "Consultatio Deuda Argentina - Clase Z Ley N° 27.743",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-deuda-argentina-clase-z-ley-n-27743",
@@ -7921,6 +7921,22 @@
       "patrimonio": null,
       "retornoDiario": 0.364297,
       "retornoAcumulado": 145.1687,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-deuda-argentina-clase-z-ley-n-27743",
+      "fondoId": "281",
+      "claseId": "5042",
+      "nombre": "Consultatio Deuda Argentina - Clase Z Ley N° 27.743",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2453.207,
+      "patrimonio": null,
+      "retornoDiario": 0.061998,
+      "retornoAcumulado": 145.3207,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

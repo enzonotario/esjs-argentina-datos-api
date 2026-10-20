@@ -2,7 +2,7 @@
   "fondoId": "1535",
   "claseId": "4618",
   "nombre": "BAVSA Renta Dólares - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-dolares-clase-a",
@@ -4850,6 +4850,22 @@
       "retornoDiario": 0.097511,
       "retornoAcumulado": 6.1429,
       "flujoEstimado": 1635.652803,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-dolares-clase-a",
+      "fondoId": "1535",
+      "claseId": "4618",
+      "nombre": "BAVSA Renta Dólares - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1061.714,
+      "patrimonio": 2267610.61,
+      "retornoDiario": 0.026851,
+      "retornoAcumulado": 6.1714,
+      "flujoEstimado": 155275.07904,
       "origen": "cnv-excel"
     }
   ]

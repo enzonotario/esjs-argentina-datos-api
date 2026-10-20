@@ -2,7 +2,7 @@
   "fondoId": "75",
   "claseId": "75",
   "nombre": "Lombard Renta en Pesos",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "lombard-renta-en-pesos",
@@ -26002,6 +26002,22 @@
       "retornoDiario": 0.057665,
       "retornoAcumulado": 1525.570628,
       "flujoEstimado": 14762825186.970459,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-renta-en-pesos",
+      "fondoId": "75",
+      "claseId": "75",
+      "nombre": "Lombard Renta en Pesos",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 253537.621,
+      "patrimonio": 1673448224973.87,
+      "retornoDiario": 0.169901,
+      "retornoAcumulado": 1528.332487,
+      "flujoEstimado": 66634214930.867676,
       "origen": "cnv-excel"
     }
   ]

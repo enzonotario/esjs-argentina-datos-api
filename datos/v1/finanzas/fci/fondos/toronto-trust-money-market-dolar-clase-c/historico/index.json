@@ -2,7 +2,7 @@
   "fondoId": "1567",
   "claseId": "5056",
   "nombre": "Toronto Trust Money Market Dólar - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "toronto-trust-money-market-dolar-clase-c",
@@ -5714,6 +5714,22 @@
       "retornoDiario": 0.001666,
       "retornoAcumulado": 1.697405,
       "flujoEstimado": -10412.677654,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-money-market-dolar-clase-c",
+      "fondoId": "1567",
+      "claseId": "5056",
+      "nombre": "Toronto Trust Money Market Dólar - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1020.695,
+      "patrimonio": 3997328.28,
+      "retornoDiario": 0.006761,
+      "retornoAcumulado": 1.70428,
+      "flujoEstimado": -81897.907837,
       "origen": "cnv-excel"
     }
   ]

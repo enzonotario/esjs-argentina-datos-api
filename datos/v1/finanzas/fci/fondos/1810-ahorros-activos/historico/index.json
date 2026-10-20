@@ -2,7 +2,7 @@
   "fondoId": "1241",
   "claseId": "3445",
   "nombre": "1810 Ahorros Activos",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "1810-ahorros-activos",
@@ -21586,6 +21586,22 @@
       "retornoDiario": 0.417826,
       "retornoAcumulado": 3081.1606,
       "flujoEstimado": 815395155.578735,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-ahorros-activos",
+      "fondoId": "1241",
+      "claseId": "3445",
+      "nombre": "1810 Ahorros Activos",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 31854.862,
+      "patrimonio": 102010131020.88,
+      "retornoDiario": 0.135976,
+      "retornoAcumulado": 3085.4862,
+      "flujoEstimado": 1102873665.376144,
       "origen": "cnv-excel"
     }
   ]

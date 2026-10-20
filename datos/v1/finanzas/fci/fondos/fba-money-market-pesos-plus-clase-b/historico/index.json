@@ -2,7 +2,7 @@
   "fondoId": "1774",
   "claseId": "6051",
   "nombre": "FBA Money Market Pesos Plus - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fba-money-market-pesos-plus-clase-b",
@@ -3266,6 +3266,22 @@
       "retornoDiario": 0.035276,
       "retornoAcumulado": 11.4479,
       "flujoEstimado": 0.484584,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-money-market-pesos-plus-clase-b",
+      "fondoId": "1774",
+      "claseId": "6051",
+      "nombre": "FBA Money Market Pesos Plus - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1115.613,
+      "patrimonio": 5578064.72,
+      "retornoDiario": 0.101752,
+      "retornoAcumulado": 11.5613,
+      "flujoEstimado": -2.315406,
       "origen": "cnv-excel"
     }
   ]

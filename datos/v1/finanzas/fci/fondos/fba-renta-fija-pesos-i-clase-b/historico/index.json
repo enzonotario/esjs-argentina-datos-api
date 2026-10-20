@@ -2,7 +2,7 @@
   "fondoId": "379",
   "claseId": "682",
   "nombre": "FBA Renta Fija Pesos I - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fba-renta-fija-pesos-i-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.188586,
       "retornoAcumulado": 1276.486315,
       "flujoEstimado": 642491900.340668,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-fija-pesos-i-clase-b",
+      "fondoId": "379",
+      "claseId": "682",
+      "nombre": "FBA Renta Fija Pesos I - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 171019.302,
+      "patrimonio": 80425429256.56,
+      "retornoDiario": 0.070889,
+      "retornoAcumulado": 1277.462093,
+      "flujoEstimado": 1194578329.807632,
       "origen": "cnv-excel"
     }
   ]

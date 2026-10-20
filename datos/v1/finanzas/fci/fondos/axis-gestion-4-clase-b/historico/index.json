@@ -2,7 +2,7 @@
   "fondoId": "1792",
   "claseId": "6128",
   "nombre": "Axis Gestión 4 - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "axis-gestion-4-clase-b",
@@ -850,6 +850,22 @@
       "retornoDiario": 0.493762,
       "retornoAcumulado": 12.2451,
       "flujoEstimado": -283.075339,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-gestion-4-clase-b",
+      "fondoId": "1792",
+      "claseId": "6128",
+      "nombre": "Axis Gestión 4 - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1130.358,
+      "patrimonio": 2367638094.54,
+      "retornoDiario": 0.704441,
+      "retornoAcumulado": 13.0358,
+      "flujoEstimado": -523.424633,
       "origen": "cnv-excel"
     }
   ]

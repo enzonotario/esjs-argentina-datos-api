@@ -2,7 +2,7 @@
   "fondoId": "1234",
   "claseId": "3417",
   "nombre": "Alpha Renta Capital Dólar - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-renta-capital-dolar-clase-b",
@@ -22162,6 +22162,22 @@
       "retornoDiario": -0.890466,
       "retornoAcumulado": 115.6453,
       "flujoEstimado": 37956.246289,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-capital-dolar-clase-b",
+      "fondoId": "1234",
+      "claseId": "3417",
+      "nombre": "Alpha Renta Capital Dólar - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2148.861,
+      "patrimonio": 35522098.01,
+      "retornoDiario": -0.35206,
+      "retornoAcumulado": 114.8861,
+      "flujoEstimado": -168971.041965,
       "origen": "cnv-excel"
     }
   ]

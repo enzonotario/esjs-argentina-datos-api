@@ -2,7 +2,7 @@
   "fondoId": "623",
   "claseId": "1257",
   "nombre": "SBS Renta Dólar Latam - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "sbs-renta-dolar-latam-clase-a",
@@ -25458,6 +25458,22 @@
       "retornoDiario": 0.005154,
       "retornoAcumulado": 25.373209,
       "flujoEstimado": 29811.127044,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-dolar-latam-clase-a",
+      "fondoId": "623",
+      "claseId": "1257",
+      "nombre": "SBS Renta Dólar Latam - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1435.758,
+      "patrimonio": 5104578.64,
+      "retornoDiario": -0.013162,
+      "retornoAcumulado": 25.356707,
+      "flujoEstimado": 23508.258519,
       "origen": "cnv-excel"
     }
   ]

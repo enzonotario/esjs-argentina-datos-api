@@ -2,7 +2,7 @@
   "fondoId": "765",
   "claseId": "2200",
   "nombre": "Pionero Retorno Total - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pionero-retorno-total-clase-c",
@@ -26050,6 +26050,22 @@
       "retornoDiario": 0.084811,
       "retornoAcumulado": 97.329635,
       "flujoEstimado": -0.011293,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-retorno-total-clase-c",
+      "fondoId": "765",
+      "claseId": "2200",
+      "nombre": "Pionero Retorno Total - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1611.782,
+      "patrimonio": 17172.12,
+      "retornoDiario": -0.884047,
+      "retornoAcumulado": 95.585148,
+      "flujoEstimado": 0.01353,
       "origen": "cnv-excel"
     }
   ]

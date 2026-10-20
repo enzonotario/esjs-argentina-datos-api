@@ -2,7 +2,7 @@
   "fondoId": "1461",
   "claseId": "4321",
   "nombre": "Max Dinamico II - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "max-dinamico-ii-clase-d",
@@ -10322,6 +10322,22 @@
       "retornoDiario": 0.084691,
       "retornoAcumulado": 124.536,
       "flujoEstimado": -0.000009,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-dinamico-ii-clase-d",
+      "fondoId": "1461",
+      "claseId": "4321",
+      "nombre": "Max Dinamico II - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2249.85,
+      "patrimonio": 2249.85,
+      "retornoDiario": 0.199968,
+      "retornoAcumulado": 124.985,
+      "flujoEstimado": -0.000001,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1788",
   "claseId": "6101",
   "nombre": "FBA Acciones Globales Dólar I - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fba-acciones-globales-dolar-i-clase-b",
@@ -3138,6 +3138,22 @@
       "retornoDiario": -0.000802,
       "retornoAcumulado": -0.2681,
       "flujoEstimado": -0.020144,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-acciones-globales-dolar-i-clase-b",
+      "fondoId": "1788",
+      "claseId": "6101",
+      "nombre": "FBA Acciones Globales Dólar I - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 997.294,
+      "patrimonio": 99729.44,
+      "retornoDiario": -0.002507,
+      "retornoAcumulado": -0.2706,
+      "flujoEstimado": 0.040279,
       "origen": "cnv-excel"
     }
   ]

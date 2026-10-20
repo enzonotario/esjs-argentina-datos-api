@@ -2,7 +2,7 @@
   "fondoId": "1282",
   "claseId": "3573",
   "nombre": "Consultatio Multimercado I - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-multimercado-i-clase-c",
@@ -19138,6 +19138,22 @@
       "retornoDiario": 0.234964,
       "retornoAcumulado": 79.2988,
       "flujoEstimado": 7916.543163,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-multimercado-i-clase-c",
+      "fondoId": "1282",
+      "claseId": "3573",
+      "nombre": "Consultatio Multimercado I - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1792.926,
+      "patrimonio": 17031075766.24,
+      "retornoDiario": -0.003458,
+      "retornoAcumulado": 79.2926,
+      "flujoEstimado": -6077.273783,
       "origen": "cnv-excel"
     }
   ]

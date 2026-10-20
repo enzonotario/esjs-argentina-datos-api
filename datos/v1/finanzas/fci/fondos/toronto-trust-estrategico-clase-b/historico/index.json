@@ -2,7 +2,7 @@
   "fondoId": "1466",
   "claseId": "6772",
   "nombre": "Toronto Trust Estrategico - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "toronto-trust-estrategico-clase-b",
@@ -306,6 +306,22 @@
       "retornoDiario": 0.214951,
       "retornoAcumulado": 1.9162,
       "flujoEstimado": -977.461521,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-estrategico-clase-b",
+      "fondoId": "1466",
+      "claseId": "6772",
+      "nombre": "Toronto Trust Estrategico - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1018.867,
+      "patrimonio": 26071580721.97,
+      "retornoDiario": -0.028945,
+      "retornoAcumulado": 1.8867,
+      "flujoEstimado": 1050016604.929871,
       "origen": "cnv-excel"
     }
   ]

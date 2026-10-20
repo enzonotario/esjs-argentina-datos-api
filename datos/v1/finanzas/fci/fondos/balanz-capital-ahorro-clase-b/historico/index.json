@@ -2,7 +2,7 @@
   "fondoId": "551",
   "claseId": "1115",
   "nombre": "Balanz Capital Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "balanz-capital-ahorro-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.226633,
       "retornoAcumulado": 2860.629901,
       "flujoEstimado": -99999371.550568,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-capital-ahorro-clase-b",
+      "fondoId": "551",
+      "claseId": "1115",
+      "nombre": "Balanz Capital Ahorro - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 259884.22,
+      "patrimonio": 120779774457.67,
+      "retornoDiario": 0.043335,
+      "retornoAcumulado": 2861.91289,
+      "flujoEstimado": 942999966.620453,
       "origen": "cnv-excel"
     }
   ]

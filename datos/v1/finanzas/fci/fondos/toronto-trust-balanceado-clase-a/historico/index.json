@@ -2,7 +2,7 @@
   "fondoId": "1416",
   "claseId": "4136",
   "nombre": "Toronto Trust Balanceado - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "toronto-trust-balanceado-clase-a",
@@ -4674,6 +4674,22 @@
       "retornoDiario": 0.175911,
       "retornoAcumulado": 44.4746,
       "flujoEstimado": 10603037.18364,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-balanceado-clase-a",
+      "fondoId": "1416",
+      "claseId": "4136",
+      "nombre": "Toronto Trust Balanceado - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1448.012,
+      "patrimonio": 1978947116.16,
+      "retornoDiario": 0.22606,
+      "retornoAcumulado": 44.8012,
+      "flujoEstimado": 180666008.759224,
       "origen": "cnv-excel"
     }
   ]

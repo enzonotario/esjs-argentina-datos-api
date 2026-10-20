@@ -2,7 +2,7 @@
   "fondoId": "631",
   "claseId": "1280",
   "nombre": "Superfondo Combinado - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "superfondo-combinado-clase-c",
@@ -26194,6 +26194,22 @@
       "retornoDiario": 0.170908,
       "retornoAcumulado": 5004.812667,
       "flujoEstimado": -355588.137431,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-combinado-clase-c",
+      "fondoId": "631",
+      "claseId": "1280",
+      "nombre": "Superfondo Combinado - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 65006.878,
+      "patrimonio": 1391647145.52,
+      "retornoDiario": -0.184749,
+      "retornoAcumulado": 4995.381565,
+      "flujoEstimado": 2.7485,
       "origen": "cnv-excel"
     }
   ]

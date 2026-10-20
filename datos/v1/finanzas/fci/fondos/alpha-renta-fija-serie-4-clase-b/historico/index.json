@@ -2,7 +2,7 @@
   "fondoId": "296",
   "claseId": "296",
   "nombre": "Alpha Renta Fija Serie 4 - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-renta-fija-serie-4-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.355578,
       "retornoAcumulado": 2671.004646,
       "flujoEstimado": -46832255.631062,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-fija-serie-4-clase-b",
+      "fondoId": "296",
+      "claseId": "296",
+      "nombre": "Alpha Renta Fija Serie 4 - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 19583268.813,
+      "patrimonio": 24862445309.04,
+      "retornoDiario": 0.023649,
+      "retornoAcumulado": 2671.659958,
+      "flujoEstimado": -25445291.019104,
       "origen": "cnv-excel"
     }
   ]

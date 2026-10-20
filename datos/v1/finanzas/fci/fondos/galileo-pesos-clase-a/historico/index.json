@@ -2,7 +2,7 @@
   "fondoId": "841",
   "claseId": "2398",
   "nombre": "Galileo Pesos - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "galileo-pesos-clase-a",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.048499,
       "retornoAcumulado": 1288.943009,
       "flujoEstimado": 1442925662.865458,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-pesos-clase-a",
+      "fondoId": "841",
+      "claseId": "2398",
+      "nombre": "Galileo Pesos - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 15394.443,
+      "patrimonio": 10748540378.26,
+      "retornoDiario": 0.141283,
+      "retornoAcumulado": 1290.905345,
+      "flujoEstimado": -1664124619.826027,
       "origen": "cnv-excel"
     }
   ]

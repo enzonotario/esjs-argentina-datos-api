@@ -2,7 +2,7 @@
   "fondoId": "1298",
   "claseId": "3682",
   "nombre": "First Renta Mixta VI - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "first-renta-mixta-vi-clase-d",
@@ -17826,6 +17826,22 @@
       "retornoDiario": 0.371041,
       "retornoAcumulado": 1341.5863,
       "flujoEstimado": 6.90519,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-mixta-vi-clase-d",
+      "fondoId": "1298",
+      "claseId": "3682",
+      "nombre": "First Renta Mixta VI - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14439.692,
+      "patrimonio": 642505181.94,
+      "retornoDiario": 0.165297,
+      "retornoAcumulado": 1343.9692,
+      "flujoEstimado": -11.894039,
       "origen": "cnv-excel"
     }
   ]

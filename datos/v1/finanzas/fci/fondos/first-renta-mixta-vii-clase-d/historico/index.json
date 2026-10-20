@@ -2,7 +2,7 @@
   "fondoId": "1305",
   "claseId": "3709",
   "nombre": "First Renta Mixta VII - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "first-renta-mixta-vii-clase-d",
@@ -17410,6 +17410,22 @@
       "retornoDiario": 0.523822,
       "retornoAcumulado": 3570.2893,
       "flujoEstimado": 72286743.875417,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-mixta-vii-clase-d",
+      "fondoId": "1305",
+      "claseId": "3709",
+      "nombre": "First Renta Mixta VII - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 36649.72,
+      "patrimonio": 2520080926.09,
+      "retornoDiario": -0.144874,
+      "retornoAcumulado": 3564.972,
+      "flujoEstimado": -24.493939,
       "origen": "cnv-excel"
     }
   ]

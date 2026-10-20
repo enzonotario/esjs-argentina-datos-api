@@ -2,7 +2,7 @@
   "fondoId": "1819",
   "claseId": "6253",
   "nombre": "Delta Ahorro Dolares - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-ahorro-dolares-clase-b",
@@ -2258,6 +2258,22 @@
       "retornoDiario": -0.0151,
       "retornoAcumulado": 2.6351,
       "flujoEstimado": 1.012874,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-ahorro-dolares-clase-b",
+      "fondoId": "1819",
+      "claseId": "6253",
+      "nombre": "Delta Ahorro Dolares - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1026.75,
+      "patrimonio": 2729607.59,
+      "retornoDiario": 0.038876,
+      "retornoAcumulado": 2.675,
+      "flujoEstimado": -1.530464,
       "origen": "cnv-excel"
     }
   ]

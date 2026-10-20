@@ -2,7 +2,7 @@
   "fondoId": "224",
   "claseId": "850",
   "nombre": "Alpha Mercosur - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-mercosur-clase-a",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.032392,
       "retornoAcumulado": 6595.745475,
       "flujoEstimado": 14.736403,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-mercosur-clase-a",
+      "fondoId": "224",
+      "claseId": "850",
+      "nombre": "Alpha Mercosur - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 39491424.591,
+      "patrimonio": 5943689225.29,
+      "retornoDiario": -1.343726,
+      "retornoAcumulado": 6505.772991,
+      "flujoEstimado": -9.397414,
       "origen": "cnv-excel"
     }
   ]

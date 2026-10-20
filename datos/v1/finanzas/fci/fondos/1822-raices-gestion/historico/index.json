@@ -2,7 +2,7 @@
   "fondoId": "1321",
   "claseId": "3764",
   "nombre": "1822 Raices Gestion",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "1822-raices-gestion",
@@ -16770,6 +16770,22 @@
       "retornoDiario": 0.231997,
       "retornoAcumulado": 1662.210776,
       "flujoEstimado": 153.688194,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1822-raices-gestion",
+      "fondoId": "1321",
+      "claseId": "3764",
+      "nombre": "1822 Raices Gestion",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 17432.967,
+      "patrimonio": 12202693152.8,
+      "retornoDiario": -0.224123,
+      "retornoAcumulado": 1658.261262,
+      "flujoEstimado": -220.350954,
       "origen": "cnv-excel"
     }
   ]

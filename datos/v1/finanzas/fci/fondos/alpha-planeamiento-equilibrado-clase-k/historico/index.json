@@ -2,7 +2,7 @@
   "fondoId": "185",
   "claseId": "3653",
   "nombre": "Alpha Planeamiento Equilibrado - Clase K",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-planeamiento-equilibrado-clase-k",
@@ -16690,6 +16690,22 @@
       "retornoDiario": 0.24688,
       "retornoAcumulado": 345.6044,
       "flujoEstimado": -0.948919,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-planeamiento-equilibrado-clase-k",
+      "fondoId": "185",
+      "claseId": "3653",
+      "nombre": "Alpha Planeamiento Equilibrado - Clase K",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 4445.473,
+      "patrimonio": 7371682.06,
+      "retornoDiario": -0.237228,
+      "retornoAcumulado": 344.5473,
+      "flujoEstimado": 0.906119,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1450",
   "claseId": "4279",
   "nombre": "Allaria Agro - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "allaria-agro-clase-a",
@@ -11074,6 +11074,22 @@
       "retornoDiario": 0.107891,
       "retornoAcumulado": 72.583,
       "flujoEstimado": -685543.584036,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-agro-clase-a",
+      "fondoId": "1450",
+      "claseId": "4279",
+      "nombre": "Allaria Agro - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1713.184,
+      "patrimonio": 439103964.49,
+      "retornoDiario": -0.732749,
+      "retornoAcumulado": 71.3184,
+      "flujoEstimado": -828724.903942,
       "origen": "cnv-excel"
     }
   ]

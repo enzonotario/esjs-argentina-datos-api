@@ -2,7 +2,7 @@
   "fondoId": "1724",
   "claseId": "5807",
   "nombre": "Alpha Renta Fija Corporativa Dólar - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-renta-fija-corporativa-dolar-clase-c",
@@ -4082,6 +4082,22 @@
       "retornoDiario": 0.179724,
       "retornoAcumulado": 5.573,
       "flujoEstimado": 3.585968,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-fija-corporativa-dolar-clase-c",
+      "fondoId": "1724",
+      "claseId": "5807",
+      "nombre": "Alpha Renta Fija Corporativa Dólar - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1054.631,
+      "patrimonio": 9786384.17,
+      "retornoDiario": -0.104099,
+      "retornoAcumulado": 5.4631,
+      "flujoEstimado": -4.321274,
       "origen": "cnv-excel"
     }
   ]

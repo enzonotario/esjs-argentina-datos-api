@@ -2,7 +2,7 @@
   "fondoId": "1422",
   "claseId": "4154",
   "nombre": "IAM Renta Mixta - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "iam-renta-mixta-clase-b",
@@ -12434,6 +12434,22 @@
       "retornoDiario": -0.427981,
       "retornoAcumulado": 447.1815,
       "flujoEstimado": 1199933.891851,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-mixta-clase-b",
+      "fondoId": "1422",
+      "claseId": "4154",
+      "nombre": "IAM Renta Mixta - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 5479.123,
+      "patrimonio": 996421551.46,
+      "retornoDiario": 0.133557,
+      "retornoAcumulado": 447.9123,
+      "flujoEstimado": 4.337852,
       "origen": "cnv-excel"
     }
   ]

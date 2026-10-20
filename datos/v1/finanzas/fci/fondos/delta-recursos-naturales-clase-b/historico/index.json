@@ -2,7 +2,7 @@
   "fondoId": "402",
   "claseId": "726",
   "nombre": "Delta Recursos Naturales - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-recursos-naturales-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.611419,
       "retornoAcumulado": 6843.182874,
       "flujoEstimado": 41.606197,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-recursos-naturales-clase-b",
+      "fondoId": "402",
+      "claseId": "726",
+      "nombre": "Delta Recursos Naturales - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1827370.852,
+      "patrimonio": 8493856371.58,
+      "retornoDiario": -1.889548,
+      "retornoAcumulado": 6711.988112,
+      "flujoEstimado": 15.69286,
       "origen": "cnv-excel"
     }
   ]

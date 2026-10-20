@@ -2,7 +2,7 @@
   "fondoId": "677",
   "claseId": "6231",
   "nombre": "Pionero Ahorro Dólares - Clase H",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pionero-ahorro-dolares-clase-h",
@@ -2322,6 +2322,22 @@
       "retornoDiario": 0.033521,
       "retornoAcumulado": 2.632074,
       "flujoEstimado": 1.35397,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-ahorro-dolares-clase-h",
+      "fondoId": "677",
+      "claseId": "6231",
+      "nombre": "Pionero Ahorro Dólares - Clase H",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1132.834,
+      "patrimonio": 7490456.82,
+      "retornoDiario": -0.101941,
+      "retornoAcumulado": 2.52745,
+      "flujoEstimado": -1.419963,
       "origen": "cnv-excel"
     }
   ]

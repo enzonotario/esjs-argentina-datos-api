@@ -2,7 +2,7 @@
   "fondoId": "1408",
   "claseId": "4106",
   "nombre": "Pionero Soja - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pionero-soja-clase-b",
@@ -13250,6 +13250,22 @@
       "retornoDiario": -0.179901,
       "retornoAcumulado": 64.411941,
       "flujoEstimado": -250.787243,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-soja-clase-b",
+      "fondoId": "1408",
+      "claseId": "4106",
+      "nombre": "Pionero Soja - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1633.09,
+      "patrimonio": 1277921949.05,
+      "retornoDiario": -0.666767,
+      "retornoAcumulado": 63.315696,
+      "flujoEstimado": 140.414897,
       "origen": "cnv-excel"
     }
   ]

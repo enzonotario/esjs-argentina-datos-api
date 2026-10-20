@@ -2,7 +2,7 @@
   "fondoId": "1946",
   "claseId": "6653",
   "nombre": "Puente Retorno Pesos - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "puente-retorno-pesos-clase-b",
@@ -626,6 +626,22 @@
       "retornoDiario": 0.35181,
       "retornoAcumulado": 5.4547,
       "flujoEstimado": 167184667.262667,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "puente-retorno-pesos-clase-b",
+      "fondoId": "1946",
+      "claseId": "6653",
+      "nombre": "Puente Retorno Pesos - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1054.572,
+      "patrimonio": 10201954299.13,
+      "retornoDiario": 0.002371,
+      "retornoAcumulado": 5.4572,
+      "flujoEstimado": 59505512.540855,
       "origen": "cnv-excel"
     }
   ]

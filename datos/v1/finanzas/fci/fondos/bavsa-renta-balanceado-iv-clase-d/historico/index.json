@@ -2,7 +2,7 @@
   "fondoId": "1481",
   "claseId": "4392",
   "nombre": "BAVSA Renta Balanceado IV - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-iv-clase-d",
@@ -9378,6 +9378,22 @@
       "retornoDiario": 0.070521,
       "retornoAcumulado": 41.759,
       "flujoEstimado": 1078.557318,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-iv-clase-d",
+      "fondoId": "1481",
+      "claseId": "4392",
+      "nombre": "BAVSA Renta Balanceado IV - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1420.674,
+      "patrimonio": 4773712298.87,
+      "retornoDiario": 0.217552,
+      "retornoAcumulado": 42.0674,
+      "flujoEstimado": 1008.234622,
       "origen": "cnv-excel"
     }
   ]

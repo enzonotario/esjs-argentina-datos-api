@@ -2,7 +2,7 @@
   "fondoId": "875",
   "claseId": "2514",
   "nombre": "Valiant Renta Fija Dolares - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "valiant-renta-fija-dolares-clase-b",
@@ -26018,6 +26018,22 @@
       "retornoDiario": 0.116674,
       "retornoAcumulado": -8.206007,
       "flujoEstimado": 0.000138,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-fija-dolares-clase-b",
+      "fondoId": "875",
+      "claseId": "2514",
+      "nombre": "Valiant Renta Fija Dolares - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 919.124,
+      "patrimonio": 15799.21,
+      "retornoDiario": 0.012078,
+      "retornoAcumulado": -8.19492,
+      "flujoEstimado": 0.002002,
       "origen": "cnv-excel"
     }
   ]

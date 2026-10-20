@@ -2,7 +2,7 @@
   "fondoId": "1302",
   "claseId": "3702",
   "nombre": "Adcap Balanceado IV - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-iv-clase-c",
@@ -17330,6 +17330,22 @@
       "retornoDiario": 0.338186,
       "retornoAcumulado": 8364.72,
       "flujoEstimado": 3324.147526,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-iv-clase-c",
+      "fondoId": "1302",
+      "claseId": "3702",
+      "nombre": "Adcap Balanceado IV - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 84643.6,
+      "patrimonio": 30052727150.8,
+      "retornoDiario": -0.004253,
+      "retornoAcumulado": 8364.36,
+      "flujoEstimado": -4904.92395,
       "origen": "cnv-excel"
     }
   ]

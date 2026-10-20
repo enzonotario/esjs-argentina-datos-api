@@ -2,7 +2,7 @@
   "fondoId": "855",
   "claseId": "2450",
   "nombre": "Valiant Renta Variable - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "valiant-renta-variable-clase-a",
@@ -26034,6 +26034,22 @@
       "retornoDiario": -0.353056,
       "retornoAcumulado": 3123.070238,
       "flujoEstimado": 2.263706,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-variable-clase-a",
+      "fondoId": "855",
+      "claseId": "2450",
+      "nombre": "Valiant Renta Variable - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 36752.001,
+      "patrimonio": 86182142.68,
+      "retornoDiario": -1.105933,
+      "retornoAcumulado": 3087.42523,
+      "flujoEstimado": -2.544604,
       "origen": "cnv-excel"
     }
   ]

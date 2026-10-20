@@ -2,7 +2,7 @@
   "fondoId": "1",
   "claseId": "1",
   "nombre": "Blacktoro Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "blacktoro-ahorro-clase-b",
@@ -24306,6 +24306,22 @@
       "retornoDiario": 0.3045,
       "retornoAcumulado": 2454.767447,
       "flujoEstimado": -0.07428,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "blacktoro-ahorro-clase-b",
+      "fondoId": "1",
+      "claseId": "1",
+      "nombre": "Blacktoro Ahorro - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 240936.307,
+      "patrimonio": 4970739843.45,
+      "retornoDiario": 0.077315,
+      "retornoAcumulado": 2456.742666,
+      "flujoEstimado": 4.922378,
       "origen": "cnv-excel"
     }
   ]

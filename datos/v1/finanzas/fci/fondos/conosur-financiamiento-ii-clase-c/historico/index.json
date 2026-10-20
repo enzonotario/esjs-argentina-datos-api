@@ -2,7 +2,7 @@
   "fondoId": "1973",
   "claseId": "6585",
   "nombre": "ConoSur Financiamiento II - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "conosur-financiamiento-ii-clase-c",
@@ -562,6 +562,22 @@
       "retornoDiario": 0.050107,
       "retornoAcumulado": 1.2338,
       "flujoEstimado": 0.019233,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-financiamiento-ii-clase-c",
+      "fondoId": "1973",
+      "claseId": "6585",
+      "nombre": "ConoSur Financiamiento II - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1018.029,
+      "patrimonio": 61987.1,
+      "retornoDiario": 0.562164,
+      "retornoAcumulado": 1.8029,
+      "flujoEstimado": -0.00115,
       "origen": "cnv-excel"
     }
   ]

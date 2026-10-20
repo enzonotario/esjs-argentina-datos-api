@@ -2,7 +2,7 @@
   "fondoId": "1913",
   "claseId": "6607",
   "nombre": "Blacktoro Total Return - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "blacktoro-total-return-clase-a",
@@ -882,6 +882,22 @@
       "retornoDiario": 0.36027,
       "retornoAcumulado": 5.2436,
       "flujoEstimado": -4.464723,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "blacktoro-total-return-clase-a",
+      "fondoId": "1913",
+      "claseId": "6607",
+      "nombre": "Blacktoro Total Return - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1053.632,
+      "patrimonio": 107456424.48,
+      "retornoDiario": 0.113641,
+      "retornoAcumulado": 5.3632,
+      "flujoEstimado": -59999961.499256,
       "origen": "cnv-excel"
     }
   ]

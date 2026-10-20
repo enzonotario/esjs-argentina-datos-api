@@ -2,7 +2,7 @@
   "fondoId": "395",
   "claseId": "783",
   "nombre": "Premier Renta Plus en Pesos - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "premier-renta-plus-en-pesos-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": 0.15904,
       "retornoAcumulado": 1686.798244,
       "flujoEstimado": 3838211.676026,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-plus-en-pesos-clase-b",
+      "fondoId": "395",
+      "claseId": "783",
+      "nombre": "Premier Renta Plus en Pesos - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 188030.573,
+      "patrimonio": 3786166253.09,
+      "retornoDiario": 0.093777,
+      "retornoAcumulado": 1688.473857,
+      "flujoEstimado": -8830829.132399,
       "origen": "cnv-excel"
     }
   ]

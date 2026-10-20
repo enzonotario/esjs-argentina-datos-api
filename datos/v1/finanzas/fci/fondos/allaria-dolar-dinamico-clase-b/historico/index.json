@@ -2,7 +2,7 @@
   "fondoId": "1435",
   "claseId": "4207",
   "nombre": "Allaria Dólar Dinámico - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-dinamico-clase-b",
@@ -12002,6 +12002,22 @@
       "retornoDiario": 0.045431,
       "retornoAcumulado": 23.9799,
       "flujoEstimado": 4300.055595,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-dinamico-clase-b",
+      "fondoId": "1435",
+      "claseId": "4207",
+      "nombre": "Allaria Dólar Dinámico - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1239.877,
+      "patrimonio": 72803584.18,
+      "retornoDiario": 0.006291,
+      "retornoAcumulado": 23.9877,
+      "flujoEstimado": 623420.831571,
       "origen": "cnv-excel"
     }
   ]

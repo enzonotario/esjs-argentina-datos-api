@@ -2,7 +2,7 @@
   "fondoId": "622",
   "claseId": "1256",
   "nombre": "Adcap Acciones - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "adcap-acciones-clase-b",
@@ -26130,6 +26130,22 @@
       "retornoDiario": 0.07333,
       "retornoAcumulado": 6076.03479,
       "flujoEstimado": -34.700232,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-acciones-clase-b",
+      "fondoId": "622",
+      "claseId": "1256",
+      "nombre": "Adcap Acciones - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 204325.302,
+      "patrimonio": 12565636735.6,
+      "retornoDiario": -1.662276,
+      "retornoAcumulado": 5973.372052,
+      "flujoEstimado": 22.796062,
       "origen": "cnv-excel"
     }
   ]

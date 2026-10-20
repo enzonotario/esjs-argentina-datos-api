@@ -2,7 +2,7 @@
   "fondoId": "1796",
   "claseId": "6150",
   "nombre": "Tandem Global - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "tandem-global-clase-d",
@@ -2770,6 +2770,22 @@
       "retornoDiario": -0.220001,
       "retornoAcumulado": 3.9973,
       "flujoEstimado": 2493.285178,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tandem-global-clase-d",
+      "fondoId": "1796",
+      "claseId": "6150",
+      "nombre": "Tandem Global - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1039.03,
+      "patrimonio": 2867598.24,
+      "retornoDiario": -0.090675,
+      "retornoAcumulado": 3.903,
+      "flujoEstimado": 24999.505696,
       "origen": "cnv-excel"
     }
   ]

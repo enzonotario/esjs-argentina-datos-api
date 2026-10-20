@@ -2,7 +2,7 @@
   "fondoId": "559",
   "claseId": "1131",
   "nombre": "Pellegrini Crecimiento - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pellegrini-crecimiento-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.297734,
       "retornoAcumulado": 4628.750763,
       "flujoEstimado": 24997842.244568,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-crecimiento-clase-b",
+      "fondoId": "559",
+      "claseId": "1131",
+      "nombre": "Pellegrini Crecimiento - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 235574.69,
+      "patrimonio": 334957294849.83,
+      "retornoDiario": 0.047921,
+      "retornoAcumulado": 4631.016814,
+      "flujoEstimado": 69999801.857727,
       "origen": "cnv-excel"
     }
   ]

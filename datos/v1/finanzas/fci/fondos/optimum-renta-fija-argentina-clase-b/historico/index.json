@@ -2,7 +2,7 @@
   "fondoId": "398",
   "claseId": "2124",
   "nombre": "Optimum Renta Fija Argentina - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "optimum-renta-fija-argentina-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.006134,
       "retornoAcumulado": 2097.414354,
       "flujoEstimado": -0.00082,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "optimum-renta-fija-argentina-clase-b",
+      "fondoId": "398",
+      "claseId": "2124",
+      "nombre": "Optimum Renta Fija Argentina - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 202116.6,
+      "patrimonio": 16774.14,
+      "retornoDiario": -0.01855,
+      "retornoAcumulado": 2097.006729,
+      "flujoEstimado": 0.00218,
       "origen": "cnv-excel"
     }
   ]

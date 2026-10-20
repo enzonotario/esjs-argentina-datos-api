@@ -2,7 +2,7 @@
   "fondoId": "191",
   "claseId": "5788",
   "nombre": "Fima Renta Plus - Clase E",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fima-renta-plus-clase-e",
@@ -4290,6 +4290,22 @@
       "retornoDiario": 0.299387,
       "retornoAcumulado": 72.64794,
       "flujoEstimado": 0.042711,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-plus-clase-e",
+      "fondoId": "191",
+      "claseId": "5788",
+      "nombre": "Fima Renta Plus - Clase E",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1227884.28,
+      "patrimonio": 20402193.67,
+      "retornoDiario": 0.066258,
+      "retornoAcumulado": 72.762333,
+      "flujoEstimado": 0.005404,
       "origen": "cnv-excel"
     }
   ]

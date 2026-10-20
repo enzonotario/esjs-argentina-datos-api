@@ -2,7 +2,7 @@
   "fondoId": "675",
   "claseId": "1413",
   "nombre": "Consultatio Retorno Total - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-retorno-total-clase-c",
@@ -26257,6 +26257,22 @@
       "patrimonio": null,
       "retornoDiario": 0.216348,
       "retornoAcumulado": 576.134357,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-retorno-total-clase-c",
+      "fondoId": "675",
+      "claseId": "1413",
+      "nombre": "Consultatio Retorno Total - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 13949.965,
+      "patrimonio": null,
+      "retornoDiario": 0.15083,
+      "retornoAcumulado": 577.154169,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

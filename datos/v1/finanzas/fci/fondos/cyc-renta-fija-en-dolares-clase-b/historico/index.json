@@ -2,7 +2,7 @@
   "fondoId": "813",
   "claseId": "2208",
   "nombre": "CYC Renta Fija en Dolares - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "cyc-renta-fija-en-dolares-clase-b",
@@ -24962,6 +24962,22 @@
       "retornoDiario": 0.373625,
       "retornoAcumulado": 4300.383753,
       "flujoEstimado": -0.811633,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-renta-fija-en-dolares-clase-b",
+      "fondoId": "813",
+      "claseId": "2208",
+      "nombre": "CYC Renta Fija en Dolares - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 104094.648,
+      "patrimonio": 538679475.64,
+      "retornoDiario": 0.209653,
+      "retornoAcumulado": 4309.609291,
+      "flujoEstimado": 0.458519,
       "origen": "cnv-excel"
     }
   ]

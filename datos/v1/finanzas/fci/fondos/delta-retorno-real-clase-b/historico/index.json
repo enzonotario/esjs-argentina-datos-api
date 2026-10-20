@@ -2,7 +2,7 @@
   "fondoId": "792",
   "claseId": "1842",
   "nombre": "Delta Retorno Real - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-retorno-real-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.29429,
       "retornoAcumulado": 4763.182319,
       "flujoEstimado": 112.316542,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-retorno-real-clase-b",
+      "fondoId": "792",
+      "claseId": "1842",
+      "nombre": "Delta Retorno Real - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 125216.655,
+      "patrimonio": 14907567793.18,
+      "retornoDiario": -0.054677,
+      "retornoAcumulado": 4760.523283,
+      "flujoEstimado": 6514223.258223,
       "origen": "cnv-excel"
     }
   ]

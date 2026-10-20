@@ -2,7 +2,7 @@
   "fondoId": "1776",
   "claseId": "6061",
   "nombre": "Consultatio Multimercado VII - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-multimercado-vii-clase-b",
@@ -3009,6 +3009,22 @@
       "patrimonio": null,
       "retornoDiario": 0.04791,
       "retornoAcumulado": 5.8746,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-multimercado-vii-clase-b",
+      "fondoId": "1776",
+      "claseId": "6061",
+      "nombre": "Consultatio Multimercado VII - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1060.296,
+      "patrimonio": null,
+      "retornoDiario": 0.1464,
+      "retornoAcumulado": 6.0296,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

@@ -2,7 +2,7 @@
   "fondoId": "851",
   "claseId": "2427",
   "nombre": "Fima Acciones Latinoamerica - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fima-acciones-latinoamerica-clase-b",
@@ -24146,6 +24146,22 @@
       "retornoDiario": 1.099704,
       "retornoAcumulado": 63.949381,
       "flujoEstimado": -0.071878,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-acciones-latinoamerica-clase-b",
+      "fondoId": "851",
+      "claseId": "2427",
+      "nombre": "Fima Acciones Latinoamerica - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1840.82,
+      "patrimonio": 260494.39,
+      "retornoDiario": -0.023082,
+      "retornoAcumulado": 63.911538,
+      "flujoEstimado": 0.011194,
       "origen": "cnv-excel"
     }
   ]

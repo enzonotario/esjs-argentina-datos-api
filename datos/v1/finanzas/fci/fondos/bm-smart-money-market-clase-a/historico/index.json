@@ -2,7 +2,7 @@
   "fondoId": "1239",
   "claseId": "3442",
   "nombre": "BM Smart Money Market - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "bm-smart-money-market-clase-a",
@@ -21826,6 +21826,22 @@
       "retornoDiario": 0.054741,
       "retornoAcumulado": 936.7161,
       "flujoEstimado": 73181585.154544,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bm-smart-money-market-clase-a",
+      "fondoId": "1239",
+      "claseId": "3442",
+      "nombre": "BM Smart Money Market - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 10382.287,
+      "patrimonio": 2869150054.32,
+      "retornoDiario": 0.145903,
+      "retornoAcumulado": 938.2287,
+      "flujoEstimado": -19800273.289744,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1343",
   "claseId": "4883",
   "nombre": "Schroder Liquidez - Clase D Ley N° 27.743",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "schroder-liquidez-clase-d-ley-n-27743",
@@ -8050,6 +8050,22 @@
       "retornoDiario": 0.050476,
       "retornoAcumulado": 66.4994,
       "flujoEstimado": -0.980492,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-liquidez-clase-d-ley-n-27743",
+      "fondoId": "1343",
+      "claseId": "4883",
+      "nombre": "Schroder Liquidez - Clase D Ley N° 27.743",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1667.557,
+      "patrimonio": 3129832.5,
+      "retornoDiario": 0.153934,
+      "retornoAcumulado": 66.7557,
+      "flujoEstimado": 0.639574,
       "origen": "cnv-excel"
     }
   ]

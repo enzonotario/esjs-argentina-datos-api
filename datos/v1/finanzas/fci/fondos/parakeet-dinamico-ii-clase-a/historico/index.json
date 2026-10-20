@@ -2,7 +2,7 @@
   "fondoId": "1695",
   "claseId": "5659",
   "nombre": "Parakeet Dinámico II - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "parakeet-dinamico-ii-clase-a",
@@ -4498,6 +4498,22 @@
       "retornoDiario": 0.320662,
       "retornoAcumulado": 6.9338,
       "flujoEstimado": 0.001811,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-dinamico-ii-clase-a",
+      "fondoId": "1695",
+      "claseId": "5659",
+      "nombre": "Parakeet Dinámico II - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1070.775,
+      "patrimonio": 35083.13,
+      "retornoDiario": 0.134382,
+      "retornoAcumulado": 7.0775,
+      "flujoEstimado": -0.002145,
       "origen": "cnv-excel"
     }
   ]

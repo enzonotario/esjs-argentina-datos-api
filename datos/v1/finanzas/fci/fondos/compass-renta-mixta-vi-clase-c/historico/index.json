@@ -2,7 +2,7 @@
   "fondoId": "1740",
   "claseId": "5878",
   "nombre": "Compass Renta Mixta VI - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "compass-renta-mixta-vi-clase-c",
@@ -3714,6 +3714,22 @@
       "retornoDiario": -0.377962,
       "retornoAcumulado": 14.5505,
       "flujoEstimado": 239588388.468399,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-mixta-vi-clase-c",
+      "fondoId": "1740",
+      "claseId": "5878",
+      "nombre": "Compass Renta Mixta VI - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1146.683,
+      "patrimonio": 87567789946.07,
+      "retornoDiario": 0.102837,
+      "retornoAcumulado": 14.6683,
+      "flujoEstimado": 9744555.396484,
       "origen": "cnv-excel"
     }
   ]

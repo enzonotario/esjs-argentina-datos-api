@@ -2,7 +2,7 @@
   "fondoId": "1646",
   "claseId": "5402",
   "nombre": "CYC Dólares Liquidez - Clase U",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "cyc-dolares-liquidez-clase-u",
@@ -546,6 +546,22 @@
       "retornoDiario": 0.002797,
       "retornoAcumulado": 0.1278,
       "flujoEstimado": 69999.328753,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-dolares-liquidez-clase-u",
+      "fondoId": "1646",
+      "claseId": "5402",
+      "nombre": "CYC Dólares Liquidez - Clase U",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1001.355,
+      "patrimonio": 2335570.72,
+      "retornoDiario": 0.00769,
+      "retornoAcumulado": 0.1355,
+      "flujoEstimado": -0.371606,
       "origen": "cnv-excel"
     }
   ]

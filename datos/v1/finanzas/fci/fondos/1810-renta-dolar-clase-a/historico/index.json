@@ -2,7 +2,7 @@
   "fondoId": "1797",
   "claseId": "6151",
   "nombre": "1810 Renta Dólar - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "1810-renta-dolar-clase-a",
@@ -2642,6 +2642,22 @@
       "retornoDiario": 0.087582,
       "retornoAcumulado": 2.8505,
       "flujoEstimado": -389807.026704,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-renta-dolar-clase-a",
+      "fondoId": "1797",
+      "claseId": "6151",
+      "nombre": "1810 Renta Dólar - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1027.884,
+      "patrimonio": 97594112.13,
+      "retornoDiario": -0.060379,
+      "retornoAcumulado": 2.7884,
+      "flujoEstimado": -143172.841844,
       "origen": "cnv-excel"
     }
   ]

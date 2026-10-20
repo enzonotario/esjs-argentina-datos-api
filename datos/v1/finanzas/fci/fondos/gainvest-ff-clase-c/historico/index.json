@@ -2,7 +2,7 @@
   "fondoId": "347",
   "claseId": "3683",
   "nombre": "Gainvest FF - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "gainvest-ff-clase-c",
@@ -18418,6 +18418,22 @@
       "retornoDiario": 0.064562,
       "retornoAcumulado": 1132.6367,
       "flujoEstimado": -57.859473,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-ff-clase-c",
+      "fondoId": "347",
+      "claseId": "3683",
+      "nombre": "Gainvest FF - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 12350.505,
+      "patrimonio": 4310257801.6,
+      "retornoDiario": 0.195824,
+      "retornoAcumulado": 1135.0505,
+      "flujoEstimado": 102.922506,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "499",
   "claseId": "2344",
   "nombre": "Balanz Capital Renta Fija - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "balanz-capital-renta-fija-clase-d",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.45013,
       "retornoAcumulado": 1737.2149,
       "flujoEstimado": 1215.083771,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-capital-renta-fija-clase-d",
+      "fondoId": "499",
+      "claseId": "2344",
+      "nombre": "Balanz Capital Renta Fija - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 18365.949,
+      "patrimonio": 37886539097.17,
+      "retornoDiario": -0.033747,
+      "retornoAcumulado": 1736.5949,
+      "flujoEstimado": -1243.438103,
       "origen": "cnv-excel"
     }
   ]

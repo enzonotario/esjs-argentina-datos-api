@@ -2,7 +2,7 @@
   "fondoId": "852",
   "claseId": "2431",
   "nombre": "Fima Renta Fija Internacional - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fima-renta-fija-internacional-clase-c",
@@ -25090,6 +25090,22 @@
       "retornoDiario": 0.006072,
       "retornoAcumulado": 22.726183,
       "flujoEstimado": -0.17363,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-fija-internacional-clase-c",
+      "fondoId": "852",
+      "claseId": "2431",
+      "nombre": "Fima Renta Fija Internacional - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1284.663,
+      "patrimonio": 1261575.85,
+      "retornoDiario": 0.005994,
+      "retornoAcumulado": 22.733539,
+      "flujoEstimado": 0.3957,
       "origen": "cnv-excel"
     }
   ]

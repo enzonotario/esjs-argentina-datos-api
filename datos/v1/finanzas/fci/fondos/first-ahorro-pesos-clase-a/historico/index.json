@@ -2,7 +2,7 @@
   "fondoId": "1849",
   "claseId": "6379",
   "nombre": "First Ahorro Pesos - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "first-ahorro-pesos-clase-a",
@@ -1906,6 +1906,22 @@
       "retornoDiario": 0.130015,
       "retornoAcumulado": 12.332047,
       "flujoEstimado": -0.069765,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-ahorro-pesos-clase-a",
+      "fondoId": "1849",
+      "claseId": "6379",
+      "nombre": "First Ahorro Pesos - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1125.693,
+      "patrimonio": 112569.33,
+      "retornoDiario": 0.183156,
+      "retornoAcumulado": 12.537789,
+      "flujoEstimado": 0.059563,
       "origen": "cnv-excel"
     }
   ]

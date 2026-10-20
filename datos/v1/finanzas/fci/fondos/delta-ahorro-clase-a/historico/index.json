@@ -2,7 +2,7 @@
   "fondoId": "371",
   "claseId": "663",
   "nombre": "Delta Ahorro - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-ahorro-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.090569,
       "retornoAcumulado": 1801.896325,
       "flujoEstimado": 306771961.654129,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-ahorro-clase-a",
+      "fondoId": "371",
+      "claseId": "663",
+      "nombre": "Delta Ahorro - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 289664.766,
+      "patrimonio": 79662459412.39,
+      "retornoDiario": 0.160972,
+      "retornoAcumulado": 1804.957846,
+      "flujoEstimado": -111145513.516876,
       "origen": "cnv-excel"
     }
   ]

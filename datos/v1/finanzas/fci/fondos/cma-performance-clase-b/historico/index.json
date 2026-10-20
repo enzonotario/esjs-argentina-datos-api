@@ -2,7 +2,7 @@
   "fondoId": "653",
   "claseId": "1345",
   "nombre": "CMA Performance - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "cma-performance-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.390485,
       "retornoAcumulado": 1994.721133,
       "flujoEstimado": -13.569768,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-performance-clase-b",
+      "fondoId": "653",
+      "claseId": "1345",
+      "nombre": "CMA Performance - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 54246.688,
+      "patrimonio": 999707929.46,
+      "retornoDiario": 0.329556,
+      "retornoAcumulado": 2001.624413,
+      "flujoEstimado": 7.128871,
       "origen": "cnv-excel"
     }
   ]

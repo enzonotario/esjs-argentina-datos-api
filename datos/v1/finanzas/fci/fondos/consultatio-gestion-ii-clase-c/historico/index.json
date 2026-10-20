@@ -2,7 +2,7 @@
   "fondoId": "864",
   "claseId": "2489",
   "nombre": "Consultatio Gestion II - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-ii-clase-c",
@@ -26273,6 +26273,22 @@
       "patrimonio": null,
       "retornoDiario": -0.19637,
       "retornoAcumulado": 5.6634,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-ii-clase-c",
+      "fondoId": "864",
+      "claseId": "2489",
+      "nombre": "Consultatio Gestion II - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1056.637,
+      "patrimonio": null,
+      "retornoDiario": 0.000284,
+      "retornoAcumulado": 5.6637,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

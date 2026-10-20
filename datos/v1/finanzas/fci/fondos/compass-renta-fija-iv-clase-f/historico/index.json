@@ -2,7 +2,7 @@
   "fondoId": "664",
   "claseId": "1902",
   "nombre": "Compass Renta Fija IV - Clase F",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "compass-renta-fija-iv-clase-f",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0.058226,
       "retornoAcumulado": 129.569517,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-fija-iv-clase-f",
+      "fondoId": "664",
+      "claseId": "1902",
+      "nombre": "Compass Renta Fija IV - Clase F",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 114.576,
+      "patrimonio": null,
+      "retornoDiario": -0.486381,
+      "retornoAcumulado": 128.452934,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

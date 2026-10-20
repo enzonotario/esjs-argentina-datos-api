@@ -2,7 +2,7 @@
   "fondoId": "812",
   "claseId": "2203",
   "nombre": "Pionero Renta Estrategico - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pionero-renta-estrategico-clase-b",
@@ -25922,6 +25922,22 @@
       "retornoDiario": 0.105432,
       "retornoAcumulado": 3944.188342,
       "flujoEstimado": -565.952499,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-estrategico-clase-b",
+      "fondoId": "812",
+      "claseId": "2203",
+      "nombre": "Pionero Renta Estrategico - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 74748.149,
+      "patrimonio": 42097222442.5,
+      "retornoDiario": -0.274766,
+      "retornoAcumulado": 3933.076307,
+      "flujoEstimado": 181.693436,
       "origen": "cnv-excel"
     }
   ]

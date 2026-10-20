@@ -2,7 +2,7 @@
   "fondoId": "743",
   "claseId": "1626",
   "nombre": "First Renta Dolares - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "first-renta-dolares-clase-b",
@@ -25490,6 +25490,22 @@
       "retornoDiario": 0.14528,
       "retornoAcumulado": 98.890208,
       "flujoEstimado": 7871.446945,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-dolares-clase-b",
+      "fondoId": "743",
+      "claseId": "1626",
+      "nombre": "First Renta Dolares - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1996.177,
+      "patrimonio": 2140318.31,
+      "retornoDiario": -0.040261,
+      "retornoAcumulado": 98.810133,
+      "flujoEstimado": 53120.165305,
       "origen": "cnv-excel"
     }
   ]

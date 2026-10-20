@@ -2,7 +2,7 @@
   "fondoId": "1602",
   "claseId": "5268",
   "nombre": "Pellegrini Money Market USD - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pellegrini-money-market-usd-clase-a",
@@ -6882,6 +6882,22 @@
       "retornoDiario": 0.002063,
       "retornoAcumulado": 1.7776,
       "flujoEstimado": 3692.044562,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-money-market-usd-clase-a",
+      "fondoId": "1602",
+      "claseId": "5268",
+      "nombre": "Pellegrini Money Market USD - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1017.839,
+      "patrimonio": 1174097.94,
+      "retornoDiario": 0.00619,
+      "retornoAcumulado": 1.7839,
+      "flujoEstimado": 122067.193328,
       "origen": "cnv-excel"
     }
   ]

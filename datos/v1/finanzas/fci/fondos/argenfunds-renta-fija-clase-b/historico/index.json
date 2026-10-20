@@ -2,7 +2,7 @@
   "fondoId": "530",
   "claseId": "1069",
   "nombre": "Argenfunds Renta Fija - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-fija-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.144118,
       "retornoAcumulado": 1886.255258,
       "flujoEstimado": -0.006382,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-fija-clase-b",
+      "fondoId": "530",
+      "claseId": "1069",
+      "nombre": "Argenfunds Renta Fija - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 195771.062,
+      "patrimonio": 2323314.04,
+      "retornoDiario": 0.173736,
+      "retornoAcumulado": 1889.706089,
+      "flujoEstimado": -0.00231,
       "origen": "cnv-excel"
     }
   ]

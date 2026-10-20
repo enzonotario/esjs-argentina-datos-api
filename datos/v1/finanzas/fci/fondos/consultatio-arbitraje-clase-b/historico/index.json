@@ -2,7 +2,7 @@
   "fondoId": "763",
   "claseId": "1691",
   "nombre": "Consultatio Arbitraje - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-arbitraje-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.145905,
       "retornoAcumulado": 1066.386918,
       "flujoEstimado": -0.052085,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-arbitraje-clase-b",
+      "fondoId": "763",
+      "claseId": "1691",
+      "nombre": "Consultatio Arbitraje - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 21946.072,
+      "patrimonio": 8891364.75,
+      "retornoDiario": 0.036475,
+      "retornoAcumulado": 1066.812363,
+      "flujoEstimado": -0.092828,
       "origen": "cnv-excel"
     }
   ]

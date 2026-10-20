@@ -2,7 +2,7 @@
   "fondoId": "1590",
   "claseId": "5206",
   "nombre": "Wise Capital Saving - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "wise-capital-saving-clase-c",
@@ -6242,6 +6242,22 @@
       "retornoDiario": 0.103547,
       "retornoAcumulado": 56.053749,
       "flujoEstimado": 13.1478,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "wise-capital-saving-clase-c",
+      "fondoId": "1590",
+      "claseId": "5206",
+      "nombre": "Wise Capital Saving - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1572.942,
+      "patrimonio": 24136806.43,
+      "retornoDiario": 0.125846,
+      "retornoAcumulado": 56.250137,
+      "flujoEstimado": -9.779776,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "685",
   "claseId": "1444",
   "nombre": "GSS Renta Fija Argentina - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "gss-renta-fija-argentina-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.152496,
       "retornoAcumulado": 5358.248377,
       "flujoEstimado": -0.934651,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gss-renta-fija-argentina-clase-a",
+      "fondoId": "685",
+      "claseId": "1444",
+      "nombre": "GSS Renta Fija Argentina - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 119061.948,
+      "patrimonio": 1103264441.95,
+      "retornoDiario": 0.018687,
+      "retornoAcumulado": 5359.268362,
+      "flujoEstimado": 1099890.91118,
       "origen": "cnv-excel"
     }
   ]

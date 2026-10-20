@@ -2,7 +2,7 @@
   "fondoId": "1278",
   "claseId": "3559",
   "nombre": "Numancia Pesos - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "numancia-pesos-clase-b",
@@ -10706,6 +10706,22 @@
       "retornoDiario": 0.046244,
       "retornoAcumulado": -10.867,
       "flujoEstimado": 47493.661911,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "numancia-pesos-clase-b",
+      "fondoId": "1278",
+      "claseId": "3559",
+      "nombre": "Numancia Pesos - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 896.617,
+      "patrimonio": 69662601528.12,
+      "retornoDiario": 0.593159,
+      "retornoAcumulado": -10.3383,
+      "flujoEstimado": -50413.744919,
       "origen": "cnv-excel"
     }
   ]

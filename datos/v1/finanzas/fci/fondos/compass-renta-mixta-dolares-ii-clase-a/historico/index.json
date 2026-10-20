@@ -2,7 +2,7 @@
   "fondoId": "1656",
   "claseId": "5520",
   "nombre": "Compass Renta Mixta Dólares II - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "compass-renta-mixta-dolares-ii-clase-a",
@@ -5410,6 +5410,22 @@
       "retornoDiario": 0.13906,
       "retornoAcumulado": 0.384,
       "flujoEstimado": -0.129869,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-mixta-dolares-ii-clase-a",
+      "fondoId": "1656",
+      "claseId": "5520",
+      "nombre": "Compass Renta Mixta Dólares II - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 999.707,
+      "patrimonio": 228655.73,
+      "retornoDiario": -0.411719,
+      "retornoAcumulado": -0.0293,
+      "flujoEstimado": 0.100694,
       "origen": "cnv-excel"
     }
   ]

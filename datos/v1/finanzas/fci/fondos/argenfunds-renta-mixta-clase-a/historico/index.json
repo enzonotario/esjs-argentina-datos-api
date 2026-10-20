@@ -2,7 +2,7 @@
   "fondoId": "705",
   "claseId": "2047",
   "nombre": "Argenfunds Renta Mixta - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-mixta-clase-a",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.103813,
       "retornoAcumulado": 120.827815,
       "flujoEstimado": 2980547.759434,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-mixta-clase-a",
+      "fondoId": "705",
+      "claseId": "2047",
+      "nombre": "Argenfunds Renta Mixta - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 3026.23,
+      "patrimonio": 580366542.99,
+      "retornoDiario": 0.171231,
+      "retornoAcumulado": 121.205941,
+      "flujoEstimado": -363415.612533,
       "origen": "cnv-excel"
     }
   ]

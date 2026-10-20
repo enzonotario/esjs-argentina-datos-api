@@ -2,7 +2,7 @@
   "fondoId": "1427",
   "claseId": "4174",
   "nombre": "BAVSA Pesos Plus - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "bavsa-pesos-plus-clase-c",
@@ -11506,6 +11506,22 @@
       "retornoDiario": 0.215547,
       "retornoAcumulado": 120.5193,
       "flujoEstimado": 660.707195,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-pesos-plus-clase-c",
+      "fondoId": "1427",
+      "claseId": "4174",
+      "nombre": "BAVSA Pesos Plus - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2207.028,
+      "patrimonio": 5439967922.56,
+      "retornoDiario": 0.083213,
+      "retornoAcumulado": 120.7028,
+      "flujoEstimado": -199999225.949586,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "517",
   "claseId": "1046",
   "nombre": "Consultatio Renta Mixta - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-renta-mixta-clase-b",
@@ -26209,6 +26209,22 @@
       "patrimonio": null,
       "retornoDiario": 0.224406,
       "retornoAcumulado": 4990.733105,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-renta-mixta-clase-b",
+      "fondoId": "517",
+      "claseId": "1046",
+      "nombre": "Consultatio Renta Mixta - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 350703.235,
+      "patrimonio": null,
+      "retornoDiario": -0.004359,
+      "retornoAcumulado": 4990.511198,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

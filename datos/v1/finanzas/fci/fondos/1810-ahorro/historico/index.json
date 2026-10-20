@@ -2,7 +2,7 @@
   "fondoId": "304",
   "claseId": "308",
   "nombre": "1810 Ahorro",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "1810-ahorro",
@@ -26130,6 +26130,22 @@
       "retornoDiario": 0.053254,
       "retornoAcumulado": 1409.906219,
       "flujoEstimado": 52658101472.00757,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-ahorro",
+      "fondoId": "304",
+      "claseId": "308",
+      "nombre": "1810 Ahorro",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 242559.868,
+      "patrimonio": 1578023715882.11,
+      "retornoDiario": 0.155834,
+      "retornoAcumulado": 1412.259169,
+      "flujoEstimado": -10878457773.280273,
       "origen": "cnv-excel"
     }
   ]

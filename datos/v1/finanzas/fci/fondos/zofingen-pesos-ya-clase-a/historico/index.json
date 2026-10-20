@@ -2,7 +2,7 @@
   "fondoId": "1559",
   "claseId": "5000",
   "nombre": "Zofingen Pesos Ya - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "zofingen-pesos-ya-clase-a",
@@ -7618,6 +7618,22 @@
       "retornoDiario": 0.050834,
       "retornoAcumulado": 57.8476,
       "flujoEstimado": -1956081572.647564,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "zofingen-pesos-ya-clase-a",
+      "fondoId": "1559",
+      "claseId": "5000",
+      "nombre": "Zofingen Pesos Ya - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1581.019,
+      "patrimonio": 3872711388.1,
+      "retornoDiario": 0.161105,
+      "retornoAcumulado": 58.1019,
+      "flujoEstimado": -485367313.600887,
       "origen": "cnv-excel"
     }
   ]

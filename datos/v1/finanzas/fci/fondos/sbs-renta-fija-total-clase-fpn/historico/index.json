@@ -2,7 +2,7 @@
   "fondoId": "1237",
   "claseId": "3430",
   "nombre": "SBS Renta Fija Total - Clase FPN",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "sbs-renta-fija-total-clase-fpn",
@@ -21858,6 +21858,22 @@
       "retornoDiario": 0.281144,
       "retornoAcumulado": 1103.3297,
       "flujoEstimado": 1829.581161,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-fija-total-clase-fpn",
+      "fondoId": "1237",
+      "claseId": "3430",
+      "nombre": "SBS Renta Fija Total - Clase FPN",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 12074.222,
+      "patrimonio": 100443843579.12,
+      "retornoDiario": 0.340098,
+      "retornoAcumulado": 1107.4222,
+      "flujoEstimado": -228.741959,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1470",
   "claseId": "4342",
   "nombre": "Axis Pesos - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "axis-pesos-clase-b",
@@ -10354,6 +10354,22 @@
       "retornoDiario": 0.055629,
       "retornoAcumulado": 140.1172,
       "flujoEstimado": 1738968438.331512,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-pesos-clase-b",
+      "fondoId": "1470",
+      "claseId": "4342",
+      "nombre": "Axis Pesos - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2405.035,
+      "patrimonio": 24239826735.26,
+      "retornoDiario": 0.16088,
+      "retornoAcumulado": 140.5035,
+      "flujoEstimado": -494491063.694775,
       "origen": "cnv-excel"
     }
   ]

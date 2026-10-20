@@ -2,7 +2,7 @@
   "fondoId": "1630",
   "claseId": "5407",
   "nombre": "Chaco FCI Renta Fija Dólares - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "chaco-fci-renta-fija-dolares-clase-b",
@@ -5634,6 +5634,22 @@
       "retornoDiario": 0.033247,
       "retornoAcumulado": 10.938935,
       "flujoEstimado": -0.809191,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chaco-fci-renta-fija-dolares-clase-b",
+      "fondoId": "1630",
+      "claseId": "5407",
+      "nombre": "Chaco FCI Renta Fija Dólares - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1109.976,
+      "patrimonio": 15027994.42,
+      "retornoDiario": -0.0254,
+      "retornoAcumulado": 10.910757,
+      "flujoEstimado": -549997.17485,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "644",
   "claseId": "1314",
   "nombre": "Superfondo Renta Balance - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-balance-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.284775,
       "retornoAcumulado": 179.2584,
       "flujoEstimado": 7638.946896,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-balance-clase-b",
+      "fondoId": "644",
+      "claseId": "1314",
+      "nombre": "Superfondo Renta Balance - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 2797.267,
+      "patrimonio": 25381295012.34,
+      "retornoDiario": 0.167694,
+      "retornoAcumulado": 179.7267,
+      "flujoEstimado": 599991985.304836,
       "origen": "cnv-excel"
     }
   ]

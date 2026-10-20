@@ -2,7 +2,7 @@
   "fondoId": "1894",
   "claseId": "6545",
   "nombre": "Toronto Trust Dinamico - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "toronto-trust-dinamico-clase-b",
@@ -1186,6 +1186,22 @@
       "retornoDiario": 0.177822,
       "retornoAcumulado": 6.98521,
       "flujoEstimado": -3282981558.500854,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-dinamico-clase-b",
+      "fondoId": "1894",
+      "claseId": "6545",
+      "nombre": "Toronto Trust Dinamico - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1070.66,
+      "patrimonio": 82379481023.48,
+      "retornoDiario": 0.078518,
+      "retornoAcumulado": 7.069212,
+      "flujoEstimado": 9601489805.530579,
       "origen": "cnv-excel"
     }
   ]

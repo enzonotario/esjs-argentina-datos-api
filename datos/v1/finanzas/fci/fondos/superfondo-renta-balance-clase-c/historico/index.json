@@ -2,7 +2,7 @@
   "fondoId": "644",
   "claseId": "1315",
   "nombre": "Superfondo Renta Balance - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-balance-clase-c",
@@ -26305,6 +26305,22 @@
       "patrimonio": null,
       "retornoDiario": 0.28646,
       "retornoAcumulado": 182.6965,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-balance-clase-c",
+      "fondoId": "644",
+      "claseId": "1315",
+      "nombre": "Superfondo Renta Balance - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 2831.845,
+      "patrimonio": null,
+      "retornoDiario": 0.172623,
+      "retornoAcumulado": 183.1845,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

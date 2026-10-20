@@ -2,7 +2,7 @@
   "fondoId": "710",
   "claseId": "1522",
   "nombre": "Consultatio Liquidez Dólar - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-liquidez-dolar-clase-c",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.001609,
       "retornoAcumulado": -18.317986,
       "flujoEstimado": 1364837.898896,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-liquidez-dolar-clase-c",
+      "fondoId": "710",
+      "claseId": "1522",
+      "nombre": "Consultatio Liquidez Dólar - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 745.662,
+      "patrimonio": 32864776.72,
+      "retornoDiario": 0.004158,
+      "retornoAcumulado": -18.31459,
+      "flujoEstimado": 3501927.883509,
       "origen": "cnv-excel"
     }
   ]

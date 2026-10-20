@@ -2,7 +2,7 @@
   "fondoId": "987",
   "claseId": "1774",
   "nombre": "Consultatio SMSV Renta en Pesos - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-smsv-renta-en-pesos-clase-a",
@@ -26225,6 +26225,22 @@
       "patrimonio": null,
       "retornoDiario": 0.337264,
       "retornoAcumulado": 62.855865,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-smsv-renta-en-pesos-clase-a",
+      "fondoId": "987",
+      "claseId": "1774",
+      "nombre": "Consultatio SMSV Renta en Pesos - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2236.398,
+      "patrimonio": null,
+      "retornoDiario": 0.056149,
+      "retornoAcumulado": 62.947306,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

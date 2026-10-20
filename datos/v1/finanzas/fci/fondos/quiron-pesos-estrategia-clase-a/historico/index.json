@@ -2,7 +2,7 @@
   "fondoId": "1986",
   "claseId": "6643",
   "nombre": "Quiron Pesos Estrategia - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "quiron-pesos-estrategia-clase-a",
@@ -604,6 +604,22 @@
       "fecha": "2026-10-16",
       "categoria": "Renta Mixta",
       "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1018.143,
+      "patrimonio": null,
+      "retornoDiario": 0,
+      "retornoAcumulado": 1.8143,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-pesos-estrategia-clase-a",
+      "fondoId": "1986",
+      "claseId": "6643",
+      "nombre": "Quiron Pesos Estrategia - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
       "horizonte": "Mediano Plazo",
       "valorCuotaparte": 1018.143,
       "patrimonio": null,

@@ -2,7 +2,7 @@
   "fondoId": "1222",
   "claseId": "3387",
   "nombre": "Consultatio Zero - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "consultatio-zero-clase-c",
@@ -23026,6 +23026,22 @@
       "retornoDiario": 0.04853,
       "retornoAcumulado": 1154.8953,
       "flujoEstimado": -52603095005.5412,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-zero-clase-c",
+      "fondoId": "1222",
+      "claseId": "3387",
+      "nombre": "Consultatio Zero - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 12565.769,
+      "patrimonio": 127912758528.4,
+      "retornoDiario": 0.134003,
+      "retornoAcumulado": 1156.5769,
+      "flujoEstimado": 24184502238.006317,
       "origen": "cnv-excel"
     }
   ]

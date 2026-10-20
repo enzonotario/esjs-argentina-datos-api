@@ -2,7 +2,7 @@
   "fondoId": "663",
   "claseId": "1372",
   "nombre": "Fima Mix I - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fima-mix-i-clase-c",
@@ -25250,6 +25250,22 @@
       "retornoDiario": 0.596666,
       "retornoAcumulado": 3061.317318,
       "flujoEstimado": 0.835205,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-mix-i-clase-c",
+      "fondoId": "663",
+      "claseId": "1372",
+      "nombre": "Fima Mix I - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 71397.68,
+      "patrimonio": 732311350.81,
+      "retornoDiario": 0.247181,
+      "retornoAcumulado": 3069.131479,
+      "flujoEstimado": -5.80813,
       "origen": "cnv-excel"
     }
   ]

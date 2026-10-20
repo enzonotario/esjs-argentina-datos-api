@@ -2,7 +2,7 @@
   "fondoId": "1215",
   "claseId": "3366",
   "nombre": "Delta Gestion X - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-gestion-x-clase-b",
@@ -23266,6 +23266,22 @@
       "retornoDiario": 0.282087,
       "retornoAcumulado": 86.0691,
       "flujoEstimado": 0.000707,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-x-clase-b",
+      "fondoId": "1215",
+      "claseId": "3366",
+      "nombre": "Delta Gestion X - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1861.391,
+      "patrimonio": 231336.41,
+      "retornoDiario": 0.03762,
+      "retornoAcumulado": 86.1391,
+      "flujoEstimado": 0.10401,
       "origen": "cnv-excel"
     }
   ]

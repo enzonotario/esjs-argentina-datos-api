@@ -2,7 +2,7 @@
   "fondoId": "747",
   "claseId": "1639",
   "nombre": "Galileo Income - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "galileo-income-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.039097,
       "retornoAcumulado": 17.719064,
       "flujoEstimado": 91396.363083,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-income-clase-b",
+      "fondoId": "747",
+      "claseId": "1639",
+      "nombre": "Galileo Income - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1248.166,
+      "patrimonio": 25041396.93,
+      "retornoDiario": -0.038922,
+      "retornoAcumulado": 17.673246,
+      "flujoEstimado": -18151.994563,
       "origen": "cnv-excel"
     }
   ]

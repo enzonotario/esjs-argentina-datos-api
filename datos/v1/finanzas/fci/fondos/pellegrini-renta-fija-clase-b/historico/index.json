@@ -2,7 +2,7 @@
   "fondoId": "271",
   "claseId": "633",
   "nombre": "Pellegrini Renta Fija - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-fija-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.216981,
       "retornoAcumulado": 2650.556728,
       "flujoEstimado": -531848354.595398,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-fija-clase-b",
+      "fondoId": "271",
+      "claseId": "633",
+      "nombre": "Pellegrini Renta Fija - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 43608.231,
+      "patrimonio": 314067582165.18,
+      "retornoDiario": 0.068539,
+      "retornoAcumulado": 2652.441921,
+      "flujoEstimado": -1693356924.172119,
       "origen": "cnv-excel"
     }
   ]

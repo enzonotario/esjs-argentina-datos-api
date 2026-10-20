@@ -2,7 +2,7 @@
   "fondoId": "1360",
   "claseId": "3895",
   "nombre": "Novus Valor - Clase F",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "novus-valor-clase-f",
@@ -15826,6 +15826,22 @@
       "retornoDiario": 0.348408,
       "retornoAcumulado": 318.1756,
       "flujoEstimado": 199.725799,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-valor-clase-f",
+      "fondoId": "1360",
+      "claseId": "3895",
+      "nombre": "Novus Valor - Clase F",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 4183.154,
+      "patrimonio": 6376813766.19,
+      "retornoDiario": 0.033431,
+      "retornoAcumulado": 318.3154,
+      "flujoEstimado": 495.030043,
       "origen": "cnv-excel"
     }
   ]

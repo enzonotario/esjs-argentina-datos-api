@@ -2,7 +2,7 @@
   "fondoId": "723",
   "claseId": "6237",
   "nombre": "CMA Renta Dólar - Clase G",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "cma-renta-dolar-clase-g",
@@ -2338,6 +2338,22 @@
       "retornoDiario": -0.073201,
       "retornoAcumulado": 0.062,
       "flujoEstimado": -0.075341,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-renta-dolar-clase-g",
+      "fondoId": "723",
+      "claseId": "6237",
+      "nombre": "CMA Renta Dólar - Clase G",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1000.104,
+      "patrimonio": 430937.74,
+      "retornoDiario": -0.051568,
+      "retornoAcumulado": 0.0104,
+      "flujoEstimado": 0.120568,
       "origen": "cnv-excel"
     }
   ]

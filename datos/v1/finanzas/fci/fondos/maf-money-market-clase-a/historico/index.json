@@ -2,7 +2,7 @@
   "fondoId": "503",
   "claseId": "1016",
   "nombre": "MAF Money Market - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "maf-money-market-clase-a",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.050077,
       "retornoAcumulado": 1349.588128,
       "flujoEstimado": -1098611351.746561,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-money-market-clase-a",
+      "fondoId": "503",
+      "claseId": "1016",
+      "nombre": "MAF Money Market - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 56989.944,
+      "patrimonio": 2881495920.87,
+      "retornoDiario": 0.139677,
+      "retornoAcumulado": 1351.612874,
+      "flujoEstimado": 87738259.9068,
       "origen": "cnv-excel"
     }
   ]

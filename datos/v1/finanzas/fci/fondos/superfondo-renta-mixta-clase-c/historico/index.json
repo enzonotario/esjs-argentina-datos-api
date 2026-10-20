@@ -2,7 +2,7 @@
   "fondoId": "632",
   "claseId": "1284",
   "nombre": "Superfondo Renta Mixta - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-mixta-clase-c",
@@ -26305,6 +26305,22 @@
       "patrimonio": null,
       "retornoDiario": 0.329762,
       "retornoAcumulado": 442.9021,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-mixta-clase-c",
+      "fondoId": "632",
+      "claseId": "1284",
+      "nombre": "Superfondo Renta Mixta - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 5439.1,
+      "patrimonio": null,
+      "retornoDiario": 0.18565,
+      "retornoAcumulado": 443.91,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

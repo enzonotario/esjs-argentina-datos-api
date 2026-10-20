@@ -2,7 +2,7 @@
   "fondoId": "73",
   "claseId": "699",
   "nombre": "Alpha Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "alpha-ahorro-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.186021,
       "retornoAcumulado": 2407.542509,
       "flujoEstimado": -79.81242,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-ahorro-clase-b",
+      "fondoId": "73",
+      "claseId": "699",
+      "nombre": "Alpha Ahorro - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 12047.053,
+      "patrimonio": 9919961489.75,
+      "retornoDiario": 0.073666,
+      "retornoAcumulado": 2409.389705,
+      "flujoEstimado": -403.165298,
       "origen": "cnv-excel"
     }
   ]

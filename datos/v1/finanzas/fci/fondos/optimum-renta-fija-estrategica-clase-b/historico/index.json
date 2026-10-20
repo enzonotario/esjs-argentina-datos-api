@@ -2,7 +2,7 @@
   "fondoId": "445",
   "claseId": "843",
   "nombre": "Optimum Renta Fija Estrategica - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "optimum-renta-fija-estrategica-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.060436,
       "retornoAcumulado": 3158.797417,
       "flujoEstimado": -9.208928,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "optimum-renta-fija-estrategica-clase-b",
+      "fondoId": "445",
+      "claseId": "843",
+      "nombre": "Optimum Renta Fija Estrategica - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 64488.532,
+      "patrimonio": 4576173257.57,
+      "retornoDiario": 0.052927,
+      "retornoAcumulado": 3160.522211,
+      "flujoEstimado": 71.908352,
       "origen": "cnv-excel"
     }
   ]

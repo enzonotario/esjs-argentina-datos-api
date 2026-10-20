@@ -2,7 +2,7 @@
   "fondoId": "1353",
   "claseId": "3863",
   "nombre": "Max Renta Fija - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "max-renta-fija-clase-b",
@@ -14546,6 +14546,22 @@
       "retornoDiario": 0.095818,
       "retornoAcumulado": 1546.0559,
       "flujoEstimado": -16937575.94001,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-renta-fija-clase-b",
+      "fondoId": "1353",
+      "claseId": "3863",
+      "nombre": "Max Renta Fija - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 16457.771,
+      "patrimonio": 18749285388.57,
+      "retornoDiario": -0.016937,
+      "retornoAcumulado": 1545.7771,
+      "flujoEstimado": -834286.649872,
       "origen": "cnv-excel"
     }
   ]

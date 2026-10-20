@@ -2,7 +2,7 @@
   "fondoId": "1420",
   "claseId": "4148",
   "nombre": "Allaria Dinámico IV - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "allaria-dinamico-iv-clase-b",
@@ -12754,6 +12754,22 @@
       "retornoDiario": 0.4946,
       "retornoAcumulado": 219.9529,
       "flujoEstimado": -2154.929047,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dinamico-iv-clase-b",
+      "fondoId": "1420",
+      "claseId": "4148",
+      "nombre": "Allaria Dinámico IV - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 3191.995,
+      "patrimonio": 26793100663.46,
+      "retornoDiario": -0.235472,
+      "retornoAcumulado": 219.1995,
+      "flujoEstimado": -1150.743626,
       "origen": "cnv-excel"
     }
   ]

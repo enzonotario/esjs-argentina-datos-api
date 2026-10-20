@@ -2,7 +2,7 @@
   "fondoId": "1233",
   "claseId": "3412",
   "nombre": "Balanz Infraestructura - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "balanz-infraestructura-clase-c",
@@ -22290,6 +22290,22 @@
       "retornoDiario": 0.623743,
       "retornoAcumulado": 1997.9002,
       "flujoEstimado": 42.300421,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-infraestructura-clase-c",
+      "fondoId": "1233",
+      "claseId": "3412",
+      "nombre": "Balanz Infraestructura - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Infraestructura",
+      "categoriaKey": null,
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 21043.366,
+      "patrimonio": 6331090679.53,
+      "retornoDiario": 0.306802,
+      "retornoAcumulado": 2004.3366,
+      "flujoEstimado": -98.187055,
       "origen": "cnv-excel"
     }
   ]

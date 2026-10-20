@@ -2,7 +2,7 @@
   "fondoId": "1837",
   "claseId": "6329",
   "nombre": "Crecer Liquidez Dolares - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "crecer-liquidez-dolares-clase-b",
@@ -2290,6 +2290,22 @@
       "retornoDiario": 0.002091,
       "retornoAcumulado": 0.425,
       "flujoEstimado": -0.206407,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-liquidez-dolares-clase-b",
+      "fondoId": "1837",
+      "claseId": "6329",
+      "nombre": "Crecer Liquidez Dolares - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1004.313,
+      "patrimonio": 2644240.74,
+      "retornoDiario": 0.006273,
+      "retornoAcumulado": 0.4313,
+      "flujoEstimado": 2.247324,
       "origen": "cnv-excel"
     }
   ]

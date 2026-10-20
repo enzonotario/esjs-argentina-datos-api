@@ -2,7 +2,7 @@
   "fondoId": "1812",
   "claseId": "6220",
   "nombre": "Allaria Dólar Renta Internacional - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-renta-internacional-clase-a",
@@ -2210,6 +2210,22 @@
       "retornoDiario": 0.062625,
       "retornoAcumulado": 0.3415,
       "flujoEstimado": -1.224181,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-renta-internacional-clase-a",
+      "fondoId": "1812",
+      "claseId": "6220",
+      "nombre": "Allaria Dólar Renta Internacional - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1002.169,
+      "patrimonio": 5567016.84,
+      "retornoDiario": -0.124176,
+      "retornoAcumulado": 0.2169,
+      "flujoEstimado": 1.272084,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1392",
   "claseId": "4031",
   "nombre": "GMC Money Market - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "gmc-money-market-clase-c",
@@ -13698,6 +13698,22 @@
       "retornoDiario": 0.04844,
       "retornoAcumulado": 357.6921,
       "flujoEstimado": -11920323419.439087,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gmc-money-market-clase-c",
+      "fondoId": "1392",
+      "claseId": "4031",
+      "nombre": "GMC Money Market - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 4584.495,
+      "patrimonio": 31419844664.8,
+      "retornoDiario": 0.165482,
+      "retornoAcumulado": 358.4495,
+      "flujoEstimado": 6460668992.011108,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "471",
   "claseId": "927",
   "nombre": "SBS Estrategia - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "sbs-estrategia-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.26388,
       "retornoAcumulado": 3111.173145,
       "flujoEstimado": 3.966755,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-estrategia-clase-b",
+      "fondoId": "471",
+      "claseId": "927",
+      "nombre": "SBS Estrategia - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 62563.934,
+      "patrimonio": 1595903492,
+      "retornoDiario": 0.134613,
+      "retornoAcumulado": 3115.495803,
+      "flujoEstimado": -249995.767284,
       "origen": "cnv-excel"
     }
   ]

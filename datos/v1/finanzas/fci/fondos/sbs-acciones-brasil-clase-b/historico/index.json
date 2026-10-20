@@ -2,7 +2,7 @@
   "fondoId": "1424",
   "claseId": "4162",
   "nombre": "SBS Acciones Brasil - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "sbs-acciones-brasil-clase-b",
@@ -10306,6 +10306,22 @@
       "retornoDiario": -1.511609,
       "retornoAcumulado": 506.6096,
       "flujoEstimado": 40.005977,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-acciones-brasil-clase-b",
+      "fondoId": "1424",
+      "claseId": "4162",
+      "nombre": "SBS Acciones Brasil - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": null,
+      "valorCuotaparte": 6084.346,
+      "patrimonio": 1800636248.33,
+      "retornoDiario": 0.300852,
+      "retornoAcumulado": 508.4346,
+      "flujoEstimado": 81.257874,
       "origen": "cnv-excel"
     }
   ]

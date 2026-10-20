@@ -2,7 +2,7 @@
   "fondoId": "615",
   "claseId": "1243",
   "nombre": "Galileo Acciones - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "galileo-acciones-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.250565,
       "retornoAcumulado": 6109.897446,
       "flujoEstimado": -12425418.571949,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-acciones-clase-a",
+      "fondoId": "615",
+      "claseId": "1243",
+      "nombre": "Galileo Acciones - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 358344.603,
+      "patrimonio": 17607807547.31,
+      "retornoDiario": -1.831233,
+      "retornoAcumulado": 5996.179772,
+      "flujoEstimado": -6311689.41486,
       "origen": "cnv-excel"
     }
   ]

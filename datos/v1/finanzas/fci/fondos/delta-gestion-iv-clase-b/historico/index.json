@@ -2,7 +2,7 @@
   "fondoId": "418",
   "claseId": "770",
   "nombre": "Delta Gestion IV - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-gestion-iv-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.009957,
       "retornoAcumulado": 1955.15302,
       "flujoEstimado": -0.005587,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-iv-clase-b",
+      "fondoId": "418",
+      "claseId": "770",
+      "nombre": "Delta Gestion IV - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 77576.11,
+      "patrimonio": 8818210.89,
+      "retornoDiario": -0.050518,
+      "retornoAcumulado": 1954.11479,
+      "flujoEstimado": -0.024605,
       "origen": "cnv-excel"
     }
   ]

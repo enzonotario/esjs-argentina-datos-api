@@ -2,7 +2,7 @@
   "fondoId": "623",
   "claseId": "4994",
   "nombre": "SBS Renta Dólar Latam - Clase Ley N° 27.743",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "sbs-renta-dolar-latam-clase-ley-n-27743",
@@ -7554,6 +7554,22 @@
       "retornoDiario": 0.005213,
       "retornoAcumulado": 7.4256,
       "flujoEstimado": 0.008797,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-dolar-latam-clase-ley-n-27743",
+      "fondoId": "623",
+      "claseId": "4994",
+      "nombre": "SBS Renta Dólar Latam - Clase Ley N° 27.743",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1074.115,
+      "patrimonio": 190109.72,
+      "retornoDiario": -0.013125,
+      "retornoAcumulado": 7.4115,
+      "flujoEstimado": 0.005175,
       "origen": "cnv-excel"
     }
   ]

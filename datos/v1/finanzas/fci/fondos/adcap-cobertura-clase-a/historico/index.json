@@ -2,7 +2,7 @@
   "fondoId": "1216",
   "claseId": "3367",
   "nombre": "Adcap Cobertura - Clase A",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "adcap-cobertura-clase-a",
@@ -23010,6 +23010,22 @@
       "retornoDiario": 0.207735,
       "retornoAcumulado": 4176.103411,
       "flujoEstimado": 53188744.156183,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-cobertura-clase-a",
+      "fondoId": "1216",
+      "claseId": "3367",
+      "nombre": "Adcap Cobertura - Clase A",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 42826.884,
+      "patrimonio": 12273604916.13,
+      "retornoDiario": 0.037152,
+      "retornoAcumulado": 4177.692056,
+      "flujoEstimado": 22406147.112892,
       "origen": "cnv-excel"
     }
   ]

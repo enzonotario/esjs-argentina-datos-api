@@ -2,7 +2,7 @@
   "fondoId": "408",
   "claseId": "738",
   "nombre": "Delta Moneda - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "delta-moneda-clase-b",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.285713,
       "retornoAcumulado": 994.236683,
       "flujoEstimado": -12.901758,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-moneda-clase-b",
+      "fondoId": "408",
+      "claseId": "738",
+      "nombre": "Delta Moneda - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 341905.757,
+      "patrimonio": 8936081299.25,
+      "retornoDiario": 0.032323,
+      "retornoAcumulado": 994.590375,
+      "flujoEstimado": 23.038033,
       "origen": "cnv-excel"
     }
   ]

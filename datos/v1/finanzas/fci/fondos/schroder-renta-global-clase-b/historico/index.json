@@ -2,7 +2,7 @@
   "fondoId": "488",
   "claseId": "966",
   "nombre": "Schroder Renta Global - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "schroder-renta-global-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": -0.000923,
       "retornoAcumulado": 4129.284038,
       "flujoEstimado": -724.962006,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-global-clase-b",
+      "fondoId": "488",
+      "claseId": "966",
+      "nombre": "Schroder Renta Global - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 56801.022,
+      "patrimonio": 121772342388.66,
+      "retornoDiario": 0.011101,
+      "retornoAcumulado": 4129.753547,
+      "flujoEstimado": 1649.995407,
       "origen": "cnv-excel"
     }
   ]

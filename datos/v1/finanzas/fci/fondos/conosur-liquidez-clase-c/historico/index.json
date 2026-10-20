@@ -2,7 +2,7 @@
   "fondoId": "1665",
   "claseId": "5568",
   "nombre": "ConoSur Liquidez - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "conosur-liquidez-clase-c",
@@ -4994,6 +4994,22 @@
       "retornoDiario": 0.056379,
       "retornoAcumulado": 38.6039,
       "flujoEstimado": 7654.518367,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-liquidez-clase-c",
+      "fondoId": "1665",
+      "claseId": "5568",
+      "nombre": "ConoSur Liquidez - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1388.283,
+      "patrimonio": 141828954.22,
+      "retornoDiario": 0.1619,
+      "retornoAcumulado": 38.8283,
+      "flujoEstimado": -13257022.427948,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1580",
   "claseId": "5142",
   "nombre": "Adcap Gestión Estratégica III - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "adcap-gestion-estrategica-iii-clase-b",
@@ -1458,6 +1458,22 @@
       "retornoDiario": 0.191753,
       "retornoAcumulado": 6.3821,
       "flujoEstimado": -10.103703,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-gestion-estrategica-iii-clase-b",
+      "fondoId": "1580",
+      "claseId": "5142",
+      "nombre": "Adcap Gestión Estratégica III - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1064.714,
+      "patrimonio": 100523166.4,
+      "retornoDiario": 0.083943,
+      "retornoAcumulado": 6.4714,
+      "flujoEstimado": 28.405762,
       "origen": "cnv-excel"
     }
   ]

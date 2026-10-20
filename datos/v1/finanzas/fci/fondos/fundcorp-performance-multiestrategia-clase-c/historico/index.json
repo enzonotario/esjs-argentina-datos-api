@@ -2,7 +2,7 @@
   "fondoId": "1464",
   "claseId": "4331",
   "nombre": "Fundcorp Performance Multiestrategia - Clase C",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "fundcorp-performance-multiestrategia-clase-c",
@@ -9778,6 +9778,22 @@
       "retornoDiario": 0.332639,
       "retornoAcumulado": 171.9157,
       "flujoEstimado": -4375.733627,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-performance-multiestrategia-clase-c",
+      "fondoId": "1464",
+      "claseId": "4331",
+      "nombre": "Fundcorp Performance Multiestrategia - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2717.782,
+      "patrimonio": 44819399161.92,
+      "retornoDiario": -0.050567,
+      "retornoAcumulado": 171.7782,
+      "flujoEstimado": 4091.20916,
       "origen": "cnv-excel"
     }
   ]

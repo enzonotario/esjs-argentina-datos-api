@@ -2,7 +2,7 @@
   "fondoId": "1485",
   "claseId": "4410",
   "nombre": "Novus Multiestrategia - Clase B",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "novus-multiestrategia-clase-b",
@@ -9794,6 +9794,22 @@
       "retornoDiario": 0.263304,
       "retornoAcumulado": 60.5024,
       "flujoEstimado": -298.273983,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-multiestrategia-clase-b",
+      "fondoId": "1485",
+      "claseId": "4410",
+      "nombre": "Novus Multiestrategia - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1605.401,
+      "patrimonio": 1112486261.82,
+      "retornoDiario": 0.023489,
+      "retornoAcumulado": 60.5401,
+      "flujoEstimado": 155.613642,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1200",
   "claseId": "3285",
   "nombre": "MAF Mix I - Clase D",
-  "fechaActualizacion": "2026-10-19T18:15:04.000Z",
+  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
   "historico": [
     {
       "slug": "maf-mix-i-clase-d",
@@ -6578,6 +6578,22 @@
       "retornoDiario": -0.027721,
       "retornoAcumulado": 3.5021,
       "flujoEstimado": -4.062383,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-mix-i-clase-d",
+      "fondoId": "1200",
+      "claseId": "3285",
+      "nombre": "MAF Mix I - Clase D",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1034.72,
+      "patrimonio": 9474026.2,
+      "retornoDiario": -0.029082,
+      "retornoAcumulado": 3.472,
+      "flujoEstimado": 18606.225174,
       "origen": "cnv-excel"
     }
   ]
