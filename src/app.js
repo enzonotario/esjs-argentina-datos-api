@@ -15,6 +15,7 @@ import ejecutarBonosCer from '@/finanzas/bonos-cer/bonosCer.comando.js'
 import ejecutarRemesas from '@/finanzas/remesas/remesas.comando.js'
 import ejecutarComisionesCobro from '@/finanzas/cobros/comisiones/comisiones-cobro.comando.js'
 import ejecutarComisionesBrokers from '@/finanzas/brokers/comisiones/comisiones-brokers.comando.js'
+import ejecutarAlternativasFal from '@/finanzas/fal/fal.comando.js'
 import cuentasRemuneradasUsdComando from '@/finanzas/cuentas-remuneradas-usd/cuentas-remuneradas-usd.comando.js'
 import prestamosPersonalesComando from '@/finanzas/creditos/prestamos-personales/prestamos-personales.comando.js'
 import prestamosPersonalesBcraComando from '@/finanzas/creditos/prestamos-personales-bcra/prestamos-personales-bcra.comando.js'
@@ -38,6 +39,7 @@ const predefinidos = {
     '/v1/finanzas/remesas',
     '/v1/finanzas/cobros/comisiones',
     '/v1/finanzas/brokers/comisiones',
+    '/v1/finanzas/fal',
     '/v1/politica/indices/confianza-gobierno',
   ],
   fci: ['/v1/finanzas/fci'],
@@ -165,6 +167,10 @@ export async function iniciar(comando) {
 
     case '/v1/finanzas/brokers/comisiones':
       await ejecutarComisionesBrokers()
+      break
+
+    case '/v1/finanzas/fal':
+      await ejecutarAlternativasFal()
       break
 
     case '/v1/finanzas/rem':

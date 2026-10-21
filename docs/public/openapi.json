@@ -769,6 +769,41 @@
         ]
       }
     },
+    "/v1/finanzas/fal": {
+      "get": {
+        "summary": "Alternativas del Fondo de Asistencia Laboral",
+        "tags": [
+          "Finanzas",
+          "FAL"
+        ],
+        "description": "Alternativas comerciales del FAL (Ley 27.802), una fila por entidad y plan. `comisionAnual` va en decimal (0.008 = 0,8% anual) y es null cuando la página oficial no publica la comisión propia. El tope legal del 1% anual no se copia como precio de la entidad. `metadata` admite campos extra (`fuenteUrl`, `topeLegalAnual`, `calificacion`, `preliminar`, `comisionEnDefinicion`).",
+        "responses": {
+          "200": {
+            "description": "Alternativas FAL con metadata de corrida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AlternativasFal"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-finanzas-fal",
+        "x-data-source": [
+          "[BBVA](https://www.bbva.com.ar/empresas/productos/inversiones/fondo-asistencia-laboral.html)",
+          "[Wise Capital](https://wise.com.ar/fondo-de-asistencia-laboral/)",
+          "[Santander](https://www.santander.com.ar/empresas/fondo-de-asistencia-laboral)",
+          "[Balanz](https://balanz.com/inversiones/fondos/fondo-de-asistencia-laboral/)",
+          "[Banco Macro](https://www.macro.com.ar/empresas/inversiones/fondo-asistencia-laboral)",
+          "[Mariva Asset Management](https://www.marivafondos.com.ar/fal/)",
+          "[IEB](https://fondofal.com.ar/)",
+          "[Max Capital](https://www.max.capital/FAL)",
+          "[Cocos](https://cocos.capital/fondos-de-asistencia-laboral)",
+          "[Galicia / Fondos Fima (PDF)](https://www.fondosfima.com.ar/content/dam/galicia/fima/arbol-pdf/footer/FAL%20-%20Banco%20Galicia.pdf)"
+        ]
+      }
+    },
     "/v1/finanzas/brokers/comisiones": {
       "get": {
         "summary": "Comisiones de brokers",
@@ -6335,6 +6370,192 @@
                 }
               }
             ]
+          }
+        }
+      },
+      "AlternativaFal": {
+        "title": "AlternativaFal",
+        "type": "object",
+        "required": [
+          "entidad",
+          "nombreComercial",
+          "plan",
+          "nombrePlan",
+          "vehiculo",
+          "sociedadGerente",
+          "sociedadDepositaria",
+          "comisionAnual",
+          "comisionEsTope",
+          "incluyeIva",
+          "ivaAdicional",
+          "comisionVigenciaHasta",
+          "comisionPosteriorAnual",
+          "horizonte",
+          "vidaPromedioMesesMin",
+          "vidaPromedioMesesMax",
+          "moneda",
+          "reintegroAportes",
+          "canal",
+          "vigenciaDeclarada",
+          "enlace",
+          "condiciones",
+          "metadata"
+        ],
+        "properties": {
+          "entidad": {
+            "type": "string",
+            "description": "Slug estable de la entidad",
+            "example": "bbva"
+          },
+          "nombreComercial": {
+            "type": "string",
+            "example": "BBVA"
+          },
+          "plan": {
+            "type": "string",
+            "nullable": true,
+            "description": "Slug del plan o fondo. Null si la entidad publica una sola alternativa.",
+            "example": "fal-i"
+          },
+          "nombrePlan": {
+            "type": "string",
+            "nullable": true,
+            "description": "Nombre del plan para mostrar",
+            "example": "FAL I"
+          },
+          "vehiculo": {
+            "type": "string",
+            "nullable": true,
+            "description": "Vehículo publicado. Valores conocidos: fci_abierto, fideicomiso. Otros valores pueden sumarse sin cambiar el resto del objeto.",
+            "example": "fci_abierto"
+          },
+          "sociedadGerente": {
+            "type": "string",
+            "nullable": true
+          },
+          "sociedadDepositaria": {
+            "type": "string",
+            "nullable": true
+          },
+          "comisionAnual": {
+            "type": "number",
+            "nullable": true,
+            "description": "Comisión de administración anual en decimal. Null si la fuente no publica la comisión propia.",
+            "example": 0
+          },
+          "comisionEsTope": {
+            "type": "boolean",
+            "description": "True si el número publicado es un máximo (hasta X%) de esa entidad"
+          },
+          "incluyeIva": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "True si la comisión publicada ya incluye IVA. Null si la fuente no lo dice."
+          },
+          "ivaAdicional": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "True si hay que sumar IVA sobre la comisión publicada"
+          },
+          "comisionVigenciaHasta": {
+            "type": "string",
+            "nullable": true,
+            "format": "date",
+            "description": "Último día de una comisión promocional",
+            "example": "2027-12-31"
+          },
+          "comisionPosteriorAnual": {
+            "type": "number",
+            "nullable": true,
+            "description": "Comisión anual en decimal que la fuente dice que aplica después de comisionVigenciaHasta. Null si no la publica.",
+            "example": 0.008
+          },
+          "horizonte": {
+            "type": "string",
+            "nullable": true,
+            "description": "Perfil publicado. Valores conocidos: corto_plazo, mediano_plazo, inflacion, rendimiento.",
+            "example": "corto_plazo"
+          },
+          "vidaPromedioMesesMin": {
+            "type": "integer",
+            "nullable": true,
+            "example": 1
+          },
+          "vidaPromedioMesesMax": {
+            "type": "integer",
+            "nullable": true,
+            "example": 3
+          },
+          "moneda": {
+            "type": "string",
+            "example": "ARS"
+          },
+          "reintegroAportes": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "True si la entidad publica un reintegro del aporte FAL. No describe el aporte legal, que es igual para todos."
+          },
+          "canal": {
+            "type": "string",
+            "nullable": true,
+            "description": "Canal de alta publicado. Valores conocidos: web, asesor, sucursal, formulario, banca_empresas.",
+            "example": "banca_empresas"
+          },
+          "vigenciaDeclarada": {
+            "type": "string",
+            "nullable": true,
+            "format": "date",
+            "description": "Fecha de entrada en vigencia que informa esa página. Puede diferir entre fuentes.",
+            "example": "2026-12-01"
+          },
+          "enlace": {
+            "type": "string",
+            "nullable": true,
+            "format": "uri"
+          },
+          "condiciones": {
+            "type": "string",
+            "nullable": true,
+            "description": "Nota corta tomada de la página"
+          },
+          "metadata": {
+            "type": "object",
+            "nullable": true,
+            "additionalProperties": true,
+            "description": "Campos extra de la fuente. fuenteUrl es el habitual."
+          }
+        }
+      },
+      "AlternativasFal": {
+        "title": "AlternativasFal",
+        "type": "object",
+        "required": [
+          "fechaActualizacion",
+          "alternativas"
+        ],
+        "properties": {
+          "fechaActualizacion": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Instante en que se generó el recurso (UTC, ISO 8601)"
+          },
+          "alternativas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AlternativaFal"
+            }
+          },
+          "erroresExtraccion": {
+            "type": "array",
+            "description": "Fuentes que no se pudieron leer en esta corrida",
+            "items": {
+              "type": "object",
+              "required": ["fuente", "error"],
+              "properties": {
+                "fuente": { "type": "string" },
+                "error": { "type": "string" }
+              }
+            }
           }
         }
       },
