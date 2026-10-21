@@ -2,7 +2,7 @@
   "fondoId": "1912",
   "claseId": "6604",
   "nombre": "Argenfunds Calificado II - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "argenfunds-calificado-ii-clase-b",
@@ -930,6 +930,22 @@
       "retornoDiario": 0.44327,
       "retornoAcumulado": 0.9032,
       "flujoEstimado": -534.509057,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-calificado-ii-clase-b",
+      "fondoId": "1912",
+      "claseId": "6604",
+      "nombre": "Argenfunds Calificado II - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1009.431,
+      "patrimonio": 1214216378.6,
+      "retornoDiario": 0.039543,
+      "retornoAcumulado": 0.9431,
+      "flujoEstimado": -223.645234,
       "origen": "cnv-excel"
     }
   ]

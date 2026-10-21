@@ -2,7 +2,7 @@
   "fondoId": "1747",
   "claseId": "5903",
   "nombre": "SBS Patrimonio IX - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "sbs-patrimonio-ix-clase-b",
@@ -3762,6 +3762,22 @@
       "retornoDiario": 0.38972,
       "retornoAcumulado": 9.5291,
       "flujoEstimado": 26605.859016,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-patrimonio-ix-clase-b",
+      "fondoId": "1747",
+      "claseId": "5903",
+      "nombre": "SBS Patrimonio IX - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1096.299,
+      "patrimonio": 53251256226.79,
+      "retornoDiario": 0.09203,
+      "retornoAcumulado": 9.6299,
+      "flujoEstimado": -5514.461578,
       "origen": "cnv-excel"
     }
   ]

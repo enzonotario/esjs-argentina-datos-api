@@ -2,7 +2,7 @@
   "fondoId": "662",
   "claseId": "1369",
   "nombre": "Consultatio Retorno Absoluto - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "consultatio-retorno-absoluto-clase-c",
@@ -26193,6 +26193,22 @@
       "patrimonio": null,
       "retornoDiario": 0.169303,
       "retornoAcumulado": 7497.776903,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-retorno-absoluto-clase-c",
+      "fondoId": "662",
+      "claseId": "1369",
+      "nombre": "Consultatio Retorno Absoluto - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 272298.153,
+      "patrimonio": null,
+      "retornoDiario": 0.064043,
+      "retornoAcumulado": 7502.642739,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

@@ -2,7 +2,7 @@
   "fondoId": "654",
   "claseId": "2658",
   "nombre": "Superfondo Renta Fija Dólares - Clase H",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-dolares-clase-h",
@@ -26194,6 +26194,22 @@
       "retornoDiario": -0.111196,
       "retornoAcumulado": 38.128034,
       "flujoEstimado": -34007.824945,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-dolares-clase-h",
+      "fondoId": "654",
+      "claseId": "2658",
+      "nombre": "Superfondo Renta Fija Dólares - Clase H",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1397.264,
+      "patrimonio": 13428542.49,
+      "retornoDiario": 0.027848,
+      "retornoAcumulado": 38.1665,
+      "flujoEstimado": 26521.11414,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1538",
   "claseId": "4633",
   "nombre": "Balanz Money Market USD - Clase E",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "balanz-money-market-usd-clase-e",
@@ -8194,6 +8194,22 @@
       "retornoDiario": 0.006889,
       "retornoAcumulado": 1.6182,
       "flujoEstimado": -2.824496,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-money-market-usd-clase-e",
+      "fondoId": "1538",
+      "claseId": "4633",
+      "nombre": "Balanz Money Market USD - Clase E",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1016.204,
+      "patrimonio": 6480106.79,
+      "retornoDiario": 0.002165,
+      "retornoAcumulado": 1.6204,
+      "flujoEstimado": -2.321325,
       "origen": "cnv-excel"
     }
   ]

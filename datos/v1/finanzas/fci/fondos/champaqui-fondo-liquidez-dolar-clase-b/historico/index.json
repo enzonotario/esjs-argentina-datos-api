@@ -2,7 +2,7 @@
   "fondoId": "1643",
   "claseId": "5467",
   "nombre": "Champaquí Fondo Liquidez Dólar - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "champaqui-fondo-liquidez-dolar-clase-b",
@@ -5634,6 +5634,22 @@
       "retornoDiario": 0.007844,
       "retornoAcumulado": 1.993,
       "flujoEstimado": -8000.890201,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-fondo-liquidez-dolar-clase-b",
+      "fondoId": "1643",
+      "claseId": "5467",
+      "nombre": "Champaquí Fondo Liquidez Dólar - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1019.959,
+      "patrimonio": 4533026.63,
+      "retornoDiario": 0.002843,
+      "retornoAcumulado": 1.9959,
+      "flujoEstimado": -0.610301,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "143",
   "claseId": "1720",
   "nombre": "Schroder Argentina - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "schroder-argentina-clase-c",
@@ -26258,6 +26258,22 @@
       "retornoDiario": -0.102593,
       "retornoAcumulado": 4863.279928,
       "flujoEstimado": 8.153854,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-argentina-clase-c",
+      "fondoId": "143",
+      "claseId": "1720",
+      "nombre": "Schroder Argentina - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1030194.513,
+      "patrimonio": 14266845137.45,
+      "retornoDiario": 0.305842,
+      "retornoAcumulado": 4878.459725,
+      "flujoEstimado": 25399166.90407,
       "origen": "cnv-excel"
     }
   ]

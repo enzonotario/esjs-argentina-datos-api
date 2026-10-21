@@ -2,7 +2,7 @@
   "fondoId": "1915",
   "claseId": "6616",
   "nombre": "Parakeet Gestion Activa III - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "parakeet-gestion-activa-iii-clase-b",
@@ -898,6 +898,22 @@
       "retornoDiario": 0.038033,
       "retornoAcumulado": 6.7901,
       "flujoEstimado": 1056.979724,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-gestion-activa-iii-clase-b",
+      "fondoId": "1915",
+      "claseId": "6616",
+      "nombre": "Parakeet Gestion Activa III - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1069.626,
+      "patrimonio": 8407474756.93,
+      "retornoDiario": 0.161532,
+      "retornoAcumulado": 6.9626,
+      "flujoEstimado": -3016.761439,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "750",
   "claseId": "2480",
   "nombre": "Adcap Renta Dólar - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "adcap-renta-dolar-clase-c",
@@ -25937,6 +25937,22 @@
       "patrimonio": null,
       "retornoDiario": 0.0193,
       "retornoAcumulado": 43.837003,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-renta-dolar-clase-c",
+      "fondoId": "750",
+      "claseId": "2480",
+      "nombre": "Adcap Renta Dólar - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1476.602,
+      "patrimonio": null,
+      "retornoDiario": -0.025119,
+      "retornoAcumulado": 43.800872,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

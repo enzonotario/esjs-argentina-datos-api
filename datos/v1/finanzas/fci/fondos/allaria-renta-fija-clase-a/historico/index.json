@@ -2,7 +2,7 @@
   "fondoId": "479",
   "claseId": "950",
   "nombre": "Allaria Renta Fija - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-renta-fija-clase-a",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.058416,
       "retornoAcumulado": 4371.77225,
       "flujoEstimado": 469890.69922,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-renta-fija-clase-a",
+      "fondoId": "479",
+      "claseId": "950",
+      "nombre": "Allaria Renta Fija - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 155128.083,
+      "patrimonio": 3397209643.48,
+      "retornoDiario": 0.076261,
+      "retornoAcumulado": 4375.182466,
+      "flujoEstimado": 31897805.345602,
       "origen": "cnv-excel"
     }
   ]

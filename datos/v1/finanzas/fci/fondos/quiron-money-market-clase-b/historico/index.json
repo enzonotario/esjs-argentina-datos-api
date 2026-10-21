@@ -2,7 +2,7 @@
   "fondoId": "1393",
   "claseId": "4033",
   "nombre": "Quiron Money Market - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "quiron-money-market-clase-b",
@@ -13122,6 +13122,22 @@
       "retornoDiario": 0.143343,
       "retornoAcumulado": 324.7669,
       "flujoEstimado": 148390528.478019,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-money-market-clase-b",
+      "fondoId": "1393",
+      "claseId": "4033",
+      "nombre": "Quiron Money Market - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 4249.652,
+      "patrimonio": 4485079700.22,
+      "retornoDiario": 0.046684,
+      "retornoAcumulado": 324.9652,
+      "flujoEstimado": 126743883.98823,
       "origen": "cnv-excel"
     }
   ]

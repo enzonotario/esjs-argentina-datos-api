@@ -2,7 +2,7 @@
   "fondoId": "1862",
   "claseId": "6437",
   "nombre": "Parakeet Balanced Fund III - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "parakeet-balanced-fund-iii-clase-b",
@@ -1890,6 +1890,22 @@
       "retornoDiario": -0.197119,
       "retornoAcumulado": 0.6034,
       "flujoEstimado": 0.039316,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-balanced-fund-iii-clase-b",
+      "fondoId": "1862",
+      "claseId": "6437",
+      "nombre": "Parakeet Balanced Fund III - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1006.889,
+      "patrimonio": 50541.71,
+      "retornoDiario": 0.084987,
+      "retornoAcumulado": 0.6889,
+      "flujoEstimado": -0.037441,
       "origen": "cnv-excel"
     }
   ]

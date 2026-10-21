@@ -2,7 +2,7 @@
   "fondoId": "1642",
   "claseId": "5462",
   "nombre": "IOL Portafolio Potenciado - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "iol-portafolio-potenciado-clase-a",
@@ -5426,6 +5426,22 @@
       "retornoDiario": -0.333182,
       "retornoAcumulado": 55.3413,
       "flujoEstimado": -106696144.51712,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iol-portafolio-potenciado-clase-a",
+      "fondoId": "1642",
+      "claseId": "5462",
+      "nombre": "IOL Portafolio Potenciado - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1556.238,
+      "patrimonio": 26002870410.58,
+      "retornoDiario": 0.181858,
+      "retornoAcumulado": 55.6238,
+      "flujoEstimado": -222659345.807526,
       "origen": "cnv-excel"
     }
   ]

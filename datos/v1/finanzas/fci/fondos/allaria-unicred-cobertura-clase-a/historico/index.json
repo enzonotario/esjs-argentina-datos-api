@@ -2,7 +2,7 @@
   "fondoId": "1266",
   "claseId": "3520",
   "nombre": "Allaria Unicred Cobertura - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-unicred-cobertura-clase-a",
@@ -20066,6 +20066,22 @@
       "retornoDiario": 0.555708,
       "retornoAcumulado": 557.7377,
       "flujoEstimado": -4.122771,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-unicred-cobertura-clase-a",
+      "fondoId": "1266",
+      "claseId": "3520",
+      "nombre": "Allaria Unicred Cobertura - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 6583.209,
+      "patrimonio": 49780139.34,
+      "retornoDiario": 0.088668,
+      "retornoAcumulado": 558.3209,
+      "flujoEstimado": 0.408957,
       "origen": "cnv-excel"
     }
   ]

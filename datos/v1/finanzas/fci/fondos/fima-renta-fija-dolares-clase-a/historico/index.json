@@ -2,7 +2,7 @@
   "fondoId": "1460",
   "claseId": "4315",
   "nombre": "Fima Renta Fija Dólares - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fima-renta-fija-dolares-clase-a",
@@ -10370,6 +10370,22 @@
       "retornoDiario": -0.100518,
       "retornoAcumulado": 12.3052,
       "flujoEstimado": 418666.745706,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-fija-dolares-clase-a",
+      "fondoId": "1460",
+      "claseId": "4315",
+      "nombre": "Fima Renta Fija Dólares - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1122.858,
+      "patrimonio": 239859994.14,
+      "retornoDiario": -0.017274,
+      "retornoAcumulado": 12.2858,
+      "flujoEstimado": -252009.196578,
       "origen": "cnv-excel"
     }
   ]

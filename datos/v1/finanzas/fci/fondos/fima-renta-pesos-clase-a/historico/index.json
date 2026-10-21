@@ -2,7 +2,7 @@
   "fondoId": "68",
   "claseId": "68",
   "nombre": "Fima Renta Pesos - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fima-renta-pesos-clase-a",
@@ -26050,6 +26050,22 @@
       "retornoDiario": 0.113911,
       "retornoAcumulado": 3726.785468,
       "flujoEstimado": 597249486.482666,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-pesos-clase-a",
+      "fondoId": "68",
+      "claseId": "68",
+      "nombre": "Fima Renta Pesos - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 202557.413,
+      "patrimonio": 136109806114.8,
+      "retornoDiario": -0.04791,
+      "retornoAcumulado": 3724.952069,
+      "flujoEstimado": 624996458.214035,
       "origen": "cnv-excel"
     }
   ]

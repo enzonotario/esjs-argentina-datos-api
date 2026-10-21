@@ -2,7 +2,7 @@
   "fondoId": "1353",
   "claseId": "4733",
   "nombre": "Max Renta Fija - Clase E Ley N° 27.743",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "max-renta-fija-clase-e-ley-n-27743",
@@ -7874,6 +7874,22 @@
       "retornoDiario": -0.020649,
       "retornoAcumulado": 129.0234,
       "flujoEstimado": 76.726677,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-renta-fija-clase-e-ley-n-27743",
+      "fondoId": "1353",
+      "claseId": "4733",
+      "nombre": "Max Renta Fija - Clase E Ley N° 27.743",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2290.969,
+      "patrimonio": 299413322.57,
+      "retornoDiario": 0.032093,
+      "retornoAcumulado": 129.0969,
+      "flujoEstimado": -77.453962,
       "origen": "cnv-excel"
     }
   ]

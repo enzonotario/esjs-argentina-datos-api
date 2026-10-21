@@ -2,7 +2,7 @@
   "fondoId": "709",
   "claseId": "3302",
   "nombre": "Delta Renta Dolares - Clase E",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "delta-renta-dolares-clase-e",
@@ -24210,6 +24210,22 @@
       "retornoDiario": -0.373965,
       "retornoAcumulado": 8.4002,
       "flujoEstimado": -142074.663921,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-renta-dolares-clase-e",
+      "fondoId": "709",
+      "claseId": "3302",
+      "nombre": "Delta Renta Dolares - Clase E",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1085.582,
+      "patrimonio": 5792.67,
+      "retornoDiario": 0.145756,
+      "retornoAcumulado": 8.5582,
+      "flujoEstimado": 0.009138,
       "origen": "cnv-excel"
     }
   ]

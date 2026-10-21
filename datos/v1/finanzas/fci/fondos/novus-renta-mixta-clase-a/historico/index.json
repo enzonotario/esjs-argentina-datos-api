@@ -2,7 +2,7 @@
   "fondoId": "1484",
   "claseId": "4401",
   "nombre": "Novus Renta Mixta - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "novus-renta-mixta-clase-a",
@@ -9810,6 +9810,22 @@
       "retornoDiario": -1.00831,
       "retornoAcumulado": 87.5159,
       "flujoEstimado": -1929.048351,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-renta-mixta-clase-a",
+      "fondoId": "1484",
+      "claseId": "4401",
+      "nombre": "Novus Renta Mixta - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1875.495,
+      "patrimonio": 15055353746.11,
+      "retornoDiario": 0.017918,
+      "retornoAcumulado": 87.5495,
+      "flujoEstimado": -3799.022163,
       "origen": "cnv-excel"
     }
   ]

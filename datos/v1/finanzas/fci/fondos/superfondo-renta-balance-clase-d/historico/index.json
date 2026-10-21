@@ -2,7 +2,7 @@
   "fondoId": "644",
   "claseId": "1316",
   "nombre": "Superfondo Renta Balance - Clase D",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-balance-clase-d",
@@ -26321,6 +26321,22 @@
       "patrimonio": null,
       "retornoDiario": 0.172623,
       "retornoAcumulado": 183.1845,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-balance-clase-d",
+      "fondoId": "644",
+      "claseId": "1316",
+      "nombre": "Superfondo Renta Balance - Clase D",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 2830.488,
+      "patrimonio": null,
+      "retornoDiario": -0.047919,
+      "retornoAcumulado": 183.0488,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

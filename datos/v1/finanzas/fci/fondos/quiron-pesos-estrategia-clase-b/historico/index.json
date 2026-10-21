@@ -2,7 +2,7 @@
   "fondoId": "1986",
   "claseId": "6644",
   "nombre": "Quiron Pesos Estrategia - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "quiron-pesos-estrategia-clase-b",
@@ -626,6 +626,22 @@
       "retornoDiario": 0.082521,
       "retornoAcumulado": 2.725,
       "flujoEstimado": -766.606627,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-pesos-estrategia-clase-b",
+      "fondoId": "1986",
+      "claseId": "6644",
+      "nombre": "Quiron Pesos Estrategia - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1027.861,
+      "patrimonio": 3970924858.63,
+      "retornoDiario": 0.059479,
+      "retornoAcumulado": 2.7861,
+      "flujoEstimado": -85.297928,
       "origen": "cnv-excel"
     }
   ]

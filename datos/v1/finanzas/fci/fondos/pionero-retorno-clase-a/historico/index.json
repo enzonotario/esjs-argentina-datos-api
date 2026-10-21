@@ -2,7 +2,7 @@
   "fondoId": "1344",
   "claseId": "3833",
   "nombre": "Pionero Retorno - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "pionero-retorno-clase-a",
@@ -15746,6 +15746,22 @@
       "retornoDiario": -0.774967,
       "retornoAcumulado": 124.1046,
       "flujoEstimado": -2313.369587,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-retorno-clase-a",
+      "fondoId": "1344",
+      "claseId": "3833",
+      "nombre": "Pionero Retorno - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2247.354,
+      "patrimonio": 28524423530.98,
+      "retornoDiario": 0.281476,
+      "retornoAcumulado": 124.7354,
+      "flujoEstimado": -1321.836102,
       "origen": "cnv-excel"
     }
   ]

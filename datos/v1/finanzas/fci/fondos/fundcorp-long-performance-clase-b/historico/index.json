@@ -2,7 +2,7 @@
   "fondoId": "806",
   "claseId": "2101",
   "nombre": "Fundcorp Long Performance - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fundcorp-long-performance-clase-b",
@@ -25890,6 +25890,22 @@
       "retornoDiario": 0.018605,
       "retornoAcumulado": 5602.910113,
       "flujoEstimado": -1012712008.149067,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-long-performance-clase-b",
+      "fondoId": "806",
+      "claseId": "2101",
+      "nombre": "Fundcorp Long Performance - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 77537.11,
+      "patrimonio": 3956388283.09,
+      "retornoDiario": 0.096299,
+      "retornoAcumulado": 5608.401985,
+      "flujoEstimado": 47.719053,
       "origen": "cnv-excel"
     }
   ]

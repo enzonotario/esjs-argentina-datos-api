@@ -2,7 +2,7 @@
   "fondoId": "712",
   "claseId": "5107",
   "nombre": "Adcap Ahorro Dólares - Clase F",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "adcap-ahorro-dolares-clase-f",
@@ -7666,6 +7666,22 @@
       "retornoDiario": 0.012081,
       "retornoAcumulado": 4.3073,
       "flujoEstimado": 2550.054171,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-ahorro-dolares-clase-f",
+      "fondoId": "712",
+      "claseId": "5107",
+      "nombre": "Adcap Ahorro Dólares - Clase F",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1043.119,
+      "patrimonio": 6375555.77,
+      "retornoDiario": 0.00441,
+      "retornoAcumulado": 4.3119,
+      "flujoEstimado": -111929.495484,
       "origen": "cnv-excel"
     }
   ]

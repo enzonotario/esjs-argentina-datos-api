@@ -2,7 +2,7 @@
   "fondoId": "669",
   "claseId": "2157",
   "nombre": "Balanz Acciones - Clase E",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "balanz-acciones-clase-e",
@@ -26290,6 +26290,22 @@
       "retornoDiario": -1.860248,
       "retornoAcumulado": 5692.467639,
       "flujoEstimado": 5.174569,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-acciones-clase-e",
+      "fondoId": "669",
+      "claseId": "2157",
+      "nombre": "Balanz Acciones - Clase E",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 72001.437,
+      "patrimonio": 4024052575.3,
+      "retornoDiario": -0.308104,
+      "retornoAcumulado": 5674.620807,
+      "flujoEstimado": -17.504802,
       "origen": "cnv-excel"
     }
   ]

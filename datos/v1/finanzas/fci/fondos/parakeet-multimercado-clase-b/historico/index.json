@@ -2,7 +2,7 @@
   "fondoId": "1607",
   "claseId": "5290",
   "nombre": "Parakeet Multimercado - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "parakeet-multimercado-clase-b",
@@ -6690,6 +6690,22 @@
       "retornoDiario": -0.200208,
       "retornoAcumulado": 60.0121,
       "flujoEstimado": -711.028446,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-multimercado-clase-b",
+      "fondoId": "1607",
+      "claseId": "5290",
+      "nombre": "Parakeet Multimercado - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1600.537,
+      "patrimonio": 1762186305.33,
+      "retornoDiario": 0.025998,
+      "retornoAcumulado": 60.0537,
+      "flujoEstimado": 78.119156,
       "origen": "cnv-excel"
     }
   ]

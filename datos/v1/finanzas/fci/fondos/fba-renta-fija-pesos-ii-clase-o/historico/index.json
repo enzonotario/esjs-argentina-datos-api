@@ -2,7 +2,7 @@
   "fondoId": "287",
   "claseId": "6207",
   "nombre": "FBA Renta Fija Pesos II - Clase O",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fba-renta-fija-pesos-ii-clase-o",
@@ -1010,6 +1010,22 @@
       "retornoDiario": 0.066135,
       "retornoAcumulado": 5.885584,
       "flujoEstimado": -0.011134,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-fija-pesos-ii-clase-o",
+      "fondoId": "287",
+      "claseId": "6207",
+      "nombre": "FBA Renta Fija Pesos II - Clase O",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 260088.122,
+      "patrimonio": 105944.95,
+      "retornoDiario": 0.056081,
+      "retornoAcumulado": 5.944965,
+      "flujoEstimado": 0.018325,
       "origen": "cnv-excel"
     }
   ]

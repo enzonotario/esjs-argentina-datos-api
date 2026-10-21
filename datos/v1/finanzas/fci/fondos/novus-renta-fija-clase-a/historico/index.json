@@ -2,7 +2,7 @@
   "fondoId": "1487",
   "claseId": "4425",
   "nombre": "Novus Renta Fija - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "novus-renta-fija-clase-a",
@@ -9810,6 +9810,22 @@
       "retornoDiario": 0.136022,
       "retornoAcumulado": 12.4875,
       "flujoEstimado": -4.784242,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-renta-fija-clase-a",
+      "fondoId": "1487",
+      "claseId": "4425",
+      "nombre": "Novus Renta Fija - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1127.06,
+      "patrimonio": 10069773.42,
+      "retornoDiario": 0.194244,
+      "retornoAcumulado": 12.706,
+      "flujoEstimado": 4.077557,
       "origen": "cnv-excel"
     }
   ]

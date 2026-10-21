@@ -2,7 +2,7 @@
   "fondoId": "462",
   "claseId": "6606",
   "nombre": "Allaria Ahorro Plus - Clase P",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-ahorro-plus-clase-p",
@@ -994,6 +994,22 @@
       "retornoDiario": 0.072496,
       "retornoAcumulado": 5.0467,
       "flujoEstimado": 0.003872,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-ahorro-plus-clase-p",
+      "fondoId": "462",
+      "claseId": "6606",
+      "nombre": "Allaria Ahorro Plus - Clase P",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1051.328,
+      "patrimonio": 46399.84,
+      "retornoDiario": 0.081964,
+      "retornoAcumulado": 5.1328,
+      "flujoEstimado": -0.000019,
       "origen": "cnv-excel"
     }
   ]

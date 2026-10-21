@@ -2,7 +2,7 @@
   "fondoId": "1212",
   "claseId": "3352",
   "nombre": "Vinci Compass Liquidez - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "vinci-compass-liquidez-clase-a",
@@ -23474,6 +23474,22 @@
       "retornoDiario": 0.159091,
       "retornoAcumulado": 1162.7343,
       "flujoEstimado": -2818423.883561,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "vinci-compass-liquidez-clase-a",
+      "fondoId": "1212",
+      "claseId": "3352",
+      "nombre": "Vinci Compass Liquidez - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 12633.88,
+      "patrimonio": 1265260592.68,
+      "retornoDiario": 0.051769,
+      "retornoAcumulado": 1163.388,
+      "flujoEstimado": -7847774.120171,
       "origen": "cnv-excel"
     }
   ]

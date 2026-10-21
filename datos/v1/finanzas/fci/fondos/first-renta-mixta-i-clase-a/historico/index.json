@@ -2,7 +2,7 @@
   "fondoId": "1207",
   "claseId": "3336",
   "nombre": "First Renta Mixta I - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "first-renta-mixta-i-clase-a",
@@ -23282,6 +23282,22 @@
       "retornoDiario": 0.066093,
       "retornoAcumulado": 2518.642119,
       "flujoEstimado": 1.281572,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-mixta-i-clase-a",
+      "fondoId": "1207",
+      "claseId": "3336",
+      "nombre": "First Renta Mixta I - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 26165.229,
+      "patrimonio": 57553216.98,
+      "retornoDiario": -0.074933,
+      "retornoAcumulado": 2516.679901,
+      "flujoEstimado": 0.271978,
       "origen": "cnv-excel"
     }
   ]

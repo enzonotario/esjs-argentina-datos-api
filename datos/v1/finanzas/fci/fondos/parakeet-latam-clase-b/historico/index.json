@@ -2,7 +2,7 @@
   "fondoId": "1605",
   "claseId": "5282",
   "nombre": "Parakeet Latam - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "parakeet-latam-clase-b",
@@ -6690,6 +6690,22 @@
       "retornoDiario": 0.052827,
       "retornoAcumulado": 4.7368,
       "flujoEstimado": -9762.806042,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-latam-clase-b",
+      "fondoId": "1605",
+      "claseId": "5282",
+      "nombre": "Parakeet Latam - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1048.634,
+      "patrimonio": 4654868.78,
+      "retornoDiario": 0.120874,
+      "retornoAcumulado": 4.8634,
+      "flujoEstimado": -501711.429825,
       "origen": "cnv-excel"
     }
   ]

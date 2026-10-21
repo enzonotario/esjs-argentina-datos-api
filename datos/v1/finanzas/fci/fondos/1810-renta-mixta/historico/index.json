@@ -2,7 +2,7 @@
   "fondoId": "1240",
   "claseId": "3444",
   "nombre": "1810 Renta Mixta",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "1810-renta-mixta",
@@ -21602,6 +21602,22 @@
       "retornoDiario": -0.250668,
       "retornoAcumulado": 2721.1162,
       "flujoEstimado": -21824438.011559,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-renta-mixta",
+      "fondoId": "1240",
+      "claseId": "3444",
+      "nombre": "1810 Renta Mixta",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 28254.74,
+      "patrimonio": 13487559393.18,
+      "retornoDiario": 0.154471,
+      "retornoAcumulado": 2725.474,
+      "flujoEstimado": -1862433.843689,
       "origen": "cnv-excel"
     }
   ]

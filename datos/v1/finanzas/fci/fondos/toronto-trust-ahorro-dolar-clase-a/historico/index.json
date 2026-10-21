@@ -2,7 +2,7 @@
   "fondoId": "1815",
   "claseId": "6232",
   "nombre": "Toronto Trust Ahorro Dólar - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "toronto-trust-ahorro-dolar-clase-a",
@@ -2418,6 +2418,22 @@
       "retornoDiario": 0.014763,
       "retornoAcumulado": 1.6233,
       "flujoEstimado": -759.894164,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-ahorro-dolar-clase-a",
+      "fondoId": "1815",
+      "claseId": "6232",
+      "nombre": "Toronto Trust Ahorro Dólar - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1016.221,
+      "patrimonio": 1833145.65,
+      "retornoDiario": -0.001181,
+      "retornoAcumulado": 1.6221,
+      "flujoEstimado": -132995.479599,
       "origen": "cnv-excel"
     }
   ]

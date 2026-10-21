@@ -2,7 +2,7 @@
   "fondoId": "1997",
   "claseId": "6706",
   "nombre": "Chimpay Ahorro en Dólares - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "chimpay-ahorro-en-dolares-clase-a",
@@ -130,6 +130,22 @@
       "retornoDiario": -0.10702,
       "retornoAcumulado": -0.126,
       "flujoEstimado": 320.922363,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chimpay-ahorro-en-dolares-clase-a",
+      "fondoId": "1997",
+      "claseId": "6706",
+      "nombre": "Chimpay Ahorro en Dólares - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 998.601,
+      "patrimonio": 1016691.33,
+      "retornoDiario": -0.013918,
+      "retornoAcumulado": -0.1399,
+      "flujoEstimado": 3.912252,
       "origen": "cnv-excel"
     }
   ]

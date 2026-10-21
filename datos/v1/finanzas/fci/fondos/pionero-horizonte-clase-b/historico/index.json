@@ -2,7 +2,7 @@
   "fondoId": "1803",
   "claseId": "6176",
   "nombre": "Pionero Horizonte - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "pionero-horizonte-clase-b",
@@ -2674,6 +2674,22 @@
       "retornoDiario": 0.54664,
       "retornoAcumulado": 12.1088,
       "flujoEstimado": -1580028138.870667,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-horizonte-clase-b",
+      "fondoId": "1803",
+      "claseId": "6176",
+      "nombre": "Pionero Horizonte - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1122.353,
+      "patrimonio": 150515028492.32,
+      "retornoDiario": 0.112837,
+      "retornoAcumulado": 12.2353,
+      "flujoEstimado": 64800.403595,
       "origen": "cnv-excel"
     }
   ]

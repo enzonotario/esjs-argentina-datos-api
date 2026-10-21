@@ -2,7 +2,7 @@
   "fondoId": "590",
   "claseId": "1194",
   "nombre": "Adcap Pesos Plus - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "adcap-pesos-plus-clase-a",
@@ -26034,6 +26034,22 @@
       "retornoDiario": 0.027516,
       "retornoAcumulado": 3149.74795,
       "flujoEstimado": 16809733.960171,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-pesos-plus-clase-a",
+      "fondoId": "590",
+      "claseId": "1194",
+      "nombre": "Adcap Pesos Plus - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 143973.839,
+      "patrimonio": 22194328226.14,
+      "retornoDiario": 0.090614,
+      "retornoAcumulado": 3152.692691,
+      "flujoEstimado": -11614175.564064,
       "origen": "cnv-excel"
     }
   ]

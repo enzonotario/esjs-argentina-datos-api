@@ -2,7 +2,7 @@
   "fondoId": "1655",
   "claseId": "5518",
   "nombre": "MEGAQM Gestión Dólares 2 - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "megaqm-gestion-dolares-2-clase-b",
@@ -5490,6 +5490,22 @@
       "retornoDiario": -0.553087,
       "retornoAcumulado": 9.8779,
       "flujoEstimado": 20.993966,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-gestion-dolares-2-clase-b",
+      "fondoId": "1655",
+      "claseId": "5518",
+      "nombre": "MEGAQM Gestión Dólares 2 - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1095.822,
+      "patrimonio": 28001249.88,
+      "retornoDiario": -0.269117,
+      "retornoAcumulado": 9.5822,
+      "flujoEstimado": -1.279537,
       "origen": "cnv-excel"
     }
   ]

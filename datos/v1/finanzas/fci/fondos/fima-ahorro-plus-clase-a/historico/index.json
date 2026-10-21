@@ -2,7 +2,7 @@
   "fondoId": "500",
   "claseId": "1008",
   "nombre": "Fima Ahorro Plus - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fima-ahorro-plus-clase-a",
@@ -26034,6 +26034,22 @@
       "retornoDiario": 0.046923,
       "retornoAcumulado": 2255.496018,
       "flujoEstimado": 244603638.511108,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-ahorro-plus-clase-a",
+      "fondoId": "500",
+      "claseId": "1008",
+      "nombre": "Fima Ahorro Plus - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 167583.069,
+      "patrimonio": 326007620344.88,
+      "retornoDiario": 0.077611,
+      "retornoAcumulado": 2257.324141,
+      "flujoEstimado": 1063350750.154236,
       "origen": "cnv-excel"
     }
   ]

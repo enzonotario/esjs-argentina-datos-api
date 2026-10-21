@@ -2,7 +2,7 @@
   "fondoId": "582",
   "claseId": "1180",
   "nombre": "Argenfunds Renta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-pesos-clase-b",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.03243,
       "retornoAcumulado": -97.909513,
       "flujoEstimado": -3.869119,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-pesos-clase-b",
+      "fondoId": "582",
+      "claseId": "1180",
+      "nombre": "Argenfunds Renta Pesos - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 83.283,
+      "patrimonio": 1756262.14,
+      "retornoDiario": 0,
+      "retornoAcumulado": -97.909513,
+      "flujoEstimado": 10.18,
       "origen": "cnv-excel"
     }
   ]

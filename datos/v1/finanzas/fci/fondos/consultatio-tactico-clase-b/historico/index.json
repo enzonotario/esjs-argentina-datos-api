@@ -2,7 +2,7 @@
   "fondoId": "756",
   "claseId": "1664",
   "nombre": "Consultatio Tactico - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "consultatio-tactico-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.094873,
       "retornoAcumulado": 3733.417525,
       "flujoEstimado": 170.904221,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-tactico-clase-b",
+      "fondoId": "756",
+      "claseId": "1664",
+      "nombre": "Consultatio Tactico - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 75025.548,
+      "patrimonio": 17833568169.41,
+      "retornoDiario": 0.005274,
+      "retornoAcumulado": 3733.619718,
+      "flujoEstimado": 48.898911,
       "origen": "cnv-excel"
     }
   ]

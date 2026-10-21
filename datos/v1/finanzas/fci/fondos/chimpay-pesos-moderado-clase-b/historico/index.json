@@ -2,7 +2,7 @@
   "fondoId": "1808",
   "claseId": "6199",
   "nombre": "Chimpay Pesos Moderado - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "chimpay-pesos-moderado-clase-b",
@@ -2482,6 +2482,22 @@
       "retornoDiario": -0.665787,
       "retornoAcumulado": 2.6931,
       "flujoEstimado": -301.44327,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chimpay-pesos-moderado-clase-b",
+      "fondoId": "1808",
+      "claseId": "6199",
+      "nombre": "Chimpay Pesos Moderado - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1030.793,
+      "patrimonio": 409475508.38,
+      "retornoDiario": 0.376072,
+      "retornoAcumulado": 3.0793,
+      "flujoEstimado": 149.175703,
       "origen": "cnv-excel"
     }
   ]

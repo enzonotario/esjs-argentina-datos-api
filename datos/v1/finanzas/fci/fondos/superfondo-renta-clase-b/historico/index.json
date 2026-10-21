@@ -2,7 +2,7 @@
   "fondoId": "149",
   "claseId": "684",
   "nombre": "Superfondo Renta $ - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.076799,
       "retornoAcumulado": 4794.956355,
       "flujoEstimado": 4500000054.370819,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-clase-b",
+      "fondoId": "149",
+      "claseId": "684",
+      "nombre": "Superfondo Renta $ - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 161167.456,
+      "patrimonio": 22606029041.33,
+      "retornoDiario": 0.117002,
+      "retornoAcumulado": 4800.683528,
+      "flujoEstimado": 39999889.253235,
       "origen": "cnv-excel"
     }
   ]

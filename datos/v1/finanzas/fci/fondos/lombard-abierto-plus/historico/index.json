@@ -2,7 +2,7 @@
   "fondoId": "604",
   "claseId": "1224",
   "nombre": "Lombard Abierto Plus",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "lombard-abierto-plus",
@@ -26050,6 +26050,22 @@
       "retornoDiario": 0.1101,
       "retornoAcumulado": 3244.588551,
       "flujoEstimado": 382349805.077011,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-abierto-plus",
+      "fondoId": "604",
+      "claseId": "1224",
+      "nombre": "Lombard Abierto Plus",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 158867.184,
+      "patrimonio": 95314840335.73,
+      "retornoDiario": 0.037591,
+      "retornoAcumulado": 3245.845829,
+      "flujoEstimado": 82704064.80159,
       "origen": "cnv-excel"
     }
   ]

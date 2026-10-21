@@ -2,7 +2,7 @@
   "fondoId": "1543",
   "claseId": "4651",
   "nombre": "Allaria Dólar Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-ahorro-clase-b",
@@ -8322,6 +8322,22 @@
       "retornoDiario": 0.007121,
       "retornoAcumulado": 2.52,
       "flujoEstimado": -2897376.084083,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-ahorro-clase-b",
+      "fondoId": "1543",
+      "claseId": "4651",
+      "nombre": "Allaria Dólar Ahorro - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1025.224,
+      "patrimonio": 212707411.73,
+      "retornoDiario": 0.002341,
+      "retornoAcumulado": 2.5224,
+      "flujoEstimado": 6849195.661975,
       "origen": "cnv-excel"
     }
   ]

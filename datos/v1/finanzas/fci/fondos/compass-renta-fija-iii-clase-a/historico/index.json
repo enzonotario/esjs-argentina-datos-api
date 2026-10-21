@@ -2,7 +2,7 @@
   "fondoId": "429",
   "claseId": "799",
   "nombre": "Compass Renta Fija III - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "compass-renta-fija-iii-clase-a",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.097828,
       "retornoAcumulado": 2055.285352,
       "flujoEstimado": -50000049.344546,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-fija-iii-clase-a",
+      "fondoId": "429",
+      "claseId": "799",
+      "nombre": "Compass Renta Fija III - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 285086.459,
+      "patrimonio": 1277120830.36,
+      "retornoDiario": 0.134035,
+      "retornoAcumulado": 2058.174195,
+      "flujoEstimado": 1.301851,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "616",
   "claseId": "1244",
   "nombre": "Galileo Ahorro Plus - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "galileo-ahorro-plus-clase-a",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.069891,
       "retornoAcumulado": 2563.857448,
       "flujoEstimado": 57225767.107054,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-ahorro-plus-clase-a",
+      "fondoId": "616",
+      "claseId": "1244",
+      "nombre": "Galileo Ahorro Plus - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 100428.794,
+      "patrimonio": 16863186863.79,
+      "retornoDiario": -0.00442,
+      "retornoAcumulado": 2563.739709,
+      "flujoEstimado": 86621150.111364,
       "origen": "cnv-excel"
     }
   ]

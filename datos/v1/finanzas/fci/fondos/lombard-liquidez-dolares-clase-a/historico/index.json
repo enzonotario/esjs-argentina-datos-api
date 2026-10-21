@@ -2,7 +2,7 @@
   "fondoId": "1733",
   "claseId": "5863",
   "nombre": "Lombard Liquidez Dolares - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "lombard-liquidez-dolares-clase-a",
@@ -3938,6 +3938,22 @@
       "retornoDiario": 0.006735,
       "retornoAcumulado": 0.977281,
       "flujoEstimado": -21169.412753,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-liquidez-dolares-clase-a",
+      "fondoId": "1733",
+      "claseId": "5863",
+      "nombre": "Lombard Liquidez Dolares - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1009.817,
+      "patrimonio": 51877533.32,
+      "retornoDiario": 0.002476,
+      "retornoAcumulado": 0.979781,
+      "flujoEstimado": 46373.622261,
       "origen": "cnv-excel"
     }
   ]

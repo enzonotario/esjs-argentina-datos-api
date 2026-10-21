@@ -2,7 +2,7 @@
   "fondoId": "1335",
   "claseId": "3813",
   "nombre": "Novus Balanceado - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "novus-balanceado-clase-b",
@@ -15874,6 +15874,22 @@
       "retornoDiario": -0.244301,
       "retornoAcumulado": 110.9442,
       "flujoEstimado": 0.311646,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-balanceado-clase-b",
+      "fondoId": "1335",
+      "claseId": "3813",
+      "nombre": "Novus Balanceado - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 2113.614,
+      "patrimonio": 2096795.79,
+      "retornoDiario": 0.197777,
+      "retornoAcumulado": 111.3614,
+      "flujoEstimado": -0.104433,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1376",
   "claseId": "3956",
   "nombre": "Pionero Crecimiento - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "pionero-crecimiento-clase-b",
@@ -14402,6 +14402,22 @@
       "retornoDiario": -0.005466,
       "retornoAcumulado": 1195.2917,
       "flujoEstimado": 1783.867397,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-crecimiento-clase-b",
+      "fondoId": "1376",
+      "claseId": "3956",
+      "nombre": "Pionero Crecimiento - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 12962.28,
+      "patrimonio": 33677501392.03,
+      "retornoDiario": 0.072285,
+      "retornoAcumulado": 1196.228,
+      "flujoEstimado": -1046.655262,
       "origen": "cnv-excel"
     }
   ]

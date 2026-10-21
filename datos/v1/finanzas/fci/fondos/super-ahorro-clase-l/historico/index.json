@@ -2,7 +2,7 @@
   "fondoId": "151",
   "claseId": "6298",
   "nombre": "Super Ahorro $ - Clase L",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "super-ahorro-clase-l",
@@ -2322,6 +2322,22 @@
       "retornoDiario": 0.16508,
       "retornoAcumulado": 12.4336,
       "flujoEstimado": -163688129.584633,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "super-ahorro-clase-l",
+      "fondoId": "151",
+      "claseId": "6298",
+      "nombre": "Super Ahorro $ - Clase L",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1124.951,
+      "patrimonio": 45263938256,
+      "retornoDiario": 0.054699,
+      "retornoAcumulado": 12.4951,
+      "flujoEstimado": 92342136.323769,
       "origen": "cnv-excel"
     }
   ]

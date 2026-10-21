@@ -2,7 +2,7 @@
   "fondoId": "665",
   "claseId": "1386",
   "nombre": "IAM Renta Capital - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "iam-renta-capital-clase-a",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.164108,
       "retornoAcumulado": 2937.203007,
       "flujoEstimado": 103811334.072565,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-capital-clase-a",
+      "fondoId": "665",
+      "claseId": "1386",
+      "nombre": "IAM Renta Capital - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 93785.479,
+      "patrimonio": 2281584045.36,
+      "retornoDiario": 0.076995,
+      "retornoAcumulado": 2939.541516,
+      "flujoEstimado": 5780980.780856,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1585",
   "claseId": "5170",
   "nombre": "MEGAQM Renta Dólares - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "megaqm-renta-dolares-clase-b",
@@ -7410,6 +7410,22 @@
       "retornoDiario": -0.045862,
       "retornoAcumulado": 7.4463,
       "flujoEstimado": 0.794394,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-renta-dolares-clase-b",
+      "fondoId": "1585",
+      "claseId": "5170",
+      "nombre": "MEGAQM Renta Dólares - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1074.796,
+      "patrimonio": 5966727.41,
+      "retornoDiario": 0.030992,
+      "retornoAcumulado": 7.4796,
+      "flujoEstimado": -407524.856203,
       "origen": "cnv-excel"
     }
   ]

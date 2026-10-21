@@ -2,7 +2,7 @@
   "fondoId": "1342",
   "claseId": "3829",
   "nombre": "Superfondo Sustentable ASG - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "superfondo-sustentable-asg-clase-b",
@@ -16082,6 +16082,22 @@
       "retornoDiario": 0.033011,
       "retornoAcumulado": 713.6242,
       "flujoEstimado": 33.267076,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-sustentable-asg-clase-b",
+      "fondoId": "1342",
+      "claseId": "3829",
+      "nombre": "Superfondo Sustentable ASG - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "ASG",
+      "categoriaKey": null,
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 8090.149,
+      "patrimonio": 5150747712.69,
+      "retornoDiario": -0.566515,
+      "retornoAcumulado": 709.0149,
+      "flujoEstimado": 578.982722,
       "origen": "cnv-excel"
     }
   ]

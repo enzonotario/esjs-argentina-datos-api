@@ -2,7 +2,7 @@
   "fondoId": "282",
   "claseId": "2139",
   "nombre": "Premier Renta Fija Ahorro - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "premier-renta-fija-ahorro-clase-c",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.071463,
       "retornoAcumulado": 2250.026903,
       "flujoEstimado": 1544398820.170425,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-fija-ahorro-clase-c",
+      "fondoId": "282",
+      "claseId": "2139",
+      "nombre": "Premier Renta Fija Ahorro - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 28020.203,
+      "patrimonio": 107285273567.76,
+      "retornoDiario": 0.083638,
+      "retornoAcumulado": 2251.992422,
+      "flujoEstimado": 1882.227768,
       "origen": "cnv-excel"
     }
   ]

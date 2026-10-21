@@ -2,7 +2,7 @@
   "fondoId": "786",
   "claseId": "1782",
   "nombre": "Lombard Ahorro Plus - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "lombard-ahorro-plus-clase-a",
@@ -26082,6 +26082,22 @@
       "retornoDiario": -0.007362,
       "retornoAcumulado": 4863.465103,
       "flujoEstimado": 193.619484,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-ahorro-plus-clase-a",
+      "fondoId": "786",
+      "claseId": "1782",
+      "nombre": "Lombard Ahorro Plus - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 112970.606,
+      "patrimonio": 31575726718.62,
+      "retornoDiario": 0.242061,
+      "retornoAcumulado": 4875.479741,
+      "flujoEstimado": 132.034698,
       "origen": "cnv-excel"
     }
   ]

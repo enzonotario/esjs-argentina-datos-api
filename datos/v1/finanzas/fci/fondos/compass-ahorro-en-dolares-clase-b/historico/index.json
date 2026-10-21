@@ -2,7 +2,7 @@
   "fondoId": "808",
   "claseId": "2110",
   "nombre": "Compass Ahorro en Dolares - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "compass-ahorro-en-dolares-clase-b",
@@ -26274,6 +26274,22 @@
       "retornoDiario": -1.428168,
       "retornoAcumulado": 68.258538,
       "flujoEstimado": 1.099794,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-ahorro-en-dolares-clase-b",
+      "fondoId": "808",
+      "claseId": "2110",
+      "nombre": "Compass Ahorro en Dolares - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1193.034,
+      "patrimonio": 3116174.59,
+      "retornoDiario": 0.054345,
+      "retornoAcumulado": 68.349977,
+      "flujoEstimado": -63533.153595,
       "origen": "cnv-excel"
     }
   ]

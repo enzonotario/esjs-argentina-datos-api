@@ -2,7 +2,7 @@
   "fondoId": "1480",
   "claseId": "4379",
   "nombre": "BAVSA Ahorro Plus - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "bavsa-ahorro-plus-clase-b",
@@ -8658,6 +8658,22 @@
       "retornoDiario": 0.142889,
       "retornoAcumulado": 100.7211,
       "flujoEstimado": -46105013.580053,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-ahorro-plus-clase-b",
+      "fondoId": "1480",
+      "claseId": "4379",
+      "nombre": "BAVSA Ahorro Plus - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2008.47,
+      "patrimonio": 1220313043.1,
+      "retornoDiario": 0.062724,
+      "retornoAcumulado": 100.847,
+      "flujoEstimado": 14468445.622754,
       "origen": "cnv-excel"
     }
   ]

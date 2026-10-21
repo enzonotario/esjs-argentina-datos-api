@@ -2,7 +2,7 @@
   "fondoId": "770",
   "claseId": "1733",
   "nombre": "Pellegrini Renta Dólares - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-dolares-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": -0.50196,
       "retornoAcumulado": 181.308935,
       "flujoEstimado": -23550.712071,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-dolares-clase-b",
+      "fondoId": "770",
+      "claseId": "1733",
+      "nombre": "Pellegrini Renta Dólares - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2292.332,
+      "patrimonio": 5666422.48,
+      "retornoDiario": 0.378862,
+      "retornoAcumulado": 182.374708,
+      "flujoEstimado": -5030.702202,
       "origen": "cnv-excel"
     }
   ]

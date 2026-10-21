@@ -2,7 +2,7 @@
   "fondoId": "142",
   "claseId": "1728",
   "nombre": "Schroder Renta Variable - Clase D",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "schroder-renta-variable-clase-d",
@@ -26274,6 +26274,22 @@
       "retornoDiario": -1.831841,
       "retornoAcumulado": 5832.774711,
       "flujoEstimado": 82.05249,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-variable-clase-d",
+      "fondoId": "142",
+      "claseId": "1728",
+      "nombre": "Schroder Renta Variable - Clase D",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1006147.48,
+      "patrimonio": 26800747403.42,
+      "retornoDiario": -0.209415,
+      "retornoAcumulado": 5820.350593,
+      "flujoEstimado": -3.978149,
       "origen": "cnv-excel"
     }
   ]

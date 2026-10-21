@@ -2,7 +2,7 @@
   "fondoId": "860",
   "claseId": "2481",
   "nombre": "SF Value - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "sf-value-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": -1.790631,
       "retornoAcumulado": 4136.880508,
       "flujoEstimado": 14852592.664757,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sf-value-clase-a",
+      "fondoId": "860",
+      "claseId": "2481",
+      "nombre": "SF Value - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 59561.388,
+      "patrimonio": 32423511268.89,
+      "retornoDiario": -0.25812,
+      "retornoAcumulado": 4125.944252,
+      "flujoEstimado": -14153521.460579,
       "origen": "cnv-excel"
     }
   ]

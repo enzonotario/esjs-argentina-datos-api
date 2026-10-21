@@ -2,7 +2,7 @@
   "fondoId": "877",
   "claseId": "2529",
   "nombre": "SBS Multiactivos - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "sbs-multiactivos-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": -0.0321,
       "retornoAcumulado": 4840.313391,
       "flujoEstimado": -20.910398,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-multiactivos-clase-b",
+      "fondoId": "877",
+      "claseId": "2529",
+      "nombre": "SBS Multiactivos - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 95093.599,
+      "patrimonio": 15405890517.39,
+      "retornoDiario": 0.117942,
+      "retornoAcumulado": 4846.140087,
+      "flujoEstimado": 51.9114,
       "origen": "cnv-excel"
     }
   ]

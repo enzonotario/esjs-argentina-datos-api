@@ -2,7 +2,7 @@
   "fondoId": "1458",
   "claseId": "4309",
   "nombre": "Adcap Balanceado XVII - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-xvii-clase-a",
@@ -10802,6 +10802,22 @@
       "retornoDiario": -0.064923,
       "retornoAcumulado": 80.5575,
       "flujoEstimado": 381.717705,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-xvii-clase-a",
+      "fondoId": "1458",
+      "claseId": "4309",
+      "nombre": "Adcap Balanceado XVII - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1808.881,
+      "patrimonio": 1435907405.04,
+      "retornoDiario": 0.1831,
+      "retornoAcumulado": 80.8881,
+      "flujoEstimado": -680.854092,
       "origen": "cnv-excel"
     }
   ]

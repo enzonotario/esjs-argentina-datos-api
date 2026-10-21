@@ -2,7 +2,7 @@
   "fondoId": "830",
   "claseId": "2348",
   "nombre": "Allaria Estructurado - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-estructurado-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.050581,
       "retornoAcumulado": 5943.552814,
       "flujoEstimado": -0.000116,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-estructurado-clase-a",
+      "fondoId": "830",
+      "claseId": "2348",
+      "nombre": "Allaria Estructurado - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 107909.717,
+      "patrimonio": 1366028.03,
+      "retornoDiario": 0.156806,
+      "retornoAcumulado": 5953.029468,
+      "flujoEstimado": -0.000366,
       "origen": "cnv-excel"
     }
   ]

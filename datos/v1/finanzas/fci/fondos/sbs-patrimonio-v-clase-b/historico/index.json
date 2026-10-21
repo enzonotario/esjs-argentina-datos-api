@@ -2,7 +2,7 @@
   "fondoId": "1309",
   "claseId": "3722",
   "nombre": "SBS Patrimonio V - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "sbs-patrimonio-v-clase-b",
@@ -17890,6 +17890,22 @@
       "retornoDiario": 0.108508,
       "retornoAcumulado": 429.1044,
       "flujoEstimado": 566.333075,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-patrimonio-v-clase-b",
+      "fondoId": "1309",
+      "claseId": "3722",
+      "nombre": "SBS Patrimonio V - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 5301.607,
+      "patrimonio": 7989510235.64,
+      "retornoDiario": 0.199639,
+      "retornoAcumulado": 430.1607,
+      "flujoEstimado": 369.028522,
       "origen": "cnv-excel"
     }
   ]

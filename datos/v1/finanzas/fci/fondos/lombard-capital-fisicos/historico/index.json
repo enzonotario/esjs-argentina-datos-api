@@ -2,7 +2,7 @@
   "fondoId": "1135",
   "claseId": "3115",
   "nombre": "Lombard Capital Fisicos",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "lombard-capital-fisicos",
@@ -26050,6 +26050,22 @@
       "retornoDiario": 0.15337,
       "retornoAcumulado": 1346.856887,
       "flujoEstimado": -0.098815,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-capital-fisicos",
+      "fondoId": "1135",
+      "claseId": "3115",
+      "nombre": "Lombard Capital Fisicos",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 197513.183,
+      "patrimonio": 101064533.04,
+      "retornoDiario": 0.050549,
+      "retornoAcumulado": 1347.588255,
+      "flujoEstimado": -0.450057,
       "origen": "cnv-excel"
     }
   ]

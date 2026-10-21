@@ -2,7 +2,7 @@
   "fondoId": "1410",
   "claseId": "4109",
   "nombre": "ACA Valores Retorno Total - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "aca-valores-retorno-total-clase-a",
@@ -2802,6 +2802,22 @@
       "retornoDiario": 0.050987,
       "retornoAcumulado": 5.7664,
       "flujoEstimado": -28.515768,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "aca-valores-retorno-total-clase-a",
+      "fondoId": "1410",
+      "claseId": "4109",
+      "nombre": "ACA Valores Retorno Total - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1058.098,
+      "patrimonio": 171163624.02,
+      "retornoDiario": 0.041034,
+      "retornoAcumulado": 5.8098,
+      "flujoEstimado": 4999956.487647,
       "origen": "cnv-excel"
     }
   ]

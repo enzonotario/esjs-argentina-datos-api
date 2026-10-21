@@ -2,7 +2,7 @@
   "fondoId": "1226",
   "claseId": "3400",
   "nombre": "Alpha Infraestructura - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "alpha-infraestructura-clase-b",
@@ -22514,6 +22514,22 @@
       "retornoDiario": 0.241828,
       "retornoAcumulado": 209.9758,
       "flujoEstimado": 29416038.208146,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-infraestructura-clase-b",
+      "fondoId": "1226",
+      "claseId": "3400",
+      "nombre": "Alpha Infraestructura - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Infraestructura",
+      "categoriaKey": null,
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 3099.142,
+      "patrimonio": 672338301.41,
+      "retornoDiario": -0.019873,
+      "retornoAcumulado": 209.9142,
+      "flujoEstimado": -1035286.91755,
       "origen": "cnv-excel"
     }
   ]

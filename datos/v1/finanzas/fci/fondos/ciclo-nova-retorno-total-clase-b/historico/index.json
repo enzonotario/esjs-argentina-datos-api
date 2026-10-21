@@ -2,7 +2,7 @@
   "fondoId": "828",
   "claseId": "2336",
   "nombre": "Ciclo Nova Retorno Total - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-retorno-total-clase-b",
@@ -26082,6 +26082,22 @@
       "retornoDiario": 0.27166,
       "retornoAcumulado": 2644.66166,
       "flujoEstimado": -40.112188,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-retorno-total-clase-b",
+      "fondoId": "828",
+      "claseId": "2336",
+      "nombre": "Ciclo Nova Retorno Total - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 51347.259,
+      "patrimonio": 9377981576.89,
+      "retornoDiario": 0.090615,
+      "retornoAcumulado": 2647.148725,
+      "flujoEstimado": 90.438669,
       "origen": "cnv-excel"
     }
   ]

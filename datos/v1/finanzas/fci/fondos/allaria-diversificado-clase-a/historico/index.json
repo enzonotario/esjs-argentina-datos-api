@@ -2,7 +2,7 @@
   "fondoId": "742",
   "claseId": "1622",
   "nombre": "Allaria Diversificado - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-diversificado-clase-a",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.255399,
       "retornoAcumulado": 7163.152353,
       "flujoEstimado": 1881714.96093,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-diversificado-clase-a",
+      "fondoId": "742",
+      "claseId": "1622",
+      "nombre": "Allaria Diversificado - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 186706.905,
+      "patrimonio": 28487305851.84,
+      "retornoDiario": -0.153879,
+      "retornoAcumulado": 7151.975867,
+      "flujoEstimado": -25184106.993679,
       "origen": "cnv-excel"
     }
   ]

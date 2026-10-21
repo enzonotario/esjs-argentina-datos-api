@@ -2,7 +2,7 @@
   "fondoId": "1262",
   "claseId": "3506",
   "nombre": "Consultatio Gestión XII Pesos - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-xii-pesos-clase-c",
@@ -19282,6 +19282,22 @@
       "retornoDiario": 0.266828,
       "retornoAcumulado": 3638.9093,
       "flujoEstimado": -0.019234,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-xii-pesos-clase-c",
+      "fondoId": "1262",
+      "claseId": "3506",
+      "nombre": "Consultatio Gestión XII Pesos - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 37422.381,
+      "patrimonio": 29960745.01,
+      "retornoDiario": 0.089031,
+      "retornoAcumulado": 3642.2381,
+      "flujoEstimado": 0.386771,
       "origen": "cnv-excel"
     }
   ]

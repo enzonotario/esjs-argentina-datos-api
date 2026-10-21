@@ -2,7 +2,7 @@
   "fondoId": "1645",
   "claseId": "5478",
   "nombre": "Novus Income Dólares - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "novus-income-dolares-clase-c",
@@ -5202,6 +5202,22 @@
       "retornoDiario": -0.463616,
       "retornoAcumulado": -4.5247,
       "flujoEstimado": -0.081753,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-income-dolares-clase-c",
+      "fondoId": "1645",
+      "claseId": "5478",
+      "nombre": "Novus Income Dólares - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 956.28,
+      "patrimonio": 1456943.53,
+      "retornoDiario": 0.159937,
+      "retornoAcumulado": -4.372,
+      "flujoEstimado": 0.149353,
       "origen": "cnv-excel"
     }
   ]

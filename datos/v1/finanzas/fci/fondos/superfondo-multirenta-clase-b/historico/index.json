@@ -2,7 +2,7 @@
   "fondoId": "645",
   "claseId": "1320",
   "nombre": "Superfondo Multirenta - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "superfondo-multirenta-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.158257,
       "retornoAcumulado": 25.7536,
       "flujoEstimado": 6436.194946,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-multirenta-clase-b",
+      "fondoId": "645",
+      "claseId": "1320",
+      "nombre": "Superfondo Multirenta - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1259.614,
+      "patrimonio": 66438695222.3,
+      "retornoDiario": 0.165244,
+      "retornoAcumulado": 25.9614,
+      "flujoEstimado": -9449.907486,
       "origen": "cnv-excel"
     }
   ]

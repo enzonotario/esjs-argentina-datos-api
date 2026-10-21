@@ -2,7 +2,7 @@
   "fondoId": "655",
   "claseId": "1354",
   "nombre": "MAF Ahorro Plus - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "maf-ahorro-plus-clase-c",
@@ -17938,6 +17938,22 @@
       "retornoDiario": 0.122049,
       "retornoAcumulado": 2416.514975,
       "flujoEstimado": -83.13187,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-ahorro-plus-clase-c",
+      "fondoId": "655",
+      "claseId": "1354",
+      "nombre": "MAF Ahorro Plus - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 47022.241,
+      "patrimonio": 9436519097.63,
+      "retornoDiario": 0.073911,
+      "retornoAcumulado": 2418.37496,
+      "flujoEstimado": -799999860.014523,
       "origen": "cnv-excel"
     }
   ]

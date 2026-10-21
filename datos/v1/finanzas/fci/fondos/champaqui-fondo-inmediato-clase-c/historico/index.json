@@ -2,7 +2,7 @@
   "fondoId": "1209",
   "claseId": "3347",
   "nombre": "Champaquí Fondo Inmediato - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "champaqui-fondo-inmediato-clase-c",
@@ -23618,6 +23618,22 @@
       "retornoDiario": 0.16987,
       "retornoAcumulado": 1277.2684,
       "flujoEstimado": -2616598955.346695,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-fondo-inmediato-clase-c",
+      "fondoId": "1209",
+      "claseId": "3347",
+      "nombre": "Champaquí Fondo Inmediato - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 13780.321,
+      "patrimonio": 78034939432.19,
+      "retornoDiario": 0.05545,
+      "retornoAcumulado": 1278.0321,
+      "flujoEstimado": 6300469423.142014,
       "origen": "cnv-excel"
     }
   ]

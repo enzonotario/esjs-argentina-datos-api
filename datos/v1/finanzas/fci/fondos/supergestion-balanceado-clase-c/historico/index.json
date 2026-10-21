@@ -2,7 +2,7 @@
   "fondoId": "541",
   "claseId": "1097",
   "nombre": "Supergestion Balanceado - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "supergestion-balanceado-clase-c",
@@ -26194,6 +26194,22 @@
       "retornoDiario": -0.238362,
       "retornoAcumulado": 4654.373452,
       "flujoEstimado": -82277378.910706,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-balanceado-clase-c",
+      "fondoId": "541",
+      "claseId": "1097",
+      "nombre": "Supergestion Balanceado - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 360460.672,
+      "patrimonio": 70589885625.71,
+      "retornoDiario": 0.250798,
+      "retornoAcumulado": 4666.297319,
+      "flujoEstimado": -34.618286,
       "origen": "cnv-excel"
     }
   ]

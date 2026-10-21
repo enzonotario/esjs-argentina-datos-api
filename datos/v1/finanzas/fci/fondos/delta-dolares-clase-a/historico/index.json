@@ -2,7 +2,7 @@
   "fondoId": "1553",
   "claseId": "4804",
   "nombre": "Delta Dólares - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "delta-dolares-clase-a",
@@ -8146,6 +8146,22 @@
       "retornoDiario": 0.004508,
       "retornoAcumulado": 2.0519,
       "flujoEstimado": 183400.185845,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-dolares-clase-a",
+      "fondoId": "1553",
+      "claseId": "4804",
+      "nombre": "Delta Dólares - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1020.535,
+      "patrimonio": 22085530.67,
+      "retornoDiario": 0.001568,
+      "retornoAcumulado": 2.0535,
+      "flujoEstimado": 56653.162617,
       "origen": "cnv-excel"
     }
   ]

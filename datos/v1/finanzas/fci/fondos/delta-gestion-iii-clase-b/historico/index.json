@@ -2,7 +2,7 @@
   "fondoId": "603",
   "claseId": "1223",
   "nombre": "Delta Gestion III - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "delta-gestion-iii-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.087482,
       "retornoAcumulado": 4430.017886,
       "flujoEstimado": -87.726694,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-iii-clase-b",
+      "fondoId": "603",
+      "claseId": "1223",
+      "nombre": "Delta Gestion III - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 318774.63,
+      "patrimonio": 14555555130.44,
+      "retornoDiario": 0.3379,
+      "retornoAcumulado": 4445.32483,
+      "flujoEstimado": 52.639299,
       "origen": "cnv-excel"
     }
   ]

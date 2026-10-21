@@ -2,7 +2,7 @@
   "fondoId": "1312",
   "claseId": "3734",
   "nombre": "SBS Patrimonio VI - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "sbs-patrimonio-vi-clase-a",
@@ -16386,6 +16386,22 @@
       "retornoDiario": 0.554511,
       "retornoAcumulado": 986.8191,
       "flujoEstimado": 187.437988,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-patrimonio-vi-clase-a",
+      "fondoId": "1312",
+      "claseId": "3734",
+      "nombre": "SBS Patrimonio VI - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 10880.464,
+      "patrimonio": 2581279887.05,
+      "retornoDiario": 0.112926,
+      "retornoAcumulado": 988.0464,
+      "flujoEstimado": -104.325174,
       "origen": "cnv-excel"
     }
   ]

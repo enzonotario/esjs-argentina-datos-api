@@ -2,7 +2,7 @@
   "fondoId": "1725",
   "claseId": "5806",
   "nombre": "Alpha Dólar - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "alpha-dolar-clase-a",
@@ -2514,6 +2514,22 @@
       "retornoDiario": 0.006335,
       "retornoAcumulado": 0.550131,
       "flujoEstimado": 128004.761683,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-dolar-clase-a",
+      "fondoId": "1725",
+      "claseId": "5806",
+      "nombre": "Alpha Dólar - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1010.401,
+      "patrimonio": 54313026.05,
+      "retornoDiario": 0.002078,
+      "retornoAcumulado": 0.552221,
+      "flujoEstimado": 1400336.367156,
       "origen": "cnv-excel"
     }
   ]

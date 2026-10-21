@@ -2,7 +2,7 @@
   "fondoId": "1488",
   "claseId": "4434",
   "nombre": "Novus Performance - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "novus-performance-clase-b",
@@ -9778,6 +9778,22 @@
       "retornoDiario": 0.147431,
       "retornoAcumulado": 159.1465,
       "flujoEstimado": -84935460.537865,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-performance-clase-b",
+      "fondoId": "1488",
+      "claseId": "4434",
+      "nombre": "Novus Performance - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 2591.429,
+      "patrimonio": 26727560138.96,
+      "retornoDiario": -0.001389,
+      "retornoAcumulado": 159.1429,
+      "flujoEstimado": 179115.299057,
       "origen": "cnv-excel"
     }
   ]

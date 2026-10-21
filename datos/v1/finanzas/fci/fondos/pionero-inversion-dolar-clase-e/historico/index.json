@@ -2,7 +2,7 @@
   "fondoId": "1557",
   "claseId": "6165",
   "nombre": "Pionero Inversión Dólar - Clase E",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "pionero-inversion-dolar-clase-e",
@@ -2834,6 +2834,22 @@
       "retornoDiario": -0.380776,
       "retornoAcumulado": 2.382556,
       "flujoEstimado": 0.909972,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-inversion-dolar-clase-e",
+      "fondoId": "1557",
+      "claseId": "6165",
+      "nombre": "Pionero Inversión Dólar - Clase E",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1152.55,
+      "patrimonio": 5127478.25,
+      "retornoDiario": 0.168519,
+      "retornoAcumulado": 2.55509,
+      "flujoEstimado": -0.368842,
       "origen": "cnv-excel"
     }
   ]

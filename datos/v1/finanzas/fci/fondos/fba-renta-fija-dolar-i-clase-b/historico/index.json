@@ -2,7 +2,7 @@
   "fondoId": "846",
   "claseId": "4554",
   "nombre": "FBA Renta Fija Dólar I - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fba-renta-fija-dolar-i-clase-b",
@@ -8802,6 +8802,22 @@
       "retornoDiario": -0.042053,
       "retornoAcumulado": 10.5277,
       "flujoEstimado": -58971.405456,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-fija-dolar-i-clase-b",
+      "fondoId": "846",
+      "claseId": "4554",
+      "nombre": "FBA Renta Fija Dólar I - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1105.428,
+      "patrimonio": 32233542.28,
+      "retornoDiario": 0.013662,
+      "retornoAcumulado": 10.5428,
+      "flujoEstimado": 37886.630376,
       "origen": "cnv-excel"
     }
   ]

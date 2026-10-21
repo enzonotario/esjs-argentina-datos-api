@@ -2,7 +2,7 @@
   "fondoId": "515",
   "claseId": "1039",
   "nombre": "Schroder Renta Global Dos - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "schroder-renta-global-dos-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.092449,
       "retornoAcumulado": 4704.478668,
       "flujoEstimado": -124.262192,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-global-dos-clase-b",
+      "fondoId": "515",
+      "claseId": "1039",
+      "nombre": "Schroder Renta Global Dos - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 59462.28,
+      "patrimonio": 83753018072.5,
+      "retornoDiario": 0.124481,
+      "retornoAcumulado": 4710.459314,
+      "flujoEstimado": -222.782654,
       "origen": "cnv-excel"
     }
   ]

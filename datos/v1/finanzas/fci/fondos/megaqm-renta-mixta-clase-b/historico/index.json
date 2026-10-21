@@ -2,7 +2,7 @@
   "fondoId": "600",
   "claseId": "1219",
   "nombre": "MEGAQM Renta Mixta - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "megaqm-renta-mixta-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.089807,
       "retornoAcumulado": 2362.722936,
       "flujoEstimado": -69999997.09201,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-renta-mixta-clase-b",
+      "fondoId": "600",
+      "claseId": "1219",
+      "nombre": "MEGAQM Renta Mixta - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 104939.971,
+      "patrimonio": 5764520047.24,
+      "retornoDiario": 0.066926,
+      "retornoAcumulado": 2364.371134,
+      "flujoEstimado": 17.858376,
       "origen": "cnv-excel"
     }
   ]

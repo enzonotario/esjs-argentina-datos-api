@@ -2,7 +2,7 @@
   "fondoId": "1647",
   "claseId": "5484",
   "nombre": "Novus Low Volatility - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "novus-low-volatility-clase-b",
@@ -5202,6 +5202,22 @@
       "retornoDiario": -0.002192,
       "retornoAcumulado": 14.0283,
       "flujoEstimado": -0.000445,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-low-volatility-clase-b",
+      "fondoId": "1647",
+      "claseId": "5484",
+      "nombre": "Novus Low Volatility - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1140.357,
+      "patrimonio": 114035.72,
+      "retornoDiario": 0.00649,
+      "retornoAcumulado": 14.0357,
+      "flujoEstimado": 0.009563,
       "origen": "cnv-excel"
     }
   ]

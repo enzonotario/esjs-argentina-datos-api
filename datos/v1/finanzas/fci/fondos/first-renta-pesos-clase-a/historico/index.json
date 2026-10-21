@@ -2,7 +2,7 @@
   "fondoId": "744",
   "claseId": "1629",
   "nombre": "First Renta Pesos - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "first-renta-pesos-clase-a",
@@ -25458,6 +25458,22 @@
       "retornoDiario": 0.108419,
       "retornoAcumulado": 2842.874466,
       "flujoEstimado": -270761512.406253,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-pesos-clase-a",
+      "fondoId": "744",
+      "claseId": "1629",
+      "nombre": "First Renta Pesos - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 71418.623,
+      "patrimonio": 2646018008.87,
+      "retornoDiario": 0.062348,
+      "retornoAcumulado": 2844.709275,
+      "flujoEstimado": -2676194.693811,
       "origen": "cnv-excel"
     }
   ]

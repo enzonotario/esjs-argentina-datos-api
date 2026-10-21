@@ -2,7 +2,7 @@
   "fondoId": "657",
   "claseId": "1358",
   "nombre": "Balanz Excalibur Regisseur - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "balanz-excalibur-regisseur-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.104289,
       "retornoAcumulado": 5066.941501,
       "flujoEstimado": 111.210281,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-excalibur-regisseur-clase-b",
+      "fondoId": "657",
+      "claseId": "1358",
+      "nombre": "Balanz Excalibur Regisseur - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 178294.703,
+      "patrimonio": 81327106853.06,
+      "retornoDiario": 0.119675,
+      "retornoAcumulado": 5073.125035,
+      "flujoEstimado": -235.784668,
       "origen": "cnv-excel"
     }
   ]

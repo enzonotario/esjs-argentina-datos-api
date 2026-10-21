@@ -2,7 +2,7 @@
   "fondoId": "761",
   "claseId": "1684",
   "nombre": "Fundcorp Performance - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fundcorp-performance-clase-a",
@@ -25922,6 +25922,22 @@
       "retornoDiario": 0.031417,
       "retornoAcumulado": 1661.577468,
       "flujoEstimado": -23.886565,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-performance-clase-a",
+      "fondoId": "761",
+      "claseId": "1684",
+      "nombre": "Fundcorp Performance - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 39553.354,
+      "patrimonio": 1548837333.3,
+      "retornoDiario": 0.094025,
+      "retornoAcumulado": 1663.233786,
+      "flujoEstimado": -3.981915,
       "origen": "cnv-excel"
     }
   ]

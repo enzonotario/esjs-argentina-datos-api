@@ -2,7 +2,7 @@
   "fondoId": "1726",
   "claseId": "5823",
   "nombre": "Numancia Pesos III - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "numancia-pesos-iii-clase-b",
@@ -3506,6 +3506,22 @@
       "retornoDiario": 0.652116,
       "retornoAcumulado": 23.4776,
       "flujoEstimado": 30616.540924,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "numancia-pesos-iii-clase-b",
+      "fondoId": "1726",
+      "claseId": "5823",
+      "nombre": "Numancia Pesos III - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1236.288,
+      "patrimonio": 50929373433.53,
+      "retornoDiario": 0.122451,
+      "retornoAcumulado": 23.6288,
+      "flujoEstimado": -39048.752724,
       "origen": "cnv-excel"
     }
   ]

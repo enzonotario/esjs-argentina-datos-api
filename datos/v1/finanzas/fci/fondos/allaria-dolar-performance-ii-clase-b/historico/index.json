@@ -2,7 +2,7 @@
   "fondoId": "1992",
   "claseId": "6659",
   "nombre": "Allaria Dólar Performance II - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-dolar-performance-ii-clase-b",
@@ -546,6 +546,22 @@
       "retornoDiario": -0.216444,
       "retornoAcumulado": 0.6851,
       "flujoEstimado": -1.381131,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dolar-performance-ii-clase-b",
+      "fondoId": "1992",
+      "claseId": "6659",
+      "nombre": "Allaria Dólar Performance II - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1007.115,
+      "patrimonio": 14083957.28,
+      "retornoDiario": 0.02622,
+      "retornoAcumulado": 0.7115,
+      "flujoEstimado": -4.536786,
       "origen": "cnv-excel"
     }
   ]

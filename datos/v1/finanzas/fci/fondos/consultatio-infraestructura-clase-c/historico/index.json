@@ -2,7 +2,7 @@
   "fondoId": "1199",
   "claseId": "3280",
   "nombre": "Consultatio Infraestructura - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "consultatio-infraestructura-clase-c",
@@ -25106,6 +25106,22 @@
       "retornoDiario": 0.240033,
       "retornoAcumulado": 1684.3608,
       "flujoEstimado": -185.008457,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-infraestructura-clase-c",
+      "fondoId": "1199",
+      "claseId": "3280",
+      "nombre": "Consultatio Infraestructura - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Infraestructura",
+      "categoriaKey": null,
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 17870.478,
+      "patrimonio": 3838357870.9,
+      "retornoDiario": 0.150586,
+      "retornoAcumulado": 1687.0478,
+      "flujoEstimado": 130.581046,
       "origen": "cnv-excel"
     }
   ]

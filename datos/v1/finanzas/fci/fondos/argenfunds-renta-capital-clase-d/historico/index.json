@@ -2,7 +2,7 @@
   "fondoId": "736",
   "claseId": "2194",
   "nombre": "Argenfunds Renta Capital - Clase D",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-capital-clase-d",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.05653,
       "retornoAcumulado": 10.704069,
       "flujoEstimado": 0.747716,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-capital-clase-d",
+      "fondoId": "736",
+      "claseId": "2194",
+      "nombre": "Argenfunds Renta Capital - Clase D",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1123.046,
+      "patrimonio": 1404694.73,
+      "retornoDiario": 0.033402,
+      "retornoAcumulado": 10.741047,
+      "flujoEstimado": -0.639679,
       "origen": "cnv-excel"
     }
   ]

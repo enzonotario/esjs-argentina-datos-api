@@ -2,7 +2,7 @@
   "fondoId": "1415",
   "claseId": "4134",
   "nombre": "Consultatio Gestion III - Clase I",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-iii-clase-i",
@@ -13058,6 +13058,22 @@
       "retornoDiario": 0.002357,
       "retornoAcumulado": 1.8288,
       "flujoEstimado": 0.259301,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-iii-clase-i",
+      "fondoId": "1415",
+      "claseId": "4134",
+      "nombre": "Consultatio Gestion III - Clase I",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1018.158,
+      "patrimonio": 5671480.18,
+      "retornoDiario": -0.012767,
+      "retornoAcumulado": 1.8158,
+      "flujoEstimado": 0.010328,
       "origen": "cnv-excel"
     }
   ]

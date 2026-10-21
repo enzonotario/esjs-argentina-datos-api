@@ -2,7 +2,7 @@
   "fondoId": "1566",
   "claseId": "5027",
   "nombre": "Ualintec Cobertura - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "ualintec-cobertura-clase-a",
@@ -7922,6 +7922,22 @@
       "retornoDiario": -0.673844,
       "retornoAcumulado": 80.4352,
       "flujoEstimado": -10398219.012789,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-cobertura-clase-a",
+      "fondoId": "1566",
+      "claseId": "5027",
+      "nombre": "Ualintec Cobertura - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1818.495,
+      "patrimonio": 2037949587.29,
+      "retornoDiario": 0.783827,
+      "retornoAcumulado": 81.8495,
+      "flujoEstimado": -22626414.403212,
       "origen": "cnv-excel"
     }
   ]

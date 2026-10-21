@@ -2,7 +2,7 @@
   "fondoId": "1801",
   "claseId": "6169",
   "nombre": "Quiron Money Market USD - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "quiron-money-market-usd-clase-b",
@@ -2434,6 +2434,22 @@
       "retornoDiario": 0.000497,
       "retornoAcumulado": 0.5492,
       "flujoEstimado": -0.019606,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-money-market-usd-clase-b",
+      "fondoId": "1801",
+      "claseId": "6169",
+      "nombre": "Quiron Money Market USD - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1005.494,
+      "patrimonio": 853345.64,
+      "retornoDiario": 0.000199,
+      "retornoAcumulado": 0.5494,
+      "flujoEstimado": -1711.751561,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1260",
   "claseId": "3497",
   "nombre": "Champaquí Cobertura - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "champaqui-cobertura-clase-a",
@@ -20274,6 +20274,22 @@
       "retornoDiario": 0.121605,
       "retornoAcumulado": 2333.2801,
       "flujoEstimado": 34439501.933674,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-cobertura-clase-a",
+      "fondoId": "1260",
+      "claseId": "3497",
+      "nombre": "Champaquí Cobertura - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 24341.364,
+      "patrimonio": 12863737274.21,
+      "retornoDiario": 0.035191,
+      "retornoAcumulado": 2334.1364,
+      "flujoEstimado": 32961680.733486,
       "origen": "cnv-excel"
     }
   ]

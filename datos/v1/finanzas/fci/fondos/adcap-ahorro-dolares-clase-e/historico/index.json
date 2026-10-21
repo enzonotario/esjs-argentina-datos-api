@@ -2,7 +2,7 @@
   "fondoId": "712",
   "claseId": "1532",
   "nombre": "Adcap Ahorro Dólares - Clase E",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "adcap-ahorro-dolares-clase-e",
@@ -8066,6 +8066,22 @@
       "retornoDiario": 0.012078,
       "retornoAcumulado": 4.3344,
       "flujoEstimado": -3401958.01877,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-ahorro-dolares-clase-e",
+      "fondoId": "712",
+      "claseId": "1532",
+      "nombre": "Adcap Ahorro Dólares - Clase E",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1043.39,
+      "patrimonio": 123424214.51,
+      "retornoDiario": 0.004409,
+      "retornoAcumulado": 4.339,
+      "flujoEstimado": -99293.511358,
       "origen": "cnv-excel"
     }
   ]

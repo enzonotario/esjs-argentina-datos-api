@@ -2,7 +2,7 @@
   "fondoId": "537",
   "claseId": "1085",
   "nombre": "MEGAQM Cobertura - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "megaqm-cobertura-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.472584,
       "retornoAcumulado": 3271.094845,
       "flujoEstimado": -106548085.787586,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-cobertura-clase-b",
+      "fondoId": "537",
+      "claseId": "1085",
+      "nombre": "MEGAQM Cobertura - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 461462.412,
+      "patrimonio": 25174766021.74,
+      "retornoDiario": 0.452755,
+      "retornoAcumulado": 3286.357657,
+      "flujoEstimado": 6993031.787788,
       "origen": "cnv-excel"
     }
   ]

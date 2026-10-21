@@ -2,7 +2,7 @@
   "fondoId": "1581",
   "claseId": "5145",
   "nombre": "Lombard Dinámico I - Clase U",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "lombard-dinamico-i-clase-u",
@@ -7410,6 +7410,22 @@
       "retornoDiario": 0.010937,
       "retornoAcumulado": 77.4024,
       "flujoEstimado": 37141066.397671,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-dinamico-i-clase-u",
+      "fondoId": "1581",
+      "claseId": "5145",
+      "nombre": "Lombard Dinámico I - Clase U",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1774.149,
+      "patrimonio": 8158385060.38,
+      "retornoDiario": 0.007046,
+      "retornoAcumulado": 77.4149,
+      "flujoEstimado": -8688767.918449,
       "origen": "cnv-excel"
     }
   ]

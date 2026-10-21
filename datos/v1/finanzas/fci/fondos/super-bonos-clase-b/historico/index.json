@@ -2,7 +2,7 @@
   "fondoId": "341",
   "claseId": "1040",
   "nombre": "Super Bonos - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "super-bonos-clase-b",
@@ -26146,6 +26146,22 @@
       "retornoDiario": 0.091696,
       "retornoAcumulado": 2649.74717,
       "flujoEstimado": -594.889771,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "super-bonos-clase-b",
+      "fondoId": "341",
+      "claseId": "1040",
+      "nombre": "Super Bonos - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1377666.295,
+      "patrimonio": 140349573612.87,
+      "retornoDiario": 0.101646,
+      "retornoAcumulado": 2652.542173,
+      "flujoEstimado": -30030785.218811,
       "origen": "cnv-excel"
     }
   ]

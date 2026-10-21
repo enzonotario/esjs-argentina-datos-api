@@ -2,7 +2,7 @@
   "fondoId": "1597",
   "claseId": "5250",
   "nombre": "Champaquí Ahorro Mixto - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "champaqui-ahorro-mixto-clase-a",
@@ -7090,6 +7090,22 @@
       "retornoDiario": 0.125771,
       "retornoAcumulado": 74.2648,
       "flujoEstimado": -794.516972,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-ahorro-mixto-clase-a",
+      "fondoId": "1597",
+      "claseId": "5250",
+      "nombre": "Champaquí Ahorro Mixto - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1742.28,
+      "patrimonio": 2655424663.77,
+      "retornoDiario": -0.021117,
+      "retornoAcumulado": 74.228,
+      "flujoEstimado": 977.227592,
       "origen": "cnv-excel"
     }
   ]

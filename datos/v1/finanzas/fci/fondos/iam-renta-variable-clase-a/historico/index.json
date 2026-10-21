@@ -2,7 +2,7 @@
   "fondoId": "430",
   "claseId": "803",
   "nombre": "IAM Renta Variable - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "iam-renta-variable-clase-a",
@@ -26258,6 +26258,22 @@
       "retornoDiario": -1.87294,
       "retornoAcumulado": 5970.848424,
       "flujoEstimado": -44470.953644,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-variable-clase-a",
+      "fondoId": "430",
+      "claseId": "803",
+      "nombre": "IAM Renta Variable - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 162539.376,
+      "patrimonio": 348232157.63,
+      "retornoDiario": -0.167943,
+      "retornoAcumulado": 5960.652848,
+      "flujoEstimado": 3664.603594,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "462",
   "claseId": "903",
   "nombre": "Allaria Ahorro Plus - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "allaria-ahorro-plus-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.0528,
       "retornoAcumulado": 3141.16857,
       "flujoEstimado": -620562954.622467,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-ahorro-plus-clase-b",
+      "fondoId": "462",
+      "claseId": "903",
+      "nombre": "Allaria Ahorro Plus - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 260039.261,
+      "patrimonio": 208116239823.4,
+      "retornoDiario": 0.075421,
+      "retornoAcumulado": 3143.613086,
+      "flujoEstimado": 2765753756.126648,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1901",
   "claseId": "6574",
   "nombre": "Blacktoro Pesos - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "blacktoro-pesos-clase-b",
@@ -1138,6 +1138,22 @@
       "retornoDiario": 0.163412,
       "retornoAcumulado": 5.5502,
       "flujoEstimado": -5302326965.087273,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "blacktoro-pesos-clase-b",
+      "fondoId": "1901",
+      "claseId": "6574",
+      "nombre": "Blacktoro Pesos - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1056.08,
+      "patrimonio": 32584124486.78,
+      "retornoDiario": 0.054761,
+      "retornoAcumulado": 5.608,
+      "flujoEstimado": -885013697.008854,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "810",
   "claseId": "2148",
   "nombre": "Premier Renta Mixta - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "premier-renta-mixta-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": -0.048727,
       "retornoAcumulado": 4023.953591,
       "flujoEstimado": -76374959.490841,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-renta-mixta-clase-a",
+      "fondoId": "810",
+      "claseId": "2148",
+      "nombre": "Premier Renta Mixta - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 73951.069,
+      "patrimonio": 7419875515.31,
+      "retornoDiario": 0.232586,
+      "retornoAcumulado": 4033.545346,
+      "flujoEstimado": 1910812.384953,
       "origen": "cnv-excel"
     }
   ]

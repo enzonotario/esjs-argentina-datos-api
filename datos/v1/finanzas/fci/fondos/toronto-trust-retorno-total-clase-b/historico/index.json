@@ -2,7 +2,7 @@
   "fondoId": "776",
   "claseId": "1748",
   "nombre": "Toronto Trust Retorno Total - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "toronto-trust-retorno-total-clase-b",
@@ -25922,6 +25922,22 @@
       "retornoDiario": 0.100918,
       "retornoAcumulado": 5752.538259,
       "flujoEstimado": 265076197.595032,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-retorno-total-clase-b",
+      "fondoId": "776",
+      "claseId": "1748",
+      "nombre": "Toronto Trust Retorno Total - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 67816.536,
+      "patrimonio": 20623682588.99,
+      "retornoDiario": 0.101008,
+      "retornoAcumulado": 5758.44979,
+      "flujoEstimado": -35320997.833355,
       "origen": "cnv-excel"
     }
   ]

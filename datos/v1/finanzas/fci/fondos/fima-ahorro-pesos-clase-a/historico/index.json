@@ -2,7 +2,7 @@
   "fondoId": "193",
   "claseId": "734",
   "nombre": "Fima Ahorro Pesos - Clase A",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fima-ahorro-pesos-clase-a",
@@ -26018,6 +26018,22 @@
       "retornoDiario": 0.049794,
       "retornoAcumulado": 2139.848183,
       "flujoEstimado": -203590353.374695,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-ahorro-pesos-clase-a",
+      "fondoId": "193",
+      "claseId": "734",
+      "nombre": "Fima Ahorro Pesos - Clase A",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 675161.518,
+      "patrimonio": 334820327692.83,
+      "retornoDiario": 0.084718,
+      "retornoAcumulado": 2141.745743,
+      "flujoEstimado": 1435775811.914734,
       "origen": "cnv-excel"
     }
   ]

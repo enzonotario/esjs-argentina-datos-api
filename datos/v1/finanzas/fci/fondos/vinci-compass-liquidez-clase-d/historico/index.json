@@ -2,7 +2,7 @@
   "fondoId": "1212",
   "claseId": "6160",
   "nombre": "Vinci Compass Liquidez - Clase D",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "vinci-compass-liquidez-clase-d",
@@ -2530,6 +2530,22 @@
       "retornoDiario": 0.167725,
       "retornoAcumulado": 13.456066,
       "flujoEstimado": 70131370.970174,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "vinci-compass-liquidez-clase-d",
+      "fondoId": "1212",
+      "claseId": "6160",
+      "nombre": "Vinci Compass Liquidez - Clase D",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1162.812,
+      "patrimonio": 6039593279.3,
+      "retornoDiario": 0.054639,
+      "retornoAcumulado": 13.518057,
+      "flujoEstimado": -45846048.507014,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1275",
   "claseId": "3551",
   "nombre": "Delta Gestion XI - Clase E",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "delta-gestion-xi-clase-e",
@@ -19602,6 +19602,22 @@
       "retornoDiario": 0.188814,
       "retornoAcumulado": 1182.5666,
       "flujoEstimado": -260.952815,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-xi-clase-e",
+      "fondoId": "1275",
+      "claseId": "3551",
+      "nombre": "Delta Gestion XI - Clase E",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 12862.733,
+      "patrimonio": 6468516340.5,
+      "retornoDiario": 0.289006,
+      "retornoAcumulado": 1186.2733,
+      "flujoEstimado": 268.25262,
       "origen": "cnv-excel"
     }
   ]

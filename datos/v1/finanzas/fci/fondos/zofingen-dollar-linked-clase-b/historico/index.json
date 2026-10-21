@@ -2,7 +2,7 @@
   "fondoId": "821",
   "claseId": "2293",
   "nombre": "Zofingen Dollar Linked - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "zofingen-dollar-linked-clase-b",
@@ -24562,6 +24562,22 @@
       "retornoDiario": -0.08544,
       "retornoAcumulado": 2344.0471,
       "flujoEstimado": -208.364317,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "zofingen-dollar-linked-clase-b",
+      "fondoId": "821",
+      "claseId": "2293",
+      "nombre": "Zofingen Dollar Linked - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 17005.489,
+      "patrimonio": 4064468872.93,
+      "retornoDiario": 0.206406,
+      "retornoAcumulado": 2349.091752,
+      "flujoEstimado": 32.27119,
       "origen": "cnv-excel"
     }
   ]

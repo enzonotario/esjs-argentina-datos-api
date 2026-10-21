@@ -2,7 +2,7 @@
   "fondoId": "1271",
   "claseId": "3541",
   "nombre": "First Renta Mixta V - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "first-renta-mixta-v-clase-c",
@@ -19138,6 +19138,22 @@
       "retornoDiario": 0.106928,
       "retornoAcumulado": 1904.416,
       "flujoEstimado": 0.000074,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-renta-mixta-v-clase-c",
+      "fondoId": "1271",
+      "claseId": "3541",
+      "nombre": "First Renta Mixta V - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 20022.33,
+      "patrimonio": 20022.33,
+      "retornoDiario": -0.10891,
+      "retornoAcumulado": 1902.233,
+      "flujoEstimado": 0.000095,
       "origen": "cnv-excel"
     }
   ]

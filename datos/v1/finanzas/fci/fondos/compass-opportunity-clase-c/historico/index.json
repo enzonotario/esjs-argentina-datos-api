@@ -2,7 +2,7 @@
   "fondoId": "317",
   "claseId": "340",
   "nombre": "Compass Opportunity - Clase C",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "compass-opportunity-clase-c",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.091493,
       "retornoAcumulado": 2310.291924,
       "flujoEstimado": 0.00003,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-opportunity-clase-c",
+      "fondoId": "317",
+      "claseId": "340",
+      "nombre": "Compass Opportunity - Clase C",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 561924.851,
+      "patrimonio": 10695.79,
+      "retornoDiario": 0.071481,
+      "retornoAcumulado": 2312.014827,
+      "flujoEstimado": 0.000003,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "34",
   "claseId": "34",
   "nombre": "Arpenta (ex Mercosur)",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "arpenta-ex-mercosur",
@@ -26050,6 +26050,22 @@
       "retornoDiario": -1.143896,
       "retornoAcumulado": 4763.446306,
       "flujoEstimado": -4.171674,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "arpenta-ex-mercosur",
+      "fondoId": "34",
+      "claseId": "34",
+      "nombre": "Arpenta (ex Mercosur)",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 20002461.616,
+      "patrimonio": 1502301647.73,
+      "retornoDiario": -0.395299,
+      "retornoAcumulado": 4744.221153,
+      "flujoEstimado": 0.614137,
       "origen": "cnv-excel"
     }
   ]

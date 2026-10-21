@@ -2,7 +2,7 @@
   "fondoId": "1784",
   "claseId": "6093",
   "nombre": "Tandem Renta Pesos - Clase D",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "tandem-renta-pesos-clase-d",
@@ -2866,6 +2866,22 @@
       "retornoDiario": 0.112391,
       "retornoAcumulado": 10.0969,
       "flujoEstimado": -0.501276,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "tandem-renta-pesos-clase-d",
+      "fondoId": "1784",
+      "claseId": "6093",
+      "nombre": "Tandem Renta Pesos - Clase D",
+      "fecha": "2026-10-20",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1101.381,
+      "patrimonio": 1101380.65,
+      "retornoDiario": 0.037422,
+      "retornoAcumulado": 10.1381,
+      "flujoEstimado": -0.174552,
       "origen": "cnv-excel"
     }
   ]

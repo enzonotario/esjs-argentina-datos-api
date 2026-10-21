@@ -2,7 +2,7 @@
   "fondoId": "844",
   "claseId": "5323",
   "nombre": "FBA Renta Fija Dólar Plus I - Clase B",
-  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
+  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
   "historico": [
     {
       "slug": "fba-renta-fija-dolar-plus-i-clase-b",
@@ -6466,6 +6466,22 @@
       "retornoDiario": -0.462142,
       "retornoAcumulado": 19.56223,
       "flujoEstimado": -0.433014,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-fija-dolar-plus-i-clase-b",
+      "fondoId": "844",
+      "claseId": "5323",
+      "nombre": "FBA Renta Fija Dólar Plus I - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1197.628,
+      "patrimonio": 4133613.69,
+      "retornoDiario": 0.169957,
+      "retornoAcumulado": 19.765435,
+      "flujoEstimado": 230095.203417,
       "origen": "cnv-excel"
     }
   ]
