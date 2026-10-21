@@ -2,7 +2,7 @@
   "fondoId": "536",
   "claseId": "3327",
   "nombre": "Pionero Pesos Plus - Clase B",
-  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
+  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
   "historico": [
     {
       "slug": "pionero-pesos-plus-clase-b",
@@ -22626,6 +22626,22 @@
       "retornoDiario": 0.051946,
       "retornoAcumulado": 1245.15327,
       "flujoEstimado": 60343149780.82324,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-pesos-plus-clase-b",
+      "fondoId": "536",
+      "claseId": "3327",
+      "nombre": "Pionero Pesos Plus - Clase B",
+      "fecha": "2026-10-19",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 64283.066,
+      "patrimonio": 2560605358453.73,
+      "retornoDiario": 0.156191,
+      "retornoAcumulado": 1247.254283,
+      "flujoEstimado": -101382710800.06396,
       "origen": "cnv-excel"
     }
   ]

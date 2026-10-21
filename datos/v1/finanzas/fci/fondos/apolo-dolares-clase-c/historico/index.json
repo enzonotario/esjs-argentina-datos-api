@@ -2,7 +2,7 @@
   "fondoId": "1549",
   "claseId": "4711",
   "nombre": "Apolo Dólares - Clase C",
-  "fechaActualizacion": "2026-10-19T23:50:26.000Z",
+  "fechaActualizacion": "2026-10-20T19:04:26.000Z",
   "historico": [
     {
       "slug": "apolo-dolares-clase-c",
@@ -2930,6 +2930,22 @@
       "retornoDiario": 0.038156,
       "retornoAcumulado": 3.0375,
       "flujoEstimado": 28.279895,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "apolo-dolares-clase-c",
+      "fondoId": "1549",
+      "claseId": "4711",
+      "nombre": "Apolo Dólares - Clase C",
+      "fecha": "2026-10-19",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1030.484,
+      "patrimonio": 7291060.06,
+      "retornoDiario": 0.010579,
+      "retornoAcumulado": 3.0484,
+      "flujoEstimado": -998282.896831,
       "origen": "cnv-excel"
     }
   ]
