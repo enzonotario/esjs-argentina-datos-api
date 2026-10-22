@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2026-10-21T15:55:01.651Z",
+  "fechaActualizacion": "2026-10-22T19:43:31.899Z",
   "alternativas": [
     {
       "entidad": "bbva",
@@ -277,6 +277,87 @@
         "fuenteUrl": "https://www.fondosfima.com.ar/content/dam/galicia/fima/arbol-pdf/footer/FAL%20-%20Banco%20Galicia.pdf",
         "comisionEnDefinicion": true,
         "topeLegalAnual": 0.01
+      }
+    },
+    {
+      "entidad": "gst",
+      "nombreComercial": "Grupo ST",
+      "plan": "asistencia-tamar",
+      "nombrePlan": "MEGAQM Asistencia FCIA FAL",
+      "vehiculo": "fci_abierto",
+      "sociedadGerente": "Mega QM S.A.",
+      "sociedadDepositaria": "Banco de Servicios y Transacciones S.A.U.",
+      "comisionAnual": null,
+      "comisionEsTope": false,
+      "incluyeIva": null,
+      "ivaAdicional": null,
+      "comisionVigenciaHasta": null,
+      "comisionPosteriorAnual": null,
+      "horizonte": "corto_plazo",
+      "vidaPromedioMesesMin": null,
+      "vidaPromedioMesesMax": null,
+      "moneda": "ARS",
+      "reintegroAportes": null,
+      "canal": "formulario",
+      "vigenciaDeclarada": "2026-12-01",
+      "enlace": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/",
+      "condiciones": "Cartera teórica de liquidez y tasa, con baja duration. La página no publica la comisión de administración.",
+      "metadata": {
+        "fuenteUrl": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/"
+      }
+    },
+    {
+      "entidad": "gst",
+      "nombreComercial": "Grupo ST",
+      "plan": "cobertura-cer",
+      "nombrePlan": "MEGAQM Cobertura FCIA FAL",
+      "vehiculo": "fci_abierto",
+      "sociedadGerente": "Mega QM S.A.",
+      "sociedadDepositaria": "Banco de Servicios y Transacciones S.A.U.",
+      "comisionAnual": null,
+      "comisionEsTope": false,
+      "incluyeIva": null,
+      "ivaAdicional": null,
+      "comisionVigenciaHasta": null,
+      "comisionPosteriorAnual": null,
+      "horizonte": "inflacion",
+      "vidaPromedioMesesMin": null,
+      "vidaPromedioMesesMax": null,
+      "moneda": "ARS",
+      "reintegroAportes": null,
+      "canal": "formulario",
+      "vigenciaDeclarada": "2026-12-01",
+      "enlace": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/",
+      "condiciones": "Cartera teórica con ajuste por inflación y horizonte medio. La página no publica la comisión de administración.",
+      "metadata": {
+        "fuenteUrl": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/"
+      }
+    },
+    {
+      "entidad": "gst",
+      "nombreComercial": "Grupo ST",
+      "plan": "dedicado",
+      "nombrePlan": "FAL dedicado",
+      "vehiculo": "fci_abierto",
+      "sociedadGerente": "Mega QM S.A.",
+      "sociedadDepositaria": "Banco de Servicios y Transacciones S.A.U.",
+      "comisionAnual": null,
+      "comisionEsTope": false,
+      "incluyeIva": null,
+      "ivaAdicional": null,
+      "comisionVigenciaHasta": null,
+      "comisionPosteriorAnual": null,
+      "horizonte": null,
+      "vidaPromedioMesesMin": null,
+      "vidaPromedioMesesMax": null,
+      "moneda": "ARS",
+      "reintegroAportes": null,
+      "canal": "formulario",
+      "vigenciaDeclarada": "2026-12-01",
+      "enlace": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/",
+      "condiciones": "Política de inversión a medida para grandes empresas. TEA, duration y TIR quedan ad hoc. La página no publica la comisión de administración.",
+      "metadata": {
+        "fuenteUrl": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/"
       }
     }
   ],

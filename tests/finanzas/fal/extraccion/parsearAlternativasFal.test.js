@@ -3,6 +3,7 @@ import { parsearBalanzFal } from '@/finanzas/fal/extraccion/extraerBalanzFal.js'
 import { parsearBbvaFal } from '@/finanzas/fal/extraccion/extraerBbvaFal.js'
 import { parsearCocosFal } from '@/finanzas/fal/extraccion/extraerCocosFal.js'
 import { parsearGaliciaFal } from '@/finanzas/fal/extraccion/extraerGaliciaFal.js'
+import { parsearGstFal } from '@/finanzas/fal/extraccion/extraerGstFal.js'
 import { parsearIebFal } from '@/finanzas/fal/extraccion/extraerIebFal.js'
 import { textoPlano } from '@/finanzas/fal/extraccion/fetchTextoFal.js'
 import { parsearMacroFal } from '@/finanzas/fal/extraccion/extraerMacroFal.js'
@@ -196,5 +197,37 @@ describe('parsear alternativas FAL', () => {
     expect(fila.metadata.comisionEnDefinicion).toBe(true)
     expect(fila.metadata.topeLegalAnual).toBe(0.01)
     expect(fila.sociedadDepositaria).toMatch(/Banco de Galicia/)
+  })
+
+  it('arma los tres FAL de Grupo ST sin tomar el aporte legal como comisión', () => {
+    const filas = parsearGstFal(`
+      GST Grupo ST. El presente FAL se instrumentará a través de un Fondo Común de Inversión,
+      con Mega QM S.A. como sociedad gerente y Banco de Servicios y Transacciones S.A.U. como sociedad depositaria.
+      Sin costo adicional. Grandes empresas: 1% mínimo.
+      1 Dic 26. El FAL entra en vigencia.
+      MEGAQM ASISTENCIA FCIA FAL. FAL – TAMAR. preservar liquidez y capturar tasa con baja duration.
+      MEGAQM COBERTURA FCIA FAL. FAL – CER. ajuste inflación. horizonte medio.
+      Fondo de Asistencia Laboral dedicado. Ad hoc TEA proyectada.
+      Contactanos.
+    `)
+
+    expect(filas.map(fila => fila.plan)).toEqual([
+      'asistencia-tamar',
+      'cobertura-cer',
+      'dedicado',
+    ])
+    expect(filas.every(fila => fila.comisionAnual == null)).toBe(true)
+    expect(filas[0]).toMatchObject({
+      entidad: 'gst',
+      nombreComercial: 'Grupo ST',
+      vehiculo: 'fci_abierto',
+      sociedadGerente: 'Mega QM S.A.',
+      sociedadDepositaria: 'Banco de Servicios y Transacciones S.A.U.',
+      horizonte: 'corto_plazo',
+      vigenciaDeclarada: '2026-12-01',
+      canal: 'formulario',
+    })
+    expect(filas[1].horizonte).toBe('inflacion')
+    expect(filas[2].horizonte).toBeNull()
   })
 })

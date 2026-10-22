@@ -3,6 +3,7 @@ import { extraerBalanzFal } from './extraerBalanzFal.js'
 import { extraerBbvaFal } from './extraerBbvaFal.js'
 import { extraerCocosFal } from './extraerCocosFal.js'
 import { extraerGaliciaFal } from './extraerGaliciaFal.js'
+import { extraerGstFal } from './extraerGstFal.js'
 import { extraerIebFal } from './extraerIebFal.js'
 import { extraerMacroFal } from './extraerMacroFal.js'
 import { extraerMarivaFal } from './extraerMarivaFal.js'
@@ -27,6 +28,7 @@ const FUENTES = [
   { nombre: 'max-capital', extraer: extraerMaxFal },
   { nombre: 'cocos', extraer: extraerCocosFal },
   { nombre: 'galicia', extraer: extraerGaliciaFal },
+  { nombre: 'gst', extraer: extraerGstFal },
 ]
 
 export async function extraerAlternativasFal() {
