@@ -4,6 +4,7 @@ import { parsearBbvaFal } from '@/finanzas/fal/extraccion/extraerBbvaFal.js'
 import { parsearCocosFal } from '@/finanzas/fal/extraccion/extraerCocosFal.js'
 import { parsearGaliciaFal } from '@/finanzas/fal/extraccion/extraerGaliciaFal.js'
 import { parsearGstFal } from '@/finanzas/fal/extraccion/extraerGstFal.js'
+import { parsearBnaFal } from '@/finanzas/fal/extraccion/extraerBnaFal.js'
 import { parsearIebFal } from '@/finanzas/fal/extraccion/extraerIebFal.js'
 import { textoPlano } from '@/finanzas/fal/extraccion/fetchTextoFal.js'
 import { parsearMacroFal } from '@/finanzas/fal/extraccion/extraerMacroFal.js'
@@ -227,6 +228,39 @@ describe('parsear alternativas FAL', () => {
       vigenciaDeclarada: '2026-12-01',
       canal: 'formulario',
     })
+    expect(filas[1].horizonte).toBe('inflacion')
+    expect(filas[2].horizonte).toBeNull()
+  })
+
+  it('arma los tres FAL del BNA sin convertir el reintegro en una comisión 0', () => {
+    const filas = parsearBnaFal(`
+      Elegí al BNA. Quiero que me contacten.
+      Reintegro del 100% de la comisión de administración hasta el 31/12/2027.
+      El reintegro es de una suma equivalente a la comisión percibida por Pellegrini FCI S.A.
+      FAL Ahorro. Fondo multiempleador de corto plazo, con foco en liquidez.
+      FAL Crecimiento. Horizonte mediano/largo, con exposición a CER.
+      Fondo exclusivo. Solución para grandes empresas, con cartera personalizada.
+      El régimen comienza a aplicarse el 1° de noviembre de 2026.
+      El aporte es del 1% para grandes empresas y del 2,5% para PyMEs.
+      Sin costo adicional.
+    `)
+
+    expect(filas.map(fila => fila.plan)).toEqual([
+      'ahorro',
+      'crecimiento',
+      'exclusivo',
+    ])
+    expect(filas.every(fila => fila.comisionAnual == null)).toBe(true)
+    expect(filas.every(fila => fila.reintegroAportes == null)).toBe(true)
+    expect(filas[0]).toMatchObject({
+      entidad: 'bna',
+      nombreComercial: 'BNA',
+      sociedadGerente: 'Pellegrini FCI S.A.',
+      horizonte: 'corto_plazo',
+      vigenciaDeclarada: '2026-11-01',
+      canal: 'formulario',
+    })
+    expect(filas[0].metadata.reintegroComisionHasta).toBe('2027-12-31')
     expect(filas[1].horizonte).toBe('inflacion')
     expect(filas[2].horizonte).toBeNull()
   })

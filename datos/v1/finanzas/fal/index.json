@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2026-10-22T19:43:31.899Z",
+  "fechaActualizacion": "2026-10-22T21:57:18.616Z",
   "alternativas": [
     {
       "entidad": "bbva",
@@ -358,6 +358,90 @@
       "condiciones": "Política de inversión a medida para grandes empresas. TEA, duration y TIR quedan ad hoc. La página no publica la comisión de administración.",
       "metadata": {
         "fuenteUrl": "https://www.grupost.com.ar/fondo-de-asistencia-laboral/"
+      }
+    },
+    {
+      "entidad": "bna",
+      "nombreComercial": "BNA",
+      "plan": "ahorro",
+      "nombrePlan": "FAL Ahorro",
+      "vehiculo": null,
+      "sociedadGerente": "Pellegrini FCI S.A.",
+      "sociedadDepositaria": null,
+      "comisionAnual": null,
+      "comisionEsTope": false,
+      "incluyeIva": null,
+      "ivaAdicional": null,
+      "comisionVigenciaHasta": null,
+      "comisionPosteriorAnual": null,
+      "horizonte": "corto_plazo",
+      "vidaPromedioMesesMin": null,
+      "vidaPromedioMesesMax": null,
+      "moneda": "ARS",
+      "reintegroAportes": null,
+      "canal": "formulario",
+      "vigenciaDeclarada": "2026-11-01",
+      "enlace": "https://www.bna.com.ar/home/fal",
+      "condiciones": "Fondo multiempleador de corto plazo, con foco en liquidez. El BNA reintegra el 100% de la comisión de administración hasta el 31/12/2027. La página no publica ese porcentaje.",
+      "metadata": {
+        "fuenteUrl": "https://www.bna.com.ar/home/fal",
+        "reintegroComisionHasta": "2027-12-31"
+      }
+    },
+    {
+      "entidad": "bna",
+      "nombreComercial": "BNA",
+      "plan": "crecimiento",
+      "nombrePlan": "FAL Crecimiento",
+      "vehiculo": null,
+      "sociedadGerente": "Pellegrini FCI S.A.",
+      "sociedadDepositaria": null,
+      "comisionAnual": null,
+      "comisionEsTope": false,
+      "incluyeIva": null,
+      "ivaAdicional": null,
+      "comisionVigenciaHasta": null,
+      "comisionPosteriorAnual": null,
+      "horizonte": "inflacion",
+      "vidaPromedioMesesMin": null,
+      "vidaPromedioMesesMax": null,
+      "moneda": "ARS",
+      "reintegroAportes": null,
+      "canal": "formulario",
+      "vigenciaDeclarada": "2026-11-01",
+      "enlace": "https://www.bna.com.ar/home/fal",
+      "condiciones": "Horizonte mediano o largo, con exposición a CER. El BNA reintegra el 100% de la comisión de administración hasta el 31/12/2027. La página no publica ese porcentaje.",
+      "metadata": {
+        "fuenteUrl": "https://www.bna.com.ar/home/fal",
+        "reintegroComisionHasta": "2027-12-31"
+      }
+    },
+    {
+      "entidad": "bna",
+      "nombreComercial": "BNA",
+      "plan": "exclusivo",
+      "nombrePlan": "Fondo exclusivo",
+      "vehiculo": null,
+      "sociedadGerente": "Pellegrini FCI S.A.",
+      "sociedadDepositaria": null,
+      "comisionAnual": null,
+      "comisionEsTope": false,
+      "incluyeIva": null,
+      "ivaAdicional": null,
+      "comisionVigenciaHasta": null,
+      "comisionPosteriorAnual": null,
+      "horizonte": null,
+      "vidaPromedioMesesMin": null,
+      "vidaPromedioMesesMax": null,
+      "moneda": "ARS",
+      "reintegroAportes": null,
+      "canal": "formulario",
+      "vigenciaDeclarada": "2026-11-01",
+      "enlace": "https://www.bna.com.ar/home/fal",
+      "condiciones": "Cartera a medida para grandes empresas. Se evalúa caso por caso. El BNA reintegra el 100% de la comisión de administración hasta el 31/12/2027. La página no publica ese porcentaje.",
+      "metadata": {
+        "fuenteUrl": "https://www.bna.com.ar/home/fal",
+        "reintegroComisionHasta": "2027-12-31"
       }
     }
   ],

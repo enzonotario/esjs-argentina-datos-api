@@ -1,5 +1,6 @@
 import { logGrupo, logError, logMensaje } from '@/log.js'
 import { extraerBalanzFal } from './extraerBalanzFal.js'
+import { extraerBnaFal } from './extraerBnaFal.js'
 import { extraerBbvaFal } from './extraerBbvaFal.js'
 import { extraerCocosFal } from './extraerCocosFal.js'
 import { extraerGaliciaFal } from './extraerGaliciaFal.js'
@@ -22,6 +23,7 @@ const FUENTES = [
   { nombre: 'wise-capital', extraer: extraerWiseFal },
   { nombre: 'santander', extraer: extraerSantanderFal },
   { nombre: 'balanz', extraer: extraerBalanzFal },
+  { nombre: 'bna', extraer: extraerBnaFal },
   { nombre: 'macro', extraer: extraerMacroFal },
   { nombre: 'mariva', extraer: extraerMarivaFal },
   { nombre: 'ieb', extraer: extraerIebFal },
