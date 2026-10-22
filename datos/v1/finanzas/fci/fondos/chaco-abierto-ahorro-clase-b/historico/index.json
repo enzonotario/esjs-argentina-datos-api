@@ -2,7 +2,7 @@
   "fondoId": "581",
   "claseId": "1179",
   "nombre": "Chaco Abierto Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-20T23:40:08.000Z",
+  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
   "historico": [
     {
       "slug": "chaco-abierto-ahorro-clase-b",
@@ -25282,6 +25282,22 @@
       "retornoDiario": 0.082224,
       "retornoAcumulado": 2029.553871,
       "flujoEstimado": 999295047.533609,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "chaco-abierto-ahorro-clase-b",
+      "fondoId": "581",
+      "claseId": "1179",
+      "nombre": "Chaco Abierto Ahorro - Clase B",
+      "fecha": "2026-10-20",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 88081.48,
+      "patrimonio": 16439053103.32,
+      "retornoDiario": 0.066436,
+      "retornoAcumulado": 2030.968662,
+      "flujoEstimado": -16300042.089218,
       "origen": "cnv-excel"
     }
   ]

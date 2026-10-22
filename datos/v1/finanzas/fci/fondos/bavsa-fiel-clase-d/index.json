@@ -9,7 +9,7 @@
   "tipoDD": "No Aplica",
   "region": "Argentina",
   "benchmark": null,
-  "horizonte": null,
+  "horizonte": "Mediano Plazo",
   "duracion": null,
   "moneda": "Peso Argentino",
   "codigoCNV": "1970",
@@ -37,7 +37,64 @@
     "tnaEstimadaDias": 6,
     "tnaEstimadaPeriodo": "ultimos7Dias"
   },
-  "composicionCartera": [],
+  "composicionCartera": [
+    {
+      "nombre": "Cheque E *MAV151202069",
+      "porcentaje": 13.48
+    },
+    {
+      "nombre": "Cheque E *MAV161201462",
+      "porcentaje": 13.47
+    },
+    {
+      "nombre": "Cheque E *MAV041201253",
+      "porcentaje": 7.46
+    },
+    {
+      "nombre": "Cheque E *MAV101201841",
+      "porcentaje": 7.43
+    },
+    {
+      "nombre": "Cheque E *MAV111201500",
+      "porcentaje": 7.43
+    },
+    {
+      "nombre": "Cheque E *MAV241101558",
+      "porcentaje": 6.81
+    },
+    {
+      "nombre": "Cheque E *MAV251101936",
+      "porcentaje": 6.8
+    },
+    {
+      "nombre": "Cheque E *MAV261101396",
+      "porcentaje": 6.79
+    },
+    {
+      "nombre": "Cheque E *MAV271101579",
+      "porcentaje": 6.78
+    },
+    {
+      "nombre": "Cheque E *MAV091201711",
+      "porcentaje": 6.77
+    },
+    {
+      "nombre": "Cheque E *MAV141201358",
+      "porcentaje": 6.75
+    },
+    {
+      "nombre": "Cheque E *MAV070201083",
+      "porcentaje": 2.54
+    },
+    {
+      "nombre": "Cheque E *MAV120201197",
+      "porcentaje": 2.53
+    },
+    {
+      "nombre": "FCI Allaria Ahorro - Clase C",
+      "porcentaje": 4.28
+    }
+  ],
   "calificaciones": [],
   "honorarios": {
     "honorarioGerente": 8,
