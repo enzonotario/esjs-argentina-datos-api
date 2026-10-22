@@ -183,7 +183,7 @@ describe('mapear remesas desde fuente oficial', () => {
 
     expect(remesa).toMatchObject({
       compania: 'Global66',
-      cuentaPropia: false,
+      cuentaPropia: true,
       moneda: 'FIAT',
       inversiones: true,
       tarjetaUsa: true,
@@ -192,7 +192,7 @@ describe('mapear remesas desde fuente oficial', () => {
       costoTarjeta: '0',
       retiroArs: null,
     })
-    expect(remesa.detalles.cuentaPropia).toContain('proveedor de pagos')
+    expect(remesa.detalles.cuentaPropia).toContain('tipo Checking')
     expect(remesa.detalles.costoRecibirPagos).toContain('10 USD')
   })
 

@@ -48,7 +48,7 @@ export function mapearGlobal66Remesas(texto) {
 
   return normalizarRemesa({
     compania: 'Global66',
-    cuentaPropia: false,
+    cuentaPropia: true,
     moneda: 'FIAT',
     inversiones: true,
     tarjetaUsa: true,
@@ -58,7 +58,7 @@ export function mapearGlobal66Remesas(texto) {
     retiroArs: null,
     detalles: {
       cuentaPropia:
-        'Dan Account Number y Routing Number y la describen como una cuenta tipo Checking. El centro de ayuda dice que las transferencias no llegan a tu nombre, sino al de su proveedor de pagos en Estados Unidos.',
+        'Dan Account Number y Routing Number y la describen como una cuenta tipo Checking a tu nombre.',
       costoRecibirPagos:
         'ACH gratis. Wire y SWIFT tienen un costo fijo de recepción de 10 USD.',
       costoMantenimientoTarjeta:
