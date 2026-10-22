@@ -1,4 +1,3 @@
-import type { Collection } from 'collect.js'
 import { shouldWriteFromDatabase, shouldWriteJsonFiles } from '@argentinadatos/core/src/utils/database-mode.ts'
 import { readEndpoint } from '@argentinadatos/core/src/utils/readEndpoint.ts'
 import { titleCaseSpanish } from '@argentinadatos/core/src/utils/titleCaseSpanish.ts'
@@ -59,6 +58,22 @@ const currentValues = JSON.parse(readEndpoint('diputados/actas') || '[]')
 
 const diputados = JSON.parse(readEndpoint('diputados/diputados') || '[]')
 
+/** PocketBase y los JSON por año solo se reescriben dentro de esta ventana. */
+export const VENTANA_REESCRITURA_DIAS = 60
+const VENTANA_REESCRITURA_MS = VENTANA_REESCRITURA_DIAS * 24 * 60 * 60 * 1000
+
+export function actasEnVentana<T extends { fecha: Date }>(
+  actas: readonly T[],
+  now = new Date(),
+): T[] {
+  const corte = now.getTime() - VENTANA_REESCRITURA_MS
+  return actas.filter(
+    acta => acta.fecha instanceof Date
+      && !Number.isNaN(acta.fecha.getTime())
+      && acta.fecha.getTime() >= corte,
+  )
+}
+
 export async function crawlActas(): Promise<Acta[]> {
   const currentIds = collect(currentValues).pluck('id').all() as string[]
 
@@ -100,69 +115,60 @@ export async function crawlActas(): Promise<Acta[]> {
     })
   }
 
+  const ahora = new Date()
+  const recientes = actasEnVentana(actas, ahora)
+  const pb = tryGetPocketBaseConfig()
+  const persistirEnBase = Boolean(pb && shouldWriteFromDatabase())
+
   if (shouldWriteJsonFiles()) {
-    writeEndpoint('diputados/actas', actas, { compact: true })
-
-    collect(actas)
-      .groupBy((acta: Acta) => getYear(acta.fecha))
-      // @ts-expect-error: TS can't infer the type of the collection
-      .map((actas: Collection<Acta>, year: number) => ({
-        year,
-        actas: actas
-          .sortBy('fecha')
-          .all(),
-      }))
-      .each(({ year, actas }) =>
-        writeEndpoint(`diputados/actas/${year}`, actas, { compact: true }),
-      )
-
     writeEndpoint('diputados/diputados', diputados)
   }
 
-  const pb = tryGetPocketBaseConfig()
-
-  if (pb && shouldWriteFromDatabase()) {
+  if (persistirEnBase && pb) {
     const db = new ActasDatabaseService(pb.url, pb.token)
 
     try {
       await db.initialize()
 
-      const timestamp = new Date().toISOString()
-
-      const itemsToInsert = actas.map(acta => ({
-        acta,
-        año: getYear(acta.fecha),
-        timestamp,
-      }))
-
-      await db.insertBatchActas(itemsToInsert)
-
-      await generateEndpointEstatico(db, actas)
+      if (recientes.length) {
+        console.log(
+          `PocketBase: guardando ${recientes.length} actas de los últimos ${VENTANA_REESCRITURA_DIAS} días`,
+        )
+        await db.insertBatchActas(
+          recientes.map(acta => ({
+            acta,
+            año: getYear(acta.fecha),
+            timestamp: ahora.toISOString(),
+          })),
+        )
+      }
     }
     finally {
       db.close()
     }
   }
 
+  // El índice completo sale de memoria. El archivo de un año lleva ese año entero,
+  // pero solo se reescribe si el año tiene actas dentro de la ventana.
+  if (recientes.length && (shouldWriteJsonFiles() || persistirEnBase)) {
+    writeActasEstaticas(actas, ahora)
+  }
+
   return actas
 }
 
-async function generateEndpointEstatico(db: ActasDatabaseService, actas: Acta[]) {
-  const todosLosDatos = await db.getAllActas()
+function writeActasEstaticas(actas: Acta[], now: Date) {
+  writeEndpoint('diputados/actas', actas, { compact: true })
 
-  writeEndpoint('diputados/actas', todosLosDatos, { compact: true })
+  const anios = new Set(
+    actasEnVentana(actas, now).map(acta => getYear(acta.fecha)),
+  )
 
-  const years = collect(actas)
-    .groupBy((acta: Acta) => getYear(acta.fecha))
-    .all()
-
-  for (const [year, actasByYear] of Object.entries(years)) {
-    const yearNum = Number(year)
-    if (isNaN(yearNum) || !isFinite(yearNum)) {
-      continue
-    }
-    const actasData = await db.getActasByAño(yearNum)
-    writeEndpoint(`diputados/actas/${year}`, actasData, { compact: true })
+  for (const year of anios) {
+    const delAnio = actas
+      .filter(acta => getYear(acta.fecha) === year)
+      .sort((a, b) => a.fecha.getTime() - b.fecha.getTime())
+    writeEndpoint(`diputados/actas/${year}`, delAnio, { compact: true })
   }
 }
 
