@@ -2,7 +2,7 @@
   "fondoId": "1610",
   "claseId": "5302",
   "nombre": "Adcap Financiamiento Megra - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "adcap-financiamiento-megra-clase-b",
@@ -6642,6 +6642,22 @@
       "retornoDiario": 0.072033,
       "retornoAcumulado": 81.016221,
       "flujoEstimado": -510006234.187634,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-financiamiento-megra-clase-b",
+      "fondoId": "1610",
+      "claseId": "5302",
+      "nombre": "Adcap Financiamiento Megra - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1812.907,
+      "patrimonio": 27710414040.33,
+      "retornoDiario": 0.072975,
+      "retornoAcumulado": 81.148317,
+      "flujoEstimado": -177993820.90173,
       "origen": "cnv-excel"
     }
   ]

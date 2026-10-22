@@ -2,7 +2,7 @@
   "fondoId": "1460",
   "claseId": "4316",
   "nombre": "Fima Renta Fija Dólares - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "fima-renta-fija-dolares-clase-b",
@@ -10386,6 +10386,22 @@
       "retornoDiario": -0.016865,
       "retornoAcumulado": 12.6399,
       "flujoEstimado": -394585.285492,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-fija-dolares-clase-b",
+      "fondoId": "1460",
+      "claseId": "4316",
+      "nombre": "Fima Renta Fija Dólares - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1126.772,
+      "patrimonio": 156121152.03,
+      "retornoDiario": 0.033114,
+      "retornoAcumulado": 12.6772,
+      "flujoEstimado": 305947.383191,
       "origen": "cnv-excel"
     }
   ]

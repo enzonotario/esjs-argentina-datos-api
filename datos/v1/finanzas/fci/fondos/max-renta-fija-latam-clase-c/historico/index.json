@@ -2,7 +2,7 @@
   "fondoId": "1520",
   "claseId": "4550",
   "nombre": "Max Renta Fija Latam - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "max-renta-fija-latam-clase-c",
@@ -8578,6 +8578,22 @@
       "retornoDiario": -0.004974,
       "retornoAcumulado": 4.5384,
       "flujoEstimado": -0.04873,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-renta-fija-latam-clase-c",
+      "fondoId": "1520",
+      "claseId": "4550",
+      "nombre": "Max Renta Fija Latam - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1045.53,
+      "patrimonio": 561694.71,
+      "retornoDiario": 0.013966,
+      "retornoAcumulado": 4.553,
+      "flujoEstimado": 702.0127,
       "origen": "cnv-excel"
     }
   ]

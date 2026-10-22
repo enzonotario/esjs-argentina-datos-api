@@ -2,7 +2,7 @@
   "fondoId": "1550",
   "claseId": "4772",
   "nombre": "Novus Ahorro Dólares - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "novus-ahorro-dolares-clase-b",
@@ -7986,6 +7986,22 @@
       "retornoDiario": 0.062298,
       "retornoAcumulado": 5.5273,
       "flujoEstimado": 3580.660638,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "novus-ahorro-dolares-clase-b",
+      "fondoId": "1550",
+      "claseId": "4772",
+      "nombre": "Novus Ahorro Dólares - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1055.618,
+      "patrimonio": 1801907.32,
+      "retornoDiario": 0.032693,
+      "retornoAcumulado": 5.5618,
+      "flujoEstimado": 20000.411568,
       "origen": "cnv-excel"
     }
   ]

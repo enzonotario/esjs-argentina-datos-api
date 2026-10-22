@@ -2,7 +2,7 @@
   "fondoId": "1247",
   "claseId": "3462",
   "nombre": "CYC Pesos Renta Fija - Clase U",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "cyc-pesos-renta-fija-clase-u",
@@ -19874,6 +19874,22 @@
       "retornoDiario": 0.049906,
       "retornoAcumulado": 2121.2763,
       "flujoEstimado": 115.321838,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-pesos-renta-fija-clase-u",
+      "fondoId": "1247",
+      "claseId": "3462",
+      "nombre": "CYC Pesos Renta Fija - Clase U",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 22250.636,
+      "patrimonio": 18123552895.64,
+      "retornoDiario": 0.170501,
+      "retornoAcumulado": 2125.0636,
+      "flujoEstimado": 9690098.812744,
       "origen": "cnv-excel"
     }
   ]

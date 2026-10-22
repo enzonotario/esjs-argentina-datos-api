@@ -2,7 +2,7 @@
   "fondoId": "1629",
   "claseId": "5403",
   "nombre": "Compass Renta Mixta II - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "compass-renta-mixta-ii-clase-a",
@@ -6258,6 +6258,22 @@
       "retornoDiario": 2.852342,
       "retornoAcumulado": 95.8828,
       "flujoEstimado": 33111929.264305,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-mixta-ii-clase-a",
+      "fondoId": "1629",
+      "claseId": "5403",
+      "nombre": "Compass Renta Mixta II - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1953.796,
+      "patrimonio": 9560250712.9,
+      "retornoDiario": -0.256888,
+      "retornoAcumulado": 95.3796,
+      "flujoEstimado": 43143869.344545,
       "origen": "cnv-excel"
     }
   ]

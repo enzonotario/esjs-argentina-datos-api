@@ -2,7 +2,7 @@
   "fondoId": "654",
   "claseId": "2657",
   "nombre": "Superfondo Renta Fija Dólares - Clase G",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-dolares-clase-g",
@@ -26209,6 +26209,22 @@
       "patrimonio": null,
       "retornoDiario": 0.030295,
       "retornoAcumulado": 40.394546,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-dolares-clase-g",
+      "fondoId": "654",
+      "claseId": "2657",
+      "nombre": "Superfondo Renta Fija Dólares - Clase G",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1419.03,
+      "patrimonio": null,
+      "retornoDiario": -0.053951,
+      "retornoAcumulado": 40.318801,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

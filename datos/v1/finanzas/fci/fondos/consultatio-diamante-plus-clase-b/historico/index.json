@@ -2,7 +2,7 @@
   "fondoId": "566",
   "claseId": "1149",
   "nombre": "Consultatio Diamante Plus - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-diamante-plus-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.078987,
       "retornoAcumulado": 2312.096514,
       "flujoEstimado": -51052748.770763,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-diamante-plus-clase-b",
+      "fondoId": "566",
+      "claseId": "1149",
+      "nombre": "Consultatio Diamante Plus - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 180869.744,
+      "patrimonio": 22250998287.92,
+      "retornoDiario": 0.039431,
+      "retornoAcumulado": 2313.047633,
+      "flujoEstimado": 419000023.423691,
       "origen": "cnv-excel"
     }
   ]

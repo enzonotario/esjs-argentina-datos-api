@@ -2,7 +2,7 @@
   "fondoId": "341",
   "claseId": "531",
   "nombre": "Super Bonos - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "super-bonos-clase-a",
@@ -26162,6 +26162,22 @@
       "retornoDiario": 0.099857,
       "retornoAcumulado": 2527.000094,
       "flujoEstimado": -79765387.456787,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "super-bonos-clase-a",
+      "fondoId": "341",
+      "claseId": "531",
+      "nombre": "Super Bonos - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1272029.016,
+      "patrimonio": 68216889744.51,
+      "retornoDiario": 0.058525,
+      "retornoAcumulado": 2528.537546,
+      "flujoEstimado": 37152946.847214,
       "origen": "cnv-excel"
     }
   ]

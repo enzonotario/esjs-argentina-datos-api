@@ -2,7 +2,7 @@
   "fondoId": "547",
   "claseId": "1108",
   "nombre": "MAF Ahorro Pesos - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "maf-ahorro-pesos-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.039212,
       "retornoAcumulado": 3816.539508,
       "flujoEstimado": 50.041012,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-ahorro-pesos-clase-b",
+      "fondoId": "547",
+      "claseId": "1108",
+      "nombre": "MAF Ahorro Pesos - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 176615.392,
+      "patrimonio": 19805277464.91,
+      "retornoDiario": 0.116792,
+      "retornoAcumulado": 3821.113712,
+      "flujoEstimado": -12.902817,
       "origen": "cnv-excel"
     }
   ]

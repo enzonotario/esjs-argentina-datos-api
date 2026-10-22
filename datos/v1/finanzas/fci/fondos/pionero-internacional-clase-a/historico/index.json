@@ -2,7 +2,7 @@
   "fondoId": "1878",
   "claseId": "6495",
   "nombre": "Pionero Internacional - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "pionero-internacional-clase-a",
@@ -1666,6 +1666,22 @@
       "retornoDiario": 0.063718,
       "retornoAcumulado": -0.591407,
       "flujoEstimado": -0.902758,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-internacional-clase-a",
+      "fondoId": "1878",
+      "claseId": "6495",
+      "nombre": "Pionero Internacional - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 993.615,
+      "patrimonio": 952286.66,
+      "retornoDiario": -0.046274,
+      "retornoAcumulado": -0.637407,
+      "flujoEstimado": 0.285003,
       "origen": "cnv-excel"
     }
   ]

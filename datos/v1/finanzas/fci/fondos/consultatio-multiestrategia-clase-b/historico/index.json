@@ -2,7 +2,7 @@
   "fondoId": "769",
   "claseId": "1730",
   "nombre": "Consultatio Multiestrategia - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-multiestrategia-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.065556,
       "retornoAcumulado": 2965.820298,
       "flujoEstimado": -55.685769,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-multiestrategia-clase-b",
+      "fondoId": "769",
+      "claseId": "1730",
+      "nombre": "Consultatio Multiestrategia - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 69392.096,
+      "patrimonio": 4258433284.45,
+      "retornoDiario": 0.073855,
+      "retornoAcumulado": 2968.084572,
+      "flujoEstimado": 9.008611,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1522",
   "claseId": "5015",
   "nombre": "IAM Liquidez en Dólares - Clase Ley Nº 27.743",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "iam-liquidez-en-dolares-clase-ley-n-27743",
@@ -7938,6 +7938,22 @@
       "retornoDiario": 0.003644,
       "retornoAcumulado": 4.252783,
       "flujoEstimado": 0.081692,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-liquidez-en-dolares-clase-ley-n-27743",
+      "fondoId": "1522",
+      "claseId": "5015",
+      "nombre": "IAM Liquidez en Dólares - Clase Ley Nº 27.743",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1042.769,
+      "patrimonio": 301293.51,
+      "retornoDiario": 0.003932,
+      "retornoAcumulado": 4.256883,
+      "flujoEstimado": -0.186402,
       "origen": "cnv-excel"
     }
   ]

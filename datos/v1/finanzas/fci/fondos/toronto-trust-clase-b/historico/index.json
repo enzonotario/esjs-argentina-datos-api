@@ -2,7 +2,7 @@
   "fondoId": "52",
   "claseId": "1154",
   "nombre": "Toronto Trust - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "toronto-trust-clase-b",
@@ -25826,6 +25826,22 @@
       "retornoDiario": 0.219177,
       "retornoAcumulado": 4078.999103,
       "flujoEstimado": -3080.260197,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-clase-b",
+      "fondoId": "52",
+      "claseId": "1154",
+      "nombre": "Toronto Trust - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 255211.926,
+      "patrimonio": 10215534531.48,
+      "retornoDiario": 0.096471,
+      "retornoAcumulado": 4083.030605,
+      "flujoEstimado": 9999927.776316,
       "origen": "cnv-excel"
     }
   ]

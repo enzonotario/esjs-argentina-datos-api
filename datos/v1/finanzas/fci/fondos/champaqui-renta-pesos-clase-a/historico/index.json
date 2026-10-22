@@ -2,7 +2,7 @@
   "fondoId": "1544",
   "claseId": "4654",
   "nombre": "Champaquí Renta Pesos - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "champaqui-renta-pesos-clase-a",
@@ -8402,6 +8402,22 @@
       "retornoDiario": 0.065711,
       "retornoAcumulado": 110.2995,
       "flujoEstimado": -4680116.819627,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-renta-pesos-clase-a",
+      "fondoId": "1544",
+      "claseId": "4654",
+      "nombre": "Champaquí Renta Pesos - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2104.495,
+      "patrimonio": 5220304874.63,
+      "retornoDiario": 0.071327,
+      "retornoAcumulado": 110.4495,
+      "flujoEstimado": 24149515.227873,
       "origen": "cnv-excel"
     }
   ]

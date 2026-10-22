@@ -2,7 +2,7 @@
   "fondoId": "1426",
   "claseId": "4165",
   "nombre": "Champaquí Renta Futura - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "champaqui-renta-futura-clase-b",
@@ -12354,6 +12354,22 @@
       "retornoDiario": 0.036846,
       "retornoAcumulado": 379.4713,
       "flujoEstimado": 0.299888,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-renta-futura-clase-b",
+      "fondoId": "1426",
+      "claseId": "4165",
+      "nombre": "Champaquí Renta Futura - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 4802.129,
+      "patrimonio": 2170083.93,
+      "retornoDiario": 0.15467,
+      "retornoAcumulado": 380.2129,
+      "flujoEstimado": 0.094765,
       "origen": "cnv-excel"
     }
   ]

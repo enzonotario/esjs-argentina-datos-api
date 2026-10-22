@@ -2,7 +2,7 @@
   "fondoId": "803",
   "claseId": "2088",
   "nombre": "Cohen Renta Fija Dólares - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "cohen-renta-fija-dolares-clase-a",
@@ -25554,6 +25554,22 @@
       "retornoDiario": -0.034204,
       "retornoAcumulado": 16.580747,
       "flujoEstimado": 0.063013,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cohen-renta-fija-dolares-clase-a",
+      "fondoId": "803",
+      "claseId": "2088",
+      "nombre": "Cohen Renta Fija Dólares - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1267.402,
+      "patrimonio": 1213267.6,
+      "retornoDiario": 0.150455,
+      "retornoAcumulado": 16.756148,
+      "flujoEstimado": 999.181605,
       "origen": "cnv-excel"
     }
   ]

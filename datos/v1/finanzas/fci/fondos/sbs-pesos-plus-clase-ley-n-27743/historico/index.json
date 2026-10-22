@@ -2,7 +2,7 @@
   "fondoId": "507",
   "claseId": "4990",
   "nombre": "SBS Pesos Plus - Clase Ley N° 27.743",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-pesos-plus-clase-ley-n-27743",
@@ -7826,6 +7826,22 @@
       "retornoDiario": 0.072015,
       "retornoAcumulado": 82.8708,
       "flujoEstimado": 0.075149,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-pesos-plus-clase-ley-n-27743",
+      "fondoId": "507",
+      "claseId": "4990",
+      "nombre": "SBS Pesos Plus - Clase Ley N° 27.743",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1829.913,
+      "patrimonio": 800540.25,
+      "retornoDiario": 0.065894,
+      "retornoAcumulado": 82.9913,
+      "flujoEstimado": -0.110698,
       "origen": "cnv-excel"
     }
   ]

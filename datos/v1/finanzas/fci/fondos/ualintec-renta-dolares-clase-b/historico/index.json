@@ -2,7 +2,7 @@
   "fondoId": "1563",
   "claseId": "5019",
   "nombre": "Ualintec Renta Dólares - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "ualintec-renta-dolares-clase-b",
@@ -7922,6 +7922,22 @@
       "retornoDiario": 0.018548,
       "retornoAcumulado": 0.8357,
       "flujoEstimado": 0.062569,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-renta-dolares-clase-b",
+      "fondoId": "1563",
+      "claseId": "5019",
+      "nombre": "Ualintec Renta Dólares - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1008.435,
+      "patrimonio": 96787.59,
+      "retornoDiario": 0.007735,
+      "retornoAcumulado": 0.8435,
+      "flujoEstimado": 0.01406,
       "origen": "cnv-excel"
     }
   ]

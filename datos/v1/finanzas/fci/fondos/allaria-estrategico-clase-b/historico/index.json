@@ -2,7 +2,7 @@
   "fondoId": "777",
   "claseId": "1753",
   "nombre": "Allaria Estrategico - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "allaria-estrategico-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 16.398415,
       "retornoAcumulado": 2424.305123,
       "flujoEstimado": 0.009079,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-estrategico-clase-b",
+      "fondoId": "777",
+      "claseId": "1753",
+      "nombre": "Allaria Estrategico - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 65704.88,
+      "patrimonio": 3123677.64,
+      "retornoDiario": -0.064204,
+      "retornoAcumulado": 2422.684428,
+      "flujoEstimado": 0.024431,
       "origen": "cnv-excel"
     }
   ]

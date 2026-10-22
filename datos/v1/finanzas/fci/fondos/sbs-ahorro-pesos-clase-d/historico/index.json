@@ -2,7 +2,7 @@
   "fondoId": "443",
   "claseId": "3296",
   "nombre": "SBS Ahorro Pesos - Clase D",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-ahorro-pesos-clase-d",
@@ -19138,6 +19138,22 @@
       "retornoDiario": 0.055569,
       "retornoAcumulado": 874.6487,
       "flujoEstimado": -30318762174.13849,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-ahorro-pesos-clase-d",
+      "fondoId": "443",
+      "claseId": "3296",
+      "nombre": "SBS Ahorro Pesos - Clase D",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 9751.874,
+      "patrimonio": 86841563834.18,
+      "retornoDiario": 0.055271,
+      "retornoAcumulado": 875.1874,
+      "flujoEstimado": -25763789743.455414,
       "origen": "cnv-excel"
     }
   ]

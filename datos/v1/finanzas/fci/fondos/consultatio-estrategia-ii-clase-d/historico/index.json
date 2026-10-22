@@ -2,7 +2,7 @@
   "fondoId": "1702",
   "claseId": "5695",
   "nombre": "Consultatio Estrategia II - Clase D",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-estrategia-ii-clase-d",
@@ -4258,6 +4258,22 @@
       "retornoDiario": 0.096281,
       "retornoAcumulado": 1.4671,
       "flujoEstimado": -630626.572241,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-estrategia-ii-clase-d",
+      "fondoId": "1702",
+      "claseId": "5695",
+      "nombre": "Consultatio Estrategia II - Clase D",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1014.163,
+      "patrimonio": 605801.44,
+      "retornoDiario": -0.050065,
+      "retornoAcumulado": 1.4163,
+      "flujoEstimado": -0.183497,
       "origen": "cnv-excel"
     }
   ]

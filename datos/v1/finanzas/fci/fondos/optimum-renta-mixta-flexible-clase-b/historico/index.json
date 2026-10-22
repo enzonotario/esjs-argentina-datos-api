@@ -2,7 +2,7 @@
   "fondoId": "368",
   "claseId": "657",
   "nombre": "Optimum Renta Mixta Flexible - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "optimum-renta-mixta-flexible-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": -0.100731,
       "retornoAcumulado": 2362.506202,
       "flujoEstimado": -277.244579,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "optimum-renta-mixta-flexible-clase-b",
+      "fondoId": "368",
+      "claseId": "657",
+      "nombre": "Optimum Renta Mixta Flexible - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 75480.914,
+      "patrimonio": 32375651950.57,
+      "retornoDiario": 0.12838,
+      "retornoAcumulado": 2365.667563,
+      "flujoEstimado": 33.339275,
       "origen": "cnv-excel"
     }
   ]

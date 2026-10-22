@@ -2,7 +2,7 @@
   "fondoId": "1234",
   "claseId": "3418",
   "nombre": "Alpha Renta Capital Dólar - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "alpha-renta-capital-dolar-clase-c",
@@ -22194,6 +22194,22 @@
       "retornoDiario": 0.238744,
       "retornoAcumulado": 117.781,
       "flujoEstimado": -496390.139475,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-capital-dolar-clase-c",
+      "fondoId": "1234",
+      "claseId": "3418",
+      "nombre": "Alpha Renta Capital Dólar - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2171.169,
+      "patrimonio": 14588463.26,
+      "retornoDiario": -0.304939,
+      "retornoAcumulado": 117.1169,
+      "flujoEstimado": -76208.645492,
       "origen": "cnv-excel"
     }
   ]

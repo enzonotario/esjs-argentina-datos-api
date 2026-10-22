@@ -2,7 +2,7 @@
   "fondoId": "344",
   "claseId": "569",
   "nombre": "Alpha Pesos - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "alpha-pesos-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.051618,
       "retornoAcumulado": 1446.448868,
       "flujoEstimado": -42621620729.96265,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-pesos-clase-a",
+      "fondoId": "344",
+      "claseId": "569",
+      "nombre": "Alpha Pesos - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 105613.185,
+      "patrimonio": 1729303786465.19,
+      "retornoDiario": 0.052204,
+      "retornoAcumulado": 1447.256183,
+      "flujoEstimado": -70637422605.01685,
       "origen": "cnv-excel"
     }
   ]

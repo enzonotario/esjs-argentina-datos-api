@@ -2,7 +2,7 @@
   "fondoId": "394",
   "claseId": "6330",
   "nombre": "Delta Pesos - Clase M",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "delta-pesos-clase-m",
@@ -2210,6 +2210,22 @@
       "retornoDiario": 0.047386,
       "retornoAcumulado": 9.750427,
       "flujoEstimado": 1702750958.169589,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-pesos-clase-m",
+      "fondoId": "394",
+      "claseId": "6330",
+      "nombre": "Delta Pesos - Clase M",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 49595.729,
+      "patrimonio": 6918604959.39,
+      "retornoDiario": 0.047418,
+      "retornoAcumulado": 9.802468,
+      "flujoEstimado": -761004697.510828,
       "origen": "cnv-excel"
     }
   ]

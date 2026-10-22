@@ -2,7 +2,7 @@
   "fondoId": "1299",
   "claseId": "3690",
   "nombre": "Allaria Patrimonio IV - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "allaria-patrimonio-iv-clase-b",
@@ -18466,6 +18466,22 @@
       "retornoDiario": 0.035371,
       "retornoAcumulado": 1023.9062,
       "flujoEstimado": -869.504505,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-patrimonio-iv-clase-b",
+      "fondoId": "1299",
+      "claseId": "3690",
+      "nombre": "Allaria Patrimonio IV - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 11244.103,
+      "patrimonio": 20971199781.77,
+      "retornoDiario": 0.044852,
+      "retornoAcumulado": 1024.4103,
+      "flujoEstimado": -4999999586.431805,
       "origen": "cnv-excel"
     }
   ]

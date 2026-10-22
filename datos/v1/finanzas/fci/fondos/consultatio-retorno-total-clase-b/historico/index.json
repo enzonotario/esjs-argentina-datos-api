@@ -2,7 +2,7 @@
   "fondoId": "675",
   "claseId": "1412",
   "nombre": "Consultatio Retorno Total - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-retorno-total-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.083511,
       "retornoAcumulado": 2993.712085,
       "flujoEstimado": 0.000977,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-retorno-total-clase-b",
+      "fondoId": "675",
+      "claseId": "1412",
+      "nombre": "Consultatio Retorno Total - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 84449.513,
+      "patrimonio": 102879196.89,
+      "retornoDiario": 0.270563,
+      "retornoAcumulado": 3002.08254,
+      "flujoEstimado": -2329891.808687,
       "origen": "cnv-excel"
     }
   ]

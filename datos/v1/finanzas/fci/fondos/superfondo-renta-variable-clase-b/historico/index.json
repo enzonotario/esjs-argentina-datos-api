@@ -2,7 +2,7 @@
   "fondoId": "51",
   "claseId": "683",
   "nombre": "Superfondo Renta Variable - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-variable-clase-b",
@@ -26274,6 +26274,22 @@
       "retornoDiario": -0.41281,
       "retornoAcumulado": 6724.055807,
       "flujoEstimado": 121.091263,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-variable-clase-b",
+      "fondoId": "51",
+      "claseId": "683",
+      "nombre": "Superfondo Renta Variable - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 6113597.643,
+      "patrimonio": 37254458640.62,
+      "retornoDiario": 1.704648,
+      "retornoAcumulado": 6840.381956,
+      "flujoEstimado": 100.47773,
       "origen": "cnv-excel"
     }
   ]

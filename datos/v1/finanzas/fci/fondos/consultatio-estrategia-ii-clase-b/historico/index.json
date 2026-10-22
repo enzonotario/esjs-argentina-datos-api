@@ -2,7 +2,7 @@
   "fondoId": "1702",
   "claseId": "5693",
   "nombre": "Consultatio Estrategia II - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-estrategia-ii-clase-b",
@@ -4258,6 +4258,22 @@
       "retornoDiario": 0.095749,
       "retornoAcumulado": 1.0898,
       "flujoEstimado": -42018.786302,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-estrategia-ii-clase-b",
+      "fondoId": "1702",
+      "claseId": "5693",
+      "nombre": "Consultatio Estrategia II - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1010.386,
+      "patrimonio": 8846881.36,
+      "retornoDiario": -0.050648,
+      "retornoAcumulado": 1.0386,
+      "flujoEstimado": 3.787122,
       "origen": "cnv-excel"
     }
   ]

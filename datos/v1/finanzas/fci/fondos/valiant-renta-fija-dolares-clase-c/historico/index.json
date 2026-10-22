@@ -2,7 +2,7 @@
   "fondoId": "875",
   "claseId": "2515",
   "nombre": "Valiant Renta Fija Dolares - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "valiant-renta-fija-dolares-clase-c",
@@ -26050,6 +26050,22 @@
       "retornoDiario": 0.012185,
       "retornoAcumulado": 10.730317,
       "flujoEstimado": 0.148867,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-fija-dolares-clase-c",
+      "fondoId": "875",
+      "claseId": "2515",
+      "nombre": "Valiant Renta Fija Dolares - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1116.407,
+      "patrimonio": 1327048.77,
+      "retornoDiario": 0.012363,
+      "retornoAcumulado": 10.744006,
+      "flujoEstimado": 0.447296,
       "origen": "cnv-excel"
     }
   ]

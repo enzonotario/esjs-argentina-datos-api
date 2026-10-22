@@ -2,7 +2,7 @@
   "fondoId": "1297",
   "claseId": "3673",
   "nombre": "Balanz Lecaps - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "balanz-lecaps-clase-c",
@@ -17602,6 +17602,22 @@
       "retornoDiario": 0.091805,
       "retornoAcumulado": 120.7787,
       "flujoEstimado": 6392.344271,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-lecaps-clase-c",
+      "fondoId": "1297",
+      "claseId": "3673",
+      "nombre": "Balanz Lecaps - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2209.828,
+      "patrimonio": 16860901929.94,
+      "retornoDiario": 0.092446,
+      "retornoAcumulado": 120.9828,
+      "flujoEstimado": 241.355902,
       "origen": "cnv-excel"
     }
   ]

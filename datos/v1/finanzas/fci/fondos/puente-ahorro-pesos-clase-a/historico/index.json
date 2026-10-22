@@ -2,7 +2,7 @@
   "fondoId": "1908",
   "claseId": "6592",
   "nombre": "Puente Ahorro Pesos - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "puente-ahorro-pesos-clase-a",
@@ -930,6 +930,22 @@
       "retornoDiario": 0.073582,
       "retornoAcumulado": 5.538,
       "flujoEstimado": -1695620.949432,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "puente-ahorro-pesos-clase-a",
+      "fondoId": "1908",
+      "claseId": "6592",
+      "nombre": "Puente Ahorro Pesos - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1056.285,
+      "patrimonio": 255130912.1,
+      "retornoDiario": 0.085751,
+      "retornoAcumulado": 5.6285,
+      "flujoEstimado": -3050798.464229,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1874",
   "claseId": "6480",
   "nombre": "Argenfunds Calificado I - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "argenfunds-calificado-i-clase-b",
@@ -1714,6 +1714,22 @@
       "retornoDiario": 0.061542,
       "retornoAcumulado": 8.7729,
       "flujoEstimado": 808.929733,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-calificado-i-clase-b",
+      "fondoId": "1874",
+      "claseId": "6480",
+      "nombre": "Argenfunds Calificado I - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1088.399,
+      "patrimonio": 3501899450.99,
+      "retornoDiario": 0.061596,
+      "retornoAcumulado": 8.8399,
+      "flujoEstimado": 644.557247,
       "origen": "cnv-excel"
     }
   ]

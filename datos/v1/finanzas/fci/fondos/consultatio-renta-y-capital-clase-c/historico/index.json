@@ -2,7 +2,7 @@
   "fondoId": "643",
   "claseId": "1307",
   "nombre": "Consultatio Renta y Capital - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-renta-y-capital-clase-c",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.065871,
       "retornoAcumulado": 5238.780819,
       "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-renta-y-capital-clase-c",
+      "fondoId": "643",
+      "claseId": "1307",
+      "nombre": "Consultatio Renta y Capital - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 133265.41,
+      "patrimonio": 20008759948.72,
+      "retornoDiario": 0.043799,
+      "retornoAcumulado": 5241.119177,
+      "flujoEstimado": 148.720001,
       "origen": "cnv-excel"
     }
   ]

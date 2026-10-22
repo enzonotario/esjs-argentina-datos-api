@@ -2,7 +2,7 @@
   "fondoId": "507",
   "claseId": "1024",
   "nombre": "SBS Pesos Plus - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-pesos-plus-clase-a",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.072014,
       "retornoAcumulado": 805.935369,
       "flujoEstimado": -3210835.245136,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-pesos-plus-clase-a",
+      "fondoId": "507",
+      "claseId": "1024",
+      "nombre": "SBS Pesos Plus - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 57362.583,
+      "patrimonio": 2263766790.85,
+      "retornoDiario": 0.065879,
+      "retornoAcumulado": 806.53219,
+      "flujoEstimado": -98628541.666467,
       "origen": "cnv-excel"
     }
   ]

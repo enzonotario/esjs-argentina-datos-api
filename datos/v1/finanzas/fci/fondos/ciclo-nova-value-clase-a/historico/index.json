@@ -2,7 +2,7 @@
   "fondoId": "890",
   "claseId": "2592",
   "nombre": "Ciclo Nova Value - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-value-clase-a",
@@ -26130,6 +26130,22 @@
       "retornoDiario": -0.222573,
       "retornoAcumulado": 4718.543,
       "flujoEstimado": 187131.261049,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-value-clase-a",
+      "fondoId": "890",
+      "claseId": "2592",
+      "nombre": "Ciclo Nova Value - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 48775.998,
+      "patrimonio": 3238552346.45,
+      "retornoDiario": 1.225615,
+      "retornoAcumulado": 4777.5998,
+      "flujoEstimado": -1483059.955904,
       "origen": "cnv-excel"
     }
   ]

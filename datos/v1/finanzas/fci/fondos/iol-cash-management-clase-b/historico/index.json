@@ -2,7 +2,7 @@
   "fondoId": "1301",
   "claseId": "3698",
   "nombre": "IOL Cash Management - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "iol-cash-management-clase-b",
@@ -17906,6 +17906,22 @@
       "retornoDiario": 0.083078,
       "retornoAcumulado": 1146.4866,
       "flujoEstimado": -238802540.927681,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iol-cash-management-clase-b",
+      "fondoId": "1301",
+      "claseId": "3698",
+      "nombre": "IOL Cash Management - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 12476.269,
+      "patrimonio": 51397805168.9,
+      "retornoDiario": 0.091481,
+      "retornoAcumulado": 1147.6269,
+      "flujoEstimado": -327140944.79274,
       "origen": "cnv-excel"
     }
   ]

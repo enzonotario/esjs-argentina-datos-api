@@ -2,7 +2,7 @@
   "fondoId": "768",
   "claseId": "1705",
   "nombre": "MEGAQM Provincial - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "megaqm-provincial-clase-a",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.041141,
       "retornoAcumulado": 2986.259732,
       "flujoEstimado": 144895.820298,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-provincial-clase-a",
+      "fondoId": "768",
+      "claseId": "1705",
+      "nombre": "MEGAQM Provincial - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 77572.346,
+      "patrimonio": 319009823.15,
+      "retornoDiario": 0.094513,
+      "retornoAcumulado": 2989.17666,
+      "flujoEstimado": 2026000.44465,
       "origen": "cnv-excel"
     }
   ]

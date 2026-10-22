@@ -2,7 +2,7 @@
   "fondoId": "1326",
   "claseId": "3784",
   "nombre": "MAF Gestion Activa II - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "maf-gestion-activa-ii-clase-b",
@@ -14066,6 +14066,22 @@
       "retornoDiario": 0.089973,
       "retornoAcumulado": 580.0361,
       "flujoEstimado": -19999390.742164,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-gestion-activa-ii-clase-b",
+      "fondoId": "1326",
+      "claseId": "3784",
+      "nombre": "MAF Gestion Activa II - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 6804.363,
+      "patrimonio": 7740846667.68,
+      "retornoDiario": 0.05885,
+      "retornoAcumulado": 580.4363,
+      "flujoEstimado": -198001051.060603,
       "origen": "cnv-excel"
     }
   ]

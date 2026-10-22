@@ -2,7 +2,7 @@
   "fondoId": "1714",
   "claseId": "5763",
   "nombre": "Pellegrini Liquidez Pesos Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "pellegrini-liquidez-pesos-clase-a",
@@ -4465,6 +4465,22 @@
       "patrimonio": 94.38,
       "retornoDiario": 0.063582,
       "retornoAcumulado": 31.0945,
+      "flujoEstimado": 0.000029,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-liquidez-pesos-clase-a",
+      "fondoId": "1714",
+      "claseId": "5763",
+      "nombre": "Pellegrini Liquidez Pesos Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1311.778,
+      "patrimonio": 94.44,
+      "retornoDiario": 0.063542,
+      "retornoAcumulado": 31.1778,
       "flujoEstimado": 0.000029,
       "origen": "cnv-excel"
     }

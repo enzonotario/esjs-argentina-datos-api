@@ -2,7 +2,7 @@
   "fondoId": "666",
   "claseId": "2315",
   "nombre": "Balanz Renta Fija Estrategica - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "balanz-renta-fija-estrategica-clase-c",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.143842,
       "retornoAcumulado": 521.271811,
       "flujoEstimado": -16.86607,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-renta-fija-estrategica-clase-c",
+      "fondoId": "666",
+      "claseId": "2315",
+      "nombre": "Balanz Renta Fija Estrategica - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 8366.101,
+      "patrimonio": 744961236.69,
+      "retornoDiario": 0.071997,
+      "retornoAcumulado": 521.719108,
+      "flujoEstimado": 39.554781,
       "origen": "cnv-excel"
     }
   ]

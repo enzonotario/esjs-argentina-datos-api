@@ -2,7 +2,7 @@
   "fondoId": "1479",
   "claseId": "4377",
   "nombre": "BAVSA Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "bavsa-ahorro-clase-b",
@@ -9714,6 +9714,22 @@
       "retornoDiario": 0.053378,
       "retornoAcumulado": 112.5615,
       "flujoEstimado": -21323643228.751793,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-ahorro-clase-b",
+      "fondoId": "1479",
+      "claseId": "4377",
+      "nombre": "BAVSA Ahorro - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2126.826,
+      "patrimonio": 56750734902.93,
+      "retornoDiario": 0.056972,
+      "retornoAcumulado": 112.6826,
+      "flujoEstimado": -4126038625.97921,
       "origen": "cnv-excel"
     }
   ]

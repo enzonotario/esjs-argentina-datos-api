@@ -2,7 +2,7 @@
   "fondoId": "1914",
   "claseId": "6612",
   "nombre": "Blacktoro Cobertura - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "blacktoro-cobertura-clase-b",
@@ -914,6 +914,22 @@
       "retornoDiario": 0.216258,
       "retornoAcumulado": 2.5993,
       "flujoEstimado": 92018438.74202,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "blacktoro-cobertura-clase-b",
+      "fondoId": "1914",
+      "claseId": "6612",
+      "nombre": "Blacktoro Cobertura - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1027.838,
+      "patrimonio": 10337470971.29,
+      "retornoDiario": 0.179826,
+      "retornoAcumulado": 2.7838,
+      "flujoEstimado": 4357.30043,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1907",
   "claseId": "6591",
   "nombre": "Pellegrini Renta Dolares III - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "pellegrini-renta-dolares-iii-clase-b",
@@ -1170,6 +1170,22 @@
       "retornoDiario": 0.058834,
       "retornoAcumulado": 1.7025,
       "flujoEstimado": 0.124544,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-renta-dolares-iii-clase-b",
+      "fondoId": "1907",
+      "claseId": "6591",
+      "nombre": "Pellegrini Renta Dolares III - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1016.753,
+      "patrimonio": 150072.69,
+      "retornoDiario": -0.026745,
+      "retornoAcumulado": 1.6753,
+      "flujoEstimado": -0.122289,
       "origen": "cnv-excel"
     }
   ]

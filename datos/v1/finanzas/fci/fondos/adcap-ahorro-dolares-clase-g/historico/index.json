@@ -2,7 +2,7 @@
   "fondoId": "712",
   "claseId": "6046",
   "nombre": "Adcap Ahorro Dólares - Clase G",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "adcap-ahorro-dolares-clase-g",
@@ -3329,6 +3329,22 @@
       "patrimonio": null,
       "retornoDiario": 0.004917,
       "retornoAcumulado": 1.6917,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-ahorro-dolares-clase-g",
+      "fondoId": "712",
+      "claseId": "6046",
+      "nombre": "Adcap Ahorro Dólares - Clase G",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1016.971,
+      "patrimonio": null,
+      "retornoDiario": 0.00531,
+      "retornoAcumulado": 1.6971,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

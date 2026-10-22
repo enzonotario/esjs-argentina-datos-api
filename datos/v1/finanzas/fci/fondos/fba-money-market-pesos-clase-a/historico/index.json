@@ -2,7 +2,7 @@
   "fondoId": "111",
   "claseId": "943",
   "nombre": "FBA Money Market Pesos - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "fba-money-market-pesos-clase-a",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.046813,
       "retornoAcumulado": 1297.241232,
       "flujoEstimado": 2217256276.965271,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-money-market-pesos-clase-a",
+      "fondoId": "111",
+      "claseId": "943",
+      "nombre": "FBA Money Market Pesos - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 181080.118,
+      "patrimonio": 488206203717.09,
+      "retornoDiario": 0.046095,
+      "retornoAcumulado": 1297.885295,
+      "flujoEstimado": -571229721.734985,
       "origen": "cnv-excel"
     }
   ]

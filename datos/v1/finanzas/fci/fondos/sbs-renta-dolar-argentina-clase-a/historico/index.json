@@ -2,7 +2,7 @@
   "fondoId": "624",
   "claseId": "1259",
   "nombre": "SBS Renta Dólar Argentina - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-renta-dolar-argentina-clase-a",
@@ -25474,6 +25474,22 @@
       "retornoDiario": 0.003758,
       "retornoAcumulado": 30.095604,
       "flujoEstimado": -35241.993037,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-dolar-argentina-clase-a",
+      "fondoId": "624",
+      "claseId": "1259",
+      "nombre": "SBS Renta Dólar Argentina - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1383.896,
+      "patrimonio": 41412861.95,
+      "retornoDiario": -0.00065,
+      "retornoAcumulado": 30.094758,
+      "flujoEstimado": -50073.629167,
       "origen": "cnv-excel"
     }
   ]

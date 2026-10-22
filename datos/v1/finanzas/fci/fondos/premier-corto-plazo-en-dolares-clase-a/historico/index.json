@@ -2,7 +2,7 @@
   "fondoId": "1691",
   "claseId": "5640",
   "nombre": "Premier Corto Plazo en Dólares - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "premier-corto-plazo-en-dolares-clase-a",
@@ -4770,6 +4770,22 @@
       "retornoDiario": 0.002659,
       "retornoAcumulado": 1.537525,
       "flujoEstimado": 1996540.986847,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-corto-plazo-en-dolares-clase-a",
+      "fondoId": "1691",
+      "claseId": "5640",
+      "nombre": "Premier Corto Plazo en Dólares - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1015.45,
+      "patrimonio": 24540451.18,
+      "retornoDiario": 0.002462,
+      "retornoAcumulado": 1.540025,
+      "flujoEstimado": 2939504.247779,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "394",
   "claseId": "716",
   "nombre": "Delta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "delta-pesos-clase-b",
@@ -26322,6 +26322,22 @@
       "retornoDiario": 0.051535,
       "retornoAcumulado": 1425.236911,
       "flujoEstimado": -59457627219.514404,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-pesos-clase-b",
+      "fondoId": "394",
+      "claseId": "716",
+      "nombre": "Delta Pesos - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 103422.08,
+      "patrimonio": 638821284022.86,
+      "retornoDiario": 0.05156,
+      "retornoAcumulado": 1426.023324,
+      "flujoEstimado": -19728970205.658203,
       "origen": "cnv-excel"
     }
   ]

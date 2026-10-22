@@ -2,7 +2,7 @@
   "fondoId": "1351",
   "claseId": "3855",
   "nombre": "Max Ahorro Pesos - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "max-ahorro-pesos-clase-b",
@@ -14546,6 +14546,22 @@
       "retornoDiario": 0.090934,
       "retornoAcumulado": 1089.4205,
       "flujoEstimado": 372280925.757217,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-ahorro-pesos-clase-b",
+      "fondoId": "1351",
+      "claseId": "3855",
+      "nombre": "Max Ahorro Pesos - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 11902.814,
+      "patrimonio": 51194477139.66,
+      "retornoDiario": 0.07238,
+      "retornoAcumulado": 1090.2814,
+      "flujoEstimado": -242617922.259476,
       "origen": "cnv-excel"
     }
   ]

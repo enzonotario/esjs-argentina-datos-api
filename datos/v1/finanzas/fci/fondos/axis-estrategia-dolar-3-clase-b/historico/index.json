@@ -2,7 +2,7 @@
   "fondoId": "1623",
   "claseId": "5376",
   "nombre": "Axis Estrategia Dólar 3 - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "axis-estrategia-dolar-3-clase-b",
@@ -6226,6 +6226,22 @@
       "retornoDiario": 0.00567,
       "retornoAcumulado": 0.5332,
       "flujoEstimado": 0.130851,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-estrategia-dolar-3-clase-b",
+      "fondoId": "1623",
+      "claseId": "5376",
+      "nombre": "Axis Estrategia Dólar 3 - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1005.081,
+      "patrimonio": 461800.39,
+      "retornoDiario": -0.024967,
+      "retornoAcumulado": 0.5081,
+      "flujoEstimado": -0.353415,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "510",
   "claseId": "3685",
   "nombre": "Gainvest Renta Variable - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "gainvest-renta-variable-clase-b",
@@ -18482,6 +18482,22 @@
       "retornoDiario": -0.190068,
       "retornoAcumulado": 3114.8363,
       "flujoEstimado": -175.460386,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-renta-variable-clase-b",
+      "fondoId": "510",
+      "claseId": "3685",
+      "nombre": "Gainvest Renta Variable - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": null,
+      "valorCuotaparte": 32448.009,
+      "patrimonio": 17283506629.15,
+      "retornoDiario": 0.932072,
+      "retornoAcumulado": 3144.8009,
+      "flujoEstimado": -19999752.079811,
       "origen": "cnv-excel"
     }
   ]

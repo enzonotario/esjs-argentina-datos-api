@@ -2,7 +2,7 @@
   "fondoId": "1903",
   "claseId": "6577",
   "nombre": "BAVSA Abierto Pymes Deuda Argentina - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "bavsa-abierto-pymes-deuda-argentina-clase-a",
@@ -978,6 +978,22 @@
       "retornoDiario": 0.083993,
       "retornoAcumulado": 0.9264,
       "flujoEstimado": -241.667754,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-abierto-pymes-deuda-argentina-clase-a",
+      "fondoId": "1903",
+      "claseId": "6577",
+      "nombre": "BAVSA Abierto Pymes Deuda Argentina - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "PyMEs",
+      "categoriaKey": null,
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1010.122,
+      "patrimonio": 552295914.59,
+      "retornoDiario": 0.085012,
+      "retornoAcumulado": 1.0122,
+      "flujoEstimado": 9.662737,
       "origen": "cnv-excel"
     }
   ]

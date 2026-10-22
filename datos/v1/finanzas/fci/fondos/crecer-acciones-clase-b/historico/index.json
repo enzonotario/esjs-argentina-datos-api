@@ -2,7 +2,7 @@
   "fondoId": "1638",
   "claseId": "5435",
   "nombre": "Crecer Acciones - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "crecer-acciones-clase-b",
@@ -5826,6 +5826,22 @@
       "retornoDiario": -0.274741,
       "retornoAcumulado": 28.0953,
       "flujoEstimado": -492.921311,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-acciones-clase-b",
+      "fondoId": "1638",
+      "claseId": "5435",
+      "nombre": "Crecer Acciones - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1302.151,
+      "patrimonio": 969876563.98,
+      "retornoDiario": 1.654862,
+      "retornoAcumulado": 30.2151,
+      "flujoEstimado": 2750318.270819,
       "origen": "cnv-excel"
     }
   ]

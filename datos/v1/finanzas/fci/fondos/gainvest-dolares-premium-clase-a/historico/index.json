@@ -2,7 +2,7 @@
   "fondoId": "1644",
   "claseId": "5472",
   "nombre": "Gainvest Dólares Premium - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "gainvest-dolares-premium-clase-a",
@@ -5650,6 +5650,22 @@
       "retornoDiario": 0.001483,
       "retornoAcumulado": 1.1409,
       "flujoEstimado": -9000.801462,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-dolares-premium-clase-a",
+      "fondoId": "1644",
+      "claseId": "5472",
+      "nombre": "Gainvest Dólares Premium - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1011.419,
+      "patrimonio": 2537462.17,
+      "retornoDiario": 0.000989,
+      "retornoAcumulado": 1.1419,
+      "flujoEstimado": 7528.929208,
       "origen": "cnv-excel"
     }
   ]

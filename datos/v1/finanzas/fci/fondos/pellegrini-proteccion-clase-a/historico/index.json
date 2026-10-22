@@ -2,7 +2,7 @@
   "fondoId": "1208",
   "claseId": "3340",
   "nombre": "Pellegrini Proteccion - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "pellegrini-proteccion-clase-a",
@@ -23778,6 +23778,22 @@
       "retornoDiario": 0.269276,
       "retornoAcumulado": 2028.3301,
       "flujoEstimado": 21408175.467052,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-proteccion-clase-a",
+      "fondoId": "1208",
+      "claseId": "3340",
+      "nombre": "Pellegrini Proteccion - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 21331.776,
+      "patrimonio": 4763129982.89,
+      "retornoDiario": 0.227761,
+      "retornoAcumulado": 2033.1776,
+      "flujoEstimado": -941789.382253,
       "origen": "cnv-excel"
     }
   ]

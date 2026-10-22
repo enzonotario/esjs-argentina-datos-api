@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "puntos": [
     {
       "fecha": "2020-01-02",
@@ -74068,6 +74068,51 @@
           "patrimonio": 1595345407812.8904,
           "conFlujo": 98,
           "flujoEstimado": -2989783464.5255733
+        }
+      }
+    },
+    {
+      "fecha": "2026-10-21",
+      "clases": 3852,
+      "conPatrimonio": 2404,
+      "patrimonio": 73428551153675.58,
+      "conFlujo": 2401,
+      "flujoEstimado": -600600401793.7452,
+      "byType": {
+        "mercadoDinero": {
+          "clases": 354,
+          "conPatrimonio": 285,
+          "patrimonio": 39192428509079.42,
+          "conFlujo": 284,
+          "flujoEstimado": -649000859200.0023
+        },
+        "rentaVariable": {
+          "clases": 291,
+          "conPatrimonio": 192,
+          "patrimonio": 1780795015080.4602,
+          "conFlujo": 192,
+          "flujoEstimado": -854799635.0549798
+        },
+        "rentaFija": {
+          "clases": 1879,
+          "conPatrimonio": 1155,
+          "patrimonio": 22526623793869.473,
+          "conFlujo": 1154,
+          "flujoEstimado": 57459431240.538216
+        },
+        "rentaMixta": {
+          "clases": 881,
+          "conPatrimonio": 483,
+          "patrimonio": 4971165521240.505,
+          "conFlujo": 483,
+          "flujoEstimado": -3539062205.8146896
+        },
+        "retornoTotal": {
+          "clases": 143,
+          "conPatrimonio": 89,
+          "patrimonio": 1404015557043.3003,
+          "conFlujo": 89,
+          "flujoEstimado": -3821507290.4560666
         }
       }
     }

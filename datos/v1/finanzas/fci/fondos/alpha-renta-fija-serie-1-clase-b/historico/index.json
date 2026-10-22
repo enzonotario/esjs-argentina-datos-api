@@ -2,7 +2,7 @@
   "fondoId": "96",
   "claseId": "96",
   "nombre": "Alpha Renta Fija Serie 1 - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "alpha-renta-fija-serie-1-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.207976,
       "retornoAcumulado": 1523.536541,
       "flujoEstimado": -9098.860812,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "alpha-renta-fija-serie-1-clase-b",
+      "fondoId": "96",
+      "claseId": "96",
+      "nombre": "Alpha Renta Fija Serie 1 - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1216967.123,
+      "patrimonio": 5027815882.67,
+      "retornoDiario": 0.005215,
+      "retornoAcumulado": 1523.621206,
+      "flujoEstimado": -4.085445,
       "origen": "cnv-excel"
     }
   ]

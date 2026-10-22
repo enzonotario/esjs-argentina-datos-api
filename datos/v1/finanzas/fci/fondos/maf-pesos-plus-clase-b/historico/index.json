@@ -2,7 +2,7 @@
   "fondoId": "504",
   "claseId": "1019",
   "nombre": "MAF Pesos Plus - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "maf-pesos-plus-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.08405,
       "retornoAcumulado": 2150.206444,
       "flujoEstimado": -265099771.716202,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-pesos-plus-clase-b",
+      "fondoId": "504",
+      "claseId": "1019",
+      "nombre": "MAF Pesos Plus - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 177731.195,
+      "patrimonio": 44732338731.71,
+      "retornoDiario": 0.07878,
+      "retornoAcumulado": 2151.979164,
+      "flujoEstimado": 1041033742.928543,
       "origen": "cnv-excel"
     }
   ]

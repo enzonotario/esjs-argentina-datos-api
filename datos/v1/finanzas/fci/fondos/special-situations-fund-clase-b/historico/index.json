@@ -2,7 +2,7 @@
   "fondoId": "1910",
   "claseId": "6599",
   "nombre": "Special Situations Fund - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "special-situations-fund-clase-b",
@@ -1042,6 +1042,22 @@
       "retornoDiario": -0.326225,
       "retornoAcumulado": -2.8087,
       "flujoEstimado": 0.993916,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "special-situations-fund-clase-b",
+      "fondoId": "1910",
+      "claseId": "6599",
+      "nombre": "Special Situations Fund - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": null,
+      "valorCuotaparte": 975.431,
+      "patrimonio": 2544054.53,
+      "retornoDiario": 0.361967,
+      "retornoAcumulado": -2.4569,
+      "flujoEstimado": -0.808764,
       "origen": "cnv-excel"
     }
   ]

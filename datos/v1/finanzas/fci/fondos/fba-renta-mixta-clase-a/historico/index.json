@@ -2,7 +2,7 @@
   "fondoId": "690",
   "claseId": "1492",
   "nombre": "FBA Renta Mixta - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "fba-renta-mixta-clase-a",
@@ -26114,6 +26114,22 @@
       "retornoDiario": 0.054815,
       "retornoAcumulado": 1680.528288,
       "flujoEstimado": -49040435.430317,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-renta-mixta-clase-a",
+      "fondoId": "690",
+      "claseId": "1492",
+      "nombre": "FBA Renta Mixta - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 23711.712,
+      "patrimonio": 11627055309.3,
+      "retornoDiario": 0.34415,
+      "retornoAcumulado": 1686.655977,
+      "flujoEstimado": 2887433.309288,
       "origen": "cnv-excel"
     }
   ]

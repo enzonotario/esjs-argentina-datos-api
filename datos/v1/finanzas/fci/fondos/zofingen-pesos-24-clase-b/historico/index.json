@@ -2,7 +2,7 @@
   "fondoId": "809",
   "claseId": "2128",
   "nombre": "Zofingen Pesos 24 - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "zofingen-pesos-24-clase-b",
@@ -24578,6 +24578,22 @@
       "retornoDiario": 0.08634,
       "retornoAcumulado": 5896.311917,
       "flujoEstimado": 67245661.045002,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "zofingen-pesos-24-clase-b",
+      "fondoId": "809",
+      "claseId": "2128",
+      "nombre": "Zofingen Pesos 24 - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 96582.403,
+      "patrimonio": 18430392420.89,
+      "retornoDiario": 0.045205,
+      "retornoAcumulado": 5899.022528,
+      "flujoEstimado": -6.592606,
       "origen": "cnv-excel"
     }
   ]

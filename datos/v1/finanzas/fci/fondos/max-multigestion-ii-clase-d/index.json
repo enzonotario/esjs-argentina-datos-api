@@ -2,7 +2,7 @@
   "fondoId": "1519",
   "claseId": "4547",
   "nombre": "Max Multigestión II - Clase D",
-  "fecha": "2026-10-20",
+  "fecha": "2026-10-21",
   "administradora": "Max Capital Asset Management S.A.",
   "depositaria": "Banco Comafi S.A.",
   "tipoRenta": "Renta Fija",
@@ -24,23 +24,811 @@
     "ultimos7Dias": 0,
     "diasUltimos7Dias": 7,
     "unMes": 0,
-    "diasUnMes": 29,
+    "diasUnMes": 30,
     "noventaDias": 0,
     "diasNoventaDias": 90,
     "cientoOchentaDias": 0,
     "diasCientoOchentaDias": 180,
     "enElAnio": 0,
-    "diasEnElAnio": 294,
+    "diasEnElAnio": 295,
     "doceMeses": 0,
     "diasDoceMeses": 365,
     "tnaEstimada": 0,
-    "tnaEstimadaDias": 29,
+    "tnaEstimadaDias": 30,
     "tnaEstimadaPeriodo": "unMes"
   },
   "composicionCartera": [
     {
-      "nombre": "Cta Cte $ Bco Comafi",
-      "porcentaje": 100
+      "nombre": "Bono del Tesoro Nacional TML27",
+      "porcentaje": 11.77
+    },
+    {
+      "nombre": "Cheque E *MAV261001432",
+      "porcentaje": 10.06
+    },
+    {
+      "nombre": "Bono del Tesoro Nacional T31Y7",
+      "porcentaje": 8.52
+    },
+    {
+      "nombre": "Letra Tesoro Nac T30A7",
+      "porcentaje": 7.02
+    },
+    {
+      "nombre": "Cheque E *MAV061101197",
+      "porcentaje": 6.1
+    },
+    {
+      "nombre": "Bono del Tesoro Nacional T15E7",
+      "porcentaje": 5.66
+    },
+    {
+      "nombre": "Cheque E *MAV251101864",
+      "porcentaje": 4.06
+    },
+    {
+      "nombre": "Bono Capitalizable T30J7",
+      "porcentaje": 3.16
+    },
+    {
+      "nombre": "Pagare #MAV211060038",
+      "porcentaje": 3.1
+    },
+    {
+      "nombre": "Cheque E *MAV241001528",
+      "porcentaje": 1.78
+    },
+    {
+      "nombre": "Cheque E *MAV171001357",
+      "porcentaje": 1.55
+    },
+    {
+      "nombre": "ON NBD Chaco Clase 1",
+      "porcentaje": 0.97
+    },
+    {
+      "nombre": "VCP Unicred S5",
+      "porcentaje": 0.97
+    },
+    {
+      "nombre": "Cheque E *MAV201001670",
+      "porcentaje": 0.93
+    },
+    {
+      "nombre": "Cheque E *MAV091101013",
+      "porcentaje": 0.91
+    },
+    {
+      "nombre": "Bono Muni San Isidro",
+      "porcentaje": 0.87
+    },
+    {
+      "nombre": "Cheque E *MAV141001838",
+      "porcentaje": 0.84
+    },
+    {
+      "nombre": "ON P. Aconcagua Energia C19",
+      "porcentaje": 0.82
+    },
+    {
+      "nombre": "Cheque E *MAV021101088",
+      "porcentaje": 0.77
+    },
+    {
+      "nombre": "Factura E %RAI271000004",
+      "porcentaje": 0.73
+    },
+    {
+      "nombre": "Cheque E *POT040100066",
+      "porcentaje": 0.58
+    },
+    {
+      "nombre": "ON P. Aconcagua Energia C21",
+      "porcentaje": 0.57
+    },
+    {
+      "nombre": "Cheque E *POT210500130",
+      "porcentaje": 0.53
+    },
+    {
+      "nombre": "Factura E %INC201000033",
+      "porcentaje": 0.47
+    },
+    {
+      "nombre": "Cheque E *MAV261001425",
+      "porcentaje": 0.4
+    },
+    {
+      "nombre": "Cheque E *MAV261001426",
+      "porcentaje": 0.38
+    },
+    {
+      "nombre": "Pagare #ACI031270001",
+      "porcentaje": 0.37
+    },
+    {
+      "nombre": "Cheque E *ZOF181200005",
+      "porcentaje": 0.36
+    },
+    {
+      "nombre": "Cheque E *MAV261001429",
+      "porcentaje": 0.31
+    },
+    {
+      "nombre": "Cheque E *MAV261000909",
+      "porcentaje": 0.31
+    },
+    {
+      "nombre": "Cheque E *MAV091101023",
+      "porcentaje": 0.3
+    },
+    {
+      "nombre": "Cheque E *MAV080200772",
+      "porcentaje": 0.3
+    },
+    {
+      "nombre": "Cheque E *FID231000036",
+      "porcentaje": 0.27
+    },
+    {
+      "nombre": "Bono Boncer TXMJ9",
+      "porcentaje": 0.24
+    },
+    {
+      "nombre": "VCP Unicred S3",
+      "porcentaje": 0.22
+    },
+    {
+      "nombre": "Pagare #MAV161160055",
+      "porcentaje": 0.22
+    },
+    {
+      "nombre": "Factura E %INC181000037",
+      "porcentaje": 0.2
+    },
+    {
+      "nombre": "Cheque E *MAV261001427",
+      "porcentaje": 0.18
+    },
+    {
+      "nombre": "Cheque E *MAV050201075",
+      "porcentaje": 0.16
+    },
+    {
+      "nombre": "Factura E %INC201000035",
+      "porcentaje": 0.16
+    },
+    {
+      "nombre": "VCP Unicred S4",
+      "porcentaje": 0.16
+    },
+    {
+      "nombre": "Cheque E *MAV071200920",
+      "porcentaje": 0.15
+    },
+    {
+      "nombre": "Cheque E *MAV141201197",
+      "porcentaje": 0.15
+    },
+    {
+      "nombre": "Factura E %INC201000034",
+      "porcentaje": 0.14
+    },
+    {
+      "nombre": "Factura E %INC181000035",
+      "porcentaje": 0.14
+    },
+    {
+      "nombre": "Pagare #MAV191160022",
+      "porcentaje": 0.14
+    },
+    {
+      "nombre": "Cheque E *ZOF171000005",
+      "porcentaje": 0.12
+    },
+    {
+      "nombre": "Cheque E *MAV271001739",
+      "porcentaje": 0.12
+    },
+    {
+      "nombre": "Cheque E *MIL241100030",
+      "porcentaje": 0.12
+    },
+    {
+      "nombre": "Cheque E *MIL231100028",
+      "porcentaje": 0.12
+    },
+    {
+      "nombre": "Cheque E *MAV281001656",
+      "porcentaje": 0.11
+    },
+    {
+      "nombre": "Cheque E *MAV021101287",
+      "porcentaje": 0.11
+    },
+    {
+      "nombre": "Cheque E *MAV010200864",
+      "porcentaje": 0.1
+    },
+    {
+      "nombre": "Cheque E *ZOF120100006",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Pagare #IGA151260001",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Pagare #IGA221160001",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Pagare #IGA291160001",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Cheque E *ACI140100356",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Cheque E *ACI140200312",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Cheque E *ACI141100255",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Cheque E *ACI141200185",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Cheque E *INP281200044",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "Cheque E *MIL171000045",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *MIL171000046",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *MIL241000048",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *MIL311000035",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA251060001",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *NEU211000025",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *NEU231000029",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA181060001",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA011160001",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA081160001",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA111060001",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA171160002",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA241160002",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA031160002",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Pagare #IGA101160002",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *NIO120300022",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *NIO130300029",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *NIO150300025",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *NIO160300015",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *MAV131002047",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Cheque E *MAV261001343",
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "Factura E %INC181000036",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Factura E %INC201000037",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA130170001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA151260002",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA170270001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA060170001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA081260001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA100270001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA011260001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA030270001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA270170001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA301260001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA200170001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA221260002",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Pagare #IGA221260001",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI090400230",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI120200283",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI120300277",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI141200184",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI230400239",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI260200297",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI260300252",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI280100286",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *ACI281200345",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *MAV071200845",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "ON Oldelval Clase 3",
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "Cheque E *MIL241100029",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *INP291000049",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *MIL161100022",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *MIL171100044",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *MAV171001557",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Factura E %INC091100033",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Factura E %INC091100029",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *NIO030200013",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *NIO050100021",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *MAV211001727",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Pagare #MAV301160068",
+      "porcentaje": 0.06
+    },
+    {
+      "nombre": "Cheque E *NOV060700036",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Cheque E *NOV070700059",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Cheque E *NOV080700047",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Factura E %INC201000036",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Factura E %INC091100030",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Factura E %INC091100031",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Factura E %INC201000032",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Cheque E *MAV131001724",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Pagare #IGA241160001",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Cheque E *NIO161000033",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Pagare #IGA151160001",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "Cheque E *INP111100065",
+      "porcentaje": 0.04
+    },
+    {
+      "nombre": "Cheque E *INP251200020",
+      "porcentaje": 0.04
+    },
+    {
+      "nombre": "Cheque E *INP281100070",
+      "porcentaje": 0.04
+    },
+    {
+      "nombre": "Cheque E *NIO130100015",
+      "porcentaje": 0.03
+    },
+    {
+      "nombre": "Cheque E *INP081000059",
+      "porcentaje": 0.03
+    },
+    {
+      "nombre": "Cheque E *INP161000059",
+      "porcentaje": 0.03
+    },
+    {
+      "nombre": "Cheque E *INP191000048",
+      "porcentaje": 0.03
+    },
+    {
+      "nombre": "Cheque E *INP211000063",
+      "porcentaje": 0.03
+    },
+    {
+      "nombre": "Cheque E *MOV040100044",
+      "porcentaje": 0.03
+    },
+    {
+      "nombre": "Factura E %INC091100032",
+      "porcentaje": 0.02
+    },
+    {
+      "nombre": "Cheque E *NOV081000036",
+      "porcentaje": 0.02
+    },
+    {
+      "nombre": "Cheque E *NOV091000051",
+      "porcentaje": 0.02
+    },
+    {
+      "nombre": "Cheque E *NOV101000067",
+      "porcentaje": 0.02
+    },
+    {
+      "nombre": "Cheque E *AAR060100017",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AAR120100024",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AAR180100019",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AAR221200021",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AAR230100021",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AAR301200041",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AVU291200032",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AVU291200033",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *AVU301200045",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *TRD030300036",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *RES140100013",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *RES140200014",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI010400253",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI030200235",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI030300207",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI060200247",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI060300211",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI060400195",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI090200223",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI090300231",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI120200281",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI120300275",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI160200265",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI160300253",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI180200246",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI180300290",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI181200267",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI260100336",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI280100283",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ACI291200432",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *INP141000057",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *INP191000043",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *INP231000054",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ARP050500254",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ARP120400252",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ARP120500265",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "Cheque E *ARP280400288",
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "FCI Allaria Ahorro - Clase C",
+      "porcentaje": 6.54
+    },
+    {
+      "nombre": "FF Mercado Credito 51 CA",
+      "porcentaje": 0.94
+    },
+    {
+      "nombre": "FF Centrocard Creditos S8",
+      "porcentaje": 0.91
+    },
+    {
+      "nombre": "FF Pedidos Ya S1",
+      "porcentaje": 0.86
+    },
+    {
+      "nombre": "FF Creditech S6 CA",
+      "porcentaje": 0.72
+    },
+    {
+      "nombre": "FF Coppel S1 CA",
+      "porcentaje": 0.63
+    },
+    {
+      "nombre": "FF Centrocard Creditos S7",
+      "porcentaje": 0.52
+    },
+    {
+      "nombre": "FF Provincia Leasing S 6A",
+      "porcentaje": 0.47
+    },
+    {
+      "nombre": "FF Gocreditos Clase A",
+      "porcentaje": 0.44
+    },
+    {
+      "nombre": "FF Waynimovil S13 CA",
+      "porcentaje": 0.42
+    },
+    {
+      "nombre": "FF AMES S28 Clase A",
+      "porcentaje": 0.29
+    },
+    {
+      "nombre": "FCI Dracma FCIC Inmobiliario - Clase B",
+      "porcentaje": 0.27
+    },
+    {
+      "nombre": "FF Fullcredit Creditos S2 CA",
+      "porcentaje": 0.15
+    },
+    {
+      "nombre": "FF Fullcredit Creditos S2 CB",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "FF Tarj Fertil S26 CA",
+      "porcentaje": 0.09
+    },
+    {
+      "nombre": "FF Elebar XV Clase A",
+      "porcentaje": 0.05
+    },
+    {
+      "nombre": "FF Megabono 322 Clase A",
+      "porcentaje": 0.05
     }
   ],
   "calificaciones": [],

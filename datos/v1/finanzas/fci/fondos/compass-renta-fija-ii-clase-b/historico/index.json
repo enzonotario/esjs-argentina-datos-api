@@ -2,7 +2,7 @@
   "fondoId": "432",
   "claseId": "812",
   "nombre": "Compass Renta Fija II - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "compass-renta-fija-ii-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.281412,
       "retornoAcumulado": 4242.122928,
       "flujoEstimado": 97.400314,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-fija-ii-clase-b",
+      "fondoId": "432",
+      "claseId": "812",
+      "nombre": "Compass Renta Fija II - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1454940.001,
+      "patrimonio": 96581671113.75,
+      "retornoDiario": 0.162273,
+      "retornoAcumulado": 4249.16904,
+      "flujoEstimado": 475.004349,
       "origen": "cnv-excel"
     }
   ]

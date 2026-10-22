@@ -2,7 +2,7 @@
   "fondoId": "1665",
   "claseId": "5566",
   "nombre": "ConoSur Liquidez - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "conosur-liquidez-clase-a",
@@ -4978,6 +4978,22 @@
       "retornoDiario": 0.052789,
       "retornoAcumulado": 36.8429,
       "flujoEstimado": -274516650.825237,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-liquidez-clase-a",
+      "fondoId": "1665",
+      "claseId": "5566",
+      "nombre": "ConoSur Liquidez - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1369.139,
+      "patrimonio": 4492146200.17,
+      "retornoDiario": 0.051884,
+      "retornoAcumulado": 36.9139,
+      "flujoEstimado": 415346144.323886,
       "origen": "cnv-excel"
     }
   ]

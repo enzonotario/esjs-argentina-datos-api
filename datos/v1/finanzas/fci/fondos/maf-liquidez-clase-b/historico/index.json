@@ -2,7 +2,7 @@
   "fondoId": "1500",
   "claseId": "4487",
   "nombre": "MAF Liquidez - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "maf-liquidez-clase-b",
@@ -9346,6 +9346,22 @@
       "retornoDiario": 0.057645,
       "retornoAcumulado": 102.5624,
       "flujoEstimado": 2041409806.710503,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-liquidez-clase-b",
+      "fondoId": "1500",
+      "claseId": "4487",
+      "nombre": "MAF Liquidez - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2026.797,
+      "patrimonio": 37240933394.95,
+      "retornoDiario": 0.057908,
+      "retornoAcumulado": 102.6797,
+      "flujoEstimado": -1068395326.453903,
       "origen": "cnv-excel"
     }
   ]

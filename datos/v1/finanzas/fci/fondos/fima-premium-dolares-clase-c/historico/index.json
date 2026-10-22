@@ -2,7 +2,7 @@
   "fondoId": "1633",
   "claseId": "5418",
   "nombre": "Fima Premium Dólares - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "fima-premium-dolares-clase-c",
@@ -6098,6 +6098,22 @@
       "retornoDiario": 0.001477,
       "retornoAcumulado": 1.5607,
       "flujoEstimado": 0.308008,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-premium-dolares-clase-c",
+      "fondoId": "1633",
+      "claseId": "5418",
+      "nombre": "Fima Premium Dólares - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1015.622,
+      "patrimonio": 2555390.66,
+      "retornoDiario": 0.001477,
+      "retornoAcumulado": 1.5622,
+      "flujoEstimado": 0.607446,
       "origen": "cnv-excel"
     }
   ]

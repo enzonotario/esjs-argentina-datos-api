@@ -2,7 +2,7 @@
   "fondoId": "450",
   "claseId": "861",
   "nombre": "Quiron Latam en U$S - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "quiron-latam-en-us-clase-a",
@@ -24770,6 +24770,22 @@
       "retornoDiario": 0.205907,
       "retornoAcumulado": 61.579541,
       "flujoEstimado": 0.991561,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-latam-en-us-clase-a",
+      "fondoId": "450",
+      "claseId": "861",
+      "nombre": "Quiron Latam en U$S - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1843.748,
+      "patrimonio": 4603534.36,
+      "retornoDiario": -0.168448,
+      "retornoAcumulado": 61.307363,
+      "flujoEstimado": 16888.869038,
       "origen": "cnv-excel"
     }
   ]

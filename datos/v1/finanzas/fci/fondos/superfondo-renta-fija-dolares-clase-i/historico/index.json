@@ -2,7 +2,7 @@
   "fondoId": "654",
   "claseId": "2659",
   "nombre": "Superfondo Renta Fija Dólares - Clase I",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-dolares-clase-i",
@@ -22594,6 +22594,22 @@
       "retornoDiario": 0.02845,
       "retornoAcumulado": 35.283374,
       "flujoEstimado": 2207.885499,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-dolares-clase-i",
+      "fondoId": "654",
+      "claseId": "2659",
+      "nombre": "Superfondo Renta Fija Dólares - Clase I",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1402.065,
+      "patrimonio": 21183379.63,
+      "retornoDiario": -0.055815,
+      "retornoAcumulado": 35.207865,
+      "flujoEstimado": -1.242992,
       "origen": "cnv-excel"
     }
   ]

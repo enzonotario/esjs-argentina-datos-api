@@ -2,7 +2,7 @@
   "fondoId": "624",
   "claseId": "4993",
   "nombre": "SBS Renta Dólar Argentina - Clase Ley N° 27.743",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-renta-dolar-argentina-clase-ley-n-27743",
@@ -7586,6 +7586,22 @@
       "retornoDiario": 0.003727,
       "retornoAcumulado": 12.6967,
       "flujoEstimado": 0.375581,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-dolar-argentina-clase-ley-n-27743",
+      "fondoId": "624",
+      "claseId": "4993",
+      "nombre": "SBS Renta Dólar Argentina - Clase Ley N° 27.743",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1126.96,
+      "patrimonio": 856866.66,
+      "retornoDiario": -0.000621,
+      "retornoAcumulado": 12.696,
+      "flujoEstimado": -0.128824,
       "origen": "cnv-excel"
     }
   ]

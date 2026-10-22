@@ -2,7 +2,7 @@
   "fondoId": "1824",
   "claseId": "6267",
   "nombre": "BAVSA Renta Balanceado Dólares IV - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-dolares-iv-clase-b",
@@ -2130,6 +2130,22 @@
       "retornoDiario": 0.029316,
       "retornoAcumulado": 1.3382,
       "flujoEstimado": 342201.633695,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-dolares-iv-clase-b",
+      "fondoId": "1824",
+      "claseId": "6267",
+      "nombre": "BAVSA Renta Balanceado Dólares IV - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1013.236,
+      "patrimonio": 10219774.57,
+      "retornoDiario": -0.014407,
+      "retornoAcumulado": 1.3236,
+      "flujoEstimado": 29359.994572,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "213",
   "claseId": "213",
   "nombre": "Superfondo Latinoamerica - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "superfondo-latinoamerica-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 1.65522,
       "retornoAcumulado": 48.662912,
       "flujoEstimado": 0.084998,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-latinoamerica-clase-a",
+      "fondoId": "213",
+      "claseId": "213",
+      "nombre": "Superfondo Latinoamerica - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 5845.624,
+      "patrimonio": 4169412.49,
+      "retornoDiario": -0.838197,
+      "retornoAcumulado": 47.416824,
+      "flujoEstimado": 0.147435,
       "origen": "cnv-excel"
     }
   ]

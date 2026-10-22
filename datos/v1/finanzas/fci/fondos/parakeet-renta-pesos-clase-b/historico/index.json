@@ -2,7 +2,7 @@
   "fondoId": "1562",
   "claseId": "5011",
   "nombre": "Parakeet Renta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "parakeet-renta-pesos-clase-b",
@@ -7954,6 +7954,22 @@
       "retornoDiario": 0.088278,
       "retornoAcumulado": 101.9269,
       "flujoEstimado": 85540917.50824,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-renta-pesos-clase-b",
+      "fondoId": "1562",
+      "claseId": "5011",
+      "nombre": "Parakeet Renta Pesos - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2021.539,
+      "patrimonio": 27275926206.48,
+      "retornoDiario": 0.112417,
+      "retornoAcumulado": 102.1539,
+      "flujoEstimado": -50008233.593868,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "498",
   "claseId": "1004",
   "nombre": "Balanz Retorno Total - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "balanz-retorno-total-clase-a",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.154364,
       "retornoAcumulado": 4889.222071,
       "flujoEstimado": -226740119.744785,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-retorno-total-clase-a",
+      "fondoId": "498",
+      "claseId": "1004",
+      "nombre": "Balanz Retorno Total - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 750328.623,
+      "patrimonio": 17164342765.98,
+      "retornoDiario": 0.369036,
+      "retornoAcumulado": 4907.634118,
+      "flujoEstimado": -368336639.521332,
       "origen": "cnv-excel"
     }
   ]

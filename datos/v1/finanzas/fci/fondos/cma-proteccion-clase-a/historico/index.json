@@ -2,7 +2,7 @@
   "fondoId": "330",
   "claseId": "370",
   "nombre": "CMA Proteccion - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "cma-proteccion-clase-a",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.086313,
       "retornoAcumulado": 2041.124615,
       "flujoEstimado": -40493329.639193,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-proteccion-clase-a",
+      "fondoId": "330",
+      "claseId": "370",
+      "nombre": "CMA Proteccion - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 474017.612,
+      "patrimonio": 2823638875.01,
+      "retornoDiario": 0.062755,
+      "retornoAcumulado": 2042.468268,
+      "flujoEstimado": -3312378.200047,
       "origen": "cnv-excel"
     }
   ]

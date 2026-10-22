@@ -2,7 +2,7 @@
   "fondoId": "709",
   "claseId": "3301",
   "nombre": "Delta Renta Dolares - Clase D",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "delta-renta-dolares-clase-d",
@@ -24226,6 +24226,22 @@
       "retornoDiario": 0.145104,
       "retornoAcumulado": 115.813,
       "flujoEstimado": 2896.861353,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-renta-dolares-clase-d",
+      "fondoId": "709",
+      "claseId": "3301",
+      "nombre": "Delta Renta Dolares - Clase D",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2157.192,
+      "patrimonio": 4744151.4,
+      "retornoDiario": -0.043464,
+      "retornoAcumulado": 115.7192,
+      "flujoEstimado": -1530.100087,
       "origen": "cnv-excel"
     }
   ]

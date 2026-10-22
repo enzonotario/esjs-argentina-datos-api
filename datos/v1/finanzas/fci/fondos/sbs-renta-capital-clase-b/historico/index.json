@@ -2,7 +2,7 @@
   "fondoId": "620",
   "claseId": "1252",
   "nombre": "SBS Renta Capital - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-renta-capital-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.071946,
       "retornoAcumulado": 4222.096859,
       "flujoEstimado": -157.576744,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-renta-capital-clase-b",
+      "fondoId": "620",
+      "claseId": "1252",
+      "nombre": "SBS Renta Capital - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 134962.193,
+      "patrimonio": 66569217881.66,
+      "retornoDiario": 0.063454,
+      "retornoAcumulado": 4224.839415,
+      "flujoEstimado": 10.432106,
       "origen": "cnv-excel"
     }
   ]

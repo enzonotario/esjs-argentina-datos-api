@@ -2,7 +2,7 @@
   "fondoId": "1840",
   "claseId": "6345",
   "nombre": "MAF Cash Dolares I - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "maf-cash-dolares-i-clase-a",
@@ -2018,6 +2018,22 @@
       "retornoDiario": 0.001793,
       "retornoAcumulado": 0.418,
       "flujoEstimado": -0.464724,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-cash-dolares-i-clase-a",
+      "fondoId": "1840",
+      "claseId": "6345",
+      "nombre": "MAF Cash Dolares I - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1004.197,
+      "patrimonio": 8514634.8,
+      "retornoDiario": 0.001693,
+      "retornoAcumulado": 0.4197,
+      "flujoEstimado": -15206.107762,
       "origen": "cnv-excel"
     }
   ]

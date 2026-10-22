@@ -2,7 +2,7 @@
   "fondoId": "565",
   "claseId": "1146",
   "nombre": "Consultatio Gestión X - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-x-clase-a",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.059141,
       "retornoAcumulado": 685.309091,
       "flujoEstimado": 0.001403,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-x-clase-a",
+      "fondoId": "565",
+      "claseId": "1146",
+      "nombre": "Consultatio Gestión X - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14564.288,
+      "patrimonio": 106940.28,
+      "retornoDiario": 0.062644,
+      "retornoAcumulado": 685.801044,
+      "flujoEstimado": 0.000271,
       "origen": "cnv-excel"
     }
   ]

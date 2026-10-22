@@ -2,7 +2,7 @@
   "fondoId": "1268",
   "claseId": "3528",
   "nombre": "Pellegrini Retorno Total - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "pellegrini-retorno-total-clase-a",
@@ -20034,6 +20034,22 @@
       "retornoDiario": 0.219237,
       "retornoAcumulado": 2046.1689,
       "flujoEstimado": 1.521124,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-retorno-total-clase-a",
+      "fondoId": "1268",
+      "claseId": "3528",
+      "nombre": "Pellegrini Retorno Total - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 21491.996,
+      "patrimonio": 378622546.53,
+      "retornoDiario": 0.141214,
+      "retornoAcumulado": 2049.1996,
+      "flujoEstimado": -4.327528,
       "origen": "cnv-excel"
     }
   ]

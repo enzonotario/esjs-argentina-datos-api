@@ -2,7 +2,7 @@
   "fondoId": "470",
   "claseId": "925",
   "nombre": "SBS Gestion Renta Fija - Clase B",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "sbs-gestion-renta-fija-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.072347,
       "retornoAcumulado": 2309.279871,
       "flujoEstimado": 126171654.442619,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-gestion-renta-fija-clase-b",
+      "fondoId": "470",
+      "claseId": "925",
+      "nombre": "SBS Gestion Renta Fija - Clase B",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 44619.509,
+      "patrimonio": 57329712620.55,
+      "retornoDiario": 0.072694,
+      "retornoAcumulado": 2311.031265,
+      "flujoEstimado": -77999909.320503,
       "origen": "cnv-excel"
     }
   ]

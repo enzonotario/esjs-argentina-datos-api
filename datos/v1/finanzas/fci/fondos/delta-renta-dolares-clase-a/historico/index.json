@@ -2,7 +2,7 @@
   "fondoId": "709",
   "claseId": "1518",
   "nombre": "Delta Renta Dolares - Clase A",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "delta-renta-dolares-clase-a",
@@ -25634,6 +25634,22 @@
       "retornoDiario": 0.127776,
       "retornoAcumulado": 78.421635,
       "flujoEstimado": 0.110483,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-renta-dolares-clase-a",
+      "fondoId": "709",
+      "claseId": "1518",
+      "nombre": "Delta Renta Dolares - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1334.485,
+      "patrimonio": 651197.3,
+      "retornoDiario": -0.177506,
+      "retornoAcumulado": 78.104926,
+      "flujoEstimado": 0.069621,
       "origen": "cnv-excel"
     }
   ]

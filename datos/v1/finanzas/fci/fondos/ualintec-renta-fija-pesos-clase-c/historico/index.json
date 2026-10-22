@@ -2,7 +2,7 @@
   "fondoId": "1346",
   "claseId": "3841",
   "nombre": "Ualintec Renta Fija Pesos - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "ualintec-renta-fija-pesos-clase-c",
@@ -16002,6 +16002,22 @@
       "retornoDiario": 0.112058,
       "retornoAcumulado": 1314.2381,
       "flujoEstimado": 0.170777,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ualintec-renta-fija-pesos-clase-c",
+      "fondoId": "1346",
+      "claseId": "3841",
+      "nombre": "Ualintec Renta Fija Pesos - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 14149.596,
+      "patrimonio": 1272874.45,
+      "retornoDiario": 0.051017,
+      "retornoAcumulado": 1314.9596,
+      "flujoEstimado": -5000000.060559,
       "origen": "cnv-excel"
     }
   ]

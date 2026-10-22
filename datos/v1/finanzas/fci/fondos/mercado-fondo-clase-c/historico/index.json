@@ -2,7 +2,7 @@
   "fondoId": "798",
   "claseId": "1984",
   "nombre": "Mercado Fondo - Clase C",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "mercado-fondo-clase-c",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.054433,
       "retornoAcumulado": 601.552782,
       "flujoEstimado": 128.598053,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mercado-fondo-clase-c",
+      "fondoId": "798",
+      "claseId": "1984",
+      "nombre": "Mercado Fondo - Clase C",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 12612.628,
+      "patrimonio": 57430239101.76,
+      "retornoDiario": 0.054316,
+      "retornoAcumulado": 601.933839,
+      "flujoEstimado": 200.309456,
       "origen": "cnv-excel"
     }
   ]

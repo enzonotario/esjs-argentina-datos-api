@@ -2,7 +2,7 @@
   "fondoId": "1316",
   "claseId": "5098",
   "nombre": "CYC Liquidez - Clase E Ley N° 27.743",
-  "fechaActualizacion": "2026-10-21T18:52:11.000Z",
+  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
   "historico": [
     {
       "slug": "cyc-liquidez-clase-e-ley-n-27743",
@@ -7394,6 +7394,22 @@
       "retornoDiario": 0.047812,
       "retornoAcumulado": 46.0569,
       "flujoEstimado": -0.028673,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-liquidez-clase-e-ley-n-27743",
+      "fondoId": "1316",
+      "claseId": "5098",
+      "nombre": "CYC Liquidez - Clase E Ley N° 27.743",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1461.273,
+      "patrimonio": 2187676.06,
+      "retornoDiario": 0.0482,
+      "retornoAcumulado": 46.1273,
+      "flujoEstimado": -1.082378,
       "origen": "cnv-excel"
     }
   ]
