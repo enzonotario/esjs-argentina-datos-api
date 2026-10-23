@@ -74,6 +74,34 @@ export function actasEnVentana<T extends { fecha: Date }>(
   )
 }
 
+const HTML_CONCURRENCY = 6
+const PDF_CONCURRENCY = 3
+/** Sin ancla de home (captcha): no barrer cientos de IDs; alcanza para huecos recientes. */
+const FORWARD_WITHOUT_HOME = 50
+const FORWARD_WITH_HOME = 40
+const BACKWARD_WITH_DATA = 10
+const BACKWARD_WITHOUT_DATA = 20
+
+/** HCDN pasó de `/votacion/6023` a `/votacion/6023.html`. Sin el sufijo responde 404. */
+export function urlVotacion(id: string | number): string {
+  return `${VOTACIONES_BASE_URL}/votacion/${id}.html`
+}
+
+export function idDesdeHrefVotacion(href: string): number {
+  const match = String(href).match(/votacion\/(\d+)(?:\.html)?(?:[?#]|$)/i)
+  return match ? Number(match[1]) : Number.NaN
+}
+
+export function maxIdDesdeHomeHtml(html: string): number {
+  const $ = cheerio.load(html)
+  const ids = $('a[href*="votacion/"]')
+    .map((_, element) => idDesdeHrefVotacion($(element).attr('href') || ''))
+    .get()
+    .filter(id => Number.isFinite(id) && id > 0)
+
+  return ids.length ? Math.max(...ids) : Number.NaN
+}
+
 export async function crawlActas(): Promise<Acta[]> {
   const currentIds = collect(currentValues).pluck('id').all() as string[]
 
@@ -171,14 +199,6 @@ function writeActasEstaticas(actas: Acta[], now: Date) {
     writeEndpoint(`diputados/actas/${year}`, delAnio, { compact: true })
   }
 }
-
-const HTML_CONCURRENCY = 6
-const PDF_CONCURRENCY = 3
-/** Sin ancla de home (captcha): no barrer cientos de IDs; alcanza para huecos recientes. */
-const FORWARD_WITHOUT_HOME = 50
-const FORWARD_WITH_HOME = 40
-const BACKWARD_WITH_DATA = 10
-const BACKWARD_WITHOUT_DATA = 20
 
 async function mapPool<T, R>(
   items: T[],
@@ -287,7 +307,7 @@ async function getVotacionesUrls(currentIds: string[]) {
 
   return allIds
     .filter(id => Number(id) > 0 && !currentIds.includes(id))
-    .map(id => `${VOTACIONES_BASE_URL}/votacion/${id}`)
+    .map(id => urlVotacion(id))
 }
 
 function resolveMaxId(currentIds: string[]): number {
@@ -319,23 +339,13 @@ async function resolveAnchorIdFromHome(): Promise<number> {
       return Number.NaN
     }
 
-    const $ = cheerio.load(response.data)
-    const links = $('a[href^="/votacion/"]')
-      .map((_, element) => $(element).attr('href'))
-      .get()
-      .filter(Boolean) as string[]
-
-    if (links.length === 0) {
+    const maxId = maxIdDesdeHomeHtml(String(response.data))
+    if (!Number.isFinite(maxId)) {
       console.warn('Home de votaciones sin links /votacion/ (captcha o bloqueo)')
       return Number.NaN
     }
 
-    // Tomar el id más alto visible en la home, no el primero del DOM.
-    const ids = links
-      .map(href => Number(href.split('/').pop()))
-      .filter(id => Number.isFinite(id) && id > 0)
-
-    return ids.length ? Math.max(...ids) : Number.NaN
+    return maxId
   }
   catch (error) {
     console.warn('Error al consultar home de votaciones', error)
@@ -344,7 +354,7 @@ async function resolveAnchorIdFromHome(): Promise<number> {
 }
 
 async function parseVotacionPage(url: string) {
-  const id = url.split('/').pop() as string
+  const id = String(idDesdeHrefVotacion(url))
 
   try {
     const response = await fetchWithRetry(url)
@@ -394,7 +404,7 @@ function applyCabeceraPdf(
   }
 }
 
-function parseActa(id: string, html: string): Acta | null {
+export function parseActa(id: string, html: string): Acta | null {
   const $ = cheerio.load(html)
 
   const title = $('h5 b').text().trim()
