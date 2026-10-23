@@ -2,7 +2,7 @@
   "fondoId": "1463",
   "claseId": "4327",
   "nombre": "Fundcorp Performance Balanceado - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fundcorp-performance-balanceado-clase-b",
@@ -8738,6 +8738,22 @@
       "retornoDiario": 0.183247,
       "retornoAcumulado": 123.605,
       "flujoEstimado": 0,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-performance-balanceado-clase-b",
+      "fondoId": "1463",
+      "claseId": "4327",
+      "nombre": "Fundcorp Performance Balanceado - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2236.24,
+      "patrimonio": 2236.24,
+      "retornoDiario": 0.008497,
+      "retornoAcumulado": 123.624,
+      "flujoEstimado": 0.000003,
       "origen": "cnv-excel"
     }
   ]

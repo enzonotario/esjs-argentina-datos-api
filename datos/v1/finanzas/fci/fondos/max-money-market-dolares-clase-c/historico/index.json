@@ -2,7 +2,7 @@
   "fondoId": "1613",
   "claseId": "5311",
   "nombre": "Max Money Market Dólares - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "max-money-market-dolares-clase-c",
@@ -6306,6 +6306,22 @@
       "retornoDiario": 0.002474,
       "retornoAcumulado": 1.0473,
       "flujoEstimado": -0.918937,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-money-market-dolares-clase-c",
+      "fondoId": "1613",
+      "claseId": "5311",
+      "nombre": "Max Money Market Dólares - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1010.497,
+      "patrimonio": 2873984.49,
+      "retornoDiario": 0.002375,
+      "retornoAcumulado": 1.0497,
+      "flujoEstimado": 0.574503,
       "origen": "cnv-excel"
     }
   ]

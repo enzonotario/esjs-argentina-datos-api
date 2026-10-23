@@ -2,7 +2,7 @@
   "fondoId": "437",
   "claseId": "823",
   "nombre": "Arpenta Acciones Argentina",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "arpenta-acciones-argentina",
@@ -26066,6 +26066,22 @@
       "retornoDiario": 0.05157,
       "retornoAcumulado": 5100.343538,
       "flujoEstimado": -0.044236,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "arpenta-acciones-argentina",
+      "fondoId": "437",
+      "claseId": "823",
+      "nombre": "Arpenta Acciones Argentina",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 696241.088,
+      "patrimonio": 466273312.23,
+      "retornoDiario": -1.587384,
+      "retornoAcumulado": 5017.794112,
+      "flujoEstimado": -0.710043,
       "origen": "cnv-excel"
     }
   ]

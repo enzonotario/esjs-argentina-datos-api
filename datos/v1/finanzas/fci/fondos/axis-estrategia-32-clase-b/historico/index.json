@@ -2,7 +2,7 @@
   "fondoId": "1708",
   "claseId": "5740",
   "nombre": "Axis Estrategia 32 - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "axis-estrategia-32-clase-b",
@@ -1186,6 +1186,22 @@
       "retornoDiario": 0.095158,
       "retornoAcumulado": 7.6072,
       "flujoEstimado": -211532766.124648,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-estrategia-32-clase-b",
+      "fondoId": "1708",
+      "claseId": "5740",
+      "nombre": "Axis Estrategia 32 - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1076.369,
+      "patrimonio": 7638111246.84,
+      "retornoDiario": 0.0276,
+      "retornoAcumulado": 7.6369,
+      "flujoEstimado": 350001753.155585,
       "origen": "cnv-excel"
     }
   ]

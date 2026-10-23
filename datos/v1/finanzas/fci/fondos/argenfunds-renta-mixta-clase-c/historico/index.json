@@ -2,7 +2,7 @@
   "fondoId": "705",
   "claseId": "2055",
   "nombre": "Argenfunds Renta Mixta - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-mixta-clase-c",
@@ -26353,6 +26353,22 @@
       "patrimonio": null,
       "retornoDiario": 0,
       "retornoAcumulado": -95.105048,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-mixta-clase-c",
+      "fondoId": "705",
+      "claseId": "2055",
+      "nombre": "Argenfunds Renta Mixta - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 0.895,
+      "patrimonio": null,
+      "retornoDiario": -0.222965,
+      "retornoAcumulado": -95.115962,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

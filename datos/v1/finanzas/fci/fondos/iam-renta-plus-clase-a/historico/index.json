@@ -2,7 +2,7 @@
   "fondoId": "633",
   "claseId": "1286",
   "nombre": "IAM Renta Plus - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "iam-renta-plus-clase-a",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.172608,
       "retornoAcumulado": 7031.323379,
       "flujoEstimado": 14686817.500638,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-plus-clase-a",
+      "fondoId": "633",
+      "claseId": "1286",
+      "nombre": "IAM Renta Plus - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 257439.459,
+      "patrimonio": 7649799865.9,
+      "retornoDiario": 0.017886,
+      "retornoAcumulado": 7032.598877,
+      "flujoEstimado": -24188789.126939,
       "origen": "cnv-excel"
     }
   ]

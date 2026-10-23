@@ -2,7 +2,7 @@
   "fondoId": "1699",
   "claseId": "5675",
   "nombre": "Parakeet Multimercado III - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "parakeet-multimercado-iii-clase-b",
@@ -2306,6 +2306,22 @@
       "retornoDiario": 0.105569,
       "retornoAcumulado": 16.958223,
       "flujoEstimado": -914.91913,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-multimercado-iii-clase-b",
+      "fondoId": "1699",
+      "claseId": "5675",
+      "nombre": "Parakeet Multimercado III - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1171.587,
+      "patrimonio": 2247361867.81,
+      "retornoDiario": -0.037712,
+      "retornoAcumulado": 16.914116,
+      "flujoEstimado": -187.912271,
       "origen": "cnv-excel"
     }
   ]

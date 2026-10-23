@@ -2,7 +2,7 @@
   "fondoId": "1199",
   "claseId": "4100",
   "nombre": "Consultatio Infraestructura - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-infraestructura-clase-a",
@@ -13442,6 +13442,22 @@
       "retornoDiario": 0.157755,
       "retornoAcumulado": 261.4451,
       "flujoEstimado": 0.051352,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-infraestructura-clase-a",
+      "fondoId": "1199",
+      "claseId": "4100",
+      "nombre": "Consultatio Infraestructura - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Infraestructura",
+      "categoriaKey": null,
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 3619.681,
+      "patrimonio": 5968057.95,
+      "retornoDiario": 0.144697,
+      "retornoAcumulado": 261.9681,
+      "flujoEstimado": 0.006599,
       "origen": "cnv-excel"
     }
   ]

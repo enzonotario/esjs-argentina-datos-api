@@ -2,7 +2,7 @@
   "fondoId": "745",
   "claseId": "1633",
   "nombre": "FBA Horizonte Plus - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fba-horizonte-plus-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.03852,
       "retornoAcumulado": 472.275797,
       "flujoEstimado": -0.006795,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-horizonte-plus-clase-b",
+      "fondoId": "745",
+      "claseId": "1633",
+      "nombre": "FBA Horizonte Plus - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 18880.386,
+      "patrimonio": 1888.04,
+      "retornoDiario": 0.027258,
+      "retornoAcumulado": 472.431788,
+      "flujoEstimado": 0.0055,
       "origen": "cnv-excel"
     }
   ]

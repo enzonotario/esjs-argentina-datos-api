@@ -2,7 +2,7 @@
   "fondoId": "1609",
   "claseId": "5298",
   "nombre": "Parakeet Premium - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "parakeet-premium-clase-b",
@@ -6722,6 +6722,22 @@
       "retornoDiario": 0.631727,
       "retornoAcumulado": 46.1225,
       "flujoEstimado": 632.982369,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-premium-clase-b",
+      "fondoId": "1609",
+      "claseId": "5298",
+      "nombre": "Parakeet Premium - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1458.731,
+      "patrimonio": 4283294025.83,
+      "retornoDiario": -0.170679,
+      "retornoAcumulado": 45.8731,
+      "flujoEstimado": -1408.995946,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "39",
   "claseId": "6174",
   "nombre": "Pionero Acciones - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-acciones-clase-b",
@@ -2802,6 +2802,22 @@
       "retornoDiario": 1.661271,
       "retornoAcumulado": -8.742753,
       "flujoEstimado": 24.050789,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-acciones-clase-b",
+      "fondoId": "39",
+      "claseId": "6174",
+      "nombre": "Pionero Acciones - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1482239.723,
+      "patrimonio": 12509734677.22,
+      "retornoDiario": -1.486174,
+      "retornoAcumulado": -10.098995,
+      "flujoEstimado": -47.760372,
       "origen": "cnv-excel"
     }
   ]

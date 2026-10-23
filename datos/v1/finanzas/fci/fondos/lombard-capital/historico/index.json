@@ -2,7 +2,7 @@
   "fondoId": "423",
   "claseId": "786",
   "nombre": "Lombard Capital",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "lombard-capital",
@@ -25922,6 +25922,22 @@
       "retornoDiario": 0.07554,
       "retornoAcumulado": 2109.453531,
       "flujoEstimado": -43995294.697815,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "lombard-capital",
+      "fondoId": "423",
+      "claseId": "786",
+      "nombre": "Lombard Capital",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 278504.972,
+      "patrimonio": 129178297380.52,
+      "retornoDiario": 0.067262,
+      "retornoAcumulado": 2110.939661,
+      "flujoEstimado": 2208400863.146896,
       "origen": "cnv-excel"
     }
   ]

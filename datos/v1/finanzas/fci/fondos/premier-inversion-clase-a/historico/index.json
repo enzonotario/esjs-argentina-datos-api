@@ -2,7 +2,7 @@
   "fondoId": "661",
   "claseId": "1365",
   "nombre": "Premier Inversion - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "premier-inversion-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.118386,
       "retornoAcumulado": 5151.714824,
       "flujoEstimado": -0.512961,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-inversion-clase-a",
+      "fondoId": "661",
+      "claseId": "1365",
+      "nombre": "Premier Inversion - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 16325.096,
+      "patrimonio": 222117232.26,
+      "retornoDiario": 0.076517,
+      "retornoAcumulado": 5155.733303,
+      "flujoEstimado": -3.938715,
       "origen": "cnv-excel"
     }
   ]

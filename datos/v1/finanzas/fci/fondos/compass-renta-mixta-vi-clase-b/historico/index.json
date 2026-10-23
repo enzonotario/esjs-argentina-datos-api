@@ -2,7 +2,7 @@
   "fondoId": "1740",
   "claseId": "5877",
   "nombre": "Compass Renta Mixta VI - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "compass-renta-mixta-vi-clase-b",
@@ -3762,6 +3762,22 @@
       "retornoDiario": 0.267046,
       "retornoAcumulado": 14.7803,
       "flujoEstimado": 50.358236,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-mixta-vi-clase-b",
+      "fondoId": "1740",
+      "claseId": "5877",
+      "nombre": "Compass Renta Mixta VI - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1138.888,
+      "patrimonio": 108104122.58,
+      "retornoDiario": -0.776701,
+      "retornoAcumulado": 13.8888,
+      "flujoEstimado": -23.379192,
       "origen": "cnv-excel"
     }
   ]

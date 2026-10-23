@@ -2,7 +2,7 @@
   "fondoId": "804",
   "claseId": "2095",
   "nombre": "Consultatio Gestion I - Clase D",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-i-clase-d",
@@ -24017,6 +24017,22 @@
       "patrimonio": null,
       "retornoDiario": 0.254521,
       "retornoAcumulado": 7579.373498,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-i-clase-d",
+      "fondoId": "804",
+      "claseId": "2095",
+      "nombre": "Consultatio Gestion I - Clase D",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 81968.784,
+      "patrimonio": null,
+      "retornoDiario": -0.011808,
+      "retornoAcumulado": 7578.466719,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

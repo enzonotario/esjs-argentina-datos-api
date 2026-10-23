@@ -2,7 +2,7 @@
   "fondoId": "629",
   "claseId": "1272",
   "nombre": "MEGAQM Balanceado - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "megaqm-balanceado-clase-a",
@@ -26322,6 +26322,22 @@
       "retornoDiario": 0.051327,
       "retornoAcumulado": 121.243,
       "flujoEstimado": -460409423.443533,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-balanceado-clase-a",
+      "fondoId": "629",
+      "claseId": "1272",
+      "nombre": "MEGAQM Balanceado - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2212.687,
+      "patrimonio": 6969752441.16,
+      "retornoDiario": 0.011616,
+      "retornoAcumulado": 121.2687,
+      "flujoEstimado": 2706650.427394,
       "origen": "cnv-excel"
     }
   ]

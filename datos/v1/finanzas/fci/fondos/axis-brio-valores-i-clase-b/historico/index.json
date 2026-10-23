@@ -2,7 +2,7 @@
   "fondoId": "1399",
   "claseId": "4055",
   "nombre": "Axis Brio Valores I - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "axis-brio-valores-i-clase-b",
@@ -13234,6 +13234,22 @@
       "retornoDiario": 1.569115,
       "retornoAcumulado": 768.6341,
       "flujoEstimado": -40.872899,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-brio-valores-i-clase-b",
+      "fondoId": "1399",
+      "claseId": "4055",
+      "nombre": "Axis Brio Valores I - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 8571.715,
+      "patrimonio": 549587658.88,
+      "retornoDiario": -1.319612,
+      "retornoAcumulado": 757.1715,
+      "flujoEstimado": 20.517532,
       "origen": "cnv-excel"
     }
   ]

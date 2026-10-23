@@ -2,7 +2,7 @@
   "fondoId": "636",
   "claseId": "1432",
   "nombre": "IAM Ahorro Pesos - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "iam-ahorro-pesos-clase-c",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.054285,
       "retornoAcumulado": 1557.090967,
       "flujoEstimado": -10356145.6288,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-ahorro-pesos-clase-c",
+      "fondoId": "636",
+      "claseId": "1432",
+      "nombre": "IAM Ahorro Pesos - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 40817,
+      "patrimonio": 1190165088.76,
+      "retornoDiario": 0.055974,
+      "retornoAcumulado": 1558.018502,
+      "flujoEstimado": -17414323.156344,
       "origen": "cnv-excel"
     }
   ]

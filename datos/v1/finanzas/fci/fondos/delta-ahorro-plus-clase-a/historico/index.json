@@ -2,7 +2,7 @@
   "fondoId": "473",
   "claseId": "931",
   "nombre": "Delta Ahorro Plus - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-ahorro-plus-clase-a",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.161629,
       "retornoAcumulado": 3593.903739,
       "flujoEstimado": -49818028.736265,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-ahorro-plus-clase-a",
+      "fondoId": "473",
+      "claseId": "931",
+      "nombre": "Delta Ahorro Plus - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 410571.785,
+      "patrimonio": 16556148318.06,
+      "retornoDiario": 0.050669,
+      "retornoAcumulado": 3595.775419,
+      "flujoEstimado": 66089653.83259,
       "origen": "cnv-excel"
     }
   ]

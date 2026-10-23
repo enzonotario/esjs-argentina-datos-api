@@ -2,7 +2,7 @@
   "fondoId": "541",
   "claseId": "1250",
   "nombre": "Supergestion Balanceado - Clase D",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "supergestion-balanceado-clase-d",
@@ -26225,6 +26225,22 @@
       "patrimonio": null,
       "retornoDiario": 0.284843,
       "retornoAcumulado": 4998.723321,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-balanceado-clase-d",
+      "fondoId": "541",
+      "claseId": "1250",
+      "nombre": "Supergestion Balanceado - Clase D",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 336075.764,
+      "patrimonio": null,
+      "retornoDiario": -0.052695,
+      "retornoAcumulado": 4996.036572,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

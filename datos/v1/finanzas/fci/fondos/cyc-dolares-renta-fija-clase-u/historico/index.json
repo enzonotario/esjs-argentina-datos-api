@@ -2,7 +2,7 @@
   "fondoId": "1246",
   "claseId": "3461",
   "nombre": "CYC Dólares Renta Fija - Clase U",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "cyc-dolares-renta-fija-clase-u",
@@ -19890,6 +19890,22 @@
       "retornoDiario": 0.350928,
       "retornoAcumulado": 127.0799,
       "flujoEstimado": -445558.129945,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cyc-dolares-renta-fija-clase-u",
+      "fondoId": "1246",
+      "claseId": "3461",
+      "nombre": "CYC Dólares Renta Fija - Clase U",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 2271.262,
+      "patrimonio": 26393192.6,
+      "retornoDiario": 0.020389,
+      "retornoAcumulado": 127.1262,
+      "flujoEstimado": -87060.168147,
       "origen": "cnv-excel"
     }
   ]

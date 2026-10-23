@@ -2,7 +2,7 @@
   "fondoId": "1671",
   "claseId": "5595",
   "nombre": "ConoSur Ahorro - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "conosur-ahorro-clase-a",
@@ -4914,6 +4914,22 @@
       "retornoDiario": 0.05137,
       "retornoAcumulado": 49.1906,
       "flujoEstimado": -26450150.122748,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-ahorro-clase-a",
+      "fondoId": "1671",
+      "claseId": "5595",
+      "nombre": "ConoSur Ahorro - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1492.458,
+      "patrimonio": 8218651425.65,
+      "retornoDiario": 0.037,
+      "retornoAcumulado": 49.2458,
+      "flujoEstimado": -2738428.263962,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1947",
   "claseId": "6649",
   "nombre": "Puente Acciones Argentinas - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "puente-acciones-argentinas-clase-a",
@@ -690,6 +690,22 @@
       "retornoDiario": 1.733771,
       "retornoAcumulado": -4.9303,
       "flujoEstimado": 8.104621,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "puente-acciones-argentinas-clase-a",
+      "fondoId": "1947",
+      "claseId": "6649",
+      "nombre": "Puente Acciones Argentinas - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 936.152,
+      "patrimonio": 9962589.3,
+      "retornoDiario": -1.52993,
+      "retornoAcumulado": -6.3848,
+      "flujoEstimado": 1.637368,
       "origen": "cnv-excel"
     }
   ]

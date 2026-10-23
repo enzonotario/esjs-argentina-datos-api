@@ -2,7 +2,7 @@
   "fondoId": "1668",
   "claseId": "5579",
   "nombre": "Balanz Credito Privado - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-credito-privado-clase-b",
@@ -5026,6 +5026,22 @@
       "retornoDiario": 0.085757,
       "retornoAcumulado": 40.1664,
       "flujoEstimado": -201005785.960953,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-credito-privado-clase-b",
+      "fondoId": "1668",
+      "claseId": "5579",
+      "nombre": "Balanz Credito Privado - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1402.44,
+      "patrimonio": 62458938938.82,
+      "retornoDiario": 0.055363,
+      "retornoAcumulado": 40.244,
+      "flujoEstimado": 72080034.36171,
       "origen": "cnv-excel"
     }
   ]

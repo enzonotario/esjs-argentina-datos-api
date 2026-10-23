@@ -2,7 +2,7 @@
   "fondoId": "1802",
   "claseId": "6173",
   "nombre": "Valiant Renta Fija Balanceado VI - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "valiant-renta-fija-balanceado-vi-clase-b",
@@ -2770,6 +2770,22 @@
       "retornoDiario": 0.150502,
       "retornoAcumulado": 12.4601,
       "flujoEstimado": -172.213177,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-fija-balanceado-vi-clase-b",
+      "fondoId": "1802",
+      "claseId": "6173",
+      "nombre": "Valiant Renta Fija Balanceado VI - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1124.789,
+      "patrimonio": 243115955.67,
+      "retornoDiario": 0.016717,
+      "retornoAcumulado": 12.4789,
+      "flujoEstimado": 90.493752,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "850",
   "claseId": "2421",
   "nombre": "Balanz Long Pesos - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-long-pesos-clase-b",
@@ -19266,6 +19266,22 @@
       "retornoDiario": 0.196695,
       "retornoAcumulado": 59.6976,
       "flujoEstimado": -30.834447,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-long-pesos-clase-b",
+      "fondoId": "850",
+      "claseId": "2421",
+      "nombre": "Balanz Long Pesos - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1595.473,
+      "patrimonio": 1261690934.11,
+      "retornoDiario": -0.094115,
+      "retornoAcumulado": 59.5473,
+      "flujoEstimado": -14.291564,
       "origen": "cnv-excel"
     }
   ]

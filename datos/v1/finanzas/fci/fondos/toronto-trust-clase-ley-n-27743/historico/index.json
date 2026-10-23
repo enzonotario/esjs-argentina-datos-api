@@ -2,7 +2,7 @@
   "fondoId": "52",
   "claseId": "5059",
   "nombre": "Toronto Trust - Clase Ley N° 27.743",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "toronto-trust-clase-ley-n-27743",
@@ -7842,6 +7842,22 @@
       "retornoDiario": 0.09483,
       "retornoAcumulado": 83.5549,
       "flujoEstimado": -0.651452,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-clase-ley-n-27743",
+      "fondoId": "52",
+      "claseId": "5059",
+      "nombre": "Toronto Trust - Clase Ley N° 27.743",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1836.307,
+      "patrimonio": 1884098.61,
+      "retornoDiario": 0.041296,
+      "retornoAcumulado": 83.6307,
+      "flujoEstimado": 0.353958,
       "origen": "cnv-excel"
     }
   ]

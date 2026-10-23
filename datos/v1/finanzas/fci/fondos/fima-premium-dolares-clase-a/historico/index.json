@@ -2,7 +2,7 @@
   "fondoId": "1633",
   "claseId": "5416",
   "nombre": "Fima Premium Dólares - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fima-premium-dolares-clase-a",
@@ -6114,6 +6114,22 @@
       "retornoDiario": 0.001477,
       "retornoAcumulado": 1.5621,
       "flujoEstimado": -34099071.104472,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-premium-dolares-clase-a",
+      "fondoId": "1633",
+      "claseId": "5416",
+      "nombre": "Fima Premium Dólares - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1015.637,
+      "patrimonio": 2203500434.78,
+      "retornoDiario": 0.001575,
+      "retornoAcumulado": 1.5637,
+      "flujoEstimado": 73787595.141069,
       "origen": "cnv-excel"
     }
   ]

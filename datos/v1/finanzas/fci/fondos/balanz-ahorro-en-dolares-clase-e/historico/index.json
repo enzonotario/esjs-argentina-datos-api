@@ -2,7 +2,7 @@
   "fondoId": "787",
   "claseId": "2325",
   "nombre": "Balanz Ahorro en Dólares - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-ahorro-en-dolares-clase-e",
@@ -26178,6 +26178,22 @@
       "retornoDiario": -0.000253,
       "retornoAcumulado": 67.035114,
       "flujoEstimado": -0.004252,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-ahorro-en-dolares-clase-e",
+      "fondoId": "787",
+      "claseId": "2325",
+      "nombre": "Balanz Ahorro en Dólares - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1582.235,
+      "patrimonio": 10192.01,
+      "retornoDiario": 0.146526,
+      "retornoAcumulado": 67.279865,
+      "flujoEstimado": -0.002098,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "149",
   "claseId": "2197",
   "nombre": "Superfondo Renta $ - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-clase-e",
@@ -26257,6 +26257,22 @@
       "patrimonio": null,
       "retornoDiario": 0.168829,
       "retornoAcumulado": 5525.367195,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-clase-e",
+      "fondoId": "149",
+      "claseId": "2197",
+      "nombre": "Superfondo Renta $ - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 81340.342,
+      "patrimonio": null,
+      "retornoDiario": -0.009949,
+      "retornoAcumulado": 5524.807551,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

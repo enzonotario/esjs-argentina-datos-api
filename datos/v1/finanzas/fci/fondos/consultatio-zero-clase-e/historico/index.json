@@ -2,7 +2,7 @@
   "fondoId": "1222",
   "claseId": "5106",
   "nombre": "Consultatio Zero - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-zero-clase-e",
@@ -7586,6 +7586,22 @@
       "retornoDiario": 0.047095,
       "retornoAcumulado": 57.8395,
       "flujoEstimado": 79087925.927504,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-zero-clase-e",
+      "fondoId": "1222",
+      "claseId": "5106",
+      "nombre": "Consultatio Zero - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1579.162,
+      "patrimonio": 3602661009.84,
+      "retornoDiario": 0.048594,
+      "retornoAcumulado": 57.9162,
+      "flujoEstimado": 18993932.788399,
       "origen": "cnv-excel"
     }
   ]

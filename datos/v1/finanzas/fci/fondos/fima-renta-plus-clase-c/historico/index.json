@@ -2,7 +2,7 @@
   "fondoId": "191",
   "claseId": "806",
   "nombre": "Fima Renta Plus - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fima-renta-plus-clase-c",
@@ -26082,6 +26082,22 @@
       "retornoDiario": 0.26449,
       "retornoAcumulado": 4092.764589,
       "flujoEstimado": 18000202.738907,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-renta-plus-clase-c",
+      "fondoId": "191",
+      "claseId": "806",
+      "nombre": "Fima Renta Plus - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1185707.586,
+      "patrimonio": 50321595100.43,
+      "retornoDiario": -0.117087,
+      "retornoAcumulado": 4087.85541,
+      "flujoEstimado": 431200051.015282,
       "origen": "cnv-excel"
     }
   ]

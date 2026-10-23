@@ -2,7 +2,7 @@
   "fondoId": "1640",
   "claseId": "5439",
   "nombre": "Crecer Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "crecer-ahorro-clase-b",
@@ -5842,6 +5842,22 @@
       "retornoDiario": 0.06859,
       "retornoAcumulado": 54.0631,
       "flujoEstimado": -528927698.670471,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "crecer-ahorro-clase-b",
+      "fondoId": "1640",
+      "claseId": "5439",
+      "nombre": "Crecer Ahorro - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1541.663,
+      "patrimonio": 232015363328.49,
+      "retornoDiario": 0.066986,
+      "retornoAcumulado": 54.1663,
+      "flujoEstimado": 19079922.625916,
       "origen": "cnv-excel"
     }
   ]

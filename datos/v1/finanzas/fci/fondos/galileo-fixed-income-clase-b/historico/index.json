@@ -2,7 +2,7 @@
   "fondoId": "842",
   "claseId": "2403",
   "nombre": "Galileo Fixed Income - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-fixed-income-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.078992,
       "retornoAcumulado": 25.431406,
       "flujoEstimado": -3.834706,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-fixed-income-clase-b",
+      "fondoId": "842",
+      "claseId": "2403",
+      "nombre": "Galileo Fixed Income - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1267.371,
+      "patrimonio": 20143983.94,
+      "retornoDiario": 0.033624,
+      "retornoAcumulado": 25.473581,
+      "flujoEstimado": 0.563689,
       "origen": "cnv-excel"
     }
   ]

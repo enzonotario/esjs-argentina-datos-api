@@ -2,7 +2,7 @@
   "fondoId": "631",
   "claseId": "1281",
   "nombre": "Superfondo Combinado - Clase D",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "superfondo-combinado-clase-d",
@@ -26241,6 +26241,22 @@
       "patrimonio": null,
       "retornoDiario": 0.309449,
       "retornoAcumulado": 5392.046546,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-combinado-clase-d",
+      "fondoId": "631",
+      "claseId": "1281",
+      "nombre": "Superfondo Combinado - Clase D",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 69958.75,
+      "patrimonio": null,
+      "retornoDiario": -0.163936,
+      "retornoAcumulado": 5383.043096,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

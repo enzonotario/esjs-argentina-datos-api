@@ -2,7 +2,7 @@
   "fondoId": "1743",
   "claseId": "5890",
   "nombre": "Numancia Pesos IV - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "numancia-pesos-iv-clase-b",
@@ -3346,6 +3346,22 @@
       "retornoDiario": 0.122936,
       "retornoAcumulado": 5.2243,
       "flujoEstimado": -13982.886467,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "numancia-pesos-iv-clase-b",
+      "fondoId": "1743",
+      "claseId": "5890",
+      "nombre": "Numancia Pesos IV - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1053.093,
+      "patrimonio": 38826086222.92,
+      "retornoDiario": 0.08078,
+      "retornoAcumulado": 5.3093,
+      "flujoEstimado": -8934.485001,
       "origen": "cnv-excel"
     }
   ]

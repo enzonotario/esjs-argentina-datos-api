@@ -2,7 +2,7 @@
   "fondoId": "792",
   "claseId": "3450",
   "nombre": "Delta Retorno Real - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-retorno-real-clase-e",
@@ -21666,6 +21666,22 @@
       "retornoDiario": 0.12987,
       "retornoAcumulado": 1775.456,
       "flujoEstimado": -55.982313,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-retorno-real-clase-e",
+      "fondoId": "792",
+      "claseId": "3450",
+      "nombre": "Delta Retorno Real - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 18725.144,
+      "patrimonio": 4681285965.01,
+      "retornoDiario": -0.156847,
+      "retornoAcumulado": 1772.5144,
+      "flujoEstimado": 43.273999,
       "origen": "cnv-excel"
     }
   ]

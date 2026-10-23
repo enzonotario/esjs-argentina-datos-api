@@ -2,7 +2,7 @@
   "fondoId": "682",
   "claseId": "1436",
   "nombre": "Schroder Retorno Total - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "schroder-retorno-total-clase-a",
@@ -26274,6 +26274,22 @@
       "retornoDiario": 0.063678,
       "retornoAcumulado": 74.2696,
       "flujoEstimado": 612663.054857,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-retorno-total-clase-a",
+      "fondoId": "682",
+      "claseId": "1436",
+      "nombre": "Schroder Retorno Total - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1742.573,
+      "patrimonio": 52985113.81,
+      "retornoDiario": -0.007058,
+      "retornoAcumulado": 74.2573,
+      "flujoEstimado": 41059.595108,
       "origen": "cnv-excel"
     }
   ]

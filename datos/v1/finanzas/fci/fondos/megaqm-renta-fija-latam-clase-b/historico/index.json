@@ -2,7 +2,7 @@
   "fondoId": "788",
   "claseId": "1794",
   "nombre": "MEGAQM Renta Fija LATAM - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "megaqm-renta-fija-latam-clase-b",
@@ -26178,6 +26178,22 @@
       "retornoDiario": 0.02231,
       "retornoAcumulado": 10.705128,
       "flujoEstimado": 8.963423,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-renta-fija-latam-clase-b",
+      "fondoId": "788",
+      "claseId": "1794",
+      "nombre": "MEGAQM Renta Fija LATAM - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1108.525,
+      "patrimonio": 16781856.97,
+      "retornoDiario": 0.104392,
+      "retornoAcumulado": 10.820694,
+      "flujoEstimado": -11645.921585,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1627",
   "claseId": "5400",
   "nombre": "Valiant Renta Fija Balanceado III - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "valiant-renta-fija-balanceado-iii-clase-b",
@@ -6098,6 +6098,22 @@
       "retornoDiario": 0.073531,
       "retornoAcumulado": 33.9193,
       "flujoEstimado": 15.528292,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-renta-fija-balanceado-iii-clase-b",
+      "fondoId": "1627",
+      "claseId": "5400",
+      "nombre": "Valiant Renta Fija Balanceado III - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1339.92,
+      "patrimonio": 115692759.3,
+      "retornoDiario": 0.054286,
+      "retornoAcumulado": 33.992,
+      "flujoEstimado": -12.692392,
       "origen": "cnv-excel"
     }
   ]

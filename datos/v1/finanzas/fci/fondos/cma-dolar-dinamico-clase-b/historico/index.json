@@ -2,7 +2,7 @@
   "fondoId": "1721",
   "claseId": "5787",
   "nombre": "CMA Dólar Dinamico - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "cma-dolar-dinamico-clase-b",
@@ -4306,6 +4306,22 @@
       "retornoDiario": -0.026668,
       "retornoAcumulado": 6.8414,
       "flujoEstimado": 23246.983607,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-dolar-dinamico-clase-b",
+      "fondoId": "1721",
+      "claseId": "5787",
+      "nombre": "CMA Dólar Dinamico - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1068.319,
+      "patrimonio": 317701.35,
+      "retornoDiario": -0.008892,
+      "retornoAcumulado": 6.8319,
+      "flujoEstimado": -0.127472,
       "origen": "cnv-excel"
     }
   ]

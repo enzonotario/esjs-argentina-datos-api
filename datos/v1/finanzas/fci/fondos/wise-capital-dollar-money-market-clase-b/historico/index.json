@@ -2,7 +2,7 @@
   "fondoId": "1838",
   "claseId": "6333",
   "nombre": "Wise Capital Dollar Money Market - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "wise-capital-dollar-money-market-clase-b",
@@ -2162,6 +2162,22 @@
       "retornoDiario": 0.001892,
       "retornoAcumulado": 0.4253,
       "flujoEstimado": 0.00087,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "wise-capital-dollar-money-market-clase-b",
+      "fondoId": "1838",
+      "claseId": "6333",
+      "nombre": "Wise Capital Dollar Money Market - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1004.273,
+      "patrimonio": 707169.37,
+      "retornoDiario": 0.001992,
+      "retornoAcumulado": 0.4273,
+      "flujoEstimado": -0.296539,
       "origen": "cnv-excel"
     }
   ]

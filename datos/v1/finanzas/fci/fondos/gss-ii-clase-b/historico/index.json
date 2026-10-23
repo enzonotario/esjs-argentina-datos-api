@@ -2,7 +2,7 @@
   "fondoId": "388",
   "claseId": "703",
   "nombre": "GSS II - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "gss-ii-clase-b",
@@ -26322,6 +26322,22 @@
       "retornoDiario": 0.077275,
       "retornoAcumulado": 2660.609598,
       "flujoEstimado": 8575064.70256,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gss-ii-clase-b",
+      "fondoId": "388",
+      "claseId": "703",
+      "nombre": "GSS II - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 434320.182,
+      "patrimonio": 24319328396.37,
+      "retornoDiario": 0.033347,
+      "retornoAcumulado": 2661.530169,
+      "flujoEstimado": -13112224.053776,
       "origen": "cnv-excel"
     }
   ]

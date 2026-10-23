@@ -2,7 +2,7 @@
   "fondoId": "1790",
   "claseId": "6118",
   "nombre": "Axis Gestión 2 - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "axis-gestion-2-clase-b",
@@ -2626,6 +2626,22 @@
       "retornoDiario": 0.060595,
       "retornoAcumulado": 16.2509,
       "flujoEstimado": -8183.264563,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-gestion-2-clase-b",
+      "fondoId": "1790",
+      "claseId": "6118",
+      "nombre": "Axis Gestión 2 - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1163.213,
+      "patrimonio": 14493864495.21,
+      "retornoDiario": 0.060559,
+      "retornoAcumulado": 16.3213,
+      "flujoEstimado": 4334.455582,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "892",
   "claseId": "2605",
   "nombre": "Ciclo Nova Renta Fija Dólar - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-renta-fija-dolar-clase-b",
@@ -26130,6 +26130,22 @@
       "retornoDiario": 0.128582,
       "retornoAcumulado": 12.543813,
       "flujoEstimado": 13082.552898,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-renta-fija-dolar-clase-b",
+      "fondoId": "892",
+      "claseId": "2605",
+      "nombre": "Ciclo Nova Renta Fija Dólar - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1126.609,
+      "patrimonio": 3621138.23,
+      "retornoDiario": 0.191203,
+      "retornoAcumulado": 12.759,
+      "flujoEstimado": 0.879855,
       "origen": "cnv-excel"
     }
   ]

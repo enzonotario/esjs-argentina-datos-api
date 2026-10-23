@@ -2,7 +2,7 @@
   "fondoId": "1490",
   "claseId": "4445",
   "nombre": "Quiron Renta Mixta - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "quiron-renta-mixta-clase-b",
@@ -9362,6 +9362,22 @@
       "retornoDiario": 0.497151,
       "retornoAcumulado": 101.1558,
       "flujoEstimado": 55.422513,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "quiron-renta-mixta-clase-b",
+      "fondoId": "1490",
+      "claseId": "4445",
+      "nombre": "Quiron Renta Mixta - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1971.959,
+      "patrimonio": 534702695.16,
+      "retornoDiario": -1.968574,
+      "retornoAcumulado": 97.1959,
+      "flujoEstimado": 141.759536,
       "origen": "cnv-excel"
     }
   ]

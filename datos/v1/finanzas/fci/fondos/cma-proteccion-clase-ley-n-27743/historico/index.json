@@ -2,7 +2,7 @@
   "fondoId": "330",
   "claseId": "4939",
   "nombre": "CMA Proteccion - Clase Ley N° 27.743",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "cma-proteccion-clase-ley-n-27743",
@@ -8066,6 +8066,22 @@
       "retornoDiario": 0.062734,
       "retornoAcumulado": 97.6246,
       "flujoEstimado": 0.172169,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-proteccion-clase-ley-n-27743",
+      "fondoId": "330",
+      "claseId": "4939",
+      "nombre": "CMA Proteccion - Clase Ley N° 27.743",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1977.288,
+      "patrimonio": 1750892.13,
+      "retornoDiario": 0.052726,
+      "retornoAcumulado": 97.7288,
+      "flujoEstimado": -0.619214,
       "origen": "cnv-excel"
     }
   ]

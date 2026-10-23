@@ -2,7 +2,7 @@
   "fondoId": "1499",
   "claseId": "4482",
   "nombre": "Dracma Estrategia Dólar I - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "dracma-estrategia-dolar-i-clase-a",
@@ -9138,6 +9138,22 @@
       "retornoDiario": 0.008654,
       "retornoAcumulado": 15.56,
       "flujoEstimado": -34585.97451,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "dracma-estrategia-dolar-i-clase-a",
+      "fondoId": "1499",
+      "claseId": "4482",
+      "nombre": "Dracma Estrategia Dólar I - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1155.5,
+      "patrimonio": 11719212.48,
+      "retornoDiario": -0.008654,
+      "retornoAcumulado": 15.55,
+      "flujoEstimado": -239323.358741,
       "origen": "cnv-excel"
     }
   ]

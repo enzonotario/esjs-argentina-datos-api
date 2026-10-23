@@ -2,7 +2,7 @@
   "fondoId": "1543",
   "claseId": "6798",
   "nombre": "SBS Patrimonio X - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "sbs-patrimonio-x-clase-b",
@@ -50,6 +50,22 @@
       "retornoDiario": 0.109253,
       "retornoAcumulado": -0.0311,
       "flujoEstimado": 731965213.261091,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-patrimonio-x-clase-b",
+      "fondoId": "1543",
+      "claseId": "6798",
+      "nombre": "SBS Patrimonio X - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 999.776,
+      "patrimonio": 4663831518.58,
+      "retornoDiario": 0.008703,
+      "retornoAcumulado": -0.0224,
+      "flujoEstimado": 1930846830.661039,
       "origen": "cnv-excel"
     }
   ]

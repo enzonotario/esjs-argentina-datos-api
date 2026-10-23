@@ -2,7 +2,7 @@
   "fondoId": "353",
   "claseId": "2617",
   "nombre": "Gainvest Renta Fija - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "gainvest-renta-fija-clase-b",
@@ -10786,6 +10786,22 @@
       "retornoDiario": 0.078238,
       "retornoAcumulado": 116.5593,
       "flujoEstimado": 377.244842,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gainvest-renta-fija-clase-b",
+      "fondoId": "353",
+      "claseId": "2617",
+      "nombre": "Gainvest Renta Fija - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 2166.643,
+      "patrimonio": 1808007581.98,
+      "retornoDiario": 0.048486,
+      "retornoAcumulado": 116.6643,
+      "flujoEstimado": -393.689886,
       "origen": "cnv-excel"
     }
   ]

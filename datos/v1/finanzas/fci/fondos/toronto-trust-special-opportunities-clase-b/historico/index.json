@@ -2,7 +2,7 @@
   "fondoId": "444",
   "claseId": "6053",
   "nombre": "Toronto Trust Special Opportunities - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "toronto-trust-special-opportunities-clase-b",
@@ -3106,6 +3106,22 @@
       "retornoDiario": 0.075786,
       "retornoAcumulado": 388416.0645,
       "flujoEstimado": -120.361404,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "toronto-trust-special-opportunities-clase-b",
+      "fondoId": "444",
+      "claseId": "6053",
+      "nombre": "Toronto Trust Special Opportunities - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 3882011.237,
+      "patrimonio": 40112080866.48,
+      "retornoDiario": -0.081062,
+      "retornoAcumulado": 388101.1237,
+      "flujoEstimado": -202.519936,
       "origen": "cnv-excel"
     }
   ]

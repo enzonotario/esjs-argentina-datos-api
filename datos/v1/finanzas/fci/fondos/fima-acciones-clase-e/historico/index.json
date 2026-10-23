@@ -2,7 +2,7 @@
   "fondoId": "21",
   "claseId": "5790",
   "nombre": "Fima Acciones - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fima-acciones-clase-e",
@@ -4338,6 +4338,22 @@
       "retornoDiario": 1.720296,
       "retornoAcumulado": 54.153563,
       "flujoEstimado": 0.004926,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-acciones-clase-e",
+      "fondoId": "21",
+      "claseId": "5790",
+      "nombre": "Fima Acciones - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 306758.99,
+      "patrimonio": 4248289.92,
+      "retornoDiario": -1.476873,
+      "retornoAcumulado": 51.87691,
+      "flujoEstimado": -0.015482,
       "origen": "cnv-excel"
     }
   ]

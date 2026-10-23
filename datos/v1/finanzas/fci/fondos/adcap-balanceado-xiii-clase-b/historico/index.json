@@ -2,7 +2,7 @@
   "fondoId": "1558",
   "claseId": "4949",
   "nombre": "Adcap Balanceado XIII - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-xiii-clase-b",
@@ -7858,6 +7858,22 @@
       "retornoDiario": 0.103642,
       "retornoAcumulado": 77.912,
       "flujoEstimado": 9861.010567,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-xiii-clase-b",
+      "fondoId": "1558",
+      "claseId": "4949",
+      "nombre": "Adcap Balanceado XIII - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1779.385,
+      "patrimonio": 29144030323.67,
+      "retornoDiario": 0.014895,
+      "retornoAcumulado": 77.9385,
+      "flujoEstimado": -2900.562538,
       "origen": "cnv-excel"
     }
   ]

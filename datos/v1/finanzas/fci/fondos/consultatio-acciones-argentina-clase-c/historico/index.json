@@ -2,7 +2,7 @@
   "fondoId": "216",
   "claseId": "1634",
   "nombre": "Consultatio Acciones Argentina - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-acciones-argentina-clase-c",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 1.783338,
       "retornoAcumulado": 6358.940677,
       "flujoEstimado": -161.504379,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-acciones-argentina-clase-c",
+      "fondoId": "216",
+      "claseId": "1634",
+      "nombre": "Consultatio Acciones Argentina - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 17055785.857,
+      "patrimonio": 35780680223.31,
+      "retornoDiario": -1.588809,
+      "retornoAcumulado": 6256.320463,
+      "flujoEstimado": 99.639923,
       "origen": "cnv-excel"
     }
   ]

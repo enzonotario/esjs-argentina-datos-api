@@ -2,7 +2,7 @@
   "fondoId": "1570",
   "claseId": "5100",
   "nombre": "IOL Dólar Ahorro Plus - Clase D",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "iol-dolar-ahorro-plus-clase-d",
@@ -7410,6 +7410,22 @@
       "retornoDiario": -0.031392,
       "retornoAcumulado": 9.5487,
       "flujoEstimado": 498343.408799,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iol-dolar-ahorro-plus-clase-d",
+      "fondoId": "1570",
+      "claseId": "5100",
+      "nombre": "IOL Dólar Ahorro Plus - Clase D",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1096.137,
+      "patrimonio": 285276527.64,
+      "retornoDiario": 0.059334,
+      "retornoAcumulado": 9.6137,
+      "flujoEstimado": -139787.524538,
       "origen": "cnv-excel"
     }
   ]

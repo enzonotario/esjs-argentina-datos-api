@@ -2,7 +2,7 @@
   "fondoId": "1595",
   "claseId": "5246",
   "nombre": "Allaria Gestión V - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "allaria-gestion-v-clase-b",
@@ -7106,6 +7106,22 @@
       "retornoDiario": 1.072716,
       "retornoAcumulado": 37.6856,
       "flujoEstimado": -85.291604,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-gestion-v-clase-b",
+      "fondoId": "1595",
+      "claseId": "5246",
+      "nombre": "Allaria Gestión V - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1360.976,
+      "patrimonio": 5469320291.12,
+      "retornoDiario": -1.153352,
+      "retornoAcumulado": 36.0976,
+      "flujoEstimado": -1838.622101,
       "origen": "cnv-excel"
     }
   ]

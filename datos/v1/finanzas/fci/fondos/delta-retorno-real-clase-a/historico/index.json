@@ -2,7 +2,7 @@
   "fondoId": "792",
   "claseId": "1852",
   "nombre": "Delta Retorno Real - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-retorno-real-clase-a",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.124519,
       "retornoAcumulado": 4603.954789,
       "flujoEstimado": 81786072.309464,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-retorno-real-clase-a",
+      "fondoId": "792",
+      "claseId": "1852",
+      "nombre": "Delta Retorno Real - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 110494.825,
+      "patrimonio": 7156943808.9,
+      "retornoDiario": -0.162182,
+      "retornoAcumulado": 4596.325814,
+      "flujoEstimado": 24840703.70374,
       "origen": "cnv-excel"
     }
   ]

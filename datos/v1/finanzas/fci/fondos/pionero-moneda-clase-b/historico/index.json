@@ -2,7 +2,7 @@
   "fondoId": "1575",
   "claseId": "5122",
   "nombre": "Pionero Moneda - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-moneda-clase-b",
@@ -7410,6 +7410,22 @@
       "retornoDiario": 0.103482,
       "retornoAcumulado": 72.5752,
       "flujoEstimado": -3580.898449,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-moneda-clase-b",
+      "fondoId": "1575",
+      "claseId": "5122",
+      "nombre": "Pionero Moneda - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1725.513,
+      "patrimonio": 18091366465.03,
+      "retornoDiario": -0.013849,
+      "retornoAcumulado": 72.5513,
+      "flujoEstimado": 139.613464,
       "origen": "cnv-excel"
     }
   ]

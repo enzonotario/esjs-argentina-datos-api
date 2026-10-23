@@ -2,7 +2,7 @@
   "fondoId": "785",
   "claseId": "1779",
   "nombre": "Consultatio Gestion IX - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-ix-clase-c",
@@ -26322,6 +26322,22 @@
       "retornoDiario": 0.037772,
       "retornoAcumulado": 618.305592,
       "flujoEstimado": -0.016035,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-ix-clase-c",
+      "fondoId": "785",
+      "claseId": "1779",
+      "nombre": "Consultatio Gestion IX - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14652.969,
+      "patrimonio": 2835923533.02,
+      "retornoDiario": 0.046408,
+      "retornoAcumulado": 618.638943,
+      "flujoEstimado": 2824999999.37802,
       "origen": "cnv-excel"
     }
   ]

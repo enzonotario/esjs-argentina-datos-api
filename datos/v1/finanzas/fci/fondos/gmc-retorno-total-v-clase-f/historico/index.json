@@ -2,7 +2,7 @@
   "fondoId": "1898",
   "claseId": "6563",
   "nombre": "GMC Retorno Total V - Clase F",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "gmc-retorno-total-v-clase-f",
@@ -1250,6 +1250,22 @@
       "retornoDiario": -0.015926,
       "retornoAcumulado": -0.007012,
       "flujoEstimado": -28688.73732,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "gmc-retorno-total-v-clase-f",
+      "fondoId": "1898",
+      "claseId": "6563",
+      "nombre": "GMC Retorno Total V - Clase F",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 997.724,
+      "patrimonio": 45159374441.78,
+      "retornoDiario": -0.047786,
+      "retornoAcumulado": -0.054795,
+      "flujoEstimado": -105.887245,
       "origen": "cnv-excel"
     }
   ]

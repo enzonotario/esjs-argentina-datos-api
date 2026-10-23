@@ -2,7 +2,7 @@
   "fondoId": "226",
   "claseId": "1376",
   "nombre": "Supergestion - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "supergestion-clase-c",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.537368,
       "retornoAcumulado": 4555.134277,
       "flujoEstimado": 5.176018,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-clase-c",
+      "fondoId": "226",
+      "claseId": "1376",
+      "nombre": "Supergestion - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1567757.71,
+      "patrimonio": 12879870367.74,
+      "retornoDiario": -0.215825,
+      "retornoAcumulado": 4545.087326,
+      "flujoEstimado": -21.507242,
       "origen": "cnv-excel"
     }
   ]

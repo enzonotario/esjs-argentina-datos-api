@@ -2,7 +2,7 @@
   "fondoId": "1492",
   "claseId": "4449",
   "nombre": "Champaquí Renta Variable - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "champaqui-renta-variable-clase-a",
@@ -9698,6 +9698,22 @@
       "retornoDiario": 1.712267,
       "retornoAcumulado": 115.499,
       "flujoEstimado": -3275508.762894,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "champaqui-renta-variable-clase-a",
+      "fondoId": "1492",
+      "claseId": "4449",
+      "nombre": "Champaquí Renta Variable - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2121.34,
+      "patrimonio": 1672735719.39,
+      "retornoDiario": -1.561492,
+      "retornoAcumulado": 112.134,
+      "flujoEstimado": 5513939.89661,
       "origen": "cnv-excel"
     }
   ]

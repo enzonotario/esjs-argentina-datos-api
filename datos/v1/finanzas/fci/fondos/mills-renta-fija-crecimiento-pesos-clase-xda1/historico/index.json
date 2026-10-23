@@ -2,7 +2,7 @@
   "fondoId": "1827",
   "claseId": "6281",
   "nombre": "Mills Renta Fija Crecimiento Pesos - Clase XDA1",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "mills-renta-fija-crecimiento-pesos-clase-xda1",
@@ -1762,6 +1762,22 @@
       "retornoDiario": 0.19234,
       "retornoAcumulado": 10.1729,
       "flujoEstimado": -305401.809972,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "mills-renta-fija-crecimiento-pesos-clase-xda1",
+      "fondoId": "1827",
+      "claseId": "6281",
+      "nombre": "Mills Renta Fija Crecimiento Pesos - Clase XDA1",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1100.933,
+      "patrimonio": 779849406.86,
+      "retornoDiario": -0.07225,
+      "retornoAcumulado": 10.0933,
+      "flujoEstimado": 409.461004,
       "origen": "cnv-excel"
     }
   ]

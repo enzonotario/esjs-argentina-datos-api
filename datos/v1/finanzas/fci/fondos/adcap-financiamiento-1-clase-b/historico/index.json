@@ -2,7 +2,7 @@
   "fondoId": "1368",
   "claseId": "3921",
   "nombre": "Adcap Financiamiento 1 - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "adcap-financiamiento-1-clase-b",
@@ -15362,6 +15362,22 @@
       "retornoDiario": 0.062859,
       "retornoAcumulado": 1089.7522,
       "flujoEstimado": -434.7206,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-financiamiento-1-clase-b",
+      "fondoId": "1368",
+      "claseId": "3921",
+      "nombre": "Adcap Financiamiento 1 - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 11905.028,
+      "patrimonio": 10832356012.67,
+      "retornoDiario": 0.063089,
+      "retornoAcumulado": 1090.5028,
+      "flujoEstimado": 324.81967,
       "origen": "cnv-excel"
     }
   ]

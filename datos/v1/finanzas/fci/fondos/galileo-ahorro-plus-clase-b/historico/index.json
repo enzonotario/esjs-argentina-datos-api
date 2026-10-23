@@ -2,7 +2,7 @@
   "fondoId": "616",
   "claseId": "2252",
   "nombre": "Galileo Ahorro Plus - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-ahorro-plus-clase-b",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 0.171621,
       "retornoAcumulado": 2660.714648,
       "flujoEstimado": -21049.64801,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-ahorro-plus-clase-b",
+      "fondoId": "616",
+      "claseId": "2252",
+      "nombre": "Galileo Ahorro Plus - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 104871.361,
+      "patrimonio": 15171315802.38,
+      "retornoDiario": -0.003149,
+      "retornoAcumulado": 2660.627726,
+      "flujoEstimado": 196014957.573881,
       "origen": "cnv-excel"
     }
   ]

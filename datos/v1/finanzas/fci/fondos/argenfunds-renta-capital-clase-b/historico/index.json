@@ -2,7 +2,7 @@
   "fondoId": "736",
   "claseId": "1606",
   "nombre": "Argenfunds Renta Capital - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "argenfunds-renta-capital-clase-b",
@@ -26210,6 +26210,22 @@
       "retornoDiario": 0.041574,
       "retornoAcumulado": 10.787166,
       "flujoEstimado": -0.169989,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "argenfunds-renta-capital-clase-b",
+      "fondoId": "736",
+      "claseId": "1606",
+      "nombre": "Argenfunds Renta Capital - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1129.747,
+      "patrimonio": 2981850.12,
+      "retornoDiario": 0.103404,
+      "retornoAcumulado": 10.901725,
+      "flujoEstimado": -1.769109,
       "origen": "cnv-excel"
     }
   ]

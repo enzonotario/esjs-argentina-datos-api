@@ -2,7 +2,7 @@
   "fondoId": "1863",
   "claseId": "6439",
   "nombre": "Parakeet Gestion Activa II - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "parakeet-gestion-activa-ii-clase-b",
@@ -1682,6 +1682,22 @@
       "retornoDiario": 0.084796,
       "retornoAcumulado": 10.0042,
       "flujoEstimado": 923.3906,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-gestion-activa-ii-clase-b",
+      "fondoId": "1863",
+      "claseId": "6439",
+      "nombre": "Parakeet Gestion Activa II - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1099.508,
+      "patrimonio": 4236563576.9,
+      "retornoDiario": -0.048544,
+      "retornoAcumulado": 9.9508,
+      "flujoEstimado": -2656.137679,
       "origen": "cnv-excel"
     }
   ]

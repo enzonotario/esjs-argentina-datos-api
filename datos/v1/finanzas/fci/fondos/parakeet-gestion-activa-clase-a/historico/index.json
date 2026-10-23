@@ -2,7 +2,7 @@
   "fondoId": "1798",
   "claseId": "6152",
   "nombre": "Parakeet Gestion Activa - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "parakeet-gestion-activa-clase-a",
@@ -2850,6 +2850,22 @@
       "retornoDiario": 0.061917,
       "retornoAcumulado": -68.9715,
       "flujoEstimado": 0.01298,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-gestion-activa-clase-a",
+      "fondoId": "1798",
+      "claseId": "6152",
+      "nombre": "Parakeet Gestion Activa - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 310.39,
+      "patrimonio": 50304.17,
+      "retornoDiario": 0.03384,
+      "retornoAcumulado": -68.961,
+      "flujoEstimado": 0.002828,
       "origen": "cnv-excel"
     }
   ]

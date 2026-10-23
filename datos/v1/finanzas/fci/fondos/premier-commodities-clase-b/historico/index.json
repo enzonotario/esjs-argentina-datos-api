@@ -2,7 +2,7 @@
   "fondoId": "525",
   "claseId": "1061",
   "nombre": "Premier Commodities - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "premier-commodities-clase-b",
@@ -26258,6 +26258,22 @@
       "retornoDiario": 0.122069,
       "retornoAcumulado": 8873.706174,
       "flujoEstimado": -24472871.20168,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-commodities-clase-b",
+      "fondoId": "525",
+      "claseId": "1061",
+      "nombre": "Premier Commodities - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 461026.425,
+      "patrimonio": 8148047418.39,
+      "retornoDiario": -0.153373,
+      "retornoAcumulado": 8859.942897,
+      "flujoEstimado": -22873331.440421,
       "origen": "cnv-excel"
     }
   ]

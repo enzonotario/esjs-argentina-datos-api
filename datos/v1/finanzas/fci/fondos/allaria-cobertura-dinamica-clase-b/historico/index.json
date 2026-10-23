@@ -2,7 +2,7 @@
   "fondoId": "1290",
   "claseId": "3610",
   "nombre": "Allaria Cobertura Dinamica - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "allaria-cobertura-dinamica-clase-b",
@@ -18818,6 +18818,22 @@
       "retornoDiario": 0.055426,
       "retornoAcumulado": 593.3817,
       "flujoEstimado": 525353.224972,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-cobertura-dinamica-clase-b",
+      "fondoId": "1290",
+      "claseId": "3610",
+      "nombre": "Allaria Cobertura Dinamica - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 6945.232,
+      "patrimonio": 9959329275.62,
+      "retornoDiario": 0.164628,
+      "retornoAcumulado": 594.5232,
+      "flujoEstimado": -1799028189.099033,
       "origen": "cnv-excel"
     }
   ]

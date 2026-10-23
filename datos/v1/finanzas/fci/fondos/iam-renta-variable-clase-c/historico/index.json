@@ -2,7 +2,7 @@
   "fondoId": "430",
   "claseId": "1430",
   "nombre": "IAM Renta Variable - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "iam-renta-variable-clase-c",
@@ -26290,6 +26290,22 @@
       "retornoDiario": 1.710601,
       "retornoAcumulado": 6064.349107,
       "flujoEstimado": -21720989.693418,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-renta-variable-clase-c",
+      "fondoId": "430",
+      "claseId": "1430",
+      "nombre": "IAM Renta Variable - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 115129.875,
+      "patrimonio": 72828533.9,
+      "retornoDiario": -1.565122,
+      "retornoAcumulado": 5967.869508,
+      "flujoEstimado": -0.26237,
       "origen": "cnv-excel"
     }
   ]

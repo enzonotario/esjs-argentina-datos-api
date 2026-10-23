@@ -2,7 +2,7 @@
   "fondoId": "1703",
   "claseId": "5701",
   "nombre": "Consultatio Estrategia III - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-estrategia-iii-clase-e",
@@ -4274,6 +4274,22 @@
       "retornoDiario": 0.96627,
       "retornoAcumulado": 22.0347,
       "flujoEstimado": 0.329426,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-estrategia-iii-clase-e",
+      "fondoId": "1703",
+      "claseId": "5701",
+      "nombre": "Consultatio Estrategia III - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1196.237,
+      "patrimonio": 2475719.63,
+      "retornoDiario": -1.975668,
+      "retornoAcumulado": 19.6237,
+      "flujoEstimado": -0.464952,
       "origen": "cnv-excel"
     }
   ]

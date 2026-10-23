@@ -2,7 +2,7 @@
   "fondoId": "426",
   "claseId": "792",
   "nombre": "Compass Renta Mixta Dólares - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "compass-renta-mixta-dolares-clase-b",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.012465,
       "retornoAcumulado": -45.77785,
       "flujoEstimado": 57683.892413,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-renta-mixta-dolares-clase-b",
+      "fondoId": "426",
+      "claseId": "792",
+      "nombre": "Compass Renta Mixta Dólares - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 723.89,
+      "patrimonio": 25342765.02,
+      "retornoDiario": 0.244695,
+      "retornoAcumulado": -45.645171,
+      "flujoEstimado": -3499.319587,
       "origen": "cnv-excel"
     }
   ]

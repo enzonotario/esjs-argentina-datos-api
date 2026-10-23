@@ -2,7 +2,7 @@
   "fondoId": "1262",
   "claseId": "3505",
   "nombre": "Consultatio Gestión XII Pesos - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-gestion-xii-pesos-clase-b",
@@ -19314,6 +19314,22 @@
       "retornoDiario": 0.118366,
       "retornoAcumulado": 1119.2749,
       "flujoEstimado": 589999762.174057,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-gestion-xii-pesos-clase-b",
+      "fondoId": "1262",
+      "claseId": "3505",
+      "nombre": "Consultatio Gestión XII Pesos - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 12213.393,
+      "patrimonio": 36746590259.67,
+      "retornoDiario": 0.169314,
+      "retornoAcumulado": 1121.3393,
+      "flujoEstimado": -7240349990.540634,
       "origen": "cnv-excel"
     }
   ]

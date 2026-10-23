@@ -2,7 +2,7 @@
   "fondoId": "1296",
   "claseId": "3626",
   "nombre": "Balanz Performance I - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-performance-i-clase-a",
@@ -18738,6 +18738,22 @@
       "retornoDiario": 0.268524,
       "retornoAcumulado": 6.4954,
       "flujoEstimado": -7.900087,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-performance-i-clase-a",
+      "fondoId": "1296",
+      "claseId": "3626",
+      "nombre": "Balanz Performance I - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1064.779,
+      "patrimonio": 11286660.52,
+      "retornoDiario": -0.016433,
+      "retornoAcumulado": 6.4779,
+      "flujoEstimado": 6.190745,
       "origen": "cnv-excel"
     }
   ]

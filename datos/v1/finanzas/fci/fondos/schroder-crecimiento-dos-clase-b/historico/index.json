@@ -2,7 +2,7 @@
   "fondoId": "1573",
   "claseId": "5115",
   "nombre": "Schroder Crecimiento Dos - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "schroder-crecimiento-dos-clase-b",
@@ -7714,6 +7714,22 @@
       "retornoDiario": 0.063786,
       "retornoAcumulado": 53.737,
       "flujoEstimado": 37999997715.65999,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-crecimiento-dos-clase-b",
+      "fondoId": "1573",
+      "claseId": "5115",
+      "nombre": "Schroder Crecimiento Dos - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": null,
+      "valorCuotaparte": 1539.06,
+      "patrimonio": 152190755773.9,
+      "retornoDiario": 0.109928,
+      "retornoAcumulado": 53.906,
+      "flujoEstimado": 76133031269.59431,
       "origen": "cnv-excel"
     }
   ]

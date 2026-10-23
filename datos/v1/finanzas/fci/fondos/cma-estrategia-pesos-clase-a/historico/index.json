@@ -2,7 +2,7 @@
   "fondoId": "1634",
   "claseId": "5422",
   "nombre": "CMA Estrategia Pesos - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "cma-estrategia-pesos-clase-a",
@@ -5890,6 +5890,22 @@
       "retornoDiario": 0.203941,
       "retornoAcumulado": 57.965,
       "flujoEstimado": 1494.454239,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "cma-estrategia-pesos-clase-a",
+      "fondoId": "1634",
+      "claseId": "5422",
+      "nombre": "CMA Estrategia Pesos - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1578.985,
+      "patrimonio": 2876129802.52,
+      "retornoDiario": -0.042098,
+      "retornoAcumulado": 57.8985,
+      "flujoEstimado": -424.262692,
       "origen": "cnv-excel"
     }
   ]

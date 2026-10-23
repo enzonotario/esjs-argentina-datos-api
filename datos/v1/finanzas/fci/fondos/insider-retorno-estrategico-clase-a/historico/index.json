@@ -2,7 +2,7 @@
   "fondoId": "1799",
   "claseId": "6156",
   "nombre": "Insider Retorno Estratégico - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "insider-retorno-estrategico-clase-a",
@@ -2802,6 +2802,22 @@
       "retornoDiario": 0.308914,
       "retornoAcumulado": 13.65,
       "flujoEstimado": 149032.754407,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "insider-retorno-estrategico-clase-a",
+      "fondoId": "1799",
+      "claseId": "6156",
+      "nombre": "Insider Retorno Estratégico - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1134.7,
+      "patrimonio": 8216472765.36,
+      "retornoDiario": -0.158381,
+      "retornoAcumulado": 13.47,
+      "flujoEstimado": -411296.640352,
       "origen": "cnv-excel"
     }
   ]

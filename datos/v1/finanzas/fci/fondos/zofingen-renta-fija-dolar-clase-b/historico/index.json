@@ -2,7 +2,7 @@
   "fondoId": "820",
   "claseId": "2285",
   "nombre": "Zofingen Renta Fija Dólar - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "zofingen-renta-fija-dolar-clase-b",
@@ -15618,6 +15618,22 @@
       "retornoDiario": 0.010893,
       "retornoAcumulado": -40.851037,
       "flujoEstimado": 16.043732,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "zofingen-renta-fija-dolar-clase-b",
+      "fondoId": "820",
+      "claseId": "2285",
+      "nombre": "Zofingen Renta Fija Dólar - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 376.471,
+      "patrimonio": 7203716.86,
+      "retornoDiario": 0.012486,
+      "retornoAcumulado": -40.843652,
+      "flujoEstimado": -5.154439,
       "origen": "cnv-excel"
     }
   ]

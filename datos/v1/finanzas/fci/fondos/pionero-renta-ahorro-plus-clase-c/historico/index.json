@@ -2,7 +2,7 @@
   "fondoId": "652",
   "claseId": "2651",
   "nombre": "Pionero Renta Ahorro Plus - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-renta-ahorro-plus-clase-c",
@@ -26018,6 +26018,22 @@
       "retornoDiario": 0.100931,
       "retornoAcumulado": 12.6658,
       "flujoEstimado": -0.650475,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-ahorro-plus-clase-c",
+      "fondoId": "652",
+      "claseId": "2651",
+      "nombre": "Pionero Renta Ahorro Plus - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1126.648,
+      "patrimonio": 52642141.11,
+      "retornoDiario": -0.000888,
+      "retornoAcumulado": 12.6648,
+      "flujoEstimado": -11.763531,
       "origen": "cnv-excel"
     }
   ]

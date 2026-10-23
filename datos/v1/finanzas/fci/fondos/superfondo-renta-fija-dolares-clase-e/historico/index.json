@@ -2,7 +2,7 @@
   "fondoId": "654",
   "claseId": "1350",
   "nombre": "Superfondo Renta Fija Dólares - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-fija-dolares-clase-e",
@@ -26225,6 +26225,22 @@
       "patrimonio": null,
       "retornoDiario": -0.053874,
       "retornoAcumulado": 38.776716,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-fija-dolares-clase-e",
+      "fondoId": "654",
+      "claseId": "1350",
+      "nombre": "Superfondo Renta Fija Dólares - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 451.037,
+      "patrimonio": null,
+      "retornoDiario": 0.04991,
+      "retornoAcumulado": 38.84598,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

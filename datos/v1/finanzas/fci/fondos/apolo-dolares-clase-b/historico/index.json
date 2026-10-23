@@ -2,7 +2,7 @@
   "fondoId": "1549",
   "claseId": "4710",
   "nombre": "Apolo Dólares - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "apolo-dolares-clase-b",
@@ -3570,6 +3570,22 @@
       "retornoDiario": 0.00568,
       "retornoAcumulado": 4.129696,
       "flujoEstimado": 0.016091,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "apolo-dolares-clase-b",
+      "fondoId": "1549",
+      "claseId": "4710",
+      "nombre": "Apolo Dólares - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1038.875,
+      "patrimonio": 103610.69,
+      "retornoDiario": 0.014344,
+      "retornoAcumulado": 4.144633,
+      "flujoEstimado": -0.019789,
       "origen": "cnv-excel"
     }
   ]

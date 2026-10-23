@@ -2,7 +2,7 @@
   "fondoId": "226",
   "claseId": "226",
   "nombre": "Supergestion - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "supergestion-clase-a",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.532536,
       "retornoAcumulado": 4086.771396,
       "flujoEstimado": -22644925.328159,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-clase-a",
+      "fondoId": "226",
+      "claseId": "226",
+      "nombre": "Supergestion - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1401355.823,
+      "patrimonio": 28454805752.39,
+      "retornoDiario": -0.220621,
+      "retornoAcumulado": 4077.534485,
+      "flujoEstimado": -97640946.721561,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1242",
   "claseId": "3446",
   "nombre": "Pionero Capital - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-capital-clase-a",
@@ -21426,6 +21426,22 @@
       "retornoDiario": 0.162336,
       "retornoAcumulado": 119.8393,
       "flujoEstimado": 31863448.502248,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-capital-clase-a",
+      "fondoId": "1242",
+      "claseId": "3446",
+      "nombre": "Pionero Capital - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2198.11,
+      "patrimonio": 5794424811.49,
+      "retornoDiario": -0.012873,
+      "retornoAcumulado": 119.811,
+      "flujoEstimado": -6961231.335166,
       "origen": "cnv-excel"
     }
   ]

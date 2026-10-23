@@ -2,7 +2,7 @@
   "fondoId": "588",
   "claseId": "1190",
   "nombre": "MEGAQM Retorno Total - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "megaqm-retorno-total-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.137905,
       "retornoAcumulado": 5968.916975,
       "flujoEstimado": -5451.719993,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-retorno-total-clase-b",
+      "fondoId": "588",
+      "claseId": "1190",
+      "nombre": "MEGAQM Retorno Total - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 396073.541,
+      "patrimonio": 64928633.33,
+      "retornoDiario": 0.123653,
+      "retornoAcumulado": 5976.421373,
+      "flujoEstimado": 0.090833,
       "origen": "cnv-excel"
     }
   ]

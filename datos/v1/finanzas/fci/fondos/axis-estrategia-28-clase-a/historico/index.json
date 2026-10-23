@@ -2,7 +2,7 @@
   "fondoId": "1619",
   "claseId": "5347",
   "nombre": "Axis Estrategia 28 - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "axis-estrategia-28-clase-a",
@@ -1730,6 +1730,22 @@
       "retornoDiario": 0.133152,
       "retornoAcumulado": 11.2991,
       "flujoEstimado": 4096.638049,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-estrategia-28-clase-a",
+      "fondoId": "1619",
+      "claseId": "5347",
+      "nombre": "Axis Estrategia 28 - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1114.72,
+      "patrimonio": 5601993237.67,
+      "retornoDiario": 0.155347,
+      "retornoAcumulado": 11.472,
+      "flujoEstimado": -3967.951576,
       "origen": "cnv-excel"
     }
   ]

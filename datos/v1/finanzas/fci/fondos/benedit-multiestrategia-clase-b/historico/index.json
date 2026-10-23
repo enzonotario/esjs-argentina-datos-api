@@ -2,7 +2,7 @@
   "fondoId": "1534",
   "claseId": "4613",
   "nombre": "Benedit Multiestrategia - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "benedit-multiestrategia-clase-b",
@@ -5842,6 +5842,22 @@
       "retornoDiario": 0.282704,
       "retornoAcumulado": 33.2354,
       "flujoEstimado": 1358.850293,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "benedit-multiestrategia-clase-b",
+      "fondoId": "1534",
+      "claseId": "4613",
+      "nombre": "Benedit Multiestrategia - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1317.351,
+      "patrimonio": 3186817828.38,
+      "retornoDiario": -1.126052,
+      "retornoAcumulado": 31.7351,
+      "flujoEstimado": -1981.829406,
       "origen": "cnv-excel"
     }
   ]

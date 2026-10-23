@@ -2,7 +2,7 @@
   "fondoId": "1768",
   "claseId": "6031",
   "nombre": "BAVSA Renta Balanceado V - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "bavsa-renta-balanceado-v-clase-c",
@@ -3250,6 +3250,22 @@
       "retornoDiario": 0.016136,
       "retornoAcumulado": 25.8261,
       "flujoEstimado": -4395.753723,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-renta-balanceado-v-clase-c",
+      "fondoId": "1768",
+      "claseId": "6031",
+      "nombre": "BAVSA Renta Balanceado V - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1259.824,
+      "patrimonio": 25845182368.66,
+      "retornoDiario": 0.124219,
+      "retornoAcumulado": 25.9824,
+      "flujoEstimado": 12399.105999,
       "origen": "cnv-excel"
     }
   ]

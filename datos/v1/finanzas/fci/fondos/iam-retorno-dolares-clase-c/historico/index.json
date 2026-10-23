@@ -2,7 +2,7 @@
   "fondoId": "1594",
   "claseId": "5230",
   "nombre": "IAM Retorno Dólares - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "iam-retorno-dolares-clase-c",
@@ -6658,6 +6658,22 @@
       "retornoDiario": 0.005764,
       "retornoAcumulado": 4.098,
       "flujoEstimado": 0.000001,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "iam-retorno-dolares-clase-c",
+      "fondoId": "1594",
+      "claseId": "5230",
+      "nombre": "IAM Retorno Dólares - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1041.04,
+      "patrimonio": 520.52,
+      "retornoDiario": 0.005764,
+      "retornoAcumulado": 4.104,
+      "flujoEstimado": -0.000001,
       "origen": "cnv-excel"
     }
   ]

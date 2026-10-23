@@ -2,7 +2,7 @@
   "fondoId": "499",
   "claseId": "2343",
   "nombre": "Balanz Capital Renta Fija - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-capital-renta-fija-clase-c",
@@ -26274,6 +26274,22 @@
       "retornoDiario": -0.053301,
       "retornoAcumulado": 1908.2653,
       "flujoEstimado": -173.328171,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-capital-renta-fija-clase-c",
+      "fondoId": "499",
+      "claseId": "2343",
+      "nombre": "Balanz Capital Renta Fija - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 20087.739,
+      "patrimonio": 35128506939.3,
+      "retornoDiario": 0.025325,
+      "retornoAcumulado": 1908.7739,
+      "flujoEstimado": 210.116951,
       "origen": "cnv-excel"
     }
   ]

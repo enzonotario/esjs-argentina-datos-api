@@ -2,7 +2,7 @@
   "fondoId": "748",
   "claseId": "1641",
   "nombre": "Galileo Estrategia - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-estrategia-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.212278,
       "retornoAcumulado": 3407.344474,
       "flujoEstimado": -31.79028,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-estrategia-clase-b",
+      "fondoId": "748",
+      "claseId": "1641",
+      "nombre": "Galileo Estrategia - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 59812.73,
+      "patrimonio": 5229879565.13,
+      "retornoDiario": -0.026756,
+      "retornoAcumulado": 3406.406036,
+      "flujoEstimado": 31.126784,
       "origen": "cnv-excel"
     }
   ]

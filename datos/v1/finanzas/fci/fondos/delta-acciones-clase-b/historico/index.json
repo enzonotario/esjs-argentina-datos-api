@@ -2,7 +2,7 @@
   "fondoId": "370",
   "claseId": "662",
   "nombre": "Delta Acciones - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-acciones-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 1.771714,
       "retornoAcumulado": 6094.693137,
       "flujoEstimado": 0.624418,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-acciones-clase-b",
+      "fondoId": "370",
+      "claseId": "662",
+      "nombre": "Delta Acciones - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2196878.602,
+      "patrimonio": 2150173935.47,
+      "retornoDiario": -1.590049,
+      "retornoAcumulado": 5996.194502,
+      "flujoEstimado": 7.248812,
       "origen": "cnv-excel"
     }
   ]

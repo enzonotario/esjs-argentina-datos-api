@@ -2,7 +2,7 @@
   "fondoId": "678",
   "claseId": "1424",
   "nombre": "Delta Gestion VI - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-gestion-vi-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.291016,
       "retornoAcumulado": 2348.97031,
       "flujoEstimado": -4.857772,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-gestion-vi-clase-b",
+      "fondoId": "678",
+      "claseId": "1424",
+      "nombre": "Delta Gestion VI - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 64334.994,
+      "patrimonio": 1101947194.86,
+      "retornoDiario": -0.319937,
+      "retornoAcumulado": 2341.135152,
+      "flujoEstimado": 3.30598,
       "origen": "cnv-excel"
     }
   ]

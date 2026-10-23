@@ -2,7 +2,7 @@
   "fondoId": "1213",
   "claseId": "3356",
   "nombre": "Balanz Capital Money Market - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-capital-money-market-clase-b",
@@ -23458,6 +23458,22 @@
       "retornoDiario": 0.053615,
       "retornoAcumulado": 1206.8719,
       "flujoEstimado": 456071205.335815,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-capital-money-market-clase-b",
+      "fondoId": "1213",
+      "claseId": "3356",
+      "nombre": "Balanz Capital Money Market - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 13075.693,
+      "patrimonio": 145631672822.33,
+      "retornoDiario": 0.053364,
+      "retornoAcumulado": 1207.5693,
+      "flujoEstimado": -2816830041.750397,
       "origen": "cnv-excel"
     }
   ]

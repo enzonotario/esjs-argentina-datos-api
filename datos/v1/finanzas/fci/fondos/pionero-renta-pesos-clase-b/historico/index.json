@@ -2,7 +2,7 @@
   "fondoId": "343",
   "claseId": "565",
   "nombre": "Pionero Renta Pesos - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-renta-pesos-clase-b",
@@ -26226,6 +26226,22 @@
       "retornoDiario": 0.030532,
       "retornoAcumulado": 2079.882512,
       "flujoEstimado": 83449031.07003,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-pesos-clase-b",
+      "fondoId": "343",
+      "claseId": "565",
+      "nombre": "Pionero Renta Pesos - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "RG900",
+      "categoriaKey": null,
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 115191.058,
+      "patrimonio": 17337337762.16,
+      "retornoDiario": 0.061281,
+      "retornoAcumulado": 2081.218366,
+      "flujoEstimado": -530339214.930084,
       "origen": "cnv-excel"
     }
   ]

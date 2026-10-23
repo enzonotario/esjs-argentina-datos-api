@@ -2,7 +2,7 @@
   "fondoId": "1614",
   "claseId": "5313",
   "nombre": "Max Acciones Argentinas - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "max-acciones-argentinas-clase-a",
@@ -6290,6 +6290,22 @@
       "retornoDiario": 1.611891,
       "retornoAcumulado": 21.2302,
       "flujoEstimado": 392.031788,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-acciones-argentinas-clase-a",
+      "fondoId": "1614",
+      "claseId": "5313",
+      "nombre": "Max Acciones Argentinas - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1193.073,
+      "patrimonio": 1710921129.49,
+      "retornoDiario": -1.586156,
+      "retornoAcumulado": 19.3073,
+      "flujoEstimado": -9706481.301845,
       "origen": "cnv-excel"
     }
   ]

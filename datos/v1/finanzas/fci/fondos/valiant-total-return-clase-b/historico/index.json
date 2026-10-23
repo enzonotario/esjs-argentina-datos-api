@@ -2,7 +2,7 @@
   "fondoId": "857",
   "claseId": "2455",
   "nombre": "Valiant Total Return - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "valiant-total-return-clase-b",
@@ -26066,6 +26066,22 @@
       "retornoDiario": 0.174411,
       "retornoAcumulado": 887.12116,
       "flujoEstimado": 0.659219,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "valiant-total-return-clase-b",
+      "fondoId": "857",
+      "claseId": "2455",
+      "nombre": "Valiant Total Return - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 12656.755,
+      "patrimonio": 46284489.71,
+      "retornoDiario": -0.647971,
+      "retornoAcumulado": 880.7249,
+      "flujoEstimado": 1.048608,
       "origen": "cnv-excel"
     }
   ]

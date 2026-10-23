@@ -2,7 +2,7 @@
   "fondoId": "1712",
   "claseId": "5756",
   "nombre": "Axis Estrategia Dólar 6 - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "axis-estrategia-dolar-6-clase-c",
@@ -3266,6 +3266,22 @@
       "retornoDiario": -0.016253,
       "retornoAcumulado": 7.6549,
       "flujoEstimado": -59991.298147,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "axis-estrategia-dolar-6-clase-c",
+      "fondoId": "1712",
+      "claseId": "5756",
+      "nombre": "Axis Estrategia Dólar 6 - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1076.845,
+      "patrimonio": 132912.7,
+      "retornoDiario": 0.027495,
+      "retornoAcumulado": 7.6845,
+      "flujoEstimado": -0.054317,
       "origen": "cnv-excel"
     }
   ]

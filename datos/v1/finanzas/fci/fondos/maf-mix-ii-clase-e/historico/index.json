@@ -2,7 +2,7 @@
   "fondoId": "1201",
   "claseId": "3290",
   "nombre": "MAF Mix II - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "maf-mix-ii-clase-e",
@@ -24690,6 +24690,22 @@
       "retornoDiario": 0.019785,
       "retornoAcumulado": 50.1406,
       "flujoEstimado": -0.181022,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-mix-ii-clase-e",
+      "fondoId": "1201",
+      "claseId": "3290",
+      "nombre": "MAF Mix II - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1500.344,
+      "patrimonio": 348475.26,
+      "retornoDiario": -0.070734,
+      "retornoAcumulado": 50.0344,
+      "flujoEstimado": -0.00503,
       "origen": "cnv-excel"
     }
   ]

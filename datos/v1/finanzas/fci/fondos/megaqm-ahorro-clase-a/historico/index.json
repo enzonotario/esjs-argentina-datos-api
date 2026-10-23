@@ -2,7 +2,7 @@
   "fondoId": "404",
   "claseId": "4780",
   "nombre": "MEGAQM Ahorro - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "megaqm-ahorro-clase-a",
@@ -8002,6 +8002,22 @@
       "retornoDiario": 0.061372,
       "retornoAcumulado": 111.861904,
       "flujoEstimado": -9120855.284313,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megaqm-ahorro-clase-a",
+      "fondoId": "404",
+      "claseId": "4780",
+      "nombre": "MEGAQM Ahorro - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 590970.54,
+      "patrimonio": 11369821399.47,
+      "retornoDiario": 0.017956,
+      "retornoAcumulado": 111.899945,
+      "flujoEstimado": 10347567.802843,
       "origen": "cnv-excel"
     }
   ]

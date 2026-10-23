@@ -2,7 +2,7 @@
   "fondoId": "1371",
   "claseId": "3934",
   "nombre": "Balanz Equity Selection - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "balanz-equity-selection-clase-c",
@@ -15010,6 +15010,22 @@
       "retornoDiario": 1.611924,
       "retornoAcumulado": 957.4193,
       "flujoEstimado": -0.044638,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "balanz-equity-selection-clase-c",
+      "fondoId": "1371",
+      "claseId": "3934",
+      "nombre": "Balanz Equity Selection - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 10401.526,
+      "patrimonio": 762391.89,
+      "retornoDiario": -1.632909,
+      "retornoAcumulado": 940.1526,
+      "flujoEstimado": 0.013648,
       "origen": "cnv-excel"
     }
   ]

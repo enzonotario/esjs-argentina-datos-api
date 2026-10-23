@@ -2,7 +2,7 @@
   "fondoId": "489",
   "claseId": "2260",
   "nombre": "Galileo Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-ahorro-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.09248,
       "retornoAcumulado": 2436.094016,
       "flujoEstimado": 14000141.967297,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-ahorro-clase-b",
+      "fondoId": "489",
+      "claseId": "2260",
+      "nombre": "Galileo Ahorro - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 181893.263,
+      "patrimonio": 31001044732.37,
+      "retornoDiario": 0.013225,
+      "retornoAcumulado": 2436.429412,
+      "flujoEstimado": -53486954.261681,
       "origen": "cnv-excel"
     }
   ]

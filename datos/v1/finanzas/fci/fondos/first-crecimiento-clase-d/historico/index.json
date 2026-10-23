@@ -2,7 +2,7 @@
   "fondoId": "1187",
   "claseId": "3210",
   "nombre": "First Crecimiento - Clase D",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "first-crecimiento-clase-d",
@@ -25378,6 +25378,22 @@
       "retornoDiario": 0.129876,
       "retornoAcumulado": 4152.281265,
       "flujoEstimado": 537.674438,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "first-crecimiento-clase-d",
+      "fondoId": "1187",
+      "claseId": "3210",
+      "nombre": "First Crecimiento - Clase D",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 48061.021,
+      "patrimonio": 28845491053.2,
+      "retornoDiario": 0.049649,
+      "retornoAcumulado": 4154.392483,
+      "flujoEstimado": -210.67561,
       "origen": "cnv-excel"
     }
   ]

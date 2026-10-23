@@ -2,7 +2,7 @@
   "fondoId": "1779",
   "claseId": "6071",
   "nombre": "Consultatio Multimercado X - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-multimercado-x-clase-c",
@@ -3058,6 +3058,22 @@
       "retornoDiario": -0.004344,
       "retornoAcumulado": -7.9174,
       "flujoEstimado": 0.000024,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-multimercado-x-clase-c",
+      "fondoId": "1779",
+      "claseId": "6071",
+      "nombre": "Consultatio Multimercado X - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 920.747,
+      "patrimonio": 9207.47,
+      "retornoDiario": -0.008579,
+      "retornoAcumulado": -7.9253,
+      "flujoEstimado": -0.000023,
       "origen": "cnv-excel"
     }
   ]

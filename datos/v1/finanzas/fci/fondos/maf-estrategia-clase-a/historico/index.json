@@ -2,7 +2,7 @@
   "fondoId": "1713",
   "claseId": "5754",
   "nombre": "MAF Estrategia - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "maf-estrategia-clase-a",
@@ -4530,6 +4530,22 @@
       "retornoDiario": 0.153084,
       "retornoAcumulado": 49.3619,
       "flujoEstimado": 232.863417,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-estrategia-clase-a",
+      "fondoId": "1713",
+      "claseId": "5754",
+      "nombre": "MAF Estrategia - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1491.496,
+      "patrimonio": 15052429517.06,
+      "retornoDiario": -0.142138,
+      "retornoAcumulado": 49.1496,
+      "flujoEstimado": 149996586.244356,
       "origen": "cnv-excel"
     }
   ]

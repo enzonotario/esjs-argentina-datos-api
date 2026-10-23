@@ -2,7 +2,7 @@
   "fondoId": "589",
   "claseId": "3306",
   "nombre": "Adcap Cima Renta Fija Nacional - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "adcap-cima-renta-fija-nacional-clase-c",
@@ -24658,6 +24658,22 @@
       "retornoDiario": 0.081466,
       "retornoAcumulado": 1380.586721,
       "flujoEstimado": -0.027949,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-cima-renta-fija-nacional-clase-c",
+      "fondoId": "589",
+      "claseId": "3306",
+      "nombre": "Adcap Cima Renta Fija Nacional - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 14770.628,
+      "patrimonio": 22380196.62,
+      "retornoDiario": 0.034987,
+      "retornoAcumulado": 1381.104735,
+      "flujoEstimado": 0.689429,
       "origen": "cnv-excel"
     }
   ]

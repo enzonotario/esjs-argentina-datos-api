@@ -2,7 +2,7 @@
   "fondoId": "1596",
   "claseId": "5334",
   "nombre": "Superfondo Ahorro en Dólares - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "superfondo-ahorro-en-dolares-clase-a",
@@ -6338,6 +6338,22 @@
       "retornoDiario": 0.001669,
       "retornoAcumulado": 1.8451,
       "flujoEstimado": -2890736.38947,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-ahorro-en-dolares-clase-a",
+      "fondoId": "1596",
+      "claseId": "5334",
+      "nombre": "Superfondo Ahorro en Dólares - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1018.467,
+      "patrimonio": 1263665835.1,
+      "retornoDiario": 0.001571,
+      "retornoAcumulado": 1.8467,
+      "flujoEstimado": 14916935.332976,
       "origen": "cnv-excel"
     }
   ]

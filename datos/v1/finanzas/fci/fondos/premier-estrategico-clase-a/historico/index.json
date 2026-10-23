@@ -2,7 +2,7 @@
   "fondoId": "1323",
   "claseId": "3768",
   "nombre": "Premier Estrategico - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "premier-estrategico-clase-a",
@@ -16786,6 +16786,22 @@
       "retornoDiario": 0.033977,
       "retornoAcumulado": 3049.3296,
       "flujoEstimado": -30.521088,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "premier-estrategico-clase-a",
+      "fondoId": "1323",
+      "claseId": "3768",
+      "nombre": "Premier Estrategico - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 31517.139,
+      "patrimonio": 11934947978.96,
+      "retornoDiario": 0.075708,
+      "retornoAcumulado": 3051.7139,
+      "flujoEstimado": 292.425869,
       "origen": "cnv-excel"
     }
   ]

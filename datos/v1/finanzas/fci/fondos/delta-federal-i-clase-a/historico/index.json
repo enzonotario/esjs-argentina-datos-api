@@ -2,7 +2,7 @@
   "fondoId": "469",
   "claseId": "921",
   "nombre": "Delta Federal I - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-federal-i-clase-a",
@@ -26338,6 +26338,22 @@
       "retornoDiario": -0.051831,
       "retornoAcumulado": 2516.309169,
       "flujoEstimado": -649922.135488,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-federal-i-clase-a",
+      "fondoId": "469",
+      "claseId": "921",
+      "nombre": "Delta Federal I - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 325226.65,
+      "patrimonio": 60820735.48,
+      "retornoDiario": -0.098366,
+      "retornoAcumulado": 2513.735598,
+      "flujoEstimado": -0.147895,
       "origen": "cnv-excel"
     }
   ]

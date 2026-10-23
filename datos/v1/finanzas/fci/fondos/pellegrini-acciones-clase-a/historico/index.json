@@ -2,7 +2,7 @@
   "fondoId": "118",
   "claseId": "118",
   "nombre": "Pellegrini Acciones - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pellegrini-acciones-clase-a",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 1.398982,
       "retornoAcumulado": 5801.731,
       "flujoEstimado": -53301305.112949,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-acciones-clase-a",
+      "fondoId": "118",
+      "claseId": "118",
+      "nombre": "Pellegrini Acciones - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 128443.86,
+      "patrimonio": 24860671653.92,
+      "retornoDiario": -1.621471,
+      "retornoAcumulado": 5706.036125,
+      "flujoEstimado": -3656668.772453,
       "origen": "cnv-excel"
     }
   ]

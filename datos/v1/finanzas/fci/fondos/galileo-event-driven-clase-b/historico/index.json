@@ -2,7 +2,7 @@
   "fondoId": "349",
   "claseId": "583",
   "nombre": "Galileo Event Driven - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-event-driven-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.123275,
       "retornoAcumulado": 28.982495,
       "flujoEstimado": 1027465.248715,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-event-driven-clase-b",
+      "fondoId": "349",
+      "claseId": "583",
+      "nombre": "Galileo Event Driven - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 3890.981,
+      "patrimonio": 145531671.02,
+      "retornoDiario": 0.05611,
+      "retornoAcumulado": 29.054867,
+      "flujoEstimado": 879187.017093,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "424",
   "claseId": "787",
   "nombre": "Probolsa",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "probolsa",
@@ -26002,6 +26002,22 @@
       "retornoDiario": 1.010507,
       "retornoAcumulado": 1733.507796,
       "flujoEstimado": -0.615502,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "probolsa",
+      "fondoId": "424",
+      "claseId": "787",
+      "nombre": "Probolsa",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 79023.434,
+      "patrimonio": 511733612.37,
+      "retornoDiario": -0.779156,
+      "retornoAcumulado": 1719.221908,
+      "flujoEstimado": 0.530727,
       "origen": "cnv-excel"
     }
   ]

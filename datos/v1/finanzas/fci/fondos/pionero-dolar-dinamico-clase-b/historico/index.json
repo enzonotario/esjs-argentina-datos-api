@@ -2,7 +2,7 @@
   "fondoId": "1648",
   "claseId": "5487",
   "nombre": "Pionero Dólar Dinámico - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-dolar-dinamico-clase-b",
@@ -5554,6 +5554,22 @@
       "retornoDiario": -0.203883,
       "retornoAcumulado": 5.1395,
       "flujoEstimado": 14.383161,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-dolar-dinamico-clase-b",
+      "fondoId": "1648",
+      "claseId": "5487",
+      "nombre": "Pionero Dólar Dinámico - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1051.325,
+      "patrimonio": 46212706.33,
+      "retornoDiario": -0.006658,
+      "retornoAcumulado": 5.1325,
+      "flujoEstimado": -26.131403,
       "origen": "cnv-excel"
     }
   ]

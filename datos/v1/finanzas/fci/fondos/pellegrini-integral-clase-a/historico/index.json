@@ -2,7 +2,7 @@
   "fondoId": "339",
   "claseId": "521",
   "nombre": "Pellegrini Integral - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pellegrini-integral-clase-a",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.379214,
       "retornoAcumulado": 4624.55133,
       "flujoEstimado": -2453408.547168,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pellegrini-integral-clase-a",
+      "fondoId": "339",
+      "claseId": "521",
+      "nombre": "Pellegrini Integral - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 191800.721,
+      "patrimonio": 7515665664.74,
+      "retornoDiario": -0.495822,
+      "retornoAcumulado": 4601.125962,
+      "flujoEstimado": -7949325.618325,
       "origen": "cnv-excel"
     }
   ]

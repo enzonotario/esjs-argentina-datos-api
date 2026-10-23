@@ -2,7 +2,7 @@
   "fondoId": "226",
   "claseId": "1377",
   "nombre": "Supergestion - Clase D",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "supergestion-clase-d",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 0.537368,
       "retornoAcumulado": 4555.132889,
       "flujoEstimado": 1.792588,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "supergestion-clase-d",
+      "fondoId": "226",
+      "claseId": "1377",
+      "nombre": "Supergestion - Clase D",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1567753.991,
+      "patrimonio": 7035346934.38,
+      "retornoDiario": -0.215825,
+      "retornoAcumulado": 4545.085941,
+      "flujoEstimado": -12.102837,
       "origen": "cnv-excel"
     }
   ]

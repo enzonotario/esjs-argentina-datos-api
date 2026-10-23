@@ -2,7 +2,7 @@
   "fondoId": "1596",
   "claseId": "5335",
   "nombre": "Superfondo Ahorro en Dólares - Clase H",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "superfondo-ahorro-en-dolares-clase-h",
@@ -6338,6 +6338,22 @@
       "retornoDiario": 0.001669,
       "retornoAcumulado": 1.8448,
       "flujoEstimado": 363653.278069,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-ahorro-en-dolares-clase-h",
+      "fondoId": "1596",
+      "claseId": "5335",
+      "nombre": "Superfondo Ahorro en Dólares - Clase H",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1018.464,
+      "patrimonio": 42401309.87,
+      "retornoDiario": 0.001571,
+      "retornoAcumulado": 1.8464,
+      "flujoEstimado": -412012.726732,
       "origen": "cnv-excel"
     }
   ]

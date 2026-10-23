@@ -2,7 +2,7 @@
   "fondoId": "1423",
   "claseId": "4157",
   "nombre": "ConoSur Visus - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "conosur-visus-clase-a",
@@ -12402,6 +12402,22 @@
       "retornoDiario": 0.678434,
       "retornoAcumulado": 415.3578,
       "flujoEstimado": -647.120581,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "conosur-visus-clase-a",
+      "fondoId": "1423",
+      "claseId": "4157",
+      "nombre": "ConoSur Visus - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 5111.881,
+      "patrimonio": 4749763672.27,
+      "retornoDiario": -0.809088,
+      "retornoAcumulado": 411.1881,
+      "flujoEstimado": -203.367176,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "554",
   "claseId": "1119",
   "nombre": "MAF Renta Argentina - Clase U",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "maf-renta-argentina-clase-u",
@@ -26354,6 +26354,22 @@
       "retornoDiario": 0.117524,
       "retornoAcumulado": 2066.639385,
       "flujoEstimado": -61.076427,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-renta-argentina-clase-u",
+      "fondoId": "554",
+      "claseId": "1119",
+      "nombre": "MAF Renta Argentina - Clase U",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 244619.001,
+      "patrimonio": 18963301075.57,
+      "retornoDiario": 0.156645,
+      "retornoAcumulado": 2070.033307,
+      "flujoEstimado": -67.394608,
       "origen": "cnv-excel"
     }
   ]

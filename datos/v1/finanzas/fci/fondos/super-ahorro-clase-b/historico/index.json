@@ -2,7 +2,7 @@
   "fondoId": "151",
   "claseId": "298",
   "nombre": "Super Ahorro $ - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "super-ahorro-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.051844,
       "retornoAcumulado": 1464.50854,
       "flujoEstimado": 22488823761.804443,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "super-ahorro-clase-b",
+      "fondoId": "151",
+      "claseId": "298",
+      "nombre": "Super Ahorro $ - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 24697.972,
+      "patrimonio": 1878311403608.25,
+      "retornoDiario": 0.052092,
+      "retornoAcumulado": 1465.323526,
+      "flujoEstimado": -86360123871.70605,
       "origen": "cnv-excel"
     }
   ]

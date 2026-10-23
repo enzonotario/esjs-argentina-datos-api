@@ -2,7 +2,7 @@
   "fondoId": "420",
   "claseId": "774",
   "nombre": "Delta Internacional - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "delta-internacional-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 1.574447,
       "retornoAcumulado": 2472.101675,
       "flujoEstimado": -0.404933,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "delta-internacional-clase-b",
+      "fondoId": "420",
+      "claseId": "774",
+      "nombre": "Delta Internacional - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 309199.039,
+      "patrimonio": 113457716.82,
+      "retornoDiario": -1.343173,
+      "retornoAcumulado": 2437.553895,
+      "flujoEstimado": -0.287085,
       "origen": "cnv-excel"
     }
   ]

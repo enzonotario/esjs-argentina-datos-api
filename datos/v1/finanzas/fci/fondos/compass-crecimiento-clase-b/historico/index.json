@@ -2,7 +2,7 @@
   "fondoId": "318",
   "claseId": "342",
   "nombre": "Compass Crecimiento - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "compass-crecimiento-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 1.827284,
       "retornoAcumulado": 7002.432507,
       "flujoEstimado": -512603831.303599,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "compass-crecimiento-clase-b",
+      "fondoId": "318",
+      "claseId": "342",
+      "nombre": "Compass Crecimiento - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 12821779.18,
+      "patrimonio": 5249682277.67,
+      "retornoDiario": -1.311433,
+      "retornoAcumulado": 6909.288878,
+      "flujoEstimado": 10.855778,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "506",
   "claseId": "1022",
   "nombre": "MAF Renta Argentina 2 - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "maf-renta-argentina-2-clase-a",
@@ -26354,6 +26354,22 @@
       "retornoDiario": -0.910208,
       "retornoAcumulado": 1250.590952,
       "flujoEstimado": -0.000011,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "maf-renta-argentina-2-clase-a",
+      "fondoId": "506",
+      "claseId": "1022",
+      "nombre": "MAF Renta Argentina 2 - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 277152.685,
+      "patrimonio": 2352.86,
+      "retornoDiario": -0.03399,
+      "retornoAcumulado": 1250.131892,
+      "flujoEstimado": 0.000009,
       "origen": "cnv-excel"
     }
   ]

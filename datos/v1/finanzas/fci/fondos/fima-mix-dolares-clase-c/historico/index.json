@@ -2,7 +2,7 @@
   "fondoId": "1459",
   "claseId": "4314",
   "nombre": "Fima Mix Dólares - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fima-mix-dolares-clase-c",
@@ -10354,6 +10354,22 @@
       "retornoDiario": -0.362818,
       "retornoAcumulado": 39.809,
       "flujoEstimado": -3.064471,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-mix-dolares-clase-c",
+      "fondoId": "1459",
+      "claseId": "4314",
+      "nombre": "Fima Mix Dólares - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1398.863,
+      "patrimonio": 6224915.49,
+      "retornoDiario": 0.05529,
+      "retornoAcumulado": 39.8863,
+      "flujoEstimado": 1.346865,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "142",
   "claseId": "4891",
   "nombre": "Schroder Renta Variable - Clase E Ley 27.743",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "schroder-renta-variable-clase-e-ley-27743",
@@ -8098,6 +8098,22 @@
       "retornoDiario": 1.345972,
       "retornoAcumulado": 19.9988,
       "flujoEstimado": -6.915673,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "schroder-renta-variable-clase-e-ley-27743",
+      "fondoId": "142",
+      "claseId": "4891",
+      "nombre": "Schroder Renta Variable - Clase E Ley 27.743",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 1180.447,
+      "patrimonio": 24954417.2,
+      "retornoDiario": -1.628433,
+      "retornoAcumulado": 18.0447,
+      "flujoEstimado": 6.901594,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "680",
   "claseId": "1427",
   "nombre": "Pionero Renta Fija Dólares - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-renta-fija-dolares-clase-b",
@@ -26034,6 +26034,22 @@
       "retornoDiario": -0.717,
       "retornoAcumulado": 184.146066,
       "flujoEstimado": -122040.262061,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-fija-dolares-clase-b",
+      "fondoId": "680",
+      "claseId": "1427",
+      "nombre": "Pionero Renta Fija Dólares - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2141.072,
+      "patrimonio": 4504069.29,
+      "retornoDiario": 0.300705,
+      "retornoAcumulado": 185.000506,
+      "flujoEstimado": -1.39046,
       "origen": "cnv-excel"
     }
   ]

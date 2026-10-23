@@ -2,7 +2,7 @@
   "fondoId": "1641",
   "claseId": "5455",
   "nombre": "BAVSA Global II - Clase E",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "bavsa-global-ii-clase-e",
@@ -5666,6 +5666,22 @@
       "retornoDiario": 0.086025,
       "retornoAcumulado": 65.322354,
       "flujoEstimado": 205.852821,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "bavsa-global-ii-clase-e",
+      "fondoId": "1641",
+      "claseId": "5455",
+      "nombre": "BAVSA Global II - Clase E",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1644.598,
+      "patrimonio": 3294870112.99,
+      "retornoDiario": -0.10217,
+      "retornoAcumulado": 65.153444,
+      "flujoEstimado": -101.90469,
       "origen": "cnv-excel"
     }
   ]

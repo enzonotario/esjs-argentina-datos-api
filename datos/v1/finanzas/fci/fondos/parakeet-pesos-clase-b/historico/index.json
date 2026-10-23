@@ -2,7 +2,7 @@
   "fondoId": "1561",
   "claseId": "5007",
   "nombre": "Parakeet Pesos - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "parakeet-pesos-clase-b",
@@ -7970,6 +7970,22 @@
       "retornoDiario": 0.050377,
       "retornoAcumulado": 69.209,
       "flujoEstimado": 1213255458.425941,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "parakeet-pesos-clase-b",
+      "fondoId": "1561",
+      "claseId": "5007",
+      "nombre": "Parakeet Pesos - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1692.94,
+      "patrimonio": 22122346261.41,
+      "retornoDiario": 0.050234,
+      "retornoAcumulado": 69.294,
+      "flujoEstimado": -102124273.289642,
       "origen": "cnv-excel"
     }
   ]

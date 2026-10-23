@@ -2,7 +2,7 @@
   "fondoId": "1434",
   "claseId": "4204",
   "nombre": "Ciclo Nova Renta Fija Dólar 2 - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-renta-fija-dolar-2-clase-a",
@@ -11282,6 +11282,22 @@
       "retornoDiario": 0.003329,
       "retornoAcumulado": -12.8902,
       "flujoEstimado": 0.199976,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-renta-fija-dolar-2-clase-a",
+      "fondoId": "1434",
+      "claseId": "4204",
+      "nombre": "Ciclo Nova Renta Fija Dólar 2 - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 871.104,
+      "patrimonio": 247832.85,
+      "retornoDiario": 0.000689,
+      "retornoAcumulado": -12.8896,
+      "flujoEstimado": -0.187558,
       "origen": "cnv-excel"
     }
   ]

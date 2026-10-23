@@ -2,7 +2,7 @@
   "fondoId": "1370",
   "claseId": "3929",
   "nombre": "Dracma Renta Ahorro - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "dracma-renta-ahorro-clase-b",
@@ -14322,6 +14322,22 @@
       "retornoDiario": 0.103177,
       "retornoAcumulado": 1037.7618,
       "flujoEstimado": -4999964.339712,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "dracma-renta-ahorro-clase-b",
+      "fondoId": "1370",
+      "claseId": "3929",
+      "nombre": "Dracma Renta Ahorro - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 11380.368,
+      "patrimonio": 11717812202.69,
+      "retornoDiario": 0.02417,
+      "retornoAcumulado": 1038.0368,
+      "flujoEstimado": -9639413.736532,
       "origen": "cnv-excel"
     }
   ]

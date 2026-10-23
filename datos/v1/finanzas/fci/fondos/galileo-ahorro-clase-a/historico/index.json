@@ -2,7 +2,7 @@
   "fondoId": "489",
   "claseId": "967",
   "nombre": "Galileo Ahorro - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-ahorro-clase-a",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.091106,
       "retornoAcumulado": 2410.062888,
       "flujoEstimado": -11739150.768354,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-ahorro-clase-a",
+      "fondoId": "489",
+      "claseId": "967",
+      "nombre": "Galileo Ahorro - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 258379.141,
+      "patrimonio": 14947326368.32,
+      "retornoDiario": 0.011851,
+      "retornoAcumulado": 2410.360357,
+      "flujoEstimado": -35699763.700932,
       "origen": "cnv-excel"
     }
   ]

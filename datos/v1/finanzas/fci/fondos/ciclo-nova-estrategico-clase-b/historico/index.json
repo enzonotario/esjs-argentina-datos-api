@@ -2,7 +2,7 @@
   "fondoId": "1517",
   "claseId": "4539",
   "nombre": "Ciclo Nova Estratégico - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "ciclo-nova-estrategico-clase-b",
@@ -9042,6 +9042,22 @@
       "retornoDiario": 0.058349,
       "retornoAcumulado": 19.6953,
       "flujoEstimado": -4416.0218,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "ciclo-nova-estrategico-clase-b",
+      "fondoId": "1517",
+      "claseId": "4539",
+      "nombre": "Ciclo Nova Estratégico - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1195.618,
+      "patrimonio": 4347331.66,
+      "retornoDiario": -0.111533,
+      "retornoAcumulado": 19.5618,
+      "flujoEstimado": -1.025485,
       "origen": "cnv-excel"
     }
   ]

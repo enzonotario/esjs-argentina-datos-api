@@ -2,7 +2,7 @@
   "fondoId": "470",
   "claseId": "4989",
   "nombre": "SBS Gestion Renta Fija - Clase Ley N° 27.743",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "sbs-gestion-renta-fija-clase-ley-n-27743",
@@ -7842,6 +7842,22 @@
       "retornoDiario": 0.071316,
       "retornoAcumulado": 94.0651,
       "flujoEstimado": -0.237515,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "sbs-gestion-renta-fija-clase-ley-n-27743",
+      "fondoId": "470",
+      "claseId": "4989",
+      "nombre": "SBS Gestion Renta Fija - Clase Ley N° 27.743",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1941.897,
+      "patrimonio": 1526278.43,
+      "retornoDiario": 0.064205,
+      "retornoAcumulado": 94.1897,
+      "flujoEstimado": -0.338512,
       "origen": "cnv-excel"
     }
   ]

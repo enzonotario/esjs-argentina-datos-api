@@ -2,7 +2,7 @@
   "fondoId": "1624",
   "claseId": "5384",
   "nombre": "Transatlantica Estrategia Dólar - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "transatlantica-estrategia-dolar-clase-a",
@@ -5938,6 +5938,22 @@
       "retornoDiario": 0.060315,
       "retornoAcumulado": 9.3263,
       "flujoEstimado": 2468.054532,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "transatlantica-estrategia-dolar-clase-a",
+      "fondoId": "1624",
+      "claseId": "5384",
+      "nombre": "Transatlantica Estrategia Dólar - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 1091.669,
+      "patrimonio": 4819045.16,
+      "retornoDiario": -0.145802,
+      "retornoAcumulado": 9.1669,
+      "flujoEstimado": -34168.91468,
       "origen": "cnv-excel"
     }
   ]

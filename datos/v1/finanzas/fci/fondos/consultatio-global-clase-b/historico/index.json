@@ -2,7 +2,7 @@
   "fondoId": "676",
   "claseId": "1416",
   "nombre": "Consultatio Global - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-global-clase-b",
@@ -26273,6 +26273,22 @@
       "patrimonio": null,
       "retornoDiario": 0.175425,
       "retornoAcumulado": 53.868088,
+      "flujoEstimado": null,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-global-clase-b",
+      "fondoId": "676",
+      "claseId": "1416",
+      "nombre": "Consultatio Global - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1931.186,
+      "patrimonio": null,
+      "retornoDiario": -0.033854,
+      "retornoAcumulado": 53.815998,
       "flujoEstimado": null,
       "origen": "cnv-excel"
     }

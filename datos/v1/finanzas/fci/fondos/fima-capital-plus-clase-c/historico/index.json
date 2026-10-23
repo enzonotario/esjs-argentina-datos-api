@@ -2,7 +2,7 @@
   "fondoId": "540",
   "claseId": "1094",
   "nombre": "Fima Capital Plus - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fima-capital-plus-clase-c",
@@ -26050,6 +26050,22 @@
       "retornoDiario": 0.231032,
       "retornoAcumulado": 1656.320878,
       "flujoEstimado": 89800095.765289,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-capital-plus-clase-c",
+      "fondoId": "540",
+      "claseId": "1094",
+      "nombre": "Fima Capital Plus - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 104861.723,
+      "patrimonio": 46364952752.88,
+      "retornoDiario": -0.049765,
+      "retornoAcumulado": 1655.446851,
+      "flujoEstimado": 4600000085.685921,
       "origen": "cnv-excel"
     }
   ]

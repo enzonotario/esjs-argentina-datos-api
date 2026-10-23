@@ -2,7 +2,7 @@
   "fondoId": "446",
   "claseId": "845",
   "nombre": "Galileo Argentina - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "galileo-argentina-clase-a",
@@ -26290,6 +26290,22 @@
       "retornoDiario": -0.055769,
       "retornoAcumulado": 1328.403584,
       "flujoEstimado": 179631.163471,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "galileo-argentina-clase-a",
+      "fondoId": "446",
+      "claseId": "845",
+      "nombre": "Galileo Argentina - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 818233.752,
+      "patrimonio": 651430953.57,
+      "retornoDiario": -0.048902,
+      "retornoAcumulado": 1327.705071,
+      "flujoEstimado": 200001.881924,
       "origen": "cnv-excel"
     }
   ]

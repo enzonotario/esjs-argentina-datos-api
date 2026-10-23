@@ -2,7 +2,7 @@
   "fondoId": "779",
   "claseId": "1757",
   "nombre": "FBA Retorno Total I - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fba-retorno-total-i-clase-b",
@@ -26306,6 +26306,22 @@
       "retornoDiario": 0.083583,
       "retornoAcumulado": 411.36383,
       "flujoEstimado": 0.003531,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fba-retorno-total-i-clase-b",
+      "fondoId": "779",
+      "claseId": "1757",
+      "nombre": "FBA Retorno Total I - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 16669.806,
+      "patrimonio": 12979.91,
+      "retornoDiario": 0.031942,
+      "retornoAcumulado": 411.52717,
+      "flujoEstimado": 0.005283,
       "origen": "cnv-excel"
     }
   ]

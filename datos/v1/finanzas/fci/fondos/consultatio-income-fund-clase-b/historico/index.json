@@ -2,7 +2,7 @@
   "fondoId": "215",
   "claseId": "215",
   "nombre": "Consultatio Income Fund - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "consultatio-income-fund-clase-b",
@@ -25650,6 +25650,22 @@
       "retornoDiario": 0.004745,
       "retornoAcumulado": -6.961495,
       "flujoEstimado": -4537.15392,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "consultatio-income-fund-clase-b",
+      "fondoId": "215",
+      "claseId": "215",
+      "nombre": "Consultatio Income Fund - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1287.055,
+      "patrimonio": 39130065.88,
+      "retornoDiario": 0.117849,
+      "retornoAcumulado": -6.85185,
+      "flujoEstimado": -46644.29509,
       "origen": "cnv-excel"
     }
   ]

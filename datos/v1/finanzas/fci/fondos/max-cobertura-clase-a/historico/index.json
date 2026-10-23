@@ -2,7 +2,7 @@
   "fondoId": "1352",
   "claseId": "3858",
   "nombre": "Max Cobertura - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "max-cobertura-clase-a",
@@ -14594,6 +14594,22 @@
       "retornoDiario": 0.059067,
       "retornoAcumulado": 613.8494,
       "flujoEstimado": -41.866474,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "max-cobertura-clase-a",
+      "fondoId": "1352",
+      "claseId": "3858",
+      "nombre": "Max Cobertura - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 7141.318,
+      "patrimonio": 832728047.87,
+      "retornoDiario": 0.03956,
+      "retornoAcumulado": 614.1318,
+      "flujoEstimado": -1042838.889791,
       "origen": "cnv-excel"
     }
   ]

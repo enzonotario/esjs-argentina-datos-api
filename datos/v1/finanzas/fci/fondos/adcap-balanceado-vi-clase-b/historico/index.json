@@ -2,7 +2,7 @@
   "fondoId": "667",
   "claseId": "1393",
   "nombre": "Adcap Balanceado VI - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "adcap-balanceado-vi-clase-b",
@@ -26066,6 +26066,22 @@
       "retornoDiario": 0.215365,
       "retornoAcumulado": 474.175281,
       "flujoEstimado": -681.07869,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "adcap-balanceado-vi-clase-b",
+      "fondoId": "667",
+      "claseId": "1393",
+      "nombre": "Adcap Balanceado VI - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 18707.88,
+      "patrimonio": 102500489364.42,
+      "retornoDiario": 0.004223,
+      "retornoAcumulado": 474.199529,
+      "flujoEstimado": 1248.675735,
       "origen": "cnv-excel"
     }
   ]

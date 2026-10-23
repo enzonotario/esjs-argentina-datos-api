@@ -2,7 +2,7 @@
   "fondoId": "1771",
   "claseId": "6042",
   "nombre": "Superfondo Renta Balance III - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "superfondo-renta-balance-iii-clase-b",
@@ -1442,6 +1442,22 @@
       "retornoDiario": 0.079573,
       "retornoAcumulado": 8.7919,
       "flujoEstimado": -301.012256,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "superfondo-renta-balance-iii-clase-b",
+      "fondoId": "1771",
+      "claseId": "6042",
+      "nombre": "Superfondo Renta Balance III - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": null,
+      "valorCuotaparte": 1087.898,
+      "patrimonio": 4807347757.46,
+      "retornoDiario": -0.00193,
+      "retornoAcumulado": 8.7898,
+      "flujoEstimado": -1705.504641,
       "origen": "cnv-excel"
     }
   ]

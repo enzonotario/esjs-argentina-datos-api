@@ -2,7 +2,7 @@
   "fondoId": "1908",
   "claseId": "6593",
   "nombre": "Puente Ahorro Pesos - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "puente-ahorro-pesos-clase-b",
@@ -946,6 +946,22 @@
       "retornoDiario": 0.086809,
       "retornoAcumulado": 5.7262,
       "flujoEstimado": 3298.578035,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "puente-ahorro-pesos-clase-b",
+      "fondoId": "1908",
+      "claseId": "6593",
+      "nombre": "Puente Ahorro Pesos - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 1057.885,
+      "patrimonio": 10175538797.66,
+      "retornoDiario": 0.058926,
+      "retornoAcumulado": 5.7885,
+      "flujoEstimado": -3098.281942,
       "origen": "cnv-excel"
     }
   ]

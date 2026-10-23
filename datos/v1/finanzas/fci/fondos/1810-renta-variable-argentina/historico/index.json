@@ -2,7 +2,7 @@
   "fondoId": "275",
   "claseId": "275",
   "nombre": "1810 Renta Variable Argentina",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "1810-renta-variable-argentina",
@@ -26242,6 +26242,22 @@
       "retornoDiario": 1.685892,
       "retornoAcumulado": 4918.22713,
       "flujoEstimado": 29647201.327946,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "1810-renta-variable-argentina",
+      "fondoId": "275",
+      "claseId": "275",
+      "nombre": "1810 Renta Variable Argentina",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Variable",
+      "categoriaKey": "rentaVariable",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2121359.839,
+      "patrimonio": 29438413842.06,
+      "retornoDiario": -1.506885,
+      "retornoAcumulado": 4842.608226,
+      "flujoEstimado": 28693561.245926,
       "origen": "cnv-excel"
     }
   ]

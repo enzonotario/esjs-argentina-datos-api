@@ -2,7 +2,7 @@
   "fondoId": "1848",
   "claseId": "6377",
   "nombre": "Fundcorp Long Performance Plus II - Clase C",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "fundcorp-long-performance-plus-ii-clase-c",
@@ -2098,6 +2098,22 @@
       "retornoDiario": -0.047089,
       "retornoAcumulado": -42.682768,
       "flujoEstimado": 320291.074339,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fundcorp-long-performance-plus-ii-clase-c",
+      "fondoId": "1848",
+      "claseId": "6377",
+      "nombre": "Fundcorp Long Performance Plus II - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Retorno Total",
+      "categoriaKey": "retornoTotal",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 573.108,
+      "patrimonio": 9048025.1,
+      "retornoDiario": -0.001221,
+      "retornoAcumulado": -42.683468,
+      "flujoEstimado": -11617.990407,
       "origen": "cnv-excel"
     }
   ]

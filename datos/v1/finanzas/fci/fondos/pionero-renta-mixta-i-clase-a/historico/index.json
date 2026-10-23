@@ -2,7 +2,7 @@
   "fondoId": "650",
   "claseId": "1341",
   "nombre": "Pionero Renta Mixta I - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-renta-mixta-i-clase-a",
@@ -26002,6 +26002,22 @@
       "retornoDiario": 0.795158,
       "retornoAcumulado": 6400.348251,
       "flujoEstimado": -23951545.956444,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-mixta-i-clase-a",
+      "fondoId": "650",
+      "claseId": "1341",
+      "nombre": "Pionero Renta Mixta I - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 190078.952,
+      "patrimonio": 11306241724.34,
+      "retornoDiario": -0.679455,
+      "retornoAcumulado": 6356.181315,
+      "flujoEstimado": -41294764.627182,
       "origen": "cnv-excel"
     }
   ]

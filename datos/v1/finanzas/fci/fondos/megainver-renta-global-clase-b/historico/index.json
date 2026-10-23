@@ -2,7 +2,7 @@
   "fondoId": "611",
   "claseId": "1234",
   "nombre": "Megainver Renta Global - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "megainver-renta-global-clase-b",
@@ -26338,6 +26338,22 @@
       "retornoDiario": 0.063935,
       "retornoAcumulado": 3812.471422,
       "flujoEstimado": -0.000327,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "megainver-renta-global-clase-b",
+      "fondoId": "611",
+      "claseId": "1234",
+      "nombre": "Megainver Renta Global - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 192437.331,
+      "patrimonio": 413390.69,
+      "retornoDiario": 0.232292,
+      "retornoAcumulado": 3821.559789,
+      "flujoEstimado": 0.001972,
       "origen": "cnv-excel"
     }
   ]

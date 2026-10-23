@@ -2,7 +2,7 @@
   "fondoId": "1274",
   "claseId": "3547",
   "nombre": "Pionero Renta Balanceado - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-renta-balanceado-clase-a",
@@ -19474,6 +19474,22 @@
       "retornoDiario": 0.06839,
       "retornoAcumulado": 1396.7128,
       "flujoEstimado": -45943308.886353,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-renta-balanceado-clase-a",
+      "fondoId": "1274",
+      "claseId": "3547",
+      "nombre": "Pionero Renta Balanceado - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Fija",
+      "categoriaKey": "rentaFija",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 14998.2,
+      "patrimonio": 37021446785.43,
+      "retornoDiario": 0.207602,
+      "retornoAcumulado": 1399.82,
+      "flujoEstimado": -231031757.634117,
       "origen": "cnv-excel"
     }
   ]

@@ -2,7 +2,7 @@
   "fondoId": "1365",
   "claseId": "3913",
   "nombre": "Allaria Dinamico II - Clase A",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "allaria-dinamico-ii-clase-a",
@@ -15698,6 +15698,22 @@
       "retornoDiario": 0.27866,
       "retornoAcumulado": 657.109,
       "flujoEstimado": -1270944.115667,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "allaria-dinamico-ii-clase-a",
+      "fondoId": "1365",
+      "claseId": "3913",
+      "nombre": "Allaria Dinamico II - Clase A",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Mediano Plazo",
+      "valorCuotaparte": 7569.27,
+      "patrimonio": 97381219.45,
+      "retornoDiario": -0.024039,
+      "retornoAcumulado": 656.927,
+      "flujoEstimado": 0.519974,
       "origen": "cnv-excel"
     }
   ]

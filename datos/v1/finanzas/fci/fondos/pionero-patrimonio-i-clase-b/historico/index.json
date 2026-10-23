@@ -2,7 +2,7 @@
   "fondoId": "1466",
   "claseId": "4335",
   "nombre": "Pionero Patrimonio I - Clase B",
-  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
+  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
   "historico": [
     {
       "slug": "pionero-patrimonio-i-clase-b",
@@ -10450,6 +10450,22 @@
       "retornoDiario": 0.052239,
       "retornoAcumulado": 120.6398,
       "flujoEstimado": 2372291957.200775,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "pionero-patrimonio-i-clase-b",
+      "fondoId": "1466",
+      "claseId": "4335",
+      "nombre": "Pionero Patrimonio I - Clase B",
+      "fecha": "2026-10-22",
+      "categoria": "Renta Mixta",
+      "categoriaKey": "rentaMixta",
+      "horizonte": "Largo Plazo",
+      "valorCuotaparte": 2207.03,
+      "patrimonio": 103473330763.62,
+      "retornoDiario": 0.028644,
+      "retornoAcumulado": 120.703,
+      "flujoEstimado": 19639397403.364563,
       "origen": "cnv-excel"
     }
   ]
