@@ -2,7 +2,7 @@
   "fondoId": "345",
   "claseId": "575",
   "nombre": "Fima Premium - Clase A",
-  "fechaActualizacion": "2026-10-21T23:26:46.000Z",
+  "fechaActualizacion": "2026-10-22T17:09:45.000Z",
   "historico": [
     {
       "slug": "fima-premium-clase-a",
@@ -23074,6 +23074,22 @@
       "retornoDiario": 0.047933,
       "retornoAcumulado": 1276.886354,
       "flujoEstimado": 14840404572.90918,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-premium-clase-a",
+      "fondoId": "345",
+      "claseId": "575",
+      "nombre": "Fima Premium - Clase A",
+      "fecha": "2026-10-21",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 86228.437,
+      "patrimonio": 3660442297337.69,
+      "retornoDiario": 0.047806,
+      "retornoAcumulado": 1277.544594,
+      "flujoEstimado": 24538682812.243652,
       "origen": "cnv-excel"
     }
   ]
