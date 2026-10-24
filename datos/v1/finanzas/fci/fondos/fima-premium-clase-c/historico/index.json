@@ -2,7 +2,7 @@
   "fondoId": "345",
   "claseId": "3736",
   "nombre": "Fima Premium - Clase C",
-  "fechaActualizacion": "2026-10-22T23:43:49.000Z",
+  "fechaActualizacion": "2026-10-23T19:25:27.000Z",
   "historico": [
     {
       "slug": "fima-premium-clase-c",
@@ -14498,6 +14498,22 @@
       "retornoDiario": 0.052813,
       "retornoAcumulado": 741.297168,
       "flujoEstimado": -114449651874.62488,
+      "origen": "cnv-excel"
+    },
+    {
+      "slug": "fima-premium-clase-c",
+      "fondoId": "345",
+      "claseId": "3736",
+      "nombre": "Fima Premium - Clase C",
+      "fecha": "2026-10-22",
+      "categoria": "Mercado de Dinero",
+      "categoriaKey": "mercadoDinero",
+      "horizonte": "Corto Plazo",
+      "valorCuotaparte": 106023.805,
+      "patrimonio": 941567911728.44,
+      "retornoDiario": 0.052456,
+      "retornoAcumulado": 741.738481,
+      "flujoEstimado": 70927669819.07153,
       "origen": "cnv-excel"
     }
   ]
